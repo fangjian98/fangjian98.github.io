@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/posts/hello-world.html"/>
-    <id>http://yoursite.com/posts/hello-world.html</id>
+    <link href="http://yoursite.com/2020/08/29/hello-world/"/>
+    <id>http://yoursite.com/2020/08/29/hello-world/</id>
     <published>2020-08-29T10:36:53.975Z</published>
     <updated>2020-09-12T07:38:27.937Z</updated>
     
@@ -35,8 +35,8 @@
   
   <entry>
     <title>Github To Blog</title>
-    <link href="http://yoursite.com/posts/github-to-blog.html"/>
-    <id>http://yoursite.com/posts/github-to-blog.html</id>
+    <link href="http://yoursite.com/2020/08/27/github-to-blog/"/>
+    <id>http://yoursite.com/2020/08/27/github-to-blog/</id>
     <published>2020-08-27T03:39:21.000Z</published>
     <updated>2020-09-12T07:38:27.936Z</updated>
     
