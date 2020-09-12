@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Github To Blog</title>
-    <url>/2020/08/27/github-to-blog/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="通过Github搭建个人博客blog"><a href="#通过Github搭建个人博客blog" class="headerlink" title="通过Github搭建个人博客blog"></a>通过Github搭建个人博客blog</h1><ul>
 <li>github</li>
 <li>node.js</li>
@@ -54,7 +54,7 @@
 
 
 <h2 id="博客个性化设置"><a href="#博客个性化设置" class="headerlink" title="博客个性化设置"></a>博客个性化设置</h2><h3 id="下载hexo主题（自选主题模板）"><a href="#下载hexo主题（自选主题模板）" class="headerlink" title="下载hexo主题（自选主题模板）"></a>下载hexo主题（自选主题模板）</h3><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-<p><img src="/2020/08/27/github-to-blog/theme.jpg" alt="theme"></p>
+<p><img src="/posts/undefined.htm/theme.jpg" alt="theme"></p>
 <h3 id="下载next主题"><a href="#下载next主题" class="headerlink" title="下载next主题"></a>下载next主题</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
 
 <h3 id="修改-blog-config-yml"><a href="#修改-blog-config-yml" class="headerlink" title="修改./blog/_config.yml"></a>修改./blog/_config.yml</h3><ul>
@@ -121,7 +121,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2020/08/29/hello-world/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <a id="more"></a>
 
