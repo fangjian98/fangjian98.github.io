@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-12T07:38:27.937Z</updated>
+  <updated>2021-12-07T15:08:14.753Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Code Standard</title>
+    <link href="http://yoursite.com/2021/12/07/code-standard/"/>
+    <id>http://yoursite.com/2021/12/07/code-standard/</id>
+    <published>2021-12-07T15:04:56.000Z</published>
+    <updated>2021-12-07T15:08:14.753Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install vim</span><br><span class="line"></span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
+      
+    
+    
+    
+    
+    <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+    <category term="apt" scheme="http://yoursite.com/tags/apt/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
