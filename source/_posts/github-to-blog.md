@@ -1,8 +1,12 @@
 ---
 title: Github To Blog
-date: 2020-08-27 11:39:21
 categories: Github
-tags: [Github,Hexo,Node.js]
+tags:
+  - Github
+  - Hexo
+  - Node.js
+abbrlink: 84ebc250
+date: 2020-08-27 11:39:21
 ---
 
 # 通过Github搭建个人博客blog
@@ -134,7 +138,7 @@ npm install hexo-asset-image --save
 
 [https://hexo.io/themes/](https://hexo.io/themes/)
 
-![theme](github-to-blog/theme.jpg)
+![theme](/images/assets/theme.jpg)
 
 ### 下载next主题
 
@@ -298,3 +302,95 @@ hexo clean
 hexo d -g
 ```
 
+- 增加本地搜索
+
+```bash
+# 安装hexo-generator-searchdb，在站点的根目录下执行以下命令
+npm install hexo-generator-searchdb --save
+```
+
+```bash
+# 根目录_config.yml
+
+# 配置站点搜索信息
+search:
+ path: search.xml
+ field: post
+ format: html
+ limit: 10000
+```
+
+```bsah
+# 修改themes/next/_config.yml
+
+local_search:
+ enable: true
+```
+
+- 显示浏览进度
+
+```bash
+back2top:
+  enable: true
+  # Back to top in sidebar.
+  sidebar: false
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+```
+
+- RSS
+
+```bash
+# 安装hexo-generator-feed
+npm install hexo-generator-feed --save
+```
+
+```bash
+# 添加_config.yml
+
+# feed
+# Dependencies: https://github.com/hexojs/hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+```
+
+- 不开启不蒜子博客访问量统计
+
+```bash
+# Show Views / Visitors of the website / page with busuanzi.
+# Get more information on http://ibruce.info/2015/04/04/busuanzi
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: fa fa-eye
+```
+
+- 修改博文链接地址`/posts/xxxxx.html`
+
+```bsah
+npm install hexo-abbrlink --save
+
+# 根目录下的 _config.yml 文件
+permalink: posts/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+```
+
+- 首页title优化`网站名称-网站描述`
+
+更改`index.swig`文件`your-hexo-site\themes\next\layout`
+
+```xml
+{% block title %} {{ config.title }} {% endblock %}
+# 改成
+{% block title %} {{ config.title }} - {{ theme.description }} {% endblock %}
+```

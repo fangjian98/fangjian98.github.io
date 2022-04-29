@@ -5,11 +5,21 @@ date: 2020-08-27 13:04:00
 comments: false
 ---
 
-Welcome To My Blog Website！
+<h1 align="center">Hi 👋, I'm Fang Jian</h1>
+<h3 align="center">A passionate developer from china</h3>
 
+- 🔭 I’m currently working on [wiki-to-thir](https://github.com/fangjian98/wiki-to-thir)
 
+- 🌱 I’m currently learning **ML, NLP, AOSP**
 
-Hi, I am Fangjian
+- 👯 I’m looking to collaborate on **Alibaba, Tencent**
 
-- 教育背景：上海理工大学 本科 
-- 邮箱：fangjian1998@gmail.com
+- 🤔 I’m looking for help with **ML, AOSP**
+
+- 👨‍💻 All of my projects are available at [GitHub](https://github.com/fangjian98)
+
+- 📝 I regulary write articles on [CSDN](https://blog.csdn.net/weixin_44008788)
+
+- 💬 Ask me about **Android, Linux**
+
+- 📫 How to reach me **fangjian@gmail.com**
