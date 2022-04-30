@@ -6,11 +6,11 @@ comments: false
 ---
 
 <h1 align="center">Hi 👋, I'm Fang Jian</h1>
-<h3 align="center">A passionate developer from china</h3>
+<h3 align="center">A passionate developer from China</h3>
 
-- 🔭 I’m currently working on [wiki-to-thir](https://github.com/fangjian98/wiki-to-thir)
+- 🔭 I’m currently working on [ExploreGithub](https://github.com/fangjian98/ExploreGithub)
 
-- 🌱 I’m currently learning **ML, NLP, AOSP**
+- 🌱 I’m currently learning **Android, AOSP, SpringBoot, Ant Design, ML, NLP**
 
 - 👯 I’m looking to collaborate on **Alibaba, Tencent**
 
@@ -20,6 +20,7 @@ comments: false
 
 - 📝 I regulary write articles on [CSDN](https://blog.csdn.net/weixin_44008788)
 
-- 💬 Ask me about **Android, Linux**
+- 💬 Ask me about **Android, Python, Linux**
 
 - 📫 How to reach me **fangjian@gmail.com**
+

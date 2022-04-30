@@ -1,19 +1,18 @@
 ---
-title: Code Standard
+title: Ubuntu常用包管理命令
+categories: Linux
 tags:
   - linux
   - apt
 abbrlink: 64245
-date: 2021-12-07 23:04:56
+date: 2020-08-28 23:04:56 
 ---
 
-> add test images
-
-![](/images/assets/forks.png)
-
-
+> Ubuntu常用包管理命令
 
 <!-- more -->
+
+## Linux
 
 ```bash
 sudo apt-get install vim
@@ -58,4 +57,3 @@ apt clean
 apt autoclean
 类似clean，但删除的是过期的包（即已不能下载或者是无用的包）
 ```
-

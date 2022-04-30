@@ -52,7 +52,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
@@ -123,8 +123,8 @@ search:
 symbols_count_time:
  symbols: true
  time: true
- total_symbols: true
- total_time: true
+ total_symbols: false
+ total_time: false
 
 # # Extensions
 # plugins:

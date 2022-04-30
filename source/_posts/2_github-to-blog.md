@@ -1,5 +1,5 @@
 ---
-title: Github To Blog
+title: Github Pages+Hexo搭建个人博客及其主题优化
 categories: Github
 tags:
   - Github
