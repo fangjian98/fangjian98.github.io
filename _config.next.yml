@@ -40,8 +40,8 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/fangjian-logo-32x32.png
-  medium: /images/fangjian-logo-64x64.png
+  small: /images/logo-16x16-maxxspace.png
+  medium: /images/logo-32x32-maxxspace.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
