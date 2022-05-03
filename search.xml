@@ -21,39 +21,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Ubuntu常用包管理命令</title>
-    <url>/article/64245.html</url>
-    <content><![CDATA[<blockquote>
-<p>Ubuntu常用包管理命令</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install vim</span><br><span class="line"></span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>apt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程语言的Hello World程序</title>
-    <url>/article/caca35c0.html</url>
-    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
     <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
     <url>/article/84ebc250.html</url>
     <content><![CDATA[<h1 id="通过Github搭建个人博客blog"><a href="#通过Github搭建个人博客blog" class="headerlink" title="通过Github搭建个人博客blog"></a>通过Github搭建个人博客blog</h1><ul>
@@ -206,5 +173,95 @@
         <tag>Hexo</tag>
         <tag>Node.js</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu常用包管理命令</title>
+    <url>/article/64245.html</url>
+    <content><![CDATA[<blockquote>
+<p>Ubuntu常用包管理命令</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install vim</span><br><span class="line"></span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>apt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编程语言的Hello World程序</title>
+    <url>/article/caca35c0.html</url>
+    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>关于我</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[<h1 align="center">Hi 👋, I'm Fang Jian</h1>
+<h3 align="center">A passionate developer from China</h3>
+
+<ul>
+<li><p>🔭 I’m currently working on <a href="https://github.com/fangjian98/ExploreGithub">ExploreGithub</a></p>
+</li>
+<li><p>🌱 I’m currently learning <strong>Android, AOSP, SpringBoot, Ant Design, ML, NLP</strong></p>
+</li>
+<li><p>👯 I’m looking to collaborate on <strong>Alibaba, Tencent</strong></p>
+</li>
+<li><p>🤔 I’m looking for help with <strong>ML, AOSP</strong></p>
+</li>
+<li><p>👨‍💻 All of my projects are available at <a href="https://github.com/fangjian98">GitHub</a></p>
+</li>
+<li><p>📝 I regulary write articles on <a href="https://blog.csdn.net/weixin_44008788">CSDN</a></p>
+</li>
+<li><p>💬 Ask me about <strong>Android, Python, Linux</strong></p>
+</li>
+<li><p>📫 How to reach me <strong><a href="mailto:&#102;&#97;&#x6e;&#103;&#106;&#105;&#97;&#x6e;&#64;&#103;&#109;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#109;">&#102;&#97;&#x6e;&#103;&#106;&#105;&#97;&#x6e;&#64;&#103;&#109;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a></strong></p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>网站导航</title>
+    <url>/navigation/index.html</url>
+    <content><![CDATA[<h2 id="常用推荐"><a href="#常用推荐" class="headerlink" title="常用推荐"></a>常用推荐</h2><p><strong>Dribble</strong> - <a href="https://dribbble.com/">dribbble.com</a></p>
+<blockquote>
+<p>全球UI设计师作品分享平台。</p>
+</blockquote>
+<details><summary>Click here for more</summary>
+<iframe src="https://dribbble.com/" frameborder="0" width=100% height="400" ></iframe>
+</details>
+
+
+<p><strong>BeHance</strong> - <a href="https://behance.net/">behance.net</a></p>
+<blockquote>
+<p>Adobe旗下的设计师交流平台，来自世界各地的设计师在这里分享自己的作品。</p>
+</blockquote>
+<details><summary>Click here for more</summary>
+<iframe src="https://behance.net/" frameborder="0" width=100% height="400" ></iframe>
+</details>
+]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
