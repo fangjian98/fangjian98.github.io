@@ -1,5 +1,5 @@
 ---
-title: 关于知识共享许可协议 Creative Commons Licenses
+title: 知识共享许可协议 Creative Commons Licenses
 categories: 技术流
 tags: Creative Commons Licenses
 abbrlink: d8f310cd
