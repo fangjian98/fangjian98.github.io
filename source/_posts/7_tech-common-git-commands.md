@@ -1,5 +1,5 @@
 ---
-title: 常见的Git命令
+title: 常用的Git命令
 categories: Git
 tags: Git
 abbrlink: 5c7291e7

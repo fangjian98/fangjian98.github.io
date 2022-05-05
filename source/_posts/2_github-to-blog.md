@@ -9,13 +9,15 @@ abbrlink: 84ebc250
 date: 2020-08-27 11:39:21
 ---
 
-# 通过Github搭建个人博客blog
-
-- github
-- node.js
-- hexo
+> 通过Github搭建个人博客blog：GitHub Pages是一个静态站点托管服务，可直接从GitHub上的存储库获取HTML，CSS和JavaScript文件，还可以选择在构建过程中运行这些文件并发布网站。Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 
 <!-- more -->
+
+## 相关组件
+
+- github pages
+- node.js
+- hexo
 
 ## node.js安装
 
@@ -30,8 +32,6 @@ date: 2020-08-27 11:39:21
 node -v
 npm -v
 ```
-
-
 
 ## hexo安装与配置
 
@@ -91,12 +91,9 @@ deploy:
   branch: master
 ```
 
-
-
 ## 创建新博客
 
 - 流程
-
 
 ```bash
 # 创建博客
@@ -109,6 +106,40 @@ hexo d
 # 博客生成+部署
 hexo d -g
 ```
+
+- 默认生成的post
+
+```
+title: blog name
+date: 2022-05-05 22:51:03
+tags:
+```
+
+- 关于post其他标签
+
+| 参数       | 描述                                                 | 默认值       |
+| ---------- | ---------------------------------------------------- | ------------ |
+| layout     | 布局                                                 |              |
+| title      | 标题                                                 | 文章的文件名 |
+| date       | 建立日期                                             | 文件建立日期 |
+| updated    | 更新日期                                             | 文件更新日期 |
+| comments   | 开启文章的评论功能                                   | true         |
+| tags       | 标签（不适用于分页）                                 |              |
+| categories | 分类（不适用于分页）                                 |              |
+| permalink  | 覆盖文章网址                                         |              |
+| keywords   | 仅用于 meta 标签和 Open Graph 的关键词（不推荐使用） |              |
+
+```
+title: blog name
+date: 2022-05-05 22:51:03
+categories:
+	- 分类
+	- 子分类
+tags:
+	- 标签1
+	- 标签2
+```
+
 
 - 博客编辑器typora
 
