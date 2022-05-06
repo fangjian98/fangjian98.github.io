@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-05-05T15:41:09.738Z</updated>
+  <updated>2022-05-06T16:19:08.192Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Github的常用功能</title>
+    <link href="http://yoursite.com/article/f715120c.html"/>
+    <id>http://yoursite.com/article/f715120c.html</id>
+    <published>2022-05-06T15:15:04.000Z</published>
+    <updated>2022-05-06T16:19:08.192Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Github 包含的功能点很多，你知道他们的作用是什么吗？改如何去使用这些功能呢？这里将列出常用的功能点，并描述其功能和什么时候去使用以及如何使用，当然你也可以查看Github的官方文档来了解和学习这些。</p></blockquote><a id="more"></a><ul><li><p>Issue</p></li><li><p>Pull Requset</p></li><li><p>Fork</p></li><li><p>Stars</p></li><li><p>Github Wiki</p></li><li><p>Github Release</p></li><li><p>Github Discussions</p></li><li><p>Github Pages</p></li><li><p>Github Actions</p></li><li><p>Github REST API</p></li><li><p>License</p></li><li><p>username同名仓库</p></li><li><p>username.github.io仓库</p></li><li><p>关于仓库的gh-pages分支</p></li><li><p>如何提Issue</p></li><li><p>Github commit关联Issue的小技巧</p></li><li><p>如何共享Pull Request</p></li><li><p>Github项目的小图标</p></li><li><p>Github Emoji</p></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Github 包含的功能点很多，你知道他们的作用是什么吗？改如何去使用这些功能呢？这里将列出常用的功能点，并描述其功能和什么时候去使用以及如何使用，当然你也可以查看Github的官方文档来了解和学习这些。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Github" scheme="http://yoursite.com/categories/Github/"/>
+    
+    
+    <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+    
+    <category term="Github Pages" scheme="http://yoursite.com/tags/Github-Pages/"/>
+    
+    <category term="Github Actions" scheme="http://yoursite.com/tags/Github-Actions/"/>
+    
+    <category term="Issue" scheme="http://yoursite.com/tags/Issue/"/>
+    
+    <category term="Pull Request" scheme="http://yoursite.com/tags/Pull-Request/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github的神级操作</title>
+    <link href="http://yoursite.com/article/33799c4b.html"/>
+    <id>http://yoursite.com/article/33799c4b.html</id>
+    <published>2022-05-06T14:48:00.000Z</published>
+    <updated>2022-05-06T16:02:27.443Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>GitHub是面向开源及私有软件项目的托管平台，其流行及在开源世界的受欢迎程度自不必多言，但是关于Github的使用你又知道多少呢？这里将介绍下Github的常用快捷键、高级搜索语法和在线查看且运行项目，还有Github的官方文档值得认真读读，可以学到很多有用的点。</p></blockquote><a id="more"></a><h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><p>聚焦于搜索栏：<kbd>S</kbd></p><p>激活文件查找器：<kbd>T</kbd></p><p>跳至代码中的某一行：<kbd>L</kbd></p><p>打开追溯视图：<kbd>B</kbd></p><p>在线VSCode查看：<kbd>。</kbd></p><p>打开命令面板：<kbd>Ctrl</kbd> + <kbd>K</kbd></p><p>查看帮助：<kbd>Shift</kbd> + <kbd>?</kbd></p><p>更多快捷键查看：<a href="https://docs.github.com/cn/get-started/using-github/keyboard-shortcuts">Keyboard shortcuts</a></p><h3 id="关于搜索"><a href="#关于搜索" class="headerlink" title="关于搜索"></a>关于搜索</h3><p>高级搜索面板：<a href="https://github.com/search/advanced">Advanced search</a></p><p>常用搜索语法：</p><table><thead><tr><th>搜索条件 - 找开发者</th><th>备注</th></tr></thead><tbody><tr><td>location:</td><td>location:china，匹配用户填写的地址在china</td></tr><tr><td>language</td><td>language:javascript，匹配开发语音为javascript的开发者</td></tr><tr><td>followers:</td><td>followers:&gt;=1000，匹配超过1000关注者的开发者</td></tr><tr><td>in:fullname</td><td>jack in:fullname，匹配用户名实名为jack的开发者</td></tr></tbody></table><table><thead><tr><th>搜索条件 - 找项目</th><th>备注</th></tr></thead><tbody><tr><td>Awesome+关键字</td><td>神奇的关键字awesome，帮助找到优秀的工具列表</td></tr><tr><td>stars:</td><td>stars:&gt;=500</td></tr><tr><td>language:</td><td>language:javascript</td></tr><tr><td>forks:</td><td>forks:&gt;=500</td></tr></tbody></table><table><thead><tr><th>搜索条件 - 找开发者</th><th>备注</th></tr></thead><tbody><tr><td>in:name xxx</td><td>项目名包含xxx</td></tr><tr><td>in:description xxx</td><td>项目描述包含xxx</td></tr><tr><td>in:readme xxx</td><td>项目介绍文档里含有xxx</td></tr></tbody></table><p>更多搜索相关：<a href="https://docs.github.com/cn/search-github/getting-started-with-searching-on-github/about-searching-on-github">About searching on GitHub</a></p><h3 id="在线运行Github项目"><a href="#在线运行Github项目" class="headerlink" title="在线运行Github项目"></a>在线运行Github项目</h3><p>再Github项目仓库前加上：<code>gitpod.io/#/</code>即可在线打开项目，并且支持在线运行该项目，相当于拥有一台可操作的远程服务器。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 例如原仓库</span></span><br><span class="line">https://github.com/ant-design/ant-design-pro</span><br><span class="line"><span class="comment"># 添加前缀</span></span><br><span class="line">https://gitpod.io/<span class="comment">#/github.com/ant-design/ant-design-pro</span></span><br><span class="line"><span class="comment"># 即可在线查看项目和运行</span></span><br></pre></td></tr></table></figure><p>关于<a href="https://www.gitpod.io/">Gitpod</a>，这是一个与GitHub紧密集成的云IDE，Gitpod为开发人员的GitHub项目提供了一次性的，可随时编程的开发环境。</p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;GitHub是面向开源及私有软件项目的托管平台，其流行及在开源世界的受欢迎程度自不必多言，但是关于Github的使用你又知道多少呢？这里将介绍下Github的常用快捷键、高级搜索语法和在线查看且运行项目，还有Github的官方文档值得认真读读，可以学到很多有用的点。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="GitHub" scheme="http://yoursite.com/categories/GitHub/"/>
+    
+    
+    <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>常用的adb命令</title>
