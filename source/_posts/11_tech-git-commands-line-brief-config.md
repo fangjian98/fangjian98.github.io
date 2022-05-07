@@ -25,7 +25,7 @@ git config --global -e
 [core]
   editor = vim
 [alias]
-	a = addgit 
+    a = add
     co = checkout
     cm = commit
     st = status
@@ -35,12 +35,12 @@ git config --global -e
     lg = log
     cp = cherry-pick
     ca = commit --amend
-	br = branch
-	mg = merge
-	dt = difftool
+    br = branch
+    mg = merge
+    dt = difftool
     mt = mergetool
-	lo = log --oneline
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lo = log --oneline
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
 ```
 
 -  查看Git配置
