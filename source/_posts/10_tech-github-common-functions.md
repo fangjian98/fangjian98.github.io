@@ -1,13 +1,14 @@
 ---
 title: Github的常用功能
-date: 2022-05-06 23:15:04
 categories: Github
 tags:
   - Github
   - Github Pages
-  - Github Actions	
+  - Github Actions
   - Issue
   - Pull Request
+abbrlink: f715120c
+date: 2022-05-06 23:15:04
 ---
 
 > Github 包含的功能点很多，你知道他们的作用是什么吗？改如何去使用这些功能呢？这里将列出常用的功能点，并描述其功能和什么时候去使用以及如何使用，当然你也可以查看Github的官方文档来了解和学习这些。
