@@ -38,5 +38,6 @@ date: 2022-05-04 17:01:12
 署名（BY）-非商业性使用（NC）-相同方式共享（SA）
 署名（BY）-非商业性使用（NC）-禁止演绎（ND）
 
-如果你还不确定该如何选择CC协议，你可以查看 [creativecommons.org/choose](https://creativecommons.org/choose/) 来生成一个许可证。
+如果你还不确定该如何选择CC协议，你可以查看 [creativecommons.org/choose](https://creativecommons.org/choose/) 来生成一个许可证。现在最流行的知识共享协议是`CC 4.0 BY-NC-SA版权协议`
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="left"/></br>

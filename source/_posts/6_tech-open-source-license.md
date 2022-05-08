@@ -89,3 +89,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
+
+### 查询开源协议的网站
+
+1. [spdx.org/licenses/](https://spdx.org/licenses/)
+2. [opensource.org/licenses](https://opensource.org/licenses)
+3. [choosealicense.com/](https://choosealicense.com/)
+
