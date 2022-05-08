@@ -1,10 +1,11 @@
 ---
 title: 关于Git忽略文件.gitignore
-date: 2022-05-08 20:48:47
 categories: Git
 tags:
   - Git
   - gitignore
+abbrlink: d04701bd
+date: 2022-05-08 20:48:47
 ---
 
 > 在工程中，并不是所有文件都需要保存到版本库中的，例如“target”目录及目录下的文件就可以忽略。在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件或目录。

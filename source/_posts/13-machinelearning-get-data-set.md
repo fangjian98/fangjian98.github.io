@@ -1,11 +1,12 @@
 ---
 title: 寻找机器学习数据集
-date: 2022-05-08 20:41:46
 categories: Machine Learning
 tags:
   - MachineLearning
   - DataSet
   - ArtificialIntelligence
+abbrlink: 543367d4
+date: 2022-05-08 20:41:46
 ---
 
 > 数据集是人工智能算法训练和测试的基础，不同专业的人工智能算法研究需要用到不同专业的数据集，如下为网上推荐的几种寻找机器学习数据集的方法，另附数据集资源。
