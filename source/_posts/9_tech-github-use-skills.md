@@ -1,6 +1,6 @@
 ---
 title: Github的神级操作
-categories: GitHub
+categories: Github
 tags: Github
 abbrlink: 33799c4b
 date: 2022-05-06 22:48:00
