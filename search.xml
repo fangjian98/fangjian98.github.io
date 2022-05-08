@@ -92,224 +92,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
-    <url>/article/84ebc250.html</url>
-    <content><![CDATA[<blockquote>
-<p>通过Github搭建个人博客blog：GitHub Pages是一个静态站点托管服务，可直接从GitHub上的存储库获取HTML，CSS和JavaScript文件，还可以选择在构建过程中运行这些文件并发布网站。Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="相关组件"><a href="#相关组件" class="headerlink" title="相关组件"></a>相关组件</h2><ul>
-<li>github pages</li>
-<li>node.js</li>
-<li>hexo</li>
-</ul>
-<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><ul>
-<li>下载地址</li>
-</ul>
-<p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
-<ul>
-<li>测试</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装成功测试cmd</span></span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo安装与配置"><a href="#hexo安装与配置" class="headerlink" title="hexo安装与配置"></a>hexo安装与配置</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cmd切换到blog文件夹下，输入安装hexo命令</span><br><span class="line">npm install hexo -g</span><br><span class="line"></span><br><span class="line"># 安装成功测试</span><br><span class="line">hexo -v</span><br><span class="line"></span><br><span class="line"># hexo初始化</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 安装必要的组件</span><br><span class="line">npm isntall</span><br><span class="line"></span><br><span class="line"># 开启服务器</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"># 显示本地博客地址，复制位置到浏览器打开后显示</span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"># 如果无法显示网页,说明端口可能被占用,更改端口便可</span><br><span class="line">hexo server -p 4001</span><br></pre></td></tr></table></figure>
-
-<h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><ul>
-<li>下载地址</li>
-</ul>
-<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<ul>
-<li>配置</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成rsa命令</span></span><br><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;test@hotmail.com&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加密钥到ssh-agent</span></span><br><span class="line"><span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(ssh-agent -s)</span>&quot;</span></span><br><span class="line"><span class="comment"># 添加生成的SSH key到ssh-agent</span></span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将id_rsa.pub文件里的内容复制到add SSH keys</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试是否成功</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<p>再blog文件夹中找到_config.yml文件，修改repo值(末尾)</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:test/test.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h2 id="创建新博客"><a href="#创建新博客" class="headerlink" title="创建新博客"></a>创建新博客</h2><ul>
-<li>流程</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建博客</span></span><br><span class="line">hexo new <span class="string">&quot;blog name&quot;</span></span><br><span class="line"><span class="comment"># 博客生成</span></span><br><span class="line">hexo g</span><br><span class="line"><span class="comment"># 博客部署</span></span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 博客生成+部署</span></span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>默认生成的post</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: blog name</span><br><span class="line">date: 2022-05-05 22:51:03</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>关于post其他标签</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>描述</th>
-<th>默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>layout</td>
-<td>布局</td>
-<td></td>
-</tr>
-<tr>
-<td>title</td>
-<td>标题</td>
-<td>文章的文件名</td>
-</tr>
-<tr>
-<td>date</td>
-<td>建立日期</td>
-<td>文件建立日期</td>
-</tr>
-<tr>
-<td>updated</td>
-<td>更新日期</td>
-<td>文件更新日期</td>
-</tr>
-<tr>
-<td>comments</td>
-<td>开启文章的评论功能</td>
-<td>true</td>
-</tr>
-<tr>
-<td>tags</td>
-<td>标签（不适用于分页）</td>
-<td></td>
-</tr>
-<tr>
-<td>categories</td>
-<td>分类（不适用于分页）</td>
-<td></td>
-</tr>
-<tr>
-<td>permalink</td>
-<td>覆盖文章网址</td>
-<td></td>
-</tr>
-<tr>
-<td>keywords</td>
-<td>仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
-<td></td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: blog name</span><br><span class="line">date: 2022-05-05 22:51:03</span><br><span class="line">categories:</span><br><span class="line">	- 分类</span><br><span class="line">	- 子分类</span><br><span class="line">tags:</span><br><span class="line">	- 标签1</span><br><span class="line">	- 标签2</span><br></pre></td></tr></table></figure>
-
-
-<ul>
-<li>博客编辑器typora</li>
-</ul>
-<p><a href="https://www.typora.io/">https://www.typora.io/</a></p>
-<ul>
-<li>博客图片上传问题</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 修改_config.yml里的psot_asset_folder:设置为true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># cmd执行</span></span><br><span class="line">npm install hexo-asset-image --save</span><br><span class="line">(或npm install https://github.com/CodeFalling/hexo-asset-image --save)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用hexo new &quot;blog name&quot;新建博客时，_posts目录下会出现同名*.md和文件夹，图片放在此文件夹中</span></span><br><span class="line">![](本地图片测试/logo.jpg) </span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="博客个性化设置"><a href="#博客个性化设置" class="headerlink" title="博客个性化设置"></a>博客个性化设置</h2><h3 id="下载hexo主题（自选主题模板）"><a href="#下载hexo主题（自选主题模板）" class="headerlink" title="下载hexo主题（自选主题模板）"></a>下载hexo主题（自选主题模板）</h3><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-<p><img src="/images/assets/theme.jpg" alt="theme"></p>
-<h3 id="下载next主题"><a href="#下载next主题" class="headerlink" title="下载next主题"></a>下载next主题</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改-blog-config-yml"><a href="#修改-blog-config-yml" class="headerlink" title="修改./blog/_config.yml"></a>修改./blog/_config.yml</h3><ul>
-<li>主题选择</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>网页信息</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Just_Paranoid</span><br><span class="line">subtitle: 特立独行</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords: &#x27;&#x27;</span><br><span class="line">author: fangjian98</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改-blog-themes-next-config-yml"><a href="#修改-blog-themes-next-config-yml" class="headerlink" title="修改./blog/themes/next/_config.yml"></a>修改./blog/themes/next/_config.yml</h3><ul>
-<li>选择主题样式<br>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白<br>Mist - Muse 的紧凑版本，整洁有序的单栏外观<br>Pisces - 双栏 Scheme，小家碧玉似的清新<br>Gemini - 左侧网站信息及目录，块+片段结构布局</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Scheme Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>网站图标</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Site Information Settings</span><br><span class="line"># See: https://theme-next.org/docs/getting-started/</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">favicon:</span><br><span class="line">  small: /images/favicon-16x16-next.png</span><br><span class="line">  medium: /images/favicon-32x32-next.png</span><br><span class="line">  apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: /images/logo.svg</span><br><span class="line">  #android_manifest: /images/manifest.json</span><br><span class="line">  #ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
-
-<p>ico图标下载：<a href="https://icons8.com/icons">https://icons8.com/icons</a>,</p>
-<p>ico图标制作：<a href="http://www.bitbug.net/">http://www.bitbug.net/</a></p>
-<ul>
-<li>主页显示摘要</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span></span><br><span class="line">excerpt_description: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read more button</span></span><br><span class="line"><span class="comment"># If true, the read more button will be displayed in excerpt section.</span></span><br><span class="line">read_more_btn: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>在文章中添加该标志，本文在首页的预览就会显示到这个段落为止。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>头像</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: #&#x2F;images&#x2F;avatar.gif</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: false</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>社交链接</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Social Links</span><br><span class="line"># Usage: &#96;Key: permalink || icon&#96;</span><br><span class="line"># Key is the link label showing to end users.</span><br><span class="line"># Value before &#96;||&#96; delimiter is the target permalink, value after &#96;||&#96; delimiter is the name of Font Awesome icon.</span><br><span class="line">social:</span><br><span class="line">  #GitHub: https:&#x2F;&#x2F;github.com&#x2F;yourname || fab fa-github</span><br><span class="line">  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span><br><span class="line">  #Weibo: https:&#x2F;&#x2F;weibo.com&#x2F;yourname || fab fa-weibo</span><br><span class="line">  #Google: https:&#x2F;&#x2F;plus.google.com&#x2F;yourname || fab fa-google</span><br><span class="line">  #Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;yourname || fab fa-twitter</span><br><span class="line">  #FB Page: https:&#x2F;&#x2F;www.facebook.com&#x2F;yourname || fab fa-facebook</span><br><span class="line">  #StackOverflow: https:&#x2F;&#x2F;stackoverflow.com&#x2F;yourname || fab fa-stack-overflow</span><br><span class="line">  #YouTube: https:&#x2F;&#x2F;youtube.com&#x2F;yourname || fab fa-youtube</span><br><span class="line">  #Instagram: https:&#x2F;&#x2F;instagram.com&#x2F;yourname || fab fa-instagram</span><br><span class="line">  #Skype: skype:yourname?call|chat || fab fa-skype</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>创建菜单</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;categories&quot;</span><br><span class="line">hexo new page &quot;tags&quot;</span><br><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Menu Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Usage: &#96;Key: &#x2F;link&#x2F; || icon&#96;</span><br><span class="line"># Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.</span><br><span class="line"># Value before &#96;||&#96; delimiter is the target link, value after &#96;||&#96; delimiter is the name of Font Awesome icon.</span><br><span class="line"># When running the site in a subdirectory (e.g. yoursite.com&#x2F;blog), remove the leading slash from link value (&#x2F;archives -&gt; archives).</span><br><span class="line"># External url should start with http:&#x2F;&#x2F; or https:&#x2F;&#x2F;</span><br><span class="line">menu:</span><br><span class="line">  home: &#x2F; || fa fa-home</span><br><span class="line">  about: &#x2F;about&#x2F; || fa fa-user</span><br><span class="line">  #tags: &#x2F;tags&#x2F; || fa fa-tags</span><br><span class="line">  #categories: &#x2F;categories&#x2F; || fa fa-th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || fa fa-archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat</span><br><span class="line"></span><br><span class="line"># Enable &#x2F; Disable menu icons &#x2F; item badges.</span><br><span class="line">menu_settings:</span><br><span class="line">  icons: true</span><br><span class="line">  badges: false</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改完主题后需要重新部署</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>增加本地搜索</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装hexo-generator-searchdb，在站点的根目录下执行以下命令</span></span><br><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 根目录_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置站点搜索信息</span></span><br><span class="line">search:</span><br><span class="line"> path: search.xml</span><br><span class="line"> field: post</span><br><span class="line"> format: html</span><br><span class="line"> <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 修改themes&#x2F;next&#x2F;_config.yml</span><br><span class="line"></span><br><span class="line">local_search:</span><br><span class="line"> enable: true</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>显示浏览进度</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.</span></span><br><span class="line">  sidebar: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line">  scrollpercent: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>RSS</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装hexo-generator-feed</span></span><br><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># feed</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/hexojs/hexo-generator-feed</span></span><br><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>不开启不蒜子博客访问量统计</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span><br><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span><br><span class="line">busuanzi_count:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  total_visitors: <span class="literal">true</span></span><br><span class="line">  total_visitors_icon: fa fa-user</span><br><span class="line">  total_views: <span class="literal">true</span></span><br><span class="line">  total_views_icon: fa fa-eye</span><br><span class="line">  post_views: <span class="literal">true</span></span><br><span class="line">  post_views_icon: fa fa-eye</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改博文链接地址<code>/posts/xxxxx.html</code></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br><span class="line"></span><br><span class="line"># 根目录下的 _config.yml 文件</span><br><span class="line">permalink: posts&#x2F;:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>首页title优化<code>网站名称-网站描述</code></li>
-</ul>
-<p>更改<code>index.swig</code>文件<code>your-hexo-site\themes\next\layout</code></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; &#123;% endblock %&#125;</span><br><span class="line"># 改成</span><br><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; - &#123;&#123; theme.description &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Github</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Hexo</tag>
-        <tag>Node.js</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/article/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -402,7 +184,8 @@
 <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" align="left"/></br></p>
 <h3 id="关于CC许可类型"><a href="#关于CC许可类型" class="headerlink" title="关于CC许可类型"></a>关于CC许可类型</h3><p><strong>1.四种核心权利</strong><br>署名（Attribution，简写为BY）：必须提到原作者。<br>非商业用途（Noncommercial，简写为NC）：不得用于盈利性目的。<br>禁止演绎（No Derivative Works，简写为ND）：不得修改原作品, 不得再创作。<br>相同方式共享（Share Alike，简写为SA）：允许修改原作品，但必须使用相同的许可证发布。</p>
 <p><strong>2.六种组合</strong><br>署名（BY）<br>署名（BY）-相同方式共享（SA）<br>署名（BY）-禁止演绎（ND）<br>署名（BY）-非商业性使用（NC）<br>署名（BY）-非商业性使用（NC）-相同方式共享（SA）<br>署名（BY）-非商业性使用（NC）-禁止演绎（ND）</p>
-<p>如果你还不确定该如何选择CC协议，你可以查看 <a href="https://creativecommons.org/choose/">creativecommons.org/choose</a> 来生成一个许可证。</p>
+<p>如果你还不确定该如何选择CC协议，你可以查看 <a href="https://creativecommons.org/choose/">creativecommons.org/choose</a> 来生成一个许可证。现在最流行的知识共享协议是<code>CC 4.0 BY-NC-SA版权协议</code></p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="left"/></br></p>
 ]]></content>
       <categories>
         <category>技术流</category>
@@ -410,21 +193,6 @@
       <tags>
         <tag>Creative Commons Licenses</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>编程语言的Hello World程序</title>
-    <url>/article/caca35c0.html</url>
-    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
-
-]]></content>
   </entry>
   <entry>
     <title>开源许可协议 Open Source License</title>
@@ -455,6 +223,12 @@
 <li><a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL3.0</a></li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;one line to give the program&#39;s name and a brief idea of what it does.&gt;</span><br><span class="line"></span><br><span class="line">Copyright (C) &lt;year&gt;  &lt;name of author&gt;</span><br><span class="line"></span><br><span class="line">This program is free software: you can redistribute it and&#x2F;or modify</span><br><span class="line">it under the terms of the GNU General Public License as published by</span><br><span class="line">the Free Software Foundation, either version 3 of the License, or</span><br><span class="line">(at your option) any later version.</span><br><span class="line"></span><br><span class="line">This program is distributed in the hope that it will be useful,</span><br><span class="line">but WITHOUT ANY WARRANTY; without even the implied warranty of</span><br><span class="line">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span><br><span class="line">GNU General Public License for more details.</span><br><span class="line"></span><br><span class="line">You should have received a copy of the GNU General Public License</span><br><span class="line">along with this program.  If not, see &lt;http:&#x2F;&#x2F;www.gnu.org&#x2F;licenses&#x2F;&gt;.</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询开源协议的网站"><a href="#查询开源协议的网站" class="headerlink" title="查询开源协议的网站"></a>查询开源协议的网站</h3><ol>
+<li><a href="https://spdx.org/licenses/">spdx.org/licenses/</a></li>
+<li><a href="https://opensource.org/licenses">opensource.org/licenses</a></li>
+<li><a href="https://choosealicense.com/">choosealicense.com/</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>技术流</category>
@@ -796,6 +570,239 @@
         <tag>Git</tag>
         <tag>gitignore</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
+    <url>/article/84ebc250.html</url>
+    <content><![CDATA[<blockquote>
+<p>通过Github搭建个人博客blog：GitHub Pages是一个静态站点托管服务，可直接从GitHub上的存储库获取HTML，CSS和JavaScript文件，还可以选择在构建过程中运行这些文件并发布网站。Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="相关组件"><a href="#相关组件" class="headerlink" title="相关组件"></a>相关组件</h2><ul>
+<li>github pages</li>
+<li>node.js</li>
+<li>hexo</li>
+</ul>
+<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><ul>
+<li>下载地址</li>
+</ul>
+<p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+<ul>
+<li>测试</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装成功测试cmd</span></span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo安装与配置"><a href="#hexo安装与配置" class="headerlink" title="hexo安装与配置"></a>hexo安装与配置</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cmd切换到blog文件夹下，输入安装hexo命令</span><br><span class="line">npm install hexo -g</span><br><span class="line"></span><br><span class="line"># 安装成功测试</span><br><span class="line">hexo -v</span><br><span class="line"></span><br><span class="line"># hexo初始化</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 安装必要的组件</span><br><span class="line">npm isntall</span><br><span class="line"></span><br><span class="line"># 开启服务器</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"># 显示本地博客地址，复制位置到浏览器打开后显示</span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"># 如果无法显示网页,说明端口可能被占用,更改端口便可</span><br><span class="line">hexo server -p 4001</span><br></pre></td></tr></table></figure>
+
+<h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><ul>
+<li>下载地址</li>
+</ul>
+<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<ul>
+<li>配置</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成rsa命令</span></span><br><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;test@hotmail.com&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加密钥到ssh-agent</span></span><br><span class="line"><span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(ssh-agent -s)</span>&quot;</span></span><br><span class="line"><span class="comment"># 添加生成的SSH key到ssh-agent</span></span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将id_rsa.pub文件里的内容复制到add SSH keys</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试是否成功</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>再blog文件夹中找到_config.yml文件，修改repo值(末尾)</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:test/test.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建新博客"><a href="#创建新博客" class="headerlink" title="创建新博客"></a>创建新博客</h2><ul>
+<li>流程</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建博客</span></span><br><span class="line">hexo new <span class="string">&quot;blog name&quot;</span></span><br><span class="line"><span class="comment"># 博客生成</span></span><br><span class="line">hexo g</span><br><span class="line"><span class="comment"># 博客部署</span></span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 博客生成+部署</span></span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>默认生成的post</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: blog name</span><br><span class="line">date: 2022-05-05 22:51:03</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>关于post其他标签</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>layout</td>
+<td>布局</td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>标题</td>
+<td>文章的文件名</td>
+</tr>
+<tr>
+<td>date</td>
+<td>建立日期</td>
+<td>文件建立日期</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>更新日期</td>
+<td>文件更新日期</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>开启文章的评论功能</td>
+<td>true</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>标签（不适用于分页）</td>
+<td></td>
+</tr>
+<tr>
+<td>categories</td>
+<td>分类（不适用于分页）</td>
+<td></td>
+</tr>
+<tr>
+<td>permalink</td>
+<td>覆盖文章网址</td>
+<td></td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: blog name</span><br><span class="line">date: 2022-05-05 22:51:03</span><br><span class="line">categories:</span><br><span class="line">	- 分类</span><br><span class="line">	- 子分类</span><br><span class="line">tags:</span><br><span class="line">	- 标签1</span><br><span class="line">	- 标签2</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>博客编辑器typora</li>
+</ul>
+<p><a href="https://www.typora.io/">https://www.typora.io/</a></p>
+<ul>
+<li>博客图片上传问题</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 修改_config.yml里的psot_asset_folder:设置为true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># cmd执行</span></span><br><span class="line">npm install hexo-asset-image --save</span><br><span class="line">(或npm install https://github.com/CodeFalling/hexo-asset-image --save)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用hexo new &quot;blog name&quot;新建博客时，_posts目录下会出现同名*.md和文件夹，图片放在此文件夹中</span></span><br><span class="line">![](本地图片测试/logo.jpg) </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="博客个性化设置"><a href="#博客个性化设置" class="headerlink" title="博客个性化设置"></a>博客个性化设置</h2><h3 id="下载hexo主题（自选主题模板）"><a href="#下载hexo主题（自选主题模板）" class="headerlink" title="下载hexo主题（自选主题模板）"></a>下载hexo主题（自选主题模板）</h3><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p><img src="/images/assets/theme.jpg" alt="theme"></p>
+<h3 id="下载next主题"><a href="#下载next主题" class="headerlink" title="下载next主题"></a>下载next主题</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改-blog-config-yml"><a href="#修改-blog-config-yml" class="headerlink" title="修改./blog/_config.yml"></a>修改./blog/_config.yml</h3><ul>
+<li>主题选择</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>网页信息</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Just_Paranoid</span><br><span class="line">subtitle: 特立独行</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords: &#x27;&#x27;</span><br><span class="line">author: fangjian98</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改-blog-themes-next-config-yml"><a href="#修改-blog-themes-next-config-yml" class="headerlink" title="修改./blog/themes/next/_config.yml"></a>修改./blog/themes/next/_config.yml</h3><ul>
+<li>选择主题样式<br>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白<br>Mist - Muse 的紧凑版本，整洁有序的单栏外观<br>Pisces - 双栏 Scheme，小家碧玉似的清新<br>Gemini - 左侧网站信息及目录，块+片段结构布局</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Scheme Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>网站图标</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Site Information Settings</span><br><span class="line"># See: https://theme-next.org/docs/getting-started/</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">favicon:</span><br><span class="line">  small: /images/favicon-16x16-next.png</span><br><span class="line">  medium: /images/favicon-32x32-next.png</span><br><span class="line">  apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: /images/logo.svg</span><br><span class="line">  #android_manifest: /images/manifest.json</span><br><span class="line">  #ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
+
+<p>ico图标下载：<a href="https://icons8.com/icons">https://icons8.com/icons</a>,</p>
+<p>ico图标制作：<a href="http://www.bitbug.net/">http://www.bitbug.net/</a></p>
+<ul>
+<li>主页显示摘要</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span></span><br><span class="line">excerpt_description: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read more button</span></span><br><span class="line"><span class="comment"># If true, the read more button will be displayed in excerpt section.</span></span><br><span class="line">read_more_btn: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>在文章中添加该标志，本文在首页的预览就会显示到这个段落为止。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>头像</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: #&#x2F;images&#x2F;avatar.gif</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: false</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>社交链接</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Social Links</span><br><span class="line"># Usage: &#96;Key: permalink || icon&#96;</span><br><span class="line"># Key is the link label showing to end users.</span><br><span class="line"># Value before &#96;||&#96; delimiter is the target permalink, value after &#96;||&#96; delimiter is the name of Font Awesome icon.</span><br><span class="line">social:</span><br><span class="line">  #GitHub: https:&#x2F;&#x2F;github.com&#x2F;yourname || fab fa-github</span><br><span class="line">  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span><br><span class="line">  #Weibo: https:&#x2F;&#x2F;weibo.com&#x2F;yourname || fab fa-weibo</span><br><span class="line">  #Google: https:&#x2F;&#x2F;plus.google.com&#x2F;yourname || fab fa-google</span><br><span class="line">  #Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;yourname || fab fa-twitter</span><br><span class="line">  #FB Page: https:&#x2F;&#x2F;www.facebook.com&#x2F;yourname || fab fa-facebook</span><br><span class="line">  #StackOverflow: https:&#x2F;&#x2F;stackoverflow.com&#x2F;yourname || fab fa-stack-overflow</span><br><span class="line">  #YouTube: https:&#x2F;&#x2F;youtube.com&#x2F;yourname || fab fa-youtube</span><br><span class="line">  #Instagram: https:&#x2F;&#x2F;instagram.com&#x2F;yourname || fab fa-instagram</span><br><span class="line">  #Skype: skype:yourname?call|chat || fab fa-skype</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建菜单</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;categories&quot;</span><br><span class="line">hexo new page &quot;tags&quot;</span><br><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Menu Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Usage: &#96;Key: &#x2F;link&#x2F; || icon&#96;</span><br><span class="line"># Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.</span><br><span class="line"># Value before &#96;||&#96; delimiter is the target link, value after &#96;||&#96; delimiter is the name of Font Awesome icon.</span><br><span class="line"># When running the site in a subdirectory (e.g. yoursite.com&#x2F;blog), remove the leading slash from link value (&#x2F;archives -&gt; archives).</span><br><span class="line"># External url should start with http:&#x2F;&#x2F; or https:&#x2F;&#x2F;</span><br><span class="line">menu:</span><br><span class="line">  home: &#x2F; || fa fa-home</span><br><span class="line">  about: &#x2F;about&#x2F; || fa fa-user</span><br><span class="line">  #tags: &#x2F;tags&#x2F; || fa fa-tags</span><br><span class="line">  #categories: &#x2F;categories&#x2F; || fa fa-th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || fa fa-archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat</span><br><span class="line"></span><br><span class="line"># Enable &#x2F; Disable menu icons &#x2F; item badges.</span><br><span class="line">menu_settings:</span><br><span class="line">  icons: true</span><br><span class="line">  badges: false</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改完主题后需要重新部署</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>增加本地搜索</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装hexo-generator-searchdb，在站点的根目录下执行以下命令</span></span><br><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 根目录_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置站点搜索信息</span></span><br><span class="line">search:</span><br><span class="line"> path: search.xml</span><br><span class="line"> field: post</span><br><span class="line"> format: html</span><br><span class="line"> <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 修改themes&#x2F;next&#x2F;_config.yml</span><br><span class="line"></span><br><span class="line">local_search:</span><br><span class="line"> enable: true</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>显示浏览进度</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.</span></span><br><span class="line">  sidebar: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line">  scrollpercent: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>RSS</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装hexo-generator-feed</span></span><br><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># feed</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/hexojs/hexo-generator-feed</span></span><br><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>不开启不蒜子博客访问量统计</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span><br><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span><br><span class="line">busuanzi_count:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  total_visitors: <span class="literal">true</span></span><br><span class="line">  total_visitors_icon: fa fa-user</span><br><span class="line">  total_views: <span class="literal">true</span></span><br><span class="line">  total_views_icon: fa fa-eye</span><br><span class="line">  post_views: <span class="literal">true</span></span><br><span class="line">  post_views_icon: fa fa-eye</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改博文链接地址<code>/posts/xxxxx.html</code></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br><span class="line"></span><br><span class="line"># 根目录下的 _config.yml 文件</span><br><span class="line">permalink: posts&#x2F;:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>首页title优化<code>网站名称-网站描述</code></li>
+</ul>
+<p>更改<code>index.swig</code>文件<code>your-hexo-site\themes\next\layout</code></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; &#123;% endblock %&#125;</span><br><span class="line"># 改成</span><br><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; - &#123;&#123; theme.description &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
+        <tag>Node.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编程语言的Hello World程序</title>
+    <url>/article/caca35c0.html</url>
+    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
+
+]]></content>
   </entry>
   <entry>
     <title>关于我</title>
