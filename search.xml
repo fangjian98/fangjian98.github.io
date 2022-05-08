@@ -676,10 +676,125 @@
 <p>关于<a href="https://www.gitpod.io/">Gitpod</a>，这是一个与GitHub紧密集成的云IDE，Gitpod为开发人员的GitHub项目提供了一次性的，可随时编程的开发环境。</p>
 ]]></content>
       <categories>
-        <category>GitHub</category>
+        <category>Github</category>
       </categories>
       <tags>
         <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>寻找机器学习数据集</title>
+    <url>/article/543367d4.html</url>
+    <content><![CDATA[<blockquote>
+<p>数据集是人工智能算法训练和测试的基础，不同专业的人工智能算法研究需要用到不同专业的数据集，如下为网上推荐的几种寻找机器学习数据集的方法，另附数据集资源。</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li>Kaggle数据集</li>
+</ol>
+<p>数据集地址：<a href="https://www.kaggle.com/datasets">https://www.kaggle.com/datasets</a></p>
+<ol start="2">
+<li>Amazon数据集</li>
+</ol>
+<p>数据集地址：<a href="https://registry.opendata.aws/">https://registry.opendata.aws/</a></p>
+<p>该数据源包含多个不同领域的数据集，如：公共交通、生态资源、卫星图像等。</p>
+<p>网页中也有一个搜索框来帮助用户寻找想要的数据集，还有所有数据集的描述和使用示例，这些数据集信息丰富且易于使用！</p>
+<p>数据集存储在Amazon Web Services (AWS)资源中，比如Amazon S3——云中的一个高度可伸缩的对象存储服务。</p>
+<p>如果用户正在使用AWS进行机器学习实验和开发，这将非常方便，由于它是AWS网络的本地数据，因此数据集的传输将非常快。</p>
+<ol start="3">
+<li>UCI机器学习资源库</li>
+</ol>
+<p>数据集地址：<a href="http://archive.ics.uci.edu/ml/datasets">http://archive.ics.uci.edu/ml/datasets</a></p>
+<p>另一个来自加州大学信息与计算机科学学院的大型资源库，包含100多个数据集。</p>
+<p>用户可以找到单变量和多变量时间序列数据集，分类、回归或推荐系统的数据集。</p>
+<p>有些UCI的数据集已经是被清洗过的。</p>
+<ol start="4">
+<li>谷歌数据集搜索引擎</li>
+</ol>
+<p>数据集地址：<a href="https://toolbox.google.com/datasetsearch">https://toolbox.google.com/datasetsearch</a></p>
+<p>在2018年末，谷歌做了他们最擅长的事情，推出了另一项伟大的服务——它是一个可以按名称搜索数据集的工具箱。</p>
+<p>他们的目标是统一成千上万个不同的数据集存储库，使这些数据能够且易被发现。</p>
+<ol start="5">
+<li>微软数据集</li>
+</ol>
+<p>数据集地址：<a href="https://msropendata.com/">https://msropendata.com/</a></p>
+<p>2018年7月，微软与外部研究社区共同宣布推出“Microsoft Research Open Data”。</p>
+<p>它在云中包含一个数据存储库，用于促进全球研究社区之间的协作。它提供了一系列用于已发表研究的、经过处理的数据集。</p>
+<ol start="6">
+<li>Awesome Public Datasets Collection</li>
+</ol>
+<p>数据集地址：<a href="https://github.com/awesomedata/awesome-public-datasets">https://github.com/awesomedata/awesome-public-datasets</a></p>
+<p>这是一个按“主题”组织的数据集，比如生物学、经济学、教育学等。</p>
+<p>这里列出的大多数数据集都是免费的，但是在使用任何数据集之前，用户需要检查一下许可要求。</p>
+<ol start="7">
+<li>政府数据集</li>
+</ol>
+<p>政府相关数据集也很容易找到的。</p>
+<p>许多国家为了提高透明度，向公众分享了各种数据集。以下是一些例子：</p>
+<p>欧盟开放数据门户：欧洲政府数据集。</p>
+<p>数据集地址：<a href="https://data.europa.eu/euodp/data/dataset">https://data.europa.eu/euodp/data/dataset</a></p>
+<p>美国政府数据：目前由于一些非政治性原因，暂时无法访问。</p>
+<p>数据集地址：<a href="https://www.data.gov/">https://www.data.gov/</a></p>
+<p>新西兰政府数据集：</p>
+<p>数据集地址：<a href="https://catalogue.data.govt.nz/dataset">https://catalogue.data.govt.nz/dataset</a></p>
+<p>印度政府数据集：</p>
+<p>数据集地址：<a href="https://data.gov.in/">https://data.gov.in/</a></p>
+<ol start="8">
+<li>计算机视觉数据集</li>
+</ol>
+<p>数据集地址：<a href="https://www.visualdata.io/">https://www.visualdata.io/</a></p>
+<p>Visual Data包含一些可以用来构建计算机视觉(CV)模型的大型数据集。</p>
+<p>用户可以通过特定的CV主题查找特定的数据集，如语义分割、图像标题、图像生成，甚至可以通过解决方案(自动驾驶汽车数据集)查找特定的数据集。</p>
+<p>参考链接：<br><a href="https://blog.csdn.net/Sophia_11/article/details/86617383">https://blog.csdn.net/Sophia_11/article/details/86617383</a><br><a href="https://towardsdatascience.com/top-sources-for-machine-learning-datasets-bb6d0dc3378b">https://towardsdatascience.com/top-sources-for-machine-learning-datasets-bb6d0dc3378b</a><br><a href="https://blog.csdn.net/mbdong/article/details/121383725">https://blog.csdn.net/mbdong/article/details/121383725</a><br><a href="https://www.zhihu.com/question/327740767">https://www.zhihu.com/question/327740767</a></p>
+]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>MachineLearning</tag>
+        <tag>DataSet</tag>
+        <tag>ArtificialIntelligence</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Git忽略文件.gitignore</title>
+    <url>/article/d04701bd.html</url>
+    <content><![CDATA[<blockquote>
+<p>在工程中，并不是所有文件都需要保存到版本库中的，例如“target”目录及目录下的文件就可以忽略。在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件或目录。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Git-忽略规则优先级"><a href="#Git-忽略规则优先级" class="headerlink" title="Git 忽略规则优先级"></a>Git 忽略规则优先级</h3><p>在 .gitingore 文件中，每一行指定一个忽略规则，Git 检查忽略规则的时候有多个来源，它的优先级如下（由高到低）：</p>
+<ol>
+<li>从命令行中读取可用的忽略规则</li>
+<li>当前目录定义的规则</li>
+<li>父级目录定义的规则，依次递推</li>
+<li>$GIT_DIR/info/exclude 文件中定义的规则</li>
+<li>core.excludesfile中定义的全局规则</li>
+</ol>
+<h3 id="Git-忽略规则匹配语法"><a href="#Git-忽略规则匹配语法" class="headerlink" title="Git 忽略规则匹配语法"></a>Git 忽略规则匹配语法</h3><p>在 .gitignore 文件中，每一行的忽略规则的语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* 空格不匹配任意文件，可作为分隔符，可用反斜杠转义</span><br><span class="line">* 开头的文件标识注释，可以使用反斜杠进行转义</span><br><span class="line">* ! 开头的模式标识否定，该文件将会再次被包含，如果排除了该文件的父级目录，则使用 ! 也不会再次被包含。可以使用反斜杠进行转义</span><br><span class="line">* &#x2F; 结束的模式只匹配文件夹以及在该文件夹路径下的内容，但是不匹配该文件</span><br><span class="line">* &#x2F; 开始的模式匹配项目跟目录</span><br><span class="line">* 如果一个模式不包含斜杠，则它匹配相对于当前 .gitignore 文件路径的内容，如果该模式不在 .gitignore 文件中，则相对于项目根目录</span><br><span class="line">* ** 匹配多级目录，可在开始，中间，结束</span><br><span class="line">* ? 通用匹配单个字符</span><br><span class="line">* * 通用匹配零个或多个字符</span><br><span class="line">* [] 通用匹配单个字符列表</span><br><span class="line">12345678910</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用匹配示例"><a href="#常用匹配示例" class="headerlink" title="常用匹配示例"></a>常用匹配示例</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bin&#x2F;: 忽略当前路径下的bin文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件</span><br><span class="line">&#x2F;bin: 忽略根目录下的bin文件</span><br><span class="line">&#x2F;*.c: 忽略 cat.c，不忽略 build&#x2F;cat.c</span><br><span class="line">debug&#x2F;*.obj: 忽略 debug&#x2F;io.obj，不忽略 debug&#x2F;common&#x2F;io.obj 和 tools&#x2F;debug&#x2F;io.obj</span><br><span class="line">**&#x2F;foo: 忽略&#x2F;foo, a&#x2F;foo, a&#x2F;b&#x2F;foo等</span><br><span class="line">a&#x2F;**&#x2F;b: 忽略a&#x2F;b, a&#x2F;x&#x2F;b, a&#x2F;x&#x2F;y&#x2F;b等</span><br><span class="line">!&#x2F;bin&#x2F;run.sh: 不忽略 bin 目录下的 run.sh 文件</span><br><span class="line">*.log: 忽略所有 .log 文件</span><br><span class="line">config.php: 忽略当前路径的 config.php 文件</span><br><span class="line">123456789</span><br></pre></td></tr></table></figure>
+
+<h3 id="gitignore规则不生效"><a href="#gitignore规则不生效" class="headerlink" title=".gitignore规则不生效"></a>.gitignore规则不生效</h3><p>.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。</p>
+<p>解决方法就是先把本地缓存删除（改变成未track状态），然后再提交:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm -r --cached .</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;update .gitignore&#39;</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<h3 id="Android-APK项目参考-gitignore"><a href="#Android-APK项目参考-gitignore" class="headerlink" title="Android APK项目参考.gitignore"></a>Android APK项目参考<code>.gitignore</code></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># built application files</span><br><span class="line">*.apk</span><br><span class="line">*.ap_</span><br><span class="line"></span><br><span class="line"># files for the dex VM</span><br><span class="line">*.dex</span><br><span class="line"></span><br><span class="line"># Java class files</span><br><span class="line">*.class</span><br><span class="line"></span><br><span class="line"># generated files</span><br><span class="line">bin&#x2F;</span><br><span class="line">gen&#x2F;</span><br><span class="line"></span><br><span class="line"># Ignore gradle files</span><br><span class="line">.gradle&#x2F;</span><br><span class="line">build&#x2F;</span><br><span class="line"></span><br><span class="line"># Local configuration file (sdk path, etc)</span><br><span class="line">local.properties</span><br><span class="line"></span><br><span class="line"># Proguard folder generated by Eclipse</span><br><span class="line">proguard&#x2F;</span><br><span class="line">proguard-project.txt</span><br><span class="line"></span><br><span class="line"># Eclipse files</span><br><span class="line">.project</span><br><span class="line">.classpath</span><br><span class="line">.settings&#x2F;</span><br><span class="line"></span><br><span class="line"># Android Studio&#x2F;IDEA</span><br><span class="line">*.iml</span><br><span class="line">.idea</span><br><span class="line"></span><br><span class="line"># Mac specific ignore</span><br><span class="line">.DS_Store</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：</p>
+<p><code>.gitignore</code>文件要在文件提交之前设置才有效，如果文件已经提交，需要先把仓库里面的文件删除掉。如果module目录下的文件颜色没有改变，则选中.gitignore文件右击鼠标选择Git-&gt;+Add颜色变为浅绿色。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>gitignore</tag>
       </tags>
   </entry>
   <entry>

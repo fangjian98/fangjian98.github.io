@@ -20,20 +20,21 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="GitHub是面向开源及私有软件项目的托管平台，其流行及在开源世界的受欢迎程度自不必多言，但是关于Github的使用你又知道多少呢？这里将介绍下Github的常用快捷键、高级搜索语法和在线查看且运行项目，还有Github的官方文档值得认真读读，可以学到很多有用的点。">
+  <meta name="description" content="在工程中，并不是所有文件都需要保存到版本库中的，例如“target”目录及目录下的文件就可以忽略。在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件或目录。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github的神级操作">
-<meta property="og:url" content="http://yoursite.com/article/33799c4b.html">
+<meta property="og:title" content="关于Git忽略文件.gitignore">
+<meta property="og:url" content="http://yoursite.com/article/d04701bd.html">
 <meta property="og:site_name" content="MaxxSpace">
-<meta property="og:description" content="GitHub是面向开源及私有软件项目的托管平台，其流行及在开源世界的受欢迎程度自不必多言，但是关于Github的使用你又知道多少呢？这里将介绍下Github的常用快捷键、高级搜索语法和在线查看且运行项目，还有Github的官方文档值得认真读读，可以学到很多有用的点。">
+<meta property="og:description" content="在工程中，并不是所有文件都需要保存到版本库中的，例如“target”目录及目录下的文件就可以忽略。在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件或目录。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-06T14:48:00.000Z">
-<meta property="article:modified_time" content="2022-05-08T12:39:30.249Z">
+<meta property="article:published_time" content="2022-05-08T12:48:47.000Z">
+<meta property="article:modified_time" content="2022-05-08T12:55:32.496Z">
 <meta property="article:author" content="fangjian98">
-<meta property="article:tag" content="Github">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="gitignore">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/article/33799c4b.html">
+<link rel="canonical" href="http://yoursite.com/article/d04701bd.html">
 
 
 <script id="page-configurations">
@@ -46,7 +47,7 @@
   };
 </script>
 
-  <title>Github的神级操作 | MaxxSpace</title>
+  <title>关于Git忽略文件.gitignore | MaxxSpace</title>
   
 
 
@@ -201,7 +202,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/33799c4b.html">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/d04701bd.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/fangjian-avatar.jpg">
@@ -214,7 +215,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Github的神级操作
+          关于Git忽略文件.gitignore
         </h1>
 
         <div class="post-meta">
@@ -224,7 +225,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-05-06 22:48:00" itemprop="dateCreated datePublished" datetime="2022-05-06T22:48:00+08:00">2022-05-06</time>
+              <time title="创建时间：2022-05-08 20:48:47" itemprop="dateCreated datePublished" datetime="2022-05-08T20:48:47+08:00">2022-05-08</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -232,7 +233,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Github/" itemprop="url" rel="index"><span itemprop="name">Github</span></a>
+                  <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
                 </span>
             </span>
 
@@ -242,14 +243,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>951</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -262,93 +263,33 @@
 
       
         <blockquote>
-<p>GitHub是面向开源及私有软件项目的托管平台，其流行及在开源世界的受欢迎程度自不必多言，但是关于Github的使用你又知道多少呢？这里将介绍下Github的常用快捷键、高级搜索语法和在线查看且运行项目，还有Github的官方文档值得认真读读，可以学到很多有用的点。</p>
+<p>在工程中，并不是所有文件都需要保存到版本库中的，例如“target”目录及目录下的文件就可以忽略。在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件或目录。</p>
 </blockquote>
 <a id="more"></a>
 
-<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><p>聚焦于搜索栏：<kbd>S</kbd></p>
-<p>激活文件查找器：<kbd>T</kbd></p>
-<p>跳至代码中的某一行：<kbd>L</kbd></p>
-<p>打开追溯视图：<kbd>B</kbd></p>
-<p>在线VSCode查看：<kbd>。</kbd></p>
-<p>打开命令面板：<kbd>Ctrl</kbd> + <kbd>K</kbd></p>
-<p>查看帮助：<kbd>Shift</kbd> + <kbd>?</kbd></p>
-<p>更多快捷键查看：<a target="_blank" rel="noopener" href="https://docs.github.com/cn/get-started/using-github/keyboard-shortcuts">Keyboard shortcuts</a></p>
-<h3 id="关于搜索"><a href="#关于搜索" class="headerlink" title="关于搜索"></a>关于搜索</h3><p>高级搜索面板：<a target="_blank" rel="noopener" href="https://github.com/search/advanced">Advanced search</a></p>
-<p>常用搜索语法：</p>
-<table>
-<thead>
-<tr>
-<th>搜索条件 - 找开发者</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>location:</td>
-<td>location:china，匹配用户填写的地址在china</td>
-</tr>
-<tr>
-<td>language</td>
-<td>language:javascript，匹配开发语音为javascript的开发者</td>
-</tr>
-<tr>
-<td>followers:</td>
-<td>followers:&gt;=1000，匹配超过1000关注者的开发者</td>
-</tr>
-<tr>
-<td>in:fullname</td>
-<td>jack in:fullname，匹配用户名实名为jack的开发者</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>搜索条件 - 找项目</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Awesome+关键字</td>
-<td>神奇的关键字awesome，帮助找到优秀的工具列表</td>
-</tr>
-<tr>
-<td>stars:</td>
-<td>stars:&gt;=500</td>
-</tr>
-<tr>
-<td>language:</td>
-<td>language:javascript</td>
-</tr>
-<tr>
-<td>forks:</td>
-<td>forks:&gt;=500</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>搜索条件 - 找开发者</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>in:name xxx</td>
-<td>项目名包含xxx</td>
-</tr>
-<tr>
-<td>in:description xxx</td>
-<td>项目描述包含xxx</td>
-</tr>
-<tr>
-<td>in:readme xxx</td>
-<td>项目介绍文档里含有xxx</td>
-</tr>
-</tbody></table>
-<p>更多搜索相关：<a target="_blank" rel="noopener" href="https://docs.github.com/cn/search-github/getting-started-with-searching-on-github/about-searching-on-github">About searching on GitHub</a></p>
-<h3 id="在线运行Github项目"><a href="#在线运行Github项目" class="headerlink" title="在线运行Github项目"></a>在线运行Github项目</h3><p>再Github项目仓库前加上：<code>gitpod.io/#/</code>即可在线打开项目，并且支持在线运行该项目，相当于拥有一台可操作的远程服务器。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 例如原仓库</span></span><br><span class="line">https://github.com/ant-design/ant-design-pro</span><br><span class="line"><span class="comment"># 添加前缀</span></span><br><span class="line">https://gitpod.io/<span class="comment">#/github.com/ant-design/ant-design-pro</span></span><br><span class="line"><span class="comment"># 即可在线查看项目和运行</span></span><br></pre></td></tr></table></figure>
+<h3 id="Git-忽略规则优先级"><a href="#Git-忽略规则优先级" class="headerlink" title="Git 忽略规则优先级"></a>Git 忽略规则优先级</h3><p>在 .gitingore 文件中，每一行指定一个忽略规则，Git 检查忽略规则的时候有多个来源，它的优先级如下（由高到低）：</p>
+<ol>
+<li>从命令行中读取可用的忽略规则</li>
+<li>当前目录定义的规则</li>
+<li>父级目录定义的规则，依次递推</li>
+<li>$GIT_DIR/info/exclude 文件中定义的规则</li>
+<li>core.excludesfile中定义的全局规则</li>
+</ol>
+<h3 id="Git-忽略规则匹配语法"><a href="#Git-忽略规则匹配语法" class="headerlink" title="Git 忽略规则匹配语法"></a>Git 忽略规则匹配语法</h3><p>在 .gitignore 文件中，每一行的忽略规则的语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">* 空格不匹配任意文件，可作为分隔符，可用反斜杠转义</span><br><span class="line">* 开头的文件标识注释，可以使用反斜杠进行转义</span><br><span class="line">* ! 开头的模式标识否定，该文件将会再次被包含，如果排除了该文件的父级目录，则使用 ! 也不会再次被包含。可以使用反斜杠进行转义</span><br><span class="line">* &#x2F; 结束的模式只匹配文件夹以及在该文件夹路径下的内容，但是不匹配该文件</span><br><span class="line">* &#x2F; 开始的模式匹配项目跟目录</span><br><span class="line">* 如果一个模式不包含斜杠，则它匹配相对于当前 .gitignore 文件路径的内容，如果该模式不在 .gitignore 文件中，则相对于项目根目录</span><br><span class="line">* ** 匹配多级目录，可在开始，中间，结束</span><br><span class="line">* ? 通用匹配单个字符</span><br><span class="line">* * 通用匹配零个或多个字符</span><br><span class="line">* [] 通用匹配单个字符列表</span><br><span class="line">12345678910</span><br></pre></td></tr></table></figure>
 
-<p>关于<a target="_blank" rel="noopener" href="https://www.gitpod.io/">Gitpod</a>，这是一个与GitHub紧密集成的云IDE，Gitpod为开发人员的GitHub项目提供了一次性的，可随时编程的开发环境。</p>
+<h3 id="常用匹配示例"><a href="#常用匹配示例" class="headerlink" title="常用匹配示例"></a>常用匹配示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">bin&#x2F;: 忽略当前路径下的bin文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件</span><br><span class="line">&#x2F;bin: 忽略根目录下的bin文件</span><br><span class="line">&#x2F;*.c: 忽略 cat.c，不忽略 build&#x2F;cat.c</span><br><span class="line">debug&#x2F;*.obj: 忽略 debug&#x2F;io.obj，不忽略 debug&#x2F;common&#x2F;io.obj 和 tools&#x2F;debug&#x2F;io.obj</span><br><span class="line">**&#x2F;foo: 忽略&#x2F;foo, a&#x2F;foo, a&#x2F;b&#x2F;foo等</span><br><span class="line">a&#x2F;**&#x2F;b: 忽略a&#x2F;b, a&#x2F;x&#x2F;b, a&#x2F;x&#x2F;y&#x2F;b等</span><br><span class="line">!&#x2F;bin&#x2F;run.sh: 不忽略 bin 目录下的 run.sh 文件</span><br><span class="line">*.log: 忽略所有 .log 文件</span><br><span class="line">config.php: 忽略当前路径的 config.php 文件</span><br><span class="line">123456789</span><br></pre></td></tr></table></figure>
+
+<h3 id="gitignore规则不生效"><a href="#gitignore规则不生效" class="headerlink" title=".gitignore规则不生效"></a>.gitignore规则不生效</h3><p>.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。</p>
+<p>解决方法就是先把本地缓存删除（改变成未track状态），然后再提交:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached .</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;update .gitignore&#39;</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<h3 id="Android-APK项目参考-gitignore"><a href="#Android-APK项目参考-gitignore" class="headerlink" title="Android APK项目参考.gitignore"></a>Android APK项目参考<code>.gitignore</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"># built application files</span><br><span class="line">*.apk</span><br><span class="line">*.ap_</span><br><span class="line"></span><br><span class="line"># files for the dex VM</span><br><span class="line">*.dex</span><br><span class="line"></span><br><span class="line"># Java class files</span><br><span class="line">*.class</span><br><span class="line"></span><br><span class="line"># generated files</span><br><span class="line">bin&#x2F;</span><br><span class="line">gen&#x2F;</span><br><span class="line"></span><br><span class="line"># Ignore gradle files</span><br><span class="line">.gradle&#x2F;</span><br><span class="line">build&#x2F;</span><br><span class="line"></span><br><span class="line"># Local configuration file (sdk path, etc)</span><br><span class="line">local.properties</span><br><span class="line"></span><br><span class="line"># Proguard folder generated by Eclipse</span><br><span class="line">proguard&#x2F;</span><br><span class="line">proguard-project.txt</span><br><span class="line"></span><br><span class="line"># Eclipse files</span><br><span class="line">.project</span><br><span class="line">.classpath</span><br><span class="line">.settings&#x2F;</span><br><span class="line"></span><br><span class="line"># Android Studio&#x2F;IDEA</span><br><span class="line">*.iml</span><br><span class="line">.idea</span><br><span class="line"></span><br><span class="line"># Mac specific ignore</span><br><span class="line">.DS_Store</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：</p>
+<p><code>.gitignore</code>文件要在文件提交之前设置才有效，如果文件已经提交，需要先把仓库里面的文件删除掉。如果module目录下的文件颜色没有改变，则选中.gitignore文件右击鼠标选择Git-&gt;+Add颜色变为浅绿色。</p>
+</blockquote>
 
     </div>
 
@@ -358,7 +299,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Github/" rel="tag"># Github</a>
+              <a href="/tags/Git/" rel="tag"># Git</a>
+              <a href="/tags/gitignore/" rel="tag"># gitignore</a>
           </div>
 
         
@@ -367,13 +309,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/article/3610a686.html" rel="prev" title="常用的adb命令">
-      <i class="fa fa-chevron-left"></i> 常用的adb命令
+    <a href="/article/543367d4.html" rel="prev" title="寻找机器学习数据集">
+      <i class="fa fa-chevron-left"></i> 寻找机器学习数据集
     </a></div>
-      <div class="post-nav-item">
-    <a href="/article/f715120c.html" rel="next" title="Github的常用功能">
-      Github的常用功能 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -432,7 +371,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">1.</span> <span class="nav-text">常用快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E6%90%9C%E7%B4%A2"><span class="nav-number">2.</span> <span class="nav-text">关于搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E7%BA%BF%E8%BF%90%E8%A1%8CGithub%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.</span> <span class="nav-text">在线运行Github项目</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-%E5%BF%BD%E7%95%A5%E8%A7%84%E5%88%99%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-number">1.</span> <span class="nav-text">Git 忽略规则优先级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-%E5%BF%BD%E7%95%A5%E8%A7%84%E5%88%99%E5%8C%B9%E9%85%8D%E8%AF%AD%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">Git 忽略规则匹配语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%8C%B9%E9%85%8D%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.</span> <span class="nav-text">常用匹配示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitignore%E8%A7%84%E5%88%99%E4%B8%8D%E7%94%9F%E6%95%88"><span class="nav-number">4.</span> <span class="nav-text">.gitignore规则不生效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-APK%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83-gitignore"><span class="nav-number">5.</span> <span class="nav-text">Android APK项目参考.gitignore</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
