@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-05-08T12:56:49.956Z</updated>
+  <updated>2022-05-09T09:27:42.765Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于电子邮件协议</title>
+    <link href="http://yoursite.com/article/1f82cbab.html"/>
+    <id>http://yoursite.com/article/1f82cbab.html</id>
+    <published>2022-05-09T08:51:52.000Z</published>
+    <updated>2022-05-09T09:27:42.765Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>电子邮件是一种用电子手段提供信息交换的通信方式，是互联网应用最广的服务。通过网络的电子邮件系统，用户可以以非常低廉的价格（不管发送到哪里，都只需负担网费）、非常快速的方式（几秒钟之内可以发送到世界上任何指定的目的地），与世界上任何一个角落的网络用户联系。</p></blockquote><a id="more"></a><p>在企业中一般都会有自己的定制化的企业邮箱， 使用的邮箱功能模块可按需求定制，例如邮箱后缀用公司名字的，想多个地区分别管理的，跨团队沟通群发邮件、想要一个独立登录入口页面、想要全球收发，企业邮箱里的功能都能满足，其灵活性的配置，让员工高效协同办公。</p><p>在使用企业邮箱配置客户端的时候，这就会涉及到邮件服务器和端口的填写，如下使用是Foxmail邮箱客户端配置邮件服务器的参数，如果使用Outlook也可以参考使用这个参数的配置。另外QQ邮箱也可以开通OP3/IMAP/SMTP服务。</p><p><img src="/images/assets/mail_protocol.png" alt="邮件服务器的配置"></p><h3 id="关于邮件协议"><a href="#关于邮件协议" class="headerlink" title="关于邮件协议"></a>关于邮件协议</h3><ul><li><p>IMAP/SMTP服务</p></li><li><p>POP3/SMTP服务</p></li></ul><blockquote><p>电子邮件协议有SMTP、POP3、IMAP4，它们都隶属于TCP/IP协议簇，默认状态下，分别通过TCP端口25、110和143建立连接。</p></blockquote><h3 id="什么是POP3、SMTP及IMAP"><a href="#什么是POP3、SMTP及IMAP" class="headerlink" title="什么是POP3、SMTP及IMAP"></a>什么是POP3、SMTP及IMAP</h3><ul><li><strong>POP3</strong></li></ul><p>POP3是Post Office Protocol 3的简称，即邮局协议的第3个版本,它规定怎样将个人计算机连接到Internet的邮件服务器和下载电子邮件的电子协议。它是因特网电子邮件的第一个离线协议标准，<strong>POP3允许用户从服务器上把邮件存储到本地主机（即自己的计算机）上,同时删除保存在邮件服务器上的邮件</strong>，而POP3服务器则是遵循POP3协议的接收邮件服务器，用来接收电子邮件的。</p><ul><li><strong>SMTP</strong></li></ul><p>SMTP的全称是“Simple Mail Transfer Protocol”，即简单邮件传输协议。它是一组用于从源地址到目的地址传输邮件的规范，通过它来控制邮件的中转方式。SMTP 协议属于 TCP/IP 协议簇，它帮助每台计算机在发送或中转信件时找到下一个目的地。<br>SMTP 服务器就是遵循 SMTP 协议的发送邮件服务器。SMTP 认证，简单地说就是要求必须在提供了账户名和密码之后才可以登录 SMTP 服务器，这就使得那些垃圾邮件的散播者无可乘之机。增加 SMTP 认证的目的是为了使用户避免受到垃圾邮件的侵扰。</p><ul><li><strong>IMAP</strong></li></ul><p>IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议，它是跟POP3类似邮件访问标准协议之一。不同的是，开启了IMAP后，您在电子邮件客户端收取的邮件仍然保留 在服务器上，同时在客户端上的操作都会反馈到服务器上，如：删除邮件，标记已读等，服务器上的邮件也会做相应的动作。所以无论从浏览器登录邮箱或者客户端 软件登录邮箱，看到的邮件以及状态都是一致的。</p><h3 id="IMAP和POP3有什么区别"><a href="#IMAP和POP3有什么区别" class="headerlink" title="IMAP和POP3有什么区别?"></a>IMAP和POP3有什么区别?</h3><p><strong>POP3</strong>协议允许电子邮件客户端下载服务器上的邮件，但是在客户端的操作（如移动邮件、标记已读等），不会反馈到服务器上，比如通过客户端收取了邮箱中的3封邮件并移动到其他文件夹，邮箱服务器上的这些邮件是没有同时被移动的 。</p><p>而<strong>IMAP</strong>提供webmail 与电子邮件客户端之间的双向通信，客户端的操作都会反馈到服务器上，对邮件进行的操作，服务器上的邮件也会做相应的动作。</p><p>同时，<strong>IMAP</strong>像<strong>POP3</strong>那样提供了方便的邮件下载服务，让用户能进行离线阅读。<strong>IMAP</strong>提供的摘要浏览功能可以让你在阅读完所有的邮件到达时间、主题、发件人、大小等信息后才作出是否下载的决定。此外，<strong>IMAP</strong> 更好地支持了从多个不同设备中随时访问新邮件。</p><p><img src="/images/assets/mail_protocol_table.jpg" alt="IMAP与POP3的区别"></p><p>总之，<strong>IMAP</strong> 整体上为用户带来更为便捷和可靠的体验。<strong>POP3</strong> 更易丢失邮件或多次下载相同的邮件，但 <strong>IMAP</strong> 通过邮件客户端与webmail 之间的双向同步功能很好地避免了这些问题。</p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;电子邮件是一种用电子手段提供信息交换的通信方式，是互联网应用最广的服务。通过网络的电子邮件系统，用户可以以非常低廉的价格（不管发送到哪里，都只需负担网费）、非常快速的方式（几秒钟之内可以发送到世界上任何指定的目的地），与世界上任何一个角落的网络用户联系。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技术流" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E6%B5%81/"/>
+    
+    
+    <category term="POP3/SMTP" scheme="http://yoursite.com/tags/POP3-SMTP/"/>
+    
+    <category term="IMAP/SMTP" scheme="http://yoursite.com/tags/IMAP-SMTP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Photoshop的用法</title>
+    <link href="http://yoursite.com/article/b76e39db.html"/>
+    <id>http://yoursite.com/article/b76e39db.html</id>
+    <published>2022-05-09T02:57:03.000Z</published>
+    <updated>2022-05-09T09:25:33.965Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Adobe Photoshop，简称“PS”，是由Adobe Systems开发和发行的图像处理软件。Photoshop主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。ps有很多功能，在图像、图形、文字、视频、出版等各方面都有涉及。</p></blockquote><a id="more"></a><ul><li>PS 如何使用“拉直”功能拉直图像</li></ul><p>在Photoshop 中，打开图片，点击“剪裁工具”。</p><p>然后在选项栏中，选择拉直工具，如图所示</p><p>鼠标单击图像一端，按住鼠标按钮，然后拖动到另一端。</p><p>松开鼠标按钮，会旋转图像以使其变直。</p><ul><li>移动图像</li></ul><p>1.选中你需要移动的图层，然后选择工具栏上的第2个工具“移动”工具移动即可；</p><p>2.点选“移动”工具，在属性栏会出现“自动选择”，在前面打勾√，后面下拉选择框中，选择“图层”，这样你就可以直接选中你图片任意拖动了，就无需点选图层面板里的图层！</p><ul><li>关于图层</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Adobe Photoshop，简称“PS”，是由Adobe Systems开发和发行的图像处理软件。Photoshop主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。ps有很多功能，在图像、图形、文字、视频、出版等各方面都有涉及。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="UI设计" scheme="http://yoursite.com/categories/UI%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="Photoshop" scheme="http://yoursite.com/tags/Photoshop/"/>
+    
+  </entry>
   
   <entry>
     <title>关于Git忽略文件.gitignore</title>
