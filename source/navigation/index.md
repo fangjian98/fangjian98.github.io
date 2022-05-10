@@ -31,3 +31,23 @@ date: 2022-04-30 18:38:04
 
 > LintCode是一个集合了大量算法面试题和AI面试题的网站，它为全世界的码农提供了练习自我技能的良好平台。
 
+## 电子书下载
+
+**Z-Library** - [zh.z-lib.org](https://zh.z-lib.org/)
+
+> Z-Library 项目的一部分. 全球最大的数字图书馆。主站访问缓慢，可以使用其他地址：
+> https://zh.booksc.org/
+> https://zh.b-ok.cc/
+
+**LoreFree** - [lorefree.com](https://lorefree.com/)
+
+> 首个基于EOS和IPFS的去中心化知识共享社区
+
+**MagazineLib** - [magazinelib.com](https://magazinelib.com/)
+
+> MagazineLib是一个非常强大的外刊资源网站，对于想要阅读如*The Economist*、*The New Yorker*等主流英语外刊的童鞋来说简直是大福利。无需注册，无需扫码，无需关注，只需进入网站即可免费下载这些外刊的PDF版本。网站还很贴心地在顶部设置了标题栏分类，如Animals、Art、Business、Fashion、Health、Science等，点击对应的分类就会出现相关的杂志，再也不用费心去想要读什么啦。
+
+**书栈网** - [bookstack.cn](https://www.bookstack.cn/)
+
+> 书栈网，BookStack，既是一个开源书籍和文档分享站点，也是一套使用Go语言开发的开源程序，助您更好地实现文档阅读管理。
+
