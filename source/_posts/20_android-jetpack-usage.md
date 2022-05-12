@@ -108,7 +108,7 @@ LiveData和ViewModel的关系
 
 >在ViewModel中的数据发生变化时通知页面
 
-![Jetpack LiveData](/images/assets/jetpack_livedate.png)
+![Jetpack LiveData](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_livedate.png)
 
 ```java
 public class MyviewModel extends viewModel {
@@ -156,7 +156,7 @@ DataBinding的意义
 
 >让布局文件承担了部分原本属于页面的工作，使页面与布局耦合度进一步降低
 
-![Jetpack DataBinding](/images/assets/jetpack_databinding.png)
+![Jetpack DataBinding](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding.png)
 
 ```java
 //build配置
@@ -266,7 +266,7 @@ ActivityMainBinding binding = DataBingingUtil.setcontentView(this,R.layout.activ
 
 >BaseObservable与ObservableField
 
-![Jetpack DataBinding BaseObservable](/images/assets/jetpack_databinding_baseobservable.png)
+![Jetpack DataBinding BaseObservable](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding_baseobservable.png)
 
 BaseObservable方式
 
@@ -414,7 +414,7 @@ DataBinding的优势
 >不再需要findViewByld，项目更加简洁，可读性更高。
 >布局文件可以包含简单的业务逻辑。
 
-![Jetpack Databinding Viewmodel](/images/assets/jetpack_databinding_viewmodel.png)
+![Jetpack Databinding Viewmodel](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding_viewmodel.png)
 
 ## Room
 
@@ -427,7 +427,7 @@ Database:数据库持有者，作为与应用持久化相关数据的底层连�
 
 app从Database得到get DAO,从DAO得到Entity，从Entity得到和设置对象值
 
-![Jetpack Room](/images/assets/jetpack_room.png)
+![Jetpack Room](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_room.png)
 
 ```bash
 implementation 'androidx.room: room-runtime: 2.2.5'
@@ -547,7 +547,7 @@ class InsertStudentTask extends AsyncTask<Student, Void,void> {
 
 Room+ViewModel+LiveData
 
-![Jetpack Viewmodel Room Livedata](/images/assets/jetpack_viewmodel_room_livedata.png)
+![Jetpack Viewmodel Room Livedata](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_viewmodel_room_livedata.png)
 
 ```java
 //Repository:通过Repository操作数据库

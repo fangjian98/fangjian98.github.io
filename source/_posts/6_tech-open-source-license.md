@@ -32,7 +32,7 @@ date: 2022-05-04 17:14:45
 如何为代码选择开源许可证，这是一个问题。世界上的开源许可证，大概有上百种，很少有人能弄清楚它们的区别。即使在最流行的六种开源许可证：[GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License)、[BSD](https://en.wikipedia.org/wiki/BSD_licenses)、[MIT](https://en.wikipedia.org/wiki/MIT_License)、[Mozilla](https://www.mozilla.org/MPL/)、[Apache](https://www.apache.org/licenses/LICENSE-2.0)和[LGPL](https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License)，在这些中做出选择也很复杂。
 
 乌克兰程序员Paul Bagwell 画了一张分析图，说明应该怎么选择，这是我见过的最简单的讲解，只用两分钟，你就能搞清楚这六种许可证之间的最大区别。
-![开源许可证](/images/assets/licenses.png)
+![开源许可证](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/licenses.png)
 
 
 ### 常见开源许可证声明方式

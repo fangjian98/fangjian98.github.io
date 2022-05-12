@@ -16,7 +16,7 @@ date: 2022-05-09 16:51:52
 
 在使用企业邮箱配置客户端的时候，这就会涉及到邮件服务器和端口的填写，如下使用是Foxmail邮箱客户端配置邮件服务器的参数，如果使用Outlook也可以参考使用这个参数的配置。另外QQ邮箱也可以开通OP3/IMAP/SMTP服务。
 
-![邮件服务器的配置](/images/assets/mail_protocol.png)
+![邮件服务器的配置](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/mail_protocol.png)
 
 ### 关于邮件协议
 
@@ -49,6 +49,6 @@ IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议，�
 
 同时，**IMAP**像**POP3**那样提供了方便的邮件下载服务，让用户能进行离线阅读。**IMAP**提供的摘要浏览功能可以让你在阅读完所有的邮件到达时间、主题、发件人、大小等信息后才作出是否下载的决定。此外，**IMAP** 更好地支持了从多个不同设备中随时访问新邮件。
 
-![IMAP与POP3的区别](/images/assets/mail_protocol_table.jpg)
+![IMAP与POP3的区别](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/mail_protocol_table.jpg)
 
 总之，**IMAP** 整体上为用户带来更为便捷和可靠的体验。**POP3** 更易丢失邮件或多次下载相同的邮件，但 **IMAP** 通过邮件客户端与webmail 之间的双向同步功能很好地避免了这些问题。

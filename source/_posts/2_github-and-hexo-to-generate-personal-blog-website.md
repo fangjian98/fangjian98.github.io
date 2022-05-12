@@ -169,7 +169,7 @@ npm install hexo-asset-image --save
 
 [https://hexo.io/themes/](https://hexo.io/themes/)
 
-![theme](/images/assets/theme.jpg)
+![theme](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo//theme.jpg)
 
 ### 下载next主题
 

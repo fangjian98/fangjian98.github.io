@@ -31,7 +31,7 @@ date: 2022-05-11 19:24:50
 
 Android Jetpack 组件覆盖以下 4 个方面：Foundation （基础组件）、Architecture（架构组件）、Behavior（行为组件）、UI（界面组件）。
 
-![Android Jetpack](/images/assets/jetpack.png)
+![Android Jetpack](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack.png)
 
 
 1. 基础组件
