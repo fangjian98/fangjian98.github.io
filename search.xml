@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git命令简写的配置</title>
+    <url>/article/8b0e152.html</url>
+    <content><![CDATA[<blockquote>
+<p>在使用Git工具时，有些命令比较常用，为了加快输入速度，可以自定义一些简写配置，能提高我们提交代码的效率。</p>
+</blockquote>
+<a id="more"></a>
+
+<ul>
+<li>编辑Git配置文件且显示配置文件路径</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global -e</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>配置文件<code> ~/.gitconfig</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">  name = xxxxx</span><br><span class="line">  email = xxxx@mail.com</span><br><span class="line">[core]</span><br><span class="line">  editor = vim</span><br><span class="line">[<span class="built_in">alias</span>]</span><br><span class="line">    a = add</span><br><span class="line">    co = checkout</span><br><span class="line">    cm = commit</span><br><span class="line">    st = status</span><br><span class="line">    pl = pull</span><br><span class="line">    ps = push</span><br><span class="line">    df = diff</span><br><span class="line">    lg = <span class="built_in">log</span></span><br><span class="line">    cp = cherry-pick</span><br><span class="line">    ca = commit --amend</span><br><span class="line">    br = branch</span><br><span class="line">    mg = merge</span><br><span class="line">    dt = difftool</span><br><span class="line">    mt = mergetool</span><br><span class="line">    lo = <span class="built_in">log</span> --oneline</span><br><span class="line">    lg = <span class="built_in">log</span> --color --graph --pretty=format:<span class="string">&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset&#x27;</span> --abbrev-commit</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查看Git配置</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github的常用功能</title>
+    <url>/article/f715120c.html</url>
+    <content><![CDATA[<blockquote>
+<p>Github 包含的功能点很多，你知道他们的作用是什么吗？改如何去使用这些功能呢？这里将列出常用的功能点，并描述其功能和什么时候去使用以及如何使用，当然你也可以查看Github的官方文档来了解和学习这些。</p>
+</blockquote>
+<a id="more"></a>
+
+<ul>
+<li><p>Issue</p>
+</li>
+<li><p>Pull Requset</p>
+</li>
+<li><p>Fork</p>
+</li>
+<li><p>Stars</p>
+</li>
+<li><p>Github Wiki</p>
+</li>
+<li><p>Github Release</p>
+</li>
+<li><p>Github Discussions</p>
+</li>
+<li><p>Github Pages</p>
+</li>
+<li><p>Github Actions</p>
+</li>
+<li><p>Github REST API</p>
+</li>
+<li><p>License</p>
+</li>
+<li><p>username同名仓库</p>
+</li>
+<li><p>username.github.io仓库</p>
+</li>
+<li><p>关于仓库的gh-pages分支</p>
+</li>
+<li><p>如何提Issue</p>
+</li>
+<li><p>Github commit关联Issue的小技巧</p>
+</li>
+<li><p>如何共享Pull Request</p>
+</li>
+<li><p>Github项目的小图标</p>
+</li>
+<li><p>Github Emoji</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github Pages</tag>
+        <tag>Github Actions</tag>
+        <tag>Issue</tag>
+        <tag>Pull Request</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>寻找机器学习数据集</title>
     <url>/article/543367d4.html</url>
     <content><![CDATA[<blockquote>
@@ -76,94 +167,44 @@
       </tags>
   </entry>
   <entry>
-    <title>Github的常用功能</title>
-    <url>/article/f715120c.html</url>
+    <title>Vim的常用用法</title>
+    <url>/article/c771602a.html</url>
     <content><![CDATA[<blockquote>
-<p>Github 包含的功能点很多，你知道他们的作用是什么吗？改如何去使用这些功能呢？这里将列出常用的功能点，并描述其功能和什么时候去使用以及如何使用，当然你也可以查看Github的官方文档来了解和学习这些。</p>
+<p>Vim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。连 vim 的官方网站 (<a href="https://www.vim.org/">https://www.vim.org/</a>) 自己也说 vim 是一个程序开发工具而不是文字处理软件。</p>
 </blockquote>
 <a id="more"></a>
 
-<ul>
-<li><p>Issue</p>
-</li>
-<li><p>Pull Requset</p>
-</li>
-<li><p>Fork</p>
-</li>
-<li><p>Stars</p>
-</li>
-<li><p>Github Wiki</p>
-</li>
-<li><p>Github Release</p>
-</li>
-<li><p>Github Discussions</p>
-</li>
-<li><p>Github Pages</p>
-</li>
-<li><p>Github Actions</p>
-</li>
-<li><p>Github REST API</p>
-</li>
-<li><p>License</p>
-</li>
-<li><p>username同名仓库</p>
-</li>
-<li><p>username.github.io仓库</p>
-</li>
-<li><p>关于仓库的gh-pages分支</p>
-</li>
-<li><p>如何提Issue</p>
-</li>
-<li><p>Github commit关联Issue的小技巧</p>
-</li>
-<li><p>如何共享Pull Request</p>
-</li>
-<li><p>Github项目的小图标</p>
-</li>
-<li><p>Github Emoji</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Github</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Github Pages</tag>
-        <tag>Github Actions</tag>
-        <tag>Issue</tag>
-        <tag>Pull Request</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git命令简写的配置</title>
-    <url>/article/8b0e152.html</url>
-    <content><![CDATA[<blockquote>
-<p>在使用Git工具时，有些命令比较常用，为了加快输入速度，可以自定义一些简写配置，能提高我们提交代码的效率。</p>
+<h3 id="Vim的三种模式"><a href="#Vim的三种模式" class="headerlink" title="Vim的三种模式"></a>Vim的三种模式</h3><blockquote>
+<p>vi的使用在linux环境下，使用vi &lt;文件名&gt; 即可进入vi编辑模式，vi编辑器一共有三种模式，分别是：命令模式，输入模式，和末行模式。</p>
 </blockquote>
-<a id="more"></a>
-
 <ul>
-<li>编辑Git配置文件且显示配置文件路径</li>
+<li>命令模式下，我们不可以输入字符，所输入的字符都被当做了命令来执行。比如最常见的i进入输入模式，o换行并且进入输入模式，x删除所在位置的字符等，在其他模式下可以通过esc键进入命令模式。</li>
+<li>输入模式下，就和我们普通的编辑文档一样，操作没有特殊之处</li>
+<li>末行模式下，我们只能在最后一行进行输入，一般wq保存并且退出vi模式，q退出但是不保存。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global -e</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>配置文件<code> ~/.gitconfig</code></li>
+<h3 id="基本的命令"><a href="#基本的命令" class="headerlink" title="基本的命令"></a>基本的命令</h3><ul>
+<li><p>k j h l 分别对应上下左右光标的移动</p>
+</li>
+<li><p>x删除一个字符/ dd删除一行</p>
+</li>
+<li><p>yy复制一行 / p 粘贴</p>
+</li>
+<li><p>o/O 向上/向下空一行，并且进入输入模式</p>
+</li>
+<li><p>a/A 进入输入模式从光标处开始</p>
+</li>
+<li><p>w,wq,q!,q,ZZ, 保存/保存并退出/不保存退出/离开/保存并退出</p>
+</li>
+<li><p>/：搜索</p>
+</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">  name = xxxxx</span><br><span class="line">  email = xxxx@mail.com</span><br><span class="line">[core]</span><br><span class="line">  editor = vim</span><br><span class="line">[<span class="built_in">alias</span>]</span><br><span class="line">    a = add</span><br><span class="line">    co = checkout</span><br><span class="line">    cm = commit</span><br><span class="line">    st = status</span><br><span class="line">    pl = pull</span><br><span class="line">    ps = push</span><br><span class="line">    df = diff</span><br><span class="line">    lg = <span class="built_in">log</span></span><br><span class="line">    cp = cherry-pick</span><br><span class="line">    ca = commit --amend</span><br><span class="line">    br = branch</span><br><span class="line">    mg = merge</span><br><span class="line">    dt = difftool</span><br><span class="line">    mt = mergetool</span><br><span class="line">    lo = <span class="built_in">log</span> --oneline</span><br><span class="line">    lg = <span class="built_in">log</span> --color --graph --pretty=format:<span class="string">&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset&#x27;</span> --abbrev-commit</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>查看Git配置</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
-
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
 ]]></content>
       <categories>
-        <category>Git</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
@@ -204,47 +245,6 @@
       <tags>
         <tag>Git</tag>
         <tag>gitignore</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim的常用用法</title>
-    <url>/article/c771602a.html</url>
-    <content><![CDATA[<blockquote>
-<p>Vim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。连 vim 的官方网站 (<a href="https://www.vim.org/">https://www.vim.org/</a>) 自己也说 vim 是一个程序开发工具而不是文字处理软件。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Vim的三种模式"><a href="#Vim的三种模式" class="headerlink" title="Vim的三种模式"></a>Vim的三种模式</h3><blockquote>
-<p>vi的使用在linux环境下，使用vi &lt;文件名&gt; 即可进入vi编辑模式，vi编辑器一共有三种模式，分别是：命令模式，输入模式，和末行模式。</p>
-</blockquote>
-<ul>
-<li>命令模式下，我们不可以输入字符，所输入的字符都被当做了命令来执行。比如最常见的i进入输入模式，o换行并且进入输入模式，x删除所在位置的字符等，在其他模式下可以通过esc键进入命令模式。</li>
-<li>输入模式下，就和我们普通的编辑文档一样，操作没有特殊之处</li>
-<li>末行模式下，我们只能在最后一行进行输入，一般wq保存并且退出vi模式，q退出但是不保存。</li>
-</ul>
-<h3 id="基本的命令"><a href="#基本的命令" class="headerlink" title="基本的命令"></a>基本的命令</h3><ul>
-<li><p>k j h l 分别对应上下左右光标的移动</p>
-</li>
-<li><p>x删除一个字符/ dd删除一行</p>
-</li>
-<li><p>yy复制一行 / p 粘贴</p>
-</li>
-<li><p>o/O 向上/向下空一行，并且进入输入模式</p>
-</li>
-<li><p>a/A 进入输入模式从光标处开始</p>
-</li>
-<li><p>w,wq,q!,q,ZZ, 保存/保存并退出/不保存退出/离开/保存并退出</p>
-</li>
-<li><p>/：搜索</p>
-</li>
-</ul>
-<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
@@ -375,6 +375,27 @@
       </tags>
   </entry>
   <entry>
+    <title>Git初始化配置</title>
+    <url>/article/66ea434c.html</url>
+    <content><![CDATA[<blockquote>
+<p>我们推荐创建的Git仓库都包含一个<code>README</code>、<code>LICENSE</code>和<code>.gitignore</code>，这里将学习创建本地分支、远程仓库推送和修改远程仓库Url。</p>
+</blockquote>
+<a id="more"></a>
+
+
+<h3 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;# gitblog&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+
+<h3 id="推送本地仓库"><a href="#推送本地仓库" class="headerlink" title="推送本地仓库"></a>推送本地仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新本地仓库-Remote-Url"><a href="#更新本地仓库-Remote-Url" class="headerlink" title="更新本地仓库 Remote Url"></a>更新本地仓库 Remote Url</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br><span class="line">git remote remove origin</span><br><span class="line">git remote add origin https://gitcode.net/xxxx.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者是使用 SSH 地址</span></span><br><span class="line">git remote add origin git@gitcode.net:xxxx.git</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Android Jetpack系列库简介</title>
     <url>/article/23f0b0f3.html</url>
     <content><![CDATA[<blockquote>
@@ -426,27 +447,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git初始化配置</title>
-    <url>/article/66ea434c.html</url>
-    <content><![CDATA[<blockquote>
-<p>我们推荐创建的Git仓库都包含一个<code>README</code>、<code>LICENSE</code>和<code>.gitignore</code>，这里将学习创建本地分支、远程仓库推送和修改远程仓库Url。</p>
-</blockquote>
-<a id="more"></a>
-
-
-<h3 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;# gitblog&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
-
-<h3 id="推送本地仓库"><a href="#推送本地仓库" class="headerlink" title="推送本地仓库"></a>推送本地仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
-
-<h3 id="更新本地仓库-Remote-Url"><a href="#更新本地仓库-Remote-Url" class="headerlink" title="更新本地仓库 Remote Url"></a>更新本地仓库 Remote Url</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br><span class="line">git remote remove origin</span><br><span class="line">git remote add origin https://gitcode.net/xxxx.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者是使用 SSH 地址</span></span><br><span class="line">git remote add origin git@gitcode.net:xxxx.git</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/article/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -465,543 +465,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
-    <url>/article/84ebc250.html</url>
-    <content><![CDATA[<blockquote>
-<p>通过Github搭建个人博客blog：GitHub Pages是一个静态站点托管服务，可直接从GitHub上的存储库获取HTML，CSS和JavaScript文件，还可以选择在构建过程中运行这些文件并发布网站。Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="相关组件"><a href="#相关组件" class="headerlink" title="相关组件"></a>相关组件</h2><ul>
-<li>github pages</li>
-<li>node.js</li>
-<li>hexo</li>
-</ul>
-<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><ul>
-<li>下载地址</li>
-</ul>
-<p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
-<ul>
-<li>测试</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装成功测试cmd</span></span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo安装与配置"><a href="#hexo安装与配置" class="headerlink" title="hexo安装与配置"></a>hexo安装与配置</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cmd切换到blog文件夹下，输入安装hexo命令</span><br><span class="line">npm install hexo -g</span><br><span class="line"></span><br><span class="line"># 安装成功测试</span><br><span class="line">hexo -v</span><br><span class="line"></span><br><span class="line"># hexo初始化</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 安装必要的组件</span><br><span class="line">npm isntall</span><br><span class="line"></span><br><span class="line"># 开启服务器</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"># 显示本地博客地址，复制位置到浏览器打开后显示</span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"># 如果无法显示网页,说明端口可能被占用,更改端口便可</span><br><span class="line">hexo server -p 4001</span><br></pre></td></tr></table></figure>
-
-<h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><ul>
-<li>下载地址</li>
-</ul>
-<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<ul>
-<li>配置</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成rsa命令</span></span><br><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;test@hotmail.com&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加密钥到ssh-agent</span></span><br><span class="line"><span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(ssh-agent -s)</span>&quot;</span></span><br><span class="line"><span class="comment"># 添加生成的SSH key到ssh-agent</span></span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将id_rsa.pub文件里的内容复制到add SSH keys</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试是否成功</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<p>再blog文件夹中找到_config.yml文件，修改repo值(末尾)</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:test/test.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h2 id="创建新博客"><a href="#创建新博客" class="headerlink" title="创建新博客"></a>创建新博客</h2><ul>
-<li>流程</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建博客</span></span><br><span class="line">hexo new <span class="string">&quot;blog name&quot;</span></span><br><span class="line"><span class="comment"># 博客生成</span></span><br><span class="line">hexo g</span><br><span class="line"><span class="comment"># 博客部署</span></span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 博客生成+部署</span></span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>默认生成的post</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: blog name</span><br><span class="line">date: 2022-05-05 22:51:03</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>关于post其他标签</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>描述</th>
-<th>默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>layout</td>
-<td>布局</td>
-<td></td>
-</tr>
-<tr>
-<td>title</td>
-<td>标题</td>
-<td>文章的文件名</td>
-</tr>
-<tr>
-<td>date</td>
-<td>建立日期</td>
-<td>文件建立日期</td>
-</tr>
-<tr>
-<td>updated</td>
-<td>更新日期</td>
-<td>文件更新日期</td>
-</tr>
-<tr>
-<td>comments</td>
-<td>开启文章的评论功能</td>
-<td>true</td>
-</tr>
-<tr>
-<td>tags</td>
-<td>标签（不适用于分页）</td>
-<td></td>
-</tr>
-<tr>
-<td>categories</td>
-<td>分类（不适用于分页）</td>
-<td></td>
-</tr>
-<tr>
-<td>permalink</td>
-<td>覆盖文章网址</td>
-<td></td>
-</tr>
-<tr>
-<td>keywords</td>
-<td>仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
-<td></td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: blog name</span><br><span class="line">date: 2022-05-05 22:51:03</span><br><span class="line">categories:</span><br><span class="line">	- 分类</span><br><span class="line">	- 子分类</span><br><span class="line">tags:</span><br><span class="line">	- 标签1</span><br><span class="line">	- 标签2</span><br></pre></td></tr></table></figure>
-
-
-<ul>
-<li>博客编辑器typora</li>
-</ul>
-<p><a href="https://www.typora.io/">https://www.typora.io/</a></p>
-<ul>
-<li>博客图片上传问题</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 修改_config.yml里的psot_asset_folder:设置为true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># cmd执行</span></span><br><span class="line">npm install hexo-asset-image --save</span><br><span class="line">(或npm install https://github.com/CodeFalling/hexo-asset-image --save)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用hexo new &quot;blog name&quot;新建博客时，_posts目录下会出现同名*.md和文件夹，图片放在此文件夹中</span></span><br><span class="line">![](本地图片测试/logo.jpg) </span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="博客个性化设置"><a href="#博客个性化设置" class="headerlink" title="博客个性化设置"></a>博客个性化设置</h2><h3 id="下载hexo主题（自选主题模板）"><a href="#下载hexo主题（自选主题模板）" class="headerlink" title="下载hexo主题（自选主题模板）"></a>下载hexo主题（自选主题模板）</h3><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo//theme.jpg" alt="theme"></p>
-<h3 id="下载next主题"><a href="#下载next主题" class="headerlink" title="下载next主题"></a>下载next主题</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改-blog-config-yml"><a href="#修改-blog-config-yml" class="headerlink" title="修改./blog/_config.yml"></a>修改./blog/_config.yml</h3><ul>
-<li>主题选择</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>网页信息</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Just_Paranoid</span><br><span class="line">subtitle: 特立独行</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords: &#x27;&#x27;</span><br><span class="line">author: fangjian98</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改-blog-themes-next-config-yml"><a href="#修改-blog-themes-next-config-yml" class="headerlink" title="修改./blog/themes/next/_config.yml"></a>修改./blog/themes/next/_config.yml</h3><ul>
-<li>选择主题样式<br>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白<br>Mist - Muse 的紧凑版本，整洁有序的单栏外观<br>Pisces - 双栏 Scheme，小家碧玉似的清新<br>Gemini - 左侧网站信息及目录，块+片段结构布局</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Scheme Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>网站图标</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Site Information Settings</span><br><span class="line"># See: https://theme-next.org/docs/getting-started/</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">favicon:</span><br><span class="line">  small: /images/favicon-16x16-next.png</span><br><span class="line">  medium: /images/favicon-32x32-next.png</span><br><span class="line">  apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: /images/logo.svg</span><br><span class="line">  #android_manifest: /images/manifest.json</span><br><span class="line">  #ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
-
-<p>ico图标下载：<a href="https://icons8.com/icons">https://icons8.com/icons</a>,</p>
-<p>ico图标制作：<a href="http://www.bitbug.net/">http://www.bitbug.net/</a></p>
-<ul>
-<li>主页显示摘要</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span></span><br><span class="line">excerpt_description: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read more button</span></span><br><span class="line"><span class="comment"># If true, the read more button will be displayed in excerpt section.</span></span><br><span class="line">read_more_btn: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>在文章中添加该标志，本文在首页的预览就会显示到这个段落为止。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>头像</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: #&#x2F;images&#x2F;avatar.gif</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: false</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>社交链接</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Social Links</span><br><span class="line"># Usage: &#96;Key: permalink || icon&#96;</span><br><span class="line"># Key is the link label showing to end users.</span><br><span class="line"># Value before &#96;||&#96; delimiter is the target permalink, value after &#96;||&#96; delimiter is the name of Font Awesome icon.</span><br><span class="line">social:</span><br><span class="line">  #GitHub: https:&#x2F;&#x2F;github.com&#x2F;yourname || fab fa-github</span><br><span class="line">  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span><br><span class="line">  #Weibo: https:&#x2F;&#x2F;weibo.com&#x2F;yourname || fab fa-weibo</span><br><span class="line">  #Google: https:&#x2F;&#x2F;plus.google.com&#x2F;yourname || fab fa-google</span><br><span class="line">  #Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;yourname || fab fa-twitter</span><br><span class="line">  #FB Page: https:&#x2F;&#x2F;www.facebook.com&#x2F;yourname || fab fa-facebook</span><br><span class="line">  #StackOverflow: https:&#x2F;&#x2F;stackoverflow.com&#x2F;yourname || fab fa-stack-overflow</span><br><span class="line">  #YouTube: https:&#x2F;&#x2F;youtube.com&#x2F;yourname || fab fa-youtube</span><br><span class="line">  #Instagram: https:&#x2F;&#x2F;instagram.com&#x2F;yourname || fab fa-instagram</span><br><span class="line">  #Skype: skype:yourname?call|chat || fab fa-skype</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>创建菜单</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;categories&quot;</span><br><span class="line">hexo new page &quot;tags&quot;</span><br><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Menu Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Usage: &#96;Key: &#x2F;link&#x2F; || icon&#96;</span><br><span class="line"># Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.</span><br><span class="line"># Value before &#96;||&#96; delimiter is the target link, value after &#96;||&#96; delimiter is the name of Font Awesome icon.</span><br><span class="line"># When running the site in a subdirectory (e.g. yoursite.com&#x2F;blog), remove the leading slash from link value (&#x2F;archives -&gt; archives).</span><br><span class="line"># External url should start with http:&#x2F;&#x2F; or https:&#x2F;&#x2F;</span><br><span class="line">menu:</span><br><span class="line">  home: &#x2F; || fa fa-home</span><br><span class="line">  about: &#x2F;about&#x2F; || fa fa-user</span><br><span class="line">  #tags: &#x2F;tags&#x2F; || fa fa-tags</span><br><span class="line">  #categories: &#x2F;categories&#x2F; || fa fa-th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || fa fa-archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat</span><br><span class="line"></span><br><span class="line"># Enable &#x2F; Disable menu icons &#x2F; item badges.</span><br><span class="line">menu_settings:</span><br><span class="line">  icons: true</span><br><span class="line">  badges: false</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改完主题后需要重新部署</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>增加本地搜索</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装hexo-generator-searchdb，在站点的根目录下执行以下命令</span></span><br><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 根目录_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置站点搜索信息</span></span><br><span class="line">search:</span><br><span class="line"> path: search.xml</span><br><span class="line"> field: post</span><br><span class="line"> format: html</span><br><span class="line"> <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 修改themes&#x2F;next&#x2F;_config.yml</span><br><span class="line"></span><br><span class="line">local_search:</span><br><span class="line"> enable: true</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>显示浏览进度</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.</span></span><br><span class="line">  sidebar: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line">  scrollpercent: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>RSS</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装hexo-generator-feed</span></span><br><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># feed</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/hexojs/hexo-generator-feed</span></span><br><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>不开启不蒜子博客访问量统计</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span><br><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span><br><span class="line">busuanzi_count:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  total_visitors: <span class="literal">true</span></span><br><span class="line">  total_visitors_icon: fa fa-user</span><br><span class="line">  total_views: <span class="literal">true</span></span><br><span class="line">  total_views_icon: fa fa-eye</span><br><span class="line">  post_views: <span class="literal">true</span></span><br><span class="line">  post_views_icon: fa fa-eye</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改博文链接地址<code>/posts/xxxxx.html</code></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br><span class="line"></span><br><span class="line"># 根目录下的 _config.yml 文件</span><br><span class="line">permalink: posts&#x2F;:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>首页title优化<code>网站名称-网站描述</code></li>
-</ul>
-<p>更改<code>index.swig</code>文件<code>your-hexo-site\themes\next\layout</code></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; &#123;% endblock %&#125;</span><br><span class="line"># 改成</span><br><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; - &#123;&#123; theme.description &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Github</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Hexo</tag>
-        <tag>Node.js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu常用包管理命令</title>
-    <url>/article/64245.html</url>
-    <content><![CDATA[<blockquote>
-<p>Ubuntu常用包管理命令</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install vim</span><br><span class="line"></span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>apt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程语言的Hello World程序</title>
-    <url>/article/caca35c0.html</url>
-    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>知识共享许可协议 Creative Commons Licenses</title>
-    <url>/article/d8f310cd.html</url>
-    <content><![CDATA[<blockquote>
-<p>知识共享版权许可协议（Creative Commons licenses，简称cc）是在著作权法的传统的“所有权利保留”环境下构造平衡。给个人创作者、公司、机构在内的每一个人，提供简单的、标准化的方式授予他们所创作作品的版权许可。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="关于知识共享许可协议-Creative-Commons-Licenses"><a href="#关于知识共享许可协议-Creative-Commons-Licenses" class="headerlink" title="关于知识共享许可协议 Creative Commons Licenses"></a>关于知识共享许可协议 Creative Commons Licenses</h3><p>知识共享许可协议（Creative Commons licenses，简称cc），它是由成立于2001年的美国<a href="http://creativecommons.org/">Creative Commons基金会</a>，在2002年12月16日提出的。<br>知识共享版权许可协议是在著作权法的传统的“所有权利保留”环境下构造平衡。给个人创作者、公司、机构在内的每一个人，提供简单的、标准化的方式授予他们所创作作品的版权许可。</p>
-<p>严格意义上说该协议并不能说是真正的开源协议，它们大多是被使用于设计类的工程上。CC 协议种类繁多，每一种都授权特定的权利。大多数的比较严格的 CC 协议会声明 “署名权，非商业用途，禁止衍生” 条款，这意味着你可以自由的分享这个作品，但你不能改变它和对其收费，而且必须声明作品的归属。这个许可协议非常的有用，它可以让你的作品传播出去，但又可以对作品的使用保留部分或完全的控制。最少限制的 CC 协议类型当属 “署名” 协议，这意味着只要人们能维护你的名誉，他们对你的作品怎么使用都行。</p>
-<p>知识共享许可协议-CC许可协议是博文常用的一个版权许可协议，例如：CSDN默认为<code>CC 4.0 BY-SA版权协议</code>，这意味着你的博文可用于商业使用。</p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" align="left"/></br></p>
-<h3 id="关于CC许可类型"><a href="#关于CC许可类型" class="headerlink" title="关于CC许可类型"></a>关于CC许可类型</h3><p><strong>1.四种核心权利</strong><br>署名（Attribution，简写为BY）：必须提到原作者。<br>非商业用途（Noncommercial，简写为NC）：不得用于盈利性目的。<br>禁止演绎（No Derivative Works，简写为ND）：不得修改原作品, 不得再创作。<br>相同方式共享（Share Alike，简写为SA）：允许修改原作品，但必须使用相同的许可证发布。</p>
-<p><strong>2.六种组合</strong><br>署名（BY）<br>署名（BY）-相同方式共享（SA）<br>署名（BY）-禁止演绎（ND）<br>署名（BY）-非商业性使用（NC）<br>署名（BY）-非商业性使用（NC）-相同方式共享（SA）<br>署名（BY）-非商业性使用（NC）-禁止演绎（ND）</p>
-<p>如果你还不确定该如何选择CC协议，你可以查看 <a href="https://creativecommons.org/choose/">creativecommons.org/choose</a> 来生成一个许可证。现在最流行的知识共享协议是<code>CC 4.0 BY-NC-SA版权协议</code></p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="left"/></br></p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Creative Commons Licenses</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开源许可协议 Open Source License</title>
-    <url>/article/b86684bd.html</url>
-    <content><![CDATA[<blockquote>
-<p>开源许可证是计算机软件和其他产品的一种许可证，允许在定义的条款和条件下使用、修改和/或共享源代码、蓝图或设计。这允许最终用户和商业公司根据自己的定制、好奇心或故障排除需求来审查和修改源代码、蓝图或设计。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="关于开源许可证-Open-Source-License"><a href="#关于开源许可证-Open-Source-License" class="headerlink" title="关于开源许可证 Open Source License"></a>关于开源许可证 Open Source License</h3><p>开源许可证是计算机软件和其他产品的一种许可证，允许在定义的条款和条件下使用、修改和/或共享源代码、蓝图或设计。这允许最终用户和商业公司根据自己的定制、好奇心或故障排除需求来审查和修改源代码、蓝图或设计。</p>
-<p>我们接触到的开源软件一般都有对应的开源许可证对软件的使用、复制、修改和再发布等进行限制。许可证即授权条款，开源许可证就是保证开源软件这些限制的法律文件，目的在于规范受著作权保护的软件的使用或者分发行为。<strong>开源许可证是开源软件生态系统的基础，可以促进软件的协同开发。</strong></p>
-<blockquote>
-<p>常见的开源许可证主要有 Apache、MIT、BSD、GPL、LGPL、MPL、SSPL 等，可以大致分为两大类：<br><strong>1. 宽松自由软件许可协议 Permissive Free Software Licence</strong><br>是一种对软件的使用、修改、传播等方式采用最低限制的自由软件许可协议条款类型。这种类型的软件许可协议将不保证原作品的派生作品会继续保持与原作品完全相同的相关限制条件，从而为原作品的自由使用、修改和传播等提供更大的空间。<br><strong>2.著佐权许可证 Copyleft License</strong><br>是在有限空间内的自由使用、修改和传播，且不得违背原作品的限制条款。如果一款软件使用 Copyleft 类型许可协议规定软件不得用于商业目的，且不得闭源，那么后续的衍生子软件也必须得遵循该条款。<br><strong>两者最大的差别在于</strong>：在软件被修改并再发行时， Copyleft License 仍然强制要求公开源代码（衍生软件需要开源），而Permissive Free Software Licence 不要求公开源代码（衍生软件可以变为专有软件）。<br><strong>其中</strong>，Apache、MIT、BSD 都是宽松许可证，GPL 是典型的强著佐权（Copyleft ）许可证，LGPL、MPL 是弱著佐权（Copyleft ）许可证。SSPL 则是近年来 MongoDB 创建的一个新许可证，存在较大争议，开放源代码促进会 OSI 甚至认为 SSPL 就不是开源许可协议。</p>
-</blockquote>
-<h3 id="如何选择开源许可证"><a href="#如何选择开源许可证" class="headerlink" title="如何选择开源许可证"></a>如何选择开源许可证</h3><p>如何为代码选择开源许可证，这是一个问题。世界上的开源许可证，大概有上百种，很少有人能弄清楚它们的区别。即使在最流行的六种开源许可证：<a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>、<a href="https://en.wikipedia.org/wiki/BSD_licenses">BSD</a>、<a href="https://en.wikipedia.org/wiki/MIT_License">MIT</a>、<a href="https://www.mozilla.org/MPL/">Mozilla</a>、<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache</a>和<a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License">LGPL</a>，在这些中做出选择也很复杂。</p>
-<p>乌克兰程序员Paul Bagwell 画了一张分析图，说明应该怎么选择，这是我见过的最简单的讲解，只用两分钟，你就能搞清楚这六种许可证之间的最大区别。<br><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/licenses.png" alt="开源许可证"></p>
-<h3 id="常见开源许可证声明方式"><a href="#常见开源许可证声明方式" class="headerlink" title="常见开源许可证声明方式"></a>常见开源许可证声明方式</h3><ul>
-<li><a href="https://opensource.org/licenses/MIT">MIT</a></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MIT License</span><br><span class="line"></span><br><span class="line">Copyright (c) &lt;year&gt; &lt;copyright holders&gt;</span><br><span class="line"></span><br><span class="line">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and&#x2F;or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</span><br><span class="line"></span><br><span class="line">The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.</span><br><span class="line"></span><br><span class="line">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache2.0</a></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Copyright [yyyy] [name of copyright owner]</span><br><span class="line"></span><br><span class="line">Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span><br><span class="line">you may not use this file except in compliance with the License.</span><br><span class="line">You may obtain a copy of the License at</span><br><span class="line"></span><br><span class="line">    http:&#x2F;&#x2F;www.apache.org&#x2F;licenses&#x2F;LICENSE-2.0</span><br><span class="line"></span><br><span class="line">Unless required by applicable law or agreed to in writing, software</span><br><span class="line">distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span><br><span class="line">WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span><br><span class="line">See the License for the specific language governing permissions and</span><br><span class="line">limitations under the License.</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL3.0</a></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;one line to give the program&#39;s name and a brief idea of what it does.&gt;</span><br><span class="line"></span><br><span class="line">Copyright (C) &lt;year&gt;  &lt;name of author&gt;</span><br><span class="line"></span><br><span class="line">This program is free software: you can redistribute it and&#x2F;or modify</span><br><span class="line">it under the terms of the GNU General Public License as published by</span><br><span class="line">the Free Software Foundation, either version 3 of the License, or</span><br><span class="line">(at your option) any later version.</span><br><span class="line"></span><br><span class="line">This program is distributed in the hope that it will be useful,</span><br><span class="line">but WITHOUT ANY WARRANTY; without even the implied warranty of</span><br><span class="line">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span><br><span class="line">GNU General Public License for more details.</span><br><span class="line"></span><br><span class="line">You should have received a copy of the GNU General Public License</span><br><span class="line">along with this program.  If not, see &lt;http:&#x2F;&#x2F;www.gnu.org&#x2F;licenses&#x2F;&gt;.</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询开源协议的网站"><a href="#查询开源协议的网站" class="headerlink" title="查询开源协议的网站"></a>查询开源协议的网站</h3><ol>
-<li><a href="https://spdx.org/licenses/">spdx.org/licenses/</a></li>
-<li><a href="https://opensource.org/licenses">opensource.org/licenses</a></li>
-<li><a href="https://choosealicense.com/">choosealicense.com/</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Open Source License</tag>
-        <tag>MIT</tag>
-        <tag>Apache2.0</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用的Git命令</title>
-    <url>/article/5c7291e7.html</url>
-    <content><![CDATA[<blockquote>
-<p>这里将列出常用的Git命令，包括初始化仓库、配置、增删、提交、分支、标签、状态信息、远程同步、撤销等其他。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 在当前目录新建一个Git代码库</span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"># 新建一个目录，将其初始化为Git代码库</span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"># 下载一个项目和它的整个代码历史</span><br><span class="line">$ git clone [url]</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示当前的Git配置</span><br><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line"># 编辑Git配置文件</span><br><span class="line">$ git config -e [--global]</span><br><span class="line"></span><br><span class="line"># 设置提交代码时的用户信息</span><br><span class="line">$ git config [--global] user.name &quot;[name]&quot;</span><br><span class="line">$ git config [--global] user.email &quot;[email address]&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 添加指定文件到暂存区</span><br><span class="line">$ git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 添加指定目录到暂存区，包括子目录</span><br><span class="line">$ git add [dir]</span><br><span class="line"></span><br><span class="line"># 添加当前目录的所有文件到暂存区</span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"># 添加每个变化前，都会要求确认</span><br><span class="line"># 对于同一个文件的多处变化，可以实现分次提交</span><br><span class="line">$ git add -p</span><br><span class="line"></span><br><span class="line"># 删除工作区文件，并且将这次删除放入暂存区</span><br><span class="line">$ git rm [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 停止追踪指定文件，但该文件会保留在工作区</span><br><span class="line">$ git rm --cached [file]</span><br><span class="line"></span><br><span class="line"># 改名文件，并且将这个改名放入暂存区</span><br><span class="line">$ git mv [file-original] [file-renamed]</span><br></pre></td></tr></table></figure>
-
-<h3 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 提交暂存区到仓库区</span><br><span class="line">$ git commit -m [message]</span><br><span class="line"></span><br><span class="line"># 提交暂存区的指定文件到仓库区</span><br><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br><span class="line"></span><br><span class="line"># 提交工作区自上次commit之后的变化，直接到仓库区</span><br><span class="line">$ git commit -a</span><br><span class="line"></span><br><span class="line"># 提交时显示所有diff信息</span><br><span class="line">$ git commit -v</span><br><span class="line"></span><br><span class="line"># 使用一次新的commit，替代上一次提交</span><br><span class="line"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span><br><span class="line">$ git commit --amend -m [message]</span><br><span class="line"></span><br><span class="line"># 重做上一次commit，并包括指定文件的新变化</span><br><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure>
-
-<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有本地分支</span><br><span class="line">$ git branch</span><br><span class="line"></span><br><span class="line"># 列出所有远程分支</span><br><span class="line">$ git branch -r</span><br><span class="line"></span><br><span class="line"># 列出所有本地分支和远程分支</span><br><span class="line">$ git branch -a</span><br><span class="line"></span><br><span class="line"># 新建一个分支，但依然停留在当前分支</span><br><span class="line">$ git branch [branch-name]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，并切换到该分支</span><br><span class="line">$ git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向指定commit</span><br><span class="line">$ git branch [branch] [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，与指定的远程分支建立追踪关系</span><br><span class="line">$ git branch --track [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 切换到指定分支，并更新工作区</span><br><span class="line">$ git checkout [branch-name]</span><br><span class="line"></span><br><span class="line"># 切换到上一个分支</span><br><span class="line">$ git checkout -</span><br><span class="line"></span><br><span class="line"># 建立追踪关系，在现有分支与指定的远程分支之间</span><br><span class="line">$ git branch --set-upstream [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 合并指定分支到当前分支</span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"># 选择一个commit，合并进当前分支</span><br><span class="line">$ git cherry-pick [commit]</span><br><span class="line"></span><br><span class="line"># 删除分支</span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"># 删除远程分支</span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote&#x2F;branch]</span><br></pre></td></tr></table></figure>
-
-<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有tag</span><br><span class="line">$ git tag</span><br><span class="line"></span><br><span class="line"># 新建一个tag在当前commit</span><br><span class="line">$ git tag [tag]</span><br><span class="line"></span><br><span class="line"># 新建一个tag在指定commit</span><br><span class="line">$ git tag [tag] [commit]</span><br><span class="line"></span><br><span class="line"># 删除本地tag</span><br><span class="line">$ git tag -d [tag]</span><br><span class="line"></span><br><span class="line"># 删除远程tag</span><br><span class="line">$ git push origin :refs&#x2F;tags&#x2F;[tagName]</span><br><span class="line"></span><br><span class="line"># 查看tag信息</span><br><span class="line">$ git show [tag]</span><br><span class="line"></span><br><span class="line"># 提交指定tag</span><br><span class="line">$ git push [remote] [tag]</span><br><span class="line"></span><br><span class="line"># 提交所有tag</span><br><span class="line">$ git push [remote] --tags</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向某个tag</span><br><span class="line">$ git checkout -b [branch] [tag]</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示有变更的文件</span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"># 显示当前分支的版本历史</span><br><span class="line">$ git log</span><br><span class="line"></span><br><span class="line"># 显示commit历史，以及每次commit发生变更的文件</span><br><span class="line">$ git log --stat</span><br><span class="line"></span><br><span class="line"># 搜索提交历史，根据关键词</span><br><span class="line">$ git log -S [keyword]</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，每个commit占据一行</span><br><span class="line">$ git log [tag] HEAD --pretty&#x3D;format:%s</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件</span><br><span class="line">$ git log [tag] HEAD --grep feature</span><br><span class="line"></span><br><span class="line"># 显示某个文件的版本历史，包括文件改名</span><br><span class="line">$ git log --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br><span class="line"></span><br><span class="line"># 显示指定文件相关的每一次diff</span><br><span class="line">$ git log -p [file]</span><br><span class="line"></span><br><span class="line"># 显示过去5次提交</span><br><span class="line">$ git log -5 --pretty --oneline</span><br><span class="line"></span><br><span class="line"># 显示所有提交过的用户，按提交次数排序</span><br><span class="line">$ git shortlog -sn</span><br><span class="line"></span><br><span class="line"># 显示指定文件是什么人在什么时间修改过</span><br><span class="line">$ git blame [file]</span><br><span class="line"></span><br><span class="line"># 显示暂存区和工作区的差异</span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"># 显示暂存区和上一个commit的差异</span><br><span class="line">$ git diff --cached [file]</span><br><span class="line"></span><br><span class="line"># 显示工作区与当前分支最新commit之间的差异</span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"># 显示两次提交之间的差异</span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"># 显示今天你写了多少行代码</span><br><span class="line">$ git diff --shortstat &quot;@&#123;0 day ago&#125;&quot;</span><br><span class="line"></span><br><span class="line"># 显示某次提交的元数据和内容变化</span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交发生变化的文件</span><br><span class="line">$ git show --name-only [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交时，某个文件的内容</span><br><span class="line">$ git show [commit]:[filename]</span><br><span class="line"></span><br><span class="line"># 显示当前分支的最近几次提交</span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
-
-<h3 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 下载远程仓库的所有变动</span><br><span class="line">$ git fetch [remote]</span><br><span class="line"></span><br><span class="line"># 显示所有远程仓库</span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"># 显示某个远程仓库的信息</span><br><span class="line">$ git remote show [remote]</span><br><span class="line"></span><br><span class="line"># 增加一个新的远程仓库，并命名</span><br><span class="line">$ git remote add [shortname] [url]</span><br><span class="line"></span><br><span class="line"># 取回远程仓库的变化，并与本地分支合并</span><br><span class="line">$ git pull [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 上传本地指定分支到远程仓库</span><br><span class="line">$ git push [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 强行推送当前分支到远程仓库，即使有冲突</span><br><span class="line">$ git push [remote] --force</span><br><span class="line"></span><br><span class="line"># 推送所有分支到远程仓库</span><br><span class="line">$ git push [remote] --all</span><br></pre></td></tr></table></figure>
-
-<h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 恢复暂存区的指定文件到工作区</span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"># 恢复某个commit的指定文件到暂存区和工作区</span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"># 恢复暂存区的所有文件到工作区</span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"># 重置暂存区与工作区，与上一次commit保持一致</span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个commit，用来撤销指定commit</span><br><span class="line"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line">暂时将未提交的变化移除，稍后再移入</span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
-
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 生成一个可供发布的压缩包</span><br><span class="line">$ git archive</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Github的神级操作</title>
-    <url>/article/33799c4b.html</url>
-    <content><![CDATA[<blockquote>
-<p>GitHub是面向开源及私有软件项目的托管平台，其流行及在开源世界的受欢迎程度自不必多言，但是关于Github的使用你又知道多少呢？这里将介绍下Github的常用快捷键、高级搜索语法和在线查看且运行项目，还有Github的官方文档值得认真读读，可以学到很多有用的点。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><p>聚焦于搜索栏：<kbd>S</kbd></p>
-<p>激活文件查找器：<kbd>T</kbd></p>
-<p>跳至代码中的某一行：<kbd>L</kbd></p>
-<p>打开追溯视图：<kbd>B</kbd></p>
-<p>在线VSCode查看：<kbd>。</kbd></p>
-<p>打开命令面板：<kbd>Ctrl</kbd> + <kbd>K</kbd></p>
-<p>查看帮助：<kbd>Shift</kbd> + <kbd>?</kbd></p>
-<p>更多快捷键查看：<a href="https://docs.github.com/cn/get-started/using-github/keyboard-shortcuts">Keyboard shortcuts</a></p>
-<h3 id="关于搜索"><a href="#关于搜索" class="headerlink" title="关于搜索"></a>关于搜索</h3><p>高级搜索面板：<a href="https://github.com/search/advanced">Advanced search</a></p>
-<p>常用搜索语法：</p>
-<table>
-<thead>
-<tr>
-<th>搜索条件 - 找开发者</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>location:</td>
-<td>location:china，匹配用户填写的地址在china</td>
-</tr>
-<tr>
-<td>language</td>
-<td>language:javascript，匹配开发语音为javascript的开发者</td>
-</tr>
-<tr>
-<td>followers:</td>
-<td>followers:&gt;=1000，匹配超过1000关注者的开发者</td>
-</tr>
-<tr>
-<td>in:fullname</td>
-<td>jack in:fullname，匹配用户名实名为jack的开发者</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>搜索条件 - 找项目</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Awesome+关键字</td>
-<td>神奇的关键字awesome，帮助找到优秀的工具列表</td>
-</tr>
-<tr>
-<td>stars:</td>
-<td>stars:&gt;=500</td>
-</tr>
-<tr>
-<td>language:</td>
-<td>language:javascript</td>
-</tr>
-<tr>
-<td>forks:</td>
-<td>forks:&gt;=500</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>搜索条件 - 找开发者</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>in:name xxx</td>
-<td>项目名包含xxx</td>
-</tr>
-<tr>
-<td>in:description xxx</td>
-<td>项目描述包含xxx</td>
-</tr>
-<tr>
-<td>in:readme xxx</td>
-<td>项目介绍文档里含有xxx</td>
-</tr>
-</tbody></table>
-<p>更多搜索相关：<a href="https://docs.github.com/cn/search-github/getting-started-with-searching-on-github/about-searching-on-github">About searching on GitHub</a></p>
-<h3 id="在线运行Github项目"><a href="#在线运行Github项目" class="headerlink" title="在线运行Github项目"></a>在线运行Github项目</h3><p>再Github项目仓库前加上：<code>gitpod.io/#/</code>即可在线打开项目，并且支持在线运行该项目，相当于拥有一台可操作的远程服务器。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 例如原仓库</span></span><br><span class="line">https://github.com/ant-design/ant-design-pro</span><br><span class="line"><span class="comment"># 添加前缀</span></span><br><span class="line">https://gitpod.io/<span class="comment">#/github.com/ant-design/ant-design-pro</span></span><br><span class="line"><span class="comment"># 即可在线查看项目和运行</span></span><br></pre></td></tr></table></figure>
-
-<p>关于<a href="https://www.gitpod.io/">Gitpod</a>，这是一个与GitHub紧密集成的云IDE，Gitpod为开发人员的GitHub项目提供了一次性的，可随时编程的开发环境。</p>
-]]></content>
-      <categories>
-        <category>Github</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用的adb命令</title>
-    <url>/article/3610a686.html</url>
-    <content><![CDATA[<blockquote>
-<p>ADB，即 Android Debug Bridge，它是 Android 开发/测试人员不可替代的强大工具，也是 Android 设备玩家的好玩具。安卓调试桥 (Android Debug Bridge, adb)，是一种可以用来操作手机设备或模拟器的命令行工具。它存在于 <a href="https://developer.android.google.cn/studio/releases/platform-tools">sdk/platform-tools</a> 目录下。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Adb常用命令"><a href="#Adb常用命令" class="headerlink" title="Adb常用命令"></a>Adb常用命令</h2><ul>
-<li>截图命令</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell /system/bin/screencap -p /sdcard/screenshot.png</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>将截图复制到电脑盘中</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb pull /sdcard/screenshot.png D:\download</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>使用adb命令开始录屏</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell screenrecord /sdcard/filename.mp4</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>启动和关闭ADB服务</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb start-server</span><br><span class="line">adb <span class="built_in">kill</span>-server</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>强制停止apk</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell am force-stop com.sohu.sohuvideo</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>强制停止apk，并清除数据</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm clear com.sohu.sohuvideo</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>静默安装</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm install -r filePath</span><br><span class="line">adb install **.apk</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>列出安装的apk包</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm list packsges</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>根据包名查找apk路径</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm path packages.name</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>根据包名卸载apk</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm uninstall packages.name</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>启动apk</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell am start -n ｛包(package)名｝/｛包名｝.&#123;活动(activity)名称&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>通过 IP 地址无线连接到设备</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 USB 线将设备连接到主机，设置目标设备以监听端口 5555 上的 TCP/IP 连接。</span></span><br><span class="line">adb tcpip 5555</span><br><span class="line"><span class="comment"># 拔掉连接目标设备的 USB 线，通过 IP 地址连接到设备</span></span><br><span class="line">adb connect device_ip_address:5555</span><br><span class="line"><span class="comment"># 查看连接设备</span></span><br><span class="line">adb devices</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Android源码开发常用</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看存储</span></span><br><span class="line">df -h</span><br><span class="line"><span class="comment"># 查看运行内存</span></span><br><span class="line">free -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入root模式</span></span><br><span class="line">adb root</span><br><span class="line">adb remount</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解锁</span></span><br><span class="line">adb <span class="built_in">disable</span>-verity</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入boot模式</span></span><br><span class="line">adb reboot bootloader</span><br><span class="line">fastboot devices</span><br><span class="line">fastboot reboot</span><br></pre></td></tr></table></figure>
-
-<h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p><a href="https://developer.android.google.cn/studio/command-line/adb">https://developer.android.google.cn/studio/command-line/adb</a></p>
-]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-      <tags>
-        <tag>adb</tag>
-      </tags>
   </entry>
   <entry>
     <title>关于图床</title>
@@ -1247,6 +710,543 @@
       </tags>
   </entry>
   <entry>
+    <title>Ubuntu常用包管理命令</title>
+    <url>/article/64245.html</url>
+    <content><![CDATA[<blockquote>
+<p>Ubuntu常用包管理命令</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install vim</span><br><span class="line"></span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>apt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
+    <url>/article/84ebc250.html</url>
+    <content><![CDATA[<blockquote>
+<p>通过Github搭建个人博客blog：GitHub Pages是一个静态站点托管服务，可直接从GitHub上的存储库获取HTML，CSS和JavaScript文件，还可以选择在构建过程中运行这些文件并发布网站。Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="相关组件"><a href="#相关组件" class="headerlink" title="相关组件"></a>相关组件</h2><ul>
+<li>github pages</li>
+<li>node.js</li>
+<li>hexo</li>
+</ul>
+<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><ul>
+<li>下载地址</li>
+</ul>
+<p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+<ul>
+<li>测试</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装成功测试cmd</span></span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo安装与配置"><a href="#hexo安装与配置" class="headerlink" title="hexo安装与配置"></a>hexo安装与配置</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cmd切换到blog文件夹下，输入安装hexo命令</span><br><span class="line">npm install hexo -g</span><br><span class="line"></span><br><span class="line"># 安装成功测试</span><br><span class="line">hexo -v</span><br><span class="line"></span><br><span class="line"># hexo初始化</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 安装必要的组件</span><br><span class="line">npm isntall</span><br><span class="line"></span><br><span class="line"># 开启服务器</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"># 显示本地博客地址，复制位置到浏览器打开后显示</span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"># 如果无法显示网页,说明端口可能被占用,更改端口便可</span><br><span class="line">hexo server -p 4001</span><br></pre></td></tr></table></figure>
+
+<h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><ul>
+<li>下载地址</li>
+</ul>
+<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<ul>
+<li>配置</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成rsa命令</span></span><br><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;test@hotmail.com&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加密钥到ssh-agent</span></span><br><span class="line"><span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(ssh-agent -s)</span>&quot;</span></span><br><span class="line"><span class="comment"># 添加生成的SSH key到ssh-agent</span></span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将id_rsa.pub文件里的内容复制到add SSH keys</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试是否成功</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>再blog文件夹中找到_config.yml文件，修改repo值(末尾)</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:test/test.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建新博客"><a href="#创建新博客" class="headerlink" title="创建新博客"></a>创建新博客</h2><ul>
+<li>流程</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建博客</span></span><br><span class="line">hexo new <span class="string">&quot;blog name&quot;</span></span><br><span class="line"><span class="comment"># 博客生成</span></span><br><span class="line">hexo g</span><br><span class="line"><span class="comment"># 博客部署</span></span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 博客生成+部署</span></span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>默认生成的post</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: blog name</span><br><span class="line">date: 2022-05-05 22:51:03</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>关于post其他标签</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>layout</td>
+<td>布局</td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>标题</td>
+<td>文章的文件名</td>
+</tr>
+<tr>
+<td>date</td>
+<td>建立日期</td>
+<td>文件建立日期</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>更新日期</td>
+<td>文件更新日期</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>开启文章的评论功能</td>
+<td>true</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>标签（不适用于分页）</td>
+<td></td>
+</tr>
+<tr>
+<td>categories</td>
+<td>分类（不适用于分页）</td>
+<td></td>
+</tr>
+<tr>
+<td>permalink</td>
+<td>覆盖文章网址</td>
+<td></td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: blog name</span><br><span class="line">date: 2022-05-05 22:51:03</span><br><span class="line">categories:</span><br><span class="line">	- 分类</span><br><span class="line">	- 子分类</span><br><span class="line">tags:</span><br><span class="line">	- 标签1</span><br><span class="line">	- 标签2</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>博客编辑器typora</li>
+</ul>
+<p><a href="https://www.typora.io/">https://www.typora.io/</a></p>
+<ul>
+<li>博客图片上传问题</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 修改_config.yml里的psot_asset_folder:设置为true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># cmd执行</span></span><br><span class="line">npm install hexo-asset-image --save</span><br><span class="line">(或npm install https://github.com/CodeFalling/hexo-asset-image --save)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用hexo new &quot;blog name&quot;新建博客时，_posts目录下会出现同名*.md和文件夹，图片放在此文件夹中</span></span><br><span class="line">![](本地图片测试/logo.jpg) </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="博客个性化设置"><a href="#博客个性化设置" class="headerlink" title="博客个性化设置"></a>博客个性化设置</h2><h3 id="下载hexo主题（自选主题模板）"><a href="#下载hexo主题（自选主题模板）" class="headerlink" title="下载hexo主题（自选主题模板）"></a>下载hexo主题（自选主题模板）</h3><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo//theme.jpg" alt="theme"></p>
+<h3 id="下载next主题"><a href="#下载next主题" class="headerlink" title="下载next主题"></a>下载next主题</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改-blog-config-yml"><a href="#修改-blog-config-yml" class="headerlink" title="修改./blog/_config.yml"></a>修改./blog/_config.yml</h3><ul>
+<li>主题选择</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>网页信息</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Just_Paranoid</span><br><span class="line">subtitle: 特立独行</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords: &#x27;&#x27;</span><br><span class="line">author: fangjian98</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改-blog-themes-next-config-yml"><a href="#修改-blog-themes-next-config-yml" class="headerlink" title="修改./blog/themes/next/_config.yml"></a>修改./blog/themes/next/_config.yml</h3><ul>
+<li>选择主题样式<br>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白<br>Mist - Muse 的紧凑版本，整洁有序的单栏外观<br>Pisces - 双栏 Scheme，小家碧玉似的清新<br>Gemini - 左侧网站信息及目录，块+片段结构布局</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Scheme Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>网站图标</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Site Information Settings</span><br><span class="line"># See: https://theme-next.org/docs/getting-started/</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">favicon:</span><br><span class="line">  small: /images/favicon-16x16-next.png</span><br><span class="line">  medium: /images/favicon-32x32-next.png</span><br><span class="line">  apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: /images/logo.svg</span><br><span class="line">  #android_manifest: /images/manifest.json</span><br><span class="line">  #ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
+
+<p>ico图标下载：<a href="https://icons8.com/icons">https://icons8.com/icons</a>,</p>
+<p>ico图标制作：<a href="http://www.bitbug.net/">http://www.bitbug.net/</a></p>
+<ul>
+<li>主页显示摘要</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span></span><br><span class="line">excerpt_description: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read more button</span></span><br><span class="line"><span class="comment"># If true, the read more button will be displayed in excerpt section.</span></span><br><span class="line">read_more_btn: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>在文章中添加该标志，本文在首页的预览就会显示到这个段落为止。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>头像</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: #&#x2F;images&#x2F;avatar.gif</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: false</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>社交链接</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Social Links</span><br><span class="line"># Usage: &#96;Key: permalink || icon&#96;</span><br><span class="line"># Key is the link label showing to end users.</span><br><span class="line"># Value before &#96;||&#96; delimiter is the target permalink, value after &#96;||&#96; delimiter is the name of Font Awesome icon.</span><br><span class="line">social:</span><br><span class="line">  #GitHub: https:&#x2F;&#x2F;github.com&#x2F;yourname || fab fa-github</span><br><span class="line">  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span><br><span class="line">  #Weibo: https:&#x2F;&#x2F;weibo.com&#x2F;yourname || fab fa-weibo</span><br><span class="line">  #Google: https:&#x2F;&#x2F;plus.google.com&#x2F;yourname || fab fa-google</span><br><span class="line">  #Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;yourname || fab fa-twitter</span><br><span class="line">  #FB Page: https:&#x2F;&#x2F;www.facebook.com&#x2F;yourname || fab fa-facebook</span><br><span class="line">  #StackOverflow: https:&#x2F;&#x2F;stackoverflow.com&#x2F;yourname || fab fa-stack-overflow</span><br><span class="line">  #YouTube: https:&#x2F;&#x2F;youtube.com&#x2F;yourname || fab fa-youtube</span><br><span class="line">  #Instagram: https:&#x2F;&#x2F;instagram.com&#x2F;yourname || fab fa-instagram</span><br><span class="line">  #Skype: skype:yourname?call|chat || fab fa-skype</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建菜单</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;categories&quot;</span><br><span class="line">hexo new page &quot;tags&quot;</span><br><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Menu Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># Usage: &#96;Key: &#x2F;link&#x2F; || icon&#96;</span><br><span class="line"># Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.</span><br><span class="line"># Value before &#96;||&#96; delimiter is the target link, value after &#96;||&#96; delimiter is the name of Font Awesome icon.</span><br><span class="line"># When running the site in a subdirectory (e.g. yoursite.com&#x2F;blog), remove the leading slash from link value (&#x2F;archives -&gt; archives).</span><br><span class="line"># External url should start with http:&#x2F;&#x2F; or https:&#x2F;&#x2F;</span><br><span class="line">menu:</span><br><span class="line">  home: &#x2F; || fa fa-home</span><br><span class="line">  about: &#x2F;about&#x2F; || fa fa-user</span><br><span class="line">  #tags: &#x2F;tags&#x2F; || fa fa-tags</span><br><span class="line">  #categories: &#x2F;categories&#x2F; || fa fa-th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || fa fa-archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat</span><br><span class="line"></span><br><span class="line"># Enable &#x2F; Disable menu icons &#x2F; item badges.</span><br><span class="line">menu_settings:</span><br><span class="line">  icons: true</span><br><span class="line">  badges: false</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改完主题后需要重新部署</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>增加本地搜索</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装hexo-generator-searchdb，在站点的根目录下执行以下命令</span></span><br><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 根目录_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置站点搜索信息</span></span><br><span class="line">search:</span><br><span class="line"> path: search.xml</span><br><span class="line"> field: post</span><br><span class="line"> format: html</span><br><span class="line"> <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 修改themes&#x2F;next&#x2F;_config.yml</span><br><span class="line"></span><br><span class="line">local_search:</span><br><span class="line"> enable: true</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>显示浏览进度</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.</span></span><br><span class="line">  sidebar: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line">  scrollpercent: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>RSS</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装hexo-generator-feed</span></span><br><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># feed</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/hexojs/hexo-generator-feed</span></span><br><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>不开启不蒜子博客访问量统计</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span><br><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span><br><span class="line">busuanzi_count:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  total_visitors: <span class="literal">true</span></span><br><span class="line">  total_visitors_icon: fa fa-user</span><br><span class="line">  total_views: <span class="literal">true</span></span><br><span class="line">  total_views_icon: fa fa-eye</span><br><span class="line">  post_views: <span class="literal">true</span></span><br><span class="line">  post_views_icon: fa fa-eye</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改博文链接地址<code>/posts/xxxxx.html</code></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br><span class="line"></span><br><span class="line"># 根目录下的 _config.yml 文件</span><br><span class="line">permalink: posts&#x2F;:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>首页title优化<code>网站名称-网站描述</code></li>
+</ul>
+<p>更改<code>index.swig</code>文件<code>your-hexo-site\themes\next\layout</code></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; &#123;% endblock %&#125;</span><br><span class="line"># 改成</span><br><span class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; - &#123;&#123; theme.description &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
+        <tag>Node.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编程语言的Hello World程序</title>
+    <url>/article/caca35c0.html</url>
+    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>知识共享许可协议 Creative Commons Licenses</title>
+    <url>/article/d8f310cd.html</url>
+    <content><![CDATA[<blockquote>
+<p>知识共享版权许可协议（Creative Commons licenses，简称cc）是在著作权法的传统的“所有权利保留”环境下构造平衡。给个人创作者、公司、机构在内的每一个人，提供简单的、标准化的方式授予他们所创作作品的版权许可。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="关于知识共享许可协议-Creative-Commons-Licenses"><a href="#关于知识共享许可协议-Creative-Commons-Licenses" class="headerlink" title="关于知识共享许可协议 Creative Commons Licenses"></a>关于知识共享许可协议 Creative Commons Licenses</h3><p>知识共享许可协议（Creative Commons licenses，简称cc），它是由成立于2001年的美国<a href="http://creativecommons.org/">Creative Commons基金会</a>，在2002年12月16日提出的。<br>知识共享版权许可协议是在著作权法的传统的“所有权利保留”环境下构造平衡。给个人创作者、公司、机构在内的每一个人，提供简单的、标准化的方式授予他们所创作作品的版权许可。</p>
+<p>严格意义上说该协议并不能说是真正的开源协议，它们大多是被使用于设计类的工程上。CC 协议种类繁多，每一种都授权特定的权利。大多数的比较严格的 CC 协议会声明 “署名权，非商业用途，禁止衍生” 条款，这意味着你可以自由的分享这个作品，但你不能改变它和对其收费，而且必须声明作品的归属。这个许可协议非常的有用，它可以让你的作品传播出去，但又可以对作品的使用保留部分或完全的控制。最少限制的 CC 协议类型当属 “署名” 协议，这意味着只要人们能维护你的名誉，他们对你的作品怎么使用都行。</p>
+<p>知识共享许可协议-CC许可协议是博文常用的一个版权许可协议，例如：CSDN默认为<code>CC 4.0 BY-SA版权协议</code>，这意味着你的博文可用于商业使用。</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" align="left"/></br></p>
+<h3 id="关于CC许可类型"><a href="#关于CC许可类型" class="headerlink" title="关于CC许可类型"></a>关于CC许可类型</h3><p><strong>1.四种核心权利</strong><br>署名（Attribution，简写为BY）：必须提到原作者。<br>非商业用途（Noncommercial，简写为NC）：不得用于盈利性目的。<br>禁止演绎（No Derivative Works，简写为ND）：不得修改原作品, 不得再创作。<br>相同方式共享（Share Alike，简写为SA）：允许修改原作品，但必须使用相同的许可证发布。</p>
+<p><strong>2.六种组合</strong><br>署名（BY）<br>署名（BY）-相同方式共享（SA）<br>署名（BY）-禁止演绎（ND）<br>署名（BY）-非商业性使用（NC）<br>署名（BY）-非商业性使用（NC）-相同方式共享（SA）<br>署名（BY）-非商业性使用（NC）-禁止演绎（ND）</p>
+<p>如果你还不确定该如何选择CC协议，你可以查看 <a href="https://creativecommons.org/choose/">creativecommons.org/choose</a> 来生成一个许可证。现在最流行的知识共享协议是<code>CC 4.0 BY-NC-SA版权协议</code></p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="left"/></br></p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Creative Commons Licenses</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开源许可协议 Open Source License</title>
+    <url>/article/b86684bd.html</url>
+    <content><![CDATA[<blockquote>
+<p>开源许可证是计算机软件和其他产品的一种许可证，允许在定义的条款和条件下使用、修改和/或共享源代码、蓝图或设计。这允许最终用户和商业公司根据自己的定制、好奇心或故障排除需求来审查和修改源代码、蓝图或设计。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="关于开源许可证-Open-Source-License"><a href="#关于开源许可证-Open-Source-License" class="headerlink" title="关于开源许可证 Open Source License"></a>关于开源许可证 Open Source License</h3><p>开源许可证是计算机软件和其他产品的一种许可证，允许在定义的条款和条件下使用、修改和/或共享源代码、蓝图或设计。这允许最终用户和商业公司根据自己的定制、好奇心或故障排除需求来审查和修改源代码、蓝图或设计。</p>
+<p>我们接触到的开源软件一般都有对应的开源许可证对软件的使用、复制、修改和再发布等进行限制。许可证即授权条款，开源许可证就是保证开源软件这些限制的法律文件，目的在于规范受著作权保护的软件的使用或者分发行为。<strong>开源许可证是开源软件生态系统的基础，可以促进软件的协同开发。</strong></p>
+<blockquote>
+<p>常见的开源许可证主要有 Apache、MIT、BSD、GPL、LGPL、MPL、SSPL 等，可以大致分为两大类：<br><strong>1. 宽松自由软件许可协议 Permissive Free Software Licence</strong><br>是一种对软件的使用、修改、传播等方式采用最低限制的自由软件许可协议条款类型。这种类型的软件许可协议将不保证原作品的派生作品会继续保持与原作品完全相同的相关限制条件，从而为原作品的自由使用、修改和传播等提供更大的空间。<br><strong>2.著佐权许可证 Copyleft License</strong><br>是在有限空间内的自由使用、修改和传播，且不得违背原作品的限制条款。如果一款软件使用 Copyleft 类型许可协议规定软件不得用于商业目的，且不得闭源，那么后续的衍生子软件也必须得遵循该条款。<br><strong>两者最大的差别在于</strong>：在软件被修改并再发行时， Copyleft License 仍然强制要求公开源代码（衍生软件需要开源），而Permissive Free Software Licence 不要求公开源代码（衍生软件可以变为专有软件）。<br><strong>其中</strong>，Apache、MIT、BSD 都是宽松许可证，GPL 是典型的强著佐权（Copyleft ）许可证，LGPL、MPL 是弱著佐权（Copyleft ）许可证。SSPL 则是近年来 MongoDB 创建的一个新许可证，存在较大争议，开放源代码促进会 OSI 甚至认为 SSPL 就不是开源许可协议。</p>
+</blockquote>
+<h3 id="如何选择开源许可证"><a href="#如何选择开源许可证" class="headerlink" title="如何选择开源许可证"></a>如何选择开源许可证</h3><p>如何为代码选择开源许可证，这是一个问题。世界上的开源许可证，大概有上百种，很少有人能弄清楚它们的区别。即使在最流行的六种开源许可证：<a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>、<a href="https://en.wikipedia.org/wiki/BSD_licenses">BSD</a>、<a href="https://en.wikipedia.org/wiki/MIT_License">MIT</a>、<a href="https://www.mozilla.org/MPL/">Mozilla</a>、<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache</a>和<a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License">LGPL</a>，在这些中做出选择也很复杂。</p>
+<p>乌克兰程序员Paul Bagwell 画了一张分析图，说明应该怎么选择，这是我见过的最简单的讲解，只用两分钟，你就能搞清楚这六种许可证之间的最大区别。<br><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/licenses.png" alt="开源许可证"></p>
+<h3 id="常见开源许可证声明方式"><a href="#常见开源许可证声明方式" class="headerlink" title="常见开源许可证声明方式"></a>常见开源许可证声明方式</h3><ul>
+<li><a href="https://opensource.org/licenses/MIT">MIT</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MIT License</span><br><span class="line"></span><br><span class="line">Copyright (c) &lt;year&gt; &lt;copyright holders&gt;</span><br><span class="line"></span><br><span class="line">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and&#x2F;or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</span><br><span class="line"></span><br><span class="line">The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.</span><br><span class="line"></span><br><span class="line">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache2.0</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Copyright [yyyy] [name of copyright owner]</span><br><span class="line"></span><br><span class="line">Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span><br><span class="line">you may not use this file except in compliance with the License.</span><br><span class="line">You may obtain a copy of the License at</span><br><span class="line"></span><br><span class="line">    http:&#x2F;&#x2F;www.apache.org&#x2F;licenses&#x2F;LICENSE-2.0</span><br><span class="line"></span><br><span class="line">Unless required by applicable law or agreed to in writing, software</span><br><span class="line">distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span><br><span class="line">WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span><br><span class="line">See the License for the specific language governing permissions and</span><br><span class="line">limitations under the License.</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL3.0</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;one line to give the program&#39;s name and a brief idea of what it does.&gt;</span><br><span class="line"></span><br><span class="line">Copyright (C) &lt;year&gt;  &lt;name of author&gt;</span><br><span class="line"></span><br><span class="line">This program is free software: you can redistribute it and&#x2F;or modify</span><br><span class="line">it under the terms of the GNU General Public License as published by</span><br><span class="line">the Free Software Foundation, either version 3 of the License, or</span><br><span class="line">(at your option) any later version.</span><br><span class="line"></span><br><span class="line">This program is distributed in the hope that it will be useful,</span><br><span class="line">but WITHOUT ANY WARRANTY; without even the implied warranty of</span><br><span class="line">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span><br><span class="line">GNU General Public License for more details.</span><br><span class="line"></span><br><span class="line">You should have received a copy of the GNU General Public License</span><br><span class="line">along with this program.  If not, see &lt;http:&#x2F;&#x2F;www.gnu.org&#x2F;licenses&#x2F;&gt;.</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询开源协议的网站"><a href="#查询开源协议的网站" class="headerlink" title="查询开源协议的网站"></a>查询开源协议的网站</h3><ol>
+<li><a href="https://spdx.org/licenses/">spdx.org/licenses/</a></li>
+<li><a href="https://opensource.org/licenses">opensource.org/licenses</a></li>
+<li><a href="https://choosealicense.com/">choosealicense.com/</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Open Source License</tag>
+        <tag>MIT</tag>
+        <tag>Apache2.0</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用的adb命令</title>
+    <url>/article/3610a686.html</url>
+    <content><![CDATA[<blockquote>
+<p>ADB，即 Android Debug Bridge，它是 Android 开发/测试人员不可替代的强大工具，也是 Android 设备玩家的好玩具。安卓调试桥 (Android Debug Bridge, adb)，是一种可以用来操作手机设备或模拟器的命令行工具。它存在于 <a href="https://developer.android.google.cn/studio/releases/platform-tools">sdk/platform-tools</a> 目录下。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Adb常用命令"><a href="#Adb常用命令" class="headerlink" title="Adb常用命令"></a>Adb常用命令</h2><ul>
+<li>截图命令</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell /system/bin/screencap -p /sdcard/screenshot.png</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>将截图复制到电脑盘中</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb pull /sdcard/screenshot.png D:\download</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用adb命令开始录屏</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell screenrecord /sdcard/filename.mp4</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动和关闭ADB服务</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb start-server</span><br><span class="line">adb <span class="built_in">kill</span>-server</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>强制停止apk</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell am force-stop com.sohu.sohuvideo</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>强制停止apk，并清除数据</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm clear com.sohu.sohuvideo</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>静默安装</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm install -r filePath</span><br><span class="line">adb install **.apk</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>列出安装的apk包</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm list packsges</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据包名查找apk路径</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm path packages.name</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据包名卸载apk</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm uninstall packages.name</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动apk</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell am start -n ｛包(package)名｝/｛包名｝.&#123;活动(activity)名称&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>通过 IP 地址无线连接到设备</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 USB 线将设备连接到主机，设置目标设备以监听端口 5555 上的 TCP/IP 连接。</span></span><br><span class="line">adb tcpip 5555</span><br><span class="line"><span class="comment"># 拔掉连接目标设备的 USB 线，通过 IP 地址连接到设备</span></span><br><span class="line">adb connect device_ip_address:5555</span><br><span class="line"><span class="comment"># 查看连接设备</span></span><br><span class="line">adb devices</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Android源码开发常用</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看存储</span></span><br><span class="line">df -h</span><br><span class="line"><span class="comment"># 查看运行内存</span></span><br><span class="line">free -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入root模式</span></span><br><span class="line">adb root</span><br><span class="line">adb remount</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解锁</span></span><br><span class="line">adb <span class="built_in">disable</span>-verity</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入boot模式</span></span><br><span class="line">adb reboot bootloader</span><br><span class="line">fastboot devices</span><br><span class="line">fastboot reboot</span><br></pre></td></tr></table></figure>
+
+<h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p><a href="https://developer.android.google.cn/studio/command-line/adb">https://developer.android.google.cn/studio/command-line/adb</a></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>adb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用的Git命令</title>
+    <url>/article/5c7291e7.html</url>
+    <content><![CDATA[<blockquote>
+<p>这里将列出常用的Git命令，包括初始化仓库、配置、增删、提交、分支、标签、状态信息、远程同步、撤销等其他。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 在当前目录新建一个Git代码库</span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"># 新建一个目录，将其初始化为Git代码库</span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"># 下载一个项目和它的整个代码历史</span><br><span class="line">$ git clone [url]</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示当前的Git配置</span><br><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line"># 编辑Git配置文件</span><br><span class="line">$ git config -e [--global]</span><br><span class="line"></span><br><span class="line"># 设置提交代码时的用户信息</span><br><span class="line">$ git config [--global] user.name &quot;[name]&quot;</span><br><span class="line">$ git config [--global] user.email &quot;[email address]&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 添加指定文件到暂存区</span><br><span class="line">$ git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 添加指定目录到暂存区，包括子目录</span><br><span class="line">$ git add [dir]</span><br><span class="line"></span><br><span class="line"># 添加当前目录的所有文件到暂存区</span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"># 添加每个变化前，都会要求确认</span><br><span class="line"># 对于同一个文件的多处变化，可以实现分次提交</span><br><span class="line">$ git add -p</span><br><span class="line"></span><br><span class="line"># 删除工作区文件，并且将这次删除放入暂存区</span><br><span class="line">$ git rm [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 停止追踪指定文件，但该文件会保留在工作区</span><br><span class="line">$ git rm --cached [file]</span><br><span class="line"></span><br><span class="line"># 改名文件，并且将这个改名放入暂存区</span><br><span class="line">$ git mv [file-original] [file-renamed]</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 提交暂存区到仓库区</span><br><span class="line">$ git commit -m [message]</span><br><span class="line"></span><br><span class="line"># 提交暂存区的指定文件到仓库区</span><br><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br><span class="line"></span><br><span class="line"># 提交工作区自上次commit之后的变化，直接到仓库区</span><br><span class="line">$ git commit -a</span><br><span class="line"></span><br><span class="line"># 提交时显示所有diff信息</span><br><span class="line">$ git commit -v</span><br><span class="line"></span><br><span class="line"># 使用一次新的commit，替代上一次提交</span><br><span class="line"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span><br><span class="line">$ git commit --amend -m [message]</span><br><span class="line"></span><br><span class="line"># 重做上一次commit，并包括指定文件的新变化</span><br><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure>
+
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有本地分支</span><br><span class="line">$ git branch</span><br><span class="line"></span><br><span class="line"># 列出所有远程分支</span><br><span class="line">$ git branch -r</span><br><span class="line"></span><br><span class="line"># 列出所有本地分支和远程分支</span><br><span class="line">$ git branch -a</span><br><span class="line"></span><br><span class="line"># 新建一个分支，但依然停留在当前分支</span><br><span class="line">$ git branch [branch-name]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，并切换到该分支</span><br><span class="line">$ git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向指定commit</span><br><span class="line">$ git branch [branch] [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，与指定的远程分支建立追踪关系</span><br><span class="line">$ git branch --track [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 切换到指定分支，并更新工作区</span><br><span class="line">$ git checkout [branch-name]</span><br><span class="line"></span><br><span class="line"># 切换到上一个分支</span><br><span class="line">$ git checkout -</span><br><span class="line"></span><br><span class="line"># 建立追踪关系，在现有分支与指定的远程分支之间</span><br><span class="line">$ git branch --set-upstream [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 合并指定分支到当前分支</span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"># 选择一个commit，合并进当前分支</span><br><span class="line">$ git cherry-pick [commit]</span><br><span class="line"></span><br><span class="line"># 删除分支</span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"># 删除远程分支</span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote&#x2F;branch]</span><br></pre></td></tr></table></figure>
+
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有tag</span><br><span class="line">$ git tag</span><br><span class="line"></span><br><span class="line"># 新建一个tag在当前commit</span><br><span class="line">$ git tag [tag]</span><br><span class="line"></span><br><span class="line"># 新建一个tag在指定commit</span><br><span class="line">$ git tag [tag] [commit]</span><br><span class="line"></span><br><span class="line"># 删除本地tag</span><br><span class="line">$ git tag -d [tag]</span><br><span class="line"></span><br><span class="line"># 删除远程tag</span><br><span class="line">$ git push origin :refs&#x2F;tags&#x2F;[tagName]</span><br><span class="line"></span><br><span class="line"># 查看tag信息</span><br><span class="line">$ git show [tag]</span><br><span class="line"></span><br><span class="line"># 提交指定tag</span><br><span class="line">$ git push [remote] [tag]</span><br><span class="line"></span><br><span class="line"># 提交所有tag</span><br><span class="line">$ git push [remote] --tags</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向某个tag</span><br><span class="line">$ git checkout -b [branch] [tag]</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示有变更的文件</span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"># 显示当前分支的版本历史</span><br><span class="line">$ git log</span><br><span class="line"></span><br><span class="line"># 显示commit历史，以及每次commit发生变更的文件</span><br><span class="line">$ git log --stat</span><br><span class="line"></span><br><span class="line"># 搜索提交历史，根据关键词</span><br><span class="line">$ git log -S [keyword]</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，每个commit占据一行</span><br><span class="line">$ git log [tag] HEAD --pretty&#x3D;format:%s</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件</span><br><span class="line">$ git log [tag] HEAD --grep feature</span><br><span class="line"></span><br><span class="line"># 显示某个文件的版本历史，包括文件改名</span><br><span class="line">$ git log --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br><span class="line"></span><br><span class="line"># 显示指定文件相关的每一次diff</span><br><span class="line">$ git log -p [file]</span><br><span class="line"></span><br><span class="line"># 显示过去5次提交</span><br><span class="line">$ git log -5 --pretty --oneline</span><br><span class="line"></span><br><span class="line"># 显示所有提交过的用户，按提交次数排序</span><br><span class="line">$ git shortlog -sn</span><br><span class="line"></span><br><span class="line"># 显示指定文件是什么人在什么时间修改过</span><br><span class="line">$ git blame [file]</span><br><span class="line"></span><br><span class="line"># 显示暂存区和工作区的差异</span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"># 显示暂存区和上一个commit的差异</span><br><span class="line">$ git diff --cached [file]</span><br><span class="line"></span><br><span class="line"># 显示工作区与当前分支最新commit之间的差异</span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"># 显示两次提交之间的差异</span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"># 显示今天你写了多少行代码</span><br><span class="line">$ git diff --shortstat &quot;@&#123;0 day ago&#125;&quot;</span><br><span class="line"></span><br><span class="line"># 显示某次提交的元数据和内容变化</span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交发生变化的文件</span><br><span class="line">$ git show --name-only [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交时，某个文件的内容</span><br><span class="line">$ git show [commit]:[filename]</span><br><span class="line"></span><br><span class="line"># 显示当前分支的最近几次提交</span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
+
+<h3 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 下载远程仓库的所有变动</span><br><span class="line">$ git fetch [remote]</span><br><span class="line"></span><br><span class="line"># 显示所有远程仓库</span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"># 显示某个远程仓库的信息</span><br><span class="line">$ git remote show [remote]</span><br><span class="line"></span><br><span class="line"># 增加一个新的远程仓库，并命名</span><br><span class="line">$ git remote add [shortname] [url]</span><br><span class="line"></span><br><span class="line"># 取回远程仓库的变化，并与本地分支合并</span><br><span class="line">$ git pull [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 上传本地指定分支到远程仓库</span><br><span class="line">$ git push [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 强行推送当前分支到远程仓库，即使有冲突</span><br><span class="line">$ git push [remote] --force</span><br><span class="line"></span><br><span class="line"># 推送所有分支到远程仓库</span><br><span class="line">$ git push [remote] --all</span><br></pre></td></tr></table></figure>
+
+<h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 恢复暂存区的指定文件到工作区</span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"># 恢复某个commit的指定文件到暂存区和工作区</span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"># 恢复暂存区的所有文件到工作区</span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"># 重置暂存区与工作区，与上一次commit保持一致</span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个commit，用来撤销指定commit</span><br><span class="line"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line">暂时将未提交的变化移除，稍后再移入</span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 生成一个可供发布的压缩包</span><br><span class="line">$ git archive</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github的神级操作</title>
+    <url>/article/33799c4b.html</url>
+    <content><![CDATA[<blockquote>
+<p>GitHub是面向开源及私有软件项目的托管平台，其流行及在开源世界的受欢迎程度自不必多言，但是关于Github的使用你又知道多少呢？这里将介绍下Github的常用快捷键、高级搜索语法和在线查看且运行项目，还有Github的官方文档值得认真读读，可以学到很多有用的点。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><p>聚焦于搜索栏：<kbd>S</kbd></p>
+<p>激活文件查找器：<kbd>T</kbd></p>
+<p>跳至代码中的某一行：<kbd>L</kbd></p>
+<p>打开追溯视图：<kbd>B</kbd></p>
+<p>在线VSCode查看：<kbd>。</kbd></p>
+<p>打开命令面板：<kbd>Ctrl</kbd> + <kbd>K</kbd></p>
+<p>查看帮助：<kbd>Shift</kbd> + <kbd>?</kbd></p>
+<p>更多快捷键查看：<a href="https://docs.github.com/cn/get-started/using-github/keyboard-shortcuts">Keyboard shortcuts</a></p>
+<h3 id="关于搜索"><a href="#关于搜索" class="headerlink" title="关于搜索"></a>关于搜索</h3><p>高级搜索面板：<a href="https://github.com/search/advanced">Advanced search</a></p>
+<p>常用搜索语法：</p>
+<table>
+<thead>
+<tr>
+<th>搜索条件 - 找开发者</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>location:</td>
+<td>location:china，匹配用户填写的地址在china</td>
+</tr>
+<tr>
+<td>language</td>
+<td>language:javascript，匹配开发语音为javascript的开发者</td>
+</tr>
+<tr>
+<td>followers:</td>
+<td>followers:&gt;=1000，匹配超过1000关注者的开发者</td>
+</tr>
+<tr>
+<td>in:fullname</td>
+<td>jack in:fullname，匹配用户名实名为jack的开发者</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>搜索条件 - 找项目</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Awesome+关键字</td>
+<td>神奇的关键字awesome，帮助找到优秀的工具列表</td>
+</tr>
+<tr>
+<td>stars:</td>
+<td>stars:&gt;=500</td>
+</tr>
+<tr>
+<td>language:</td>
+<td>language:javascript</td>
+</tr>
+<tr>
+<td>forks:</td>
+<td>forks:&gt;=500</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>搜索条件 - 找开发者</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>in:name xxx</td>
+<td>项目名包含xxx</td>
+</tr>
+<tr>
+<td>in:description xxx</td>
+<td>项目描述包含xxx</td>
+</tr>
+<tr>
+<td>in:readme xxx</td>
+<td>项目介绍文档里含有xxx</td>
+</tr>
+</tbody></table>
+<p>更多搜索相关：<a href="https://docs.github.com/cn/search-github/getting-started-with-searching-on-github/about-searching-on-github">About searching on GitHub</a></p>
+<h3 id="在线运行Github项目"><a href="#在线运行Github项目" class="headerlink" title="在线运行Github项目"></a>在线运行Github项目</h3><p>再Github项目仓库前加上：<code>gitpod.io/#/</code>即可在线打开项目，并且支持在线运行该项目，相当于拥有一台可操作的远程服务器。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 例如原仓库</span></span><br><span class="line">https://github.com/ant-design/ant-design-pro</span><br><span class="line"><span class="comment"># 添加前缀</span></span><br><span class="line">https://gitpod.io/<span class="comment">#/github.com/ant-design/ant-design-pro</span></span><br><span class="line"><span class="comment"># 即可在线查看项目和运行</span></span><br></pre></td></tr></table></figure>
+
+<p>关于<a href="https://www.gitpod.io/">Gitpod</a>，这是一个与GitHub紧密集成的云IDE，Gitpod为开发人员的GitHub项目提供了一次性的，可随时编程的开发环境。</p>
+]]></content>
+      <categories>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[<h1 align="center">Hi 👋, I'm Fang Jian</h1>
@@ -1267,10 +1267,15 @@
 </li>
 <li><p>💬 Ask me about <strong>Android, Python, Linux</strong></p>
 </li>
-<li><p>📫 How to reach me <strong><a href="mailto:&#x66;&#x61;&#110;&#103;&#x6a;&#105;&#97;&#x6e;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#99;&#111;&#x6d;">&#x66;&#x61;&#110;&#103;&#x6a;&#105;&#97;&#x6e;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#99;&#111;&#x6d;</a></strong></p>
+<li><p>📫 How to reach me <strong><a href="mailto:&#102;&#x61;&#110;&#x67;&#106;&#x69;&#x61;&#x6e;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;">&#102;&#x61;&#110;&#x67;&#106;&#x69;&#x61;&#x6e;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;</a></strong></p>
 </li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>网站导航</title>
@@ -1316,11 +1321,6 @@
 <p>书栈网，BookStack，既是一个开源书籍和文档分享站点，也是一套使用Go语言开发的开源程序，助您更好地实现文档阅读管理。</p>
 </blockquote>
 ]]></content>
-  </entry>
-  <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>标签</title>
