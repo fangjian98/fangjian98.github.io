@@ -1,5 +1,5 @@
 ---
-title: 关于图床
+title: 关于图床的使用
 categories: 技术流
 tags:
   - Image Hosting Service
