@@ -1,7 +1,7 @@
 ---
 title: 常用的adb命令
 abbrlink: 3610a686
-date: 2022-05-05 22:51:03
+date: 2021-05-21 22:51:03
 categories: Android
 tags: adb
 ---

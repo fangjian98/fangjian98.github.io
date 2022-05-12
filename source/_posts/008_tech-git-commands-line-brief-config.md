@@ -1,7 +1,7 @@
 ---
 title: Git命令简写的配置
 abbrlink: 8b0e152
-date: 2022-05-07 10:29:48
+date: 2021-05-17 10:29:48
 categories: Git
 tags: Git
 ---
