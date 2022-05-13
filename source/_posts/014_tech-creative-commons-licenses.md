@@ -3,7 +3,7 @@ title: 知识共享许可协议 Creative Commons Licenses
 categories: 技术流
 tags: Creative Commons Licenses
 abbrlink: d8f310cd
-date: 2022-05-04 17:01:12
+date: 2021-05-23 17:01:12
 ---
 
 > 知识共享版权许可协议（Creative Commons licenses，简称cc）是在著作权法的传统的“所有权利保留”环境下构造平衡。给个人创作者、公司、机构在内的每一个人，提供简单的、标准化的方式授予他们所创作作品的版权许可。
