@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>代码托管平台推荐</title>
+    <url>/article/86025775.html</url>
+    <content><![CDATA[<blockquote>
+<p>Github、Gitee 这些开源场景的代码托管平台，他们对个人开发者友好，可以接触到很多优秀的开源项目。是很好的开源社区，统一的代码托管平台是DevOps的基础，也是管理代码的科学手段，为了方便各位程序员更好的选择代码托管平台，特此总结分享一下国内外代码托管平台。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Github-github-com"><a href="#Github-github-com" class="headerlink" title="Github - github.com"></a>Github - <a href="https://github.com/">github.com</a></h3><p>GitHub 代码托管平台，包含了全世界很多优秀的开源项目，可以从GitHub获取到很多很多优秀的开源项目来进行学习，也可以将自己的项目上传上去与他人分享。</p>
+<p>GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目Ruby on Rails、jQuery、python等。</p>
+<p>2018年6月4日，微软宣布，通过75亿美元的股票交易收购代码托管平台GitHub。</p>
+<p>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法。</p>
+<h3 id="Gitlab-gitlab-com"><a href="#Gitlab-gitlab-com" class="headerlink" title="Gitlab - gitlab.com"></a>Gitlab - <a href="https://gitlab.com/">gitlab.com</a></h3><p>GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的Web服务。安装方法是参考GitLab在GitHub上的Wiki页面。<br>2022年2月消息，极狐（GitLab）正式宣布推出极狐GitLab SaaS （JihuLab.com），为中国用户提供从源代码托管到开发运维的全栈式一体化DevOps SaaS平台与企业级专家咨询服务。</p>
+<p>GitLab是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
+<p>应用特点：Web框架使用RubyonRails、基于MIT代码发布协议、需要gitolite协同工作。</p>
+<h3 id="GitCode-gitcode-net"><a href="#GitCode-gitcode-net" class="headerlink" title="GitCode - gitcode.net"></a>GitCode - <a href="https://gitcode.net/">gitcode.net</a></h3><p>GitCode 是 CSDN 为开发者提供的开源项目创新服务平台，秉承“创新、开放、协作、共享”的开源价值观，致力于为大规模开源开放协同创新助力赋能，打造创新成果孵化和新时代开发者培养的开源创新生态！支持公有云使用、私有化部署以及软硬一体化私有部署。</p>
+<p>一亿人的安全代码仓，源码级别的安全分析 &amp; 协议分析平台。</p>
+<h3 id="Coding-coding-net"><a href="#Coding-coding-net" class="headerlink" title="Coding - coding.net"></a>Coding - <a href="https://coding.net/">coding.net</a></h3><p>CODING 是一个面向软件研发团队的研发协作管理平台，提供云原生开发环境、在线编码、代码托管、项目管理、测试管理、持续集成、制品库、持续部署、团队知识库等系列工具产品，帮助研发团队实践敏捷开发与 DevOps。</p>
+<p>CODING 成立于 2014 年 2 月，于 2019 年被腾讯收购成为其全资子公司，作为腾讯云官方 DevOps 平台工具向广大开发者及企业研发团队提供服务，支持 SaaS 模式或私有部署模式。</p>
+<p>产品优势：一站式研发工具、开箱即用，免部署、节省研发工具建设成本、提高软件交付效率。</p>
+<h3 id="Bitbicket-bitbucket-org"><a href="#Bitbicket-bitbucket-org" class="headerlink" title="Bitbicket - bitbucket.org"></a>Bitbicket - <a href="https://bitbucket.org/">bitbucket.org</a></h3><p>BitBucket 是一家源代码托管网站，采用Mercurial和Git作为分布式版本控制系统，同时提供商业计划和免费账户。</p>
+<p>特点：无限制的私有仓库个数、无限制的磁盘空间、同时支持https/ssh、Bug 跟踪、项目Wiki、API 支持、灵活的权限控制、可自定义域名、RSS 修改记录输出、自定义下载等。</p>
+<h3 id="托管平台对比"><a href="#托管平台对比" class="headerlink" title="托管平台对比"></a>托管平台对比</h3><p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/code_hosting_platform.png"></p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Gitee</tag>
+        <tag>Gitlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/article/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -239,39 +272,6 @@
       </tags>
   </entry>
   <entry>
-    <title>代码托管平台推荐</title>
-    <url>/article/86025775.html</url>
-    <content><![CDATA[<blockquote>
-<p>Github、Gitee 这些开源场景的代码托管平台，他们对个人开发者友好，可以接触到很多优秀的开源项目。是很好的开源社区，统一的代码托管平台是DevOps的基础，也是管理代码的科学手段，为了方便各位程序员更好的选择代码托管平台，特此总结分享一下国内外代码托管平台。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Github-github-com"><a href="#Github-github-com" class="headerlink" title="Github - github.com"></a>Github - <a href="https://github.com/">github.com</a></h3><p>GitHub 代码托管平台，包含了全世界很多优秀的开源项目，可以从GitHub获取到很多很多优秀的开源项目来进行学习，也可以将自己的项目上传上去与他人分享。</p>
-<p>GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目Ruby on Rails、jQuery、python等。</p>
-<p>2018年6月4日，微软宣布，通过75亿美元的股票交易收购代码托管平台GitHub。</p>
-<p>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法。</p>
-<h3 id="Gitlab-gitlab-com"><a href="#Gitlab-gitlab-com" class="headerlink" title="Gitlab - gitlab.com"></a>Gitlab - <a href="https://gitlab.com/">gitlab.com</a></h3><p>GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的Web服务。安装方法是参考GitLab在GitHub上的Wiki页面。<br>2022年2月消息，极狐（GitLab）正式宣布推出极狐GitLab SaaS （JihuLab.com），为中国用户提供从源代码托管到开发运维的全栈式一体化DevOps SaaS平台与企业级专家咨询服务。</p>
-<p>GitLab是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
-<p>应用特点：Web框架使用RubyonRails、基于MIT代码发布协议、需要gitolite协同工作。</p>
-<h3 id="GitCode-gitcode-net"><a href="#GitCode-gitcode-net" class="headerlink" title="GitCode - gitcode.net"></a>GitCode - <a href="https://gitcode.net/">gitcode.net</a></h3><p>GitCode 是 CSDN 为开发者提供的开源项目创新服务平台，秉承“创新、开放、协作、共享”的开源价值观，致力于为大规模开源开放协同创新助力赋能，打造创新成果孵化和新时代开发者培养的开源创新生态！支持公有云使用、私有化部署以及软硬一体化私有部署。</p>
-<p>一亿人的安全代码仓，源码级别的安全分析 &amp; 协议分析平台。</p>
-<h3 id="Coding-coding-net"><a href="#Coding-coding-net" class="headerlink" title="Coding - coding.net"></a>Coding - <a href="https://coding.net/">coding.net</a></h3><p>CODING 是一个面向软件研发团队的研发协作管理平台，提供云原生开发环境、在线编码、代码托管、项目管理、测试管理、持续集成、制品库、持续部署、团队知识库等系列工具产品，帮助研发团队实践敏捷开发与 DevOps。</p>
-<p>CODING 成立于 2014 年 2 月，于 2019 年被腾讯收购成为其全资子公司，作为腾讯云官方 DevOps 平台工具向广大开发者及企业研发团队提供服务，支持 SaaS 模式或私有部署模式。</p>
-<p>产品优势：一站式研发工具、开箱即用，免部署、节省研发工具建设成本、提高软件交付效率。</p>
-<h3 id="Bitbicket-bitbucket-org"><a href="#Bitbicket-bitbucket-org" class="headerlink" title="Bitbicket - bitbucket.org"></a>Bitbicket - <a href="https://bitbucket.org/">bitbucket.org</a></h3><p>BitBucket 是一家源代码托管网站，采用Mercurial和Git作为分布式版本控制系统，同时提供商业计划和免费账户。</p>
-<p>特点：无限制的私有仓库个数、无限制的磁盘空间、同时支持https/ssh、Bug 跟踪、项目Wiki、API 支持、灵活的权限控制、可自定义域名、RSS 修改记录输出、自定义下载等。</p>
-<h3 id="托管平台对比"><a href="#托管平台对比" class="headerlink" title="托管平台对比"></a>托管平台对比</h3><p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/code_hosting_platform.png"></p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Gitee</tag>
-        <tag>Gitlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于图床的使用</title>
     <url>/article/91cd0b89.html</url>
     <content><![CDATA[<blockquote>
@@ -367,6 +367,31 @@
       <tags>
         <tag>Git</tag>
         <tag>gitignore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git初始化配置</title>
+    <url>/article/66ea434c.html</url>
+    <content><![CDATA[<blockquote>
+<p>我们推荐创建的Git仓库都包含一个<code>README</code>、<code>LICENSE</code>和<code>.gitignore</code>，这里将学习创建本地分支、远程仓库推送和修改远程仓库Url。</p>
+</blockquote>
+<a id="more"></a>
+
+
+<h3 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;# gitblog&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+
+<h3 id="推送本地仓库"><a href="#推送本地仓库" class="headerlink" title="推送本地仓库"></a>推送本地仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新本地仓库-Remote-Url"><a href="#更新本地仓库-Remote-Url" class="headerlink" title="更新本地仓库 Remote Url"></a>更新本地仓库 Remote Url</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br><span class="line">git remote remove origin</span><br><span class="line">git remote add origin https://gitcode.net/xxxx.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者是使用 SSH 地址</span></span><br><span class="line">git remote add origin git@gitcode.net:xxxx.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加子模块"><a href="#添加子模块" class="headerlink" title="添加子模块"></a>添加子模块</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除仓库索引</span></span><br><span class="line"><span class="comment"># 如果是文件</span></span><br><span class="line">git rm --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果是文件夹</span></span><br><span class="line">git rm -r --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果执行以上命令后提示：[error: 如下文件其暂存的内容和工作区及 HEAD 中的都不一样：] ，`-f`强制删除</span></span><br><span class="line">git rm -r -f --cached reference/esp-qcloud</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加仓库索引</span></span><br><span class="line"><span class="comment"># 创建子模块并添加 url 地址</span></span><br><span class="line">git submodule add &lt;url&gt; project</span><br><span class="line"><span class="comment"># 例如：</span></span><br><span class="line">git submodule add https://gitee.com/JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"><span class="comment"># 或者使用 ssh 地址</span></span><br><span class="line">git submodule add git@gitee.com:JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"></span><br><span class="line">添加成功后会生成.gitmodules文件，即添加子模块</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -665,21 +690,32 @@
       </tags>
   </entry>
   <entry>
-    <title>Git初始化配置</title>
-    <url>/article/66ea434c.html</url>
+    <title>常用的Git命令</title>
+    <url>/article/5c7291e7.html</url>
     <content><![CDATA[<blockquote>
-<p>我们推荐创建的Git仓库都包含一个<code>README</code>、<code>LICENSE</code>和<code>.gitignore</code>，这里将学习创建本地分支、远程仓库推送和修改远程仓库Url。</p>
+<p>这里将列出常用的Git命令，包括初始化仓库、配置、增删、提交、分支、标签、状态信息、远程同步、撤销等其他。</p>
 </blockquote>
 <a id="more"></a>
 
+<h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 在当前目录新建一个Git代码库</span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"># 新建一个目录，将其初始化为Git代码库</span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"># 下载一个项目和它的整个代码历史</span><br><span class="line">$ git clone [url]</span><br></pre></td></tr></table></figure>
 
-<h3 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;# gitblog&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示当前的Git配置</span><br><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line"># 编辑Git配置文件</span><br><span class="line">$ git config -e [--global]</span><br><span class="line"></span><br><span class="line"># 设置提交代码时的用户信息</span><br><span class="line">$ git config [--global] user.name &quot;[name]&quot;</span><br><span class="line">$ git config [--global] user.email &quot;[email address]&quot;</span><br></pre></td></tr></table></figure>
 
-<h3 id="推送本地仓库"><a href="#推送本地仓库" class="headerlink" title="推送本地仓库"></a>推送本地仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 添加指定文件到暂存区</span><br><span class="line">$ git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 添加指定目录到暂存区，包括子目录</span><br><span class="line">$ git add [dir]</span><br><span class="line"></span><br><span class="line"># 添加当前目录的所有文件到暂存区</span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"># 添加每个变化前，都会要求确认</span><br><span class="line"># 对于同一个文件的多处变化，可以实现分次提交</span><br><span class="line">$ git add -p</span><br><span class="line"></span><br><span class="line"># 删除工作区文件，并且将这次删除放入暂存区</span><br><span class="line">$ git rm [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 停止追踪指定文件，但该文件会保留在工作区</span><br><span class="line">$ git rm --cached [file]</span><br><span class="line"></span><br><span class="line"># 改名文件，并且将这个改名放入暂存区</span><br><span class="line">$ git mv [file-original] [file-renamed]</span><br></pre></td></tr></table></figure>
 
-<h3 id="更新本地仓库-Remote-Url"><a href="#更新本地仓库-Remote-Url" class="headerlink" title="更新本地仓库 Remote Url"></a>更新本地仓库 Remote Url</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br><span class="line">git remote remove origin</span><br><span class="line">git remote add origin https://gitcode.net/xxxx.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者是使用 SSH 地址</span></span><br><span class="line">git remote add origin git@gitcode.net:xxxx.git</span><br></pre></td></tr></table></figure>
+<h3 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 提交暂存区到仓库区</span><br><span class="line">$ git commit -m [message]</span><br><span class="line"></span><br><span class="line"># 提交暂存区的指定文件到仓库区</span><br><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br><span class="line"></span><br><span class="line"># 提交工作区自上次commit之后的变化，直接到仓库区</span><br><span class="line">$ git commit -a</span><br><span class="line"></span><br><span class="line"># 提交时显示所有diff信息</span><br><span class="line">$ git commit -v</span><br><span class="line"></span><br><span class="line"># 使用一次新的commit，替代上一次提交</span><br><span class="line"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span><br><span class="line">$ git commit --amend -m [message]</span><br><span class="line"></span><br><span class="line"># 重做上一次commit，并包括指定文件的新变化</span><br><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure>
 
-<h3 id="添加子模块"><a href="#添加子模块" class="headerlink" title="添加子模块"></a>添加子模块</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除仓库索引</span></span><br><span class="line"><span class="comment"># 如果是文件</span></span><br><span class="line">git rm --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果是文件夹</span></span><br><span class="line">git rm -r --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果执行以上命令后提示：[error: 如下文件其暂存的内容和工作区及 HEAD 中的都不一样：] ，`-f`强制删除</span></span><br><span class="line">git rm -r -f --cached reference/esp-qcloud</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加仓库索引</span></span><br><span class="line"><span class="comment"># 创建子模块并添加 url 地址</span></span><br><span class="line">git submodule add &lt;url&gt; project</span><br><span class="line"><span class="comment"># 例如：</span></span><br><span class="line">git submodule add https://gitee.com/JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"><span class="comment"># 或者使用 ssh 地址</span></span><br><span class="line">git submodule add git@gitee.com:JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"></span><br><span class="line">添加成功后会生成.gitmodules文件，即添加子模块</span><br></pre></td></tr></table></figure>
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有本地分支</span><br><span class="line">$ git branch</span><br><span class="line"></span><br><span class="line"># 列出所有远程分支</span><br><span class="line">$ git branch -r</span><br><span class="line"></span><br><span class="line"># 列出所有本地分支和远程分支</span><br><span class="line">$ git branch -a</span><br><span class="line"></span><br><span class="line"># 新建一个分支，但依然停留在当前分支</span><br><span class="line">$ git branch [branch-name]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，并切换到该分支</span><br><span class="line">$ git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向指定commit</span><br><span class="line">$ git branch [branch] [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，与指定的远程分支建立追踪关系</span><br><span class="line">$ git branch --track [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 切换到指定分支，并更新工作区</span><br><span class="line">$ git checkout [branch-name]</span><br><span class="line"></span><br><span class="line"># 切换到上一个分支</span><br><span class="line">$ git checkout -</span><br><span class="line"></span><br><span class="line"># 建立追踪关系，在现有分支与指定的远程分支之间</span><br><span class="line">$ git branch --set-upstream [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 合并指定分支到当前分支</span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"># 选择一个commit，合并进当前分支</span><br><span class="line">$ git cherry-pick [commit]</span><br><span class="line"></span><br><span class="line"># 删除分支</span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"># 删除远程分支</span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote&#x2F;branch]</span><br></pre></td></tr></table></figure>
+
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有tag</span><br><span class="line">$ git tag</span><br><span class="line"></span><br><span class="line"># 新建一个tag在当前commit</span><br><span class="line">$ git tag [tag]</span><br><span class="line"></span><br><span class="line"># 新建一个tag在指定commit</span><br><span class="line">$ git tag [tag] [commit]</span><br><span class="line"></span><br><span class="line"># 删除本地tag</span><br><span class="line">$ git tag -d [tag]</span><br><span class="line"></span><br><span class="line"># 删除远程tag</span><br><span class="line">$ git push origin :refs&#x2F;tags&#x2F;[tagName]</span><br><span class="line"></span><br><span class="line"># 查看tag信息</span><br><span class="line">$ git show [tag]</span><br><span class="line"></span><br><span class="line"># 提交指定tag</span><br><span class="line">$ git push [remote] [tag]</span><br><span class="line"></span><br><span class="line"># 提交所有tag</span><br><span class="line">$ git push [remote] --tags</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向某个tag</span><br><span class="line">$ git checkout -b [branch] [tag]</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示有变更的文件</span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"># 显示当前分支的版本历史</span><br><span class="line">$ git log</span><br><span class="line"></span><br><span class="line"># 显示commit历史，以及每次commit发生变更的文件</span><br><span class="line">$ git log --stat</span><br><span class="line"></span><br><span class="line"># 搜索提交历史，根据关键词</span><br><span class="line">$ git log -S [keyword]</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，每个commit占据一行</span><br><span class="line">$ git log [tag] HEAD --pretty&#x3D;format:%s</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件</span><br><span class="line">$ git log [tag] HEAD --grep feature</span><br><span class="line"></span><br><span class="line"># 显示某个文件的版本历史，包括文件改名</span><br><span class="line">$ git log --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br><span class="line"></span><br><span class="line"># 显示指定文件相关的每一次diff</span><br><span class="line">$ git log -p [file]</span><br><span class="line"></span><br><span class="line"># 显示过去5次提交</span><br><span class="line">$ git log -5 --pretty --oneline</span><br><span class="line"></span><br><span class="line"># 显示所有提交过的用户，按提交次数排序</span><br><span class="line">$ git shortlog -sn</span><br><span class="line"></span><br><span class="line"># 显示指定文件是什么人在什么时间修改过</span><br><span class="line">$ git blame [file]</span><br><span class="line"></span><br><span class="line"># 显示暂存区和工作区的差异</span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"># 显示暂存区和上一个commit的差异</span><br><span class="line">$ git diff --cached [file]</span><br><span class="line"></span><br><span class="line"># 显示工作区与当前分支最新commit之间的差异</span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"># 显示两次提交之间的差异</span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"># 显示今天你写了多少行代码</span><br><span class="line">$ git diff --shortstat &quot;@&#123;0 day ago&#125;&quot;</span><br><span class="line"></span><br><span class="line"># 显示某次提交的元数据和内容变化</span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交发生变化的文件</span><br><span class="line">$ git show --name-only [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交时，某个文件的内容</span><br><span class="line">$ git show [commit]:[filename]</span><br><span class="line"></span><br><span class="line"># 显示当前分支的最近几次提交</span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
+
+<h3 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 下载远程仓库的所有变动</span><br><span class="line">$ git fetch [remote]</span><br><span class="line"></span><br><span class="line"># 显示所有远程仓库</span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"># 显示某个远程仓库的信息</span><br><span class="line">$ git remote show [remote]</span><br><span class="line"></span><br><span class="line"># 增加一个新的远程仓库，并命名</span><br><span class="line">$ git remote add [shortname] [url]</span><br><span class="line"></span><br><span class="line"># 取回远程仓库的变化，并与本地分支合并</span><br><span class="line">$ git pull [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 上传本地指定分支到远程仓库</span><br><span class="line">$ git push [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 强行推送当前分支到远程仓库，即使有冲突</span><br><span class="line">$ git push [remote] --force</span><br><span class="line"></span><br><span class="line"># 推送所有分支到远程仓库</span><br><span class="line">$ git push [remote] --all</span><br></pre></td></tr></table></figure>
+
+<h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 恢复暂存区的指定文件到工作区</span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"># 恢复某个commit的指定文件到暂存区和工作区</span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"># 恢复暂存区的所有文件到工作区</span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"># 重置暂存区与工作区，与上一次commit保持一致</span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个commit，用来撤销指定commit</span><br><span class="line"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line">暂时将未提交的变化移除，稍后再移入</span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 生成一个可供发布的压缩包</span><br><span class="line">$ git archive</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -775,42 +811,6 @@
       <tags>
         <tag>linux</tag>
         <tag>apt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用的Git命令</title>
-    <url>/article/5c7291e7.html</url>
-    <content><![CDATA[<blockquote>
-<p>这里将列出常用的Git命令，包括初始化仓库、配置、增删、提交、分支、标签、状态信息、远程同步、撤销等其他。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 在当前目录新建一个Git代码库</span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"># 新建一个目录，将其初始化为Git代码库</span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"># 下载一个项目和它的整个代码历史</span><br><span class="line">$ git clone [url]</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示当前的Git配置</span><br><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line"># 编辑Git配置文件</span><br><span class="line">$ git config -e [--global]</span><br><span class="line"></span><br><span class="line"># 设置提交代码时的用户信息</span><br><span class="line">$ git config [--global] user.name &quot;[name]&quot;</span><br><span class="line">$ git config [--global] user.email &quot;[email address]&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 添加指定文件到暂存区</span><br><span class="line">$ git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 添加指定目录到暂存区，包括子目录</span><br><span class="line">$ git add [dir]</span><br><span class="line"></span><br><span class="line"># 添加当前目录的所有文件到暂存区</span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"># 添加每个变化前，都会要求确认</span><br><span class="line"># 对于同一个文件的多处变化，可以实现分次提交</span><br><span class="line">$ git add -p</span><br><span class="line"></span><br><span class="line"># 删除工作区文件，并且将这次删除放入暂存区</span><br><span class="line">$ git rm [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 停止追踪指定文件，但该文件会保留在工作区</span><br><span class="line">$ git rm --cached [file]</span><br><span class="line"></span><br><span class="line"># 改名文件，并且将这个改名放入暂存区</span><br><span class="line">$ git mv [file-original] [file-renamed]</span><br></pre></td></tr></table></figure>
-
-<h3 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 提交暂存区到仓库区</span><br><span class="line">$ git commit -m [message]</span><br><span class="line"></span><br><span class="line"># 提交暂存区的指定文件到仓库区</span><br><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br><span class="line"></span><br><span class="line"># 提交工作区自上次commit之后的变化，直接到仓库区</span><br><span class="line">$ git commit -a</span><br><span class="line"></span><br><span class="line"># 提交时显示所有diff信息</span><br><span class="line">$ git commit -v</span><br><span class="line"></span><br><span class="line"># 使用一次新的commit，替代上一次提交</span><br><span class="line"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span><br><span class="line">$ git commit --amend -m [message]</span><br><span class="line"></span><br><span class="line"># 重做上一次commit，并包括指定文件的新变化</span><br><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure>
-
-<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有本地分支</span><br><span class="line">$ git branch</span><br><span class="line"></span><br><span class="line"># 列出所有远程分支</span><br><span class="line">$ git branch -r</span><br><span class="line"></span><br><span class="line"># 列出所有本地分支和远程分支</span><br><span class="line">$ git branch -a</span><br><span class="line"></span><br><span class="line"># 新建一个分支，但依然停留在当前分支</span><br><span class="line">$ git branch [branch-name]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，并切换到该分支</span><br><span class="line">$ git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向指定commit</span><br><span class="line">$ git branch [branch] [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，与指定的远程分支建立追踪关系</span><br><span class="line">$ git branch --track [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 切换到指定分支，并更新工作区</span><br><span class="line">$ git checkout [branch-name]</span><br><span class="line"></span><br><span class="line"># 切换到上一个分支</span><br><span class="line">$ git checkout -</span><br><span class="line"></span><br><span class="line"># 建立追踪关系，在现有分支与指定的远程分支之间</span><br><span class="line">$ git branch --set-upstream [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 合并指定分支到当前分支</span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"># 选择一个commit，合并进当前分支</span><br><span class="line">$ git cherry-pick [commit]</span><br><span class="line"></span><br><span class="line"># 删除分支</span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"># 删除远程分支</span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote&#x2F;branch]</span><br></pre></td></tr></table></figure>
-
-<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有tag</span><br><span class="line">$ git tag</span><br><span class="line"></span><br><span class="line"># 新建一个tag在当前commit</span><br><span class="line">$ git tag [tag]</span><br><span class="line"></span><br><span class="line"># 新建一个tag在指定commit</span><br><span class="line">$ git tag [tag] [commit]</span><br><span class="line"></span><br><span class="line"># 删除本地tag</span><br><span class="line">$ git tag -d [tag]</span><br><span class="line"></span><br><span class="line"># 删除远程tag</span><br><span class="line">$ git push origin :refs&#x2F;tags&#x2F;[tagName]</span><br><span class="line"></span><br><span class="line"># 查看tag信息</span><br><span class="line">$ git show [tag]</span><br><span class="line"></span><br><span class="line"># 提交指定tag</span><br><span class="line">$ git push [remote] [tag]</span><br><span class="line"></span><br><span class="line"># 提交所有tag</span><br><span class="line">$ git push [remote] --tags</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向某个tag</span><br><span class="line">$ git checkout -b [branch] [tag]</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示有变更的文件</span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"># 显示当前分支的版本历史</span><br><span class="line">$ git log</span><br><span class="line"></span><br><span class="line"># 显示commit历史，以及每次commit发生变更的文件</span><br><span class="line">$ git log --stat</span><br><span class="line"></span><br><span class="line"># 搜索提交历史，根据关键词</span><br><span class="line">$ git log -S [keyword]</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，每个commit占据一行</span><br><span class="line">$ git log [tag] HEAD --pretty&#x3D;format:%s</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件</span><br><span class="line">$ git log [tag] HEAD --grep feature</span><br><span class="line"></span><br><span class="line"># 显示某个文件的版本历史，包括文件改名</span><br><span class="line">$ git log --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br><span class="line"></span><br><span class="line"># 显示指定文件相关的每一次diff</span><br><span class="line">$ git log -p [file]</span><br><span class="line"></span><br><span class="line"># 显示过去5次提交</span><br><span class="line">$ git log -5 --pretty --oneline</span><br><span class="line"></span><br><span class="line"># 显示所有提交过的用户，按提交次数排序</span><br><span class="line">$ git shortlog -sn</span><br><span class="line"></span><br><span class="line"># 显示指定文件是什么人在什么时间修改过</span><br><span class="line">$ git blame [file]</span><br><span class="line"></span><br><span class="line"># 显示暂存区和工作区的差异</span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"># 显示暂存区和上一个commit的差异</span><br><span class="line">$ git diff --cached [file]</span><br><span class="line"></span><br><span class="line"># 显示工作区与当前分支最新commit之间的差异</span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"># 显示两次提交之间的差异</span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"># 显示今天你写了多少行代码</span><br><span class="line">$ git diff --shortstat &quot;@&#123;0 day ago&#125;&quot;</span><br><span class="line"></span><br><span class="line"># 显示某次提交的元数据和内容变化</span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交发生变化的文件</span><br><span class="line">$ git show --name-only [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交时，某个文件的内容</span><br><span class="line">$ git show [commit]:[filename]</span><br><span class="line"></span><br><span class="line"># 显示当前分支的最近几次提交</span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
-
-<h3 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 下载远程仓库的所有变动</span><br><span class="line">$ git fetch [remote]</span><br><span class="line"></span><br><span class="line"># 显示所有远程仓库</span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"># 显示某个远程仓库的信息</span><br><span class="line">$ git remote show [remote]</span><br><span class="line"></span><br><span class="line"># 增加一个新的远程仓库，并命名</span><br><span class="line">$ git remote add [shortname] [url]</span><br><span class="line"></span><br><span class="line"># 取回远程仓库的变化，并与本地分支合并</span><br><span class="line">$ git pull [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 上传本地指定分支到远程仓库</span><br><span class="line">$ git push [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 强行推送当前分支到远程仓库，即使有冲突</span><br><span class="line">$ git push [remote] --force</span><br><span class="line"></span><br><span class="line"># 推送所有分支到远程仓库</span><br><span class="line">$ git push [remote] --all</span><br></pre></td></tr></table></figure>
-
-<h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 恢复暂存区的指定文件到工作区</span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"># 恢复某个commit的指定文件到暂存区和工作区</span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"># 恢复暂存区的所有文件到工作区</span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"># 重置暂存区与工作区，与上一次commit保持一致</span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个commit，用来撤销指定commit</span><br><span class="line"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line">暂时将未提交的变化移除，稍后再移入</span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
-
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 生成一个可供发布的压缩包</span><br><span class="line">$ git archive</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -1072,6 +1072,96 @@
       </tags>
   </entry>
   <entry>
+    <title>编程语言的Hello World程序</title>
+    <url>/article/caca35c0.html</url>
+    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>寻找机器学习数据集</title>
+    <url>/article/543367d4.html</url>
+    <content><![CDATA[<blockquote>
+<p>数据集是人工智能算法训练和测试的基础，不同专业的人工智能算法研究需要用到不同专业的数据集，如下为网上推荐的几种寻找机器学习数据集的方法，另附数据集资源。</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li>Kaggle数据集</li>
+</ol>
+<p>数据集地址：<a href="https://www.kaggle.com/datasets">https://www.kaggle.com/datasets</a></p>
+<ol start="2">
+<li>Amazon数据集</li>
+</ol>
+<p>数据集地址：<a href="https://registry.opendata.aws/">https://registry.opendata.aws/</a></p>
+<p>该数据源包含多个不同领域的数据集，如：公共交通、生态资源、卫星图像等。</p>
+<p>网页中也有一个搜索框来帮助用户寻找想要的数据集，还有所有数据集的描述和使用示例，这些数据集信息丰富且易于使用！</p>
+<p>数据集存储在Amazon Web Services (AWS)资源中，比如Amazon S3——云中的一个高度可伸缩的对象存储服务。</p>
+<p>如果用户正在使用AWS进行机器学习实验和开发，这将非常方便，由于它是AWS网络的本地数据，因此数据集的传输将非常快。</p>
+<ol start="3">
+<li>UCI机器学习资源库</li>
+</ol>
+<p>数据集地址：<a href="http://archive.ics.uci.edu/ml/datasets">http://archive.ics.uci.edu/ml/datasets</a></p>
+<p>另一个来自加州大学信息与计算机科学学院的大型资源库，包含100多个数据集。</p>
+<p>用户可以找到单变量和多变量时间序列数据集，分类、回归或推荐系统的数据集。</p>
+<p>有些UCI的数据集已经是被清洗过的。</p>
+<ol start="4">
+<li>谷歌数据集搜索引擎</li>
+</ol>
+<p>数据集地址：<a href="https://toolbox.google.com/datasetsearch">https://toolbox.google.com/datasetsearch</a></p>
+<p>在2018年末，谷歌做了他们最擅长的事情，推出了另一项伟大的服务——它是一个可以按名称搜索数据集的工具箱。</p>
+<p>他们的目标是统一成千上万个不同的数据集存储库，使这些数据能够且易被发现。</p>
+<ol start="5">
+<li>微软数据集</li>
+</ol>
+<p>数据集地址：<a href="https://msropendata.com/">https://msropendata.com/</a></p>
+<p>2018年7月，微软与外部研究社区共同宣布推出“Microsoft Research Open Data”。</p>
+<p>它在云中包含一个数据存储库，用于促进全球研究社区之间的协作。它提供了一系列用于已发表研究的、经过处理的数据集。</p>
+<ol start="6">
+<li>Awesome Public Datasets Collection</li>
+</ol>
+<p>数据集地址：<a href="https://github.com/awesomedata/awesome-public-datasets">https://github.com/awesomedata/awesome-public-datasets</a></p>
+<p>这是一个按“主题”组织的数据集，比如生物学、经济学、教育学等。</p>
+<p>这里列出的大多数数据集都是免费的，但是在使用任何数据集之前，用户需要检查一下许可要求。</p>
+<ol start="7">
+<li>政府数据集</li>
+</ol>
+<p>政府相关数据集也很容易找到的。</p>
+<p>许多国家为了提高透明度，向公众分享了各种数据集。以下是一些例子：</p>
+<p>欧盟开放数据门户：欧洲政府数据集。</p>
+<p>数据集地址：<a href="https://data.europa.eu/euodp/data/dataset">https://data.europa.eu/euodp/data/dataset</a></p>
+<p>美国政府数据：目前由于一些非政治性原因，暂时无法访问。</p>
+<p>数据集地址：<a href="https://www.data.gov/">https://www.data.gov/</a></p>
+<p>新西兰政府数据集：</p>
+<p>数据集地址：<a href="https://catalogue.data.govt.nz/dataset">https://catalogue.data.govt.nz/dataset</a></p>
+<p>印度政府数据集：</p>
+<p>数据集地址：<a href="https://data.gov.in/">https://data.gov.in/</a></p>
+<ol start="8">
+<li>计算机视觉数据集</li>
+</ol>
+<p>数据集地址：<a href="https://www.visualdata.io/">https://www.visualdata.io/</a></p>
+<p>Visual Data包含一些可以用来构建计算机视觉(CV)模型的大型数据集。</p>
+<p>用户可以通过特定的CV主题查找特定的数据集，如语义分割、图像标题、图像生成，甚至可以通过解决方案(自动驾驶汽车数据集)查找特定的数据集。</p>
+<p>参考链接：<br><a href="https://blog.csdn.net/Sophia_11/article/details/86617383">https://blog.csdn.net/Sophia_11/article/details/86617383</a><br><a href="https://towardsdatascience.com/top-sources-for-machine-learning-datasets-bb6d0dc3378b">https://towardsdatascience.com/top-sources-for-machine-learning-datasets-bb6d0dc3378b</a><br><a href="https://blog.csdn.net/mbdong/article/details/121383725">https://blog.csdn.net/mbdong/article/details/121383725</a><br><a href="https://www.zhihu.com/question/327740767">https://www.zhihu.com/question/327740767</a></p>
+]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>MachineLearning</tag>
+        <tag>DataSet</tag>
+        <tag>ArtificialIntelligence</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Github的重要功能Pages、Actions、REST API以及GitHub Flow</title>
     <url>/article/604f0261.html</url>
     <content><![CDATA[<blockquote>
@@ -1170,96 +1260,6 @@
         <tag>Github Actions</tag>
         <tag>GitHub Flow</tag>
         <tag>REST API</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程语言的Hello World程序</title>
-    <url>/article/caca35c0.html</url>
-    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>寻找机器学习数据集</title>
-    <url>/article/543367d4.html</url>
-    <content><![CDATA[<blockquote>
-<p>数据集是人工智能算法训练和测试的基础，不同专业的人工智能算法研究需要用到不同专业的数据集，如下为网上推荐的几种寻找机器学习数据集的方法，另附数据集资源。</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li>Kaggle数据集</li>
-</ol>
-<p>数据集地址：<a href="https://www.kaggle.com/datasets">https://www.kaggle.com/datasets</a></p>
-<ol start="2">
-<li>Amazon数据集</li>
-</ol>
-<p>数据集地址：<a href="https://registry.opendata.aws/">https://registry.opendata.aws/</a></p>
-<p>该数据源包含多个不同领域的数据集，如：公共交通、生态资源、卫星图像等。</p>
-<p>网页中也有一个搜索框来帮助用户寻找想要的数据集，还有所有数据集的描述和使用示例，这些数据集信息丰富且易于使用！</p>
-<p>数据集存储在Amazon Web Services (AWS)资源中，比如Amazon S3——云中的一个高度可伸缩的对象存储服务。</p>
-<p>如果用户正在使用AWS进行机器学习实验和开发，这将非常方便，由于它是AWS网络的本地数据，因此数据集的传输将非常快。</p>
-<ol start="3">
-<li>UCI机器学习资源库</li>
-</ol>
-<p>数据集地址：<a href="http://archive.ics.uci.edu/ml/datasets">http://archive.ics.uci.edu/ml/datasets</a></p>
-<p>另一个来自加州大学信息与计算机科学学院的大型资源库，包含100多个数据集。</p>
-<p>用户可以找到单变量和多变量时间序列数据集，分类、回归或推荐系统的数据集。</p>
-<p>有些UCI的数据集已经是被清洗过的。</p>
-<ol start="4">
-<li>谷歌数据集搜索引擎</li>
-</ol>
-<p>数据集地址：<a href="https://toolbox.google.com/datasetsearch">https://toolbox.google.com/datasetsearch</a></p>
-<p>在2018年末，谷歌做了他们最擅长的事情，推出了另一项伟大的服务——它是一个可以按名称搜索数据集的工具箱。</p>
-<p>他们的目标是统一成千上万个不同的数据集存储库，使这些数据能够且易被发现。</p>
-<ol start="5">
-<li>微软数据集</li>
-</ol>
-<p>数据集地址：<a href="https://msropendata.com/">https://msropendata.com/</a></p>
-<p>2018年7月，微软与外部研究社区共同宣布推出“Microsoft Research Open Data”。</p>
-<p>它在云中包含一个数据存储库，用于促进全球研究社区之间的协作。它提供了一系列用于已发表研究的、经过处理的数据集。</p>
-<ol start="6">
-<li>Awesome Public Datasets Collection</li>
-</ol>
-<p>数据集地址：<a href="https://github.com/awesomedata/awesome-public-datasets">https://github.com/awesomedata/awesome-public-datasets</a></p>
-<p>这是一个按“主题”组织的数据集，比如生物学、经济学、教育学等。</p>
-<p>这里列出的大多数数据集都是免费的，但是在使用任何数据集之前，用户需要检查一下许可要求。</p>
-<ol start="7">
-<li>政府数据集</li>
-</ol>
-<p>政府相关数据集也很容易找到的。</p>
-<p>许多国家为了提高透明度，向公众分享了各种数据集。以下是一些例子：</p>
-<p>欧盟开放数据门户：欧洲政府数据集。</p>
-<p>数据集地址：<a href="https://data.europa.eu/euodp/data/dataset">https://data.europa.eu/euodp/data/dataset</a></p>
-<p>美国政府数据：目前由于一些非政治性原因，暂时无法访问。</p>
-<p>数据集地址：<a href="https://www.data.gov/">https://www.data.gov/</a></p>
-<p>新西兰政府数据集：</p>
-<p>数据集地址：<a href="https://catalogue.data.govt.nz/dataset">https://catalogue.data.govt.nz/dataset</a></p>
-<p>印度政府数据集：</p>
-<p>数据集地址：<a href="https://data.gov.in/">https://data.gov.in/</a></p>
-<ol start="8">
-<li>计算机视觉数据集</li>
-</ol>
-<p>数据集地址：<a href="https://www.visualdata.io/">https://www.visualdata.io/</a></p>
-<p>Visual Data包含一些可以用来构建计算机视觉(CV)模型的大型数据集。</p>
-<p>用户可以通过特定的CV主题查找特定的数据集，如语义分割、图像标题、图像生成，甚至可以通过解决方案(自动驾驶汽车数据集)查找特定的数据集。</p>
-<p>参考链接：<br><a href="https://blog.csdn.net/Sophia_11/article/details/86617383">https://blog.csdn.net/Sophia_11/article/details/86617383</a><br><a href="https://towardsdatascience.com/top-sources-for-machine-learning-datasets-bb6d0dc3378b">https://towardsdatascience.com/top-sources-for-machine-learning-datasets-bb6d0dc3378b</a><br><a href="https://blog.csdn.net/mbdong/article/details/121383725">https://blog.csdn.net/mbdong/article/details/121383725</a><br><a href="https://www.zhihu.com/question/327740767">https://www.zhihu.com/question/327740767</a></p>
-]]></content>
-      <categories>
-        <category>Machine Learning</category>
-      </categories>
-      <tags>
-        <tag>MachineLearning</tag>
-        <tag>DataSet</tag>
-        <tag>ArtificialIntelligence</tag>
       </tags>
   </entry>
   <entry>
@@ -1587,55 +1587,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Web前端开发常用的开发工具</title>
-    <url>/article/bdc11bc8.html</url>
-    <content><![CDATA[<blockquote>
-<p>分享的关于Web前端开发常用的十款很优秀的开发工具汇总。</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li>Glitch<br><a href="https://glitch.com/">https://glitch.com</a><br>好的，这不仅仅是一个工具，还是一个非常棒的编码平台以及一个很棒的技术社区。我可以在内置代码编辑器的帮助下托管我的项目。支持多种语言，但最适合NodeJS。</li>
-<li>Shadows<br><a href="https://brumm.af/shadows">https://brumm.af/shadows</a><br>这个网站提供生成平滑阴影的CSS代码，可以创建平滑的边框阴影。它看起来真的很流畅，令人满意。</li>
-<li>Coolors<br><a href="https://coolors.co/">https://coolors.co</a><br>这是一款非常好的在线工具，可以为项目生成匹配的颜色方案。如果不喜欢当前的方案，按下空格键，它会重新生成一个配色方案，直到你满意~</li>
-<li>Blobmaker<br><a href="https://blobmaker.app/">https://blobmaker.app</a><br>Blobmaker可帮助你随机生成各种尺寸，不同颜色和形状的SVG Blob。你可以用作背景或创建看起来很酷的动画。</li>
-<li>Getwavs<br><a href="https://getwaves.io/">https://getwaves.io</a><br>与Blobmaker相似，Get Waves能够随机生成不同颜色和不同数量的波浪。用作网页的页脚或页眉看起来不错。</li>
-<li>Undraw.co<br><a href="https://undraw.co/">https://undraw.co</a><br>开放源代码项目的SVG插图集，可用来做登录页面，404页面等，当然普通页面也能用!上面的插图可以不带归属地版权的使用，无需支付任何费用。</li>
-<li>Marcdown<br><a href="https://liyasthomas.github.io/marcdown">https://liyasthomas.github.io/marcdown</a><br>由Liyas Thomas提供的在线实时的Markdown网页编辑器，它可预览Markdown代码，将其发布到GitHub上。它提供一个非常漂亮的暗黑模式。还可脱机工作，这使得它显得更出色。</li>
-<li>postwoman<br><a href="https://postwoman.io/">https://postwoman.io</a><br>这是Liyas Thomas构建的另一个工具。Postwoman是一个API请求构建工作。开发者可以不使用代理来测试 API。这是一个渐进式Web应用程序，可以保存到桌面来用。它是轻量级的产品，基本上可以是Postman的在线替代品。</li>
-<li>Screely.com<br><a href="https://screely.com/">https://screely.com</a><br>它可以帮助你创建超级漂亮的网站截图模型。如果你不是MacBook用户，但需要更好的网站图片作为自述文件，它非常适合我们。</li>
-<li>CSS网格生成器<br><a href="https://cssgrid-generator.netlify.com/">https://cssgrid-generator.netlify.com/</a><br>这是Sarah Drasner的创建的优秀网站，它使用CSS创建动态网格布局。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>Glitch</tag>
-        <tag>Postman</tag>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多媒体视频处理工具FFmpeg</title>
-    <url>/article/b3c1f4b1.html</url>
-    <content><![CDATA[<blockquote>
-<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>FFmpeg常用命令解析<br><a href="https://www.cnblogs.com/Dicky-Zhang/p/11838416.html">https://www.cnblogs.com/Dicky-Zhang/p/11838416.html</a></p>
-<p>ffFFmpegpg处理视频<br>example：m3u8转mp4<br><a href="https://www.cnblogs.com/zhangceblogs/p/8514443.html">https://www.cnblogs.com/zhangceblogs/p/8514443.html</a></p>
-<p><a href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a><br><a href="https://github.com/BtbN/FFmpeg-Builds">https://github.com/BtbN/FFmpeg-Builds</a><br>下载：ffmpeg-n-104327-g1902a60dda-win64-gpl.zip</p>
-]]></content>
-      <categories>
-        <category>音视频</category>
-      </categories>
-      <tags>
-        <tag>FFmpeg</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows修改DNS方法</title>
     <url>/article/7c78b42f.html</url>
     <content><![CDATA[<blockquote>
@@ -1896,6 +1847,55 @@
         <tag>Java</tag>
         <tag>JDK</tag>
         <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多媒体视频处理工具FFmpeg</title>
+    <url>/article/b3c1f4b1.html</url>
+    <content><![CDATA[<blockquote>
+<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>FFmpeg常用命令解析<br><a href="https://www.cnblogs.com/Dicky-Zhang/p/11838416.html">https://www.cnblogs.com/Dicky-Zhang/p/11838416.html</a></p>
+<p>ffFFmpegpg处理视频<br>example：m3u8转mp4<br><a href="https://www.cnblogs.com/zhangceblogs/p/8514443.html">https://www.cnblogs.com/zhangceblogs/p/8514443.html</a></p>
+<p><a href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a><br><a href="https://github.com/BtbN/FFmpeg-Builds">https://github.com/BtbN/FFmpeg-Builds</a><br>下载：ffmpeg-n-104327-g1902a60dda-win64-gpl.zip</p>
+]]></content>
+      <categories>
+        <category>音视频</category>
+      </categories>
+      <tags>
+        <tag>FFmpeg</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web前端开发常用的开发工具</title>
+    <url>/article/bdc11bc8.html</url>
+    <content><![CDATA[<blockquote>
+<p>分享的关于Web前端开发常用的十款很优秀的开发工具汇总。</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li>Glitch<br><a href="https://glitch.com/">https://glitch.com</a><br>好的，这不仅仅是一个工具，还是一个非常棒的编码平台以及一个很棒的技术社区。我可以在内置代码编辑器的帮助下托管我的项目。支持多种语言，但最适合NodeJS。</li>
+<li>Shadows<br><a href="https://brumm.af/shadows">https://brumm.af/shadows</a><br>这个网站提供生成平滑阴影的CSS代码，可以创建平滑的边框阴影。它看起来真的很流畅，令人满意。</li>
+<li>Coolors<br><a href="https://coolors.co/">https://coolors.co</a><br>这是一款非常好的在线工具，可以为项目生成匹配的颜色方案。如果不喜欢当前的方案，按下空格键，它会重新生成一个配色方案，直到你满意~</li>
+<li>Blobmaker<br><a href="https://blobmaker.app/">https://blobmaker.app</a><br>Blobmaker可帮助你随机生成各种尺寸，不同颜色和形状的SVG Blob。你可以用作背景或创建看起来很酷的动画。</li>
+<li>Getwavs<br><a href="https://getwaves.io/">https://getwaves.io</a><br>与Blobmaker相似，Get Waves能够随机生成不同颜色和不同数量的波浪。用作网页的页脚或页眉看起来不错。</li>
+<li>Undraw.co<br><a href="https://undraw.co/">https://undraw.co</a><br>开放源代码项目的SVG插图集，可用来做登录页面，404页面等，当然普通页面也能用!上面的插图可以不带归属地版权的使用，无需支付任何费用。</li>
+<li>Marcdown<br><a href="https://liyasthomas.github.io/marcdown">https://liyasthomas.github.io/marcdown</a><br>由Liyas Thomas提供的在线实时的Markdown网页编辑器，它可预览Markdown代码，将其发布到GitHub上。它提供一个非常漂亮的暗黑模式。还可脱机工作，这使得它显得更出色。</li>
+<li>postwoman<br><a href="https://postwoman.io/">https://postwoman.io</a><br>这是Liyas Thomas构建的另一个工具。Postwoman是一个API请求构建工作。开发者可以不使用代理来测试 API。这是一个渐进式Web应用程序，可以保存到桌面来用。它是轻量级的产品，基本上可以是Postman的在线替代品。</li>
+<li>Screely.com<br><a href="https://screely.com/">https://screely.com</a><br>它可以帮助你创建超级漂亮的网站截图模型。如果你不是MacBook用户，但需要更好的网站图片作为自述文件，它非常适合我们。</li>
+<li>CSS网格生成器<br><a href="https://cssgrid-generator.netlify.com/">https://cssgrid-generator.netlify.com/</a><br>这是Sarah Drasner的创建的优秀网站，它使用CSS创建动态网格布局。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Glitch</tag>
+        <tag>Postman</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -2452,6 +2452,180 @@
       </tags>
   </entry>
   <entry>
+    <title>122_java-important-features</title>
+    <url>/article/7f3a79dc.html</url>
+    <content><![CDATA[<blockquote>
+<p>Java应用中的几个重要特性：多态、泛型、反射、集合、正则、引用分类。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="1-多态"><a href="#1-多态" class="headerlink" title="1.多态"></a>1.多态</h3><p>多态就是同一个行为，使用不同的实例而发生不同的作用。在使用多态调用方法的时候，编译器检查父类中是否有该方法，如果有才能编译通过，例如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Animals</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">voice</span><span class="params">()</span></span>&#123;动物叫&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span> <span class="keyword">extends</span> <span class="title">Animals</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">voice</span><span class="params">()</span></span>&#123;猫叫&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testVoice</span><span class="params">(Animals a)</span></span>&#123;</span><br><span class="line">    a.voice();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    testVoice(<span class="keyword">new</span> Cat())；</span><br><span class="line"></span><br><span class="line">    Animals a = <span class="keyword">new</span> Cat();</span><br><span class="line">    a.voice();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>猫继承自动物这个类，Animals a = new Cat()是向上转型（父类引用指向子类对象），实际的<strong>运行时类型</strong>还是Cat，也就是说a instanceof Cat 表达式为真，因此调用a的voice()方法是猫叫。结合C的指针和内存分析来理解多态。</p>
+<h3 id="2-泛型"><a href="#2-泛型" class="headerlink" title="2.泛型"></a>2.泛型</h3><ol>
+<li>类型通配符</li>
+</ol>
+<ul>
+<li>&lt;? extends T&gt;表示该通配符所代表的类型是T类型的子类。</li>
+<li>&lt;? super T&gt;表示该通配符所代表的类型是T类型的父类</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T extends Closable&gt; <span class="function"><span class="keyword">void</span> <span class="title">close</span><span class="params">(T... a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(T temp:a)&#123;</span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(temp!=<span class="keyword">null</span>)&#123;</span><br><span class="line">                temp.close();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span>(IOException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>泛型不能用在静态属性上</li>
+<li>指定的类型不能为基本类型</li>
+</ol>
+<h3 id="3-反射"><a href="#3-反射" class="headerlink" title="3.反射"></a>3.反射</h3><ol>
+<li>获取目标类型的Class对象</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; a = Object.getClass();</span><br><span class="line">Class&lt;?&gt; b = T.class;</span><br><span class="line">Class&lt;?&gt; c = Class.forName(...);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>通过 Class 对象分别获取Constructor类对象、Method类对象 &amp; Field 类对象<ul>
+<li>不带 “Declared”的方法支持取出包括继承、公有（Public） &amp; 不包括有（Private）的构造函数</li>
+<li>带 “Declared”的方法是支持取出包括公共（Public）、保护（Protected）、默认（包）访问和私有（Private）的构造方法，但不包括继承的构造函数</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>Constructor</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的构造函数（公共/继承）</span></span><br><span class="line"><span class="function">Constructor&lt;T&gt; <span class="title">getConstructor</span><span class="params">(Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的构造函数（公共/继承） </span></span><br><span class="line">Constructor&lt;?&gt;[] getConstructors(); </span><br><span class="line"><span class="comment">//c.获取指定的构造函数（不包括继承）</span></span><br><span class="line"><span class="function">Constructor&lt;T&gt; <span class="title">getDeclaredConstructor</span><span class="params">(Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的构造函（不包括继承）</span></span><br><span class="line">Constructor&lt;?&gt;[] getDeclaredConstructors(); </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Field</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的属性（公共/继承）</span></span><br><span class="line"><span class="function">Field <span class="title">getField</span><span class="params">(String name)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的属性（公共/继承）</span></span><br><span class="line">Field[] getFields();</span><br><span class="line"><span class="comment">//c.获取指定的所有属性（不包括继承）</span></span><br><span class="line"><span class="function">Field <span class="title">getDeclaredField</span><span class="params">(String name)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的所有属性（不包括继承）</span></span><br><span class="line">Field[] getDeclaredFields();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Method</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的方法（公共/继承）</span></span><br><span class="line"><span class="function">Method <span class="title">getMethod</span><span class="params">(String name, Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的方法（公共/继承）</span></span><br><span class="line">Method[] getMethods();</span><br><span class="line"><span class="comment">//c.获取指定的方法 （不包括继承）</span></span><br><span class="line"><span class="function">Method <span class="title">getDeclaredMethod</span><span class="params">(String name, Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的方法（不包括继承）</span></span><br><span class="line">Method[] getDeclaredMethods();</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-集合"><a href="#4-集合" class="headerlink" title="4. 集合"></a>4. 集合</h3><ol>
+<li>迭代器遍历ArrayList</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line"><span class="keyword">while</span>(ite.hasNext())&#123;</span><br><span class="line">    Log.d(<span class="string">&quot;TAG&quot;</span>,ite.next());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>遍历Map</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//第一种：map.keySet()</span></span><br><span class="line"><span class="keyword">for</span> (String key : map.keySet()) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span>+ key + <span class="string">&quot; value= &quot;</span> + map.get(key));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二种：map.entrySet().iterator()</span></span><br><span class="line">Iterator&lt;Map.Entry&lt;String, String&gt;&gt; iterator = map.entrySet().iterator();</span><br><span class="line"><span class="keyword">while</span> (it.hasNext()) &#123;</span><br><span class="line">    Map.Entry&lt;String, String&gt; entry = it.next();</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span> + entry.getKey() + <span class="string">&quot; value= &quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br><span class="line">      </span><br><span class="line"><span class="comment">//第三种：map.entrySet()</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;String, String&gt; entry : map.entrySet())&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span> + entry.getKey() + <span class="string">&quot; value= &quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="comment">//第四种：map.values()</span></span><br><span class="line"><span class="keyword">for</span> (String v : map.values()) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;value= &quot;</span> + v);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>遍历 hashMap() 时 entrySet() 方法是将 key 和 value 全部取出来,所以性能开销是可以预计的, 而 keySet() 方法进行遍历的时候是根据取出的 key 值去查询对应的 value 值, 所以如果 key 值是比较简单的结构(如 1,2,3…)的话性能消耗上是比 entrySet() 方法低, 但随着 key 值得复杂度提高 entrySet() 的优势就会显露出来。</li>
+<li>在只遍历 key 的时候使用 keySet(), 在只遍历 value 的时候使用 values(), 在遍历 key-value 的时候使用 entrySet()。</li>
+</ol>
+<h3 id="5-正则"><a href="#5-正则" class="headerlink" title="5.正则"></a>5.正则</h3><p>RegexBuddy</p>
+<ol>
+<li>转义字符</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\n  \t  \\  \^  \$  \(  \)  \&#123;  </span><br><span class="line">\&#125;  \?  \+  \*  \|  \[  \]</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>标准字符集合（大写取反）</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">\d</th>
+<th align="left">0~9的任意一个数字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">\w</td>
+<td align="left">A<del>Z, a</del>z, 0~9, _中任意一个</td>
+</tr>
+<tr>
+<td align="left">\s</td>
+<td align="left">空格、制表符、换行符等空白符的任意一个</td>
+</tr>
+<tr>
+<td align="left">.</td>
+<td align="left">匹配任意一个字符</td>
+</tr>
+<tr>
+<td align="left">[]</td>
+<td align="left">匹配方括号中任意一个字符</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">方括号取反</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="left">方括号中表示范围</td>
+</tr>
+<tr>
+<td align="left">{}</td>
+<td align="left">花括号前正则表达式的重复次数，{m,n}至少m次，最多n次</td>
+</tr>
+<tr>
+<td align="left">?</td>
+<td align="left">花括号后加，非贪婪模式。非花括号后加，相当于{0,1}</td>
+</tr>
+<tr>
+<td align="left">+</td>
+<td align="left">前面的正则表达式至少出现一次，相当于{1,}</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">表达式不出现或出现多次，相当于{0,}</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">与字符串开始的地方匹配</td>
+</tr>
+<tr>
+<td align="left">$</td>
+<td align="left">与字符串结束的地方匹配</td>
+</tr>
+<tr>
+<td align="left">\b</td>
+<td align="left">匹配一个字符边界</td>
+</tr>
+<tr>
+<td align="left">|</td>
+<td align="left">匹配左边或者右边</td>
+</tr>
+<tr>
+<td align="left">(?=exp)</td>
+<td align="left">断言自身出现的位置的后面能匹配表达式exp</td>
+</tr>
+<tr>
+<td align="left">(?&lt;=exp)</td>
+<td align="left">断言自身出现的位置的前面能匹配表达式exp</td>
+</tr>
+<tr>
+<td align="left">(?!exp)</td>
+<td align="left">断言此位置的后面不能匹配表达式exp</td>
+</tr>
+<tr>
+<td align="left">(?&lt;!exp)</td>
+<td align="left">断言此位置的前面不能匹配表达式exp</td>
+</tr>
+</tbody></table>
+<h3 id="6-引用分类"><a href="#6-引用分类" class="headerlink" title="6.引用分类"></a>6.引用分类</h3><ol>
+<li>强引用:StrongReference:引用指向对象，gc运行时不回收</li>
+<li>软引用:SoftReference:gc运行时回收，（jvm内存不够）</li>
+<li>弱引用:WeakReference:gc运行时立即回收</li>
+<li>虚引用:PhantomReference:跟踪对象被回收的状态，必须与ReferenceQueue一起使用</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[<h1 align="center">Hi 👋, I'm Fang Jian</h1>
@@ -2472,15 +2646,10 @@
 </li>
 <li><p>💬 Ask me about <strong>Android, Python, Linux</strong></p>
 </li>
-<li><p>📫 How to reach me <strong><a href="mailto:&#102;&#97;&#110;&#x67;&#106;&#105;&#97;&#110;&#64;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;">&#102;&#97;&#110;&#x67;&#106;&#105;&#97;&#110;&#64;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;</a></strong></p>
+<li><p>📫 How to reach me <strong><a href="mailto:&#102;&#x61;&#110;&#103;&#106;&#105;&#x61;&#110;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#x6d;">&#102;&#x61;&#110;&#103;&#106;&#105;&#x61;&#110;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#x6d;</a></strong></p>
 </li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>标签</title>
