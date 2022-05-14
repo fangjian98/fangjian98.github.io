@@ -2,6 +2,7 @@
 title: Github的重要功能Pages、Actions、REST API以及GitHub Flow
 categories: Github
 tags:
+  - Github
   - Github Pages
   - Github Actions
   - GitHub Flow
@@ -82,7 +83,7 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
 ```
 
-> [1] Github Action:https://docs.github.com/cn/actions
+> [1] Github Action：https://docs.github.com/cn/actions
 
 ## Github REST API
 
