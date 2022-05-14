@@ -41,3 +41,26 @@ git remote add origin https://gitcode.net/xxxx.git
 # 或者是使用 SSH 地址
 git remote add origin git@gitcode.net:xxxx.git
 ```
+
+### 添加子模块
+
+```bash
+# 删除仓库索引
+# 如果是文件
+git rm --cached reference/esp-qcloud
+# 如果是文件夹
+git rm -r --cached reference/esp-qcloud
+# 如果执行以上命令后提示：[error: 如下文件其暂存的内容和工作区及 HEAD 中的都不一样：] ，`-f`强制删除
+git rm -r -f --cached reference/esp-qcloud
+
+# 添加仓库索引
+# 创建子模块并添加 url 地址
+git submodule add <url> project
+# 例如：
+git submodule add https://gitee.com/JavonPeng/project.git reference/esp-qcloud
+# 或者使用 ssh 地址
+git submodule add git@gitee.com:JavonPeng/project.git reference/esp-qcloud
+
+添加成功后会生成.gitmodules文件，即添加子模块
+```
+
