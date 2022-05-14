@@ -2385,11 +2385,11 @@
 <p>常量的分类：<br>1.字符串常量：凡是用双引号引起来的部分，叫做字符串常量。例如：“abc”、“Hello”、“123”。<br>2.整数常量：直接写上数字，没有小数点。例如：100，200,0，-250。<br>3.浮点数常量：直接写上的数字，有小数点。例如：2.5、-3.14、0.0。<br>4.字符常量：凡是用单引号引起来的单个字符，就是字符常量。例如：‘A’、‘b’、‘9’、‘中’。<br>5.布尔常量：只有两种取值。true、false。<br>6.空常量：null。代表没有任何数据。</p>
 <p>注意：<br>1.两个单引号中间必须有且仅有一个字符，没有不行。<br>2.两个单引号中间必须有且仅有一个字符，有两个不行。<br>3.空常量不能直接用来打印输出。</p>
 <h3 id="变量的数据类型"><a href="#变量的数据类型" class="headerlink" title="变量的数据类型"></a>变量的数据类型</h3><p>Java数据类型图：</p>
-<p><img src="https://img-blog.csdn.net/20160826103646745" alt="这里写图片描述"></p>
-<h4 id="1-基本数据类型"><a href="#1-基本数据类型" class="headerlink" title="1.基本数据类型"></a>1.基本数据类型</h4><p>　　基本数据类型，也称内置类型，是可以在栈直接分配内存的，Java保留基本数据类型最大的原因也在此：性能。关于这一点可以参考：<a href="http://www.importnew.com/11915.html">Java为什么需要保留基本数据类型</a>。<br>　　另外，要注意，Java是基于JVM的，所以，其所占字节固定，与机器平台无关，所有地方统一占用内存大小（除了boolean，以及byte/short/boolean数组的时候每个单元所占的内存是由各个JVM自己实现的）。<br>　　总共有四类八种基本数据类型（注1）：<br>1).整型：全部是有符号类型。<br>1.<strong>byte</strong>：1字节（8bit），高位为符号位，其余7位为数据位，范围：-2的7次方<del>2的7次方-1（1111,1111</del>0111,1111），即-128~127（下面的计算方式相同）；</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/java_data_type.png.png" alt="数据类型"></p>
+<h4 id="1-基本数据类型"><a href="#1-基本数据类型" class="headerlink" title="1.基本数据类型"></a>1.基本数据类型</h4><p>　　基本数据类型，也称内置类型，是可以在栈直接分配内存的，Java保留基本数据类型最大的原因也在此：性能。关于这一点可以参考：<a href="http://www.importnew.com/11915.html">Java为什么需要保留基本数据类型</a>。<br>　　另外，要注意，Java是基于JVM的，所以，其所占字节固定，与机器平台无关，所有地方统一占用内存大小（除了boolean，以及byte/short/boolean数组的时候每个单元所占的内存是由各个JVM自己实现的）。<br>　　总共有四类八种基本数据类型（注1）：<br>1).整型：全部是有符号类型。<br>1.<strong>byte</strong>：1字节（8bit），高位为符号位，其余7位为数据位，范围：-2的7次方<del>2的7次方-1（1111,1111\</del>0111,1111），即-128~127（下面的计算方式相同）；</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注意：byte类型虽然在语义（逻辑）上是占用1字节，但实际上，JVM中是将其当做int看</span><br><span class="line">的，也就是事实上是占用了32位，4字节的，所以其运算效率和int没区别，short也一样。</span><br><span class="line">之所以要有byte&#x2F;short类型，一是因为某些地方要明确使用这些范围类型，二是，</span><br><span class="line">在byte[]数组中，JVM存储的则是真的1字节，short[]2字节。（但也有的JVM其byte[]</span><br><span class="line">数组也是4字节1位）</span><br></pre></td></tr></table></figure>
 
-<p>2.<strong>short</strong>：2字节（16bit），高位为符号位，其余15位为数据位，范围：-2的15次方<del>2的15次方-1，即-32768</del>32767；</p>
+<p>2.<strong>short</strong>：2字节（16bit），高位为符号位，其余15位为数据位，范围：-2的15次方<del>2的15次方-1，即-32768\</del>32767；</p>
 <p>3.<strong>int</strong>：4字节（32bit），范围-2的31次方~2的31次方-1；Java默认的整型类型，即：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">long l &#x3D; 0xfffffffffff;&#x2F;&#x2F;0x表示这个数是16进制数，0表示8进制。</span><br><span class="line">&#x2F;&#x2F;编译器报错，因为右边默认是int，但其超出了范围（没超出int范围的话</span><br><span class="line">&#x2F;&#x2F;编译器会隐式将int转为long），故报错（同样的错误也会出现在float）。</span><br></pre></td></tr></table></figure>
 
