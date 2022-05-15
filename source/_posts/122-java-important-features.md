@@ -1,9 +1,10 @@
 ---
-title: 122_java-important-features
-date: 2022-05-14 19:27:23
+title: Java中的几个重要特性
 categories: Java
 tags:
   - Java
+abbrlink: 7f3a79dc
+date: 2022-05-14 19:27:23
 ---
 
 > Java应用中的几个重要特性：多态、泛型、反射、集合、正则、引用分类。
