@@ -2452,6 +2452,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Web项目开发流程</title>
+    <url>/article/a73689f8.html</url>
+    <content><![CDATA[<blockquote>
+</blockquote>
+<a id="more"></a>
+
+<p>企业项目流程：<br>需求分析=→&gt;<br>设计（概要设计、详细设计)=&gt;<br>技术选型=&gt;<br>初始化/引入需要的技术=&gt;<br>写Demo =&gt;<br>写代码（实现业务逻辑)=&gt;<br>测试(单元测试)=&gt;<br>代码提交Ⅰ代码评审=→&gt;<br>部署=&gt;<br>发布</p>
+<p>技术选型<br>前端:三件套＋React +组件库Ant Design + Umi + Ant Design Pro(现成的管理系统)<br>//Umi 自动生成代码工具<br>//packages.json 依赖和脚本<br>//yarn 包管理器：//npm install -g yarn //yarn –version</p>
+<p>后端: java +spring + springmvc + mybatis + mybatis-plus + springboot + mysql<br>部署:服务器/容器（平台)</p>
+<p>//mvnrepository:<a href="https://mvnrepository.com/">https://mvnrepository.com/</a><br>// <a href="https://search.maven.org/">https://search.maven.org/</a><br>//mybatis-plus <a href="https://baomidou.com/">https://baomidou.com/</a><br>//springboot官方生成器：<a href="https://start.spring.io/">https://start.spring.io/</a><br>依赖：<br>Spring Boot DevTools //热更新<br>Lombok 注解<br>Spring Configuration Processor<br>mysql 数据库<br>spring web //接口<br>mybatis //数据库访问<br>junit //单元测试</p>
+<p>swagger //api文档</p>
+<p>直播网站<br><a href="https://meeting.tencent.com/v2/cloud-record/share?id=8d55db2b-57a6-45a3-802b-70ab5ecd3004&amp;from=3">https://meeting.tencent.com/v2/cloud-record/share?id=8d55db2b-57a6-45a3-802b-70ab5ecd3004&amp;from=3</a><br>访问密码：EHPx</p>
+<p>idea插件<br>codota //智能提示<br>阿里巴巴Java代码规范 //Java代码规范</p>
+<p>app开发流程<br>1.产品经理:功能需求，竞品分析，抄同类产品的好功能<br>2.UI设计：寻找灵感，抄同类产品设计<br>3.程序员：代码审查，百度论坛找解决办法<br>4.测试：测试体验，多种手机对比</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Java中的几个重要特性</title>
     <url>/article/7f3a79dc.html</url>
     <content><![CDATA[<blockquote>
