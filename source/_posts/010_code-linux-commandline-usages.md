@@ -1,22 +1,24 @@
 ---
-title: Ubuntu常用包管理命令
+title: Linux常用命令
 categories: Linux
 tags:
   - linux
-  - apt
+  - Ubuntu
 abbrlink: 64245
 date: 2021-05-19 23:04:56 
 ---
 
-> Ubuntu常用包管理命令
+> Ubuntu常用的Linux命令
+
+> 使用Linux系统的时候会经常用到终端命令行来执行想要的操作，尤其是通过远程SSH使用时，没有可视化的界面就只能用命令行了，这就需要我们掌握常用的Linux命令了。
 
 <!-- more -->
 
-## Linux
+## Ubuntu常用命令
 
 ```bash
+安装vim
 sudo apt-get install vim
-
 sudo apt install vim
 
 更新源
@@ -56,25 +58,37 @@ apt clean
 
 apt autoclean
 类似clean，但删除的是过期的包（即已不能下载或者是无用的包）
+
+# Linux screen命令用于多重视窗管理程序
+screen -ls
+显示目前所有的screen作业
+
+screen -r 4458
+重新连接screen作业
+
+screen --wipe
+清除dead会话命令
 ```
 
->ls：文件列出命令
+## Linux通用命令
+
+#### ls：文件列出命令
 
 - ls -a 显示所有文件和目录（包括隐藏文件）
 - ls -l 显示文件的详细信息
 - ls -r 将文件以相反序列列出
 - ls -t 将文件以建立时间列出
 
-> mkdir：创建文件夹命令
+#### mkdir：创建文件夹命令
 
 - mkdir <文件名> 即可在当前目录下创建一个文件夹
 
-> rm：删除文件命令
+#### rm：删除文件命令
 
 - rm -r * 删除当前目录下得所有文件及目录
 - rm <文件名> 删除一个文件
 
-> cp：复制文件到指定位置
+#### cp：复制文件到指定位置
 
 - cp -a 复制目录下的所有内容 eg. cp -a test/ newtest
 - cp -d 复制时保留链接
@@ -83,7 +97,7 @@ apt autoclean
 - cp -p 复制的文件保留修改时间和访问权限
 - cp -r 复制目录下的所有子目录和文件
 
-> mv：一般用来为文件或者目录改名，或者将目录移动到其他位置
+#### mv：一般用来为文件或者目录改名，或者将目录移动到其他位置
 
 - mv -b 文件目标存在时，会创建一个备份 eg. mv onefile twofile (将onefile改名为twofile）
 - mv -i 在覆盖前会询问
@@ -91,19 +105,20 @@ apt autoclean
 - mv -n 不覆盖任何文件
 - mv -u 目标文件不存在才能移动
 
-> find：在指定目录下查找文件
+#### find：在指定目录下查找文件
 
 - find 路径 -<操作> eg. find . -name “*.c” 查找所有后缀为.c的文件
 - find . -type f 将当前目录及子目录下的文件全部列出
 - find . -ctime -20 将当前目录及子目录下的在最近20天更新过的文件全部列出
 
-> grep：查找文件内符合条件的字符串
+#### grep：查找文件内符合条件的字符串
 
 - grep test *file 在当前目录中查找后缀有file的，并且包含test字符串的文件，并且打印出字符串的行
 - grep -r update /etc/acpi 以递归的方式查找符合条件的文件。eg.查找指定目录下的包含update的文件，并且打印所在行
 - grep -v test *test* 反向查找，查找文件名中包含test的文件中不包含test的行。
+- grep -i 不区分大小写
 
-> cat：输出文件内容
+#### cat：输出文件内容
 
 - cat -n 由1开始对所有内容进行行数编号
 - cat -b 对空白行不进行编号

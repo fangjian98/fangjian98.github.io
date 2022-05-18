@@ -12,6 +12,134 @@ date: 2021-05-20 22:26:04
 
 ## Git 常用命令
 
+**Git配置**
+
+```bash
+$ git config --global user.email "xxx@xx.com"
+
+$ git config user.name
+fangjian98
+
+# 生成ssh key
+Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)
+$ ssh-keygen -t rsa -C "xxx@xx.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Admin/.ssh/id_rsa):
+Created directory '/c/Users/Admin/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Admin/.ssh/id_rsa
+Your public key has been saved in /c/Users/Admin/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:mc855CP9q3vjn17hFWn37pbuYmjqZ4OL8CbrNgjK2GU 2360870585@qq.com
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|                .|
+|               +.|
+|         o    . +|
+|        S .    .o|
+| .  E    * .  ..o|
+|+..o..  . X .  .+|
+|o... +o..o Xoo =.|
+|    oo=o.+O=*=B+.|
++----[SHA256]-----+
+
+# 查看ssh key
+$ cat ~/.ssh/id_rsa.pub
+```
+**Git项目常用命令**
+
+```bash
+$ pwd
+/c/Users/Admin/learngit
+
+$ git init
+$ git add readme.txt
+$ git commit -m "write a readme file"
+[master (root-commit) 5a5268c] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+$ git push origin master
+ 
+$ git branch
+$ git status.
+$ git diff readme.txt
+$ git log
+$ git log --pretty=oneline
+$ git reset --hard HEAD^
+$ cat readme.txt
+$ git checkout -- readme.txt
+$ git rm test.txt
+$ git pull
+$ rm test.txt
+
+# Github提交远程仓库
+Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)
+$ git remote add origin git@github.com:fangjian98/learngit.git
+
+Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)
+$ git push -u origin master 
+
+# 查看帮助
+$ git help
+
+# git log常用参数：after之后的记录，before之前的记录
+git log --oneline --all --grep="status" --author="fangjian" --after="2019-01-01" --before="2020-01-01"
+
+# grep 忽略大小写
+grep -i   
+```
+
+**其他知识**
+
+```bash
+# Git三种状态
+committed
+staged
+modified
+
+# GIt文件机制：.git目录下
+·HEAD	文件存放根节点的信息（目录结构是树形结构）
+·refs	目录存储当前版本控制目录下的各种引用：heads（不同根）、remotes（远程版本库）、stash（Git栈）、tags（标签）
+·logs	目录根据不同的引用存储了日志信息
+
+# 常见命令
+git init
+gir clone
+git status
+git log
+
+git add
+git commit
+git rm
+
+git push origin master
+git fetch
+git merge
+git pull = git fetch + git merge
+
+git reset --hard HEAD		还原至上一个提交
+git checkout HEAD <path>	从HEAD中签出并且恢复成未修改的样子
+
+git revert HEAD			撤销旧的提交
+git commit --amend		修改刚才的这个提交
+
+reset：是要reset到指定commit位置的状态
+	git reset -mixed
+	git reset -hard
+revert：file rollback并且自动产生一个roll back的commit
+	git revert HEAD
+	git revert HEAD^
+	git revert <commit>
+
+git diff <path>
+git diff --cached <path>
+git diff HEAD <path>
+```
+
+## Git 常用命令详解
+
 ### 仓库
 
 ```
@@ -301,4 +429,6 @@ $ git stash pop
 # 生成一个可供发布的压缩包
 $ git archive
 ```
+
+
 
