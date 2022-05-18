@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta property="og:type" content="article">
+<meta property="og:title" content="AOSP常用命令">
+<meta property="og:url" content="http://yoursite.com/article/b42edc12.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-29T12:45:58.000Z">
+<meta property="article:modified_time" content="2022-05-18T12:53:43.468Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="AOSP">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/article/b42edc12.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>AOSP常用命令 | MaxxSpace</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">MaxxSpace</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-navigation">
+
+    <a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/b42edc12.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          AOSP常用命令
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-29 20:45:58" itemprop="dateCreated datePublished" datetime="2021-05-29T20:45:58+08:00">2021-05-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AOSP/" itemprop="url" rel="index"><span itemprop="name">AOSP</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+</blockquote>
+<a id="more"></a>
+
+
+
+<h1 id="AOSP命令"><a href="#AOSP命令" class="headerlink" title="AOSP命令"></a>AOSP命令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br></pre></td><td class="code"><pre><span class="line">mkdir 7.0</span><br><span class="line">ls</span><br><span class="line"><span class="built_in">cd</span> 7.0</span><br><span class="line">输入源码地址按下回车开始获取源码，获取完成后输入命令ls查看源码文件夹</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> LA.UM.5.6</span><br><span class="line"><span class="built_in">source</span>  build/envsetup.sh</span><br><span class="line"></span><br><span class="line">lunch msm8953_64-user</span><br><span class="line">lunch msm8953_64-userdebug</span><br><span class="line"></span><br><span class="line">make -j8</span><br><span class="line">make –j8 2&gt;&amp;1|tee 1.log</span><br><span class="line"></span><br><span class="line">其他编译命令：</span><br><span class="line">make aboot	             	--	编译bootloader；</span><br><span class="line">make bootimage		--	编译kernel；</span><br><span class="line">make systemimage		--	编译system；</span><br><span class="line">make userdataimage	--	编译userdata；</span><br><span class="line">make recoveryimage		--	编译recovery；</span><br><span class="line">mmm packages/apps/Contacts	--	mmm编译指定目录的模块，如编译联系人；</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">常见的编译错误有：</span><br><span class="line">1.编译环境配置不正常；</span><br><span class="line">2.编译的代码有语法或逻辑错误；</span><br><span class="line">3.编译过程中服务器中断。</span><br><span class="line">对应解决方法：</span><br><span class="line">1.配置对应编译环境；</span><br><span class="line">2.根据error提示修改代码；</span><br><span class="line">3.重新连接服务器重新编译或者继续编译，若想清除之前编译的信息则使用指令：make clean</span><br><span class="line"></span><br><span class="line">清单一：编译Android系统</span><br><span class="line"> $ <span class="built_in">source</span> build/envsetup.sh </span><br><span class="line"> $ lunch full-eng </span><br><span class="line"> $ make -j8 </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line">git branch -a</span><br><span class="line">git  checkout -b MC501_custom origin/MC501_custom</span><br><span class="line"><span class="built_in">source</span> build/</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch</span><br><span class="line">42</span><br><span class="line">（top命令查看所有使用人）</span><br><span class="line">make -j8 2&gt;&amp;1 | tee build.log</span><br><span class="line"> make -j16 2&gt;&amp;1 | tee log.txt</span><br><span class="line">rm -rf out/ &amp;&amp; make -j16 2&gt;&amp;1 | tee build.log</span><br><span class="line">rm -rf out/ &amp;&amp; make -j8 2&gt;&amp;1 | tee build.log</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## device目录下的状态</span></span><br><span class="line">git status device/</span><br><span class="line"><span class="comment">## 修改的文件的不同</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop</span><br><span class="line"><span class="comment">## 在根目录下生成patch</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop &gt; patch</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\\192.168.0.227</span><br><span class="line">home1/fangjian/</span><br><span class="line"></span><br><span class="line">ls</span><br><span class="line"></span><br><span class="line">git branch -a</span><br><span class="line">origin/master</span><br><span class="line">rm -rf out/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">查看数据库</span><br><span class="line">adb root </span><br><span class="line">adb shell</span><br><span class="line"><span class="built_in">cd</span> data/data/</span><br><span class="line"><span class="built_in">cd</span> com.android.providers.media/</span><br><span class="line">ls</span><br><span class="line"><span class="built_in">cd</span> databases</span><br><span class="line">ls</span><br><span class="line"></span><br><span class="line">返回上一层</span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line">git <span class="built_in">log</span> --oneline -20</span><br><span class="line">按q退出</span><br><span class="line"></span><br><span class="line">//查看容量</span><br><span class="line">df -h</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">单模块编译</span><br><span class="line"><span class="built_in">source</span> build/</span><br><span class="line">lunch</span><br><span class="line"></span><br><span class="line">mmm frameworks/base/package/SystemUI</span><br><span class="line"></span><br><span class="line">make SystemUI</span><br><span class="line"></span><br><span class="line">adb push ../SystemUI  /system/priv-app/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">* daemon not running; starting now at tcp:5037</span><br><span class="line">* daemon started successfully</span><br><span class="line">msm8937_32:/ $ <span class="built_in">exit</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">adb安装</span><br><span class="line">C:\Users\Admin&gt;adb root</span><br><span class="line">restarting adbd as root</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb remount</span><br><span class="line">remount succeeded</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb push \\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\product\msm8937_32\system\priv-app\SystemUI /system/priv-app/</span><br><span class="line">\\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\produc...les pushed, 0 skipped. 7.3 MB/s (24039210 bytes <span class="keyword">in</span> 3.157s)</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb push \\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\product\msm8937_32\system\framework\framework-res.apk /system/framework/</span><br><span class="line">\\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\produc...ile pushed, 0 skipped. 8.7 MB/s (34416617 bytes <span class="keyword">in</span> 3.780s)</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb reboot</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb push \\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\product\msm8937_32\system\priv-app\PackageInstaller /system/priv-app/</span><br><span class="line">\\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\produc...les pushed, 0 skipped. 5.1 MB/s (10269498 bytes <span class="keyword">in</span> 1.913s)</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;</span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ $ getprop persist.sys.strict_op_enable</span><br><span class="line"><span class="literal">true</span></span><br><span class="line">msm8937_32:/ $ getprop persist.vendor.strict_op_enable</span><br><span class="line"><span class="literal">true</span></span><br><span class="line"></span><br><span class="line">打<span class="built_in">log</span></span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ <span class="comment"># logcat | grep GrantPermissionsActivity</span></span><br><span class="line"></span><br><span class="line">不重启 push frameworks</span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ <span class="comment"># stop</span></span><br><span class="line">msm8937_32:/ <span class="comment"># start</span></span><br><span class="line"></span><br><span class="line">msm8937_32:/ <span class="comment"># logcat | grep return</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">1&gt;编译结果目录：\\192.168.0.227\home1\fangjian\LA.UM.7.6\out\target\product\msm8953_64</span><br><span class="line">2&gt;将其目录下的非文件夹文件拷贝到 待刻录的文件夹中 \\192.168.0.88\每周软件版本\SLM758W\android9\SLM758E\V24</span><br><span class="line">3&gt;使用QFil进行烧录 选择</span><br><span class="line"></span><br><span class="line">对比工具：Beyond Compare</span><br><span class="line">\\192.168.0.227\home1\fangjian\LA.UM.7.6目录下：</span><br><span class="line">SLM758E_meig_userdebug.sh</span><br><span class="line">SLM758B_meig_userdebug.sh</span><br><span class="line"></span><br><span class="line">代码注释：</span><br><span class="line">//add by fangjian <span class="keyword">for</span> bug 8506 start</span><br><span class="line">//add by fangjian <span class="keyword">for</span> bug 8506 end</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line">git branch -a</span><br><span class="line">git  checkout -b SLM758W_meig_custom origin/SLM758W_meig_custom</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch</span><br><span class="line">42</span><br><span class="line">make -j8 2&gt;&amp;1 | tee build.log</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch</span><br><span class="line">mmm packages/apps/Music</span><br><span class="line"></span><br><span class="line">在整体编译时部分依赖测试不会进行编译，所以使用使用mmm时会提示依赖出错，此时应该用mmma进行编译。</span><br><span class="line">mm 构建模块在当前文件夹，不构建依赖</span><br><span class="line">mmm 构建模块指定路径，不构建依赖</span><br><span class="line">mma 构建模块在当前文件夹并构建依赖</span><br><span class="line">mmma 构建模块在当前文件夹并构建依赖</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">生成运行的<span class="built_in">log</span>的命令：</span><br><span class="line">adb logcat&gt; d:\test.log</span><br><span class="line"></span><br><span class="line">安装手机应用命令</span><br><span class="line">adb install C:\Users\Admin\Desktop\MusicTests.apk</span><br><span class="line">adb push</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">更改值</span><br><span class="line">adb root</span><br><span class="line">adb shell getprop persist.sys.strict_op_enable <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">adb root </span><br><span class="line">adb remount</span><br><span class="line">adb push C:\Users\Admin\Desktop\music.apk</span><br><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1、   修改APK应用：在packages中的应用如果修改后都可以单独编译。先执行 </span><br><span class="line">$. build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line"><span class="variable">$mmm</span> packages/providers/ContactsProvider/</span><br><span class="line"><span class="comment">##用mm/mmm来编译生成的.apk并不会打包到system.img中，需要我们手动通过make snod把system文件夹打包为system.img</span></span><br><span class="line"><span class="comment">##可以使用make snod将模块打包到system.img中，也可以使用 adb install *.apk安装</span></span><br><span class="line">   执行make snod 命令，即可重新打包android系统镜像文件system.img。</span><br><span class="line"></span><br><span class="line">注：通过mmm packages/providers/ContactsProvider/ 编译后的apk在 out/target/product/generic/system/app </span><br><span class="line">这时候通过 adb install out/target/product/generic/system/app/xxx.apk 安装你刚修改过的apk就可以在模拟器上看到你修改的效果了。</span><br><span class="line"></span><br><span class="line">adb push方式进去：</span><br><span class="line">adb shell mount -o rw,remount -t ext3 /dev/block/mmcblk0p2 /system   挂载并获取写入权限</span><br><span class="line">adb push xxx.apk /system/app</span><br><span class="line"></span><br><span class="line"> 修改framework：如果在Contacts.java中修改了，必须重新编译下framework。先执行 </span><br><span class="line">$ . build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line"><span class="comment">#网上有的说要执行 make update-api，实际上直接make PRODUCT-sdk-sdk就可以将修改后的framework编译到sdk中。 #编译framework后，那些修改了的应用可以不用再单独编译了。4～6分钟</span></span><br><span class="line">$ make PRODUCT-sdk-sdk <span class="comment">#重新生成SDK 10~20分钟</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="编译服务器设置"><a href="#编译服务器设置" class="headerlink" title="编译服务器设置"></a>编译服务器设置</h2><p>登录成功后请执行下面步骤，以设置环境</p>
+<ol>
+<li>生成你的ssh key</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br><span class="line">#一路回车</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>将key注册到代码服务器</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>配置本地ssh策略</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim ~&#x2F;.ssh&#x2F;config</span><br><span class="line">#加入下面内容</span><br><span class="line">Host *</span><br><span class="line">  KexAlgorithms +diffie-hellman-group1-sha1</span><br></pre></td></tr></table></figure>
+
+<p>拉取代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone ssh:&#x2F;&#x2F;fangjian@192.168.0.240:29418&#x2F;LA.UM.7.6 &amp;&amp; scp -p -P 29418 fangjian@192.168.0.240:hooks&#x2F;commit-msg LA.UM.7.6&#x2F;.git&#x2F;hooks&#x2F;</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AOSP/" rel="tag"># AOSP</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/article/163a8691.html" rel="prev" title="Git的基本使用">
+      <i class="fa fa-chevron-left"></i> Git的基本使用
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/article/caca35c0.html" rel="next" title="编程语言的Hello World程序">
+      编程语言的Hello World程序 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#AOSP%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">AOSP命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.1.</span> <span class="nav-text">编译服务器设置</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">37</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">58</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/weixin_44008788" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_44008788" rel="noopener" target="_blank">CSDN</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-rocket"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

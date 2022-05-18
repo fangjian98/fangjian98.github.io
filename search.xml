@@ -777,41 +777,32 @@
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu常用包管理命令</title>
+    <title>Linux常用命令</title>
     <url>/article/64245.html</url>
     <content><![CDATA[<blockquote>
-<p>Ubuntu常用包管理命令</p>
+<p>Ubuntu常用的Linux命令</p>
+</blockquote>
+<blockquote>
+<p>使用Linux系统的时候会经常用到终端命令行来执行想要的操作，尤其是通过远程SSH使用时，没有可视化的界面就只能用命令行了，这就需要我们掌握常用的Linux命令了。</p>
 </blockquote>
 <a id="more"></a>
 
-<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install vim</span><br><span class="line"></span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br></pre></td></tr></table></figure>
+<h2 id="Ubuntu常用命令"><a href="#Ubuntu常用命令" class="headerlink" title="Ubuntu常用命令"></a>Ubuntu常用命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装vim</span><br><span class="line">sudo apt-get install vim</span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux screen命令用于多重视窗管理程序</span></span><br><span class="line"><span class="string">screen -ls</span></span><br><span class="line"><span class="string">显示目前所有的screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen -r 4458</span></span><br><span class="line"><span class="string">重新连接screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen --wipe</span></span><br><span class="line"><span class="string">清除dead会话命令</span></span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>ls：文件列出命令</p>
-</blockquote>
-<ul>
+<h2 id="Linux通用命令"><a href="#Linux通用命令" class="headerlink" title="Linux通用命令"></a>Linux通用命令</h2><h4 id="ls：文件列出命令"><a href="#ls：文件列出命令" class="headerlink" title="ls：文件列出命令"></a>ls：文件列出命令</h4><ul>
 <li>ls -a 显示所有文件和目录（包括隐藏文件）</li>
 <li>ls -l 显示文件的详细信息</li>
 <li>ls -r 将文件以相反序列列出</li>
 <li>ls -t 将文件以建立时间列出</li>
 </ul>
-<blockquote>
-<p>mkdir：创建文件夹命令</p>
-</blockquote>
-<ul>
+<h4 id="mkdir：创建文件夹命令"><a href="#mkdir：创建文件夹命令" class="headerlink" title="mkdir：创建文件夹命令"></a>mkdir：创建文件夹命令</h4><ul>
 <li>mkdir &lt;文件名&gt; 即可在当前目录下创建一个文件夹</li>
 </ul>
-<blockquote>
-<p>rm：删除文件命令</p>
-</blockquote>
-<ul>
+<h4 id="rm：删除文件命令"><a href="#rm：删除文件命令" class="headerlink" title="rm：删除文件命令"></a>rm：删除文件命令</h4><ul>
 <li>rm -r * 删除当前目录下得所有文件及目录</li>
 <li>rm &lt;文件名&gt; 删除一个文件</li>
 </ul>
-<blockquote>
-<p>cp：复制文件到指定位置</p>
-</blockquote>
-<ul>
+<h4 id="cp：复制文件到指定位置"><a href="#cp：复制文件到指定位置" class="headerlink" title="cp：复制文件到指定位置"></a>cp：复制文件到指定位置</h4><ul>
 <li>cp -a 复制目录下的所有内容 eg. cp -a test/ newtest</li>
 <li>cp -d 复制时保留链接</li>
 <li>cp -f 覆盖已存在的文件，不提示</li>
@@ -819,36 +810,25 @@
 <li>cp -p 复制的文件保留修改时间和访问权限</li>
 <li>cp -r 复制目录下的所有子目录和文件</li>
 </ul>
-<blockquote>
-<p>mv：一般用来为文件或者目录改名，或者将目录移动到其他位置</p>
-</blockquote>
-<ul>
+<h4 id="mv：一般用来为文件或者目录改名，或者将目录移动到其他位置"><a href="#mv：一般用来为文件或者目录改名，或者将目录移动到其他位置" class="headerlink" title="mv：一般用来为文件或者目录改名，或者将目录移动到其他位置"></a>mv：一般用来为文件或者目录改名，或者将目录移动到其他位置</h4><ul>
 <li>mv -b 文件目标存在时，会创建一个备份 eg. mv onefile twofile (将onefile改名为twofile）</li>
 <li>mv -i 在覆盖前会询问</li>
 <li>mv -f 覆盖前不会询问</li>
 <li>mv -n 不覆盖任何文件</li>
 <li>mv -u 目标文件不存在才能移动</li>
 </ul>
-<blockquote>
-<p>find：在指定目录下查找文件</p>
-</blockquote>
-<ul>
+<h4 id="find：在指定目录下查找文件"><a href="#find：在指定目录下查找文件" class="headerlink" title="find：在指定目录下查找文件"></a>find：在指定目录下查找文件</h4><ul>
 <li>find 路径 -&lt;操作&gt; eg. find . -name “*.c” 查找所有后缀为.c的文件</li>
 <li>find . -type f 将当前目录及子目录下的文件全部列出</li>
 <li>find . -ctime -20 将当前目录及子目录下的在最近20天更新过的文件全部列出</li>
 </ul>
-<blockquote>
-<p>grep：查找文件内符合条件的字符串</p>
-</blockquote>
-<ul>
+<h4 id="grep：查找文件内符合条件的字符串"><a href="#grep：查找文件内符合条件的字符串" class="headerlink" title="grep：查找文件内符合条件的字符串"></a>grep：查找文件内符合条件的字符串</h4><ul>
 <li>grep test *file 在当前目录中查找后缀有file的，并且包含test字符串的文件，并且打印出字符串的行</li>
 <li>grep -r update /etc/acpi 以递归的方式查找符合条件的文件。eg.查找指定目录下的包含update的文件，并且打印所在行</li>
 <li>grep -v test <em>test</em> 反向查找，查找文件名中包含test的文件中不包含test的行。</li>
+<li>grep -i 不区分大小写</li>
 </ul>
-<blockquote>
-<p>cat：输出文件内容</p>
-</blockquote>
-<ul>
+<h4 id="cat：输出文件内容"><a href="#cat：输出文件内容" class="headerlink" title="cat：输出文件内容"></a>cat：输出文件内容</h4><ul>
 <li>cat -n 由1开始对所有内容进行行数编号</li>
 <li>cat -b 对空白行不进行编号</li>
 <li>cat -s 将两个空白行合并为一个</li>
@@ -861,7 +841,7 @@
       </categories>
       <tags>
         <tag>linux</tag>
-        <tag>apt</tag>
+        <tag>Ubuntu</tag>
       </tags>
   </entry>
   <entry>
@@ -2895,6 +2875,117 @@
         <tag>Java</tag>
         <tag>Reflection</tag>
         <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git的基本使用</title>
+    <url>/article/163a8691.html</url>
+    <content><![CDATA[<blockquote>
+<p>Git的基本使用是需要掌握的基本概念和命令，以及掌握一些高级用法，如git rebase、git stash等。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Git的基本使用"><a href="#Git的基本使用" class="headerlink" title="Git的基本使用"></a>Git的基本使用</h3><ol>
+<li>第一次使用git需要使用命令 <code>git config --global user.name &lt;name&gt;</code> 、<code>git config --global user.email &lt;email&gt;</code> 配置好git的用户名和邮箱</li>
+<li>在本地测试仓库，不需要配置ssh公钥，但是在诸如码云或者其他远程服务器上进行仓库关联需要使用ssh公钥进行关联。使用命令<code>ssh-keygen -t rsa &lt;emial&gt; </code>可以在本地生成一个ssh公钥，之后登陆码云后将秘钥黏贴进去，即可在本地与远程仓库之间建立连接</li>
+<li>生成本地仓库，首先在需要生成仓库的位置右键点击git bash here ，输入git init 即可在当前目录下生成一个.git文件夹，这就是本地仓库的位置啦</li>
+<li>我们可以输入命令 touch readme.txt 来在当前目录下生成一个文件，以这个文件为例，测试git的拉取和上传功能。输入命令git status，即可查看当前没有上传至暂存处的修改或者新建的文件，这时就需要我们进行后续的一套操作。</li>
+<li>输入命令<code>git add . </code>即可将这些文件存放至暂存区，这个区域是不可见得，所以不用区找，我们可以再次输入<code>git status </code>查看当前的文件的状态。可以发现这些文件都存进暂存区了。</li>
+<li>输入命令<code>git commit -m &lt;注释&gt; </code>这是把当前在暂存区的文件或者操作完成的文件（比如git rm后的文件）全部提交到git本地仓库中去，这就完成了文件的提交。再次查看git status 可以发现这些文件都消失了，说明文件都提交上去了。</li>
+<li>这里可以使用<code>git reset</code>进行版本的回溯，输入<code>git log</code> 查看commit 的版本号，再次输入，git reset –hard &lt;版本号&gt; 可以回滚到之前的提交版本。</li>
+<li>到了这里本地仓库的操作都完成了，接下来是进行与远程仓库之间的关联和文件的上传了。输入命令 <code>git remote add origin &lt;关联的远程仓库的地址&gt;:&lt;ssh仓库的路径&gt; </code>这就和远程仓库进行关联了，有时候这里会弹出错误 （remote origin already exists）这表明已经与其它远程仓库进行关联了，输入命令<code>git remote rm origin </code>将当前关联的远程仓库删除即可。</li>
+<li>下面进行远程仓库的文件的拉取，这一步是必要的，因为如果与远程仓库的文件不同步，可能会发生冲突，因此建议这里在push前都要pull一下，避免冲突。输入命令<code>git pull --rebase origin master</code>(这里的pull其实包含 fetch 和merge两个操作，即fetch解决冲突问题，merge就是将文件合并），最后就可以愉快地进行代码地上传了，输入命令<code>git push -u origin master</code>(输入-u，在下一次使用push时可以直接git push，不用敲 origin master了），转到码云刷新仓库即可看到刚刚上传的文件已经显示在仓库中了。</li>
+</ol>
+<h3 id="Git-分支"><a href="#Git-分支" class="headerlink" title="Git 分支"></a>Git 分支</h3><p>Git分支可以理解为一个链表，插入新的分支，就是在链表的一个节点上插入新的链表，而分支的合并分情况讨论，如果主支没有修改，而插入的分支进行了修改，那么在合并的时候就将指针也就是master指向了最新的一次commit节点。而如果主支修改的同时，插入的分支也修改了，那么在合并的时候就需要解决冲突，可能两个修改的分支会并存，这时候可以用git log查看commit的日志。<br>注意：在初始化一个git仓库后，首先需要在仓库中存入一个任意的文件，如果直接创建分支，那么默认分支，也就是master会消失，取而代之的是默认分支变为主支。</p>
+<ul>
+<li>分支的创建，输入命令git branch &lt;分支名&gt;</li>
+<li>分支的切换，输入命令git checkout &lt;分支名&gt;</li>
+<li>分支的创建和切换，分支的创建并且切换到该分支，git checkout -b &lt;分支名&gt;</li>
+<li>查看当前的所有分支，输入命令git branch</li>
+<li>行显示日志，输入命令git log –decorate –oneline</li>
+<li>图像化显示日志，输入命令 git log –decorate –oneline -graph -all</li>
+<li>本地分支合并 git merge &lt;分支名&gt;</li>
+</ul>
+<h3 id="Git-diff"><a href="#Git-diff" class="headerlink" title="Git diff"></a>Git diff</h3><ul>
+<li>比较当前工作区未提交内容与最后一次commit内容的不同之处git diff</li>
+<li>比较暂存区(已经add，但是未commit的内容) 和最后一次commit的区别git diff –catched / git diff –staged</li>
+<li>显示工作目录，新创建但未add的文件，和暂存区已经add但未commit的文件，与最后一次commit的区别git diff HEAD</li>
+<li>比较两个分支上的最后commit 的区别git diff <branch1> <branch2></li>
+<li>比较两个分支log有什么区别git log <branch1>…<branch2></li>
+<li>比上面更清楚的知道区别git log –left-right <branch>…<branch2></li>
+</ul>
+<h3 id="Git-stash"><a href="#Git-stash" class="headerlink" title="Git stash"></a>Git stash</h3><p>Git stash 主要功能就是，将当前的工作区保存，之后再使用git status查看可以发现当前工作区变干净了。想要恢复时，使用git checkout 切换分支，再使用git stash pop恢复即可。<br>注意：多次使用git stash后，可以使用git stash list查看保存的列表，使用git stash apply恢复，或者使用git stash drop删除。</p>
+<h3 id="Git-rebase"><a href="#Git-rebase" class="headerlink" title="Git rebase"></a>Git rebase</h3><p>Git rebase 主要使用在分支合并的操作上，因此从远程下拉代码、本地分支合并并提交都会用到rebase命令。</p>
+<ol>
+<li>我们可以使用rebase合并多个commit为一个commit，这样在log中就能更加清爽整洁，使用命令 git rebase -i [开始版本号] [结束版本号] /或者 git rebase -i HEAD~[一个区间数字]，之后使用如下命令进行操作即可。</li>
+</ol>
+<ul>
+<li>pick：保留该commit（缩写:p）</li>
+<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
+<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
+<li>squash：将该commit和前一个commit合并（缩写:s）</li>
+<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
+<li>exec：执行shell命令（缩写:x）</li>
+<li>drop：我要丢弃该commit（缩写:d）</li>
+</ul>
+<ol start="2">
+<li>此外我们可以使用rebase可以将commit黏贴到另外一个分支上，使用命令 git rebase [开始版本号] [结束版本号] –onto [分支名]。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>rebase</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AOSP常用命令</title>
+    <url>/article/b42edc12.html</url>
+    <content><![CDATA[<blockquote>
+</blockquote>
+<a id="more"></a>
+
+
+
+<h1 id="AOSP命令"><a href="#AOSP命令" class="headerlink" title="AOSP命令"></a>AOSP命令</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir 7.0</span><br><span class="line">ls</span><br><span class="line"><span class="built_in">cd</span> 7.0</span><br><span class="line">输入源码地址按下回车开始获取源码，获取完成后输入命令ls查看源码文件夹</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> LA.UM.5.6</span><br><span class="line"><span class="built_in">source</span>  build/envsetup.sh</span><br><span class="line"></span><br><span class="line">lunch msm8953_64-user</span><br><span class="line">lunch msm8953_64-userdebug</span><br><span class="line"></span><br><span class="line">make -j8</span><br><span class="line">make –j8 2&gt;&amp;1|tee 1.log</span><br><span class="line"></span><br><span class="line">其他编译命令：</span><br><span class="line">make aboot	             	--	编译bootloader；</span><br><span class="line">make bootimage		--	编译kernel；</span><br><span class="line">make systemimage		--	编译system；</span><br><span class="line">make userdataimage	--	编译userdata；</span><br><span class="line">make recoveryimage		--	编译recovery；</span><br><span class="line">mmm packages/apps/Contacts	--	mmm编译指定目录的模块，如编译联系人；</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">常见的编译错误有：</span><br><span class="line">1.编译环境配置不正常；</span><br><span class="line">2.编译的代码有语法或逻辑错误；</span><br><span class="line">3.编译过程中服务器中断。</span><br><span class="line">对应解决方法：</span><br><span class="line">1.配置对应编译环境；</span><br><span class="line">2.根据error提示修改代码；</span><br><span class="line">3.重新连接服务器重新编译或者继续编译，若想清除之前编译的信息则使用指令：make clean</span><br><span class="line"></span><br><span class="line">清单一：编译Android系统</span><br><span class="line"> $ <span class="built_in">source</span> build/envsetup.sh </span><br><span class="line"> $ lunch full-eng </span><br><span class="line"> $ make -j8 </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line">git branch -a</span><br><span class="line">git  checkout -b MC501_custom origin/MC501_custom</span><br><span class="line"><span class="built_in">source</span> build/</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch</span><br><span class="line">42</span><br><span class="line">（top命令查看所有使用人）</span><br><span class="line">make -j8 2&gt;&amp;1 | tee build.log</span><br><span class="line"> make -j16 2&gt;&amp;1 | tee log.txt</span><br><span class="line">rm -rf out/ &amp;&amp; make -j16 2&gt;&amp;1 | tee build.log</span><br><span class="line">rm -rf out/ &amp;&amp; make -j8 2&gt;&amp;1 | tee build.log</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## device目录下的状态</span></span><br><span class="line">git status device/</span><br><span class="line"><span class="comment">## 修改的文件的不同</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop</span><br><span class="line"><span class="comment">## 在根目录下生成patch</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop &gt; patch</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\\192.168.0.227</span><br><span class="line">home1/fangjian/</span><br><span class="line"></span><br><span class="line">ls</span><br><span class="line"></span><br><span class="line">git branch -a</span><br><span class="line">origin/master</span><br><span class="line">rm -rf out/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">查看数据库</span><br><span class="line">adb root </span><br><span class="line">adb shell</span><br><span class="line"><span class="built_in">cd</span> data/data/</span><br><span class="line"><span class="built_in">cd</span> com.android.providers.media/</span><br><span class="line">ls</span><br><span class="line"><span class="built_in">cd</span> databases</span><br><span class="line">ls</span><br><span class="line"></span><br><span class="line">返回上一层</span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line">git <span class="built_in">log</span> --oneline -20</span><br><span class="line">按q退出</span><br><span class="line"></span><br><span class="line">//查看容量</span><br><span class="line">df -h</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">单模块编译</span><br><span class="line"><span class="built_in">source</span> build/</span><br><span class="line">lunch</span><br><span class="line"></span><br><span class="line">mmm frameworks/base/package/SystemUI</span><br><span class="line"></span><br><span class="line">make SystemUI</span><br><span class="line"></span><br><span class="line">adb push ../SystemUI  /system/priv-app/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">* daemon not running; starting now at tcp:5037</span><br><span class="line">* daemon started successfully</span><br><span class="line">msm8937_32:/ $ <span class="built_in">exit</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">adb安装</span><br><span class="line">C:\Users\Admin&gt;adb root</span><br><span class="line">restarting adbd as root</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb remount</span><br><span class="line">remount succeeded</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb push \\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\product\msm8937_32\system\priv-app\SystemUI /system/priv-app/</span><br><span class="line">\\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\produc...les pushed, 0 skipped. 7.3 MB/s (24039210 bytes <span class="keyword">in</span> 3.157s)</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb push \\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\product\msm8937_32\system\framework\framework-res.apk /system/framework/</span><br><span class="line">\\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\produc...ile pushed, 0 skipped. 8.7 MB/s (34416617 bytes <span class="keyword">in</span> 3.780s)</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb reboot</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;adb push \\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\product\msm8937_32\system\priv-app\PackageInstaller /system/priv-app/</span><br><span class="line">\\192.168.0.227\home1\fangjian\LA.UM.5.6\out\target\produc...les pushed, 0 skipped. 5.1 MB/s (10269498 bytes <span class="keyword">in</span> 1.913s)</span><br><span class="line"></span><br><span class="line">C:\Users\Admin&gt;</span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ $ getprop persist.sys.strict_op_enable</span><br><span class="line"><span class="literal">true</span></span><br><span class="line">msm8937_32:/ $ getprop persist.vendor.strict_op_enable</span><br><span class="line"><span class="literal">true</span></span><br><span class="line"></span><br><span class="line">打<span class="built_in">log</span></span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ <span class="comment"># logcat | grep GrantPermissionsActivity</span></span><br><span class="line"></span><br><span class="line">不重启 push frameworks</span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ <span class="comment"># stop</span></span><br><span class="line">msm8937_32:/ <span class="comment"># start</span></span><br><span class="line"></span><br><span class="line">msm8937_32:/ <span class="comment"># logcat | grep return</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1&gt;编译结果目录：\\192.168.0.227\home1\fangjian\LA.UM.7.6\out\target\product\msm8953_64</span><br><span class="line">2&gt;将其目录下的非文件夹文件拷贝到 待刻录的文件夹中 \\192.168.0.88\每周软件版本\SLM758W\android9\SLM758E\V24</span><br><span class="line">3&gt;使用QFil进行烧录 选择</span><br><span class="line"></span><br><span class="line">对比工具：Beyond Compare</span><br><span class="line">\\192.168.0.227\home1\fangjian\LA.UM.7.6目录下：</span><br><span class="line">SLM758E_meig_userdebug.sh</span><br><span class="line">SLM758B_meig_userdebug.sh</span><br><span class="line"></span><br><span class="line">代码注释：</span><br><span class="line">//add by fangjian <span class="keyword">for</span> bug 8506 start</span><br><span class="line">//add by fangjian <span class="keyword">for</span> bug 8506 end</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line">git branch -a</span><br><span class="line">git  checkout -b SLM758W_meig_custom origin/SLM758W_meig_custom</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch</span><br><span class="line">42</span><br><span class="line">make -j8 2&gt;&amp;1 | tee build.log</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch</span><br><span class="line">mmm packages/apps/Music</span><br><span class="line"></span><br><span class="line">在整体编译时部分依赖测试不会进行编译，所以使用使用mmm时会提示依赖出错，此时应该用mmma进行编译。</span><br><span class="line">mm 构建模块在当前文件夹，不构建依赖</span><br><span class="line">mmm 构建模块指定路径，不构建依赖</span><br><span class="line">mma 构建模块在当前文件夹并构建依赖</span><br><span class="line">mmma 构建模块在当前文件夹并构建依赖</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">生成运行的<span class="built_in">log</span>的命令：</span><br><span class="line">adb logcat&gt; d:\test.log</span><br><span class="line"></span><br><span class="line">安装手机应用命令</span><br><span class="line">adb install C:\Users\Admin\Desktop\MusicTests.apk</span><br><span class="line">adb push</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">更改值</span><br><span class="line">adb root</span><br><span class="line">adb shell getprop persist.sys.strict_op_enable <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">adb root </span><br><span class="line">adb remount</span><br><span class="line">adb push C:\Users\Admin\Desktop\music.apk</span><br><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1、   修改APK应用：在packages中的应用如果修改后都可以单独编译。先执行 </span><br><span class="line">$. build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line"><span class="variable">$mmm</span> packages/providers/ContactsProvider/</span><br><span class="line"><span class="comment">##用mm/mmm来编译生成的.apk并不会打包到system.img中，需要我们手动通过make snod把system文件夹打包为system.img</span></span><br><span class="line"><span class="comment">##可以使用make snod将模块打包到system.img中，也可以使用 adb install *.apk安装</span></span><br><span class="line">   执行make snod 命令，即可重新打包android系统镜像文件system.img。</span><br><span class="line"></span><br><span class="line">注：通过mmm packages/providers/ContactsProvider/ 编译后的apk在 out/target/product/generic/system/app </span><br><span class="line">这时候通过 adb install out/target/product/generic/system/app/xxx.apk 安装你刚修改过的apk就可以在模拟器上看到你修改的效果了。</span><br><span class="line"></span><br><span class="line">adb push方式进去：</span><br><span class="line">adb shell mount -o rw,remount -t ext3 /dev/block/mmcblk0p2 /system   挂载并获取写入权限</span><br><span class="line">adb push xxx.apk /system/app</span><br><span class="line"></span><br><span class="line"> 修改framework：如果在Contacts.java中修改了，必须重新编译下framework。先执行 </span><br><span class="line">$ . build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line"><span class="comment">#网上有的说要执行 make update-api，实际上直接make PRODUCT-sdk-sdk就可以将修改后的framework编译到sdk中。 #编译framework后，那些修改了的应用可以不用再单独编译了。4～6分钟</span></span><br><span class="line">$ make PRODUCT-sdk-sdk <span class="comment">#重新生成SDK 10~20分钟</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="编译服务器设置"><a href="#编译服务器设置" class="headerlink" title="编译服务器设置"></a>编译服务器设置</h2><p>登录成功后请执行下面步骤，以设置环境</p>
+<ol>
+<li>生成你的ssh key</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br><span class="line">#一路回车</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>将key注册到代码服务器</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>配置本地ssh策略</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~&#x2F;.ssh&#x2F;config</span><br><span class="line">#加入下面内容</span><br><span class="line">Host *</span><br><span class="line">  KexAlgorithms +diffie-hellman-group1-sha1</span><br></pre></td></tr></table></figure>
+
+<p>拉取代码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone ssh:&#x2F;&#x2F;fangjian@192.168.0.240:29418&#x2F;LA.UM.7.6 &amp;&amp; scp -p -P 29418 fangjian@192.168.0.240:hooks&#x2F;commit-msg LA.UM.7.6&#x2F;.git&#x2F;hooks&#x2F;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>AOSP</category>
+      </categories>
+      <tags>
+        <tag>AOSP</tag>
       </tags>
   </entry>
   <entry>
