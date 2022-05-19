@@ -10,6 +10,9 @@ date: 2022-05-18 19:40:14
 ---
 
 > Reflection 是 Java 程序开发语言的特征之一，它允许运行中的 Java 程序对自身进行检查，或者说“自审”，并能直接操作程序的内部属性。Java 的这一能力在实际应用中也许用得不是很多，但是在其它的程序设计语言中根本就不存在这一特性。
+>
+
+[编辑](https://github.com/fangjian98/fangjian98.github.io/blob/hexo/source/_posts/127_java-reflection.md)
 
 <!-- more -->
 
