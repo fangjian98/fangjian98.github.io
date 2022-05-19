@@ -36,6 +36,8 @@ token可以显著减少服务端对用户表的查询，同时使用户不必每
 回调地址	http://192.168.0.106/
 ```
 
+![OSCHINA API](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png)
+
 2.OAuth2 获取 AccessToken，应用通过 AccessToken 访问 OpenApi 使用用户数据。
 采用 OAuth2 协议 认证，开放 osc 移动 app 版本所有接口
 
