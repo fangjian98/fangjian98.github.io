@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "hexo generate and deploy start"
+hexo clean
 hexo d -g
 echo "hexo generate and deploy end"
 echo "git push remote repo start"
