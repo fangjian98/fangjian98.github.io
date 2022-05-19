@@ -11,9 +11,7 @@ date: 2022-05-19 10:16:29
 
 <!-- more -->
 
-# OpenAPI的使用
-
-## 1.OSCHINA API
+## OSCHINA API的使用
 
 OSCHINA API：https://www.oschina.net/openapi/docs
 
@@ -34,7 +32,7 @@ token可以显著减少服务端对用户表的查询，同时使用户不必每
 状态		正在审核
 应用ID	GCqPUbrIaoe7nUScRlet
 应用私钥	YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1
-应用首页	https://fangjian98.github.io/
+应用首页	https://fangjian98.github.io/    
 回调地址	http://192.168.0.106/
 ```
 
@@ -48,9 +46,7 @@ token可以显著减少服务端对用户表的查询，同时使用户不必每
 # client_id(应用ID)和redirect_uri(回调地址)
 https://www.oschina.net/action/oauth2/authorize?response_type=code&client_id=GCqPUbrIaoe7nUScRlet&redirect_uri=http://192.168.0.106/
 # 返回用户授权码code
-http://192.168.0.106/?code=bWay1O&state=
-
-//iap9LL
+http://192.168.0.106/?code=iap9LL&state=
 
 2.
 # 应用服务器使用 oauth2_token API 向 OSChina 认证服务器发送用户授权码以及回调地址，OSChina 认证服务器返回 AccessToken
@@ -58,15 +54,14 @@ http://192.168.0.106/?code=bWay1O&state=
 # client_id(应用ID)和redirect_uri(回调地址)和client_secret(应用私钥)和code(用户授权码)
 https://www.oschina.net/action/openapi/token?client_id=GCqPUbrIaoe7nUScRlet&client_secret=YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1&grant_type=authorization_code&code=pZ6Ye2&redirect_uri=http://192.168.0.106/&dataType=json
 # 返回AccessToken
-{"access_token":"6983b81e-5e2e-4685-888f-36abcf3f2da7","refresh_token":"2c033acf-2171-4d4a-a451-1d9509ce73c3","uid":4470181,"token_type":"bearer","expires_in":604799}
-
-//{"access_token":"09a10176-7772-4577-8856-1b396f86e83b","refresh_token":"da728b79-3b0d-4062-961b-bd67c09ecbcd","uid":4470181,"token_type":"bearer","expires_in":604799}
+{"access_token":"09a10176-7772-4577-8856-1b396f86e83b","refresh_token":"da728b79-3b0d-4062-961b-bd67c09ecbcd","uid":4470181,"token_type":"bearer","expires_in":604799}
 
 3.使用AccessToken请求：参考OpenAPI文档即可
 # 新闻news_list
 # 构造Uri:/action/openapi/news_list
 # access_token catalog page pageSize dataType
-https://www.oschina.net/action/openapi/news_list?access_token=6983b81e-5e2e-4685-888f-36abcf3f2da7&catalog=2&page=1&pageSize=10&dataType=json
+https://www.oschina.net/action/openapi/news_list?access_token=09a10176-7772-4577-8856-1b396f86e83b&catalog=2&page=1&pageSize=10&dataType=json
+
 
 				必选	类型及范围	说明				默认值
 access_token	true	string	oauth2_token获取的access_token	
@@ -87,24 +82,22 @@ access_token	false	string	oauth2_token获取的access_token 传则显示是否�
 dataType		false	string	返回数据类型 ['json'|'jsonp'|'xml']	json
 ```
 
-## 2.其他平台开放API
+## 其他平台开放API
 
 - CODING OPEN API：https://help.coding.net/openapi
 - 有道云笔记API：http://note.youdao.com/open/index.html
 - [常用精品API接口汇总](https://www.cnblogs.com/trackingmore/p/7156877.html)
 
-ApiPost
+## Json解析
 
-PostMan
+JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交换格式。它基于 ECMAScript (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON格式取代了xml给网络传输带来了很大的便利，是最常见的数据返回类型。
 
-## 3.Json解析
+常见的Json解析库
 
-org.json库、fastjson、gson
-
-Android给我们提供的Json解析类
+- org.json库
 
 ```java
-官方提供的JSONArray与JSONObject
+Android给我们提供的Json解析类，官方提供的JSONArray与JSONObject
 这些API都存在于org.json包下，而我们用到的类有下面这些：
 JSONObject： Json对象，可以完成Json字符串与Java对象的相互转换
 JSONArray： Json数组，可以完成Json字符串与Java集合或对象的相互转换
@@ -114,5 +107,8 @@ JSONTokener：Json解析类
 JSONException：Json异常
 ```
 
-Java解析json字符串的几种方法
-https://www.cnblogs.com/lushimei/p/13436096.html
+- fastjson
+- gson
+
+> [1] https://www.cnblogs.com/lushimei/p/13436096.html
+
