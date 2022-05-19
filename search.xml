@@ -2843,8 +2843,8 @@
     <url>/article/5337b80a.html</url>
     <content><![CDATA[<blockquote>
 <p>Reflection 是 Java 程序开发语言的特征之一，它允许运行中的 Java 程序对自身进行检查，或者说“自审”，并能直接操作程序的内部属性。Java 的这一能力在实际应用中也许用得不是很多，但是在其它的程序设计语言中根本就不存在这一特性。</p>
-<p><a href="https://github.com/fangjian98/fangjian98.github.io/blob/hexo/source/_posts/127_java-reflection.md">编辑</a></p>
 </blockquote>
+<p><a href="https://github.com/fangjian98/fangjian98.github.io/blob/hexo/source/_posts/127_java-reflection.md">编辑</a></p>
 <a id="more"></a>
 
 <h2 id="Java的类加载"><a href="#Java的类加载" class="headerlink" title="Java的类加载"></a>Java的类加载</h2><ul>
