@@ -9,6 +9,10 @@ date: 2022-04-30 18:38:04
 
 > 让灵感获取变轻松。
 
+**奇迹秀** - [qijishow.com](https://www.qijishow.com/)
+
+> 奇迹秀是集设计分享、设计交流的互动设计产业个人合作平台，以设计、营销、品牌建设为主要研究发展方向，同时也是设计师罗忠林的个人网站，相信奇迹，相信自己。
+
 **Dribble** - [dribbble.com](https://dribbble.com/)
 
 > 全球UI设计师作品分享平台。
@@ -206,29 +210,23 @@ date: 2022-04-30 18:38:04
 
 ## 算法学习
 
-Leetcode
+**LeetCode Cookbook** - [books.halfrost.com/leetcode](https://books.halfrost.com/leetcode/)
 
-https://github.com/halfrost/LeetCode-Go
+> 想通过 LeetCode 提高算法能力的编程爱好者。本书的算法全部用 Go 语言实现。
+>
+> Github开源：https://github.com/halfrost/LeetCode-Go
 
-https://books.halfrost.com/leetcode/
+**labuladong** - [labuladong.github.io/algo](https://labuladong.github.io/algo/)
 
-labuladong
+> LABULADONG 的算法网站
+>
+> Github开源：https://github.com/labuladong/fucking-algorithm
 
-https://labuladong.gitbook.io/algo/
+LeetCodeAnimation算法图解 - https://github.com/MisterBooo/LeetCodeAnimation
 
-https://labuladong.gitee.io/algo/
+VisuAlgo 经典的算法可视化网站 - https://visualgo.net/zh
 
-- LeetCode算法图解
-
-https://github.com/MisterBooo/LeetCodeAnimation
-
-经典的算法可视化网站：VisuAlgo
-
-https://visualgo.net/zh
-
-算法：Algrithm Visualizer
-
-https://github.com/algorithm-visualizer/algorithm-visualizer
+Algrithm Visualizer - https://github.com/algorithm-visualizer/algorithm-visualizer
 
 **洛谷OJ** - [luogu.com.cn](https://www.luogu.com.cn/)
 
