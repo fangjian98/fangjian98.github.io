@@ -71,6 +71,11 @@ wolai是一种新形态的文档系统，它与你过去使用的所有传统文
 
 语雀是蚂蚁集团旗下的文档与知识库工具，源自蚂蚁集团和阿里巴巴内部文档协同需求，塑造新一代知识构建与分享工具
 
+- Boost Note - http://boostnote.io/
+
+Boost Note 是一种文档驱动的项目管理工具，可最大限度地提高远程 DevOps 团队的速度。
+
 - Obsidian ：https://obsidian.md/
 
 一款笔记软件，markdown编辑工具，文件都在本地，不会丢失，文件夹式管理
+
