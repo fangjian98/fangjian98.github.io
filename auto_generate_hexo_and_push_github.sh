@@ -6,6 +6,7 @@ hexo d -g
 echo "hexo generate and deploy end"
 echo "git push remote repo start"
 git add .
-git commit -m "add new blog"
+#git commit -m "add new blog"
+git commit -m "$1"
 git push
 echo "git push remote repo end"
