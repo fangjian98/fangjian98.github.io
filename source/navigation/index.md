@@ -5,13 +5,9 @@ date: 2022-04-30 18:38:04
 
 ## 设计导航
 
-# 35.美叶 - 设计灵感
+**美叶** - [meiye.art](https://www.meiye.art/)
 
-https://www.meiye.art/
-
-# 26.壁纸网站 Microsoft Design Wallpapers
-
-https://wallpapers.microsoft.design/
+> 让灵感获取变轻松。
 
 **Dribble** - [dribbble.com](https://dribbble.com/)
 
@@ -20,6 +16,12 @@ https://wallpapers.microsoft.design/
 **BeHance** - [behance.net](https://behance.net/)
 
 > Adobe旗下的设计师交流平台，来自世界各地的设计师在这里分享自己的作品。
+
+## 素材资源
+
+**Microsoft Design Wallpapers** - [wallpapers.microsoft.design](https://wallpapers.microsoft.design/)
+
+> Microsoft Design Wallpapers，这个网站包含了微软旗下产品设计的创意图和壁纸。收录图片超过60张，都是4K分辨率。微软还有一款 [必应壁纸](https://bing.ioliu.cn/)，里面有好多高清好看的壁纸。
 
 ## 开源平台
 
@@ -93,6 +95,10 @@ https://wallpapers.microsoft.design/
 
 > 工具猫创建于2009年9月份，一直致力于为网友提供免费实用的小工具，从一开始的纯工具打包发布，到现在以更加方便的插件形式发布，我们一步步成长，期间坎坷不断，很幸运我们坚持到了现在，也很感谢一直关注着工具猫的朋友！
 
+**资源猫** - [ziyuanm.com](https://www.ziyuanm.com/)
+
+> 资源猫网址导航是国内网民查找精品资源的首选平台。网站汇集了大量精品资源网站，涵盖新闻、视频、音乐、学习、社交、博客、设计、动漫等多方面的精品资源网站，切实为网民打造一个最全面、最实用、最人性化的资源网站大全。
+
 **编程导航** - [code-nav.cn](https://www.code-nav.cn/)
 
 > 提供人人皆可推荐的编程资源导航平台，帮助大家发现优质编程资源，是一个“可搜索”、“可复用”、“可量化” 、“可定制” 的资源系统。
@@ -100,6 +106,10 @@ https://wallpapers.microsoft.design/
 **AboutPPT导航** - [aboutppt.com](https://www.aboutppt.com/)
 
 > AboutPPT 导航，专注于 PPT 设计教程与网站神器分享，收录了高质量且系统的 PPT 学习文章与教程。
+
+https://www.bcnav.cn/
+
+https://nav.vpssw.com/
 
 ## 工具网站
 
@@ -111,6 +121,42 @@ https://wallpapers.microsoft.design/
 **uTools** - [u.tools](https://www.u.tools/)
 
 > 新一代效率工具平台，自由组合插件应用，打造专属你的趁手工具集。
+
+**Grammarly** - [grammarly.com](https://www.grammarly.com/)
+
+> Grammarly是一款在线语法纠正和校对工具，它能帮助作者纠正语法错误,检查单词拼写,标点符号,调整语气以及给出风格建议等,对学术写作来说，Grammarly还可以帮助查重。
+
+**Academic Phrasebank** - [phrasebank.manchester.ac.uk](http://www.phrasebank.manchester.ac.uk/introducing-work/)
+
+> Academic Phrasebank是一个专门针对学术论文写作的词句模板库。它汇集了万千英文母语者的学术文章，并归纳总结了在文章不同位置、不同功用的学术写作短语和句型的用法和例句。帮助你快速学习如何写绪论、如何表达自己观点、如何评价他人、如何进行总结。Academic Phrasebank 特别适合SCI写作能力较弱的科研人员，因为其收集了大量的写作模版。对于SCI论文的几个重要组成部分(前言、方法描述、结果报道、讨论和结论等)，Academic Phrasebank都有对应的模板供用户参考。
+
+**CodePen** - [codepen.io](https://codepen.io/)
+
+> CodePen（代码笔）一款前端所见即所得的工具，我们可以在线编辑制作前端页面，所见即所得。同时网站提供所有常见的 js、css 库，并且支持流行技术（如 SASS），免去了我们自建平台的麻烦。有时我们需要调试一些前端代码（无论是 html、css，还是 js），或者要制作一个 demo 分享给他人。这些都可以借助 CodePen 这个网站来实现。
+
+ **Codelf** - [unbug.github.io/codelf](https://unbug.github.io/codelf/)
+
+> 开发过程中很头疼的事情就是给变量或函数命名，Codelf 就是一个变量命名网站 。Codelf 是通过搜索在线开源平台Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Projec的项目源码，帮开发者从中找出已有的匹配关键字的变量名。它支持中文查询，可以根据需要查询尽可能满足我们所需要的结果，并展示与查询结果相关的支持各种编程语言的代码片段以及代码库。
+
+**All To All** - [alltoall.net](https://www.alltoall.net/)
+
+> 国内最全类型的在线文件转换平台，免费、快速，无须下载安装任何软件，致力于提供免费并且好用的在线转换服务。
+
+**虫部落** - [chongbuluo.com](https://www.chongbuluo.com/)
+
+> 虫部落是一个纯粹的搜索知识、技术和经验分享平台,虫部落快搜、虫部落学术搜索等搜索聚合工具均为虫部落原创出品,搜索世界的乐趣,就在虫部落!
+
+**Similarsites** - [similarsites.com](https://www.similarsites.com/)
+
+> 触类旁通Similarsites一个快速寻找类似网站的神器。SimilarSites是一个创新的推荐引擎，可以搜索互联网，为您提供更多您喜欢的内容。SimilarSites根据相关内容、Web结构、链接分析算法、详细的用户冲浪行为和庞大的用户排名社区，找到与您浏览的网站类似的网站，从而消除网络的混乱。
+
+**ToolFK** - [toolfk.com](https://www.toolfk.com/)
+
+> 最强工具人在线工具箱。
+
+**小霸王** - [yikm.net](https://www.yikm.net/)
+
+> 小霸王，其乐无穷 。红白机，FC在线游戏，街机游戏，街机在线，NES games，NES games online，Super Mario。一个可以在线玩红白机的网站。
 
 ## 指数工具
 
@@ -140,13 +186,21 @@ https://wallpapers.microsoft.design/
 
 > Edge浏览器内置工具：Edge浏览器-更多工具-数学求解器
 
-Figma：跨平台UI设计工具
+## UI设计
 
-- LeetCode算法图解
+**Figma** - [figma.com](https://www.figma.com/)
 
-https://github.com/MisterBooo/LeetCodeAnimation
+> Figma 是一个基于浏览器的协作式跨平台 UI 设计工具，Figma 从推出至今越来越受到 UI 设计师的青睐，如今也有很多的设计团队投入了Figma 的怀抱。Figma = Sketch（UI 设计）+ InVision（原型设计） + Zeplin（标注）+ Dropbox（云端同步）+ Abstract（版本历史）+ Craft-Freehand（实时讨论） + Liveshare（实时分享）+ Team Library （团队组件库）+ Web API（第三方接入）
 
-算法
+**即时设计** - [js.design](https://js.design/)
+
+> 可云端编辑的专业级 UI 设计工具，为中国设计师量身打造Windows 也能用的「协作版 Sketch」，在同一个地方，构思、设计、协作， 让你和团队更加高效。
+
+**MasterGo** - [mastergo.com](https://mastergo.com/)
+
+> 面向团队的专业 UI/UX 设计工具，多人同时编辑、随时在线评审、设计一键交付，让想法更快实现
+
+## 算法学习
 
 Leetcode
 
@@ -160,129 +214,45 @@ https://labuladong.gitbook.io/algo/
 
 https://labuladong.gitee.io/algo/
 
-https://www.similarsites.com/ 
+- LeetCode算法图解
 
-触类旁通-快速寻找类似网站的神器similarsites
-
-SimilarSites是一个创新的推荐引擎，可以搜索互联网，为您提供更多您喜欢的内容。SimilarSites根据相关内容、Web结构、链接分析算法、详细的用户冲浪行为和庞大的用户排名社区，找到与您浏览的网站类似的网站，从而消除网络的混乱。
-
-
-
-https://www.ziyuanm.com/
-
-资源猫网址导航是国内网民查找精品资源的首选平台。网站汇集了大量精品资源网站，涵盖新闻、视频、音乐、学习、社交、博客、设计、动漫等多方面的精品资源网站，切实为网民打造一个最全面、最实用、最人性化的资源网站大全。
-
-
-
-https://www.toolfk.com/
-
-最强工具人在线工具箱
-
-
-
-https://www.chongbuluo.com/
-
-虫部落是一个纯粹的搜索知识、技术和经验分享平台,虫部落快搜、虫部落学术搜索等搜索聚合工具均为虫部落原创出品,搜索世界的乐趣,就在虫部落!
-
-
-
-https://www.yikm.net/
-
-小霸王，其乐无穷
-
-
-
-https://www.alltoall.net/
-
-是中国最全面的格式转换平台。致力于提供免费并且好用的在线转换服务。
-
-# 28. 洛谷OJ
-
-https://www.luogu.com.cn/
+https://github.com/MisterBooo/LeetCodeAnimation
 
 经典的算法可视化网站：VisuAlgo
 
 https://visualgo.net/zh
 
-# 29. 导航网站
-
-程序员
-
-https://www.bcnav.cn/
-
-https://nav.vpssw.com/
-
-新媒体
-
-https://www.kaolamedia.com/
-
-# 33. 学术写作神器 
-
-Grammarly致力于确保用户输入的所有内容都易于阅读、有效和无错误。
-
-https://www.grammarly.com/
-
-Academic Phrasebank 特别适合SCI写作能力较弱的科研人员，因为其收集了大量的写作模版。对于SCI论文的几个重要组成部分(前言、方法描述、结果报道、讨论和结论等)，Academic Phrasebank都有对应的模板供用户参考。
-
-http://www.phrasebank.manchester.ac.uk/introducing-work/
-
-# 34. codepen
-
-官网：https://codepen.io/
-
-介绍：
-
-  有时我们需要调试一些前端代码（无论是 **html**、**css**，还是 **js**），或者要制作一个 **demo** 分享给他人。这些都可以借助 **CodePen** 这个网站来实现。
-
-  **CodePen**（代码笔）一款前端所见即所得的工具，我们可以在线编辑制作前端页面，所见即所得。同时网站提供所有常见的 **js**、**css** 库，并且支持流行技术（如 **SASS**），免去了我们自建平台的麻烦。
-
-CodePen 主要功能
-
-- 即时预览。我们甚至可以本地修改并即时预览别人的作品。支持多种主流预处理器。
-- 快速添加外部资源文件。只需在输入框里输入库名， **CodePen** 就会从 **cdnjs** 上寻找匹配的 **css** 或 **js** 库。
-- 免费创建模板。支持创建三个模板，不是每个作品都需要从白板开始。
-- 优秀的外嵌体验。在 **WordPress** 或 **Reddit** 等支持 **oEmbed** 的平台上，只要简单地把链接贴入编辑框，发布后会自动转为嵌入作品。
-
-https://www.hangge.com/blog/cache/detail_2590.html
-
-# 15. UI设计语言
-
-- ant design：[Ant Design - 一套企业级 UI 设计语言和 React 组件库](https://ant.design/index-cn)
-- acro design ：[Arco Design - 企业级产品的完整设计和开发解决方案](https://arco.design/)
-- semi design：[Semi Design](http://semi.design/zh-CN)
-
-# 17. Github项目推荐
-
 算法：Algrithm Visualizer
 
 https://github.com/algorithm-visualizer/algorithm-visualizer
 
-# 7. 问答社区 stackoverflow segmentfault
+**洛谷OJ** - [luogu.com.cn](https://www.luogu.com.cn/)
 
-https://stackoverflow.com/
+> 洛谷致力于为编程爱好者提供清爽、快捷的编程体验。它不仅仅是一个在线测题系统，更拥有强大的社区、在线学习功能。同时，许多教程内容都是由五湖四海的用户提供的，保证了内容的广泛性。无论是初学 OI 的蒟蒻，还是久经沙场的神犇，均可从洛谷获益，也可以帮助他人，共同进步。
 
-https://segmentfault.com/
+# 15. UI设计语言
 
+- ant design：[Ant Design - 一套企业级 UI 设计语言和 React 组件库](https://ant.design/index-cn)
 
+https://fusion.design/pc/?themeid=2
 
-CSDN
+- acro design ：[Arco Design - 企业级产品的完整设计和开发解决方案](https://arco.design/)
+- semi design：[Semi Design](http://semi.design/zh-CN)
 
-掘金
+> 全面、易用、优质的企业级产品设计系统。由字节跳动抖音前端与 UED 团队设计、开发并维护，包含设计语言、React 组件、主题等开箱即用的中后台解决方案，帮助设计师与开发者打造高质量产品。
 
-简书
+## 博客社区
 
-开源中国
+**掘金** - [juejin.cn](https://juejin.cn/)
 
-博客园
+**开源中国** - [oschina.net](https://www.oschina.net/)
 
-https://www.cnblogs.com/
+**CSDN** - [csdn.net](https://www.csdn.net/)
 
-# 27.变量命名网站 Codelf
+**简书** - [jianshu.com](https://www.jianshu.com/)
 
-程序员最头疼的事情除了头发以外就是给变量或函数命名
+**博客园** - [cnblogs.com](https://www.cnblogs.com/)
 
-有没有第三方工具可以帮助大家轻轻松松的给变量或函数命名呢？那必须是有的：**变量命名网站 Codelf。**
+**stackoverflow** - [stackoverflow.com](https://stackoverflow.com/)
 
-Codelf 是通过搜索在线开源平台Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Projec的项目源码，帮开发者从中找出已有的匹配关键字的变量名。它支持中文查询，可以根据需要查询尽可能满足我们所需要的结果，并展示与查询结果相关的支持各种编程语言的代码片段以及代码库。
-
-https://unbug.github.io/codelf/
+**segmentfault** - [segmentfault.com](https://segmentfault.com/)
