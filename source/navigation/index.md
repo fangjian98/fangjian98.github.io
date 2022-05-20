@@ -107,9 +107,13 @@ date: 2022-04-30 18:38:04
 
 > AboutPPT 导航，专注于 PPT 设计教程与网站神器分享，收录了高质量且系统的 PPT 学习文章与教程。
 
-https://www.bcnav.cn/
+**果酱云** - [bcnav.cn](https://www.bcnav.cn/)
 
-https://nav.vpssw.com/
+> 程序员资源网址导航。
+
+**程序员网址导航** - [nav.vpssw.com](https://nav.vpssw.com/)
+
+>  | 程序员必备实用网址导航
 
 ## 工具网站
 
@@ -230,14 +234,29 @@ https://github.com/algorithm-visualizer/algorithm-visualizer
 
 > 洛谷致力于为编程爱好者提供清爽、快捷的编程体验。它不仅仅是一个在线测题系统，更拥有强大的社区、在线学习功能。同时，许多教程内容都是由五湖四海的用户提供的，保证了内容的广泛性。无论是初学 OI 的蒟蒻，还是久经沙场的神犇，均可从洛谷获益，也可以帮助他人，共同进步。
 
-# 15. UI设计语言
+## 设计体系
 
-- ant design：[Ant Design - 一套企业级 UI 设计语言和 React 组件库](https://ant.design/index-cn)
+**TDesign**  - [tdesign.tencent.com](https://tdesign.tencent.com/)
 
-https://fusion.design/pc/?themeid=2
+> TDesign 是腾讯各业务团队在服务业务过程中沉淀的一套企业级设计体系。TDesign 具有统一的 设计价值观，一致的设计语言和视觉风格，帮助用户形成连续、统一的体验认知。在此基础上，TDesign 提供了开箱即用的 UI 组件库、设计指南 和相关 设计资产，以优雅高效的方式将设计和研发从重复劳动中解放出来，同时方便大家在 TDesign 的基础上扩展，更好的的贴近业务需求。
 
-- acro design ：[Arco Design - 企业级产品的完整设计和开发解决方案](https://arco.design/)
-- semi design：[Semi Design](http://semi.design/zh-CN)
+**CoDesign** - [codesign.qq.com](https://codesign.qq.com/)
+
+> 一站式设计协作平台，覆盖产品经理、设计师、工程师协作需求，助力团队提升协作效率、有效管理和使用设计资产。
+
+**Ant Design** - [ant.design](https://ant.design/index-cn)
+
+>  一套企业级 UI 设计语言和 React 组件库，主要用于研发企业级中后台产品。
+
+**Fusion Design** - [fusion.design](https://fusion.design/pc/?themeid=2)
+
+> Alibaba Fusion Design企业级的中后台设计系统解决方案。
+
+**Acro Design** ：[arco.design](https://arco.design/)
+
+> 字节跳动出品的企业级设计系统，企业级产品的完整设计和开发解决方案。
+
+**Semi Design**：[semi.design](http://semi.design/zh-CN)
 
 > 全面、易用、优质的企业级产品设计系统。由字节跳动抖音前端与 UED 团队设计、开发并维护，包含设计语言、React 组件、主题等开箱即用的中后台解决方案，帮助设计师与开发者打造高质量产品。
 
