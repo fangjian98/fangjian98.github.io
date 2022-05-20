@@ -1,6 +1,6 @@
 ---
 title: Windows修改DNS方法
-categories: 技术流
+categories: Windows
 tags:
   - Windows
   - DNS

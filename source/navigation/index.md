@@ -5,6 +5,14 @@ date: 2022-04-30 18:38:04
 
 ## 设计导航
 
+# 35.美叶 - 设计灵感
+
+https://www.meiye.art/
+
+# 26.壁纸网站 Microsoft Design Wallpapers
+
+https://wallpapers.microsoft.design/
+
 **Dribble** - [dribbble.com](https://dribbble.com/)
 
 > 全球UI设计师作品分享平台。
@@ -131,3 +139,150 @@ date: 2022-04-30 18:38:04
 **数学求解器**
 
 > Edge浏览器内置工具：Edge浏览器-更多工具-数学求解器
+
+Figma：跨平台UI设计工具
+
+- LeetCode算法图解
+
+https://github.com/MisterBooo/LeetCodeAnimation
+
+算法
+
+Leetcode
+
+https://github.com/halfrost/LeetCode-Go
+
+https://books.halfrost.com/leetcode/
+
+labuladong
+
+https://labuladong.gitbook.io/algo/
+
+https://labuladong.gitee.io/algo/
+
+https://www.similarsites.com/ 
+
+触类旁通-快速寻找类似网站的神器similarsites
+
+SimilarSites是一个创新的推荐引擎，可以搜索互联网，为您提供更多您喜欢的内容。SimilarSites根据相关内容、Web结构、链接分析算法、详细的用户冲浪行为和庞大的用户排名社区，找到与您浏览的网站类似的网站，从而消除网络的混乱。
+
+
+
+https://www.ziyuanm.com/
+
+资源猫网址导航是国内网民查找精品资源的首选平台。网站汇集了大量精品资源网站，涵盖新闻、视频、音乐、学习、社交、博客、设计、动漫等多方面的精品资源网站，切实为网民打造一个最全面、最实用、最人性化的资源网站大全。
+
+
+
+https://www.toolfk.com/
+
+最强工具人在线工具箱
+
+
+
+https://www.chongbuluo.com/
+
+虫部落是一个纯粹的搜索知识、技术和经验分享平台,虫部落快搜、虫部落学术搜索等搜索聚合工具均为虫部落原创出品,搜索世界的乐趣,就在虫部落!
+
+
+
+https://www.yikm.net/
+
+小霸王，其乐无穷
+
+
+
+https://www.alltoall.net/
+
+是中国最全面的格式转换平台。致力于提供免费并且好用的在线转换服务。
+
+# 28. 洛谷OJ
+
+https://www.luogu.com.cn/
+
+经典的算法可视化网站：VisuAlgo
+
+https://visualgo.net/zh
+
+# 29. 导航网站
+
+程序员
+
+https://www.bcnav.cn/
+
+https://nav.vpssw.com/
+
+新媒体
+
+https://www.kaolamedia.com/
+
+# 33. 学术写作神器 
+
+Grammarly致力于确保用户输入的所有内容都易于阅读、有效和无错误。
+
+https://www.grammarly.com/
+
+Academic Phrasebank 特别适合SCI写作能力较弱的科研人员，因为其收集了大量的写作模版。对于SCI论文的几个重要组成部分(前言、方法描述、结果报道、讨论和结论等)，Academic Phrasebank都有对应的模板供用户参考。
+
+http://www.phrasebank.manchester.ac.uk/introducing-work/
+
+# 34. codepen
+
+官网：https://codepen.io/
+
+介绍：
+
+  有时我们需要调试一些前端代码（无论是 **html**、**css**，还是 **js**），或者要制作一个 **demo** 分享给他人。这些都可以借助 **CodePen** 这个网站来实现。
+
+  **CodePen**（代码笔）一款前端所见即所得的工具，我们可以在线编辑制作前端页面，所见即所得。同时网站提供所有常见的 **js**、**css** 库，并且支持流行技术（如 **SASS**），免去了我们自建平台的麻烦。
+
+CodePen 主要功能
+
+- 即时预览。我们甚至可以本地修改并即时预览别人的作品。支持多种主流预处理器。
+- 快速添加外部资源文件。只需在输入框里输入库名， **CodePen** 就会从 **cdnjs** 上寻找匹配的 **css** 或 **js** 库。
+- 免费创建模板。支持创建三个模板，不是每个作品都需要从白板开始。
+- 优秀的外嵌体验。在 **WordPress** 或 **Reddit** 等支持 **oEmbed** 的平台上，只要简单地把链接贴入编辑框，发布后会自动转为嵌入作品。
+
+https://www.hangge.com/blog/cache/detail_2590.html
+
+# 15. UI设计语言
+
+- ant design：[Ant Design - 一套企业级 UI 设计语言和 React 组件库](https://ant.design/index-cn)
+- acro design ：[Arco Design - 企业级产品的完整设计和开发解决方案](https://arco.design/)
+- semi design：[Semi Design](http://semi.design/zh-CN)
+
+# 17. Github项目推荐
+
+算法：Algrithm Visualizer
+
+https://github.com/algorithm-visualizer/algorithm-visualizer
+
+# 7. 问答社区 stackoverflow segmentfault
+
+https://stackoverflow.com/
+
+https://segmentfault.com/
+
+
+
+CSDN
+
+掘金
+
+简书
+
+开源中国
+
+博客园
+
+https://www.cnblogs.com/
+
+# 27.变量命名网站 Codelf
+
+程序员最头疼的事情除了头发以外就是给变量或函数命名
+
+有没有第三方工具可以帮助大家轻轻松松的给变量或函数命名呢？那必须是有的：**变量命名网站 Codelf。**
+
+Codelf 是通过搜索在线开源平台Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Projec的项目源码，帮开发者从中找出已有的匹配关键字的变量名。它支持中文查询，可以根据需要查询尽可能满足我们所需要的结果，并展示与查询结果相关的支持各种编程语言的代码片段以及代码库。
+
+https://unbug.github.io/codelf/
