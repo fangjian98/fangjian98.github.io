@@ -262,14 +262,44 @@ Algrithm Visualizer - https://github.com/algorithm-visualizer/algorithm-visualiz
 
 **掘金** - [juejin.cn](https://juejin.cn/)
 
+> 一个帮助开发者成长的社区。我们旨在建立一个服务开发者的生态系统，在这个生态系统中，我们将品牌、流量、变现能力赋予开发者，帮助开发者创造出影响世界的新技术。
+
 **开源中国** - [oschina.net](https://www.oschina.net/)
+
+> OSCHINA（Open Source China，OSC）成立于 2008 年 8 月，目前已建立了相当完善的开源软件分类数据库，收录全球知名开源项目近 5 万款，涉及几百个不同的分类。围绕这些开源项目，OSCHINA 为中国开发者提供了最新开源资讯、软件更新资讯、技术分享和交流的技术平台。
 
 **CSDN** - [csdn.net](https://www.csdn.net/)
 
+> 中国开发者社区CSDN (Chinese Software Developer Network) 创立于1999年，致力于成为IT技术人交流和成长的家园。
+
 **简书** - [jianshu.com](https://www.jianshu.com/)
+
+> 简书是一个优质的创作社区，在这里，你可以任性地创作，一篇短文、一张照片、一首诗、一幅画……我们相信，每个人都是生活中的艺术家，有着无穷的创造力。
 
 **博客园** - [cnblogs.com](https://www.cnblogs.com/)
 
+> 博客园创立于2004年1月，是一个面向开发者的知识分享社区。自创建以来，博客园一直致力并专注于为开发者打造一个纯净的技术交流社区，推动并帮助开发者通过互联网分享知识，从而让更多开发者从中受益。博客园的使命是帮助开发者用代码改变世界。
+
 **stackoverflow** - [stackoverflow.com](https://stackoverflow.com/)
 
-**segmentfault** - [segmentfault.com](https://segmentfault.com/)
+**SegmentFault ** - [segmentfault.com](https://segmentfault.com/)
+
+> SegmentFault 中文技术交流平台，在这里你可以检索，交流和分享任何技术编程相关的问题及知识。我们的目标是覆盖和服务 1,000 万以上中国软件开发者和IT信息从业者，其实现方法是充分利用在各个平台上所能获得的各种技术创新机会为他们开发产品应用和服务。
+
+## 云平台
+
+**阿里云** - [aliyun.com](https://www.aliyun.com/)
+
+> 阿里云——阿里巴巴集团旗下公司，是全球领先的云计算及人工智能科技公司。提供免费试用、云服务器、云数据库、云安全、云企业应用等云计算服务，以及大数据、人工智能服务、精准定制基于场景的行业解决方案。免费备案，7x24 小时售后支持，助企业无忧上云。
+
+**腾讯云** - [cloud.tencent.com](https://cloud.tencent.com/)
+
+> 提供全球领先的云计算服务。腾讯云，腾讯集团倾力打造的云计算品牌，面向全世界各个国家和地区的政府机构、企业组织和个人开发者，提供全球领先的云计算、大数据、人工智能等技术产品与服务，以卓越的科技能力打造丰富的行业解决方案，构建开放共赢的云端生态，推动产业互联网建设，助力各行各业实现数字化升级。
+
+**华为云** - [huaweicloud.com](https://www.huaweicloud.com/)
+
+> 一切皆服务，共建智能世界云底座。面向未来的智能世界，数字化是企业发展的必由之路。数字化成功的关键是以云原生的思维践行云原生，全数字化、全云化、AI驱动，一切皆服务。华为云将持续创新，携手客户、合作伙伴和开发者，致力于让云无处不在，让智能无所不及，共建智能世界云底座。
+
+**百度智能云** - [cloud.baidu.com](https://cloud.baidu.com/)
+
+> 百度智能云以“云智一体”为核心赋能千行百业，致力于为企业和开发者提供全球领先的人工智能、大数据和云计算服务以及简单易用的开发工具，加速产业智能化转型升级。
