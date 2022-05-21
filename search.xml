@@ -617,7 +617,7 @@
 </blockquote>
 <a id="more"></a>
 
-<h2 id="Ubuntu常用命令"><a href="#Ubuntu常用命令" class="headerlink" title="Ubuntu常用命令"></a>Ubuntu常用命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装vim</span><br><span class="line">sudo apt-get install vim</span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux screen命令用于多重视窗管理程序</span></span><br><span class="line"><span class="string">screen -ls</span></span><br><span class="line"><span class="string">显示目前所有的screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen -r 4458</span></span><br><span class="line"><span class="string">重新连接screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen --wipe</span></span><br><span class="line"><span class="string">清除dead会话命令</span></span><br></pre></td></tr></table></figure>
+<h2 id="Ubuntu常用命令"><a href="#Ubuntu常用命令" class="headerlink" title="Ubuntu常用命令"></a>Ubuntu常用命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装vim</span><br><span class="line">sudo apt-get install vim</span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux screen命令用于多重视窗管理程序</span></span><br><span class="line"><span class="string">screen -ls</span></span><br><span class="line"><span class="string">显示目前所有的screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen -r 4458</span></span><br><span class="line"><span class="string">重新连接screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen --wipe</span></span><br><span class="line"><span class="string">清除dead会话命令</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 查看运行内存情况 -h是以GB为单位</span></span><br><span class="line"><span class="string">free -h</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux中buff/cache内存占用过高解决方案</span></span><br><span class="line"><span class="string">echo 1 &gt; /proc/sys/vm/drop_caches</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="Linux通用命令"><a href="#Linux通用命令" class="headerlink" title="Linux通用命令"></a>Linux通用命令</h2><h4 id="ls：文件列出命令"><a href="#ls：文件列出命令" class="headerlink" title="ls：文件列出命令"></a>ls：文件列出命令</h4><ul>
 <li>ls -a 显示所有文件和目录（包括隐藏文件）</li>
@@ -3227,7 +3227,7 @@
       </tags>
   </entry>
   <entry>
-    <title>130_tech-samba</title>
+    <title>SMB通信协议</title>
     <url>/article/67e1ad8.html</url>
     <content><![CDATA[<blockquote>
 <p>Samba是在Linux和UNIX系统上实现SMB协议的一个免费软件，由服务器及客户端程序构成。SMB（Server Messages Block，信息服务块）是一种在局域网上共享文件和打印机的一种通信协议，它为局域网内的不同计算机之间提供文件及打印机等资源的共享服务。SMB协议是客户机/服务器型协议，客户机通过该协议可以访问服务器上的共享文件系统、打印机及其他资源。</p>
@@ -3278,28 +3278,50 @@
       </tags>
   </entry>
   <entry>
+    <title>三阶魔方简易教程</title>
+    <url>/article/88c25441.html</url>
+    <content><![CDATA[<blockquote>
+<p>魔方拥有竞速、盲拧、单拧等多种玩法，风靡程度经久未衰，每年都会举办大小赛事，是最受欢迎的智力游戏之一。三阶魔方形状通常是正方体，由有弹性的硬塑料制成。三阶魔方有很多种还原方法，其中“层先法”是最适合初学者掌握的方法。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>前提：两个公式<br>左手公式：上右下左<br>右手公式：上左下右</p>
+<p>1.拼黄色小花<br>     白<br>白 黄 白<br>     白</p>
+<p>2.找小柱子(中间)，向下转2周</p>
+<p>3.白色朝底，找角块，找(对应颜色)目标位，找好对应位置 –&gt; 白色一层<br>   看白色块，左边或右边，不能后边<br>   白色块在左边：做左手公式<br>   白色块在右边：做右手公式</p>
+<p>4.找棱块(中间块) –&gt; 二层<br>  没有黄色块：好朋友<br>  有黄色块：坏朋友(暂时不管)<br>  好朋友：找目标色块，若目标色块在左，要远离，先右转，再左手公式<br>                                   若目标色块在右，要远离，先左转，再右手公式<br>  都是坏朋友：先侧边右手公式，再转一面，左手公式</p>
+<p>5.顶面十字<br>   小炸弹：        四边一档只有一个黄色块   –&gt; 开宝箱，右手公式 x1，关宝箱 –&gt; 变成小弯刀<br>   激光剑：—   横着放        –&gt; 开宝箱，右手公式 x1，关宝箱<br>   小弯刀：__|    九点钟方向        –&gt; 开宝箱，右手公式 x2，关宝箱</p>
+<p>  开宝箱：整个面向下转一下<br>  关宝箱：整个面向上转一下</p>
+<p>6.顶层角块位置<br>   二个位置对，二个位置不对，(颜色对应即可)，叫眼睛<br>   若是眼睛：对的一边放左边，右手公式 x3，整体左转，左手公式 x3<br>   若不是眼睛，右手公式 x3，整体转一下，左手公式 x3，变成眼睛</p>
+<p>7.顶层黄色还原：只用右手公式<br>  白色面为顶，没有还原好的黄色块，放在右手下边，右手公式 x2，直到还原，可能需要重复几次<br>  然后继续将其他没有还原好的黄色块，放在右手下边，右手公式 x2<br>  乱了也没事，继续将底边黄色还原</p>
+<p>8.还原<br>   一面全好的叫观众<br>   若有观众，正对自己，确定观众对面中心块颜色，<br>   若对面中心块颜色在左边，则左 x1，右 x1，左x5，右 x5<br>   若对面中心块颜色在右边，则右 x1，左 x1，右x5，左 x5</p>
+<p>   没有观众：先左或先右都可，左 x1，右 x1，左x5，右 x5，变成观众</p>
+<p>附：第8步：上三楼公式：上右上 左上左上 右下右下下<br>      把观众的对面朝向自己，上三楼公式</p>
+<p>参考：<a href="https://baike.baidu.com/item/%E4%B8%89%E9%98%B6%E9%AD%94%E6%96%B9/2109093#3">三阶魔方还原方法</a></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>魔方</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[<h1 align="center">Hi 👋, I'm Fang Jian</h1>
 <h3 align="center">A passionate developer from China</h3>
 
 <ul>
-<li><p>🔭 I’m currently working on <a href="https://github.com/fangjian98/ExploreGithub">ExploreGithub</a></p>
-</li>
-<li><p>🌱 I’m currently learning <strong>Android, AOSP, SpringBoot, Ant Design, ML, NLP</strong></p>
-</li>
-<li><p>👯 I’m looking to collaborate on <strong>Alibaba, Tencent</strong></p>
-</li>
-<li><p>🤔 I’m looking for help with <strong>ML, AOSP</strong></p>
-</li>
-<li><p>👨‍💻 All of my projects are available at <a href="https://github.com/fangjian98">GitHub</a></p>
-</li>
-<li><p>📝 I regulary write articles on <a href="https://blog.csdn.net/weixin_44008788">CSDN</a></p>
-</li>
-<li><p>💬 Ask me about <strong>Android, Python, Linux</strong></p>
-</li>
-<li><p>📫 How to reach me <strong><a href="mailto:&#x66;&#x61;&#110;&#103;&#106;&#x69;&#97;&#x6e;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x66;&#x61;&#110;&#103;&#106;&#x69;&#97;&#x6e;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></strong></p>
-</li>
+<li>🔭 I’m currently working on <a href="https://github.com/fangjian98/ExploreGithub">ExploreGithub</a></li>
+<li>🌱 I’m currently learning <strong>Android, AOSP, SpringBoot, Ant Design, ML, NLP</strong></li>
+<li>👯 I’m looking to collaborate on <strong>Alibaba, Tencent</strong></li>
+<li>🤔 I’m looking for help with <strong>ML, AOSP</strong></li>
+<li>👨‍💻 All of my projects are available at <a href="https://github.com/fangjian98">GitHub</a></li>
+<li>📝 I regulary write articles on <a href="https://blog.csdn.net/weixin_44008788">CSDN</a></li>
+<li>💬 Ask me about <strong>Android, Python, Linux</strong></li>
+<li>📫 How to reach me <strong><a href="mailto:&#x66;&#97;&#x6e;&#103;&#x6a;&#x69;&#x61;&#110;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#x66;&#97;&#x6e;&#103;&#x6a;&#x69;&#x61;&#110;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></strong></li>
+<li>:books: Motto:What does not kill me,makes me stronger.(任何不能杀死你的，都会使你更强大)</li>
 </ul>
 ]]></content>
   </entry>
@@ -3444,10 +3466,6 @@
 <blockquote>
 <p>开发过程中很头疼的事情就是给变量或函数命名，Codelf 就是一个变量命名网站 。Codelf 是通过搜索在线开源平台Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Projec的项目源码，帮开发者从中找出已有的匹配关键字的变量名。它支持中文查询，可以根据需要查询尽可能满足我们所需要的结果，并展示与查询结果相关的支持各种编程语言的代码片段以及代码库。</p>
 </blockquote>
-<p><strong>All To All</strong> - <a href="https://www.alltoall.net/">alltoall.net</a></p>
-<blockquote>
-<p>国内最全类型的在线文件转换平台，免费、快速，无须下载安装任何软件，致力于提供免费并且好用的在线转换服务。</p>
-</blockquote>
 <p><strong>虫部落</strong> - <a href="https://www.chongbuluo.com/">chongbuluo.com</a></p>
 <blockquote>
 <p>虫部落是一个纯粹的搜索知识、技术和经验分享平台,虫部落快搜、虫部落学术搜索等搜索聚合工具均为虫部落原创出品,搜索世界的乐趣,就在虫部落!</p>
@@ -3455,6 +3473,22 @@
 <p><strong>Similarsites</strong> - <a href="https://www.similarsites.com/">similarsites.com</a></p>
 <blockquote>
 <p>触类旁通Similarsites一个快速寻找类似网站的神器。SimilarSites是一个创新的推荐引擎，可以搜索互联网，为您提供更多您喜欢的内容。SimilarSites根据相关内容、Web结构、链接分析算法、详细的用户冲浪行为和庞大的用户排名社区，找到与您浏览的网站类似的网站，从而消除网络的混乱。</p>
+</blockquote>
+<h2 id="在线工具"><a href="#在线工具" class="headerlink" title="在线工具"></a>在线工具</h2><p><strong>Wormhole</strong> - <a href="https://wormhole.app/">wormhole.app</a></p>
+<blockquote>
+<p>简单，私密的文件分享。Wormhole 让你能以端到端加密和自动过期链接的方式分享文件。 所以你可以确保你分享的文件私密且不会一直留在互联网上。 对于5GB以内的文件，Wormhole将在服务器上存储24小时。<br>对于大于5GB的文件，Wormhole使用点对点传输,直接从你的浏览器向接收者发送文件。所以你需要保持页面打开直到接收者下载完毕。与其他大多数网盘或文件分享服务不同，你可以立刻复制链接并发送给好友，无需等待上传结束。Wormhole 将此称为 “即时文件流”（instant file streaming）。</p>
+</blockquote>
+<p><strong>轻松传</strong> - <a href="https://easychuan.cn/">easychuan.cn</a></p>
+<blockquote>
+<p>轻松传在线传送文件、文本、屏幕和视频，随收随发，局域网互传首选。</p>
+</blockquote>
+<p><strong>OSCHINA工具</strong> - <a href="https://tool.oschina.net/">tool.oschina.net</a></p>
+<blockquote>
+<p>由开源中国提供的在线工具集合，常用开发手册、对照表、代码处理、加密/格式化工具、正则等其他实用工具。</p>
+</blockquote>
+<p><strong>All To All</strong> - <a href="https://www.alltoall.net/">alltoall.net</a></p>
+<blockquote>
+<p>国内最全类型的在线文件转换平台，免费、快速，无须下载安装任何软件，致力于提供免费并且好用的在线转换服务。</p>
 </blockquote>
 <p><strong>ToolFK</strong> - <a href="https://www.toolfk.com/">toolfk.com</a></p>
 <blockquote>
@@ -3464,13 +3498,17 @@
 <blockquote>
 <p>小霸王，其乐无穷 。红白机，FC在线游戏，街机游戏，街机在线，NES games，NES games online，Super Mario。一个可以在线玩红白机的网站。</p>
 </blockquote>
-<p><strong>Wormhole</strong> - <a href="https://wormhole.app/">wormhole.app</a></p>
+<p><strong>RemoveBg</strong> - <a href="https://www.remove.bg/zh">remove.bg</a></p>
 <blockquote>
-<p>简单，私密的文件分享。Wormhole 让你能以端到端加密和自动过期链接的方式分享文件。 所以你可以确保你分享的文件私密且不会一直留在互联网上。 对于5GB以内的文件，Wormhole将在服务器上存储24小时。<br>对于大于5GB的文件，Wormhole使用点对点传输,直接从你的浏览器向接收者发送文件。所以你需要保持页面打开直到接收者下载完毕。与其他大多数网盘或文件分享服务不同，你可以立刻复制链接并发送给好友，无需等待上传结束。Wormhole 将此称为 “即时文件流”（instant file streaming）。</p>
+<p>在线抠图软件，图片去除背景图片，轻点一下，即可在5秒钟内100%自动去除背景，100% 全自动且免费。</p>
 </blockquote>
-<p><strong>轻松传</strong> - <a href="https://easychuan.cn/">easychuan.cn</a></p>
+<p><strong>Magic Eraser</strong> - <a href="https://www.magiceraser.io/">magiceraser.io</a></p>
 <blockquote>
-<p>轻松传在线传送文件、文本、屏幕和视频，随收随发，局域网互传首选。</p>
+<p>瞬间删除图像中不需要的部分上传图像，标记您需要删除的部分，下载修改后的图像。</p>
+</blockquote>
+<p><strong>iLoveIMG</strong> - <a href="https://www.iloveimg.com/zh-cn">iloveimg.com</a></p>
+<blockquote>
+<p>为了简化图片的在线编辑推出的iLoveIMG。现在，你可以轻松地批量修改图片，操作速度非常快！这样你就可以把宝贵的时间留给更重要的事情。你需要的各种功能都在这儿，例如：压缩、裁剪、转换文件，以及调整文件的大小等。甚至还可以通过几个点击来制作GIF动图！是的，这也是免费的。</p>
 </blockquote>
 <h2 id="指数工具"><a href="#指数工具" class="headerlink" title="指数工具"></a>指数工具</h2><p><strong>百度指数</strong> - <a href="https://index.baidu.com/v2/index.html#/">index.baidu.com</a></p>
 <blockquote>
@@ -3508,6 +3546,25 @@
 <blockquote>
 <p>面向团队的专业 UI/UX 设计工具，多人同时编辑、随时在线评审、设计一键交付，让想法更快实现</p>
 </blockquote>
+<h2 id="在线设计"><a href="#在线设计" class="headerlink" title="在线设计"></a>在线设计</h2><p><strong>搞定设计</strong> - <a href="https://www.gaoding.com/">gaoding.com</a></p>
+<blockquote>
+<p>让设计更简单。搞定设计已在多媒体创作工具、AI辅助设计以及图形图像算法等领域储备了丰富的核心技术。作为国内首批SaaS服务开拓者，我们从全新视角为电商、社交电商提供视觉设计工具和内容。并在此基础上不断丰富、迭代、打磨，为全商业场景用户提供视觉解决方案，赋能爆发式增长的数字营销需求。</p>
+</blockquote>
+<p><strong>创客贴</strong> - <a href="https://www.chuangkit.com/">chuangkit.com</a></p>
+<blockquote>
+<p>创客贴聚焦于创意设计领域，秉持用设计设计世界、让设计触手可得的使命， 提供全创意类型在线设计工具、创意版权内容、创意设计服务、数字资产管理、企业品牌云等产品和服务，为个人和企业提供一站式创意设计解决方案。</p>
+</blockquote>
+<p><strong>Fotor懒设计</strong> - <a href="https://www.fotor.com.cn/">fotor.com.cn</a></p>
+<blockquote>
+<p>Fotor是一款多平台（Mobile, Web, Mac &amp; Windows）图片编辑和平面设计产品。跟随欧美设计风潮，Fotor的每一个界面都严格遵照极简主义理念，呈现给用户最流畅、最唯美的修图和设计体验。除了提供给广大用户轻便而又全能的图片编辑工具以外，Fotor的设计功能还能满足中小型创业公司、自媒体、学生团体和个体经营者的平面设计需求。通过专业设计师制作的模板几分钟便可以轻松完成一系列专业水准的平面设计。</p>
+</blockquote>
+<p><strong>Canva可画</strong> - <a href="https://www.canva.cn/">canva.cn</a></p>
+<blockquote>
+<p>Canva可画打造了一流的中文在线设计平台，整合了数以千万计的高清图片、中英文字体、原创模板、插画等视觉元素。Canva可画降低，在某些领域甚至消除了专业设计的门槛。即使是没有任何基础的用户，也可以通过运用Canva可画的中文模板，轻松完成包括社交媒体插图、海报、电商用图、演示文稿、信息图、小视频等在内的各种设计。</p>
+</blockquote>
+<h2 id="排版工具"><a href="#排版工具" class="headerlink" title="排版工具"></a>排版工具</h2><p>135编辑器</p>
+<p>秀米</p>
+<p>i排版</p>
 <h2 id="算法学习"><a href="#算法学习" class="headerlink" title="算法学习"></a>算法学习</h2><p><strong>LeetCode Cookbook</strong> - <a href="https://books.halfrost.com/leetcode/">books.halfrost.com/leetcode</a></p>
 <blockquote>
 <p>想通过 LeetCode 提高算法能力的编程爱好者。本书的算法全部用 Go 语言实现。</p>
@@ -3548,6 +3605,10 @@
 <p><strong>Semi Design</strong>：<a href="http://semi.design/zh-CN">semi.design</a></p>
 <blockquote>
 <p>全面、易用、优质的企业级产品设计系统。由字节跳动抖音前端与 UED 团队设计、开发并维护，包含设计语言、React 组件、主题等开箱即用的中后台解决方案，帮助设计师与开发者打造高质量产品。</p>
+</blockquote>
+<p><strong>Material Design</strong> - <a href="https://www.material.io/">material.io</a></p>
+<blockquote>
+<p>Material 是一个由指南、组件和工具组成的适应性系统，支持用户界面设计的最佳实践。在开源代码的支持下，Material 简化了设计师和开发人员之间的协作，并帮助团队快速构建精美的产品。</p>
 </blockquote>
 <h2 id="博客社区"><a href="#博客社区" class="headerlink" title="博客社区"></a>博客社区</h2><p><strong>掘金</strong> - <a href="https://juejin.cn/">juejin.cn</a></p>
 <blockquote>
