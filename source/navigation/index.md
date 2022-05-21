@@ -280,9 +280,11 @@ Algrithm Visualizer - https://github.com/algorithm-visualizer/algorithm-visualiz
 
 > 博客园创立于2004年1月，是一个面向开发者的知识分享社区。自创建以来，博客园一直致力并专注于为开发者打造一个纯净的技术交流社区，推动并帮助开发者通过互联网分享知识，从而让更多开发者从中受益。博客园的使命是帮助开发者用代码改变世界。
 
-**stackoverflow** - [stackoverflow.com](https://stackoverflow.com/)
+**Stack Overflow** - [stackoverflow.com](https://stackoverflow.com/)
 
-**SegmentFault ** - [segmentfault.com](https://segmentfault.com/)
+> Stack Overflow 可帮助人们在需要时找到所需的答案。我们以我们的公共问答平台而闻名，每月有超过 1 亿人访问该平台提出问题、学习和分享技术知识。
+
+**SegmentFault** - [segmentfault.com](https://segmentfault.com/)
 
 > SegmentFault 中文技术交流平台，在这里你可以检索，交流和分享任何技术编程相关的问题及知识。我们的目标是覆盖和服务 1,000 万以上中国软件开发者和IT信息从业者，其实现方法是充分利用在各个平台上所能获得的各种技术创新机会为他们开发产品应用和服务。
 
