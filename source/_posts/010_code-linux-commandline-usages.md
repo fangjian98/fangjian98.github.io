@@ -68,6 +68,12 @@ screen -r 4458
 
 screen --wipe
 清除dead会话命令
+
+# 查看运行内存情况 -h是以GB为单位
+free -h
+
+# Linux中buff/cache内存占用过高解决方案
+echo 1 > /proc/sys/vm/drop_caches
 ```
 
 ## Linux通用命令

@@ -1,5 +1,5 @@
 ---
-title: 130_tech-samba
+title: SMB通信协议
 categories: 技术流
 tags:
   - Samba
