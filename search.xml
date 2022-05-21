@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/article/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>代码托管平台推荐</title>
     <url>/article/86025775.html</url>
     <content><![CDATA[<blockquote>
@@ -34,24 +54,62 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/article/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <title>关于图床的使用</title>
+    <url>/article/91cd0b89.html</url>
+    <content><![CDATA[<blockquote>
+<p>图床一般是指储存图片的服务器，有国内和国外之分。国外的图床由于有空间距离等因素决定访问速度很慢影响图片显示速度。国内也分为单线空间、多线空间和cdn加速三种。</p>
+</blockquote>
 <a id="more"></a>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="图床意义"><a href="#图床意义" class="headerlink" title="图床意义"></a>图床意义</h3><p>图床就是专门用来存放图片，同时允许你把图片对外连接的网上空间，不少图床都是免费的。图床相当于在网络上存储图片的地方，可以节约本地资源，图片可以多次引用。我最早接触的图床是<a href="https://sm.ms/">sm.ms</a>，后来需要登录才可以使用了，其实CSDN写文章插入图片也可以使用作为图床使用。</p>
+<h3 id="使用托管平台图床"><a href="#使用托管平台图床" class="headerlink" title="使用托管平台图床"></a>使用托管平台图床</h3><h4 id="1-Github"><a href="#1-Github" class="headerlink" title="1.Github"></a>1.Github</h4><p>Github作为图床可以使用，但是速度太慢，可以使用 <a href="https://www.jsdelivr.com/">jsDeliver</a> 加速。</p>
+<p>Github原生格式：(目前无法直接访问，需要科学上网)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;fangjian98&#x2F;fangjian98.github.io&#x2F;hexo&#x2F;source&#x2F;images&#x2F;avatar.jpg</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>jsDeliver加速格式参考:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;@&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fangjian98&#x2F;fangjian98.github.io@hexo&#x2F;source&#x2F;images&#x2F;avatar.jpg</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h4 id="2-Gitee"><a href="#2-Gitee" class="headerlink" title="2.Gitee"></a>2.Gitee</h4><p>Gitee相当于是Github的中国版，国内访问速度很快。</p>
+<p>Gitee格式参考：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitee.com&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;&#x2F;raw&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitee.com&#x2F;fangjian98&#x2F;imagespace&#x2F;raw&#x2F;master&#x2F;img19.jpg</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-GitCode"><a href="#3-GitCode" class="headerlink" title="3.GitCode"></a>3.GitCode</h4><p>Gitcode原来叫CodeChina，好像是CSDN出品的项目托管平台，速度也很快。我目前正在使用的就是GitCode图床。</p>
+<p>GitCode格式参考：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;&#123;UserName&#125;&#x2F;&#123;Repi&#125;&#x2F;-&#x2F;raw&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;weixin_44008788&#x2F;images&#x2F;-&#x2F;raw&#x2F;master&#x2F;gitcode.png</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/gitcode.png" alt="GitCode"></p>
+<h3 id="图床管理工具"><a href="#图床管理工具" class="headerlink" title="图床管理工具"></a>图床管理工具</h3><p>该类工具可以可视化的直接复制图片链接，不必要在纠结在格式链接上了。</p>
+<ul>
+<li><strong>PicGO</strong> -  一个用于快速上传图片并获取图片 URL 链接的工具，需要下载客户端</li>
+</ul>
+<p>发行版下载：<a href="https://github.com/Molunerfinn/PicGo/releases/">Molunerfinn/PicGo/releases</a></p>
+<p>开源地址：<a href="https://github.com/Molunerfinn/PicGo">Molunerfinn/PicGo</a></p>
+<ul>
+<li><strong>PicX</strong> - 是一款基于 GitHub API &amp; jsDelivr 开发的具有 CDN 加速功能的图床工具，在线操作即可，无需下载和安装</li>
+</ul>
+<p>在线地址：<a href="https://picx.xpoet.cn/">picx.xpoet.cn</a></p>
+<p>开源地址：<a href="https://github.com/XPoet/picx">XPoet/picx</a></p>
 ]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Image Hosting Service</tag>
+        <tag>PicGO</tag>
+      </tags>
   </entry>
   <entry>
     <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
@@ -312,6 +370,37 @@
       </tags>
   </entry>
   <entry>
+    <title>Git命令简写的配置</title>
+    <url>/article/8b0e152.html</url>
+    <content><![CDATA[<blockquote>
+<p>在使用Git工具时，有些命令比较常用，为了加快输入速度，可以自定义一些简写配置，能提高我们提交代码的效率。</p>
+</blockquote>
+<a id="more"></a>
+
+<ul>
+<li>编辑Git配置文件且显示配置文件路径</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global -e</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>配置文件<code> ~/.gitconfig</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">  name = xxxxx</span><br><span class="line">  email = xxxx@mail.com</span><br><span class="line">[core]</span><br><span class="line">  editor = vim</span><br><span class="line">[<span class="built_in">alias</span>]</span><br><span class="line">    a = add</span><br><span class="line">    co = checkout</span><br><span class="line">    cm = commit</span><br><span class="line">    st = status</span><br><span class="line">    pl = pull</span><br><span class="line">    ps = push</span><br><span class="line">    df = diff</span><br><span class="line">    lg = <span class="built_in">log</span></span><br><span class="line">    cp = cherry-pick</span><br><span class="line">    ca = commit --amend</span><br><span class="line">    br = branch</span><br><span class="line">    mg = merge</span><br><span class="line">    dt = difftool</span><br><span class="line">    mt = mergetool</span><br><span class="line">    lo = <span class="built_in">log</span> --oneline</span><br><span class="line">    lg = <span class="built_in">log</span> --color --graph --pretty=format:<span class="string">&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset&#x27;</span> --abbrev-commit</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查看Git配置</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Github的神级操作</title>
     <url>/article/33799c4b.html</url>
     <content><![CDATA[<blockquote>
@@ -411,61 +500,85 @@
       </tags>
   </entry>
   <entry>
-    <title>关于图床的使用</title>
-    <url>/article/91cd0b89.html</url>
+    <title>常用的adb命令</title>
+    <url>/article/3610a686.html</url>
     <content><![CDATA[<blockquote>
-<p>图床一般是指储存图片的服务器，有国内和国外之分。国外的图床由于有空间距离等因素决定访问速度很慢影响图片显示速度。国内也分为单线空间、多线空间和cdn加速三种。</p>
+<p>ADB，即 Android Debug Bridge，它是 Android 开发/测试人员不可替代的强大工具，也是 Android 设备玩家的好玩具。安卓调试桥 (Android Debug Bridge, adb)，是一种可以用来操作手机设备或模拟器的命令行工具。它存在于 <a href="https://developer.android.google.cn/studio/releases/platform-tools">sdk/platform-tools</a> 目录下。</p>
 </blockquote>
 <a id="more"></a>
 
-<h3 id="图床意义"><a href="#图床意义" class="headerlink" title="图床意义"></a>图床意义</h3><p>图床就是专门用来存放图片，同时允许你把图片对外连接的网上空间，不少图床都是免费的。图床相当于在网络上存储图片的地方，可以节约本地资源，图片可以多次引用。我最早接触的图床是<a href="https://sm.ms/">sm.ms</a>，后来需要登录才可以使用了，其实CSDN写文章插入图片也可以使用作为图床使用。</p>
-<h3 id="使用托管平台图床"><a href="#使用托管平台图床" class="headerlink" title="使用托管平台图床"></a>使用托管平台图床</h3><h4 id="1-Github"><a href="#1-Github" class="headerlink" title="1.Github"></a>1.Github</h4><p>Github作为图床可以使用，但是速度太慢，可以使用 <a href="https://www.jsdelivr.com/">jsDeliver</a> 加速。</p>
-<p>Github原生格式：(目前无法直接访问，需要科学上网)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;fangjian98&#x2F;fangjian98.github.io&#x2F;hexo&#x2F;source&#x2F;images&#x2F;avatar.jpg</span><br></pre></td></tr></table></figure>
-
-<p>jsDeliver加速格式参考:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;@&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fangjian98&#x2F;fangjian98.github.io@hexo&#x2F;source&#x2F;images&#x2F;avatar.jpg</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-Gitee"><a href="#2-Gitee" class="headerlink" title="2.Gitee"></a>2.Gitee</h4><p>Gitee相当于是Github的中国版，国内访问速度很快。</p>
-<p>Gitee格式参考：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitee.com&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;&#x2F;raw&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitee.com&#x2F;fangjian98&#x2F;imagespace&#x2F;raw&#x2F;master&#x2F;img19.jpg</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-GitCode"><a href="#3-GitCode" class="headerlink" title="3.GitCode"></a>3.GitCode</h4><p>Gitcode原来叫CodeChina，好像是CSDN出品的项目托管平台，速度也很快。我目前正在使用的就是GitCode图床。</p>
-<p>GitCode格式参考：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;&#123;UserName&#125;&#x2F;&#123;Repi&#125;&#x2F;-&#x2F;raw&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
-
-<p> 示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;weixin_44008788&#x2F;images&#x2F;-&#x2F;raw&#x2F;master&#x2F;gitcode.png</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/gitcode.png" alt="GitCode"></p>
-<h3 id="图床管理工具"><a href="#图床管理工具" class="headerlink" title="图床管理工具"></a>图床管理工具</h3><p>该类工具可以可视化的直接复制图片链接，不必要在纠结在格式链接上了。</p>
-<ul>
-<li><strong>PicGO</strong> -  一个用于快速上传图片并获取图片 URL 链接的工具，需要下载客户端</li>
+<h2 id="Adb常用命令"><a href="#Adb常用命令" class="headerlink" title="Adb常用命令"></a>Adb常用命令</h2><ul>
+<li>截图命令</li>
 </ul>
-<p>发行版下载：<a href="https://github.com/Molunerfinn/PicGo/releases/">Molunerfinn/PicGo/releases</a></p>
-<p>开源地址：<a href="https://github.com/Molunerfinn/PicGo">Molunerfinn/PicGo</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell /system/bin/screencap -p /sdcard/screenshot.png</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li><strong>PicX</strong> - 是一款基于 GitHub API &amp; jsDelivr 开发的具有 CDN 加速功能的图床工具，在线操作即可，无需下载和安装</li>
+<li>将截图复制到电脑盘中</li>
 </ul>
-<p>在线地址：<a href="https://picx.xpoet.cn/">picx.xpoet.cn</a></p>
-<p>开源地址：<a href="https://github.com/XPoet/picx">XPoet/picx</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb pull /sdcard/screenshot.png D:\download</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用adb命令开始录屏</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell screenrecord /sdcard/filename.mp4</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动和关闭ADB服务</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb start-server</span><br><span class="line">adb <span class="built_in">kill</span>-server</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>强制停止apk</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell am force-stop com.sohu.sohuvideo</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>强制停止apk，并清除数据</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm clear com.sohu.sohuvideo</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>静默安装</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm install -r filePath</span><br><span class="line">adb install **.apk</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>列出安装的apk包</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm list packsges</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据包名查找apk路径</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm path packages.name</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据包名卸载apk</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm uninstall packages.name</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动apk</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell am start -n ｛包(package)名｝/｛包名｝.&#123;活动(activity)名称&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>通过 IP 地址无线连接到设备</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 USB 线将设备连接到主机，设置目标设备以监听端口 5555 上的 TCP/IP 连接。</span></span><br><span class="line">adb tcpip 5555</span><br><span class="line"><span class="comment"># 拔掉连接目标设备的 USB 线，通过 IP 地址连接到设备</span></span><br><span class="line">adb connect device_ip_address:5555</span><br><span class="line"><span class="comment"># 查看连接设备</span></span><br><span class="line">adb devices</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Android源码开发常用</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看存储</span></span><br><span class="line">df -h</span><br><span class="line"><span class="comment"># 查看运行内存</span></span><br><span class="line">free -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入root模式</span></span><br><span class="line">adb root</span><br><span class="line">adb remount</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解锁</span></span><br><span class="line">adb <span class="built_in">disable</span>-verity</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入boot模式</span></span><br><span class="line">adb reboot bootloader</span><br><span class="line">fastboot devices</span><br><span class="line">fastboot reboot</span><br></pre></td></tr></table></figure>
+
+<h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p><a href="https://developer.android.google.cn/studio/command-line/adb">https://developer.android.google.cn/studio/command-line/adb</a></p>
 ]]></content>
       <categories>
-        <category>技术流</category>
+        <category>Android</category>
       </categories>
       <tags>
-        <tag>Github</tag>
-        <tag>Image Hosting Service</tag>
-        <tag>PicGO</tag>
+        <tag>adb</tag>
       </tags>
   </entry>
   <entry>
@@ -484,37 +597,6 @@
 <h3 id="更新本地仓库-Remote-Url"><a href="#更新本地仓库-Remote-Url" class="headerlink" title="更新本地仓库 Remote Url"></a>更新本地仓库 Remote Url</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br><span class="line">git remote remove origin</span><br><span class="line">git remote add origin https://gitcode.net/xxxx.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者是使用 SSH 地址</span></span><br><span class="line">git remote add origin git@gitcode.net:xxxx.git</span><br></pre></td></tr></table></figure>
 
 <h3 id="添加子模块"><a href="#添加子模块" class="headerlink" title="添加子模块"></a>添加子模块</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除仓库索引</span></span><br><span class="line"><span class="comment"># 如果是文件</span></span><br><span class="line">git rm --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果是文件夹</span></span><br><span class="line">git rm -r --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果执行以上命令后提示：[error: 如下文件其暂存的内容和工作区及 HEAD 中的都不一样：] ，`-f`强制删除</span></span><br><span class="line">git rm -r -f --cached reference/esp-qcloud</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加仓库索引</span></span><br><span class="line"><span class="comment"># 创建子模块并添加 url 地址</span></span><br><span class="line">git submodule add &lt;url&gt; project</span><br><span class="line"><span class="comment"># 例如：</span></span><br><span class="line">git submodule add https://gitee.com/JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"><span class="comment"># 或者使用 ssh 地址</span></span><br><span class="line">git submodule add git@gitee.com:JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"></span><br><span class="line">添加成功后会生成.gitmodules文件，即添加子模块</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git命令简写的配置</title>
-    <url>/article/8b0e152.html</url>
-    <content><![CDATA[<blockquote>
-<p>在使用Git工具时，有些命令比较常用，为了加快输入速度，可以自定义一些简写配置，能提高我们提交代码的效率。</p>
-</blockquote>
-<a id="more"></a>
-
-<ul>
-<li>编辑Git配置文件且显示配置文件路径</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global -e</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>配置文件<code> ~/.gitconfig</code></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">  name = xxxxx</span><br><span class="line">  email = xxxx@mail.com</span><br><span class="line">[core]</span><br><span class="line">  editor = vim</span><br><span class="line">[<span class="built_in">alias</span>]</span><br><span class="line">    a = add</span><br><span class="line">    co = checkout</span><br><span class="line">    cm = commit</span><br><span class="line">    st = status</span><br><span class="line">    pl = pull</span><br><span class="line">    ps = push</span><br><span class="line">    df = diff</span><br><span class="line">    lg = <span class="built_in">log</span></span><br><span class="line">    cp = cherry-pick</span><br><span class="line">    ca = commit --amend</span><br><span class="line">    br = branch</span><br><span class="line">    mg = merge</span><br><span class="line">    dt = difftool</span><br><span class="line">    mt = mergetool</span><br><span class="line">    lo = <span class="built_in">log</span> --oneline</span><br><span class="line">    lg = <span class="built_in">log</span> --color --graph --pretty=format:<span class="string">&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset&#x27;</span> --abbrev-commit</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>查看Git配置</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -758,88 +840,6 @@
       </tags>
   </entry>
   <entry>
-    <title>常用的adb命令</title>
-    <url>/article/3610a686.html</url>
-    <content><![CDATA[<blockquote>
-<p>ADB，即 Android Debug Bridge，它是 Android 开发/测试人员不可替代的强大工具，也是 Android 设备玩家的好玩具。安卓调试桥 (Android Debug Bridge, adb)，是一种可以用来操作手机设备或模拟器的命令行工具。它存在于 <a href="https://developer.android.google.cn/studio/releases/platform-tools">sdk/platform-tools</a> 目录下。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Adb常用命令"><a href="#Adb常用命令" class="headerlink" title="Adb常用命令"></a>Adb常用命令</h2><ul>
-<li>截图命令</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell /system/bin/screencap -p /sdcard/screenshot.png</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>将截图复制到电脑盘中</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb pull /sdcard/screenshot.png D:\download</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>使用adb命令开始录屏</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell screenrecord /sdcard/filename.mp4</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>启动和关闭ADB服务</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb start-server</span><br><span class="line">adb <span class="built_in">kill</span>-server</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>强制停止apk</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell am force-stop com.sohu.sohuvideo</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>强制停止apk，并清除数据</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm clear com.sohu.sohuvideo</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>静默安装</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm install -r filePath</span><br><span class="line">adb install **.apk</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>列出安装的apk包</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm list packsges</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>根据包名查找apk路径</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm path packages.name</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>根据包名卸载apk</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell pm uninstall packages.name</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>启动apk</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell am start -n ｛包(package)名｝/｛包名｝.&#123;活动(activity)名称&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>通过 IP 地址无线连接到设备</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 USB 线将设备连接到主机，设置目标设备以监听端口 5555 上的 TCP/IP 连接。</span></span><br><span class="line">adb tcpip 5555</span><br><span class="line"><span class="comment"># 拔掉连接目标设备的 USB 线，通过 IP 地址连接到设备</span></span><br><span class="line">adb connect device_ip_address:5555</span><br><span class="line"><span class="comment"># 查看连接设备</span></span><br><span class="line">adb devices</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Android源码开发常用</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看存储</span></span><br><span class="line">df -h</span><br><span class="line"><span class="comment"># 查看运行内存</span></span><br><span class="line">free -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入root模式</span></span><br><span class="line">adb root</span><br><span class="line">adb remount</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解锁</span></span><br><span class="line">adb <span class="built_in">disable</span>-verity</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入boot模式</span></span><br><span class="line">adb reboot bootloader</span><br><span class="line">fastboot devices</span><br><span class="line">fastboot reboot</span><br></pre></td></tr></table></figure>
-
-<h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p><a href="https://developer.android.google.cn/studio/command-line/adb">https://developer.android.google.cn/studio/command-line/adb</a></p>
-]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-      <tags>
-        <tag>adb</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>常用的Git命令</title>
     <url>/article/5c7291e7.html</url>
     <content><![CDATA[<blockquote>
@@ -951,51 +951,6 @@
       </tags>
   </entry>
   <entry>
-    <title>开源许可协议 Open Source License</title>
-    <url>/article/b86684bd.html</url>
-    <content><![CDATA[<blockquote>
-<p>开源许可证是计算机软件和其他产品的一种许可证，允许在定义的条款和条件下使用、修改和/或共享源代码、蓝图或设计。这允许最终用户和商业公司根据自己的定制、好奇心或故障排除需求来审查和修改源代码、蓝图或设计。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="关于开源许可证-Open-Source-License"><a href="#关于开源许可证-Open-Source-License" class="headerlink" title="关于开源许可证 Open Source License"></a>关于开源许可证 Open Source License</h3><p>开源许可证是计算机软件和其他产品的一种许可证，允许在定义的条款和条件下使用、修改和/或共享源代码、蓝图或设计。这允许最终用户和商业公司根据自己的定制、好奇心或故障排除需求来审查和修改源代码、蓝图或设计。</p>
-<p>我们接触到的开源软件一般都有对应的开源许可证对软件的使用、复制、修改和再发布等进行限制。许可证即授权条款，开源许可证就是保证开源软件这些限制的法律文件，目的在于规范受著作权保护的软件的使用或者分发行为。<strong>开源许可证是开源软件生态系统的基础，可以促进软件的协同开发。</strong></p>
-<blockquote>
-<p>常见的开源许可证主要有 Apache、MIT、BSD、GPL、LGPL、MPL、SSPL 等，可以大致分为两大类：<br><strong>1. 宽松自由软件许可协议 Permissive Free Software Licence</strong><br>是一种对软件的使用、修改、传播等方式采用最低限制的自由软件许可协议条款类型。这种类型的软件许可协议将不保证原作品的派生作品会继续保持与原作品完全相同的相关限制条件，从而为原作品的自由使用、修改和传播等提供更大的空间。<br><strong>2.著佐权许可证 Copyleft License</strong><br>是在有限空间内的自由使用、修改和传播，且不得违背原作品的限制条款。如果一款软件使用 Copyleft 类型许可协议规定软件不得用于商业目的，且不得闭源，那么后续的衍生子软件也必须得遵循该条款。<br><strong>两者最大的差别在于</strong>：在软件被修改并再发行时， Copyleft License 仍然强制要求公开源代码（衍生软件需要开源），而Permissive Free Software Licence 不要求公开源代码（衍生软件可以变为专有软件）。<br><strong>其中</strong>，Apache、MIT、BSD 都是宽松许可证，GPL 是典型的强著佐权（Copyleft ）许可证，LGPL、MPL 是弱著佐权（Copyleft ）许可证。SSPL 则是近年来 MongoDB 创建的一个新许可证，存在较大争议，开放源代码促进会 OSI 甚至认为 SSPL 就不是开源许可协议。</p>
-</blockquote>
-<h3 id="如何选择开源许可证"><a href="#如何选择开源许可证" class="headerlink" title="如何选择开源许可证"></a>如何选择开源许可证</h3><p>如何为代码选择开源许可证，这是一个问题。世界上的开源许可证，大概有上百种，很少有人能弄清楚它们的区别。即使在最流行的六种开源许可证：<a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>、<a href="https://en.wikipedia.org/wiki/BSD_licenses">BSD</a>、<a href="https://en.wikipedia.org/wiki/MIT_License">MIT</a>、<a href="https://www.mozilla.org/MPL/">Mozilla</a>、<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache</a>和<a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License">LGPL</a>，在这些中做出选择也很复杂。</p>
-<p>乌克兰程序员Paul Bagwell 画了一张分析图，说明应该怎么选择，这是我见过的最简单的讲解，只用两分钟，你就能搞清楚这六种许可证之间的最大区别。<br><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/licenses.png" alt="开源许可证"></p>
-<h3 id="常见开源许可证声明方式"><a href="#常见开源许可证声明方式" class="headerlink" title="常见开源许可证声明方式"></a>常见开源许可证声明方式</h3><ul>
-<li><a href="https://opensource.org/licenses/MIT">MIT</a></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MIT License</span><br><span class="line"></span><br><span class="line">Copyright (c) &lt;year&gt; &lt;copyright holders&gt;</span><br><span class="line"></span><br><span class="line">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and&#x2F;or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</span><br><span class="line"></span><br><span class="line">The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.</span><br><span class="line"></span><br><span class="line">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache2.0</a></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Copyright [yyyy] [name of copyright owner]</span><br><span class="line"></span><br><span class="line">Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span><br><span class="line">you may not use this file except in compliance with the License.</span><br><span class="line">You may obtain a copy of the License at</span><br><span class="line"></span><br><span class="line">    http:&#x2F;&#x2F;www.apache.org&#x2F;licenses&#x2F;LICENSE-2.0</span><br><span class="line"></span><br><span class="line">Unless required by applicable law or agreed to in writing, software</span><br><span class="line">distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span><br><span class="line">WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span><br><span class="line">See the License for the specific language governing permissions and</span><br><span class="line">limitations under the License.</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL3.0</a></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;one line to give the program&#39;s name and a brief idea of what it does.&gt;</span><br><span class="line"></span><br><span class="line">Copyright (C) &lt;year&gt;  &lt;name of author&gt;</span><br><span class="line"></span><br><span class="line">This program is free software: you can redistribute it and&#x2F;or modify</span><br><span class="line">it under the terms of the GNU General Public License as published by</span><br><span class="line">the Free Software Foundation, either version 3 of the License, or</span><br><span class="line">(at your option) any later version.</span><br><span class="line"></span><br><span class="line">This program is distributed in the hope that it will be useful,</span><br><span class="line">but WITHOUT ANY WARRANTY; without even the implied warranty of</span><br><span class="line">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span><br><span class="line">GNU General Public License for more details.</span><br><span class="line"></span><br><span class="line">You should have received a copy of the GNU General Public License</span><br><span class="line">along with this program.  If not, see &lt;http:&#x2F;&#x2F;www.gnu.org&#x2F;licenses&#x2F;&gt;.</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询开源协议的网站"><a href="#查询开源协议的网站" class="headerlink" title="查询开源协议的网站"></a>查询开源协议的网站</h3><ol>
-<li><a href="https://spdx.org/licenses/">spdx.org/licenses/</a></li>
-<li><a href="https://opensource.org/licenses">opensource.org/licenses</a></li>
-<li><a href="https://choosealicense.com/">choosealicense.com/</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Open Source License</tag>
-        <tag>MIT</tag>
-        <tag>Apache2.0</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法之设计模式</title>
     <url>/article/8f5452f1.html</url>
     <content><![CDATA[<blockquote>
@@ -1059,6 +1014,51 @@
       </categories>
       <tags>
         <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开源许可协议 Open Source License</title>
+    <url>/article/b86684bd.html</url>
+    <content><![CDATA[<blockquote>
+<p>开源许可证是计算机软件和其他产品的一种许可证，允许在定义的条款和条件下使用、修改和/或共享源代码、蓝图或设计。这允许最终用户和商业公司根据自己的定制、好奇心或故障排除需求来审查和修改源代码、蓝图或设计。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="关于开源许可证-Open-Source-License"><a href="#关于开源许可证-Open-Source-License" class="headerlink" title="关于开源许可证 Open Source License"></a>关于开源许可证 Open Source License</h3><p>开源许可证是计算机软件和其他产品的一种许可证，允许在定义的条款和条件下使用、修改和/或共享源代码、蓝图或设计。这允许最终用户和商业公司根据自己的定制、好奇心或故障排除需求来审查和修改源代码、蓝图或设计。</p>
+<p>我们接触到的开源软件一般都有对应的开源许可证对软件的使用、复制、修改和再发布等进行限制。许可证即授权条款，开源许可证就是保证开源软件这些限制的法律文件，目的在于规范受著作权保护的软件的使用或者分发行为。<strong>开源许可证是开源软件生态系统的基础，可以促进软件的协同开发。</strong></p>
+<blockquote>
+<p>常见的开源许可证主要有 Apache、MIT、BSD、GPL、LGPL、MPL、SSPL 等，可以大致分为两大类：<br><strong>1. 宽松自由软件许可协议 Permissive Free Software Licence</strong><br>是一种对软件的使用、修改、传播等方式采用最低限制的自由软件许可协议条款类型。这种类型的软件许可协议将不保证原作品的派生作品会继续保持与原作品完全相同的相关限制条件，从而为原作品的自由使用、修改和传播等提供更大的空间。<br><strong>2.著佐权许可证 Copyleft License</strong><br>是在有限空间内的自由使用、修改和传播，且不得违背原作品的限制条款。如果一款软件使用 Copyleft 类型许可协议规定软件不得用于商业目的，且不得闭源，那么后续的衍生子软件也必须得遵循该条款。<br><strong>两者最大的差别在于</strong>：在软件被修改并再发行时， Copyleft License 仍然强制要求公开源代码（衍生软件需要开源），而Permissive Free Software Licence 不要求公开源代码（衍生软件可以变为专有软件）。<br><strong>其中</strong>，Apache、MIT、BSD 都是宽松许可证，GPL 是典型的强著佐权（Copyleft ）许可证，LGPL、MPL 是弱著佐权（Copyleft ）许可证。SSPL 则是近年来 MongoDB 创建的一个新许可证，存在较大争议，开放源代码促进会 OSI 甚至认为 SSPL 就不是开源许可协议。</p>
+</blockquote>
+<h3 id="如何选择开源许可证"><a href="#如何选择开源许可证" class="headerlink" title="如何选择开源许可证"></a>如何选择开源许可证</h3><p>如何为代码选择开源许可证，这是一个问题。世界上的开源许可证，大概有上百种，很少有人能弄清楚它们的区别。即使在最流行的六种开源许可证：<a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>、<a href="https://en.wikipedia.org/wiki/BSD_licenses">BSD</a>、<a href="https://en.wikipedia.org/wiki/MIT_License">MIT</a>、<a href="https://www.mozilla.org/MPL/">Mozilla</a>、<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache</a>和<a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License">LGPL</a>，在这些中做出选择也很复杂。</p>
+<p>乌克兰程序员Paul Bagwell 画了一张分析图，说明应该怎么选择，这是我见过的最简单的讲解，只用两分钟，你就能搞清楚这六种许可证之间的最大区别。<br><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/licenses.png" alt="开源许可证"></p>
+<h3 id="常见开源许可证声明方式"><a href="#常见开源许可证声明方式" class="headerlink" title="常见开源许可证声明方式"></a>常见开源许可证声明方式</h3><ul>
+<li><a href="https://opensource.org/licenses/MIT">MIT</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MIT License</span><br><span class="line"></span><br><span class="line">Copyright (c) &lt;year&gt; &lt;copyright holders&gt;</span><br><span class="line"></span><br><span class="line">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and&#x2F;or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</span><br><span class="line"></span><br><span class="line">The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.</span><br><span class="line"></span><br><span class="line">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache2.0</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Copyright [yyyy] [name of copyright owner]</span><br><span class="line"></span><br><span class="line">Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span><br><span class="line">you may not use this file except in compliance with the License.</span><br><span class="line">You may obtain a copy of the License at</span><br><span class="line"></span><br><span class="line">    http:&#x2F;&#x2F;www.apache.org&#x2F;licenses&#x2F;LICENSE-2.0</span><br><span class="line"></span><br><span class="line">Unless required by applicable law or agreed to in writing, software</span><br><span class="line">distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span><br><span class="line">WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span><br><span class="line">See the License for the specific language governing permissions and</span><br><span class="line">limitations under the License.</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL3.0</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;one line to give the program&#39;s name and a brief idea of what it does.&gt;</span><br><span class="line"></span><br><span class="line">Copyright (C) &lt;year&gt;  &lt;name of author&gt;</span><br><span class="line"></span><br><span class="line">This program is free software: you can redistribute it and&#x2F;or modify</span><br><span class="line">it under the terms of the GNU General Public License as published by</span><br><span class="line">the Free Software Foundation, either version 3 of the License, or</span><br><span class="line">(at your option) any later version.</span><br><span class="line"></span><br><span class="line">This program is distributed in the hope that it will be useful,</span><br><span class="line">but WITHOUT ANY WARRANTY; without even the implied warranty of</span><br><span class="line">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span><br><span class="line">GNU General Public License for more details.</span><br><span class="line"></span><br><span class="line">You should have received a copy of the GNU General Public License</span><br><span class="line">along with this program.  If not, see &lt;http:&#x2F;&#x2F;www.gnu.org&#x2F;licenses&#x2F;&gt;.</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询开源协议的网站"><a href="#查询开源协议的网站" class="headerlink" title="查询开源协议的网站"></a>查询开源协议的网站</h3><ol>
+<li><a href="https://spdx.org/licenses/">spdx.org/licenses/</a></li>
+<li><a href="https://opensource.org/licenses">opensource.org/licenses</a></li>
+<li><a href="https://choosealicense.com/">choosealicense.com/</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Open Source License</tag>
+        <tag>MIT</tag>
+        <tag>Apache2.0</tag>
       </tags>
   </entry>
   <entry>
@@ -1482,52 +1482,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>关于电子邮件协议</title>
-    <url>/article/1f82cbab.html</url>
-    <content><![CDATA[<blockquote>
-<p>电子邮件是一种用电子手段提供信息交换的通信方式，是互联网应用最广的服务。通过网络的电子邮件系统，用户可以以非常低廉的价格（不管发送到哪里，都只需负担网费）、非常快速的方式（几秒钟之内可以发送到世界上任何指定的目的地），与世界上任何一个角落的网络用户联系。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>在企业中一般都会有自己的定制化的企业邮箱， 使用的邮箱功能模块可按需求定制，例如邮箱后缀用公司名字的，想多个地区分别管理的，跨团队沟通群发邮件、想要一个独立登录入口页面、想要全球收发，企业邮箱里的功能都能满足，其灵活性的配置，让员工高效协同办公。</p>
-<p>在使用企业邮箱配置客户端的时候，这就会涉及到邮件服务器和端口的填写，如下使用是Foxmail邮箱客户端配置邮件服务器的参数，如果使用Outlook也可以参考使用这个参数的配置。另外QQ邮箱也可以开通OP3/IMAP/SMTP服务。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/mail_protocol.png" alt="邮件服务器的配置"></p>
-<h3 id="关于邮件协议"><a href="#关于邮件协议" class="headerlink" title="关于邮件协议"></a>关于邮件协议</h3><ul>
-<li><p>IMAP/SMTP服务</p>
-</li>
-<li><p>POP3/SMTP服务</p>
-</li>
-</ul>
-<blockquote>
-<p>电子邮件协议有SMTP、POP3、IMAP4，它们都隶属于TCP/IP协议簇，默认状态下，分别通过TCP端口25、110和143建立连接。</p>
-</blockquote>
-<h3 id="什么是POP3、SMTP及IMAP"><a href="#什么是POP3、SMTP及IMAP" class="headerlink" title="什么是POP3、SMTP及IMAP"></a>什么是POP3、SMTP及IMAP</h3><ul>
-<li><strong>POP3</strong></li>
-</ul>
-<p>POP3是Post Office Protocol 3的简称，即邮局协议的第3个版本,它规定怎样将个人计算机连接到Internet的邮件服务器和下载电子邮件的电子协议。它是因特网电子邮件的第一个离线协议标准，<strong>POP3允许用户从服务器上把邮件存储到本地主机（即自己的计算机）上,同时删除保存在邮件服务器上的邮件</strong>，而POP3服务器则是遵循POP3协议的接收邮件服务器，用来接收电子邮件的。</p>
-<ul>
-<li><strong>SMTP</strong></li>
-</ul>
-<p>SMTP的全称是“Simple Mail Transfer Protocol”，即简单邮件传输协议。它是一组用于从源地址到目的地址传输邮件的规范，通过它来控制邮件的中转方式。SMTP 协议属于 TCP/IP 协议簇，它帮助每台计算机在发送或中转信件时找到下一个目的地。<br>SMTP 服务器就是遵循 SMTP 协议的发送邮件服务器。SMTP 认证，简单地说就是要求必须在提供了账户名和密码之后才可以登录 SMTP 服务器，这就使得那些垃圾邮件的散播者无可乘之机。增加 SMTP 认证的目的是为了使用户避免受到垃圾邮件的侵扰。</p>
-<ul>
-<li><strong>IMAP</strong></li>
-</ul>
-<p>IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议，它是跟POP3类似邮件访问标准协议之一。不同的是，开启了IMAP后，您在电子邮件客户端收取的邮件仍然保留 在服务器上，同时在客户端上的操作都会反馈到服务器上，如：删除邮件，标记已读等，服务器上的邮件也会做相应的动作。所以无论从浏览器登录邮箱或者客户端 软件登录邮箱，看到的邮件以及状态都是一致的。</p>
-<h3 id="IMAP和POP3有什么区别"><a href="#IMAP和POP3有什么区别" class="headerlink" title="IMAP和POP3有什么区别?"></a>IMAP和POP3有什么区别?</h3><p><strong>POP3</strong>协议允许电子邮件客户端下载服务器上的邮件，但是在客户端的操作（如移动邮件、标记已读等），不会反馈到服务器上，比如通过客户端收取了邮箱中的3封邮件并移动到其他文件夹，邮箱服务器上的这些邮件是没有同时被移动的 。</p>
-<p>而<strong>IMAP</strong>提供webmail 与电子邮件客户端之间的双向通信，客户端的操作都会反馈到服务器上，对邮件进行的操作，服务器上的邮件也会做相应的动作。</p>
-<p>同时，<strong>IMAP</strong>像<strong>POP3</strong>那样提供了方便的邮件下载服务，让用户能进行离线阅读。<strong>IMAP</strong>提供的摘要浏览功能可以让你在阅读完所有的邮件到达时间、主题、发件人、大小等信息后才作出是否下载的决定。此外，<strong>IMAP</strong> 更好地支持了从多个不同设备中随时访问新邮件。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/mail_protocol_table.jpg" alt="IMAP与POP3的区别"></p>
-<p>总之，<strong>IMAP</strong> 整体上为用户带来更为便捷和可靠的体验。<strong>POP3</strong> 更易丢失邮件或多次下载相同的邮件，但 <strong>IMAP</strong> 通过邮件客户端与webmail 之间的双向同步功能很好地避免了这些问题。</p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>POP3/SMTP</tag>
-        <tag>IMAP/SMTP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>寻找机器学习数据集</title>
     <url>/article/543367d4.html</url>
     <content><![CDATA[<blockquote>
@@ -1600,6 +1554,102 @@
         <tag>MachineLearning</tag>
         <tag>DataSet</tag>
         <tag>ArtificialIntelligence</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于电子邮件协议</title>
+    <url>/article/1f82cbab.html</url>
+    <content><![CDATA[<blockquote>
+<p>电子邮件是一种用电子手段提供信息交换的通信方式，是互联网应用最广的服务。通过网络的电子邮件系统，用户可以以非常低廉的价格（不管发送到哪里，都只需负担网费）、非常快速的方式（几秒钟之内可以发送到世界上任何指定的目的地），与世界上任何一个角落的网络用户联系。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>在企业中一般都会有自己的定制化的企业邮箱， 使用的邮箱功能模块可按需求定制，例如邮箱后缀用公司名字的，想多个地区分别管理的，跨团队沟通群发邮件、想要一个独立登录入口页面、想要全球收发，企业邮箱里的功能都能满足，其灵活性的配置，让员工高效协同办公。</p>
+<p>在使用企业邮箱配置客户端的时候，这就会涉及到邮件服务器和端口的填写，如下使用是Foxmail邮箱客户端配置邮件服务器的参数，如果使用Outlook也可以参考使用这个参数的配置。另外QQ邮箱也可以开通OP3/IMAP/SMTP服务。</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/mail_protocol.png" alt="邮件服务器的配置"></p>
+<h3 id="关于邮件协议"><a href="#关于邮件协议" class="headerlink" title="关于邮件协议"></a>关于邮件协议</h3><ul>
+<li><p>IMAP/SMTP服务</p>
+</li>
+<li><p>POP3/SMTP服务</p>
+</li>
+</ul>
+<blockquote>
+<p>电子邮件协议有SMTP、POP3、IMAP4，它们都隶属于TCP/IP协议簇，默认状态下，分别通过TCP端口25、110和143建立连接。</p>
+</blockquote>
+<h3 id="什么是POP3、SMTP及IMAP"><a href="#什么是POP3、SMTP及IMAP" class="headerlink" title="什么是POP3、SMTP及IMAP"></a>什么是POP3、SMTP及IMAP</h3><ul>
+<li><strong>POP3</strong></li>
+</ul>
+<p>POP3是Post Office Protocol 3的简称，即邮局协议的第3个版本,它规定怎样将个人计算机连接到Internet的邮件服务器和下载电子邮件的电子协议。它是因特网电子邮件的第一个离线协议标准，<strong>POP3允许用户从服务器上把邮件存储到本地主机（即自己的计算机）上,同时删除保存在邮件服务器上的邮件</strong>，而POP3服务器则是遵循POP3协议的接收邮件服务器，用来接收电子邮件的。</p>
+<ul>
+<li><strong>SMTP</strong></li>
+</ul>
+<p>SMTP的全称是“Simple Mail Transfer Protocol”，即简单邮件传输协议。它是一组用于从源地址到目的地址传输邮件的规范，通过它来控制邮件的中转方式。SMTP 协议属于 TCP/IP 协议簇，它帮助每台计算机在发送或中转信件时找到下一个目的地。<br>SMTP 服务器就是遵循 SMTP 协议的发送邮件服务器。SMTP 认证，简单地说就是要求必须在提供了账户名和密码之后才可以登录 SMTP 服务器，这就使得那些垃圾邮件的散播者无可乘之机。增加 SMTP 认证的目的是为了使用户避免受到垃圾邮件的侵扰。</p>
+<ul>
+<li><strong>IMAP</strong></li>
+</ul>
+<p>IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议，它是跟POP3类似邮件访问标准协议之一。不同的是，开启了IMAP后，您在电子邮件客户端收取的邮件仍然保留 在服务器上，同时在客户端上的操作都会反馈到服务器上，如：删除邮件，标记已读等，服务器上的邮件也会做相应的动作。所以无论从浏览器登录邮箱或者客户端 软件登录邮箱，看到的邮件以及状态都是一致的。</p>
+<h3 id="IMAP和POP3有什么区别"><a href="#IMAP和POP3有什么区别" class="headerlink" title="IMAP和POP3有什么区别?"></a>IMAP和POP3有什么区别?</h3><p><strong>POP3</strong>协议允许电子邮件客户端下载服务器上的邮件，但是在客户端的操作（如移动邮件、标记已读等），不会反馈到服务器上，比如通过客户端收取了邮箱中的3封邮件并移动到其他文件夹，邮箱服务器上的这些邮件是没有同时被移动的 。</p>
+<p>而<strong>IMAP</strong>提供webmail 与电子邮件客户端之间的双向通信，客户端的操作都会反馈到服务器上，对邮件进行的操作，服务器上的邮件也会做相应的动作。</p>
+<p>同时，<strong>IMAP</strong>像<strong>POP3</strong>那样提供了方便的邮件下载服务，让用户能进行离线阅读。<strong>IMAP</strong>提供的摘要浏览功能可以让你在阅读完所有的邮件到达时间、主题、发件人、大小等信息后才作出是否下载的决定。此外，<strong>IMAP</strong> 更好地支持了从多个不同设备中随时访问新邮件。</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/mail_protocol_table.jpg" alt="IMAP与POP3的区别"></p>
+<p>总之，<strong>IMAP</strong> 整体上为用户带来更为便捷和可靠的体验。<strong>POP3</strong> 更易丢失邮件或多次下载相同的邮件，但 <strong>IMAP</strong> 通过邮件客户端与webmail 之间的双向同步功能很好地避免了这些问题。</p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>POP3/SMTP</tag>
+        <tag>IMAP/SMTP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于设计UI/UX/UED职能解释</title>
+    <url>/article/198ad0b7.html</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科上说UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计。 关于设计或者产品经理或者开发者来说，我们经常听到UI/UX/UED/UCD等专有名词，却总是搞不清楚他们的区别，这里将说明他们各自的含义。百度百科上说UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="UI-UID"><a href="#UI-UID" class="headerlink" title="UI/UID"></a>UI/UID</h2><p><strong>UI：User Interface  用户界面 / UID：User Interface Design 用户界面设计</strong></p>
+<p>用户界面其实是一个比较广泛的概念，指人和机器互动过程中的界面，以车为例子，方向盘、仪表盘、换档器等都属于用户界面。</p>
+<ul>
+<li>现在一般把屏幕上显示的图形用户界面（GUI ：Graphic User Interface）都简单称为UI。</li>
+<li>现在一般所说的UI设计师，也即是指GUI设计师。</li>
+<li>用户界面设计（UID）不仅仅是做”漂亮的界面”，所以不可避免的会涉及到交互设计。所以广义来说，界面设计包含交互设计。  </li>
+</ul>
+<h2 id="ID"><a href="#ID" class="headerlink" title="ID"></a>ID</h2><p><strong>ID：Interaction design 交互设计</strong></p>
+<p>交互指任何机器互动的过程，交互设计通过了解人的心理、目标和期望，使用有效的交互方式来让整个过程可用、易用。</p>
+<ul>
+<li>交互设计的主要对象是人机界面（UI），但不仅限于图形界面（GUI）。 </li>
+<li>为了达到目标，交互设计师需要关注心理、文化、人体工程等许多方面的内容。</li>
+</ul>
+<h2 id="UE-UX"><a href="#UE-UX" class="headerlink" title="UE/UX"></a>UE/UX</h2><p><strong>UE/UX： User Experience 用户体验</strong> </p>
+<p>用户体验指用户在使用产品过程中的个人主观感受。</p>
+<ul>
+<li>关注用户使用前、使用过程中、使用后的整体感受，包括行为、情感、成就等各个方面。 </li>
+<li>用户体验是整体感受，所以不仅仅来自于用户界面，那只是其中的一部分。</li>
+</ul>
+<h2 id="UED"><a href="#UED" class="headerlink" title="UED"></a>UED</h2><p><strong>UED： User Experience Design 用户体验设计</strong></p>
+<p>用户体验是个人主观感受，但是共性的体验是可以经由良好的设计提升的。用户体验设计旨在提升用户使用产品的体验。</p>
+<ul>
+<li>互联网企业中，一般将视觉界面设计，交互设计和前端设计都归为用户体验设计。 </li>
+<li>但实际上用户体验设计贯穿于整个产品设计流程，是必然涉及到的，只是重视与否。 </li>
+<li>一名优秀的用户体验设计师，实际上需要对界面、交互和实现技术都有深入的理解。</li>
+</ul>
+<h2 id="UCD"><a href="#UCD" class="headerlink" title="UCD"></a>UCD</h2><p><strong>UCD：User Centered Design 以用户为中心的设计</strong></p>
+<p>UCD是一种设计模式，思维。强调在产品设计过程中，从用户角度出发来进行设计，用户优先。</p>
+<ul>
+<li>产品设计有个BTU三圈图（Business, Technique, User），即一个好的产品，应该兼顾商业盈利，技术实现和用户需求。</li>
+<li>无论是B、T还是U为优先进入产品设计，都可以设计出好的产品。UCD只是强调用户优先。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>UI设计</category>
+      </categories>
+      <tags>
+        <tag>UI</tag>
+        <tag>UX</tag>
+        <tag>UED</tag>
       </tags>
   </entry>
   <entry>
@@ -1682,125 +1732,6 @@
       <tags>
         <tag>Android</tag>
         <tag>Jetpack</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于设计UI/UX/UED职能解释</title>
-    <url>/article/198ad0b7.html</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科上说UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计。 关于设计或者产品经理或者开发者来说，我们经常听到UI/UX/UED/UCD等专有名词，却总是搞不清楚他们的区别，这里将说明他们各自的含义。百度百科上说UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="UI-UID"><a href="#UI-UID" class="headerlink" title="UI/UID"></a>UI/UID</h2><p><strong>UI：User Interface  用户界面 / UID：User Interface Design 用户界面设计</strong></p>
-<p>用户界面其实是一个比较广泛的概念，指人和机器互动过程中的界面，以车为例子，方向盘、仪表盘、换档器等都属于用户界面。</p>
-<ul>
-<li>现在一般把屏幕上显示的图形用户界面（GUI ：Graphic User Interface）都简单称为UI。</li>
-<li>现在一般所说的UI设计师，也即是指GUI设计师。</li>
-<li>用户界面设计（UID）不仅仅是做”漂亮的界面”，所以不可避免的会涉及到交互设计。所以广义来说，界面设计包含交互设计。  </li>
-</ul>
-<h2 id="ID"><a href="#ID" class="headerlink" title="ID"></a>ID</h2><p><strong>ID：Interaction design 交互设计</strong></p>
-<p>交互指任何机器互动的过程，交互设计通过了解人的心理、目标和期望，使用有效的交互方式来让整个过程可用、易用。</p>
-<ul>
-<li>交互设计的主要对象是人机界面（UI），但不仅限于图形界面（GUI）。 </li>
-<li>为了达到目标，交互设计师需要关注心理、文化、人体工程等许多方面的内容。</li>
-</ul>
-<h2 id="UE-UX"><a href="#UE-UX" class="headerlink" title="UE/UX"></a>UE/UX</h2><p><strong>UE/UX： User Experience 用户体验</strong> </p>
-<p>用户体验指用户在使用产品过程中的个人主观感受。</p>
-<ul>
-<li>关注用户使用前、使用过程中、使用后的整体感受，包括行为、情感、成就等各个方面。 </li>
-<li>用户体验是整体感受，所以不仅仅来自于用户界面，那只是其中的一部分。</li>
-</ul>
-<h2 id="UED"><a href="#UED" class="headerlink" title="UED"></a>UED</h2><p><strong>UED： User Experience Design 用户体验设计</strong></p>
-<p>用户体验是个人主观感受，但是共性的体验是可以经由良好的设计提升的。用户体验设计旨在提升用户使用产品的体验。</p>
-<ul>
-<li>互联网企业中，一般将视觉界面设计，交互设计和前端设计都归为用户体验设计。 </li>
-<li>但实际上用户体验设计贯穿于整个产品设计流程，是必然涉及到的，只是重视与否。 </li>
-<li>一名优秀的用户体验设计师，实际上需要对界面、交互和实现技术都有深入的理解。</li>
-</ul>
-<h2 id="UCD"><a href="#UCD" class="headerlink" title="UCD"></a>UCD</h2><p><strong>UCD：User Centered Design 以用户为中心的设计</strong></p>
-<p>UCD是一种设计模式，思维。强调在产品设计过程中，从用户角度出发来进行设计，用户优先。</p>
-<ul>
-<li>产品设计有个BTU三圈图（Business, Technique, User），即一个好的产品，应该兼顾商业盈利，技术实现和用户需求。</li>
-<li>无论是B、T还是U为优先进入产品设计，都可以设计出好的产品。UCD只是强调用户优先。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>UI设计</category>
-      </categories>
-      <tags>
-        <tag>UI</tag>
-        <tag>UX</tag>
-        <tag>UED</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows修改DNS方法</title>
-    <url>/article/7c78b42f.html</url>
-    <content><![CDATA[<blockquote>
-<p>DNS是域名系统，我们链接互联网的时候，仅仅有一个IP地址是不够的，还需要设置域名，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取IP数串。通过域名，最终得到该域名对应IP地址的过程叫做域名解析（或主机名解析）。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>修改DNS的好处就是可以适当提高上网速度；更换DNS可以访问某些因为域名解析存在问题而不能访问的网站；可以屏蔽运营商的广告，还可以帮助您避免被钓鱼的危险；</p>
-<p>当然修改DNS也有可能带来副作用，比如无法访问页面或者访问的页面不是你想要的页面；访问速度没有你从运营商处获得的DNS访问分速度快，延时比较大；受到DNS劫持，插入广告和被钓鱼网站攻击。</p>
-<h3 id="Windows修改DNS步骤"><a href="#Windows修改DNS步骤" class="headerlink" title="Windows修改DNS步骤"></a>Windows修改DNS步骤</h3><p>1.打开windows设置，找到并单击“网络和Internet”选项;</p>
-<p>2.右侧下拉找到“更改适配器选项”，单击打开;</p>
-<p>3.右键你的以太网，选择“属性”打开;</p>
-<p>4.进入后下拉下方选项，找到“Internet 协议版本 4 (TCP/IPv4)”选项并选中，单击“属性”进入;</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_ipv4.png" alt="TCP/IPV4属性"></p>
-<p>5.进入后即可勾选为“使用下面的DNS服务器地址”选项，进行DNS服务器设置，确定保存即可。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_server.png" alt="DNS服务器设置"></p>
-<p>6.返回桌面重启电脑或者重启网卡即可设置完成。</p>
-<h3 id="常用的DNS服务器"><a href="#常用的DNS服务器" class="headerlink" title="常用的DNS服务器"></a>常用的DNS服务器</h3><ul>
-<li><p>阿里的DNS是223.5.5.5和223.6.6.6</p>
-</li>
-<li><p>百度的DNS是180.76.76.76</p>
-</li>
-<li><p>114的DNS是114.114.114.114和114.114.115.115</p>
-</li>
-<li><p>谷歌的DNS是8.8.8.8和8.8.8.4</p>
-</li>
-<li><p>微软官方推荐使用的DNS服务器地址为4.2.2.1以及4.2.2.2</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>DNS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Web前端开发常用的开发工具</title>
-    <url>/article/bdc11bc8.html</url>
-    <content><![CDATA[<blockquote>
-<p>分享的关于Web前端开发常用的十款很优秀的开发工具汇总。</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li>Glitch<br><a href="https://glitch.com/">https://glitch.com</a><br>好的，这不仅仅是一个工具，还是一个非常棒的编码平台以及一个很棒的技术社区。我可以在内置代码编辑器的帮助下托管我的项目。支持多种语言，但最适合NodeJS。</li>
-<li>Shadows<br><a href="https://brumm.af/shadows">https://brumm.af/shadows</a><br>这个网站提供生成平滑阴影的CSS代码，可以创建平滑的边框阴影。它看起来真的很流畅，令人满意。</li>
-<li>Coolors<br><a href="https://coolors.co/">https://coolors.co</a><br>这是一款非常好的在线工具，可以为项目生成匹配的颜色方案。如果不喜欢当前的方案，按下空格键，它会重新生成一个配色方案，直到你满意~</li>
-<li>Blobmaker<br><a href="https://blobmaker.app/">https://blobmaker.app</a><br>Blobmaker可帮助你随机生成各种尺寸，不同颜色和形状的SVG Blob。你可以用作背景或创建看起来很酷的动画。</li>
-<li>Getwavs<br><a href="https://getwaves.io/">https://getwaves.io</a><br>与Blobmaker相似，Get Waves能够随机生成不同颜色和不同数量的波浪。用作网页的页脚或页眉看起来不错。</li>
-<li>Undraw.co<br><a href="https://undraw.co/">https://undraw.co</a><br>开放源代码项目的SVG插图集，可用来做登录页面，404页面等，当然普通页面也能用!上面的插图可以不带归属地版权的使用，无需支付任何费用。</li>
-<li>Marcdown<br><a href="https://liyasthomas.github.io/marcdown">https://liyasthomas.github.io/marcdown</a><br>由Liyas Thomas提供的在线实时的Markdown网页编辑器，它可预览Markdown代码，将其发布到GitHub上。它提供一个非常漂亮的暗黑模式。还可脱机工作，这使得它显得更出色。</li>
-<li>postwoman<br><a href="https://postwoman.io/">https://postwoman.io</a><br>这是Liyas Thomas构建的另一个工具。Postwoman是一个API请求构建工作。开发者可以不使用代理来测试 API。这是一个渐进式Web应用程序，可以保存到桌面来用。它是轻量级的产品，基本上可以是Postman的在线替代品。</li>
-<li>Screely.com<br><a href="https://screely.com/">https://screely.com</a><br>它可以帮助你创建超级漂亮的网站截图模型。如果你不是MacBook用户，但需要更好的网站图片作为自述文件，它非常适合我们。</li>
-<li>CSS网格生成器<br><a href="https://cssgrid-generator.netlify.com/">https://cssgrid-generator.netlify.com/</a><br>这是Sarah Drasner的创建的优秀网站，它使用CSS创建动态网格布局。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>Glitch</tag>
-        <tag>Postman</tag>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -1947,6 +1878,75 @@
         <tag>Jetpack</tag>
         <tag>ViewModel</tag>
         <tag>DataBinding</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows修改DNS方法</title>
+    <url>/article/7c78b42f.html</url>
+    <content><![CDATA[<blockquote>
+<p>DNS是域名系统，我们链接互联网的时候，仅仅有一个IP地址是不够的，还需要设置域名，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取IP数串。通过域名，最终得到该域名对应IP地址的过程叫做域名解析（或主机名解析）。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>修改DNS的好处就是可以适当提高上网速度；更换DNS可以访问某些因为域名解析存在问题而不能访问的网站；可以屏蔽运营商的广告，还可以帮助您避免被钓鱼的危险；</p>
+<p>当然修改DNS也有可能带来副作用，比如无法访问页面或者访问的页面不是你想要的页面；访问速度没有你从运营商处获得的DNS访问分速度快，延时比较大；受到DNS劫持，插入广告和被钓鱼网站攻击。</p>
+<h3 id="Windows修改DNS步骤"><a href="#Windows修改DNS步骤" class="headerlink" title="Windows修改DNS步骤"></a>Windows修改DNS步骤</h3><p>1.打开windows设置，找到并单击“网络和Internet”选项;</p>
+<p>2.右侧下拉找到“更改适配器选项”，单击打开;</p>
+<p>3.右键你的以太网，选择“属性”打开;</p>
+<p>4.进入后下拉下方选项，找到“Internet 协议版本 4 (TCP/IPv4)”选项并选中，单击“属性”进入;</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_ipv4.png" alt="TCP/IPV4属性"></p>
+<p>5.进入后即可勾选为“使用下面的DNS服务器地址”选项，进行DNS服务器设置，确定保存即可。</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_server.png" alt="DNS服务器设置"></p>
+<p>6.返回桌面重启电脑或者重启网卡即可设置完成。</p>
+<h3 id="常用的DNS服务器"><a href="#常用的DNS服务器" class="headerlink" title="常用的DNS服务器"></a>常用的DNS服务器</h3><ul>
+<li><p>阿里的DNS是223.5.5.5和223.6.6.6</p>
+</li>
+<li><p>百度的DNS是180.76.76.76</p>
+</li>
+<li><p>114的DNS是114.114.114.114和114.114.115.115</p>
+</li>
+<li><p>谷歌的DNS是8.8.8.8和8.8.8.4</p>
+</li>
+<li><p>微软官方推荐使用的DNS服务器地址为4.2.2.1以及4.2.2.2</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>DNS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web前端开发常用的开发工具</title>
+    <url>/article/bdc11bc8.html</url>
+    <content><![CDATA[<blockquote>
+<p>分享的关于Web前端开发常用的十款很优秀的开发工具汇总。</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li>Glitch<br><a href="https://glitch.com/">https://glitch.com</a><br>好的，这不仅仅是一个工具，还是一个非常棒的编码平台以及一个很棒的技术社区。我可以在内置代码编辑器的帮助下托管我的项目。支持多种语言，但最适合NodeJS。</li>
+<li>Shadows<br><a href="https://brumm.af/shadows">https://brumm.af/shadows</a><br>这个网站提供生成平滑阴影的CSS代码，可以创建平滑的边框阴影。它看起来真的很流畅，令人满意。</li>
+<li>Coolors<br><a href="https://coolors.co/">https://coolors.co</a><br>这是一款非常好的在线工具，可以为项目生成匹配的颜色方案。如果不喜欢当前的方案，按下空格键，它会重新生成一个配色方案，直到你满意~</li>
+<li>Blobmaker<br><a href="https://blobmaker.app/">https://blobmaker.app</a><br>Blobmaker可帮助你随机生成各种尺寸，不同颜色和形状的SVG Blob。你可以用作背景或创建看起来很酷的动画。</li>
+<li>Getwavs<br><a href="https://getwaves.io/">https://getwaves.io</a><br>与Blobmaker相似，Get Waves能够随机生成不同颜色和不同数量的波浪。用作网页的页脚或页眉看起来不错。</li>
+<li>Undraw.co<br><a href="https://undraw.co/">https://undraw.co</a><br>开放源代码项目的SVG插图集，可用来做登录页面，404页面等，当然普通页面也能用!上面的插图可以不带归属地版权的使用，无需支付任何费用。</li>
+<li>Marcdown<br><a href="https://liyasthomas.github.io/marcdown">https://liyasthomas.github.io/marcdown</a><br>由Liyas Thomas提供的在线实时的Markdown网页编辑器，它可预览Markdown代码，将其发布到GitHub上。它提供一个非常漂亮的暗黑模式。还可脱机工作，这使得它显得更出色。</li>
+<li>postwoman<br><a href="https://postwoman.io/">https://postwoman.io</a><br>这是Liyas Thomas构建的另一个工具。Postwoman是一个API请求构建工作。开发者可以不使用代理来测试 API。这是一个渐进式Web应用程序，可以保存到桌面来用。它是轻量级的产品，基本上可以是Postman的在线替代品。</li>
+<li>Screely.com<br><a href="https://screely.com/">https://screely.com</a><br>它可以帮助你创建超级漂亮的网站截图模型。如果你不是MacBook用户，但需要更好的网站图片作为自述文件，它非常适合我们。</li>
+<li>CSS网格生成器<br><a href="https://cssgrid-generator.netlify.com/">https://cssgrid-generator.netlify.com/</a><br>这是Sarah Drasner的创建的优秀网站，它使用CSS创建动态网格布局。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Glitch</tag>
+        <tag>Postman</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -2190,6 +2190,175 @@
         <tag>Java</tag>
         <tag>JDK</tag>
         <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java中的几个重要特性</title>
+    <url>/article/7f3a79dc.html</url>
+    <content><![CDATA[<blockquote>
+<p>Java应用中的几个重要特性：多态、泛型、反射、集合、正则、引用分类。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="1-多态"><a href="#1-多态" class="headerlink" title="1.多态"></a>1.多态</h3><p>多态就是同一个行为，使用不同的实例而发生不同的作用。在使用多态调用方法的时候，编译器检查父类中是否有该方法，如果有才能编译通过，例如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Animals</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">voice</span><span class="params">()</span></span>&#123;动物叫&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span> <span class="keyword">extends</span> <span class="title">Animals</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">voice</span><span class="params">()</span></span>&#123;猫叫&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testVoice</span><span class="params">(Animals a)</span></span>&#123;</span><br><span class="line">    a.voice();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    testVoice(<span class="keyword">new</span> Cat())；</span><br><span class="line"></span><br><span class="line">    Animals a = <span class="keyword">new</span> Cat();</span><br><span class="line">    a.voice();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>猫继承自动物这个类，Animals a = new Cat()是向上转型（父类引用指向子类对象），实际的<strong>运行时类型</strong>还是Cat，也就是说a instanceof Cat 表达式为真，因此调用a的voice()方法是猫叫。结合C的指针和内存分析来理解多态。</p>
+<h3 id="2-泛型"><a href="#2-泛型" class="headerlink" title="2.泛型"></a>2.泛型</h3><ol>
+<li>类型通配符</li>
+</ol>
+<ul>
+<li>&lt;? extends T&gt;表示该通配符所代表的类型是T类型的子类。</li>
+<li>&lt;? super T&gt;表示该通配符所代表的类型是T类型的父类</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T extends Closable&gt; <span class="function"><span class="keyword">void</span> <span class="title">close</span><span class="params">(T... a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(T temp:a)&#123;</span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(temp!=<span class="keyword">null</span>)&#123;</span><br><span class="line">                temp.close();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span>(IOException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>泛型不能用在静态属性上</li>
+<li>指定的类型不能为基本类型</li>
+</ol>
+<h3 id="3-反射"><a href="#3-反射" class="headerlink" title="3.反射"></a>3.反射</h3><ol>
+<li>获取目标类型的Class对象</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; a = Object.getClass();</span><br><span class="line">Class&lt;?&gt; b = T.class;</span><br><span class="line">Class&lt;?&gt; c = Class.forName(...);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>通过 Class 对象分别获取Constructor类对象、Method类对象 &amp; Field 类对象<ul>
+<li>不带 “Declared”的方法支持取出包括继承、公有（Public） &amp; 不包括有（Private）的构造函数</li>
+<li>带 “Declared”的方法是支持取出包括公共（Public）、保护（Protected）、默认（包）访问和私有（Private）的构造方法，但不包括继承的构造函数</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>Constructor</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的构造函数（公共/继承）</span></span><br><span class="line"><span class="function">Constructor&lt;T&gt; <span class="title">getConstructor</span><span class="params">(Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的构造函数（公共/继承） </span></span><br><span class="line">Constructor&lt;?&gt;[] getConstructors(); </span><br><span class="line"><span class="comment">//c.获取指定的构造函数（不包括继承）</span></span><br><span class="line"><span class="function">Constructor&lt;T&gt; <span class="title">getDeclaredConstructor</span><span class="params">(Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的构造函（不包括继承）</span></span><br><span class="line">Constructor&lt;?&gt;[] getDeclaredConstructors(); </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Field</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的属性（公共/继承）</span></span><br><span class="line"><span class="function">Field <span class="title">getField</span><span class="params">(String name)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的属性（公共/继承）</span></span><br><span class="line">Field[] getFields();</span><br><span class="line"><span class="comment">//c.获取指定的所有属性（不包括继承）</span></span><br><span class="line"><span class="function">Field <span class="title">getDeclaredField</span><span class="params">(String name)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的所有属性（不包括继承）</span></span><br><span class="line">Field[] getDeclaredFields();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Method</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的方法（公共/继承）</span></span><br><span class="line"><span class="function">Method <span class="title">getMethod</span><span class="params">(String name, Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的方法（公共/继承）</span></span><br><span class="line">Method[] getMethods();</span><br><span class="line"><span class="comment">//c.获取指定的方法 （不包括继承）</span></span><br><span class="line"><span class="function">Method <span class="title">getDeclaredMethod</span><span class="params">(String name, Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的方法（不包括继承）</span></span><br><span class="line">Method[] getDeclaredMethods();</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-集合"><a href="#4-集合" class="headerlink" title="4. 集合"></a>4. 集合</h3><ol>
+<li>迭代器遍历ArrayList</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line"><span class="keyword">while</span>(ite.hasNext())&#123;</span><br><span class="line">    Log.d(<span class="string">&quot;TAG&quot;</span>,ite.next());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>遍历Map</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//第一种：map.keySet()</span></span><br><span class="line"><span class="keyword">for</span> (String key : map.keySet()) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span>+ key + <span class="string">&quot; value= &quot;</span> + map.get(key));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二种：map.entrySet().iterator()</span></span><br><span class="line">Iterator&lt;Map.Entry&lt;String, String&gt;&gt; iterator = map.entrySet().iterator();</span><br><span class="line"><span class="keyword">while</span> (it.hasNext()) &#123;</span><br><span class="line">    Map.Entry&lt;String, String&gt; entry = it.next();</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span> + entry.getKey() + <span class="string">&quot; value= &quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br><span class="line">      </span><br><span class="line"><span class="comment">//第三种：map.entrySet()</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;String, String&gt; entry : map.entrySet())&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span> + entry.getKey() + <span class="string">&quot; value= &quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="comment">//第四种：map.values()</span></span><br><span class="line"><span class="keyword">for</span> (String v : map.values()) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;value= &quot;</span> + v);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>遍历 hashMap() 时 entrySet() 方法是将 key 和 value 全部取出来,所以性能开销是可以预计的, 而 keySet() 方法进行遍历的时候是根据取出的 key 值去查询对应的 value 值, 所以如果 key 值是比较简单的结构(如 1,2,3…)的话性能消耗上是比 entrySet() 方法低, 但随着 key 值得复杂度提高 entrySet() 的优势就会显露出来。</li>
+<li>在只遍历 key 的时候使用 keySet(), 在只遍历 value 的时候使用 values(), 在遍历 key-value 的时候使用 entrySet()。</li>
+</ol>
+<h3 id="5-正则"><a href="#5-正则" class="headerlink" title="5.正则"></a>5.正则</h3><p>RegexBuddy</p>
+<ol>
+<li>转义字符</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\n  \t  \\  \^  \$  \(  \)  \&#123;  </span><br><span class="line">\&#125;  \?  \+  \*  \|  \[  \]</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>标准字符集合（大写取反）</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">\d</th>
+<th align="left">0~9的任意一个数字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">\w</td>
+<td align="left">A<del>Z, a</del>z, 0~9, _中任意一个</td>
+</tr>
+<tr>
+<td align="left">\s</td>
+<td align="left">空格、制表符、换行符等空白符的任意一个</td>
+</tr>
+<tr>
+<td align="left">.</td>
+<td align="left">匹配任意一个字符</td>
+</tr>
+<tr>
+<td align="left">[]</td>
+<td align="left">匹配方括号中任意一个字符</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">方括号取反</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="left">方括号中表示范围</td>
+</tr>
+<tr>
+<td align="left">{}</td>
+<td align="left">花括号前正则表达式的重复次数，{m,n}至少m次，最多n次</td>
+</tr>
+<tr>
+<td align="left">?</td>
+<td align="left">花括号后加，非贪婪模式。非花括号后加，相当于{0,1}</td>
+</tr>
+<tr>
+<td align="left">+</td>
+<td align="left">前面的正则表达式至少出现一次，相当于{1,}</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">表达式不出现或出现多次，相当于{0,}</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">与字符串开始的地方匹配</td>
+</tr>
+<tr>
+<td align="left">$</td>
+<td align="left">与字符串结束的地方匹配</td>
+</tr>
+<tr>
+<td align="left">\b</td>
+<td align="left">匹配一个字符边界</td>
+</tr>
+<tr>
+<td align="left">|</td>
+<td align="left">匹配左边或者右边</td>
+</tr>
+<tr>
+<td align="left">(?=exp)</td>
+<td align="left">断言自身出现的位置的后面能匹配表达式exp</td>
+</tr>
+<tr>
+<td align="left">(?&lt;=exp)</td>
+<td align="left">断言自身出现的位置的前面能匹配表达式exp</td>
+</tr>
+<tr>
+<td align="left">(?!exp)</td>
+<td align="left">断言此位置的后面不能匹配表达式exp</td>
+</tr>
+<tr>
+<td align="left">(?&lt;!exp)</td>
+<td align="left">断言此位置的前面不能匹配表达式exp</td>
+</tr>
+</tbody></table>
+<h3 id="6-引用分类"><a href="#6-引用分类" class="headerlink" title="6.引用分类"></a>6.引用分类</h3><ol>
+<li>强引用:StrongReference:引用指向对象，gc运行时不回收</li>
+<li>软引用:SoftReference:gc运行时回收，（jvm内存不够）</li>
+<li>弱引用:WeakReference:gc运行时立即回收</li>
+<li>虚引用:PhantomReference:跟踪对象被回收的状态，必须与ReferenceQueue一起使用</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -2774,175 +2943,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java中的几个重要特性</title>
-    <url>/article/7f3a79dc.html</url>
-    <content><![CDATA[<blockquote>
-<p>Java应用中的几个重要特性：多态、泛型、反射、集合、正则、引用分类。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="1-多态"><a href="#1-多态" class="headerlink" title="1.多态"></a>1.多态</h3><p>多态就是同一个行为，使用不同的实例而发生不同的作用。在使用多态调用方法的时候，编译器检查父类中是否有该方法，如果有才能编译通过，例如：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Animals</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">voice</span><span class="params">()</span></span>&#123;动物叫&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span> <span class="keyword">extends</span> <span class="title">Animals</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">voice</span><span class="params">()</span></span>&#123;猫叫&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testVoice</span><span class="params">(Animals a)</span></span>&#123;</span><br><span class="line">    a.voice();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    testVoice(<span class="keyword">new</span> Cat())；</span><br><span class="line"></span><br><span class="line">    Animals a = <span class="keyword">new</span> Cat();</span><br><span class="line">    a.voice();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>猫继承自动物这个类，Animals a = new Cat()是向上转型（父类引用指向子类对象），实际的<strong>运行时类型</strong>还是Cat，也就是说a instanceof Cat 表达式为真，因此调用a的voice()方法是猫叫。结合C的指针和内存分析来理解多态。</p>
-<h3 id="2-泛型"><a href="#2-泛型" class="headerlink" title="2.泛型"></a>2.泛型</h3><ol>
-<li>类型通配符</li>
-</ol>
-<ul>
-<li>&lt;? extends T&gt;表示该通配符所代表的类型是T类型的子类。</li>
-<li>&lt;? super T&gt;表示该通配符所代表的类型是T类型的父类</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T extends Closable&gt; <span class="function"><span class="keyword">void</span> <span class="title">close</span><span class="params">(T... a)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(T temp:a)&#123;</span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(temp!=<span class="keyword">null</span>)&#123;</span><br><span class="line">                temp.close();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span>(IOException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>泛型不能用在静态属性上</li>
-<li>指定的类型不能为基本类型</li>
-</ol>
-<h3 id="3-反射"><a href="#3-反射" class="headerlink" title="3.反射"></a>3.反射</h3><ol>
-<li>获取目标类型的Class对象</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; a = Object.getClass();</span><br><span class="line">Class&lt;?&gt; b = T.class;</span><br><span class="line">Class&lt;?&gt; c = Class.forName(...);</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>通过 Class 对象分别获取Constructor类对象、Method类对象 &amp; Field 类对象<ul>
-<li>不带 “Declared”的方法支持取出包括继承、公有（Public） &amp; 不包括有（Private）的构造函数</li>
-<li>带 “Declared”的方法是支持取出包括公共（Public）、保护（Protected）、默认（包）访问和私有（Private）的构造方法，但不包括继承的构造函数</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>Constructor</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的构造函数（公共/继承）</span></span><br><span class="line"><span class="function">Constructor&lt;T&gt; <span class="title">getConstructor</span><span class="params">(Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的构造函数（公共/继承） </span></span><br><span class="line">Constructor&lt;?&gt;[] getConstructors(); </span><br><span class="line"><span class="comment">//c.获取指定的构造函数（不包括继承）</span></span><br><span class="line"><span class="function">Constructor&lt;T&gt; <span class="title">getDeclaredConstructor</span><span class="params">(Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的构造函（不包括继承）</span></span><br><span class="line">Constructor&lt;?&gt;[] getDeclaredConstructors(); </span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Field</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的属性（公共/继承）</span></span><br><span class="line"><span class="function">Field <span class="title">getField</span><span class="params">(String name)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的属性（公共/继承）</span></span><br><span class="line">Field[] getFields();</span><br><span class="line"><span class="comment">//c.获取指定的所有属性（不包括继承）</span></span><br><span class="line"><span class="function">Field <span class="title">getDeclaredField</span><span class="params">(String name)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的所有属性（不包括继承）</span></span><br><span class="line">Field[] getDeclaredFields();</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Method</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//a.获取指定的方法（公共/继承）</span></span><br><span class="line"><span class="function">Method <span class="title">getMethod</span><span class="params">(String name, Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//b.获取所有的方法（公共/继承）</span></span><br><span class="line">Method[] getMethods();</span><br><span class="line"><span class="comment">//c.获取指定的方法 （不包括继承）</span></span><br><span class="line"><span class="function">Method <span class="title">getDeclaredMethod</span><span class="params">(String name, Class&lt;?&gt;... parameterTypes)</span></span>;</span><br><span class="line"><span class="comment">//d.获取所有的方法（不包括继承）</span></span><br><span class="line">Method[] getDeclaredMethods();</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-集合"><a href="#4-集合" class="headerlink" title="4. 集合"></a>4. 集合</h3><ol>
-<li>迭代器遍历ArrayList</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line"><span class="keyword">while</span>(ite.hasNext())&#123;</span><br><span class="line">    Log.d(<span class="string">&quot;TAG&quot;</span>,ite.next());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>遍历Map</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//第一种：map.keySet()</span></span><br><span class="line"><span class="keyword">for</span> (String key : map.keySet()) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span>+ key + <span class="string">&quot; value= &quot;</span> + map.get(key));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二种：map.entrySet().iterator()</span></span><br><span class="line">Iterator&lt;Map.Entry&lt;String, String&gt;&gt; iterator = map.entrySet().iterator();</span><br><span class="line"><span class="keyword">while</span> (it.hasNext()) &#123;</span><br><span class="line">    Map.Entry&lt;String, String&gt; entry = it.next();</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span> + entry.getKey() + <span class="string">&quot; value= &quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br><span class="line">      </span><br><span class="line"><span class="comment">//第三种：map.entrySet()</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;String, String&gt; entry : map.entrySet())&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;key= &quot;</span> + entry.getKey() + <span class="string">&quot; value= &quot;</span> + entry.getValue());</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="comment">//第四种：map.values()</span></span><br><span class="line"><span class="keyword">for</span> (String v : map.values()) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;value= &quot;</span> + v);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>遍历 hashMap() 时 entrySet() 方法是将 key 和 value 全部取出来,所以性能开销是可以预计的, 而 keySet() 方法进行遍历的时候是根据取出的 key 值去查询对应的 value 值, 所以如果 key 值是比较简单的结构(如 1,2,3…)的话性能消耗上是比 entrySet() 方法低, 但随着 key 值得复杂度提高 entrySet() 的优势就会显露出来。</li>
-<li>在只遍历 key 的时候使用 keySet(), 在只遍历 value 的时候使用 values(), 在遍历 key-value 的时候使用 entrySet()。</li>
-</ol>
-<h3 id="5-正则"><a href="#5-正则" class="headerlink" title="5.正则"></a>5.正则</h3><p>RegexBuddy</p>
-<ol>
-<li>转义字符</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\n  \t  \\  \^  \$  \(  \)  \&#123;  </span><br><span class="line">\&#125;  \?  \+  \*  \|  \[  \]</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>标准字符集合（大写取反）</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th align="left">\d</th>
-<th align="left">0~9的任意一个数字</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">\w</td>
-<td align="left">A<del>Z, a</del>z, 0~9, _中任意一个</td>
-</tr>
-<tr>
-<td align="left">\s</td>
-<td align="left">空格、制表符、换行符等空白符的任意一个</td>
-</tr>
-<tr>
-<td align="left">.</td>
-<td align="left">匹配任意一个字符</td>
-</tr>
-<tr>
-<td align="left">[]</td>
-<td align="left">匹配方括号中任意一个字符</td>
-</tr>
-<tr>
-<td align="left">^</td>
-<td align="left">方括号取反</td>
-</tr>
-<tr>
-<td align="left">-</td>
-<td align="left">方括号中表示范围</td>
-</tr>
-<tr>
-<td align="left">{}</td>
-<td align="left">花括号前正则表达式的重复次数，{m,n}至少m次，最多n次</td>
-</tr>
-<tr>
-<td align="left">?</td>
-<td align="left">花括号后加，非贪婪模式。非花括号后加，相当于{0,1}</td>
-</tr>
-<tr>
-<td align="left">+</td>
-<td align="left">前面的正则表达式至少出现一次，相当于{1,}</td>
-</tr>
-<tr>
-<td align="left">*</td>
-<td align="left">表达式不出现或出现多次，相当于{0,}</td>
-</tr>
-<tr>
-<td align="left">^</td>
-<td align="left">与字符串开始的地方匹配</td>
-</tr>
-<tr>
-<td align="left">$</td>
-<td align="left">与字符串结束的地方匹配</td>
-</tr>
-<tr>
-<td align="left">\b</td>
-<td align="left">匹配一个字符边界</td>
-</tr>
-<tr>
-<td align="left">|</td>
-<td align="left">匹配左边或者右边</td>
-</tr>
-<tr>
-<td align="left">(?=exp)</td>
-<td align="left">断言自身出现的位置的后面能匹配表达式exp</td>
-</tr>
-<tr>
-<td align="left">(?&lt;=exp)</td>
-<td align="left">断言自身出现的位置的前面能匹配表达式exp</td>
-</tr>
-<tr>
-<td align="left">(?!exp)</td>
-<td align="left">断言此位置的后面不能匹配表达式exp</td>
-</tr>
-<tr>
-<td align="left">(?&lt;!exp)</td>
-<td align="left">断言此位置的前面不能匹配表达式exp</td>
-</tr>
-</tbody></table>
-<h3 id="6-引用分类"><a href="#6-引用分类" class="headerlink" title="6.引用分类"></a>6.引用分类</h3><ol>
-<li>强引用:StrongReference:引用指向对象，gc运行时不回收</li>
-<li>软引用:SoftReference:gc运行时回收，（jvm内存不够）</li>
-<li>弱引用:WeakReference:gc运行时立即回收</li>
-<li>虚引用:PhantomReference:跟踪对象被回收的状态，必须与ReferenceQueue一起使用</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java Lambda 表达式</title>
     <url>/article/8e84b9d0.html</url>
     <content><![CDATA[<blockquote>
@@ -3143,6 +3143,45 @@
       </tags>
   </entry>
   <entry>
+    <title>Java的反射机制</title>
+    <url>/article/5337b80a.html</url>
+    <content><![CDATA[<blockquote>
+<p>Reflection 是 Java 程序开发语言的特征之一，它允许运行中的 Java 程序对自身进行检查，或者说“自审”，并能直接操作程序的内部属性。Java 的这一能力在实际应用中也许用得不是很多，但是在其它的程序设计语言中根本就不存在这一特性。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Java的类加载"><a href="#Java的类加载" class="headerlink" title="Java的类加载"></a>Java的类加载</h2><ul>
+<li>编译：java文件编译后生成class字节码文件</li>
+<li>类加载机制：JVM把class文件加载到内存，并对数据进行校验、准备、解析、初始化，最终形成JVM可以直接使用的Java类型的过程。<br><img src="https://img-blog.csdnimg.cn/cc40b19fbce5410f877a062d3f225fca.png" alt="类加载机制"><h2 id="Java的反射机制"><a href="#Java的反射机制" class="headerlink" title="Java的反射机制"></a>Java的反射机制</h2>Java反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法，这种动态获取、调用对象方法的功能称为Java语言的反射机制。</li>
+</ul>
+<p>Java的反射就是利用上面第二步加载到JVM中的.class文件来进行操作的。.class文件中包含java类的所有信息，当你不知道某个类具体信息时，可以使用反射获取class，然后进行各种操作。要想解剖一个类,必须先要获取到该类的字节码文件对象。而解剖使用的就是Class类中的方法，所以先要获取到每一个字节码文件对应的Class类型的对象。</p>
+<p>总体来说，反射就是把java类中的各种成分映射成一个个的Java对象，并且可以进行操作。例如一个类有成员变量、方法、构造方法、包等等信息，利用反射技术可以对一个类进行解剖，把个个组成部分映射成一个个对象。</p>
+<blockquote>
+<p>反射的必要性：<br>1.反射机制是很多java框架的基石。<br>2.有时候要适应某些需求，Java类里面不一定能直接调用另外的方法，这时候也可以通过反射机制来实现。</p>
+<p>反射的缺点：<br>反射的代码比正常调用的代码更多，性能也慢，所以应避免使用反射。</p>
+</blockquote>
+<h2 id="Java反射获取对象"><a href="#Java反射获取对象" class="headerlink" title="Java反射获取对象"></a>Java反射获取对象</h2><blockquote>
+<p>Class类：代表一个类<br>Constructor类：代表类的构造方法<br>Field类：代表类的成员变量（类的属性）<br>Method类：代表类的方法</p>
+</blockquote>
+<h3 id="1-获取Class对象"><a href="#1-获取Class对象" class="headerlink" title="1.获取Class对象"></a>1.获取Class对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取Class对象的三种方式</span><br><span class="line"><span class="number">1.</span>通过对象获取      对象名.getClass()</span><br><span class="line"><span class="number">2.</span>通过类名获取      类名.class </span><br><span class="line"><span class="number">3.</span>通过全类名获取    Class.forName(全类名)   </span><br><span class="line"></span><br><span class="line">三种方式常用第三种，第一种对象都有了还要反射干什么。第二种需要导入类的包，依赖太强，不导包就抛编译错误。一般都第三种，一个字符串可以传入也可写在配置文件中等多种方法。</span><br><span class="line"></span><br><span class="line"><span class="comment">//第三中方式获取Class对象</span></span><br><span class="line">Class stuClass = Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);<span class="comment">//注意此字符串必须是真实路径，就是带包名的类路径，包名.类名</span></span><br><span class="line">System.out.println(stuClass.getName());</span><br></pre></td></tr></table></figure>
+<h3 id="2-获取Constructor构造方法对象"><a href="#2-获取Constructor构造方法对象" class="headerlink" title="2.获取Constructor构造方法对象"></a>2.获取Constructor构造方法对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">通过Class对象可以获取某个类中的：构造方法、成员变量、成员方法；并访问成员；</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>获取构造方法：</span><br><span class="line"><span class="number">1</span>).批量的方法：</span><br><span class="line"><span class="keyword">public</span> Constructor[] getConstructors()：所有<span class="string">&quot;公有的&quot;</span>构造方法</span><br><span class="line"><span class="keyword">public</span> Constructor[] getDeclaredConstructors()：获取所有的构造方法(包括私有、受保护、默认、公有)</span><br><span class="line">     </span><br><span class="line"><span class="number">2</span>).获取单个的方法，并调用：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Constructor <span class="title">getConstructor</span><span class="params">(Class... parameterTypes)</span>:获取单个的&quot;公有的&quot;构造方法：</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Constructor <span class="title">getDeclaredConstructor</span><span class="params">(Class... parameterTypes)</span>:获取&quot;某个构造方法&quot;可以是私有的，或受保护、默认、公有；</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">调用构造方法：</span></span><br><span class="line"><span class="function">Constructor--&gt;<span class="title">newInstance</span><span class="params">(Object... initargs)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2.newInstance是 Constructor类的方法（管理构造函数的类）</span></span><br><span class="line"><span class="function">api的解释为：<span class="title">newInstance</span><span class="params">(Object... initargs)</span></span></span><br><span class="line"><span class="function">使用此 Constructor 对象表示的构造方法来创建该构造方法的声明类的新实例，并用指定的初始化参数初始化该实例。</span></span><br><span class="line"><span class="function">它的返回值是T类型，所以newInstance是创建了一个构造方法的声明类的新实例对象。并为之调用</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3.Constructor con </span>= clazz.getConstructor(<span class="keyword">null</span>);</span><br><span class="line"><span class="number">1</span>)因为是无参的构造方法所以类型是一个<span class="keyword">null</span>,不写也可以：这里需要的是一个参数的类型，切记是类型</span><br><span class="line"><span class="number">2</span>)返回的是描述这个无参构造函数的类对象。</span><br><span class="line">    </span><br><span class="line"><span class="comment">//1.加载Class对象</span></span><br><span class="line">Class clazz = Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Constructor  con = clazz.getDeclaredConstructor(<span class="keyword">char</span>.class);</span><br><span class="line">System.out.println(con);</span><br><span class="line"><span class="comment">//调用构造方法</span></span><br><span class="line">con.setAccessible(<span class="keyword">true</span>);<span class="comment">//暴力访问(忽略掉访问修饰符)</span></span><br><span class="line">Object obj = con.newInstance(<span class="string">&#x27;男&#x27;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;obj = &quot;</span> + obj);</span><br><span class="line"><span class="comment">//Student stu = (Student)obj;</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-获取Field成员变量对象"><a href="#3-获取Field成员变量对象" class="headerlink" title="3.获取Field成员变量对象"></a>3.获取Field成员变量对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取成员变量并调用：</span><br><span class="line"><span class="number">1.</span>批量的</span><br><span class="line">Field[] getFields():获取所有的<span class="string">&quot;公有字段&quot;</span></span><br><span class="line">Field[] getDeclaredFields():获取所有字段，包括：私有、受保护、默认、公有；</span><br><span class="line"><span class="number">2.</span>获取单个的：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Field <span class="title">getField</span><span class="params">(String fieldName)</span>:获取某个&quot;公有的&quot;字段；</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Field <span class="title">getDeclaredField</span><span class="params">(String fieldName)</span>:获取某个字段<span class="params">(可以是私有的)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">设置字段的值：</span></span><br><span class="line"><span class="function">Field --&gt; <span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(Object obj,Object value)</span>:</span></span><br><span class="line"><span class="function">第一个参数：要传入设置的对象，第二个参数：要传入实参</span></span><br><span class="line"><span class="function">参数说明：</span></span><br><span class="line"><span class="function">1.obj:要设置的字段所在的对象；</span></span><br><span class="line"><span class="function">2.value:要为字段设置的值；</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">//1.获取Class对象</span></span></span><br><span class="line"><span class="function">Class stuClass </span>= Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Field f = stuClass.getDeclaredField(<span class="string">&quot;name&quot;</span>);</span><br><span class="line"><span class="comment">//获取一个对象</span></span><br><span class="line">Object obj = stuClass.getConstructor().newInstance();<span class="comment">//产生Student对象--》Student stu = new Student();</span></span><br><span class="line">f.setAccessible(<span class="keyword">true</span>);<span class="comment">//暴力反射，解除私有限定</span></span><br><span class="line"><span class="comment">//为字段设置值</span></span><br><span class="line">f.set(obj, <span class="string">&quot;刘德华&quot;</span>);<span class="comment">//为Student对象中的name属性赋值--》stu.name = &quot;刘德华&quot;</span></span><br><span class="line"><span class="comment">//验证</span></span><br><span class="line">Student stu = (Student)obj;</span><br><span class="line">System.out.println(<span class="string">&quot;验证姓名：&quot;</span> + stu.name);</span><br></pre></td></tr></table></figure>
+<h3 id="4-获取Method成员方法对象"><a href="#4-获取Method成员方法对象" class="headerlink" title="4.获取Method成员方法对象"></a>4.获取Method成员方法对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取成员方法并调用：</span><br><span class="line"><span class="number">1.</span>批量的：</span><br><span class="line"><span class="keyword">public</span> Method[] getMethods():获取所有<span class="string">&quot;公有方法&quot;</span>；（包含了父类的方法也包含Object类）</span><br><span class="line"><span class="keyword">public</span> Method[] getDeclaredMethods():获取所有的成员方法，包括私有的(不包括继承的)</span><br><span class="line"><span class="number">2.</span>获取单个的：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Method <span class="title">getMethod</span><span class="params">(String name,Class&lt;?&gt;... parameterTypes)</span>:</span></span><br><span class="line"><span class="function">参数：</span></span><br><span class="line"><span class="function">name : 方法名；</span></span><br><span class="line"><span class="function">Class ... : 形参的Class类型对象</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Method <span class="title">getDeclaredMethod</span><span class="params">(String name,Class&lt;?&gt;... parameterTypes)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">调用方法：</span></span><br><span class="line"><span class="function">Method --&gt; <span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object obj,Object... args)</span>:</span></span><br><span class="line"><span class="function">参数说明：</span></span><br><span class="line"><span class="function">obj : 要调用方法的对象；</span></span><br><span class="line"><span class="function">args:调用方式时所传递的实参；</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">//1.获取Class对象</span></span></span><br><span class="line"><span class="function">Class stuClass </span>= Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Method m = stuClass.getMethod(<span class="string">&quot;show1&quot;</span>, String.class);</span><br><span class="line">System.out.println(m);</span><br><span class="line"><span class="comment">//m.setAccessible(true);//解除私有限定</span></span><br><span class="line"><span class="comment">//实例化一个Student对象</span></span><br><span class="line">Object obj = stuClass.getConstructor().newInstance();</span><br><span class="line">Object result = m.invoke(obj, <span class="string">&quot;刘德华&quot;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;返回值：&quot;</span> + result);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[1] <a href="https://www.cnblogs.com/tech-bird/p/3525336.html">https://www.cnblogs.com/tech-bird/p/3525336.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Reflection</tag>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>OpenAPI的介绍及其使用</title>
     <url>/article/f7f06827.html</url>
     <content><![CDATA[<blockquote>
@@ -3188,42 +3227,54 @@
       </tags>
   </entry>
   <entry>
-    <title>Java的反射机制</title>
-    <url>/article/5337b80a.html</url>
+    <title>130_tech-samba</title>
+    <url>/article/67e1ad8.html</url>
     <content><![CDATA[<blockquote>
-<p>Reflection 是 Java 程序开发语言的特征之一，它允许运行中的 Java 程序对自身进行检查，或者说“自审”，并能直接操作程序的内部属性。Java 的这一能力在实际应用中也许用得不是很多，但是在其它的程序设计语言中根本就不存在这一特性。</p>
+<p>Samba是在Linux和UNIX系统上实现SMB协议的一个免费软件，由服务器及客户端程序构成。SMB（Server Messages Block，信息服务块）是一种在局域网上共享文件和打印机的一种通信协议，它为局域网内的不同计算机之间提供文件及打印机等资源的共享服务。SMB协议是客户机/服务器型协议，客户机通过该协议可以访问服务器上的共享文件系统、打印机及其他资源。</p>
 </blockquote>
 <a id="more"></a>
 
-<h2 id="Java的类加载"><a href="#Java的类加载" class="headerlink" title="Java的类加载"></a>Java的类加载</h2><ul>
-<li>编译：java文件编译后生成class字节码文件</li>
-<li>类加载机制：JVM把class文件加载到内存，并对数据进行校验、准备、解析、初始化，最终形成JVM可以直接使用的Java类型的过程。<br><img src="https://img-blog.csdnimg.cn/cc40b19fbce5410f877a062d3f225fca.png" alt="类加载机制"><h2 id="Java的反射机制"><a href="#Java的反射机制" class="headerlink" title="Java的反射机制"></a>Java的反射机制</h2>Java反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法，这种动态获取、调用对象方法的功能称为Java语言的反射机制。</li>
+<ul>
+<li>samba</li>
 </ul>
-<p>Java的反射就是利用上面第二步加载到JVM中的.class文件来进行操作的。.class文件中包含java类的所有信息，当你不知道某个类具体信息时，可以使用反射获取class，然后进行各种操作。要想解剖一个类,必须先要获取到该类的字节码文件对象。而解剖使用的就是Class类中的方法，所以先要获取到每一个字节码文件对应的Class类型的对象。</p>
-<p>总体来说，反射就是把java类中的各种成分映射成一个个的Java对象，并且可以进行操作。例如一个类有成员变量、方法、构造方法、包等等信息，利用反射技术可以对一个类进行解剖，把个个组成部分映射成一个个对象。</p>
-<blockquote>
-<p>反射的必要性：<br>1.反射机制是很多java框架的基石。<br>2.有时候要适应某些需求，Java类里面不一定能直接调用另外的方法，这时候也可以通过反射机制来实现。</p>
-<p>反射的缺点：<br>反射的代码比正常调用的代码更多，性能也慢，所以应避免使用反射。</p>
-</blockquote>
-<h2 id="Java反射获取对象"><a href="#Java反射获取对象" class="headerlink" title="Java反射获取对象"></a>Java反射获取对象</h2><blockquote>
-<p>Class类：代表一个类<br>Constructor类：代表类的构造方法<br>Field类：代表类的成员变量（类的属性）<br>Method类：代表类的方法</p>
-</blockquote>
-<h3 id="1-获取Class对象"><a href="#1-获取Class对象" class="headerlink" title="1.获取Class对象"></a>1.获取Class对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取Class对象的三种方式</span><br><span class="line"><span class="number">1.</span>通过对象获取      对象名.getClass()</span><br><span class="line"><span class="number">2.</span>通过类名获取      类名.class </span><br><span class="line"><span class="number">3.</span>通过全类名获取    Class.forName(全类名)   </span><br><span class="line"></span><br><span class="line">三种方式常用第三种，第一种对象都有了还要反射干什么。第二种需要导入类的包，依赖太强，不导包就抛编译错误。一般都第三种，一个字符串可以传入也可写在配置文件中等多种方法。</span><br><span class="line"></span><br><span class="line"><span class="comment">//第三中方式获取Class对象</span></span><br><span class="line">Class stuClass = Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);<span class="comment">//注意此字符串必须是真实路径，就是带包名的类路径，包名.类名</span></span><br><span class="line">System.out.println(stuClass.getName());</span><br></pre></td></tr></table></figure>
-<h3 id="2-获取Constructor构造方法对象"><a href="#2-获取Constructor构造方法对象" class="headerlink" title="2.获取Constructor构造方法对象"></a>2.获取Constructor构造方法对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">通过Class对象可以获取某个类中的：构造方法、成员变量、成员方法；并访问成员；</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>获取构造方法：</span><br><span class="line"><span class="number">1</span>).批量的方法：</span><br><span class="line"><span class="keyword">public</span> Constructor[] getConstructors()：所有<span class="string">&quot;公有的&quot;</span>构造方法</span><br><span class="line"><span class="keyword">public</span> Constructor[] getDeclaredConstructors()：获取所有的构造方法(包括私有、受保护、默认、公有)</span><br><span class="line">     </span><br><span class="line"><span class="number">2</span>).获取单个的方法，并调用：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Constructor <span class="title">getConstructor</span><span class="params">(Class... parameterTypes)</span>:获取单个的&quot;公有的&quot;构造方法：</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Constructor <span class="title">getDeclaredConstructor</span><span class="params">(Class... parameterTypes)</span>:获取&quot;某个构造方法&quot;可以是私有的，或受保护、默认、公有；</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">调用构造方法：</span></span><br><span class="line"><span class="function">Constructor--&gt;<span class="title">newInstance</span><span class="params">(Object... initargs)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2.newInstance是 Constructor类的方法（管理构造函数的类）</span></span><br><span class="line"><span class="function">api的解释为：<span class="title">newInstance</span><span class="params">(Object... initargs)</span></span></span><br><span class="line"><span class="function">使用此 Constructor 对象表示的构造方法来创建该构造方法的声明类的新实例，并用指定的初始化参数初始化该实例。</span></span><br><span class="line"><span class="function">它的返回值是T类型，所以newInstance是创建了一个构造方法的声明类的新实例对象。并为之调用</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3.Constructor con </span>= clazz.getConstructor(<span class="keyword">null</span>);</span><br><span class="line"><span class="number">1</span>)因为是无参的构造方法所以类型是一个<span class="keyword">null</span>,不写也可以：这里需要的是一个参数的类型，切记是类型</span><br><span class="line"><span class="number">2</span>)返回的是描述这个无参构造函数的类对象。</span><br><span class="line">    </span><br><span class="line"><span class="comment">//1.加载Class对象</span></span><br><span class="line">Class clazz = Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Constructor  con = clazz.getDeclaredConstructor(<span class="keyword">char</span>.class);</span><br><span class="line">System.out.println(con);</span><br><span class="line"><span class="comment">//调用构造方法</span></span><br><span class="line">con.setAccessible(<span class="keyword">true</span>);<span class="comment">//暴力访问(忽略掉访问修饰符)</span></span><br><span class="line">Object obj = con.newInstance(<span class="string">&#x27;男&#x27;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;obj = &quot;</span> + obj);</span><br><span class="line"><span class="comment">//Student stu = (Student)obj;</span></span><br></pre></td></tr></table></figure>
-<h3 id="3-获取Field成员变量对象"><a href="#3-获取Field成员变量对象" class="headerlink" title="3.获取Field成员变量对象"></a>3.获取Field成员变量对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取成员变量并调用：</span><br><span class="line"><span class="number">1.</span>批量的</span><br><span class="line">Field[] getFields():获取所有的<span class="string">&quot;公有字段&quot;</span></span><br><span class="line">Field[] getDeclaredFields():获取所有字段，包括：私有、受保护、默认、公有；</span><br><span class="line"><span class="number">2.</span>获取单个的：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Field <span class="title">getField</span><span class="params">(String fieldName)</span>:获取某个&quot;公有的&quot;字段；</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Field <span class="title">getDeclaredField</span><span class="params">(String fieldName)</span>:获取某个字段<span class="params">(可以是私有的)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">设置字段的值：</span></span><br><span class="line"><span class="function">Field --&gt; <span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(Object obj,Object value)</span>:</span></span><br><span class="line"><span class="function">第一个参数：要传入设置的对象，第二个参数：要传入实参</span></span><br><span class="line"><span class="function">参数说明：</span></span><br><span class="line"><span class="function">1.obj:要设置的字段所在的对象；</span></span><br><span class="line"><span class="function">2.value:要为字段设置的值；</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">//1.获取Class对象</span></span></span><br><span class="line"><span class="function">Class stuClass </span>= Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Field f = stuClass.getDeclaredField(<span class="string">&quot;name&quot;</span>);</span><br><span class="line"><span class="comment">//获取一个对象</span></span><br><span class="line">Object obj = stuClass.getConstructor().newInstance();<span class="comment">//产生Student对象--》Student stu = new Student();</span></span><br><span class="line">f.setAccessible(<span class="keyword">true</span>);<span class="comment">//暴力反射，解除私有限定</span></span><br><span class="line"><span class="comment">//为字段设置值</span></span><br><span class="line">f.set(obj, <span class="string">&quot;刘德华&quot;</span>);<span class="comment">//为Student对象中的name属性赋值--》stu.name = &quot;刘德华&quot;</span></span><br><span class="line"><span class="comment">//验证</span></span><br><span class="line">Student stu = (Student)obj;</span><br><span class="line">System.out.println(<span class="string">&quot;验证姓名：&quot;</span> + stu.name);</span><br></pre></td></tr></table></figure>
-<h3 id="4-获取Method成员方法对象"><a href="#4-获取Method成员方法对象" class="headerlink" title="4.获取Method成员方法对象"></a>4.获取Method成员方法对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取成员方法并调用：</span><br><span class="line"><span class="number">1.</span>批量的：</span><br><span class="line"><span class="keyword">public</span> Method[] getMethods():获取所有<span class="string">&quot;公有方法&quot;</span>；（包含了父类的方法也包含Object类）</span><br><span class="line"><span class="keyword">public</span> Method[] getDeclaredMethods():获取所有的成员方法，包括私有的(不包括继承的)</span><br><span class="line"><span class="number">2.</span>获取单个的：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Method <span class="title">getMethod</span><span class="params">(String name,Class&lt;?&gt;... parameterTypes)</span>:</span></span><br><span class="line"><span class="function">参数：</span></span><br><span class="line"><span class="function">name : 方法名；</span></span><br><span class="line"><span class="function">Class ... : 形参的Class类型对象</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Method <span class="title">getDeclaredMethod</span><span class="params">(String name,Class&lt;?&gt;... parameterTypes)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">调用方法：</span></span><br><span class="line"><span class="function">Method --&gt; <span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object obj,Object... args)</span>:</span></span><br><span class="line"><span class="function">参数说明：</span></span><br><span class="line"><span class="function">obj : 要调用方法的对象；</span></span><br><span class="line"><span class="function">args:调用方式时所传递的实参；</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">//1.获取Class对象</span></span></span><br><span class="line"><span class="function">Class stuClass </span>= Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Method m = stuClass.getMethod(<span class="string">&quot;show1&quot;</span>, String.class);</span><br><span class="line">System.out.println(m);</span><br><span class="line"><span class="comment">//m.setAccessible(true);//解除私有限定</span></span><br><span class="line"><span class="comment">//实例化一个Student对象</span></span><br><span class="line">Object obj = stuClass.getConstructor().newInstance();</span><br><span class="line">Object result = m.invoke(obj, <span class="string">&quot;刘德华&quot;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;返回值：&quot;</span> + result);</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">2.安装 samba</span><br><span class="line">sudo apt-get install samba</span><br><span class="line">3. 创建共享文件夹</span><br><span class="line">mkdir 777 /home/share</span><br><span class="line">4. 修改共享文件夹权限</span><br><span class="line">chmod 777 /home/share</span><br><span class="line">5. 编辑smb.conf</span><br><span class="line">vim /etc/samba/smb.conf (先检查vim是否安装，如果没有安装先安装sudo apt-get install vim)</span><br><span class="line">在文档的最后加入</span><br><span class="line">[share]</span><br><span class="line">path=/home/share</span><br><span class="line">available=yes</span><br><span class="line">browseable=yes</span><br><span class="line">public=yes</span><br><span class="line">writable=yes //这条只表明客户端可以创建文件并且能修改,但是却不能修改服务端创建出来的文件.</span><br><span class="line"></span><br><span class="line">6.重启samba服务</span><br><span class="line">service smbd restart</span><br><span class="line">7. 访问</span><br><span class="line">windows中，win+r 输入\ip</span><br><span class="line">或在工作组计算机中找到ubuntu主机即可访问</span><br><span class="line">ubuntu中，connect to server smb://ip/即可访问</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">原因是客户端创建出来的文件所属user是nobdoy, group是nogroup, 而服务端的user/group是kris/kris.</span><br><span class="line">两个不同用户和不同组不能相互修改.</span><br><span class="line"></span><br><span class="line">网上资料一般提供的方法都是直接将共享目录下的所有文件权限修改:</span><br><span class="line"><span class="comment"># chmod -R 777 /home/kris</span></span><br><span class="line"></span><br><span class="line">可是如果使用git,这种情况下用git status去查看会是一片红啊!</span><br><span class="line">而且如果服务端再新增文件呢,又要去改权限...</span><br><span class="line"></span><br><span class="line">其实smb.conf提供了另外一个配置叫force user, 它表示客户端默认创建的文件所属用户,</span><br><span class="line">只要和服务端设置成一样,那么就直接可以创建和修改所有文件了.</span><br><span class="line"></span><br><span class="line">最终添加的配置如下:</span><br><span class="line">[kris]</span><br><span class="line">comment=<span class="string">&quot;Kris&#x27;s Home&quot;</span></span><br><span class="line">path=/home/kris</span><br><span class="line">available = yes</span><br><span class="line">browseable = yes</span><br><span class="line">public = yes</span><br><span class="line">writable = yes</span><br><span class="line">create mask = 0644    //创建文件属性</span><br><span class="line">force user = kris    //和服务端用户一样</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>[1] <a href="https://www.cnblogs.com/tech-bird/p/3525336.html">https://www.cnblogs.com/tech-bird/p/3525336.html</a></p>
-</blockquote>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>技术流</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>Reflection</tag>
-        <tag>JVM</tag>
+        <tag>Samba</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于应用容器引擎Docker</title>
+    <url>/article/9ca11197.html</url>
+    <content><![CDATA[<blockquote>
+<p>Docker 是一个开源的应用容器引擎，优点是开箱即用，快速部署，可移植性强，环境隔离。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>Docker三要素</p>
+<ul>
+<li>镜像(Image) : </li>
+</ul>
+<p>​    Docker 镜像就是一个只读的模板，镜像可以用来创建Docker容器。Docker提供了一个很简单的机制来创建镜    像或者更新现有的镜像，用户甚至可以直接从其他人那里下载一个已经做好的镜像来直接使用。镜像是一种文    件结构。Dockerfile中的每条命令都会在文件系统中创建一个新的层次结构，文件系统在这些层次上构建起来，    镜像就构建于这些联合的文件系统之上。Docker官方网站专门有一个页面来存储所有可用的镜像，</p>
+<p>​    网址是: index.docker.io。</p>
+<ul>
+<li><p>容器( Container)</p>
+<p>容器是从镜像创建的运行实例。它可以被启动、开始、停止、删除。每个容器都是相互隔离的、保证安全的平台。可以把容器看做是一个简易版的Linux环境，Docker利用容器来运行应用。</p>
+</li>
+<li><p>仓库(Repository)</p>
+<p>仓库是集中存放镜像文件的场所,仓库注册服务器(Registry)上往往存放着多个仓库，每个仓库中又包含了多个镜像，每个镜像有不同的标签(tag)。目前，最大的公开仓库是 Docker Hub，存放了数量庞大的镜像供用户下载。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
       </tags>
   </entry>
   <entry>
@@ -3247,10 +3298,15 @@
 </li>
 <li><p>💬 Ask me about <strong>Android, Python, Linux</strong></p>
 </li>
-<li><p>📫 How to reach me <strong><a href="mailto:&#x66;&#97;&#110;&#103;&#106;&#105;&#x61;&#110;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#x66;&#97;&#110;&#103;&#106;&#105;&#x61;&#110;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;</a></strong></p>
+<li><p>📫 How to reach me <strong><a href="mailto:&#x66;&#x61;&#110;&#103;&#106;&#x69;&#97;&#x6e;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x66;&#x61;&#110;&#103;&#106;&#x69;&#97;&#x6e;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></strong></p>
 </li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>分类</title>
@@ -3332,17 +3388,21 @@
 <blockquote>
 <p>菜鸟教程提供了基础编程技术教程。菜鸟教程的 Slogan 为：学的不仅是技术，更是梦想！资源海量，覆盖了编程路上的方方面面。</p>
 </blockquote>
-<h2 id="导航网站"><a href="#导航网站" class="headerlink" title="导航网站"></a>导航网站</h2><p><strong>工具猫</strong> - <a href="https://www.toolmao.com/">toolmao.com</a></p>
+<h2 id="导航网站"><a href="#导航网站" class="headerlink" title="导航网站"></a>导航网站</h2><p><strong>CoderUtil程序员盒子</strong> - <a href="https://www.coderutil.com/">coderutil.com</a></p>
+<blockquote>
+<p>专注于程序员工作、学习、编程提效。</p>
+</blockquote>
+<p><strong>编程导航</strong> - <a href="https://www.code-nav.cn/">code-nav.cn</a></p>
+<blockquote>
+<p>提供人人皆可推荐的编程资源导航平台，帮助大家发现优质编程资源，是一个“可搜索”、“可复用”、“可量化” 、“可定制” 的资源系统。</p>
+</blockquote>
+<p><strong>工具猫</strong> - <a href="https://www.toolmao.com/">toolmao.com</a></p>
 <blockquote>
 <p>工具猫创建于2009年9月份，一直致力于为网友提供免费实用的小工具，从一开始的纯工具打包发布，到现在以更加方便的插件形式发布，我们一步步成长，期间坎坷不断，很幸运我们坚持到了现在，也很感谢一直关注着工具猫的朋友！</p>
 </blockquote>
 <p><strong>资源猫</strong> - <a href="https://www.ziyuanm.com/">ziyuanm.com</a></p>
 <blockquote>
 <p>资源猫网址导航是国内网民查找精品资源的首选平台。网站汇集了大量精品资源网站，涵盖新闻、视频、音乐、学习、社交、博客、设计、动漫等多方面的精品资源网站，切实为网民打造一个最全面、最实用、最人性化的资源网站大全。</p>
-</blockquote>
-<p><strong>编程导航</strong> - <a href="https://www.code-nav.cn/">code-nav.cn</a></p>
-<blockquote>
-<p>提供人人皆可推荐的编程资源导航平台，帮助大家发现优质编程资源，是一个“可搜索”、“可复用”、“可量化” 、“可定制” 的资源系统。</p>
 </blockquote>
 <p><strong>AboutPPT导航</strong> - <a href="https://www.aboutppt.com/">aboutppt.com</a></p>
 <blockquote>
@@ -3354,7 +3414,7 @@
 </blockquote>
 <p><strong>程序员网址导航</strong> - <a href="https://nav.vpssw.com/">nav.vpssw.com</a></p>
 <blockquote>
-<p> | 程序员必备实用网址导航</p>
+<p> 程序员必备实用网址导航</p>
 </blockquote>
 <h2 id="工具网站"><a href="#工具网站" class="headerlink" title="工具网站"></a>工具网站</h2><p><strong>wikiHow</strong> - <a href="https://zh.wikihow.com/%E9%A6%96%E9%A1%B5">zh.wikihow.com</a></p>
 <blockquote>
@@ -3363,6 +3423,10 @@
 <p><strong>uTools</strong> - <a href="https://www.u.tools/">u.tools</a></p>
 <blockquote>
 <p>新一代效率工具平台，自由组合插件应用，打造专属你的趁手工具集。</p>
+</blockquote>
+<p><strong>DevToys</strong>  - <a href="https://devtoys.app/">devtoys.app</a></p>
+<blockquote>
+<p>DevToys ——开发人员的瑞士军刀。DevToys 有助于完成日常任务，例如格式化 JSON、比较文本、测试 RegExp。无需使用许多不真实的网站来处理您的数据的简单任务。借助智能检测，DevToys 能够检测出可以处理您在 Windows 剪贴板中复制的数据的最佳工具。紧凑的覆盖可让您将应用程序保持在较小的位置并位于其他窗口的顶部。可以一次使用应用程序的多个实例。</p>
 </blockquote>
 <p><strong>Grammarly</strong> - <a href="https://www.grammarly.com/">grammarly.com</a></p>
 <blockquote>
@@ -3399,6 +3463,14 @@
 <p><strong>小霸王</strong> - <a href="https://www.yikm.net/">yikm.net</a></p>
 <blockquote>
 <p>小霸王，其乐无穷 。红白机，FC在线游戏，街机游戏，街机在线，NES games，NES games online，Super Mario。一个可以在线玩红白机的网站。</p>
+</blockquote>
+<p><strong>Wormhole</strong> - <a href="https://wormhole.app/">wormhole.app</a></p>
+<blockquote>
+<p>简单，私密的文件分享。Wormhole 让你能以端到端加密和自动过期链接的方式分享文件。 所以你可以确保你分享的文件私密且不会一直留在互联网上。 对于5GB以内的文件，Wormhole将在服务器上存储24小时。<br>对于大于5GB的文件，Wormhole使用点对点传输,直接从你的浏览器向接收者发送文件。所以你需要保持页面打开直到接收者下载完毕。与其他大多数网盘或文件分享服务不同，你可以立刻复制链接并发送给好友，无需等待上传结束。Wormhole 将此称为 “即时文件流”（instant file streaming）。</p>
+</blockquote>
+<p><strong>轻松传</strong> - <a href="https://easychuan.cn/">easychuan.cn</a></p>
+<blockquote>
+<p>轻松传在线传送文件、文本、屏幕和视频，随收随发，局域网互传首选。</p>
 </blockquote>
 <h2 id="指数工具"><a href="#指数工具" class="headerlink" title="指数工具"></a>指数工具</h2><p><strong>百度指数</strong> - <a href="https://index.baidu.com/v2/index.html#/">index.baidu.com</a></p>
 <blockquote>
@@ -3538,10 +3610,5 @@
 <p>Font Awesome 是数百万设计师、开发人员和内容创建者使用的互联网图标库和工具包。</p>
 </blockquote>
 ]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
