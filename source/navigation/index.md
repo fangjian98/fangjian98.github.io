@@ -305,3 +305,21 @@ Algrithm Visualizer - https://github.com/algorithm-visualizer/algorithm-visualiz
 **百度智能云** - [cloud.baidu.com](https://cloud.baidu.com/)
 
 > 百度智能云以“云智一体”为核心赋能千行百业，致力于为企业和开发者提供全球领先的人工智能、大数据和云计算服务以及简单易用的开发工具，加速产业智能化转型升级。
+
+## 图标库
+
+**Icons8** - [icons8.com](https://icons8.com/)
+
+> Icons8 中的矢量图标资源非常丰富，支持PNG格式免费下载。只需在搜索栏输入你想要查找的关键词即可。
+
+**IconPark** - [iconpark.oceanengine.com](https://iconpark.oceanengine.com/home)
+
+> IconPark图标库是一个通过技术驱动矢量图标样式的开源图标库，可以实现根据单一SVG源文件变换出多种主题， 具备丰富的分类、更轻量的代码和更灵活的使用场景；致力于构建高质量、统一化、可定义的图标资源，让大多数人都能够选择适合自己的风格图标
+
+**IconFont** - [iconfont.cn](https://www.iconfont.cn/)
+
+> 阿里妈妈MUX倾力打造的矢量图标管理、交流平台。设计师将图标上传到 iconfont 平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。
+
+**Font Awesome** - [fontawesome.com](https://fontawesome.com/)
+
+> Font Awesome 是数百万设计师、开发人员和内容创建者使用的互联网图标库和工具包。
