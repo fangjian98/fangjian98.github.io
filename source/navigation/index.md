@@ -154,10 +154,6 @@ date: 2022-04-30 18:38:04
 
 > 开发过程中很头疼的事情就是给变量或函数命名，Codelf 就是一个变量命名网站 。Codelf 是通过搜索在线开源平台Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Projec的项目源码，帮开发者从中找出已有的匹配关键字的变量名。它支持中文查询，可以根据需要查询尽可能满足我们所需要的结果，并展示与查询结果相关的支持各种编程语言的代码片段以及代码库。
 
-**All To All** - [alltoall.net](https://www.alltoall.net/)
-
-> 国内最全类型的在线文件转换平台，免费、快速，无须下载安装任何软件，致力于提供免费并且好用的在线转换服务。
-
 **虫部落** - [chongbuluo.com](https://www.chongbuluo.com/)
 
 > 虫部落是一个纯粹的搜索知识、技术和经验分享平台,虫部落快搜、虫部落学术搜索等搜索聚合工具均为虫部落原创出品,搜索世界的乐趣,就在虫部落!
@@ -166,13 +162,7 @@ date: 2022-04-30 18:38:04
 
 > 触类旁通Similarsites一个快速寻找类似网站的神器。SimilarSites是一个创新的推荐引擎，可以搜索互联网，为您提供更多您喜欢的内容。SimilarSites根据相关内容、Web结构、链接分析算法、详细的用户冲浪行为和庞大的用户排名社区，找到与您浏览的网站类似的网站，从而消除网络的混乱。
 
-**ToolFK** - [toolfk.com](https://www.toolfk.com/)
-
-> 最强工具人在线工具箱。
-
-**小霸王** - [yikm.net](https://www.yikm.net/)
-
-> 小霸王，其乐无穷 。红白机，FC在线游戏，街机游戏，街机在线，NES games，NES games online，Super Mario。一个可以在线玩红白机的网站。
+## 在线工具
 
 **Wormhole** - [wormhole.app](https://wormhole.app/)
 
@@ -182,6 +172,34 @@ date: 2022-04-30 18:38:04
 **轻松传** - [easychuan.cn](https://easychuan.cn/)
 
 > 轻松传在线传送文件、文本、屏幕和视频，随收随发，局域网互传首选。
+
+**OSCHINA工具** - [tool.oschina.net](https://tool.oschina.net/)
+
+> 由开源中国提供的在线工具集合，常用开发手册、对照表、代码处理、加密/格式化工具、正则等其他实用工具。
+
+**All To All** - [alltoall.net](https://www.alltoall.net/)
+
+> 国内最全类型的在线文件转换平台，免费、快速，无须下载安装任何软件，致力于提供免费并且好用的在线转换服务。
+
+**ToolFK** - [toolfk.com](https://www.toolfk.com/)
+
+> 最强工具人在线工具箱。
+
+**小霸王** - [yikm.net](https://www.yikm.net/)
+
+> 小霸王，其乐无穷 。红白机，FC在线游戏，街机游戏，街机在线，NES games，NES games online，Super Mario。一个可以在线玩红白机的网站。
+
+**RemoveBg** - [remove.bg](https://www.remove.bg/zh)
+
+> 在线抠图软件，图片去除背景图片，轻点一下，即可在5秒钟内100%自动去除背景，100% 全自动且免费。
+
+**Magic Eraser** - [magiceraser.io](https://www.magiceraser.io/)
+
+> 瞬间删除图像中不需要的部分上传图像，标记您需要删除的部分，下载修改后的图像。
+
+**iLoveIMG** - [iloveimg.com](https://www.iloveimg.com/zh-cn)
+
+> 为了简化图片的在线编辑推出的iLoveIMG。现在，你可以轻松地批量修改图片，操作速度非常快！这样你就可以把宝贵的时间留给更重要的事情。你需要的各种功能都在这儿，例如：压缩、裁剪、转换文件，以及调整文件的大小等。甚至还可以通过几个点击来制作GIF动图！是的，这也是免费的。
 
 ## 指数工具
 
@@ -224,6 +242,32 @@ date: 2022-04-30 18:38:04
 **MasterGo** - [mastergo.com](https://mastergo.com/)
 
 > 面向团队的专业 UI/UX 设计工具，多人同时编辑、随时在线评审、设计一键交付，让想法更快实现
+
+## 在线设计
+
+**搞定设计** - [gaoding.com](https://www.gaoding.com/)
+
+> 让设计更简单。搞定设计已在多媒体创作工具、AI辅助设计以及图形图像算法等领域储备了丰富的核心技术。作为国内首批SaaS服务开拓者，我们从全新视角为电商、社交电商提供视觉设计工具和内容。并在此基础上不断丰富、迭代、打磨，为全商业场景用户提供视觉解决方案，赋能爆发式增长的数字营销需求。
+
+**创客贴** - [chuangkit.com](https://www.chuangkit.com/)
+
+> 创客贴聚焦于创意设计领域，秉持用设计设计世界、让设计触手可得的使命， 提供全创意类型在线设计工具、创意版权内容、创意设计服务、数字资产管理、企业品牌云等产品和服务，为个人和企业提供一站式创意设计解决方案。
+
+**Fotor懒设计** - [fotor.com.cn](https://www.fotor.com.cn/)
+
+> Fotor是一款多平台（Mobile, Web, Mac & Windows）图片编辑和平面设计产品。跟随欧美设计风潮，Fotor的每一个界面都严格遵照极简主义理念，呈现给用户最流畅、最唯美的修图和设计体验。除了提供给广大用户轻便而又全能的图片编辑工具以外，Fotor的设计功能还能满足中小型创业公司、自媒体、学生团体和个体经营者的平面设计需求。通过专业设计师制作的模板几分钟便可以轻松完成一系列专业水准的平面设计。
+
+**Canva可画** - [canva.cn](https://www.canva.cn/)
+
+> Canva可画打造了一流的中文在线设计平台，整合了数以千万计的高清图片、中英文字体、原创模板、插画等视觉元素。Canva可画降低，在某些领域甚至消除了专业设计的门槛。即使是没有任何基础的用户，也可以通过运用Canva可画的中文模板，轻松完成包括社交媒体插图、海报、电商用图、演示文稿、信息图、小视频等在内的各种设计。
+
+## 排版工具
+
+135编辑器
+
+秀米
+
+i排版
 
 ## 算法学习
 
@@ -274,6 +318,10 @@ Algrithm Visualizer - https://github.com/algorithm-visualizer/algorithm-visualiz
 **Semi Design**：[semi.design](http://semi.design/zh-CN)
 
 > 全面、易用、优质的企业级产品设计系统。由字节跳动抖音前端与 UED 团队设计、开发并维护，包含设计语言、React 组件、主题等开箱即用的中后台解决方案，帮助设计师与开发者打造高质量产品。
+
+**Material Design** - [material.io](https://www.material.io/)
+
+> Material 是一个由指南、组件和工具组成的适应性系统，支持用户界面设计的最佳实践。在开源代码的支持下，Material 简化了设计师和开发人员之间的协作，并帮助团队快速构建精美的产品。
 
 ## 博客社区
 
