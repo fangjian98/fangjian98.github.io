@@ -406,3 +406,17 @@ Algrithm Visualizer - https://github.com/algorithm-visualizer/algorithm-visualiz
 **Font Awesome** - [fontawesome.com](https://fontawesome.com/)
 
 > Font Awesome 是数百万设计师、开发人员和内容创建者使用的互联网图标库和工具包。
+
+## 软件下载
+
+**SourceForge**  - [sourceforge.net](https://sourceforge.net/)
+
+> SourceForge 是全球最大的开放源代码软件开发平台和仓库。它集成了很多开放源代码应用程序，为软件开发提供了整套生命周期服务。SourceForge.net 是开放 源代码软件的开发者进行开发管理的集中式场所，也是源代码仓库。大量开源项目在此落户，包括维基百科使用的 MediaWiki，但也包含很多休眠和单个用户的项目。
+
+**Softonic** - [softonic.com](https://en.softonic.com/)
+
+> Softonic 是一个功能非常强大的软件下载网站，你可以利用这个网站下载电脑软件，安卓 App，苹果 App；网站还拥有强大的搜索功能，你可以利用这个网站轻松搜索到你需要下载的软件。
+
+**异次元** - [iplaysoft.com](https://www.iplaysoft.com/)
+
+> 异次元软件世界简称异次元，是一个致力推广优秀应用软件与互联网资源的网站，因我自己个人兴趣而建立。最初叫做《异次元の世界》，域名曾为 www.X-Force.cn，后来改版到现在的 iPlaySoft.com，目的是更加专注于“玩软件”的交流。
