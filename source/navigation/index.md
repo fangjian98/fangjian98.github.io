@@ -197,6 +197,10 @@ date: 2022-04-30 18:38:04
 
 > 最强工具人在线工具箱。
 
+**爱资料工具** - [toolnb.com](https://www.toolnb.com/)
+
+> 提供开发上的便捷工具。
+
 **小霸王** - [yikm.net](https://www.yikm.net/)
 
 > 小霸王，其乐无穷 。红白机，FC在线游戏，街机游戏，街机在线，NES games，NES games online，Super Mario。一个可以在线玩红白机的网站。
@@ -419,4 +423,4 @@ Algrithm Visualizer - https://github.com/algorithm-visualizer/algorithm-visualiz
 
 **异次元** - [iplaysoft.com](https://www.iplaysoft.com/)
 
-> 异次元软件世界简称异次元，是一个致力推广优秀应用软件与互联网资源的网站，因我自己个人兴趣而建立。最初叫做《异次元の世界》，域名曾为 www.X-Force.cn，后来改版到现在的 iPlaySoft.com，目的是更加专注于“玩软件”的交流。
+> 异次元软件世界简称异次元，是一个致力推广优秀应用软件与互联网资源的网站，因我自己个人兴趣而建立。最初叫做《异次元の世界》，域名曾为 X-Force.cn，后来改版到现在的 iPlaySoft.com，目的是更加专注于“玩软件”的交流。
