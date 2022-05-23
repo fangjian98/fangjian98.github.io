@@ -265,12 +265,10 @@
 <p>Samba是在Linux和UNIX系统上实现SMB协议的一个免费软件，由服务器及客户端程序构成。SMB（Server Messages Block，信息服务块）是一种在局域网上共享文件和打印机的一种通信协议，它为局域网内的不同计算机之间提供文件及打印机等资源的共享服务。SMB协议是客户机/服务器型协议，客户机通过该协议可以访问服务器上的共享文件系统、打印机及其他资源。</p>
 </blockquote>
 <a id="more"></a>
-
 <ul>
 <li>samba</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">2.安装 samba</span><br><span class="line">sudo apt-get install samba</span><br><span class="line">3. 创建共享文件夹</span><br><span class="line">mkdir 777 /home/share</span><br><span class="line">4. 修改共享文件夹权限</span><br><span class="line">chmod 777 /home/share</span><br><span class="line">5. 编辑smb.conf</span><br><span class="line">vim /etc/samba/smb.conf (先检查vim是否安装，如果没有安装先安装sudo apt-get install vim)</span><br><span class="line">在文档的最后加入</span><br><span class="line">[share]</span><br><span class="line">path=/home/share</span><br><span class="line">available=yes</span><br><span class="line">browseable=yes</span><br><span class="line">public=yes</span><br><span class="line">writable=yes //这条只表明客户端可以创建文件并且能修改,但是却不能修改服务端创建出来的文件.</span><br><span class="line"></span><br><span class="line">6.重启samba服务</span><br><span class="line">service smbd restart</span><br><span class="line">7. 访问</span><br><span class="line">windows中，win+r 输入\ip</span><br><span class="line">或在工作组计算机中找到ubuntu主机即可访问</span><br><span class="line">ubuntu中，connect to server smb://ip/即可访问</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">原因是客户端创建出来的文件所属user是nobdoy, group是nogroup, 而服务端的user/group是kris/kris.</span><br><span class="line">两个不同用户和不同组不能相互修改.</span><br><span class="line"></span><br><span class="line">网上资料一般提供的方法都是直接将共享目录下的所有文件权限修改:</span><br><span class="line"><span class="comment"># chmod -R 777 /home/kris</span></span><br><span class="line"></span><br><span class="line">可是如果使用git,这种情况下用git status去查看会是一片红啊!</span><br><span class="line">而且如果服务端再新增文件呢,又要去改权限...</span><br><span class="line"></span><br><span class="line">其实smb.conf提供了另外一个配置叫force user, 它表示客户端默认创建的文件所属用户,</span><br><span class="line">只要和服务端设置成一样,那么就直接可以创建和修改所有文件了.</span><br><span class="line"></span><br><span class="line">最终添加的配置如下:</span><br><span class="line">[kris]</span><br><span class="line">comment=<span class="string">&quot;Kris&#x27;s Home&quot;</span></span><br><span class="line">path=/home/kris</span><br><span class="line">available = yes</span><br><span class="line">browseable = yes</span><br><span class="line">public = yes</span><br><span class="line">writable = yes</span><br><span class="line">create mask = 0644    //创建文件属性</span><br><span class="line">force user = kris    //和服务端用户一样</span><br></pre></td></tr></table></figure>
-
 
     </div>
 
@@ -292,7 +290,10 @@
     <a href="/article/9ca11197.html" rel="prev" title="关于应用容器引擎Docker">
       <i class="fa fa-chevron-left"></i> 关于应用容器引擎Docker
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/article/7f5d33bf.html" rel="next" title="131">
+      131 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -366,7 +367,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-count">44</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

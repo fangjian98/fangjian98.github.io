@@ -268,12 +268,14 @@
 <p>JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。</p>
 </blockquote>
 <a id="more"></a>
-
-<h3 id="什么是Jetpack"><a href="#什么是Jetpack" class="headerlink" title="什么是Jetpack"></a>什么是Jetpack</h3><p>2018年谷歌I/O 发布了一系列辅助Android开发者的实用工具，合称Jetpack，以帮助开发者构建出色的 Android 应用。大体上，JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，开发者可以自主按需选择接入具体的哪个库。</p>
+<h3 id="什么是jetpack"><a class="markdownIt-Anchor" href="#什么是jetpack"></a> 什么是Jetpack</h3>
+<p>2018年谷歌I/O 发布了一系列辅助Android开发者的实用工具，合称Jetpack，以帮助开发者构建出色的 Android 应用。大体上，JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，开发者可以自主按需选择接入具体的哪个库。</p>
 <ul>
-<li><p>Goole IO 2017：Google 开始推出Architecture Component, ORM库Room, 用户生命周期管理的ViewModel/ListData。</p>
+<li>
+<p>Goole IO 2017：Google 开始推出Architecture Component, ORM库Room, 用户生命周期管理的ViewModel/ListData。</p>
 </li>
-<li><p>Goole IO 2018：将Support lib 更名为androidx，Google将许多正确的方案集中起来，以高效的开发Android APP。</p>
+<li>
+<p>Goole IO 2018：将Support lib 更名为androidx，Google将许多正确的方案集中起来，以高效的开发Android APP。</p>
 </li>
 </ul>
 <p>以上种种，现在统称为JetPack.其最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。</p>
@@ -283,25 +285,50 @@
 <li>消除样板代码</li>
 <li>编译功能强大的优质应用</li>
 </ul>
-<h3 id="Jetpack的组成"><a href="#Jetpack的组成" class="headerlink" title="Jetpack的组成"></a>Jetpack的组成</h3><p>Android Jetpack 组件覆盖以下 4 个方面：Foundation （基础组件）、Architecture（架构组件）、Behavior（行为组件）、UI（界面组件）。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack.png" alt="Android Jetpack"></p>
+<h3 id="jetpack的组成"><a class="markdownIt-Anchor" href="#jetpack的组成"></a> Jetpack的组成</h3>
+<p>Android Jetpack 组件覆盖以下 4 个方面：Foundation （基础组件）、Architecture（架构组件）、Behavior（行为组件）、UI（界面组件）。</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack.png" alt="Android Jetpack" /></p>
 <ol>
 <li>基础组件</li>
 </ol>
-<p>AppCompat：使得支持较低的 Android 版本。从以前继承 Activity 到现在继承 AppCompatActivity 就是属于这一部分<br>Android KTX：Kotlin 的扩展支持库<br>Multidex：多 dex 文件支持<br>Test：测试支持库</p>
+<p>AppCompat：使得支持较低的 Android 版本。从以前继承 Activity 到现在继承 AppCompatActivity 就是属于这一部分<br />
+Android KTX：Kotlin 的扩展支持库<br />
+Multidex：多 dex 文件支持<br />
+Test：测试支持库</p>
 <ol start="2">
 <li>架构组件</li>
 </ol>
-<p>Data Binding：MVVM 的一种实践<br>Lifecycles：管理你的 Activity 和 Fragment 生命周期<br>LiveData：通过观察者模式感知数据变化，类比 RxJava<br>Navigation：处理 Fragment 导航相关逻辑<br>Paging：分页数据加载方案<br>Room：官方 ORM 库<br>ViewModel：通过数据驱动 V 视图发生改变<br>WorkManager：管理后台任务</p>
+<p>Data Binding：MVVM 的一种实践<br />
+Lifecycles：管理你的 Activity 和 Fragment 生命周期<br />
+LiveData：通过观察者模式感知数据变化，类比 RxJava<br />
+Navigation：处理 Fragment 导航相关逻辑<br />
+Paging：分页数据加载方案<br />
+Room：官方 ORM 库<br />
+ViewModel：通过数据驱动 V 视图发生改变<br />
+WorkManager：管理后台任务</p>
 <ol start="3">
 <li>行为组件</li>
 </ol>
-<p>DownloadManager：管理下载任务<br>Media App：多媒体播放和一些向后兼容的API。主要包含 MediaPlayer 和 ExoPlayer<br>Notifications：提供向后兼容的通知 API，支持 Wear 和 Auto<br>Permissions：权限管理，这个应该都接触过。用于检查和请求应用权限<br>Settings：Preference 相关 API。基本每个应用都会用到<br>Share Action：提供分享操作。这块在国内使用的不多，都是自己封装或者采用第三方方案<br>Slices：可以让应用通过外部（其他 APP）显示 APP 界面（通过设备自带的搜索，语音助手等）</p>
+<p>DownloadManager：管理下载任务<br />
+Media App：多媒体播放和一些向后兼容的API。主要包含 MediaPlayer 和 ExoPlayer<br />
+Notifications：提供向后兼容的通知 API，支持 Wear 和 Auto<br />
+Permissions：权限管理，这个应该都接触过。用于检查和请求应用权限<br />
+Settings：Preference 相关 API。基本每个应用都会用到<br />
+Share Action：提供分享操作。这块在国内使用的不多，都是自己封装或者采用第三方方案<br />
+Slices：可以让应用通过外部（其他 APP）显示 APP 界面（通过设备自带的搜索，语音助手等）</p>
 <ol start="4">
 <li>界面组件</li>
 </ol>
-<p>Animations and Transitions：动画，界面转场等<br>Auto：针对车辆的标准化界面和模式<br>Emoji：表情符号相关<br>Fragment：基础概念<br>Layout：基础概念<br>Palette-Colors：调色板<br>TV：Android TV 开发相关<br>Wear：可穿戴设备（目前主要是手表）开发相关</p>
-<h3 id="相关参考"><a href="#相关参考" class="headerlink" title="相关参考"></a>相关参考</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34519487/article/details/103963912">https://blog.csdn.net/qq_34519487/article/details/103963912</a></p>
+<p>Animations and Transitions：动画，界面转场等<br />
+Auto：针对车辆的标准化界面和模式<br />
+Emoji：表情符号相关<br />
+Fragment：基础概念<br />
+Layout：基础概念<br />
+Palette-Colors：调色板<br />
+TV：Android TV 开发相关<br />
+Wear：可穿戴设备（目前主要是手表）开发相关</p>
+<h3 id="相关参考"><a class="markdownIt-Anchor" href="#相关参考"></a> 相关参考</h3>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34519487/article/details/103963912">https://blog.csdn.net/qq_34519487/article/details/103963912</a></p>
 <p><a target="_blank" rel="noopener" href="http://www.xiangxueketang.cn/enjoy/removal/article_6?sdclkid=AL2G15oN1526A6D6bo&amp;bd_vid=7921788666531507771">http://www.xiangxueketang.cn/enjoy/removal/article_6?sdclkid=AL2G15oN1526A6D6bo&amp;bd_vid=7921788666531507771</a></p>
 
     </div>
@@ -387,7 +414,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFJetpack"><span class="nav-number">1.</span> <span class="nav-text">什么是Jetpack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jetpack%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-number">2.</span> <span class="nav-text">Jetpack的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E5%8F%82%E8%80%83"><span class="nav-number">3.</span> <span class="nav-text">相关参考</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFjetpack"><span class="nav-number">1.</span> <span class="nav-text"> 什么是Jetpack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jetpack%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-number">2.</span> <span class="nav-text"> Jetpack的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E5%8F%82%E8%80%83"><span class="nav-number">3.</span> <span class="nav-text"> 相关参考</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -403,7 +430,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-count">44</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

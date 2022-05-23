@@ -271,13 +271,18 @@
 <p>Java概述：Java程序的Hello World、JDK安装和环境配置、Java的编译和运行、JVM虚拟机、Maven管理工具</p>
 </blockquote>
 <a id="more"></a>
-
-<h2 id="编辑Java源代码"><a href="#编辑Java源代码" class="headerlink" title="编辑Java源代码"></a>编辑Java源代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWord&#123;</span><br><span class="line">    &#x2F;&#x2F;java程序的入口方法，程序将从这里开始执行</span><br><span class="line">    public static void main (String[] args)&#123;</span><br><span class="line">        &#x2F;&#x2F;向控制台打印一条语句</span><br><span class="line">        System.out.println(&quot;Hello World!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="编译Java程序"><a href="#编译Java程序" class="headerlink" title="编译Java程序"></a>编译Java程序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac HelloWorld.java</span><br></pre></td></tr></table></figure>
-
-<h2 id="Java的运行机制"><a href="#Java的运行机制" class="headerlink" title="Java的运行机制"></a>Java的运行机制</h2><blockquote>
-<p>🍎Java程序运行时,必须经过编译和运行两个步骤。<br>🍊 首先将后缀名为.java的源文件进行编译,最终生成后缀名为.class的字节码文件。然后Java虚拟机将字节码文件进行解释执行,并将结果显示出来<br>🍉Java程序的运行过程详细解释<br>🍋1、编写一个HelloWorld.java文件<br>🍋2、使用javac HelloWorld.java 命令开启Java编译器并进行编译。编译结束后,会自动生成一个HelloWorld.class的字节码文件<br>🍋3、使用java HelloWorld 命令启动Java虚拟机运行程序,Java虚拟机首先将编译好的字节码文件加载到内存,<strong>这个过程被称为类加载</strong>,它是由类加载器完成的,然后虚拟机针对加载到内存中的Java类进行解释执行,便可看到运行结果</p>
+<h2 id="编辑java源代码"><a class="markdownIt-Anchor" href="#编辑java源代码"></a> 编辑Java源代码</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWord&#123;</span><br><span class="line">    &#x2F;&#x2F;java程序的入口方法，程序将从这里开始执行</span><br><span class="line">    public static void main (String[] args)&#123;</span><br><span class="line">        &#x2F;&#x2F;向控制台打印一条语句</span><br><span class="line">        System.out.println(&quot;Hello World!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="编译java程序"><a class="markdownIt-Anchor" href="#编译java程序"></a> 编译Java程序</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac HelloWorld.java</span><br></pre></td></tr></table></figure>
+<h2 id="java的运行机制"><a class="markdownIt-Anchor" href="#java的运行机制"></a> Java的运行机制</h2>
+<blockquote>
+<p>🍎Java程序运行时,必须经过编译和运行两个步骤。<br />
+🍊 首先将后缀名为.java的源文件进行编译,最终生成后缀名为.class的字节码文件。然后Java虚拟机将字节码文件进行解释执行,并将结果显示出来<br />
+🍉Java程序的运行过程详细解释<br />
+🍋1、编写一个HelloWorld.java文件<br />
+🍋2、使用javac HelloWorld.java 命令开启Java编译器并进行编译。编译结束后,会自动生成一个HelloWorld.class的字节码文件<br />
+🍋3、使用java HelloWorld 命令启动Java虚拟机运行程序,Java虚拟机首先将编译好的字节码文件加载到内存,<strong>这个过程被称为类加载</strong>,它是由类加载器完成的,然后虚拟机针对加载到内存中的Java类进行解释执行,便可看到运行结果</p>
 </blockquote>
 <p>以下关于Java的运行机制中描述正确的是：</p>
 <ol>
@@ -288,9 +293,10 @@
 <li>Java 开发工具包（Java Development Kit）用于开发Java程序，包含JRE和 Java 编译工具等</li>
 </ol>
 <blockquote>
-<p>Java语言具有”一次编写,到处运行(Write one , run anywhere)”的特点,有效地解释了程序设计语言在不同操作系统编译时产生不同机器代码的问题,大大降低了程序开发和维护的成本。需要注意的是,Java程序通过Java虚拟机可以达到跨平台特性,但Java虚拟机并不是跨平台的,也就是说,不同操作系统上的Java虚拟机是不同的,即Windows平台上的Java虚拟机不能使用在Linux平台上。</p>
+<p>Java语言具有&quot;一次编写,到处运行(Write one , run anywhere)&quot;的特点,有效地解释了程序设计语言在不同操作系统编译时产生不同机器代码的问题,大大降低了程序开发和维护的成本。需要注意的是,Java程序通过Java虚拟机可以达到跨平台特性,但Java虚拟机并不是跨平台的,也就是说,不同操作系统上的Java虚拟机是不同的,即Windows平台上的Java虚拟机不能使用在Linux平台上。</p>
 </blockquote>
-<h2 id="Java程序的环境配置"><a href="#Java程序的环境配置" class="headerlink" title="Java程序的环境配置"></a>Java程序的环境配置</h2><p>安装完JDK(Java Development Kit，Java开发套件)之后，可以在安装目录下找到两个子目录(bin目录和lib目录)。bin目录中包含着Java编译器等可执行文件。</p>
+<h2 id="java程序的环境配置"><a class="markdownIt-Anchor" href="#java程序的环境配置"></a> Java程序的环境配置</h2>
+<p>安装完JDK(Java Development Kit，Java开发套件)之后，可以在安装目录下找到两个子目录(bin目录和lib目录)。bin目录中包含着Java编译器等可执行文件。</p>
 <p>如果要运行执行java命令，必须得执行java命令对应的可执行文件的路径，通常有两种方式：</p>
 <ul>
 <li>在%JAVA_HOME%目录下执行。</li>
@@ -299,17 +305,15 @@
 <p>但是，这样不是特别方便，这就是为什么配置环境变量。</p>
 <p>JAVA_HOME环境变量</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\Java\jdk1.8.0_51\</span><br></pre></td></tr></table></figure>
-
 <p>通常将下面的内容加到PATH环境变量的最左侧：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JAVA_HOME%&#x2F;bin&#x2F;;%JAVA_HOME%&#x2F;jre&#x2F;bin</span><br></pre></td></tr></table></figure>
-
 <p>和PATH变量不同，CLASSPATH环境变量的作用是指定Java类所在的目录(或许它的意思就是<code>PATH of Class</code>)。</p>
 <p>Java中通常将环境变量CLASSPATH配置为<code>.;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar</code>。其中为何包含<code>.</code>，</p>
 <p>dt.jar：运行环境类库，主要是Swing包，这一点通过用压缩软件打开dt.jar也可以看到。如果在开发时候没有用到Swing包，那么可以不用将dt.jar添加到CLASSPATH变量中。</p>
 <p>tools.jar：工具类库，它跟我们程序中用到的基础类库没有关系。我们注意到在Path中变量值bin目录下的各个exe工具的大小都很小，一般都在27KB左右，这是因为它们实际上仅仅相当于是一层代码的包装，这些工具的实现所要用到的类库都在tools.jar中，用压缩软件打开tools.jar,你会发现有很多文件是和bin目录下的exe工具相对性的</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">c:\test&gt;type HelloWorld.java   #查看文本文件的内容</span><br><span class="line">public class HelloWorld&#123;</span><br><span class="line">        public static void main(String[] args) &#123;</span><br><span class="line">                &#x2F;&#x2F; TODO Auto-generated method stub</span><br><span class="line">                System.out.println(&quot;Hello World!!&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">c:\test&gt;javac HelloWorld.java   #因为配置了PATH环境变量，在任意目录下都可执行javac</span><br><span class="line"></span><br><span class="line">c:\test&gt;dir   #查看编译生成的class文件</span><br><span class="line">2016&#x2F;03&#x2F;28  22:13               427 HelloWorld.class</span><br><span class="line">2016&#x2F;03&#x2F;28  22:08               152 HelloWorld.java</span><br><span class="line">c:\test&gt;java HelloWorld   #运行HelloWorld(注意，不能加.class后缀)</span><br><span class="line">错误: 找不到或无法加载主类 HelloWorld</span><br></pre></td></tr></table></figure>
-
-<h2 id="Maven基础"><a href="#Maven基础" class="headerlink" title="Maven基础"></a>Maven基础</h2><p>Maven的作用</p>
+<h2 id="maven基础"><a class="markdownIt-Anchor" href="#maven基础"></a> Maven基础</h2>
+<p>Maven的作用</p>
 <p>maven本质上是一个项目管理工具，是将项目开发和管理过程抽象成一个项目对象模型（POM:project object model）</p>
 <p>maven可以为我们进行项目构建(提供标准化，跨平台的zi’dong话项目构建方式)，依赖管理(方便快捷的管理项目的依赖资源jar包，避免资源及版本的冲突)，同意开发结构：提供标准统一的项目结构。</p>
 <p>Maven的安装：maven属于是绿色软件，解压即安装</p>
@@ -329,24 +333,27 @@
 </ul>
 <p>Maven的基础概念</p>
 <p><strong>仓库</strong>：用于存储各种资源，包含各种jar包</p>
-<p><img src="https://img-blog.csdnimg.cn/c67076183eeb4a2394e5ee869ffecc44.png" alt="img"></p>
+<p><img src="https://img-blog.csdnimg.cn/c67076183eeb4a2394e5ee869ffecc44.png" alt="img" /></p>
 <p>仓库分类：</p>
 <ul>
 <li>本地仓库：自己电脑上存储资源的仓库，连接远程仓库获取资源</li>
 <li>远程仓库：非自己电脑上的仓库，为本地仓库提供资源</li>
-<li><ul>
+<li>
+<ul>
 <li>中央仓库：Maven团队维护，存储所有资源的仓库</li>
 <li>私服：部门/公司范围内存储的仓库，从中央仓库获取资源</li>
 </ul>
 </li>
 <li>私服的作用：</li>
-<li><ul>
+<li>
+<ul>
 <li>保存具有版权的资源，包含自主研发或购买的jar(中央仓库的的jar包都是开源的，不能存储具有版权的资源)</li>
 <li>一定范围内共享资源，仅对内部开放，不对外共享。</li>
 </ul>
 </li>
 </ul>
-<h4 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h4><p>坐标是用来在仓库中资源的位置的。</p>
+<h4 id="坐标"><a class="markdownIt-Anchor" href="#坐标"></a> 坐标</h4>
+<p>坐标是用来在仓库中资源的位置的。</p>
 <p><a target="_blank" rel="noopener" href="https://repo1.maven.org/maven2/%E8%AF%A5%E9%93%BE%E6%8E%A5%E4%B8%AD%E6%98%AFmaven%E4%B8%AD%E5%A4%AE%E4%BB%93%E5%BA%93%E8%B5%84%E6%BA%90%E3%80%82">https://repo1.maven.org/maven2/该链接中是maven中央仓库资源。</a></p>
 <p>maven坐标的组成：</p>
 <ul>
@@ -355,55 +362,71 @@
 <li>version:定义当前项目的版本号</li>
 <li>packaging:定义当前项目的打包方式</li>
 </ul>
-<h4 id="本地仓库配置"><a href="#本地仓库配置" class="headerlink" title="本地仓库配置"></a>本地仓库配置</h4><ol>
-<li><p>进入Maven的conf文件夹中的setting文件</p>
+<h4 id="本地仓库配置"><a class="markdownIt-Anchor" href="#本地仓库配置"></a> 本地仓库配置</h4>
+<ol>
+<li>
+<p>进入Maven的conf文件夹中的setting文件</p>
 <ul>
-<li><p>默认的仓库配置</p>
+<li>
+<p>默认的仓库配置</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;user.home&#125;&#x2F;.m2&#x2F;repository</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>自定义自己的仓库位置</p>
+<li>
+<p>自定义自己的仓库位置</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;settings&gt;</span><br><span class="line">&lt;localRepository&gt;D:\maven\repository&lt;&#x2F;localRepository&gt;</span><br><span class="line">&lt;&#x2F;settings&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>中央仓库的配置位置</p>
+<li>
+<p>中央仓库的配置位置</p>
 <p>在lib文件中随便找一个jar包用winrar打开，然后返回上一级目录搜索pom*.*,找到pom-4.0.0.xml文件，定位到。将文件拖出后打开。</p>
 </li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/9f4df60aad1443bca569a9a81a7a0763.png" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-3LTSJRym-1638532754173)(D:\Document\note\框架\maven\远程仓库.png)]"></p>
+<p><img src="https://img-blog.csdnimg.cn/9f4df60aad1443bca569a9a81a7a0763.png" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-3LTSJRym-1638532754173)(D:\Document\note\框架\maven\远程仓库.png)]" /></p>
 <ul>
-<li><p>远程镜像仓库的配置（当需要访问中央仓库的时候，就会去访问镜像仓库。ps:中央仓库在国外，访问速度慢）</p>
+<li>
+<p>远程镜像仓库的配置（当需要访问中央仓库的时候，就会去访问镜像仓库。ps:中央仓库在国外，访问速度慢）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 配置具体仓库的下载镜像 --&gt;</span><br><span class="line">&lt;mirror&gt;</span><br><span class="line">    &lt;!-- 此镜像的唯一标识符，用来区分不同的mirror元素 --&gt;</span><br><span class="line">    &lt;id&gt;ali-maven&lt;&#x2F;id&gt;</span><br><span class="line">    &lt;!-- 对哪种仓库进行镜像，简单说就是代替哪个仓库 --&gt;</span><br><span class="line">    &lt;mirrorOf&gt;central&lt;&#x2F;mirrorOf&gt;</span><br><span class="line">    &lt;!-- 镜像的名称 --&gt;</span><br><span class="line">    &lt;name&gt;aliyun maven&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;!-- 镜像的URL --&gt;</span><br><span class="line">    &lt;url&gt;http:&#x2F;&#x2F;maven.aliyun.com&#x2F;nexus&#x2F;content&#x2F;groups&#x2F;public&#x2F;&lt;&#x2F;url&gt;</span><br><span class="line">&lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure>
-
 </li>
 </ul>
 </li>
 </ol>
-<h4 id="Maven项目构建命令"><a href="#Maven项目构建命令" class="headerlink" title="Maven项目构建命令"></a>Maven项目构建命令</h4><p>后面的命令在执行的时候都会执行前面的命令，如：在执行install的时候前面的生命周期都会执行。</p>
+<h4 id="maven项目构建命令"><a class="markdownIt-Anchor" href="#maven项目构建命令"></a> Maven项目构建命令</h4>
+<p>后面的命令在执行的时候都会执行前面的命令，如：在执行install的时候前面的生命周期都会执行。</p>
 <ul>
-<li><p>mvn -v 查看版本</p>
+<li>
+<p>mvn -v 查看版本</p>
 </li>
-<li><p>mvn compile 编译(在src同级目录下生成一个target文件)</p>
+<li>
+<p>mvn compile 编译(在src同级目录下生成一个target文件)</p>
 </li>
-<li><p>mvn clean 清理(删除target文件)</p>
+<li>
+<p>mvn clean 清理(删除target文件)</p>
 </li>
-<li><p>mvn test 测试(会在编译同时将test的部分也编译，并执行test内测试方法的内容，在surefile-reports中生成报告内容)</p>
+<li>
+<p>mvn test 测试(会在编译同时将test的部分也编译，并执行test内测试方法的内容，在surefile-reports中生成报告内容)</p>
 </li>
-<li><p>mvn package 打包(target文件中生成一个jar包)</p>
+<li>
+<p>mvn package 打包(target文件中生成一个jar包)</p>
 </li>
-<li><p>mvn install 安装到自己本地仓库</p>
+<li>
+<p>mvn install 安装到自己本地仓库</p>
 </li>
-<li><p>mvn archetype: generate生成maven项目</p>
+<li>
+<p>mvn archetype: generate生成maven项目</p>
 </li>
 </ul>
-<h4 id="idea使用maven命令"><a href="#idea使用maven命令" class="headerlink" title="idea使用maven命令"></a>idea使用maven命令</h4><p> 在idea的右边有一个maven选项，打开后点击声明周期可以运行maven的命令（与命令效果相同）</p>
+<h4 id="idea使用maven命令"><a class="markdownIt-Anchor" href="#idea使用maven命令"></a> idea使用maven命令</h4>
+<p>在idea的右边有一个maven选项，打开后点击声明周期可以运行maven的命令（与命令效果相同）</p>
 <p>也可以点击上方的锤子选择Maven，添加命令在执行达到一样的效果（<strong>优点</strong>：可以使用debug模式运行）</p>
-<h4 id="依赖配置"><a href="#依赖配置" class="headerlink" title="依赖配置"></a>依赖配置</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    <span class="comment">//单个依赖</span></span><br><span class="line">  &lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;4.11&lt;/version&gt;</span><br><span class="line">    &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">  &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="排除依赖"><a href="#排除依赖" class="headerlink" title="排除依赖"></a>排除依赖</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;排除包含</span><br><span class="line">    &lt;exclusions&gt;</span><br><span class="line">    &#x2F;&#x2F;具体排除的依赖</span><br><span class="line">        &lt;exclusion&gt;</span><br><span class="line">            &lt;groupId&gt;junit&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;junit&lt;&#x2F;artifactId&gt;</span><br><span class="line">        &lt;&#x2F;exclusion&gt;</span><br><span class="line">    &lt;&#x2F;exclusions&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="依赖的范围"><a href="#依赖的范围" class="headerlink" title="依赖的范围"></a>依赖的范围</h4><ul>
+<h4 id="依赖配置"><a class="markdownIt-Anchor" href="#依赖配置"></a> 依赖配置</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    <span class="comment">//单个依赖</span></span><br><span class="line">  &lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;4.11&lt;/version&gt;</span><br><span class="line">    &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">  &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="排除依赖"><a class="markdownIt-Anchor" href="#排除依赖"></a> 排除依赖</h4>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;排除包含</span><br><span class="line">    &lt;exclusions&gt;</span><br><span class="line">    &#x2F;&#x2F;具体排除的依赖</span><br><span class="line">        &lt;exclusion&gt;</span><br><span class="line">            &lt;groupId&gt;junit&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;junit&lt;&#x2F;artifactId&gt;</span><br><span class="line">        &lt;&#x2F;exclusion&gt;</span><br><span class="line">    &lt;&#x2F;exclusions&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="依赖的范围"><a class="markdownIt-Anchor" href="#依赖的范围"></a> 依赖的范围</h4>
+<ul>
 <li>依赖的jar默认可以在任何地方使用，可以通过scope标签设定其作用的范围</li>
 <li>作用范围</li>
-<li><ul>
+<li>
+<ul>
 <li>主程序范围内有效(main文件范围内)</li>
 <li>测试程序范围内有效(test文件范围内)</li>
 <li>是否参与打包(package指令范围内)</li>
@@ -413,46 +436,50 @@
 <table>
 <thead>
 <tr>
-<th align="left">scope</th>
-<th align="left">主代码</th>
-<th align="left">测试代码</th>
-<th align="left">打包</th>
-<th align="left">范例</th>
+<th style="text-align:left">scope</th>
+<th style="text-align:left">主代码</th>
+<th style="text-align:left">测试代码</th>
+<th style="text-align:left">打包</th>
+<th style="text-align:left">范例</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">compolie(默认)</td>
-<td align="left">Y</td>
-<td align="left">Y</td>
-<td align="left">Y</td>
-<td align="left">log4j</td>
+<tbody>
+<tr>
+<td style="text-align:left">compolie(默认)</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">log4j</td>
 </tr>
 <tr>
-<td align="left">test</td>
-<td align="left"></td>
-<td align="left">Y</td>
-<td align="left"></td>
-<td align="left">junit</td>
+<td style="text-align:left">test</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">junit</td>
 </tr>
 <tr>
-<td align="left">provided</td>
-<td align="left">Y</td>
-<td align="left">Y</td>
-<td align="left"></td>
-<td align="left">servlet-api</td>
+<td style="text-align:left">provided</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">servlet-api</td>
 </tr>
 <tr>
-<td align="left">runtime</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">Y</td>
-<td align="left">jdbc</td>
+<td style="text-align:left">runtime</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">jdbc</td>
 </tr>
-</tbody></table>
-<h3 id="项目的构建生命周期"><a href="#项目的构建生命周期" class="headerlink" title="项目的构建生命周期"></a>项目的构建生命周期</h3><p> Maven对项目构建生命周期分为三个阶段,不同阶段有不同的过程事件</p>
+</tbody>
+</table>
+<h3 id="项目的构建生命周期"><a class="markdownIt-Anchor" href="#项目的构建生命周期"></a> 项目的构建生命周期</h3>
+<p>Maven对项目构建生命周期分为三个阶段,不同阶段有不同的过程事件</p>
 <ul>
 <li>clean:清理工作</li>
-<li><ul>
+<li>
+<ul>
 <li>pre-clean :执行一些需要在clean之前完成的工作</li>
 <li>clean:移除上一次构建生成的文件</li>
 <li>post-clean:执行一些在clean之后立即完成的工作</li>
@@ -460,10 +487,11 @@
 </li>
 <li>defult:核心工作，例如编译，测试，打包，部署等</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/cc6ab85acf374e68a5cd5f1fda5348d6.png" alt="img"></p>
+<p><img src="https://img-blog.csdnimg.cn/cc6ab85acf374e68a5cd5f1fda5348d6.png" alt="img" /></p>
 <ul>
 <li>site:产生报告，发布站点</li>
-<li><ul>
+<li>
+<ul>
 <li>pre-site:执行一些在生成站点文件前要完成的工作</li>
 <li>site:生成项目的站点文件</li>
 <li>post-site:执行一些需要在生成站点文件后完成的工作，为部署做准备</li>
@@ -471,13 +499,13 @@
 </ul>
 </li>
 </ul>
-<h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><ul>
+<h4 id="插件"><a class="markdownIt-Anchor" href="#插件"></a> 插件</h4>
+<ul>
 <li>插件与生命周期内的阶段绑定，在执行到对应生命周期时执行对应插件功能</li>
 <li>默认Maven的各个生命周期上绑定有预定的预设功能</li>
 <li>通过插件可以自定义其他功能</li>
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--具体插件：对test区域源代码的打jar--&gt;</span><br><span class="line">&lt;plugin&gt;</span><br><span class="line">    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;3.2.0&lt;/version&gt;</span><br><span class="line">    &lt;!--插件的行为--&gt;</span><br><span class="line">    &lt;executions&gt;</span><br><span class="line">        &lt;!--具体行为--&gt;</span><br><span class="line">        &lt;execution&gt;</span><br><span class="line">            &lt;goals&gt;</span><br><span class="line">                &lt;!--目标：执行的结果，这里时打jar包，并未所有的插件都有--&gt;</span><br><span class="line">                &lt;goal&gt;jar&lt;/goal&gt;</span><br><span class="line">     			 &lt;!--可以打多个jar包--&gt;</span><br><span class="line">    			&lt;goal&gt;test-jar&lt;/goal&gt;</span><br><span class="line">            &lt;/goals&gt;</span><br><span class="line">            &lt;!--在哪个阶段执行--&gt;</span><br><span class="line">            &lt;phase&gt;generate-test-sources&lt;/phase&gt;</span><br><span class="line">        &lt;/execution&gt;</span><br><span class="line">    &lt;/executions&gt;</span><br><span class="line">&lt;/plugin&gt;</span><br></pre></td></tr></table></figure>
-
 
     </div>
 
@@ -563,7 +591,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%BE%91Java%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">1.</span> <span class="nav-text">编辑Java源代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%AF%91Java%E7%A8%8B%E5%BA%8F"><span class="nav-number">2.</span> <span class="nav-text">编译Java程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="nav-number">3.</span> <span class="nav-text">Java的运行机制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">Java程序的环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Maven%E5%9F%BA%E7%A1%80"><span class="nav-number">5.</span> <span class="nav-text">Maven基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9D%90%E6%A0%87"><span class="nav-number">5.0.1.</span> <span class="nav-text">坐标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE"><span class="nav-number">5.0.2.</span> <span class="nav-text">本地仓库配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Maven%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%91%BD%E4%BB%A4"><span class="nav-number">5.0.3.</span> <span class="nav-text">Maven项目构建命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#idea%E4%BD%BF%E7%94%A8maven%E5%91%BD%E4%BB%A4"><span class="nav-number">5.0.4.</span> <span class="nav-text">idea使用maven命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BE%9D%E8%B5%96%E9%85%8D%E7%BD%AE"><span class="nav-number">5.0.5.</span> <span class="nav-text">依赖配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%92%E9%99%A4%E4%BE%9D%E8%B5%96"><span class="nav-number">5.0.6.</span> <span class="nav-text">排除依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BE%9D%E8%B5%96%E7%9A%84%E8%8C%83%E5%9B%B4"><span class="nav-number">5.0.7.</span> <span class="nav-text">依赖的范围</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%9E%84%E5%BB%BA%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">5.1.</span> <span class="nav-text">项目的构建生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6"><span class="nav-number">5.1.1.</span> <span class="nav-text">插件</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%BE%91java%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">1.</span> <span class="nav-text"> 编辑Java源代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%AF%91java%E7%A8%8B%E5%BA%8F"><span class="nav-number">2.</span> <span class="nav-text"> 编译Java程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="nav-number">3.</span> <span class="nav-text"> Java的运行机制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text"> Java程序的环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven%E5%9F%BA%E7%A1%80"><span class="nav-number">5.</span> <span class="nav-text"> Maven基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9D%90%E6%A0%87"><span class="nav-number">5.0.1.</span> <span class="nav-text"> 坐标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE"><span class="nav-number">5.0.2.</span> <span class="nav-text"> 本地仓库配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#maven%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%91%BD%E4%BB%A4"><span class="nav-number">5.0.3.</span> <span class="nav-text"> Maven项目构建命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#idea%E4%BD%BF%E7%94%A8maven%E5%91%BD%E4%BB%A4"><span class="nav-number">5.0.4.</span> <span class="nav-text"> idea使用maven命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BE%9D%E8%B5%96%E9%85%8D%E7%BD%AE"><span class="nav-number">5.0.5.</span> <span class="nav-text"> 依赖配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%92%E9%99%A4%E4%BE%9D%E8%B5%96"><span class="nav-number">5.0.6.</span> <span class="nav-text"> 排除依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BE%9D%E8%B5%96%E7%9A%84%E8%8C%83%E5%9B%B4"><span class="nav-number">5.0.7.</span> <span class="nav-text"> 依赖的范围</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%9E%84%E5%BB%BA%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">5.1.</span> <span class="nav-text"> 项目的构建生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6"><span class="nav-number">5.1.1.</span> <span class="nav-text"> 插件</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -579,7 +607,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-count">44</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

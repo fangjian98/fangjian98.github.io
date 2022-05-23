@@ -271,11 +271,11 @@
 <p>这里将介绍Github的四个重要功能：Github Pages、Github Actions、REST API以及GitHub Flow。</p>
 </blockquote>
 <a id="more"></a>
-
-<h2 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h2><p>Github Pages的优点</p>
+<h2 id="github-pages"><a class="markdownIt-Anchor" href="#github-pages"></a> Github Pages</h2>
+<p>Github Pages的优点</p>
 <ul>
 <li>使用零成本: github pages 集成在 github 中, 直接和代码管理绑定在一起, 随着代码更新自动重新部署, 使用非常方便.</li>
-<li>免费: 免费提供 username.github.io 的域名, 免费的静态网站服务器.</li>
+<li>免费: 免费提供 <a target="_blank" rel="noopener" href="http://username.github.io">username.github.io</a> 的域名, 免费的静态网站服务器.</li>
 <li>无数量限制: github pages 没有使用的数量限制, 每一个 github repository 都可以部署为一个静态网站.</li>
 </ul>
 <p>Github提供了Pages功能, 分别是user pages和project pages, 区别如下:</p>
@@ -287,7 +287,8 @@
 <th>Project Page</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>是否多个</td>
 <td>一个帐号只有一个</td>
 <td>可以有多个, 每个repo都可以有对应的Project page</td>
@@ -302,7 +303,8 @@
 <td><code>http(s)://&lt;username&gt;.github.io</code></td>
 <td><code>http(s)://&lt;username&gt;.github.io/&lt;projectname&gt;</code></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>常见的使用Github Pages搭建个人博客的方式：<code>hexo</code>与<code>jekyll</code></p>
 <p><code>Github Pages</code>其实等于<code>jekyll engine</code> + <code>static web server,</code> 方法1其实是利用<code>jekyll</code>搭建<code>blog</code>, 这两个功能都用到了.</p>
 <p><code>Hexo</code> + <code>Github pages</code>搭建blog其实就是只利用了github pages的<code>static web server</code>功能, hexo基于node.js, hexo在本机将用户的blog翻译成静态页面, 然后将这些静态页面上传到<code>github</code>上, 由<code>github pages</code>的<code>static web server</code>部署这些静态页面.</p>
@@ -312,17 +314,21 @@
 <li>提交到github库里的文件不同, hexo是提交转换后的静态页面, jekyll是提交转换前的md文件</li>
 </ul>
 <blockquote>
-<p>[1] <a target="_blank" rel="noopener" href="https://blog.csdn.net/baidu_25464429/article/details/80805237">https://blog.csdn.net/baidu_25464429/article/details/80805237</a><br>[2] <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/7c013faaaba1">https://www.jianshu.com/p/7c013faaaba1</a><br>[3] Github Pages：<a target="_blank" rel="noopener" href="https://docs.github.com/cn/pages">https://docs.github.com/cn/pages</a></p>
+<p>[1] <a target="_blank" rel="noopener" href="https://blog.csdn.net/baidu_25464429/article/details/80805237">https://blog.csdn.net/baidu_25464429/article/details/80805237</a><br />
+[2] <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/7c013faaaba1">https://www.jianshu.com/p/7c013faaaba1</a><br />
+[3] Github Pages：<a target="_blank" rel="noopener" href="https://docs.github.com/cn/pages">https://docs.github.com/cn/pages</a></p>
 </blockquote>
-<h2 id="Github-Actions"><a href="#Github-Actions" class="headerlink" title="Github Actions"></a>Github Actions</h2><p>manual.yml</p>
+<h2 id="github-actions"><a class="markdownIt-Anchor" href="#github-actions"></a> Github Actions</h2>
+<p>manual.yml</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># This is a basic workflow that is manually triggered</span></span><br><span class="line"></span><br><span class="line"><span class="attr">name:</span> <span class="string">Manual</span> <span class="string">workflow</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Controls when the action will run. Workflow runs when manually triggered using the UI</span></span><br><span class="line"><span class="comment"># or API.</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">workflow_dispatch:</span></span><br><span class="line">    <span class="comment"># Inputs the workflow accepts.</span></span><br><span class="line">    <span class="attr">inputs:</span></span><br><span class="line">      <span class="attr">name:</span></span><br><span class="line">        <span class="comment"># Friendly description to be shown in the UI instead of &#x27;name&#x27;</span></span><br><span class="line">        <span class="attr">description:</span> <span class="string">&#x27;Person to greet&#x27;</span></span><br><span class="line">        <span class="comment"># Default value if no value is explicitly provided</span></span><br><span class="line">        <span class="attr">default:</span> <span class="string">&#x27;World&#x27;</span></span><br><span class="line">        <span class="comment"># Input has to be provided for the workflow to run</span></span><br><span class="line">        <span class="attr">required:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="comment"># This workflow contains a single job called &quot;greet&quot;</span></span><br><span class="line">  <span class="attr">greet:</span></span><br><span class="line">    <span class="comment"># The type of runner that the job will run on</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Steps represent a sequence of tasks that will be executed as part of the job</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">    <span class="comment"># Runs a single command using the runners shell</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Send</span> <span class="string">greeting</span></span><br><span class="line">      <span class="attr">run:</span> <span class="string">echo</span> <span class="string">&quot;Hello $<span class="template-variable">&#123;&#123; github.event.inputs.name &#125;&#125;</span>&quot;</span></span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>[1] Github Action：<a target="_blank" rel="noopener" href="https://docs.github.com/cn/actions">https://docs.github.com/cn/actions</a></p>
 </blockquote>
-<h2 id="Github-REST-API"><a href="#Github-REST-API" class="headerlink" title="Github REST API"></a>Github REST API</h2><p>要创建集成、检索数据和自动化工作流程，请使用 GitHub REST API 构建。</p>
+<h2 id="github-rest-api"><a class="markdownIt-Anchor" href="#github-rest-api"></a> Github REST API</h2>
+<p>要创建集成、检索数据和自动化工作流程，请使用 GitHub REST API 构建。</p>
 <p><a target="_blank" rel="noopener" href="https://docs.github.com/cn/rest">https://docs.github.com/cn/rest</a></p>
-<h2 id="GitHub-Flow"><a href="#GitHub-Flow" class="headerlink" title="GitHub Flow"></a>GitHub Flow</h2><p>GitHub flow，顾名思义，就是 GitHub 所推崇的 Workflow。千万不要理解成 GitHub 上才能用的 Workflow。</p>
+<h2 id="github-flow"><a class="markdownIt-Anchor" href="#github-flow"></a> GitHub Flow</h2>
+<p>GitHub flow，顾名思义，就是 GitHub 所推崇的 Workflow。千万不要理解成 GitHub 上才能用的 Workflow。</p>
 <p>其官网的描述为：</p>
 <blockquote>
 <p>GitHub flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly.</p>
@@ -330,7 +336,7 @@
 <p>从中我们可以得出的信息是 —— <em>这段描述完全就是废话</em> GitHub flow 具有很高的通用性。</p>
 <p>为了更便于了解 GitHub flow 的内容，我们从流程图入手：</p>
 <p>GitHub 流是一个轻量级的、基于分支的工作流。GitHub 流程对所有人有用，而不仅仅是开发人员。例如，在 GitHub，我们将 GitHub 流用于我们的站点策略、文档和路线图。</p>
-<p><img src="https://pic3.zhimg.com/80/v2-bafaef976e8842a50403d61912239b52_720w.jpg" alt="img"></p>
+<p><img src="https://pic3.zhimg.com/80/v2-bafaef976e8842a50403d61912239b52_720w.jpg" alt="img" /></p>
 <p>其中的主要流程为：</p>
 <ul>
 <li>新建分支（Create a branch）；</li>
@@ -343,15 +349,19 @@
 <p>细心的同学可能很快会发现，GitHub flow 最大的亮点在于部署（Deploy）发生在 合并（Merge）之前，这就是 GitHub flow 的核心，非阻塞式集成 ——在产生任何副作用之前得知当前修改的所有集成效果，达到真正的持续集成。</p>
 <p>常见的分支策略有以下三种：GitFlow、GitHubFlow以及GitLabFlow。</p>
 <ul>
-<li><p>GitFlow通常包含五种类型的分支：Master分支、Develop分支、Feature分支、Release分支以及Hotfix分支。</p>
+<li>
+<p>GitFlow通常包含五种类型的分支：Master分支、Develop分支、Feature分支、Release分支以及Hotfix分支。</p>
 </li>
-<li><p>GitHubFlow通常只有一个Master分支是固定的，而且GitHubFlow中的Master分支通常是受保护的，只有特定权限的人才可以向Master分支合入代码。</p>
+<li>
+<p>GitHubFlow通常只有一个Master分支是固定的，而且GitHubFlow中的Master分支通常是受保护的，只有特定权限的人才可以向Master分支合入代码。</p>
 </li>
-<li><p>相比于GitHubFlow，GitLabFlow增加了对预生产环境和生产环境的管理，即Master分支对应为开发环境的分支，预生产和生产环境由其他分支（如Pre-Production、Production）进行管理。</p>
+<li>
+<p>相比于GitHubFlow，GitLabFlow增加了对预生产环境和生产环境的管理，即Master分支对应为开发环境的分支，预生产和生产环境由其他分支（如Pre-Production、Production）进行管理。</p>
 </li>
 </ul>
 <blockquote>
-<p>[1] <a target="_blank" rel="noopener" href="http://t.zoukankan.com/huaweiyun-p-15014479.html">http://t.zoukankan.com/huaweiyun-p-15014479.html</a><br>[2] <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/81396787">https://zhuanlan.zhihu.com/p/81396787</a></p>
+<p>[1] <a target="_blank" rel="noopener" href="http://t.zoukankan.com/huaweiyun-p-15014479.html">http://t.zoukankan.com/huaweiyun-p-15014479.html</a><br />
+[2] <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/81396787">https://zhuanlan.zhihu.com/p/81396787</a></p>
 </blockquote>
 
     </div>
@@ -440,7 +450,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-Pages"><span class="nav-number">1.</span> <span class="nav-text">Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-Actions"><span class="nav-number">2.</span> <span class="nav-text">Github Actions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-REST-API"><span class="nav-number">3.</span> <span class="nav-text">Github REST API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Flow"><span class="nav-number">4.</span> <span class="nav-text">GitHub Flow</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#github-pages"><span class="nav-number">1.</span> <span class="nav-text"> Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github-actions"><span class="nav-number">2.</span> <span class="nav-text"> Github Actions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github-rest-api"><span class="nav-number">3.</span> <span class="nav-text"> Github REST API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github-flow"><span class="nav-number">4.</span> <span class="nav-text"> GitHub Flow</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -456,7 +466,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-count">44</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
