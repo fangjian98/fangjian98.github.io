@@ -1,7 +1,7 @@
 ---
 title: LaTeX数学表达式
 abbrlink: 7f5d33bf
-date: 2022-05-23 15:39:29
+date: 2022-05-23 16:39:29
 categories: 技术流
 tags: 
   - LaTeX
@@ -73,7 +73,7 @@ https://www.latex-project.org/help/documentation/amsldoc.pdf
 
 ### LATEX语法
 
-在LaTeX数学模式中，公式有两种形式——行内公式和行间公式。前者公式嵌入在行内，适用于简单短小的公式；后者居中独占一行，适用于比较长或重要的公式。
+在LaTeX数学模式中，公式有两种形式——行内公式和行间公式。前者公式嵌入在行内，适用于简单短小的公式；后者居中独占一行，适用于比较长或重要的公式。科学公式 TeX(KaTeX)
 
 **行内公式**
 
@@ -133,10 +133,6 @@ $$\begin{split}
 效果：
 
 ![[公式]](https://www.zhihu.com/equation?tex=%5Cbegin%7Bsplit%7D+%5Ccos+2x+%26%3D+%5Ccos%5E2x+-+%5Csin%5E2x+%5C%5C+%26%3D2%5Ccos%5E2x-1+%5Cend%7Bsplit%7D)
-
-
-
-
 
 **简单运算**
 
@@ -297,6 +293,24 @@ $$ \alpha^{2} + \beta = \Theta  $$
 
 
 ![img](https://pic1.zhimg.com/80/v2-da3e717cf670582fbfbdddee33073524_720w.jpg)
+
+**三角函数**
+
+![img](https://pic4.zhimg.com/80/v2-2527327da18ba3cd4d9cfa9483bcbe1f_720w.jpg)
+
+**设置颜色**
+
+字体颜色：{\color{色调} 表达式}
+
+背景颜色：{\pagecolor{色调} 表达式}
+
+示例：
+
+```text
+$\color{red}{\text red}$
+$\color{#FF0000}{\text 红色字\;}$
+$\color{rgb(255,255,0)}{黄色字\;}$
+```
 
 
 
