@@ -1,11 +1,11 @@
 ---
 title: LaTeX数学表达式
-abbrlink: 7f5d33bf
-date: 2022-05-23 16:39:29
 categories: 技术流
-tags: 
+tags:
   - LaTeX
   - KaTeX
+abbrlink: f107c406
+date: 2022-05-23 16:39:29
 ---
 
 > 作为一个作者，在博客中公式的编辑总是难免的。markdown并不支持数学公式编辑，这些公式仅靠编辑器自带的排版功能是难以表示的，所以需要我们掌握网页公式编辑方案。目前比较流行的网页公式编辑方案是采用TEX/LATEX语法编辑，知名的有MathJax、KATEX。
@@ -107,7 +107,7 @@ $$ f(x) = a - b \tag{1.1} $$
 
 通过cases环境实现公式的组合，&分隔公式和条件，还可以通过\limits来让x→0位于lim的正下方而非默认在lim符号的右下方显示
 
-```tex
+```text
 $$D(x) = \begin{cases}
 \lim\limits_{x \to 0} \frac{a^x}{b+c}, & x<3 \\
 \pi, & x=3 \\
@@ -117,7 +117,7 @@ $$D(x) = \begin{cases}
 
 效果：
 
-![[公式]](https://www.zhihu.com/equation?tex=D%28x%29+%3D+%5Cbegin%7Bcases%7D+%5Clim%5Climits_%7Bx+%5Cto+0%7D+%5Cfrac%7Ba%5Ex%7D%7Bb%2Bc%7D%2C+%26+x%3C3+%5C%5C+%5Cpi%2C+%26+x%3D3+%5C%5C+%5Cint_a%5E%7B3b%7Dx_%7Bij%7D%2Be%5E2+%5Cmathrm%7Bd%7Dx%2C%26+x%3E3+%5C%5C+%5Cend%7Bcases%7D)
+![[公式]](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation.svg)
 
 **拆分单个公式**
 
@@ -132,7 +132,7 @@ $$\begin{split}
 
 效果：
 
-![[公式]](https://www.zhihu.com/equation?tex=%5Cbegin%7Bsplit%7D+%5Ccos+2x+%26%3D+%5Ccos%5E2x+-+%5Csin%5E2x+%5C%5C+%26%3D2%5Ccos%5E2x-1+%5Cend%7Bsplit%7D)
+![[公式]](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation_split.svg)
 
 **简单运算**
 
@@ -276,7 +276,7 @@ $$\begin{bmatrix}
 
 效果：
 
-![[公式]](https://www.zhihu.com/equation?tex=%5Cbegin%7Bbmatrix%7D+1+%26+2+%26+%5Ccdots+%5C%5C+67+%26+95+%26+%5Ccdots+%5C%5C+%5Cvdots++%26+%5Cvdots+%26+%5Cddots+%5C%5C+%5Cend%7Bbmatrix%7D)
+![[公式]](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/matrix.svg)
 
 **希腊字母**
 

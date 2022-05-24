@@ -1,12 +1,12 @@
 ---
 title: 关于TEX、LATEX、KATEX的关系
-abbrlink: 7f5d33bf
-date: 2022-05-23 15:39:29
 categories: 技术流
 tags:
   - TeX
   - LaTeX
   - KaTeX
+abbrlink: 2b2380bd
+date: 2022-05-23 15:39:29
 ---
 
 > TEX是一个电子排版系统，它的出现给印刷出版业带来了一场革命。但TEX对于使用者的要求比较高，所以出现了LATEX使得使用者可以更方便的利用TEX的强大功能。KATEX则是一种LATEX的一个快速web数学公式渲染器，使得LATEX的公式可以快速渲染出来。
