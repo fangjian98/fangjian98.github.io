@@ -55,7 +55,7 @@ http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-qui
 Gamma公式展示 $\Gamma(n) = (n-1)!\quad\forall
 n\in\mathbb N$ 是通过欧拉积分
 
-![CodeCogsEqn](https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/CodeCogsEqn.gif)
+![CodeCogsEqn](https://www.zhihu.com/equation?tex=%5CGamma(z)%20=%20%5Cint_0%5E%5Cinfty%20t%5E%7Bz-1%7De%5E%7B-t%7Ddt%5C,.)
 
 渲染LaTeX数学表达式：
 
