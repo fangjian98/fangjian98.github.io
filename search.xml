@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>代码托管平台推荐</title>
+    <url>/article/86025775.html</url>
+    <content><![CDATA[<blockquote>
+<p>Github、Gitee 这些开源场景的代码托管平台，他们对个人开发者友好，可以接触到很多优秀的开源项目。是很好的开源社区，统一的代码托管平台是DevOps的基础，也是管理代码的科学手段，为了方便各位程序员更好的选择代码托管平台，特此总结分享一下国内外代码托管平台。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Github-github-com"><a href="#Github-github-com" class="headerlink" title="Github - github.com"></a>Github - <a href="https://github.com/">github.com</a></h3><p>GitHub 代码托管平台，包含了全世界很多优秀的开源项目，可以从GitHub获取到很多很多优秀的开源项目来进行学习，也可以将自己的项目上传上去与他人分享。</p>
+<p>GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目Ruby on Rails、jQuery、python等。</p>
+<p>2018年6月4日，微软宣布，通过75亿美元的股票交易收购代码托管平台GitHub。</p>
+<p>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法。</p>
+<h3 id="Gitlab-gitlab-com"><a href="#Gitlab-gitlab-com" class="headerlink" title="Gitlab - gitlab.com"></a>Gitlab - <a href="https://gitlab.com/">gitlab.com</a></h3><p>GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的Web服务。安装方法是参考GitLab在GitHub上的Wiki页面。<br>2022年2月消息，极狐（GitLab）正式宣布推出极狐GitLab SaaS （JihuLab.com），为中国用户提供从源代码托管到开发运维的全栈式一体化DevOps SaaS平台与企业级专家咨询服务。</p>
+<p>GitLab是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
+<p>应用特点：Web框架使用RubyonRails、基于MIT代码发布协议、需要gitolite协同工作。</p>
+<h3 id="GitCode-gitcode-net"><a href="#GitCode-gitcode-net" class="headerlink" title="GitCode - gitcode.net"></a>GitCode - <a href="https://gitcode.net/">gitcode.net</a></h3><p>GitCode 是 CSDN 为开发者提供的开源项目创新服务平台，秉承“创新、开放、协作、共享”的开源价值观，致力于为大规模开源开放协同创新助力赋能，打造创新成果孵化和新时代开发者培养的开源创新生态！支持公有云使用、私有化部署以及软硬一体化私有部署。</p>
+<p>一亿人的安全代码仓，源码级别的安全分析 &amp; 协议分析平台。</p>
+<h3 id="Coding-coding-net"><a href="#Coding-coding-net" class="headerlink" title="Coding - coding.net"></a>Coding - <a href="https://coding.net/">coding.net</a></h3><p>CODING 是一个面向软件研发团队的研发协作管理平台，提供云原生开发环境、在线编码、代码托管、项目管理、测试管理、持续集成、制品库、持续部署、团队知识库等系列工具产品，帮助研发团队实践敏捷开发与 DevOps。</p>
+<p>CODING 成立于 2014 年 2 月，于 2019 年被腾讯收购成为其全资子公司，作为腾讯云官方 DevOps 平台工具向广大开发者及企业研发团队提供服务，支持 SaaS 模式或私有部署模式。</p>
+<p>产品优势：一站式研发工具、开箱即用，免部署、节省研发工具建设成本、提高软件交付效率。</p>
+<h3 id="Bitbicket-bitbucket-org"><a href="#Bitbicket-bitbucket-org" class="headerlink" title="Bitbicket - bitbucket.org"></a>Bitbicket - <a href="https://bitbucket.org/">bitbucket.org</a></h3><p>BitBucket 是一家源代码托管网站，采用Mercurial和Git作为分布式版本控制系统，同时提供商业计划和免费账户。</p>
+<p>特点：无限制的私有仓库个数、无限制的磁盘空间、同时支持https/ssh、Bug 跟踪、项目Wiki、API 支持、灵活的权限控制、可自定义域名、RSS 修改记录输出、自定义下载等。</p>
+<h3 id="托管平台对比"><a href="#托管平台对比" class="headerlink" title="托管平台对比"></a>托管平台对比</h3><p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/code_hosting_platform.png"></p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Gitee</tag>
+        <tag>Gitlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/article/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
     <url>/article/84ebc250.html</url>
     <content><![CDATA[<blockquote>
@@ -219,26 +272,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/article/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<a id="more"></a>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>关于Git忽略文件.gitignore</title>
     <url>/article/d04701bd.html</url>
     <content><![CDATA[<blockquote>
@@ -279,36 +312,28 @@
       </tags>
   </entry>
   <entry>
-    <title>代码托管平台推荐</title>
-    <url>/article/86025775.html</url>
+    <title>Git初始化配置</title>
+    <url>/article/66ea434c.html</url>
     <content><![CDATA[<blockquote>
-<p>Github、Gitee 这些开源场景的代码托管平台，他们对个人开发者友好，可以接触到很多优秀的开源项目。是很好的开源社区，统一的代码托管平台是DevOps的基础，也是管理代码的科学手段，为了方便各位程序员更好的选择代码托管平台，特此总结分享一下国内外代码托管平台。</p>
+<p>我们推荐创建的Git仓库都包含一个<code>README</code>、<code>LICENSE</code>和<code>.gitignore</code>，这里将学习创建本地分支、远程仓库推送和修改远程仓库Url。</p>
 </blockquote>
 <a id="more"></a>
 
-<h3 id="Github-github-com"><a href="#Github-github-com" class="headerlink" title="Github - github.com"></a>Github - <a href="https://github.com/">github.com</a></h3><p>GitHub 代码托管平台，包含了全世界很多优秀的开源项目，可以从GitHub获取到很多很多优秀的开源项目来进行学习，也可以将自己的项目上传上去与他人分享。</p>
-<p>GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目Ruby on Rails、jQuery、python等。</p>
-<p>2018年6月4日，微软宣布，通过75亿美元的股票交易收购代码托管平台GitHub。</p>
-<p>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法。</p>
-<h3 id="Gitlab-gitlab-com"><a href="#Gitlab-gitlab-com" class="headerlink" title="Gitlab - gitlab.com"></a>Gitlab - <a href="https://gitlab.com/">gitlab.com</a></h3><p>GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的Web服务。安装方法是参考GitLab在GitHub上的Wiki页面。<br>2022年2月消息，极狐（GitLab）正式宣布推出极狐GitLab SaaS （JihuLab.com），为中国用户提供从源代码托管到开发运维的全栈式一体化DevOps SaaS平台与企业级专家咨询服务。</p>
-<p>GitLab是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
-<p>应用特点：Web框架使用RubyonRails、基于MIT代码发布协议、需要gitolite协同工作。</p>
-<h3 id="GitCode-gitcode-net"><a href="#GitCode-gitcode-net" class="headerlink" title="GitCode - gitcode.net"></a>GitCode - <a href="https://gitcode.net/">gitcode.net</a></h3><p>GitCode 是 CSDN 为开发者提供的开源项目创新服务平台，秉承“创新、开放、协作、共享”的开源价值观，致力于为大规模开源开放协同创新助力赋能，打造创新成果孵化和新时代开发者培养的开源创新生态！支持公有云使用、私有化部署以及软硬一体化私有部署。</p>
-<p>一亿人的安全代码仓，源码级别的安全分析 &amp; 协议分析平台。</p>
-<h3 id="Coding-coding-net"><a href="#Coding-coding-net" class="headerlink" title="Coding - coding.net"></a>Coding - <a href="https://coding.net/">coding.net</a></h3><p>CODING 是一个面向软件研发团队的研发协作管理平台，提供云原生开发环境、在线编码、代码托管、项目管理、测试管理、持续集成、制品库、持续部署、团队知识库等系列工具产品，帮助研发团队实践敏捷开发与 DevOps。</p>
-<p>CODING 成立于 2014 年 2 月，于 2019 年被腾讯收购成为其全资子公司，作为腾讯云官方 DevOps 平台工具向广大开发者及企业研发团队提供服务，支持 SaaS 模式或私有部署模式。</p>
-<p>产品优势：一站式研发工具、开箱即用，免部署、节省研发工具建设成本、提高软件交付效率。</p>
-<h3 id="Bitbicket-bitbucket-org"><a href="#Bitbicket-bitbucket-org" class="headerlink" title="Bitbicket - bitbucket.org"></a>Bitbicket - <a href="https://bitbucket.org/">bitbucket.org</a></h3><p>BitBucket 是一家源代码托管网站，采用Mercurial和Git作为分布式版本控制系统，同时提供商业计划和免费账户。</p>
-<p>特点：无限制的私有仓库个数、无限制的磁盘空间、同时支持https/ssh、Bug 跟踪、项目Wiki、API 支持、灵活的权限控制、可自定义域名、RSS 修改记录输出、自定义下载等。</p>
-<h3 id="托管平台对比"><a href="#托管平台对比" class="headerlink" title="托管平台对比"></a>托管平台对比</h3><p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/code_hosting_platform.png"></p>
+
+<h3 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;# gitblog&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+
+<h3 id="推送本地仓库"><a href="#推送本地仓库" class="headerlink" title="推送本地仓库"></a>推送本地仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新本地仓库-Remote-Url"><a href="#更新本地仓库-Remote-Url" class="headerlink" title="更新本地仓库 Remote Url"></a>更新本地仓库 Remote Url</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br><span class="line">git remote remove origin</span><br><span class="line">git remote add origin https://gitcode.net/xxxx.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者是使用 SSH 地址</span></span><br><span class="line">git remote add origin git@gitcode.net:xxxx.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加子模块"><a href="#添加子模块" class="headerlink" title="添加子模块"></a>添加子模块</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除仓库索引</span></span><br><span class="line"><span class="comment"># 如果是文件</span></span><br><span class="line">git rm --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果是文件夹</span></span><br><span class="line">git rm -r --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果执行以上命令后提示：[error: 如下文件其暂存的内容和工作区及 HEAD 中的都不一样：] ，`-f`强制删除</span></span><br><span class="line">git rm -r -f --cached reference/esp-qcloud</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加仓库索引</span></span><br><span class="line"><span class="comment"># 创建子模块并添加 url 地址</span></span><br><span class="line">git submodule add &lt;url&gt; project</span><br><span class="line"><span class="comment"># 例如：</span></span><br><span class="line">git submodule add https://gitee.com/JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"><span class="comment"># 或者使用 ssh 地址</span></span><br><span class="line">git submodule add git@gitee.com:JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"></span><br><span class="line">添加成功后会生成.gitmodules文件，即添加子模块</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>技术流</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>Github</tag>
-        <tag>Gitee</tag>
-        <tag>Gitlab</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -370,21 +395,27 @@
       </tags>
   </entry>
   <entry>
-    <title>Git初始化配置</title>
-    <url>/article/66ea434c.html</url>
+    <title>Git命令简写的配置</title>
+    <url>/article/8b0e152.html</url>
     <content><![CDATA[<blockquote>
-<p>我们推荐创建的Git仓库都包含一个<code>README</code>、<code>LICENSE</code>和<code>.gitignore</code>，这里将学习创建本地分支、远程仓库推送和修改远程仓库Url。</p>
+<p>在使用Git工具时，有些命令比较常用，为了加快输入速度，可以自定义一些简写配置，能提高我们提交代码的效率。</p>
 </blockquote>
 <a id="more"></a>
 
+<ul>
+<li>编辑Git配置文件且显示配置文件路径</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global -e</span><br></pre></td></tr></table></figure>
 
-<h3 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;# gitblog&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<ul>
+<li>配置文件<code> ~/.gitconfig</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">  name = xxxxx</span><br><span class="line">  email = xxxx@mail.com</span><br><span class="line">[core]</span><br><span class="line">  editor = vim</span><br><span class="line">[<span class="built_in">alias</span>]</span><br><span class="line">    a = add</span><br><span class="line">    co = checkout</span><br><span class="line">    cm = commit</span><br><span class="line">    st = status</span><br><span class="line">    pl = pull</span><br><span class="line">    ps = push</span><br><span class="line">    df = diff</span><br><span class="line">    lg = <span class="built_in">log</span></span><br><span class="line">    cp = cherry-pick</span><br><span class="line">    ca = commit --amend</span><br><span class="line">    br = branch</span><br><span class="line">    mg = merge</span><br><span class="line">    dt = difftool</span><br><span class="line">    mt = mergetool</span><br><span class="line">    lo = <span class="built_in">log</span> --oneline</span><br><span class="line">    lg = <span class="built_in">log</span> --color --graph --pretty=format:<span class="string">&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset&#x27;</span> --abbrev-commit</span><br></pre></td></tr></table></figure>
 
-<h3 id="推送本地仓库"><a href="#推送本地仓库" class="headerlink" title="推送本地仓库"></a>推送本地仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote add origin git@github.com:fangjian98&#x2F;gitblog.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
-
-<h3 id="更新本地仓库-Remote-Url"><a href="#更新本地仓库-Remote-Url" class="headerlink" title="更新本地仓库 Remote Url"></a>更新本地仓库 Remote Url</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br><span class="line">git remote remove origin</span><br><span class="line">git remote add origin https://gitcode.net/xxxx.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者是使用 SSH 地址</span></span><br><span class="line">git remote add origin git@gitcode.net:xxxx.git</span><br></pre></td></tr></table></figure>
-
-<h3 id="添加子模块"><a href="#添加子模块" class="headerlink" title="添加子模块"></a>添加子模块</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除仓库索引</span></span><br><span class="line"><span class="comment"># 如果是文件</span></span><br><span class="line">git rm --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果是文件夹</span></span><br><span class="line">git rm -r --cached reference/esp-qcloud</span><br><span class="line"><span class="comment"># 如果执行以上命令后提示：[error: 如下文件其暂存的内容和工作区及 HEAD 中的都不一样：] ，`-f`强制删除</span></span><br><span class="line">git rm -r -f --cached reference/esp-qcloud</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加仓库索引</span></span><br><span class="line"><span class="comment"># 创建子模块并添加 url 地址</span></span><br><span class="line">git submodule add &lt;url&gt; project</span><br><span class="line"><span class="comment"># 例如：</span></span><br><span class="line">git submodule add https://gitee.com/JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"><span class="comment"># 或者使用 ssh 地址</span></span><br><span class="line">git submodule add git@gitee.com:JavonPeng/project.git reference/esp-qcloud</span><br><span class="line"></span><br><span class="line">添加成功后会生成.gitmodules文件，即添加子模块</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看Git配置</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -491,37 +522,6 @@
       </categories>
       <tags>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git命令简写的配置</title>
-    <url>/article/8b0e152.html</url>
-    <content><![CDATA[<blockquote>
-<p>在使用Git工具时，有些命令比较常用，为了加快输入速度，可以自定义一些简写配置，能提高我们提交代码的效率。</p>
-</blockquote>
-<a id="more"></a>
-
-<ul>
-<li>编辑Git配置文件且显示配置文件路径</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global -e</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>配置文件<code> ~/.gitconfig</code></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">  name = xxxxx</span><br><span class="line">  email = xxxx@mail.com</span><br><span class="line">[core]</span><br><span class="line">  editor = vim</span><br><span class="line">[<span class="built_in">alias</span>]</span><br><span class="line">    a = add</span><br><span class="line">    co = checkout</span><br><span class="line">    cm = commit</span><br><span class="line">    st = status</span><br><span class="line">    pl = pull</span><br><span class="line">    ps = push</span><br><span class="line">    df = diff</span><br><span class="line">    lg = <span class="built_in">log</span></span><br><span class="line">    cp = cherry-pick</span><br><span class="line">    ca = commit --amend</span><br><span class="line">    br = branch</span><br><span class="line">    mg = merge</span><br><span class="line">    dt = difftool</span><br><span class="line">    mt = mergetool</span><br><span class="line">    lo = <span class="built_in">log</span> --oneline</span><br><span class="line">    lg = <span class="built_in">log</span> --color --graph --pretty=format:<span class="string">&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset&#x27;</span> --abbrev-commit</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>查看Git配置</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -804,6 +804,47 @@
       </tags>
   </entry>
   <entry>
+    <title>Vim的常用用法</title>
+    <url>/article/c771602a.html</url>
+    <content><![CDATA[<blockquote>
+<p>Vim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。连 vim 的官方网站 (<a href="https://www.vim.org/">https://www.vim.org/</a>) 自己也说 vim 是一个程序开发工具而不是文字处理软件。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Vim的三种模式"><a href="#Vim的三种模式" class="headerlink" title="Vim的三种模式"></a>Vim的三种模式</h3><blockquote>
+<p>vi的使用在linux环境下，使用vi &lt;文件名&gt; 即可进入vi编辑模式，vi编辑器一共有三种模式，分别是：命令模式，输入模式，和末行模式。</p>
+</blockquote>
+<ul>
+<li>命令模式下，我们不可以输入字符，所输入的字符都被当做了命令来执行。比如最常见的i进入输入模式，o换行并且进入输入模式，x删除所在位置的字符等，在其他模式下可以通过esc键进入命令模式。</li>
+<li>输入模式下，就和我们普通的编辑文档一样，操作没有特殊之处</li>
+<li>末行模式下，我们只能在最后一行进行输入，一般wq保存并且退出vi模式，q退出但是不保存。</li>
+</ul>
+<h3 id="基本的命令"><a href="#基本的命令" class="headerlink" title="基本的命令"></a>基本的命令</h3><ul>
+<li><p>k j h l 分别对应上下左右光标的移动</p>
+</li>
+<li><p>x删除一个字符/ dd删除一行</p>
+</li>
+<li><p>yy复制一行 / p 粘贴</p>
+</li>
+<li><p>o/O 向上/向下空一行，并且进入输入模式</p>
+</li>
+<li><p>a/A 进入输入模式从光标处开始</p>
+</li>
+<li><p>w,wq,q!,q,ZZ, 保存/保存并退出/不保存退出/离开/保存并退出</p>
+</li>
+<li><p>/：搜索</p>
+</li>
+</ul>
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>常用的adb命令</title>
     <url>/article/3610a686.html</url>
     <content><![CDATA[<blockquote>
@@ -883,47 +924,6 @@
       </categories>
       <tags>
         <tag>adb</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim的常用用法</title>
-    <url>/article/c771602a.html</url>
-    <content><![CDATA[<blockquote>
-<p>Vim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。连 vim 的官方网站 (<a href="https://www.vim.org/">https://www.vim.org/</a>) 自己也说 vim 是一个程序开发工具而不是文字处理软件。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Vim的三种模式"><a href="#Vim的三种模式" class="headerlink" title="Vim的三种模式"></a>Vim的三种模式</h3><blockquote>
-<p>vi的使用在linux环境下，使用vi &lt;文件名&gt; 即可进入vi编辑模式，vi编辑器一共有三种模式，分别是：命令模式，输入模式，和末行模式。</p>
-</blockquote>
-<ul>
-<li>命令模式下，我们不可以输入字符，所输入的字符都被当做了命令来执行。比如最常见的i进入输入模式，o换行并且进入输入模式，x删除所在位置的字符等，在其他模式下可以通过esc键进入命令模式。</li>
-<li>输入模式下，就和我们普通的编辑文档一样，操作没有特殊之处</li>
-<li>末行模式下，我们只能在最后一行进行输入，一般wq保存并且退出vi模式，q退出但是不保存。</li>
-</ul>
-<h3 id="基本的命令"><a href="#基本的命令" class="headerlink" title="基本的命令"></a>基本的命令</h3><ul>
-<li><p>k j h l 分别对应上下左右光标的移动</p>
-</li>
-<li><p>x删除一个字符/ dd删除一行</p>
-</li>
-<li><p>yy复制一行 / p 粘贴</p>
-</li>
-<li><p>o/O 向上/向下空一行，并且进入输入模式</p>
-</li>
-<li><p>a/A 进入输入模式从光标处开始</p>
-</li>
-<li><p>w,wq,q!,q,ZZ, 保存/保存并退出/不保存退出/离开/保存并退出</p>
-</li>
-<li><p>/：搜索</p>
-</li>
-</ul>
-<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
@@ -1163,39 +1163,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AOSP常用命令</title>
-    <url>/article/b42edc12.html</url>
-    <content><![CDATA[<blockquote>
-<p>手机厂商或者智能模块厂商都是基于Android系统源码基础上进行二次开发，即AOSP(Android Open Source Project)，开发人员涉及Framework、APP、底层驱动以及通信BP侧等，这就需要我们了解Android系统的架构设计、编译、刷机验证等知识。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="AOSP编译命令"><a href="#AOSP编译命令" class="headerlink" title="AOSP编译命令"></a>AOSP编译命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 源码全编译</span></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line">git branch -a</span><br><span class="line">git checkout -b SLM758W_meig_custom origin/SLM758W_meig_custom</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch <span class="comment">#选择编译项</span></span><br><span class="line">42</span><br><span class="line"><span class="comment"># lunch msm8953_64-userdebug</span></span><br><span class="line">make -j8 2&gt;&amp;1 | tee build.log <span class="comment">#加上编译log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除编译结果目录</span></span><br><span class="line">rm -rf out/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单模块编译</span></span><br><span class="line">在整体编译时部分依赖测试不会进行编译，所以使用使用mmm时会提示依赖出错，此时应该用mmma进行编译</span><br><span class="line">mm 构建模块在当前文件夹，不构建依赖</span><br><span class="line">mmm 构建模块指定路径，不构建依赖</span><br><span class="line">mma 构建模块在当前文件夹并构建依赖</span><br><span class="line">mmma 构建模块在当前文件夹并构建依赖</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单模块编译make:module name可查看对于模块下的Android.mk或Android.bp</span></span><br><span class="line">make &lt;module name&gt;</span><br><span class="line">make SystemUI</span><br><span class="line"></span><br><span class="line">其他编译命令：</span><br><span class="line"><span class="comment"># 编译bootloader</span></span><br><span class="line">make aboot	             </span><br><span class="line"><span class="comment"># 编译kernel</span></span><br><span class="line">make bootimage</span><br><span class="line"><span class="comment"># 编译system</span></span><br><span class="line">make systemimage</span><br><span class="line"><span class="comment"># 编译userdata</span></span><br><span class="line">make userdataimage</span><br><span class="line"><span class="comment"># 编译recovery</span></span><br><span class="line">make recoveryimage</span><br><span class="line"><span class="comment"># mmm编译指定目录的模块，如编译联系人</span></span><br><span class="line">mmm packages/apps/Contacts</span><br><span class="line"></span><br><span class="line"><span class="comment"># 常见的编译错误有：</span></span><br><span class="line">1.编译环境配置不正常；</span><br><span class="line">2.编译的代码有语法或逻辑错误；</span><br><span class="line">3.编译过程中服务器中断。</span><br><span class="line"><span class="comment"># 对应解决方法：</span></span><br><span class="line">1.配置对应编译环境；</span><br><span class="line">2.根据error提示修改代码；</span><br><span class="line">3.重新连接服务器重新编译或者继续编译，若想清除之前编译的信息则使用指令：make clean</span><br></pre></td></tr></table></figure>
-<h3 id="修改验证方式"><a href="#修改验证方式" class="headerlink" title="修改验证方式"></a>修改验证方式</h3><ol>
-<li>修改APK应用</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">在packages中的应用如果修改后都可以单独编译。先执行 </span><br><span class="line">$ <span class="built_in">source</span> build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line">$ mmm packages/providers/ContactsProvider/</span><br><span class="line"><span class="comment"># 用mm/mmm来编译生成的.apk并不会打包到system.img中，需要我们手动通过make snod把system文件夹打包为system.img</span></span><br><span class="line"><span class="comment">#可以使用make snod将模块打包到system.img中，也可以使用 adb install *.apk安装</span></span><br><span class="line">$ make snod <span class="comment">#可重新打包android系统镜像文件system.img</span></span><br><span class="line"></span><br><span class="line">注：通过mmm packages/providers/ContactsProvider/ 编译后的apk在 out/target/product/generic/system/app </span><br><span class="line">这时候通过 adb install out/target/product/generic/system/app/xxx.apk 安装你刚修改过的apk就可以在模拟器上看到你修改的效果了。</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>修改framework</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">如果在Contacts.java中修改了，必须重新编译下framework。先执行 </span><br><span class="line">$ <span class="built_in">source</span> build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line"><span class="comment">#网上有的说要执行 make update-api，实际上直接make PRODUCT-sdk-sdk就可以将修改后的framework编译到sdk中。 </span></span><br><span class="line"><span class="comment">#编译framework后，那些修改了的应用可以不用再单独编译了。4～6分钟</span></span><br><span class="line">$ make PRODUCT-sdk-sdk <span class="comment">#重新生成SDK 10~20分钟</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="高通烧录工具QFIL"><a href="#高通烧录工具QFIL" class="headerlink" title="高通烧录工具QFIL"></a>高通烧录工具QFIL</h3><p>1.编译结果目录：\192.168.0.227\home1\fangjian\LA.UM.7.6\out\target\product\msm8953_64<br>2.将其目录下的非文件夹文件拷贝到原始镜像的文件夹中 \SLM758W\android9\SLM758E\V24<br>3.使用QFil进行烧录 选择xml</p>
-<h3 id="Linux-amp-Git命令"><a href="#Linux-amp-Git命令" class="headerlink" title="Linux&amp;Git命令"></a>Linux&amp;Git命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建目录</span></span><br><span class="line">mkdir 7.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出文件</span></span><br><span class="line">ls</span><br><span class="line"></span><br><span class="line"><span class="comment"># 返回上一级目录</span></span><br><span class="line"><span class="comment"># `.`是当前目录 `..`是上一级目录 `/`是根目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看容量</span></span><br><span class="line">df -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看运行内存</span></span><br><span class="line">free -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有使用人情况</span></span><br><span class="line">top</span><br><span class="line"></span><br><span class="line"><span class="comment"># device目录下的状态</span></span><br><span class="line">git status device/</span><br><span class="line"><span class="comment"># 修改的文件的不同</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop</span><br><span class="line"><span class="comment"># 在根目录下生成patch</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop &gt; patch</span><br><span class="line"><span class="comment"># 查看20行提交信息</span></span><br><span class="line">git <span class="built_in">log</span> --oneline -20</span><br><span class="line"><span class="comment"># 按q退出</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="验证ADB命令"><a href="#验证ADB命令" class="headerlink" title="验证ADB命令"></a>验证ADB命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看连接设备</span></span><br><span class="line">adb devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入命令行模式</span></span><br><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启</span></span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成运行的log的命令</span></span><br><span class="line">adb logcat -b all &gt; test.log</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看当前界面的应用包名</span></span><br><span class="line">adb shell dumpsys activity | grep Resume</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从设备导出文件到当前目录下</span></span><br><span class="line">adb pull /sdcard/Pictures/xx.png ./</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装手机应用命令</span></span><br><span class="line">adb install C:\Users\Admin\Desktop\MusicTests.apk</span><br><span class="line">adb install -r</span><br><span class="line">adb install -t</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取属性值</span></span><br><span class="line">adb shell getprop persist.sys.strict_op_enable</span><br><span class="line"><span class="comment"># 设置属性值</span></span><br><span class="line">adb shell setprop persist.sys.strict_op_enable <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭SELinux</span></span><br><span class="line">adb shell setenforce 0</span><br><span class="line"><span class="comment"># 打开SELinux</span></span><br><span class="line">adb shell setenforce 1</span><br><span class="line"><span class="comment"># 查询SELinux的运行模式</span></span><br><span class="line"><span class="comment"># 0： 切换成 permissive（宽容模式）</span></span><br><span class="line"><span class="comment"># 1： 切换成 enforcing（强制模式）</span></span><br><span class="line">adb shell getenforce</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证：编译好应用，push后重启即可</span></span><br><span class="line">adb root </span><br><span class="line">adb remount</span><br><span class="line">adb push out/target/product/generic/system/app/xxx.apk /system/app/</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不重启 push frameworks操作</span></span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ <span class="comment"># stop</span></span><br><span class="line">msm8937_32:/ <span class="comment"># start</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># remount报错：重启后再执行adb root &amp;&amp; adb remount</span></span><br><span class="line">adb <span class="built_in">disable</span>-verity</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入bootloader模式</span></span><br><span class="line">adb reboot bootloader</span><br><span class="line"></span><br><span class="line"><span class="comment"># fastboot flash partition filename 指定烧写一个分区</span></span><br><span class="line"><span class="comment"># Fastboot刷system分区</span></span><br><span class="line">fastboot flash system system.img </span><br><span class="line"><span class="comment"># 查看当前连接的设备</span></span><br><span class="line">fastboot devices </span><br><span class="line"><span class="comment"># 正常重启启动系统</span></span><br><span class="line">fastboot reboot </span><br><span class="line"><span class="comment"># 重启启动系统到bootloader阶段</span></span><br><span class="line">fastboot reboot-bootloader </span><br><span class="line"><span class="comment"># 烧写所有的分区</span></span><br><span class="line">fastboot flashall </span><br><span class="line"><span class="comment"># 擦除一个分区</span></span><br><span class="line">fastboot erase partition </span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看数据库</span></span><br><span class="line">adb root </span><br><span class="line">adb shell</span><br><span class="line"><span class="built_in">cd</span> data/data/</span><br><span class="line"><span class="built_in">cd</span> com.android.providers.media/</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
-
-<h3 id="AOSP编译服务器设置"><a href="#AOSP编译服务器设置" class="headerlink" title="AOSP编译服务器设置"></a>AOSP编译服务器设置</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1.生成你的ssh key，一路回车即可</span></span><br><span class="line">ssh-keygen -t rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2.将key注册到代码服务器</span></span><br><span class="line">cat ~/.ssh/id_rsa.pub</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3.配置本地ssh策略</span></span><br><span class="line">vim ~/.ssh/config</span><br><span class="line"><span class="comment">#加入下面内容</span></span><br><span class="line">Host * KexAlgorithms +diffie-hellman-group1-sha1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4.拉取代码</span></span><br><span class="line">git <span class="built_in">clone</span> ssh://fangjian@192.168.0.240:29418/LA.UM.7.6 &amp;&amp; scp -p -P 29418 fangjian@192.168.0.240:hooks/commit-msg LA.UM.7.6/.git/hooks/</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>AOSP</category>
-      </categories>
-      <tags>
-        <tag>AOSP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git的基本使用</title>
     <url>/article/163a8691.html</url>
     <content><![CDATA[<blockquote>
@@ -1256,6 +1223,39 @@
       <tags>
         <tag>Git</tag>
         <tag>rebase</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AOSP常用命令</title>
+    <url>/article/b42edc12.html</url>
+    <content><![CDATA[<blockquote>
+<p>手机厂商或者智能模块厂商都是基于Android系统源码基础上进行二次开发，即AOSP(Android Open Source Project)，开发人员涉及Framework、APP、底层驱动以及通信BP侧等，这就需要我们了解Android系统的架构设计、编译、刷机验证等知识。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="AOSP编译命令"><a href="#AOSP编译命令" class="headerlink" title="AOSP编译命令"></a>AOSP编译命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 源码全编译</span></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line">git branch -a</span><br><span class="line">git checkout -b SLM758W_meig_custom origin/SLM758W_meig_custom</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch <span class="comment">#选择编译项</span></span><br><span class="line">42</span><br><span class="line"><span class="comment"># lunch msm8953_64-userdebug</span></span><br><span class="line">make -j8 2&gt;&amp;1 | tee build.log <span class="comment">#加上编译log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除编译结果目录</span></span><br><span class="line">rm -rf out/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单模块编译</span></span><br><span class="line">在整体编译时部分依赖测试不会进行编译，所以使用使用mmm时会提示依赖出错，此时应该用mmma进行编译</span><br><span class="line">mm 构建模块在当前文件夹，不构建依赖</span><br><span class="line">mmm 构建模块指定路径，不构建依赖</span><br><span class="line">mma 构建模块在当前文件夹并构建依赖</span><br><span class="line">mmma 构建模块在当前文件夹并构建依赖</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单模块编译make:module name可查看对于模块下的Android.mk或Android.bp</span></span><br><span class="line">make &lt;module name&gt;</span><br><span class="line">make SystemUI</span><br><span class="line"></span><br><span class="line">其他编译命令：</span><br><span class="line"><span class="comment"># 编译bootloader</span></span><br><span class="line">make aboot	             </span><br><span class="line"><span class="comment"># 编译kernel</span></span><br><span class="line">make bootimage</span><br><span class="line"><span class="comment"># 编译system</span></span><br><span class="line">make systemimage</span><br><span class="line"><span class="comment"># 编译userdata</span></span><br><span class="line">make userdataimage</span><br><span class="line"><span class="comment"># 编译recovery</span></span><br><span class="line">make recoveryimage</span><br><span class="line"><span class="comment"># mmm编译指定目录的模块，如编译联系人</span></span><br><span class="line">mmm packages/apps/Contacts</span><br><span class="line"></span><br><span class="line"><span class="comment"># 常见的编译错误有：</span></span><br><span class="line">1.编译环境配置不正常；</span><br><span class="line">2.编译的代码有语法或逻辑错误；</span><br><span class="line">3.编译过程中服务器中断。</span><br><span class="line"><span class="comment"># 对应解决方法：</span></span><br><span class="line">1.配置对应编译环境；</span><br><span class="line">2.根据error提示修改代码；</span><br><span class="line">3.重新连接服务器重新编译或者继续编译，若想清除之前编译的信息则使用指令：make clean</span><br></pre></td></tr></table></figure>
+<h3 id="修改验证方式"><a href="#修改验证方式" class="headerlink" title="修改验证方式"></a>修改验证方式</h3><ol>
+<li>修改APK应用</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">在packages中的应用如果修改后都可以单独编译。先执行 </span><br><span class="line">$ <span class="built_in">source</span> build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line">$ mmm packages/providers/ContactsProvider/</span><br><span class="line"><span class="comment"># 用mm/mmm来编译生成的.apk并不会打包到system.img中，需要我们手动通过make snod把system文件夹打包为system.img</span></span><br><span class="line"><span class="comment">#可以使用make snod将模块打包到system.img中，也可以使用 adb install *.apk安装</span></span><br><span class="line">$ make snod <span class="comment">#可重新打包android系统镜像文件system.img</span></span><br><span class="line"></span><br><span class="line">注：通过mmm packages/providers/ContactsProvider/ 编译后的apk在 out/target/product/generic/system/app </span><br><span class="line">这时候通过 adb install out/target/product/generic/system/app/xxx.apk 安装你刚修改过的apk就可以在模拟器上看到你修改的效果了。</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>修改framework</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">如果在Contacts.java中修改了，必须重新编译下framework。先执行 </span><br><span class="line">$ <span class="built_in">source</span> build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line"><span class="comment">#网上有的说要执行 make update-api，实际上直接make PRODUCT-sdk-sdk就可以将修改后的framework编译到sdk中。 </span></span><br><span class="line"><span class="comment">#编译framework后，那些修改了的应用可以不用再单独编译了。4～6分钟</span></span><br><span class="line">$ make PRODUCT-sdk-sdk <span class="comment">#重新生成SDK 10~20分钟</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="高通烧录工具QFIL"><a href="#高通烧录工具QFIL" class="headerlink" title="高通烧录工具QFIL"></a>高通烧录工具QFIL</h3><p>1.编译结果目录：\192.168.0.227\home1\fangjian\LA.UM.7.6\out\target\product\msm8953_64<br>2.将其目录下的非文件夹文件拷贝到原始镜像的文件夹中 \SLM758W\android9\SLM758E\V24<br>3.使用QFil进行烧录 选择xml</p>
+<h3 id="Linux-amp-Git命令"><a href="#Linux-amp-Git命令" class="headerlink" title="Linux&amp;Git命令"></a>Linux&amp;Git命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建目录</span></span><br><span class="line">mkdir 7.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出文件</span></span><br><span class="line">ls</span><br><span class="line"></span><br><span class="line"><span class="comment"># 返回上一级目录</span></span><br><span class="line"><span class="comment"># `.`是当前目录 `..`是上一级目录 `/`是根目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看容量</span></span><br><span class="line">df -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看运行内存</span></span><br><span class="line">free -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有使用人情况</span></span><br><span class="line">top</span><br><span class="line"></span><br><span class="line"><span class="comment"># device目录下的状态</span></span><br><span class="line">git status device/</span><br><span class="line"><span class="comment"># 修改的文件的不同</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop</span><br><span class="line"><span class="comment"># 在根目录下生成patch</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop &gt; patch</span><br><span class="line"><span class="comment"># 查看20行提交信息</span></span><br><span class="line">git <span class="built_in">log</span> --oneline -20</span><br><span class="line"><span class="comment"># 按q退出</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="验证ADB命令"><a href="#验证ADB命令" class="headerlink" title="验证ADB命令"></a>验证ADB命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看连接设备</span></span><br><span class="line">adb devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入命令行模式</span></span><br><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启</span></span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成运行的log的命令</span></span><br><span class="line">adb logcat -b all &gt; test.log</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看当前界面的应用包名</span></span><br><span class="line">adb shell dumpsys activity | grep Resume</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从设备导出文件到当前目录下</span></span><br><span class="line">adb pull /sdcard/Pictures/xx.png ./</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装手机应用命令</span></span><br><span class="line">adb install C:\Users\Admin\Desktop\MusicTests.apk</span><br><span class="line">adb install -r</span><br><span class="line">adb install -t</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取属性值</span></span><br><span class="line">adb shell getprop persist.sys.strict_op_enable</span><br><span class="line"><span class="comment"># 设置属性值</span></span><br><span class="line">adb shell setprop persist.sys.strict_op_enable <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭SELinux</span></span><br><span class="line">adb shell setenforce 0</span><br><span class="line"><span class="comment"># 打开SELinux</span></span><br><span class="line">adb shell setenforce 1</span><br><span class="line"><span class="comment"># 查询SELinux的运行模式</span></span><br><span class="line"><span class="comment"># 0： 切换成 permissive（宽容模式）</span></span><br><span class="line"><span class="comment"># 1： 切换成 enforcing（强制模式）</span></span><br><span class="line">adb shell getenforce</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证：编译好应用，push后重启即可</span></span><br><span class="line">adb root </span><br><span class="line">adb remount</span><br><span class="line">adb push out/target/product/generic/system/app/xxx.apk /system/app/</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不重启 push frameworks操作</span></span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ <span class="comment"># stop</span></span><br><span class="line">msm8937_32:/ <span class="comment"># start</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># remount报错：重启后再执行adb root &amp;&amp; adb remount</span></span><br><span class="line">adb <span class="built_in">disable</span>-verity</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入bootloader模式</span></span><br><span class="line">adb reboot bootloader</span><br><span class="line"></span><br><span class="line"><span class="comment"># fastboot flash partition filename 指定烧写一个分区</span></span><br><span class="line"><span class="comment"># Fastboot刷system分区</span></span><br><span class="line">fastboot flash system system.img </span><br><span class="line"><span class="comment"># 查看当前连接的设备</span></span><br><span class="line">fastboot devices </span><br><span class="line"><span class="comment"># 正常重启启动系统</span></span><br><span class="line">fastboot reboot </span><br><span class="line"><span class="comment"># 重启启动系统到bootloader阶段</span></span><br><span class="line">fastboot reboot-bootloader </span><br><span class="line"><span class="comment"># 烧写所有的分区</span></span><br><span class="line">fastboot flashall </span><br><span class="line"><span class="comment"># 擦除一个分区</span></span><br><span class="line">fastboot erase partition </span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看数据库</span></span><br><span class="line">adb root </span><br><span class="line">adb shell</span><br><span class="line"><span class="built_in">cd</span> data/data/</span><br><span class="line"><span class="built_in">cd</span> com.android.providers.media/</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
+
+<h3 id="AOSP编译服务器设置"><a href="#AOSP编译服务器设置" class="headerlink" title="AOSP编译服务器设置"></a>AOSP编译服务器设置</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1.生成你的ssh key，一路回车即可</span></span><br><span class="line">ssh-keygen -t rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2.将key注册到代码服务器</span></span><br><span class="line">cat ~/.ssh/id_rsa.pub</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3.配置本地ssh策略</span></span><br><span class="line">vim ~/.ssh/config</span><br><span class="line"><span class="comment">#加入下面内容</span></span><br><span class="line">Host * KexAlgorithms +diffie-hellman-group1-sha1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4.拉取代码</span></span><br><span class="line">git <span class="built_in">clone</span> ssh://fangjian@192.168.0.240:29418/LA.UM.7.6 &amp;&amp; scp -p -P 29418 fangjian@192.168.0.240:hooks/commit-msg LA.UM.7.6/.git/hooks/</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>AOSP</category>
+      </categories>
+      <tags>
+        <tag>AOSP</tag>
       </tags>
   </entry>
   <entry>
@@ -1496,6 +1496,37 @@
       </tags>
   </entry>
   <entry>
+    <title>关于Photoshop的用法</title>
+    <url>/article/b76e39db.html</url>
+    <content><![CDATA[<blockquote>
+<p>Adobe Photoshop，简称“PS”，是由Adobe Systems开发和发行的图像处理软件。Photoshop主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。ps有很多功能，在图像、图形、文字、视频、出版等各方面都有涉及。</p>
+</blockquote>
+<a id="more"></a>
+
+<ul>
+<li>PS 如何使用“拉直”功能拉直图像</li>
+</ul>
+<p>在Photoshop 中，打开图片，点击“剪裁工具”。</p>
+<p>然后在选项栏中，选择拉直工具，如图所示</p>
+<p>鼠标单击图像一端，按住鼠标按钮，然后拖动到另一端。</p>
+<p>松开鼠标按钮，会旋转图像以使其变直。</p>
+<ul>
+<li>移动图像</li>
+</ul>
+<p>1.选中你需要移动的图层，然后选择工具栏上的第2个工具“移动”工具移动即可；</p>
+<p>2.点选“移动”工具，在属性栏会出现“自动选择”，在前面打勾√，后面下拉选择框中，选择“图层”，这样你就可以直接选中你图片任意拖动了，就无需点选图层面板里的图层！</p>
+<ul>
+<li>关于图层</li>
+</ul>
+]]></content>
+      <categories>
+        <category>UI设计</category>
+      </categories>
+      <tags>
+        <tag>Photoshop</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>编程语言的Hello World程序</title>
     <url>/article/caca35c0.html</url>
     <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1629,37 +1660,6 @@
       <tags>
         <tag>POP3/SMTP</tag>
         <tag>IMAP/SMTP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于Photoshop的用法</title>
-    <url>/article/b76e39db.html</url>
-    <content><![CDATA[<blockquote>
-<p>Adobe Photoshop，简称“PS”，是由Adobe Systems开发和发行的图像处理软件。Photoshop主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。ps有很多功能，在图像、图形、文字、视频、出版等各方面都有涉及。</p>
-</blockquote>
-<a id="more"></a>
-
-<ul>
-<li>PS 如何使用“拉直”功能拉直图像</li>
-</ul>
-<p>在Photoshop 中，打开图片，点击“剪裁工具”。</p>
-<p>然后在选项栏中，选择拉直工具，如图所示</p>
-<p>鼠标单击图像一端，按住鼠标按钮，然后拖动到另一端。</p>
-<p>松开鼠标按钮，会旋转图像以使其变直。</p>
-<ul>
-<li>移动图像</li>
-</ul>
-<p>1.选中你需要移动的图层，然后选择工具栏上的第2个工具“移动”工具移动即可；</p>
-<p>2.点选“移动”工具，在属性栏会出现“自动选择”，在前面打勾√，后面下拉选择框中，选择“图层”，这样你就可以直接选中你图片任意拖动了，就无需点选图层面板里的图层！</p>
-<ul>
-<li>关于图层</li>
-</ul>
-]]></content>
-      <categories>
-        <category>UI设计</category>
-      </categories>
-      <tags>
-        <tag>Photoshop</tag>
       </tags>
   </entry>
   <entry>
@@ -1979,25 +1979,6 @@
       </tags>
   </entry>
   <entry>
-    <title>多媒体视频处理工具FFmpeg</title>
-    <url>/article/b3c1f4b1.html</url>
-    <content><![CDATA[<blockquote>
-<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>FFmpeg常用命令解析<br><a href="https://www.cnblogs.com/Dicky-Zhang/p/11838416.html">https://www.cnblogs.com/Dicky-Zhang/p/11838416.html</a></p>
-<p>ffFFmpegpg处理视频<br>example：m3u8转mp4<br><a href="https://www.cnblogs.com/zhangceblogs/p/8514443.html">https://www.cnblogs.com/zhangceblogs/p/8514443.html</a></p>
-<p><a href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a><br><a href="https://github.com/BtbN/FFmpeg-Builds">https://github.com/BtbN/FFmpeg-Builds</a><br>下载：ffmpeg-n-104327-g1902a60dda-win64-gpl.zip</p>
-]]></content>
-      <categories>
-        <category>音视频</category>
-      </categories>
-      <tags>
-        <tag>FFmpeg</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java技能树-Java概述</title>
     <url>/article/761b2c7d.html</url>
     <content><![CDATA[<blockquote>
@@ -2219,6 +2200,25 @@
         <tag>Java</tag>
         <tag>JDK</tag>
         <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多媒体视频处理工具FFmpeg</title>
+    <url>/article/b3c1f4b1.html</url>
+    <content><![CDATA[<blockquote>
+<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>FFmpeg常用命令解析<br><a href="https://www.cnblogs.com/Dicky-Zhang/p/11838416.html">https://www.cnblogs.com/Dicky-Zhang/p/11838416.html</a></p>
+<p>ffFFmpegpg处理视频<br>example：m3u8转mp4<br><a href="https://www.cnblogs.com/zhangceblogs/p/8514443.html">https://www.cnblogs.com/zhangceblogs/p/8514443.html</a></p>
+<p><a href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a><br><a href="https://github.com/BtbN/FFmpeg-Builds">https://github.com/BtbN/FFmpeg-Builds</a><br>下载：ffmpeg-n-104327-g1902a60dda-win64-gpl.zip</p>
+]]></content>
+      <categories>
+        <category>音视频</category>
+      </categories>
+      <tags>
+        <tag>FFmpeg</tag>
       </tags>
   </entry>
   <entry>
@@ -2775,34 +2775,6 @@
       </tags>
   </entry>
   <entry>
-    <title>企业项目开发流程</title>
-    <url>/article/a73689f8.html</url>
-    <content><![CDATA[<blockquote>
-<p>一般情况下，企业开发软件时会按照基线和定制两块并行方式执行项目开发工作。无论什么公司，都需要遵从一套成熟的产品研发过程体系，才能做出质量较好的产品。因此，如果出现项目较多的情况，应该合理地安排基线和定制之前的里程碑，让基线产品能够尽量多地收集用户的通用型需求，为定制项目进度实现技术支撑，减少定制项目中大量更改代码、需要新增模块情况发生。此外，产品研发过程体系也需要按照业务实际时间要求变化，不要拘泥于一定要按照瀑布方式，或是敏捷方式进行管理，凡事都需要找到契合自己的方式。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Web项目流程"><a href="#Web项目流程" class="headerlink" title="Web项目流程"></a>Web项目流程</h3><p>1.需求分析<br>2.设计（概要设计、详细设计)<br>3.技术选型<br>4.初始化/引入需要的技术<br>5.写Demo<br>6.写代码（实现业务逻辑)<br>7.测试(单元测试)<br>8.代码提交&amp;代码评审<br>9.部署<br>10.发布</p>
-<p><strong>关于技术选型</strong><br>前端:三件套＋React +组件库Ant Design + Umi + Ant Design Pro(现成的管理系统)</p>
-<blockquote>
-<p>Umi 自动生成代码工具<br>packages.json 依赖和脚本<br>yarn 包管理器：//npm install -g yarn //yarn –version</p>
-</blockquote>
-<p>后端: java +spring + springmvc + mybatis + mybatis-plus + springboot + mysql<br>部署:服务器/容器（平台)</p>
-<blockquote>
-<p>mvnrepository:<a href="https://mvnrepository.com/">https://mvnrepository.com/</a><br><a href="https://search.maven.org/">https://search.maven.org/</a><br>mybatis-plus <a href="https://baomidou.com/">https://baomidou.com/</a><br>springboot官方生成器：<a href="https://start.spring.io/">https://start.spring.io/</a></p>
-</blockquote>
-<p><strong>关于依赖：</strong><br>Spring Boot DevTools //热更新<br>Lombok 注解<br>Spring Configuration Processor<br>mysql 数据库<br>spring web //接口<br>mybatis //数据库访问<br>junit //单元测试swagger //api文档</p>
-<h3 id="App开发流程"><a href="#App开发流程" class="headerlink" title="App开发流程"></a>App开发流程</h3><p>1.产品经理:功能需求，竞品分析，抄同类产品的好功能<br>2.UI设计：寻找灵感，抄同类产品设计<br>3.程序员：代码审查，百度论坛找解决办法<br>4.测试：测试体验，多种手机对比</p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
-        <tag>App</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java中的几个重要特性</title>
     <url>/article/7f3a79dc.html</url>
     <content><![CDATA[<blockquote>
@@ -3024,6 +2996,34 @@
       </tags>
   </entry>
   <entry>
+    <title>企业项目开发流程</title>
+    <url>/article/a73689f8.html</url>
+    <content><![CDATA[<blockquote>
+<p>一般情况下，企业开发软件时会按照基线和定制两块并行方式执行项目开发工作。无论什么公司，都需要遵从一套成熟的产品研发过程体系，才能做出质量较好的产品。因此，如果出现项目较多的情况，应该合理地安排基线和定制之前的里程碑，让基线产品能够尽量多地收集用户的通用型需求，为定制项目进度实现技术支撑，减少定制项目中大量更改代码、需要新增模块情况发生。此外，产品研发过程体系也需要按照业务实际时间要求变化，不要拘泥于一定要按照瀑布方式，或是敏捷方式进行管理，凡事都需要找到契合自己的方式。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Web项目流程"><a href="#Web项目流程" class="headerlink" title="Web项目流程"></a>Web项目流程</h3><p>1.需求分析<br>2.设计（概要设计、详细设计)<br>3.技术选型<br>4.初始化/引入需要的技术<br>5.写Demo<br>6.写代码（实现业务逻辑)<br>7.测试(单元测试)<br>8.代码提交&amp;代码评审<br>9.部署<br>10.发布</p>
+<p><strong>关于技术选型</strong><br>前端:三件套＋React +组件库Ant Design + Umi + Ant Design Pro(现成的管理系统)</p>
+<blockquote>
+<p>Umi 自动生成代码工具<br>packages.json 依赖和脚本<br>yarn 包管理器：//npm install -g yarn //yarn –version</p>
+</blockquote>
+<p>后端: java +spring + springmvc + mybatis + mybatis-plus + springboot + mysql<br>部署:服务器/容器（平台)</p>
+<blockquote>
+<p>mvnrepository:<a href="https://mvnrepository.com/">https://mvnrepository.com/</a><br><a href="https://search.maven.org/">https://search.maven.org/</a><br>mybatis-plus <a href="https://baomidou.com/">https://baomidou.com/</a><br>springboot官方生成器：<a href="https://start.spring.io/">https://start.spring.io/</a></p>
+</blockquote>
+<p><strong>关于依赖：</strong><br>Spring Boot DevTools //热更新<br>Lombok 注解<br>Spring Configuration Processor<br>mysql 数据库<br>spring web //接口<br>mybatis //数据库访问<br>junit //单元测试swagger //api文档</p>
+<h3 id="App开发流程"><a href="#App开发流程" class="headerlink" title="App开发流程"></a>App开发流程</h3><p>1.产品经理:功能需求，竞品分析，抄同类产品的好功能<br>2.UI设计：寻找灵感，抄同类产品设计<br>3.程序员：代码审查，百度论坛找解决办法<br>4.测试：测试体验，多种手机对比</p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+        <tag>App</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Android文件存储媒体库库MediaStore</title>
     <url>/article/5bfb2f95.html</url>
     <content><![CDATA[<blockquote>
@@ -3068,6 +3068,90 @@
       <tags>
         <tag>Android</tag>
         <tag>MediaStore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java的反射机制</title>
+    <url>/article/5337b80a.html</url>
+    <content><![CDATA[<blockquote>
+<p>Reflection 是 Java 程序开发语言的特征之一，它允许运行中的 Java 程序对自身进行检查，或者说“自审”，并能直接操作程序的内部属性。Java 的这一能力在实际应用中也许用得不是很多，但是在其它的程序设计语言中根本就不存在这一特性。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Java的类加载"><a href="#Java的类加载" class="headerlink" title="Java的类加载"></a>Java的类加载</h2><ul>
+<li>编译：java文件编译后生成class字节码文件</li>
+<li>类加载机制：JVM把class文件加载到内存，并对数据进行校验、准备、解析、初始化，最终形成JVM可以直接使用的Java类型的过程。<br><img src="https://img-blog.csdnimg.cn/cc40b19fbce5410f877a062d3f225fca.png" alt="类加载机制"><h2 id="Java的反射机制"><a href="#Java的反射机制" class="headerlink" title="Java的反射机制"></a>Java的反射机制</h2>Java反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法，这种动态获取、调用对象方法的功能称为Java语言的反射机制。</li>
+</ul>
+<p>Java的反射就是利用上面第二步加载到JVM中的.class文件来进行操作的。.class文件中包含java类的所有信息，当你不知道某个类具体信息时，可以使用反射获取class，然后进行各种操作。要想解剖一个类,必须先要获取到该类的字节码文件对象。而解剖使用的就是Class类中的方法，所以先要获取到每一个字节码文件对应的Class类型的对象。</p>
+<p>总体来说，反射就是把java类中的各种成分映射成一个个的Java对象，并且可以进行操作。例如一个类有成员变量、方法、构造方法、包等等信息，利用反射技术可以对一个类进行解剖，把个个组成部分映射成一个个对象。</p>
+<blockquote>
+<p>反射的必要性：<br>1.反射机制是很多java框架的基石。<br>2.有时候要适应某些需求，Java类里面不一定能直接调用另外的方法，这时候也可以通过反射机制来实现。</p>
+<p>反射的缺点：<br>反射的代码比正常调用的代码更多，性能也慢，所以应避免使用反射。</p>
+</blockquote>
+<h2 id="Java反射获取对象"><a href="#Java反射获取对象" class="headerlink" title="Java反射获取对象"></a>Java反射获取对象</h2><blockquote>
+<p>Class类：代表一个类<br>Constructor类：代表类的构造方法<br>Field类：代表类的成员变量（类的属性）<br>Method类：代表类的方法</p>
+</blockquote>
+<h3 id="1-获取Class对象"><a href="#1-获取Class对象" class="headerlink" title="1.获取Class对象"></a>1.获取Class对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取Class对象的三种方式</span><br><span class="line"><span class="number">1.</span>通过对象获取      对象名.getClass()</span><br><span class="line"><span class="number">2.</span>通过类名获取      类名.class </span><br><span class="line"><span class="number">3.</span>通过全类名获取    Class.forName(全类名)   </span><br><span class="line"></span><br><span class="line">三种方式常用第三种，第一种对象都有了还要反射干什么。第二种需要导入类的包，依赖太强，不导包就抛编译错误。一般都第三种，一个字符串可以传入也可写在配置文件中等多种方法。</span><br><span class="line"></span><br><span class="line"><span class="comment">//第三中方式获取Class对象</span></span><br><span class="line">Class stuClass = Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);<span class="comment">//注意此字符串必须是真实路径，就是带包名的类路径，包名.类名</span></span><br><span class="line">System.out.println(stuClass.getName());</span><br></pre></td></tr></table></figure>
+<h3 id="2-获取Constructor构造方法对象"><a href="#2-获取Constructor构造方法对象" class="headerlink" title="2.获取Constructor构造方法对象"></a>2.获取Constructor构造方法对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">通过Class对象可以获取某个类中的：构造方法、成员变量、成员方法；并访问成员；</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>获取构造方法：</span><br><span class="line"><span class="number">1</span>).批量的方法：</span><br><span class="line"><span class="keyword">public</span> Constructor[] getConstructors()：所有<span class="string">&quot;公有的&quot;</span>构造方法</span><br><span class="line"><span class="keyword">public</span> Constructor[] getDeclaredConstructors()：获取所有的构造方法(包括私有、受保护、默认、公有)</span><br><span class="line">     </span><br><span class="line"><span class="number">2</span>).获取单个的方法，并调用：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Constructor <span class="title">getConstructor</span><span class="params">(Class... parameterTypes)</span>:获取单个的&quot;公有的&quot;构造方法：</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Constructor <span class="title">getDeclaredConstructor</span><span class="params">(Class... parameterTypes)</span>:获取&quot;某个构造方法&quot;可以是私有的，或受保护、默认、公有；</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">调用构造方法：</span></span><br><span class="line"><span class="function">Constructor--&gt;<span class="title">newInstance</span><span class="params">(Object... initargs)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2.newInstance是 Constructor类的方法（管理构造函数的类）</span></span><br><span class="line"><span class="function">api的解释为：<span class="title">newInstance</span><span class="params">(Object... initargs)</span></span></span><br><span class="line"><span class="function">使用此 Constructor 对象表示的构造方法来创建该构造方法的声明类的新实例，并用指定的初始化参数初始化该实例。</span></span><br><span class="line"><span class="function">它的返回值是T类型，所以newInstance是创建了一个构造方法的声明类的新实例对象。并为之调用</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3.Constructor con </span>= clazz.getConstructor(<span class="keyword">null</span>);</span><br><span class="line"><span class="number">1</span>)因为是无参的构造方法所以类型是一个<span class="keyword">null</span>,不写也可以：这里需要的是一个参数的类型，切记是类型</span><br><span class="line"><span class="number">2</span>)返回的是描述这个无参构造函数的类对象。</span><br><span class="line">    </span><br><span class="line"><span class="comment">//1.加载Class对象</span></span><br><span class="line">Class clazz = Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Constructor  con = clazz.getDeclaredConstructor(<span class="keyword">char</span>.class);</span><br><span class="line">System.out.println(con);</span><br><span class="line"><span class="comment">//调用构造方法</span></span><br><span class="line">con.setAccessible(<span class="keyword">true</span>);<span class="comment">//暴力访问(忽略掉访问修饰符)</span></span><br><span class="line">Object obj = con.newInstance(<span class="string">&#x27;男&#x27;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;obj = &quot;</span> + obj);</span><br><span class="line"><span class="comment">//Student stu = (Student)obj;</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-获取Field成员变量对象"><a href="#3-获取Field成员变量对象" class="headerlink" title="3.获取Field成员变量对象"></a>3.获取Field成员变量对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取成员变量并调用：</span><br><span class="line"><span class="number">1.</span>批量的</span><br><span class="line">Field[] getFields():获取所有的<span class="string">&quot;公有字段&quot;</span></span><br><span class="line">Field[] getDeclaredFields():获取所有字段，包括：私有、受保护、默认、公有；</span><br><span class="line"><span class="number">2.</span>获取单个的：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Field <span class="title">getField</span><span class="params">(String fieldName)</span>:获取某个&quot;公有的&quot;字段；</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Field <span class="title">getDeclaredField</span><span class="params">(String fieldName)</span>:获取某个字段<span class="params">(可以是私有的)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">设置字段的值：</span></span><br><span class="line"><span class="function">Field --&gt; <span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(Object obj,Object value)</span>:</span></span><br><span class="line"><span class="function">第一个参数：要传入设置的对象，第二个参数：要传入实参</span></span><br><span class="line"><span class="function">参数说明：</span></span><br><span class="line"><span class="function">1.obj:要设置的字段所在的对象；</span></span><br><span class="line"><span class="function">2.value:要为字段设置的值；</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">//1.获取Class对象</span></span></span><br><span class="line"><span class="function">Class stuClass </span>= Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Field f = stuClass.getDeclaredField(<span class="string">&quot;name&quot;</span>);</span><br><span class="line"><span class="comment">//获取一个对象</span></span><br><span class="line">Object obj = stuClass.getConstructor().newInstance();<span class="comment">//产生Student对象--》Student stu = new Student();</span></span><br><span class="line">f.setAccessible(<span class="keyword">true</span>);<span class="comment">//暴力反射，解除私有限定</span></span><br><span class="line"><span class="comment">//为字段设置值</span></span><br><span class="line">f.set(obj, <span class="string">&quot;刘德华&quot;</span>);<span class="comment">//为Student对象中的name属性赋值--》stu.name = &quot;刘德华&quot;</span></span><br><span class="line"><span class="comment">//验证</span></span><br><span class="line">Student stu = (Student)obj;</span><br><span class="line">System.out.println(<span class="string">&quot;验证姓名：&quot;</span> + stu.name);</span><br></pre></td></tr></table></figure>
+<h3 id="4-获取Method成员方法对象"><a href="#4-获取Method成员方法对象" class="headerlink" title="4.获取Method成员方法对象"></a>4.获取Method成员方法对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取成员方法并调用：</span><br><span class="line"><span class="number">1.</span>批量的：</span><br><span class="line"><span class="keyword">public</span> Method[] getMethods():获取所有<span class="string">&quot;公有方法&quot;</span>；（包含了父类的方法也包含Object类）</span><br><span class="line"><span class="keyword">public</span> Method[] getDeclaredMethods():获取所有的成员方法，包括私有的(不包括继承的)</span><br><span class="line"><span class="number">2.</span>获取单个的：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Method <span class="title">getMethod</span><span class="params">(String name,Class&lt;?&gt;... parameterTypes)</span>:</span></span><br><span class="line"><span class="function">参数：</span></span><br><span class="line"><span class="function">name : 方法名；</span></span><br><span class="line"><span class="function">Class ... : 形参的Class类型对象</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Method <span class="title">getDeclaredMethod</span><span class="params">(String name,Class&lt;?&gt;... parameterTypes)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">调用方法：</span></span><br><span class="line"><span class="function">Method --&gt; <span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object obj,Object... args)</span>:</span></span><br><span class="line"><span class="function">参数说明：</span></span><br><span class="line"><span class="function">obj : 要调用方法的对象；</span></span><br><span class="line"><span class="function">args:调用方式时所传递的实参；</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">//1.获取Class对象</span></span></span><br><span class="line"><span class="function">Class stuClass </span>= Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Method m = stuClass.getMethod(<span class="string">&quot;show1&quot;</span>, String.class);</span><br><span class="line">System.out.println(m);</span><br><span class="line"><span class="comment">//m.setAccessible(true);//解除私有限定</span></span><br><span class="line"><span class="comment">//实例化一个Student对象</span></span><br><span class="line">Object obj = stuClass.getConstructor().newInstance();</span><br><span class="line">Object result = m.invoke(obj, <span class="string">&quot;刘德华&quot;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;返回值：&quot;</span> + result);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[1] <a href="https://www.cnblogs.com/tech-bird/p/3525336.html">https://www.cnblogs.com/tech-bird/p/3525336.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Reflection</tag>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OpenAPI的介绍及其使用</title>
+    <url>/article/f7f06827.html</url>
+    <content><![CDATA[<blockquote>
+<p>API的全称是应用编程接口（Application Programming Interface），这并不是一个新概念，在计算机操作系统出现的早期就已经存在了。在互联网时代，把网站的服务封装成一系列计算机易识别的数据接口开放出去，供第三方开发者使用，这种行为就叫做开放网站的API，与之对应的，所开放的API就被称作openAPI。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="OSCHINA-API的使用"><a href="#OSCHINA-API的使用" class="headerlink" title="OSCHINA API的使用"></a>OSCHINA API的使用</h2><p>OSCHINA API：<a href="https://www.oschina.net/openapi/docs">https://www.oschina.net/openapi/docs</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">- 什么是token</span><br><span class="line">token（令牌）是一串唯一的字符串，通常由服务端生成，在注册完成时返回给客户端，用来标识此用户，客户端将此字符串存储在本地。在以后的网络请求时，客户端先查询本地的token，如果有则直接使用此令牌进行网络请求，没有则提示未登录，转到登陆注册界面。</span><br><span class="line">此外，还可以在服务端或者客户端添加过期判别机制。</span><br><span class="line"></span><br><span class="line">- token的作用</span><br><span class="line">token可以显著减少服务端对用户表的查询，同时使用户不必每次都登陆，提高了系统的可用性与健壮性。</span><br><span class="line"></span><br><span class="line">- 使用SharedPreferences保存token</span><br></pre></td></tr></table></figure>
+
+<p>1.创建应用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">状态		正在审核</span><br><span class="line">应用ID	GCqPUbrIaoe7nUScRlet</span><br><span class="line">应用私钥	YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1</span><br><span class="line">应用首页	https://fangjian98.github.io/    </span><br><span class="line">回调地址	http://192.168.0.106/</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png" alt="OSCHINA API"></p>
+<p>2.OAuth2 获取 AccessToken，应用通过 AccessToken 访问 OpenApi 使用用户数据。<br>采用 OAuth2 协议 认证，开放 osc 移动 app 版本所有接口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.</span><br><span class="line"><span class="comment"># 用户授权码的回调地址直接获取code</span></span><br><span class="line"><span class="comment"># 构造Uri：/action/oauth2/authorize</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)</span></span><br><span class="line">https://www.oschina.net/action/oauth2/authorize?response_type=code&amp;client_id=GCqPUbrIaoe7nUScRlet&amp;redirect_uri=http://192.168.0.106/</span><br><span class="line"><span class="comment"># 返回用户授权码code</span></span><br><span class="line">http://192.168.0.106/?code=iap9LL&amp;state=</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"><span class="comment"># 应用服务器使用 oauth2_token API 向 OSChina 认证服务器发送用户授权码以及回调地址，OSChina 认证服务器返回 AccessToken</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/token</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)和client_secret(应用私钥)和code(用户授权码)</span></span><br><span class="line">https://www.oschina.net/action/openapi/token?client_id=GCqPUbrIaoe7nUScRlet&amp;client_secret=YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1&amp;grant_type=authorization_code&amp;code=pZ6Ye2&amp;redirect_uri=http://192.168.0.106/&amp;dataType=json</span><br><span class="line"><span class="comment"># 返回AccessToken</span></span><br><span class="line">&#123;<span class="string">&quot;access_token&quot;</span>:<span class="string">&quot;09a10176-7772-4577-8856-1b396f86e83b&quot;</span>,<span class="string">&quot;refresh_token&quot;</span>:<span class="string">&quot;da728b79-3b0d-4062-961b-bd67c09ecbcd&quot;</span>,<span class="string">&quot;uid&quot;</span>:4470181,<span class="string">&quot;token_type&quot;</span>:<span class="string">&quot;bearer&quot;</span>,<span class="string">&quot;expires_in&quot;</span>:604799&#125;</span><br><span class="line"></span><br><span class="line">3.使用AccessToken请求：参考OpenAPI文档即可</span><br><span class="line"><span class="comment"># 新闻news_list</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_list</span></span><br><span class="line"><span class="comment"># access_token catalog page pageSize dataType</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_list?access_token=09a10176-7772-4577-8856-1b396f86e83b&amp;catalog=2&amp;page=1&amp;pageSize=10&amp;dataType=json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明				默认值</span><br><span class="line">access_token	<span class="literal">true</span>	string	oauth2_token获取的access_token	</span><br><span class="line">catalog			<span class="literal">true</span>	int		1-所有|2-综合新闻|3-软件更新		1</span><br><span class="line">page/pageIndex	<span class="literal">true</span>	int		页数	1</span><br><span class="line">pageSize		<span class="literal">true</span>	int		每页条数	20</span><br><span class="line">dataType		<span class="literal">true</span>	string	返回数据类型[<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新闻news_detail</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_detail</span></span><br><span class="line"><span class="comment"># id access_token</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_detail?id=188164&amp;access_token=6983b81e-5e2e-4685-888f-36abcf3f2da7&amp;dataType=json</span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明	默认值</span><br><span class="line">id				<span class="literal">true</span>	long	新闻编号	空</span><br><span class="line">access_token	<span class="literal">false</span>	string	oauth2_token获取的access_token 传则显示是否收藏 用户未登录则不传	</span><br><span class="line">dataType		<span class="literal">false</span>	string	返回数据类型 [<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他平台开放API"><a href="#其他平台开放API" class="headerlink" title="其他平台开放API"></a>其他平台开放API</h2><ul>
+<li>CODING OPEN API：<a href="https://help.coding.net/openapi">https://help.coding.net/openapi</a></li>
+<li>有道云笔记API：<a href="http://note.youdao.com/open/index.html">http://note.youdao.com/open/index.html</a></li>
+<li><a href="https://www.cnblogs.com/trackingmore/p/7156877.html">常用精品API接口汇总</a></li>
+</ul>
+<h2 id="Json解析"><a href="#Json解析" class="headerlink" title="Json解析"></a>Json解析</h2><p>JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交换格式。它基于 ECMAScript (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON格式取代了xml给网络传输带来了很大的便利，是最常见的数据返回类型。</p>
+<p>常见的Json解析库</p>
+<ul>
+<li>org.json库</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Android给我们提供的Json解析类，官方提供的JSONArray与JSONObject</span><br><span class="line">这些API都存在于org.json包下，而我们用到的类有下面这些：</span><br><span class="line">JSONObject： Json对象，可以完成Json字符串与Java对象的相互转换</span><br><span class="line">JSONArray： Json数组，可以完成Json字符串与Java集合或对象的相互转换</span><br><span class="line">JSONStringer： Json文本构建类，这个类可以帮助快速和便捷的创建JSON text， 每个</span><br><span class="line">JSONStringer实体只能对应创建一个JSON text</span><br><span class="line">JSONTokener：Json解析类</span><br><span class="line">JSONException：Json异常</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>fastjson</li>
+<li>gson</li>
+</ul>
+<blockquote>
+<p>[1] <a href="https://www.cnblogs.com/lushimei/p/13436096.html">https://www.cnblogs.com/lushimei/p/13436096.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -3202,90 +3286,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java的反射机制</title>
-    <url>/article/5337b80a.html</url>
-    <content><![CDATA[<blockquote>
-<p>Reflection 是 Java 程序开发语言的特征之一，它允许运行中的 Java 程序对自身进行检查，或者说“自审”，并能直接操作程序的内部属性。Java 的这一能力在实际应用中也许用得不是很多，但是在其它的程序设计语言中根本就不存在这一特性。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Java的类加载"><a href="#Java的类加载" class="headerlink" title="Java的类加载"></a>Java的类加载</h2><ul>
-<li>编译：java文件编译后生成class字节码文件</li>
-<li>类加载机制：JVM把class文件加载到内存，并对数据进行校验、准备、解析、初始化，最终形成JVM可以直接使用的Java类型的过程。<br><img src="https://img-blog.csdnimg.cn/cc40b19fbce5410f877a062d3f225fca.png" alt="类加载机制"><h2 id="Java的反射机制"><a href="#Java的反射机制" class="headerlink" title="Java的反射机制"></a>Java的反射机制</h2>Java反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法，这种动态获取、调用对象方法的功能称为Java语言的反射机制。</li>
-</ul>
-<p>Java的反射就是利用上面第二步加载到JVM中的.class文件来进行操作的。.class文件中包含java类的所有信息，当你不知道某个类具体信息时，可以使用反射获取class，然后进行各种操作。要想解剖一个类,必须先要获取到该类的字节码文件对象。而解剖使用的就是Class类中的方法，所以先要获取到每一个字节码文件对应的Class类型的对象。</p>
-<p>总体来说，反射就是把java类中的各种成分映射成一个个的Java对象，并且可以进行操作。例如一个类有成员变量、方法、构造方法、包等等信息，利用反射技术可以对一个类进行解剖，把个个组成部分映射成一个个对象。</p>
-<blockquote>
-<p>反射的必要性：<br>1.反射机制是很多java框架的基石。<br>2.有时候要适应某些需求，Java类里面不一定能直接调用另外的方法，这时候也可以通过反射机制来实现。</p>
-<p>反射的缺点：<br>反射的代码比正常调用的代码更多，性能也慢，所以应避免使用反射。</p>
-</blockquote>
-<h2 id="Java反射获取对象"><a href="#Java反射获取对象" class="headerlink" title="Java反射获取对象"></a>Java反射获取对象</h2><blockquote>
-<p>Class类：代表一个类<br>Constructor类：代表类的构造方法<br>Field类：代表类的成员变量（类的属性）<br>Method类：代表类的方法</p>
-</blockquote>
-<h3 id="1-获取Class对象"><a href="#1-获取Class对象" class="headerlink" title="1.获取Class对象"></a>1.获取Class对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取Class对象的三种方式</span><br><span class="line"><span class="number">1.</span>通过对象获取      对象名.getClass()</span><br><span class="line"><span class="number">2.</span>通过类名获取      类名.class </span><br><span class="line"><span class="number">3.</span>通过全类名获取    Class.forName(全类名)   </span><br><span class="line"></span><br><span class="line">三种方式常用第三种，第一种对象都有了还要反射干什么。第二种需要导入类的包，依赖太强，不导包就抛编译错误。一般都第三种，一个字符串可以传入也可写在配置文件中等多种方法。</span><br><span class="line"></span><br><span class="line"><span class="comment">//第三中方式获取Class对象</span></span><br><span class="line">Class stuClass = Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);<span class="comment">//注意此字符串必须是真实路径，就是带包名的类路径，包名.类名</span></span><br><span class="line">System.out.println(stuClass.getName());</span><br></pre></td></tr></table></figure>
-<h3 id="2-获取Constructor构造方法对象"><a href="#2-获取Constructor构造方法对象" class="headerlink" title="2.获取Constructor构造方法对象"></a>2.获取Constructor构造方法对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">通过Class对象可以获取某个类中的：构造方法、成员变量、成员方法；并访问成员；</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>获取构造方法：</span><br><span class="line"><span class="number">1</span>).批量的方法：</span><br><span class="line"><span class="keyword">public</span> Constructor[] getConstructors()：所有<span class="string">&quot;公有的&quot;</span>构造方法</span><br><span class="line"><span class="keyword">public</span> Constructor[] getDeclaredConstructors()：获取所有的构造方法(包括私有、受保护、默认、公有)</span><br><span class="line">     </span><br><span class="line"><span class="number">2</span>).获取单个的方法，并调用：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Constructor <span class="title">getConstructor</span><span class="params">(Class... parameterTypes)</span>:获取单个的&quot;公有的&quot;构造方法：</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Constructor <span class="title">getDeclaredConstructor</span><span class="params">(Class... parameterTypes)</span>:获取&quot;某个构造方法&quot;可以是私有的，或受保护、默认、公有；</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">调用构造方法：</span></span><br><span class="line"><span class="function">Constructor--&gt;<span class="title">newInstance</span><span class="params">(Object... initargs)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2.newInstance是 Constructor类的方法（管理构造函数的类）</span></span><br><span class="line"><span class="function">api的解释为：<span class="title">newInstance</span><span class="params">(Object... initargs)</span></span></span><br><span class="line"><span class="function">使用此 Constructor 对象表示的构造方法来创建该构造方法的声明类的新实例，并用指定的初始化参数初始化该实例。</span></span><br><span class="line"><span class="function">它的返回值是T类型，所以newInstance是创建了一个构造方法的声明类的新实例对象。并为之调用</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3.Constructor con </span>= clazz.getConstructor(<span class="keyword">null</span>);</span><br><span class="line"><span class="number">1</span>)因为是无参的构造方法所以类型是一个<span class="keyword">null</span>,不写也可以：这里需要的是一个参数的类型，切记是类型</span><br><span class="line"><span class="number">2</span>)返回的是描述这个无参构造函数的类对象。</span><br><span class="line">    </span><br><span class="line"><span class="comment">//1.加载Class对象</span></span><br><span class="line">Class clazz = Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Constructor  con = clazz.getDeclaredConstructor(<span class="keyword">char</span>.class);</span><br><span class="line">System.out.println(con);</span><br><span class="line"><span class="comment">//调用构造方法</span></span><br><span class="line">con.setAccessible(<span class="keyword">true</span>);<span class="comment">//暴力访问(忽略掉访问修饰符)</span></span><br><span class="line">Object obj = con.newInstance(<span class="string">&#x27;男&#x27;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;obj = &quot;</span> + obj);</span><br><span class="line"><span class="comment">//Student stu = (Student)obj;</span></span><br></pre></td></tr></table></figure>
-<h3 id="3-获取Field成员变量对象"><a href="#3-获取Field成员变量对象" class="headerlink" title="3.获取Field成员变量对象"></a>3.获取Field成员变量对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取成员变量并调用：</span><br><span class="line"><span class="number">1.</span>批量的</span><br><span class="line">Field[] getFields():获取所有的<span class="string">&quot;公有字段&quot;</span></span><br><span class="line">Field[] getDeclaredFields():获取所有字段，包括：私有、受保护、默认、公有；</span><br><span class="line"><span class="number">2.</span>获取单个的：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Field <span class="title">getField</span><span class="params">(String fieldName)</span>:获取某个&quot;公有的&quot;字段；</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Field <span class="title">getDeclaredField</span><span class="params">(String fieldName)</span>:获取某个字段<span class="params">(可以是私有的)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">设置字段的值：</span></span><br><span class="line"><span class="function">Field --&gt; <span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(Object obj,Object value)</span>:</span></span><br><span class="line"><span class="function">第一个参数：要传入设置的对象，第二个参数：要传入实参</span></span><br><span class="line"><span class="function">参数说明：</span></span><br><span class="line"><span class="function">1.obj:要设置的字段所在的对象；</span></span><br><span class="line"><span class="function">2.value:要为字段设置的值；</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">//1.获取Class对象</span></span></span><br><span class="line"><span class="function">Class stuClass </span>= Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Field f = stuClass.getDeclaredField(<span class="string">&quot;name&quot;</span>);</span><br><span class="line"><span class="comment">//获取一个对象</span></span><br><span class="line">Object obj = stuClass.getConstructor().newInstance();<span class="comment">//产生Student对象--》Student stu = new Student();</span></span><br><span class="line">f.setAccessible(<span class="keyword">true</span>);<span class="comment">//暴力反射，解除私有限定</span></span><br><span class="line"><span class="comment">//为字段设置值</span></span><br><span class="line">f.set(obj, <span class="string">&quot;刘德华&quot;</span>);<span class="comment">//为Student对象中的name属性赋值--》stu.name = &quot;刘德华&quot;</span></span><br><span class="line"><span class="comment">//验证</span></span><br><span class="line">Student stu = (Student)obj;</span><br><span class="line">System.out.println(<span class="string">&quot;验证姓名：&quot;</span> + stu.name);</span><br></pre></td></tr></table></figure>
-<h3 id="4-获取Method成员方法对象"><a href="#4-获取Method成员方法对象" class="headerlink" title="4.获取Method成员方法对象"></a>4.获取Method成员方法对象</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">获取成员方法并调用：</span><br><span class="line"><span class="number">1.</span>批量的：</span><br><span class="line"><span class="keyword">public</span> Method[] getMethods():获取所有<span class="string">&quot;公有方法&quot;</span>；（包含了父类的方法也包含Object类）</span><br><span class="line"><span class="keyword">public</span> Method[] getDeclaredMethods():获取所有的成员方法，包括私有的(不包括继承的)</span><br><span class="line"><span class="number">2.</span>获取单个的：</span><br><span class="line"><span class="function"><span class="keyword">public</span> Method <span class="title">getMethod</span><span class="params">(String name,Class&lt;?&gt;... parameterTypes)</span>:</span></span><br><span class="line"><span class="function">参数：</span></span><br><span class="line"><span class="function">name : 方法名；</span></span><br><span class="line"><span class="function">Class ... : 形参的Class类型对象</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Method <span class="title">getDeclaredMethod</span><span class="params">(String name,Class&lt;?&gt;... parameterTypes)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">调用方法：</span></span><br><span class="line"><span class="function">Method --&gt; <span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object obj,Object... args)</span>:</span></span><br><span class="line"><span class="function">参数说明：</span></span><br><span class="line"><span class="function">obj : 要调用方法的对象；</span></span><br><span class="line"><span class="function">args:调用方式时所传递的实参；</span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">//1.获取Class对象</span></span></span><br><span class="line"><span class="function">Class stuClass </span>= Class.forName(<span class="string">&quot;com.example.Student&quot;</span>);</span><br><span class="line">Method m = stuClass.getMethod(<span class="string">&quot;show1&quot;</span>, String.class);</span><br><span class="line">System.out.println(m);</span><br><span class="line"><span class="comment">//m.setAccessible(true);//解除私有限定</span></span><br><span class="line"><span class="comment">//实例化一个Student对象</span></span><br><span class="line">Object obj = stuClass.getConstructor().newInstance();</span><br><span class="line">Object result = m.invoke(obj, <span class="string">&quot;刘德华&quot;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;返回值：&quot;</span> + result);</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>[1] <a href="https://www.cnblogs.com/tech-bird/p/3525336.html">https://www.cnblogs.com/tech-bird/p/3525336.html</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Reflection</tag>
-        <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OpenAPI的介绍及其使用</title>
-    <url>/article/f7f06827.html</url>
-    <content><![CDATA[<blockquote>
-<p>API的全称是应用编程接口（Application Programming Interface），这并不是一个新概念，在计算机操作系统出现的早期就已经存在了。在互联网时代，把网站的服务封装成一系列计算机易识别的数据接口开放出去，供第三方开发者使用，这种行为就叫做开放网站的API，与之对应的，所开放的API就被称作openAPI。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="OSCHINA-API的使用"><a href="#OSCHINA-API的使用" class="headerlink" title="OSCHINA API的使用"></a>OSCHINA API的使用</h2><p>OSCHINA API：<a href="https://www.oschina.net/openapi/docs">https://www.oschina.net/openapi/docs</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">- 什么是token</span><br><span class="line">token（令牌）是一串唯一的字符串，通常由服务端生成，在注册完成时返回给客户端，用来标识此用户，客户端将此字符串存储在本地。在以后的网络请求时，客户端先查询本地的token，如果有则直接使用此令牌进行网络请求，没有则提示未登录，转到登陆注册界面。</span><br><span class="line">此外，还可以在服务端或者客户端添加过期判别机制。</span><br><span class="line"></span><br><span class="line">- token的作用</span><br><span class="line">token可以显著减少服务端对用户表的查询，同时使用户不必每次都登陆，提高了系统的可用性与健壮性。</span><br><span class="line"></span><br><span class="line">- 使用SharedPreferences保存token</span><br></pre></td></tr></table></figure>
-
-<p>1.创建应用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">状态		正在审核</span><br><span class="line">应用ID	GCqPUbrIaoe7nUScRlet</span><br><span class="line">应用私钥	YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1</span><br><span class="line">应用首页	https://fangjian98.github.io/    </span><br><span class="line">回调地址	http://192.168.0.106/</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png" alt="OSCHINA API"></p>
-<p>2.OAuth2 获取 AccessToken，应用通过 AccessToken 访问 OpenApi 使用用户数据。<br>采用 OAuth2 协议 认证，开放 osc 移动 app 版本所有接口</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.</span><br><span class="line"><span class="comment"># 用户授权码的回调地址直接获取code</span></span><br><span class="line"><span class="comment"># 构造Uri：/action/oauth2/authorize</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)</span></span><br><span class="line">https://www.oschina.net/action/oauth2/authorize?response_type=code&amp;client_id=GCqPUbrIaoe7nUScRlet&amp;redirect_uri=http://192.168.0.106/</span><br><span class="line"><span class="comment"># 返回用户授权码code</span></span><br><span class="line">http://192.168.0.106/?code=iap9LL&amp;state=</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"><span class="comment"># 应用服务器使用 oauth2_token API 向 OSChina 认证服务器发送用户授权码以及回调地址，OSChina 认证服务器返回 AccessToken</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/token</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)和client_secret(应用私钥)和code(用户授权码)</span></span><br><span class="line">https://www.oschina.net/action/openapi/token?client_id=GCqPUbrIaoe7nUScRlet&amp;client_secret=YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1&amp;grant_type=authorization_code&amp;code=pZ6Ye2&amp;redirect_uri=http://192.168.0.106/&amp;dataType=json</span><br><span class="line"><span class="comment"># 返回AccessToken</span></span><br><span class="line">&#123;<span class="string">&quot;access_token&quot;</span>:<span class="string">&quot;09a10176-7772-4577-8856-1b396f86e83b&quot;</span>,<span class="string">&quot;refresh_token&quot;</span>:<span class="string">&quot;da728b79-3b0d-4062-961b-bd67c09ecbcd&quot;</span>,<span class="string">&quot;uid&quot;</span>:4470181,<span class="string">&quot;token_type&quot;</span>:<span class="string">&quot;bearer&quot;</span>,<span class="string">&quot;expires_in&quot;</span>:604799&#125;</span><br><span class="line"></span><br><span class="line">3.使用AccessToken请求：参考OpenAPI文档即可</span><br><span class="line"><span class="comment"># 新闻news_list</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_list</span></span><br><span class="line"><span class="comment"># access_token catalog page pageSize dataType</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_list?access_token=09a10176-7772-4577-8856-1b396f86e83b&amp;catalog=2&amp;page=1&amp;pageSize=10&amp;dataType=json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明				默认值</span><br><span class="line">access_token	<span class="literal">true</span>	string	oauth2_token获取的access_token	</span><br><span class="line">catalog			<span class="literal">true</span>	int		1-所有|2-综合新闻|3-软件更新		1</span><br><span class="line">page/pageIndex	<span class="literal">true</span>	int		页数	1</span><br><span class="line">pageSize		<span class="literal">true</span>	int		每页条数	20</span><br><span class="line">dataType		<span class="literal">true</span>	string	返回数据类型[<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新闻news_detail</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_detail</span></span><br><span class="line"><span class="comment"># id access_token</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_detail?id=188164&amp;access_token=6983b81e-5e2e-4685-888f-36abcf3f2da7&amp;dataType=json</span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明	默认值</span><br><span class="line">id				<span class="literal">true</span>	long	新闻编号	空</span><br><span class="line">access_token	<span class="literal">false</span>	string	oauth2_token获取的access_token 传则显示是否收藏 用户未登录则不传	</span><br><span class="line">dataType		<span class="literal">false</span>	string	返回数据类型 [<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他平台开放API"><a href="#其他平台开放API" class="headerlink" title="其他平台开放API"></a>其他平台开放API</h2><ul>
-<li>CODING OPEN API：<a href="https://help.coding.net/openapi">https://help.coding.net/openapi</a></li>
-<li>有道云笔记API：<a href="http://note.youdao.com/open/index.html">http://note.youdao.com/open/index.html</a></li>
-<li><a href="https://www.cnblogs.com/trackingmore/p/7156877.html">常用精品API接口汇总</a></li>
-</ul>
-<h2 id="Json解析"><a href="#Json解析" class="headerlink" title="Json解析"></a>Json解析</h2><p>JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交换格式。它基于 ECMAScript (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON格式取代了xml给网络传输带来了很大的便利，是最常见的数据返回类型。</p>
-<p>常见的Json解析库</p>
-<ul>
-<li>org.json库</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Android给我们提供的Json解析类，官方提供的JSONArray与JSONObject</span><br><span class="line">这些API都存在于org.json包下，而我们用到的类有下面这些：</span><br><span class="line">JSONObject： Json对象，可以完成Json字符串与Java对象的相互转换</span><br><span class="line">JSONArray： Json数组，可以完成Json字符串与Java集合或对象的相互转换</span><br><span class="line">JSONStringer： Json文本构建类，这个类可以帮助快速和便捷的创建JSON text， 每个</span><br><span class="line">JSONStringer实体只能对应创建一个JSON text</span><br><span class="line">JSONTokener：Json解析类</span><br><span class="line">JSONException：Json异常</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>fastjson</li>
-<li>gson</li>
-</ul>
-<blockquote>
-<p>[1] <a href="https://www.cnblogs.com/lushimei/p/13436096.html">https://www.cnblogs.com/lushimei/p/13436096.html</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SMB通信协议</title>
     <url>/article/67e1ad8.html</url>
     <content><![CDATA[<blockquote>
@@ -3397,16 +3397,16 @@
 <p><img src="https://www.zhihu.com/equation?tex=f(x)+=+a+-+b+%5Ctag%7B1.1%7D" alt="[公式]"></p>
 <p><strong>公式组合</strong></p>
 <p>通过cases环境实现公式的组合，&amp;分隔公式和条件，还可以通过\limits来让x→0位于lim的正下方而非默认在lim符号的右下方显示</p>
-<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="formula">$$D(x) = <span class="tag">\<span class="name">begin</span><span class="string">&#123;cases&#125;</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">lim</span></span><span class="tag">\<span class="name">limits</span></span>_&#123;x <span class="tag">\<span class="name">to</span></span> 0&#125; <span class="tag">\<span class="name">frac</span><span class="string">&#123;a^x&#125;</span><span class="string">&#123;b+c&#125;</span></span>, &amp; x&lt;3 <span class="tag">\<span class="name">\</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">pi</span></span>, &amp; x=3 <span class="tag">\<span class="name">\</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">int</span></span>_a^&#123;3b&#125;x_&#123;ij&#125;+e^2 <span class="tag">\<span class="name">mathrm</span><span class="string">&#123;d&#125;</span></span>x,&amp; x&gt;3 <span class="tag">\<span class="name">\</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">end</span><span class="string">&#123;cases&#125;</span></span>$$</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$D(x) = \begin&#123;cases&#125;</span><br><span class="line">\lim\limits_&#123;x \to 0&#125; \frac&#123;a^x&#125;&#123;b+c&#125;, &amp; x&lt;3 \\</span><br><span class="line">\pi, &amp; x=3 \\</span><br><span class="line">\int_a^&#123;3b&#125;x_&#123;ij&#125;+e^2 \mathrm&#123;d&#125;x,&amp; x&gt;3 \\</span><br><span class="line">\end&#123;cases&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://www.zhihu.com/equation?tex=D(x)+=+%5Cbegin%7Bcases%7D+%5Clim%5Climits_%7Bx+%5Cto+0%7D+%5Cfrac%7Ba%5Ex%7D%7Bb+c%7D,+&+x%3C3+%5C%5C+%5Cpi,+&+x=3+%5C%5C+%5Cint_a%5E%7B3b%7Dx_%7Bij%7D+e%5E2+%5Cmathrm%7Bd%7Dx,&+x%3E3+%5C%5C+%5Cend%7Bcases%7D" alt="[公式]"></p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation.svg" alt="[公式]"></p>
 <p><strong>拆分单个公式</strong></p>
 <p>通过split环境实现公式拆分</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$\begin&#123;split&#125;</span><br><span class="line">\cos 2x &amp;= \cos^2x - \sin^2x \\</span><br><span class="line">&amp;=2\cos^2x-1</span><br><span class="line">\end&#123;split&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bsplit%7D+%5Ccos+2x+&=+%5Ccos%5E2x+-+%5Csin%5E2x+%5C%5C+&=2%5Ccos%5E2x-1+%5Cend%7Bsplit%7D" alt="[公式]"></p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation_split.svg" alt="[公式]"></p>
 <p><strong>简单运算</strong></p>
 <p>拉丁字母、阿拉伯数字和 +-*/= 运算符均可以直接输入获得，命令\cdot表示乘法的圆点，命令\neq表示不等号，命令\equiv表示恒等于，命令\bmod表示取模</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$ x+2-3*4/6=4/y + x\cdot y $$</span><br></pre></td></tr></table></figure>
@@ -3476,7 +3476,7 @@
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$\begin&#123;bmatrix&#125;</span><br><span class="line">1 &amp; 2 &amp; \cdots \\</span><br><span class="line">67 &amp; 95 &amp; \cdots \\</span><br><span class="line">\vdots  &amp; \vdots &amp; \ddots \\</span><br><span class="line">\end&#123;bmatrix&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bbmatrix%7D+1+&+2+&+%5Ccdots+%5C%5C+67+&+95+&+%5Ccdots+%5C%5C+%5Cvdots++&+%5Cvdots+&+%5Cddots+%5C%5C+%5Cend%7Bbmatrix%7D" alt="[公式]"></p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/matrix.svg" alt="[公式]"></p>
 <p><strong>希腊字母</strong></p>
 <p>希腊字母无法直接通过美式键盘输入获得。在LaTeX中通过反斜杠\加上其字母读音实现，将读音首字母大写即可输入其大写形式，详见下表</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$ \alpha^&#123;2&#125; + \beta = \Theta  $$</span><br></pre></td></tr></table></figure>
@@ -3517,6 +3517,11 @@
       </tags>
   </entry>
   <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[<h1 align="center">Hi 👋, I'm Fang Jian</h1>
@@ -3530,14 +3535,14 @@
 <li>👨‍💻 All of my projects are available at <a href="https://github.com/fangjian98">GitHub</a></li>
 <li>📝 I regulary write articles on <a href="https://blog.csdn.net/weixin_44008788">CSDN</a></li>
 <li>💬 Ask me about <strong>Android, Python, Linux</strong></li>
-<li>📫 How to reach me <strong><a href="mailto:&#102;&#x61;&#x6e;&#103;&#x6a;&#x69;&#x61;&#110;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;">&#102;&#x61;&#x6e;&#103;&#x6a;&#x69;&#x61;&#110;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a></strong></li>
+<li>📫 How to reach me <strong><a href="mailto:&#x66;&#97;&#x6e;&#x67;&#x6a;&#105;&#97;&#110;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x66;&#97;&#x6e;&#x67;&#x6a;&#105;&#97;&#110;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></strong></li>
 <li>:books: Motto:What does not kill me,makes me stronger.(任何不能杀死你的，都会使你更强大)</li>
 </ul>
 ]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -3913,10 +3918,5 @@
 <p>异次元软件世界简称异次元，是一个致力推广优秀应用软件与互联网资源的网站，因我自己个人兴趣而建立。最初叫做《异次元の世界》，域名曾为 X-Force.cn，后来改版到现在的 iPlaySoft.com，目的是更加专注于“玩软件”的交流。</p>
 </blockquote>
 ]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
