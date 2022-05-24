@@ -54,6 +54,64 @@
 ]]></content>
   </entry>
   <entry>
+    <title>关于图床的使用</title>
+    <url>/article/91cd0b89.html</url>
+    <content><![CDATA[<blockquote>
+<p>图床一般是指储存图片的服务器，有国内和国外之分。国外的图床由于有空间距离等因素决定访问速度很慢影响图片显示速度。国内也分为单线空间、多线空间和cdn加速三种。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="图床意义"><a href="#图床意义" class="headerlink" title="图床意义"></a>图床意义</h3><p>图床就是专门用来存放图片，同时允许你把图片对外连接的网上空间，不少图床都是免费的。图床相当于在网络上存储图片的地方，可以节约本地资源，图片可以多次引用。我最早接触的图床是<a href="https://sm.ms/">sm.ms</a>，后来需要登录才可以使用了，其实CSDN写文章插入图片也可以使用作为图床使用。</p>
+<h3 id="使用托管平台图床"><a href="#使用托管平台图床" class="headerlink" title="使用托管平台图床"></a>使用托管平台图床</h3><h4 id="1-Github"><a href="#1-Github" class="headerlink" title="1.Github"></a>1.Github</h4><p>Github作为图床可以使用，但是速度太慢，可以使用 <a href="https://www.jsdelivr.com/">jsDeliver</a> 加速。</p>
+<p>Github原生格式：(目前无法直接访问，需要科学上网)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;fangjian98&#x2F;fangjian98.github.io&#x2F;hexo&#x2F;source&#x2F;images&#x2F;avatar.jpg</span><br></pre></td></tr></table></figure>
+
+<p>jsDeliver加速格式参考:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;@&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fangjian98&#x2F;fangjian98.github.io@hexo&#x2F;source&#x2F;images&#x2F;avatar.jpg</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-Gitee"><a href="#2-Gitee" class="headerlink" title="2.Gitee"></a>2.Gitee</h4><p>Gitee相当于是Github的中国版，国内访问速度很快。</p>
+<p>Gitee格式参考：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitee.com&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;&#x2F;raw&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitee.com&#x2F;fangjian98&#x2F;imagespace&#x2F;raw&#x2F;master&#x2F;img19.jpg</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-GitCode"><a href="#3-GitCode" class="headerlink" title="3.GitCode"></a>3.GitCode</h4><p>Gitcode原来叫CodeChina，好像是CSDN出品的项目托管平台，速度也很快。我目前正在使用的就是GitCode图床。</p>
+<p>GitCode格式参考：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;&#123;UserName&#125;&#x2F;&#123;Repi&#125;&#x2F;-&#x2F;raw&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;weixin_44008788&#x2F;images&#x2F;-&#x2F;raw&#x2F;master&#x2F;gitcode.png</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/gitcode.png" alt="GitCode"></p>
+<h3 id="图床管理工具"><a href="#图床管理工具" class="headerlink" title="图床管理工具"></a>图床管理工具</h3><p>该类工具可以可视化的直接复制图片链接，不必要在纠结在格式链接上了。</p>
+<ul>
+<li><strong>PicGO</strong> -  一个用于快速上传图片并获取图片 URL 链接的工具，需要下载客户端</li>
+</ul>
+<p>发行版下载：<a href="https://github.com/Molunerfinn/PicGo/releases/">Molunerfinn/PicGo/releases</a></p>
+<p>开源地址：<a href="https://github.com/Molunerfinn/PicGo">Molunerfinn/PicGo</a></p>
+<ul>
+<li><strong>PicX</strong> - 是一款基于 GitHub API &amp; jsDelivr 开发的具有 CDN 加速功能的图床工具，在线操作即可，无需下载和安装</li>
+</ul>
+<p>在线地址：<a href="https://picx.xpoet.cn/">picx.xpoet.cn</a></p>
+<p>开源地址：<a href="https://github.com/XPoet/picx">XPoet/picx</a></p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Image Hosting Service</tag>
+        <tag>PicGO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
     <url>/article/84ebc250.html</url>
     <content><![CDATA[<blockquote>
@@ -272,64 +330,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于图床的使用</title>
-    <url>/article/91cd0b89.html</url>
-    <content><![CDATA[<blockquote>
-<p>图床一般是指储存图片的服务器，有国内和国外之分。国外的图床由于有空间距离等因素决定访问速度很慢影响图片显示速度。国内也分为单线空间、多线空间和cdn加速三种。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="图床意义"><a href="#图床意义" class="headerlink" title="图床意义"></a>图床意义</h3><p>图床就是专门用来存放图片，同时允许你把图片对外连接的网上空间，不少图床都是免费的。图床相当于在网络上存储图片的地方，可以节约本地资源，图片可以多次引用。我最早接触的图床是<a href="https://sm.ms/">sm.ms</a>，后来需要登录才可以使用了，其实CSDN写文章插入图片也可以使用作为图床使用。</p>
-<h3 id="使用托管平台图床"><a href="#使用托管平台图床" class="headerlink" title="使用托管平台图床"></a>使用托管平台图床</h3><h4 id="1-Github"><a href="#1-Github" class="headerlink" title="1.Github"></a>1.Github</h4><p>Github作为图床可以使用，但是速度太慢，可以使用 <a href="https://www.jsdelivr.com/">jsDeliver</a> 加速。</p>
-<p>Github原生格式：(目前无法直接访问，需要科学上网)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;fangjian98&#x2F;fangjian98.github.io&#x2F;hexo&#x2F;source&#x2F;images&#x2F;avatar.jpg</span><br></pre></td></tr></table></figure>
-
-<p>jsDeliver加速格式参考:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;@&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fangjian98&#x2F;fangjian98.github.io@hexo&#x2F;source&#x2F;images&#x2F;avatar.jpg</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-Gitee"><a href="#2-Gitee" class="headerlink" title="2.Gitee"></a>2.Gitee</h4><p>Gitee相当于是Github的中国版，国内访问速度很快。</p>
-<p>Gitee格式参考：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitee.com&#x2F;&#123;UserName&#125;&#x2F;&#123;Repo&#125;&#x2F;raw&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
-
-<p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitee.com&#x2F;fangjian98&#x2F;imagespace&#x2F;raw&#x2F;master&#x2F;img19.jpg</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-GitCode"><a href="#3-GitCode" class="headerlink" title="3.GitCode"></a>3.GitCode</h4><p>Gitcode原来叫CodeChina，好像是CSDN出品的项目托管平台，速度也很快。我目前正在使用的就是GitCode图床。</p>
-<p>GitCode格式参考：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;&#123;UserName&#125;&#x2F;&#123;Repi&#125;&#x2F;-&#x2F;raw&#x2F;&#123;Branch&#125;&#x2F;&#123;Images Path&#125;</span><br></pre></td></tr></table></figure>
-
-<p> 示例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;weixin_44008788&#x2F;images&#x2F;-&#x2F;raw&#x2F;master&#x2F;gitcode.png</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/gitcode.png" alt="GitCode"></p>
-<h3 id="图床管理工具"><a href="#图床管理工具" class="headerlink" title="图床管理工具"></a>图床管理工具</h3><p>该类工具可以可视化的直接复制图片链接，不必要在纠结在格式链接上了。</p>
-<ul>
-<li><strong>PicGO</strong> -  一个用于快速上传图片并获取图片 URL 链接的工具，需要下载客户端</li>
-</ul>
-<p>发行版下载：<a href="https://github.com/Molunerfinn/PicGo/releases/">Molunerfinn/PicGo/releases</a></p>
-<p>开源地址：<a href="https://github.com/Molunerfinn/PicGo">Molunerfinn/PicGo</a></p>
-<ul>
-<li><strong>PicX</strong> - 是一款基于 GitHub API &amp; jsDelivr 开发的具有 CDN 加速功能的图床工具，在线操作即可，无需下载和安装</li>
-</ul>
-<p>在线地址：<a href="https://picx.xpoet.cn/">picx.xpoet.cn</a></p>
-<p>开源地址：<a href="https://github.com/XPoet/picx">XPoet/picx</a></p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Image Hosting Service</tag>
-        <tag>PicGO</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于Git忽略文件.gitignore</title>
     <url>/article/d04701bd.html</url>
     <content><![CDATA[<blockquote>
@@ -367,37 +367,6 @@
       <tags>
         <tag>Git</tag>
         <tag>gitignore</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git命令简写的配置</title>
-    <url>/article/8b0e152.html</url>
-    <content><![CDATA[<blockquote>
-<p>在使用Git工具时，有些命令比较常用，为了加快输入速度，可以自定义一些简写配置，能提高我们提交代码的效率。</p>
-</blockquote>
-<a id="more"></a>
-
-<ul>
-<li>编辑Git配置文件且显示配置文件路径</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global -e</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>配置文件<code> ~/.gitconfig</code></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">  name = xxxxx</span><br><span class="line">  email = xxxx@mail.com</span><br><span class="line">[core]</span><br><span class="line">  editor = vim</span><br><span class="line">[<span class="built_in">alias</span>]</span><br><span class="line">    a = add</span><br><span class="line">    co = checkout</span><br><span class="line">    cm = commit</span><br><span class="line">    st = status</span><br><span class="line">    pl = pull</span><br><span class="line">    ps = push</span><br><span class="line">    df = diff</span><br><span class="line">    lg = <span class="built_in">log</span></span><br><span class="line">    cp = cherry-pick</span><br><span class="line">    ca = commit --amend</span><br><span class="line">    br = branch</span><br><span class="line">    mg = merge</span><br><span class="line">    dt = difftool</span><br><span class="line">    mt = mergetool</span><br><span class="line">    lo = <span class="built_in">log</span> --oneline</span><br><span class="line">    lg = <span class="built_in">log</span> --color --graph --pretty=format:<span class="string">&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset&#x27;</span> --abbrev-commit</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>查看Git配置</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -522,6 +491,105 @@
       </categories>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git命令简写的配置</title>
+    <url>/article/8b0e152.html</url>
+    <content><![CDATA[<blockquote>
+<p>在使用Git工具时，有些命令比较常用，为了加快输入速度，可以自定义一些简写配置，能提高我们提交代码的效率。</p>
+</blockquote>
+<a id="more"></a>
+
+<ul>
+<li>编辑Git配置文件且显示配置文件路径</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global -e</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>配置文件<code> ~/.gitconfig</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[user]</span><br><span class="line">  name = xxxxx</span><br><span class="line">  email = xxxx@mail.com</span><br><span class="line">[core]</span><br><span class="line">  editor = vim</span><br><span class="line">[<span class="built_in">alias</span>]</span><br><span class="line">    a = add</span><br><span class="line">    co = checkout</span><br><span class="line">    cm = commit</span><br><span class="line">    st = status</span><br><span class="line">    pl = pull</span><br><span class="line">    ps = push</span><br><span class="line">    df = diff</span><br><span class="line">    lg = <span class="built_in">log</span></span><br><span class="line">    cp = cherry-pick</span><br><span class="line">    ca = commit --amend</span><br><span class="line">    br = branch</span><br><span class="line">    mg = merge</span><br><span class="line">    dt = difftool</span><br><span class="line">    mt = mergetool</span><br><span class="line">    lo = <span class="built_in">log</span> --oneline</span><br><span class="line">    lg = <span class="built_in">log</span> --color --graph --pretty=format:<span class="string">&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset&#x27;</span> --abbrev-commit</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查看Git配置</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux常用命令</title>
+    <url>/article/64245.html</url>
+    <content><![CDATA[<blockquote>
+<p>Ubuntu常用的Linux命令</p>
+</blockquote>
+<blockquote>
+<p>使用Linux系统的时候会经常用到终端命令行来执行想要的操作，尤其是通过远程SSH使用时，没有可视化的界面就只能用命令行了，这就需要我们掌握常用的Linux命令了。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Ubuntu常用命令"><a href="#Ubuntu常用命令" class="headerlink" title="Ubuntu常用命令"></a>Ubuntu常用命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装vim</span><br><span class="line">sudo apt-get install vim</span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux screen命令用于多重视窗管理程序</span></span><br><span class="line"><span class="string">screen -ls</span></span><br><span class="line"><span class="string">显示目前所有的screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen -r 4458</span></span><br><span class="line"><span class="string">重新连接screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen --wipe</span></span><br><span class="line"><span class="string">清除dead会话命令</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 查看运行内存情况 -h是以GB为单位</span></span><br><span class="line"><span class="string">free -h</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux中buff/cache内存占用过高解决方案</span></span><br><span class="line"><span class="string">echo 1 &gt; /proc/sys/vm/drop_caches</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux通用命令"><a href="#Linux通用命令" class="headerlink" title="Linux通用命令"></a>Linux通用命令</h2><h4 id="ls：文件列出命令"><a href="#ls：文件列出命令" class="headerlink" title="ls：文件列出命令"></a>ls：文件列出命令</h4><ul>
+<li>ls -a 显示所有文件和目录（包括隐藏文件）</li>
+<li>ls -l 显示文件的详细信息</li>
+<li>ls -r 将文件以相反序列列出</li>
+<li>ls -t 将文件以建立时间列出</li>
+</ul>
+<h4 id="mkdir：创建文件夹命令"><a href="#mkdir：创建文件夹命令" class="headerlink" title="mkdir：创建文件夹命令"></a>mkdir：创建文件夹命令</h4><ul>
+<li>mkdir &lt;文件名&gt; 即可在当前目录下创建一个文件夹</li>
+</ul>
+<h4 id="rm：删除文件命令"><a href="#rm：删除文件命令" class="headerlink" title="rm：删除文件命令"></a>rm：删除文件命令</h4><ul>
+<li>rm -r * 删除当前目录下得所有文件及目录</li>
+<li>rm &lt;文件名&gt; 删除一个文件</li>
+</ul>
+<h4 id="cp：复制文件到指定位置"><a href="#cp：复制文件到指定位置" class="headerlink" title="cp：复制文件到指定位置"></a>cp：复制文件到指定位置</h4><ul>
+<li>cp -a 复制目录下的所有内容 eg. cp -a test/ newtest</li>
+<li>cp -d 复制时保留链接</li>
+<li>cp -f 覆盖已存在的文件，不提示</li>
+<li>cp -i 覆盖已存在的文件，提示</li>
+<li>cp -p 复制的文件保留修改时间和访问权限</li>
+<li>cp -r 复制目录下的所有子目录和文件</li>
+</ul>
+<h4 id="mv：一般用来为文件或者目录改名，或者将目录移动到其他位置"><a href="#mv：一般用来为文件或者目录改名，或者将目录移动到其他位置" class="headerlink" title="mv：一般用来为文件或者目录改名，或者将目录移动到其他位置"></a>mv：一般用来为文件或者目录改名，或者将目录移动到其他位置</h4><ul>
+<li>mv -b 文件目标存在时，会创建一个备份 eg. mv onefile twofile (将onefile改名为twofile）</li>
+<li>mv -i 在覆盖前会询问</li>
+<li>mv -f 覆盖前不会询问</li>
+<li>mv -n 不覆盖任何文件</li>
+<li>mv -u 目标文件不存在才能移动</li>
+</ul>
+<h4 id="find：在指定目录下查找文件"><a href="#find：在指定目录下查找文件" class="headerlink" title="find：在指定目录下查找文件"></a>find：在指定目录下查找文件</h4><ul>
+<li>find 路径 -&lt;操作&gt; eg. find . -name “*.c” 查找所有后缀为.c的文件</li>
+<li>find . -type f 将当前目录及子目录下的文件全部列出</li>
+<li>find . -ctime -20 将当前目录及子目录下的在最近20天更新过的文件全部列出</li>
+</ul>
+<h4 id="grep：查找文件内符合条件的字符串"><a href="#grep：查找文件内符合条件的字符串" class="headerlink" title="grep：查找文件内符合条件的字符串"></a>grep：查找文件内符合条件的字符串</h4><ul>
+<li>grep test *file 在当前目录中查找后缀有file的，并且包含test字符串的文件，并且打印出字符串的行</li>
+<li>grep -r update /etc/acpi 以递归的方式查找符合条件的文件。eg.查找指定目录下的包含update的文件，并且打印所在行</li>
+<li>grep -v test <em>test</em> 反向查找，查找文件名中包含test的文件中不包含test的行。</li>
+<li>grep -i 不区分大小写</li>
+</ul>
+<h4 id="cat：输出文件内容"><a href="#cat：输出文件内容" class="headerlink" title="cat：输出文件内容"></a>cat：输出文件内容</h4><ul>
+<li>cat -n 由1开始对所有内容进行行数编号</li>
+<li>cat -b 对空白行不进行编号</li>
+<li>cat -s 将两个空白行合并为一个</li>
+<li>cat -E 在每行结束时显示$</li>
+<li>cat -T 将TAB显示为^|</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>Ubuntu</tag>
       </tags>
   </entry>
   <entry>
@@ -690,115 +758,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux常用命令</title>
-    <url>/article/64245.html</url>
-    <content><![CDATA[<blockquote>
-<p>Ubuntu常用的Linux命令</p>
-</blockquote>
-<blockquote>
-<p>使用Linux系统的时候会经常用到终端命令行来执行想要的操作，尤其是通过远程SSH使用时，没有可视化的界面就只能用命令行了，这就需要我们掌握常用的Linux命令了。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Ubuntu常用命令"><a href="#Ubuntu常用命令" class="headerlink" title="Ubuntu常用命令"></a>Ubuntu常用命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">安装vim</span><br><span class="line">sudo apt-get install vim</span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux screen命令用于多重视窗管理程序</span></span><br><span class="line"><span class="string">screen -ls</span></span><br><span class="line"><span class="string">显示目前所有的screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen -r 4458</span></span><br><span class="line"><span class="string">重新连接screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen --wipe</span></span><br><span class="line"><span class="string">清除dead会话命令</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 查看运行内存情况 -h是以GB为单位</span></span><br><span class="line"><span class="string">free -h</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux中buff/cache内存占用过高解决方案</span></span><br><span class="line"><span class="string">echo 1 &gt; /proc/sys/vm/drop_caches</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Linux通用命令"><a href="#Linux通用命令" class="headerlink" title="Linux通用命令"></a>Linux通用命令</h2><h4 id="ls：文件列出命令"><a href="#ls：文件列出命令" class="headerlink" title="ls：文件列出命令"></a>ls：文件列出命令</h4><ul>
-<li>ls -a 显示所有文件和目录（包括隐藏文件）</li>
-<li>ls -l 显示文件的详细信息</li>
-<li>ls -r 将文件以相反序列列出</li>
-<li>ls -t 将文件以建立时间列出</li>
-</ul>
-<h4 id="mkdir：创建文件夹命令"><a href="#mkdir：创建文件夹命令" class="headerlink" title="mkdir：创建文件夹命令"></a>mkdir：创建文件夹命令</h4><ul>
-<li>mkdir &lt;文件名&gt; 即可在当前目录下创建一个文件夹</li>
-</ul>
-<h4 id="rm：删除文件命令"><a href="#rm：删除文件命令" class="headerlink" title="rm：删除文件命令"></a>rm：删除文件命令</h4><ul>
-<li>rm -r * 删除当前目录下得所有文件及目录</li>
-<li>rm &lt;文件名&gt; 删除一个文件</li>
-</ul>
-<h4 id="cp：复制文件到指定位置"><a href="#cp：复制文件到指定位置" class="headerlink" title="cp：复制文件到指定位置"></a>cp：复制文件到指定位置</h4><ul>
-<li>cp -a 复制目录下的所有内容 eg. cp -a test/ newtest</li>
-<li>cp -d 复制时保留链接</li>
-<li>cp -f 覆盖已存在的文件，不提示</li>
-<li>cp -i 覆盖已存在的文件，提示</li>
-<li>cp -p 复制的文件保留修改时间和访问权限</li>
-<li>cp -r 复制目录下的所有子目录和文件</li>
-</ul>
-<h4 id="mv：一般用来为文件或者目录改名，或者将目录移动到其他位置"><a href="#mv：一般用来为文件或者目录改名，或者将目录移动到其他位置" class="headerlink" title="mv：一般用来为文件或者目录改名，或者将目录移动到其他位置"></a>mv：一般用来为文件或者目录改名，或者将目录移动到其他位置</h4><ul>
-<li>mv -b 文件目标存在时，会创建一个备份 eg. mv onefile twofile (将onefile改名为twofile）</li>
-<li>mv -i 在覆盖前会询问</li>
-<li>mv -f 覆盖前不会询问</li>
-<li>mv -n 不覆盖任何文件</li>
-<li>mv -u 目标文件不存在才能移动</li>
-</ul>
-<h4 id="find：在指定目录下查找文件"><a href="#find：在指定目录下查找文件" class="headerlink" title="find：在指定目录下查找文件"></a>find：在指定目录下查找文件</h4><ul>
-<li>find 路径 -&lt;操作&gt; eg. find . -name “*.c” 查找所有后缀为.c的文件</li>
-<li>find . -type f 将当前目录及子目录下的文件全部列出</li>
-<li>find . -ctime -20 将当前目录及子目录下的在最近20天更新过的文件全部列出</li>
-</ul>
-<h4 id="grep：查找文件内符合条件的字符串"><a href="#grep：查找文件内符合条件的字符串" class="headerlink" title="grep：查找文件内符合条件的字符串"></a>grep：查找文件内符合条件的字符串</h4><ul>
-<li>grep test *file 在当前目录中查找后缀有file的，并且包含test字符串的文件，并且打印出字符串的行</li>
-<li>grep -r update /etc/acpi 以递归的方式查找符合条件的文件。eg.查找指定目录下的包含update的文件，并且打印所在行</li>
-<li>grep -v test <em>test</em> 反向查找，查找文件名中包含test的文件中不包含test的行。</li>
-<li>grep -i 不区分大小写</li>
-</ul>
-<h4 id="cat：输出文件内容"><a href="#cat：输出文件内容" class="headerlink" title="cat：输出文件内容"></a>cat：输出文件内容</h4><ul>
-<li>cat -n 由1开始对所有内容进行行数编号</li>
-<li>cat -b 对空白行不进行编号</li>
-<li>cat -s 将两个空白行合并为一个</li>
-<li>cat -E 在每行结束时显示$</li>
-<li>cat -T 将TAB显示为^|</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>Ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim的常用用法</title>
-    <url>/article/c771602a.html</url>
-    <content><![CDATA[<blockquote>
-<p>Vim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。连 vim 的官方网站 (<a href="https://www.vim.org/">https://www.vim.org/</a>) 自己也说 vim 是一个程序开发工具而不是文字处理软件。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Vim的三种模式"><a href="#Vim的三种模式" class="headerlink" title="Vim的三种模式"></a>Vim的三种模式</h3><blockquote>
-<p>vi的使用在linux环境下，使用vi &lt;文件名&gt; 即可进入vi编辑模式，vi编辑器一共有三种模式，分别是：命令模式，输入模式，和末行模式。</p>
-</blockquote>
-<ul>
-<li>命令模式下，我们不可以输入字符，所输入的字符都被当做了命令来执行。比如最常见的i进入输入模式，o换行并且进入输入模式，x删除所在位置的字符等，在其他模式下可以通过esc键进入命令模式。</li>
-<li>输入模式下，就和我们普通的编辑文档一样，操作没有特殊之处</li>
-<li>末行模式下，我们只能在最后一行进行输入，一般wq保存并且退出vi模式，q退出但是不保存。</li>
-</ul>
-<h3 id="基本的命令"><a href="#基本的命令" class="headerlink" title="基本的命令"></a>基本的命令</h3><ul>
-<li><p>k j h l 分别对应上下左右光标的移动</p>
-</li>
-<li><p>x删除一个字符/ dd删除一行</p>
-</li>
-<li><p>yy复制一行 / p 粘贴</p>
-</li>
-<li><p>o/O 向上/向下空一行，并且进入输入模式</p>
-</li>
-<li><p>a/A 进入输入模式从光标处开始</p>
-</li>
-<li><p>w,wq,q!,q,ZZ, 保存/保存并退出/不保存退出/离开/保存并退出</p>
-</li>
-<li><p>/：搜索</p>
-</li>
-</ul>
-<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>常用的Git命令</title>
     <url>/article/5c7291e7.html</url>
     <content><![CDATA[<blockquote>
@@ -927,6 +886,47 @@
       </tags>
   </entry>
   <entry>
+    <title>Vim的常用用法</title>
+    <url>/article/c771602a.html</url>
+    <content><![CDATA[<blockquote>
+<p>Vim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。连 vim 的官方网站 (<a href="https://www.vim.org/">https://www.vim.org/</a>) 自己也说 vim 是一个程序开发工具而不是文字处理软件。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Vim的三种模式"><a href="#Vim的三种模式" class="headerlink" title="Vim的三种模式"></a>Vim的三种模式</h3><blockquote>
+<p>vi的使用在linux环境下，使用vi &lt;文件名&gt; 即可进入vi编辑模式，vi编辑器一共有三种模式，分别是：命令模式，输入模式，和末行模式。</p>
+</blockquote>
+<ul>
+<li>命令模式下，我们不可以输入字符，所输入的字符都被当做了命令来执行。比如最常见的i进入输入模式，o换行并且进入输入模式，x删除所在位置的字符等，在其他模式下可以通过esc键进入命令模式。</li>
+<li>输入模式下，就和我们普通的编辑文档一样，操作没有特殊之处</li>
+<li>末行模式下，我们只能在最后一行进行输入，一般wq保存并且退出vi模式，q退出但是不保存。</li>
+</ul>
+<h3 id="基本的命令"><a href="#基本的命令" class="headerlink" title="基本的命令"></a>基本的命令</h3><ul>
+<li><p>k j h l 分别对应上下左右光标的移动</p>
+</li>
+<li><p>x删除一个字符/ dd删除一行</p>
+</li>
+<li><p>yy复制一行 / p 粘贴</p>
+</li>
+<li><p>o/O 向上/向下空一行，并且进入输入模式</p>
+</li>
+<li><p>a/A 进入输入模式从光标处开始</p>
+</li>
+<li><p>w,wq,q!,q,ZZ, 保存/保存并退出/不保存退出/离开/保存并退出</p>
+</li>
+<li><p>/：搜索</p>
+</li>
+</ul>
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>开源许可协议 Open Source License</title>
     <url>/article/b86684bd.html</url>
     <content><![CDATA[<blockquote>
@@ -993,72 +993,6 @@
       </categories>
       <tags>
         <tag>Creative Commons Licenses</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法之设计模式</title>
-    <url>/article/8f5452f1.html</url>
-    <content><![CDATA[<blockquote>
-<p>软件设计模式（Design pattern），又称设计模式，是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了可重用代码、让代码更容易被他人理解、保证代码可靠性、程序的重用性。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="设计模式的目的"><a href="#设计模式的目的" class="headerlink" title="设计模式的目的"></a>设计模式的目的</h3><ul>
-<li>代码重用性：相同功能的代码，不用多次编写</li>
-<li>可读性：编程规范性，便于其他程序员的阅读和理解</li>
-<li>可扩展性：当需要增加新的功能时非常方便，可维护性</li>
-<li>高内聚低耦合：模块内部代码紧密，模块之间松散</li>
-<li>可靠性：增加新的功能后，对原有的功能没有影响</li>
-</ul>
-<h3 id="七大原则"><a href="#七大原则" class="headerlink" title="七大原则"></a>七大原则</h3><ul>
-<li>单一职责原则</li>
-<li>接口隔离原则</li>
-<li>依赖倒转（倒置）</li>
-<li>里氏替换原则</li>
-<li>开闭原则</li>
-<li>迪米特法则</li>
-<li>合成复用原则</li>
-</ul>
-<h3 id="创建模式"><a href="#创建模式" class="headerlink" title="创建模式"></a>创建模式</h3><ul>
-<li>抽象工厂模式(Abstract Factory) ,提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。</li>
-<li>生成器模式 (Builder)，将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</li>
-<li>工厂方法模式(Factory Method) ，定义一个用于创建对象的接口，让子类决定将哪一个类实例化。Factory Method使一个类的实例化延迟到其子类。</li>
-<li>原型模式 (Prototype) ，用原型实例指定创建对象的种类，并且通过拷贝这个原型来创建新的对象。</li>
-<li>单例模式(Singleton)，保证一个类仅有一个实例，并提供一个访问它的全局访问点。</li>
-</ul>
-<h3 id="结构模式"><a href="#结构模式" class="headerlink" title="结构模式"></a>结构模式</h3><ul>
-<li>适配器模式 (Adapter) ，将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。</li>
-<li>桥接模式(Bridge) ，将抽象部分与它的实现部分分离，使它们都可以独立地变化。</li>
-<li>组合模式(Composite) ，将对象组合成树形结构以表示“部分-整体”的层次结构。它使得客户对单个对象和复合对象的使用具有一致性。</li>
-<li>容器模式</li>
-<li>修饰模式 (Decorator) ，动态地给一个对象添加一些额外的职责。就扩展功能而言， 它比生成子类方式更为灵活。<br>扩展性模式</li>
-<li>外观模式</li>
-<li>享元模式</li>
-<li>管道与过滤器模式</li>
-<li>代理模式(Proxy) ，为其他对象提供一个代理以控制对这个对象的访问。</li>
-</ul>
-<h3 id="行为模式"><a href="#行为模式" class="headerlink" title="行为模式"></a>行为模式</h3><ul>
-<li>责任链模式 (Chain of Responsibility) ，为解除请求的发送者和接收者之间耦合，而使多个对象都有机会处理这个请求。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它。</li>
-<li>命令模式 (Command) ，将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可取消的操作。</li>
-<li>柯里化模式</li>
-<li>事件监听器模式</li>
-<li>解释器模式</li>
-<li>迭代器模式</li>
-<li>中介者模式</li>
-<li>备忘录模式 (Memento) ，在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到保存的状态。</li>
-<li>观察者模式(Observer) ，定义对象间的一种一对多的依赖关系,以便当一个对象的状态发生改变时,所有依赖于它的对象都得到通知并自动刷新。</li>
-<li>状态模式 (State) ，允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它所属的类。</li>
-<li>策略模式 (Strategy) ，定义一系列的算法,把它们一个个封装起来, 并且使它们可相互替换。本模式使得算法的变化可独立于使用它的客户。</li>
-<li>模板方法模式</li>
-<li>访问者模式 (Visitor)，表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。</li>
-<li>层次访问者模式</li>
-</ul>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>algorithm</tag>
       </tags>
   </entry>
   <entry>
@@ -1163,6 +1097,72 @@
       </tags>
   </entry>
   <entry>
+    <title>算法之设计模式</title>
+    <url>/article/8f5452f1.html</url>
+    <content><![CDATA[<blockquote>
+<p>软件设计模式（Design pattern），又称设计模式，是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了可重用代码、让代码更容易被他人理解、保证代码可靠性、程序的重用性。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="设计模式的目的"><a href="#设计模式的目的" class="headerlink" title="设计模式的目的"></a>设计模式的目的</h3><ul>
+<li>代码重用性：相同功能的代码，不用多次编写</li>
+<li>可读性：编程规范性，便于其他程序员的阅读和理解</li>
+<li>可扩展性：当需要增加新的功能时非常方便，可维护性</li>
+<li>高内聚低耦合：模块内部代码紧密，模块之间松散</li>
+<li>可靠性：增加新的功能后，对原有的功能没有影响</li>
+</ul>
+<h3 id="七大原则"><a href="#七大原则" class="headerlink" title="七大原则"></a>七大原则</h3><ul>
+<li>单一职责原则</li>
+<li>接口隔离原则</li>
+<li>依赖倒转（倒置）</li>
+<li>里氏替换原则</li>
+<li>开闭原则</li>
+<li>迪米特法则</li>
+<li>合成复用原则</li>
+</ul>
+<h3 id="创建模式"><a href="#创建模式" class="headerlink" title="创建模式"></a>创建模式</h3><ul>
+<li>抽象工厂模式(Abstract Factory) ,提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。</li>
+<li>生成器模式 (Builder)，将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</li>
+<li>工厂方法模式(Factory Method) ，定义一个用于创建对象的接口，让子类决定将哪一个类实例化。Factory Method使一个类的实例化延迟到其子类。</li>
+<li>原型模式 (Prototype) ，用原型实例指定创建对象的种类，并且通过拷贝这个原型来创建新的对象。</li>
+<li>单例模式(Singleton)，保证一个类仅有一个实例，并提供一个访问它的全局访问点。</li>
+</ul>
+<h3 id="结构模式"><a href="#结构模式" class="headerlink" title="结构模式"></a>结构模式</h3><ul>
+<li>适配器模式 (Adapter) ，将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。</li>
+<li>桥接模式(Bridge) ，将抽象部分与它的实现部分分离，使它们都可以独立地变化。</li>
+<li>组合模式(Composite) ，将对象组合成树形结构以表示“部分-整体”的层次结构。它使得客户对单个对象和复合对象的使用具有一致性。</li>
+<li>容器模式</li>
+<li>修饰模式 (Decorator) ，动态地给一个对象添加一些额外的职责。就扩展功能而言， 它比生成子类方式更为灵活。<br>扩展性模式</li>
+<li>外观模式</li>
+<li>享元模式</li>
+<li>管道与过滤器模式</li>
+<li>代理模式(Proxy) ，为其他对象提供一个代理以控制对这个对象的访问。</li>
+</ul>
+<h3 id="行为模式"><a href="#行为模式" class="headerlink" title="行为模式"></a>行为模式</h3><ul>
+<li>责任链模式 (Chain of Responsibility) ，为解除请求的发送者和接收者之间耦合，而使多个对象都有机会处理这个请求。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它。</li>
+<li>命令模式 (Command) ，将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可取消的操作。</li>
+<li>柯里化模式</li>
+<li>事件监听器模式</li>
+<li>解释器模式</li>
+<li>迭代器模式</li>
+<li>中介者模式</li>
+<li>备忘录模式 (Memento) ，在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到保存的状态。</li>
+<li>观察者模式(Observer) ，定义对象间的一种一对多的依赖关系,以便当一个对象的状态发生改变时,所有依赖于它的对象都得到通知并自动刷新。</li>
+<li>状态模式 (State) ，允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它所属的类。</li>
+<li>策略模式 (Strategy) ，定义一系列的算法,把它们一个个封装起来, 并且使它们可相互替换。本模式使得算法的变化可独立于使用它的客户。</li>
+<li>模板方法模式</li>
+<li>访问者模式 (Visitor)，表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。</li>
+<li>层次访问者模式</li>
+</ul>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git的基本使用</title>
     <url>/article/163a8691.html</url>
     <content><![CDATA[<blockquote>
@@ -1256,67 +1256,6 @@
       </categories>
       <tags>
         <tag>AOSP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在线笔记工具Notion</title>
-    <url>/article/3c2ec6ca.html</url>
-    <content><![CDATA[<blockquote>
-<p>Notion 是一款很强大的 All-in-One 在线记录工具。它集成了云笔记，云表格，Wiki等等生产力工具，拥有自由的模块化编辑排版功能，上手也非常容易。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="关于Notion"><a href="#关于Notion" class="headerlink" title="关于Notion"></a>关于Notion</h3><p>官网：<a href="https://www.notion.so/product">https://www.notion.so/product</a></p>
-<p>在线：<a href="https://www.notion.so/">https://www.notion.so</a></p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/notion_home.png" alt="Notion官网"></p>
-<p>Notion 作为新生代的笔记工具，有很多过人之处，官方的一句话介绍是：The all-in-one workspace for your notes, tasks, wikis, and databases。这段描述毫无吹嘘的成分。尽管在四个领域内，Notion 的表现各有高低，但作为一款强大的全平台 Web App，确实有 All-in-one 的底气。</p>
-<p>Notion 主要由三个内容单元——Block、Page 和 Database 构成。Block 可以是任意文本、列表、表格、代码或网页书签，Page 则是 Block 的集合，Database 又是 Page 的集合。</p>
-<p>最妙的是，Notion 采用一种「无极」的内容组织形式，即 Block、Page 和 Database 三者可以互相包含——Page 组成 Database，但 Page 中又可以插入 Database。</p>
-<blockquote>
-<p>Personal 版本<br>拥有 无限 Blocks<br>Block 能分享给 5个 guests<br>支持多设备，多端同步<br>文件上传有尺寸限制（5MB）</p>
-</blockquote>
-<p>Notion可能是国外最受欢迎的一款笔记软件，其官网主打Team Wiki、Projects &amp; tasks 、Notes &amp; docs 三个模块，也代表了Notion团队协作、任务规划、个人笔记三个主要功能。现在，Notion 面向个人给出了「免费 + 无限」的新计划！真心值得喜爱「效率工具」的各位前去一试。</p>
-<h3 id="Notion的使用"><a href="#Notion的使用" class="headerlink" title="Notion的使用"></a>Notion的使用</h3><p>1.符号/：触发功能选项</p>
-<p>2.可用功能</p>
-<ul>
-<li><strong>Basic blocks</strong>：Text/Page/To-do list/Heading 1/2/3/Table/Buleted list/Numberd list/Toggle list/Quote/Divider/Link to page/Callout</li>
-<li><strong>Inline</strong>：Mention a persion/Mention a page/Date or reminder/Emoji/Inline equation</li>
-<li><strong>Database</strong>：Table view/Board view/Gallery view/List view/Calendar view/Timeline view/Database-Inline/Database-Full page/Linked view of database</li>
-<li><strong>Media</strong>：Image/Web bookmark/Video/Audio/Code/File/</li>
-<li><strong>Embeds</strong>：Google Drive/Tweet/Github Gist/Google Maps/Figma/Sketch/PDF/CodePen/Jira/Github/Slack/Dropbox/Zoom/OneDrive</li>
-<li><strong>Adavanced blocks</strong>：Table of contents/Block equation/Template  button/Breadcrumb/Synced block/Toggle heading 1/2/3</li>
-</ul>
-<p>2.灵便的布局和重组：随意拖拽 自由排列</p>
-<p>3.分栏：拖动块至最右端即可自动分栏，可多栏</p>
-<p>4.颜色：选择某项，可以更改字体颜色和背景颜色</p>
-<p>5.导入和导出文件</p>
-<p>6.团队共享空间</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/notion_web.png" alt="Notion的使用"></p>
-<blockquote>
-<p>[1]  <a href="https://sspai.com/post/39694">https://sspai.com/post/39694</a></p>
-</blockquote>
-<h3 id="同类产品"><a href="#同类产品" class="headerlink" title="同类产品"></a>同类产品</h3><ul>
-<li>Wolai ：<a href="https://www.wolai.com/">https://www.wolai.com/</a></li>
-</ul>
-<p>wolai是一种新形态的文档系统，它与你过去使用的所有传统文档、在线文档都有很多不同，学会使用wolai就等于拥有了一个强大的个人与团队生产力工具，被很多人称之为国产Notion。</p>
-<ul>
-<li>语雀：<a href="https://www.yuque.com/">https://www.yuque.com/</a></li>
-</ul>
-<p>语雀是蚂蚁集团旗下的文档与知识库工具，源自蚂蚁集团和阿里巴巴内部文档协同需求，塑造新一代知识构建与分享工具</p>
-<ul>
-<li>Boost Note - <a href="http://boostnote.io/">http://boostnote.io/</a></li>
-</ul>
-<p>Boost Note 是一种文档驱动的项目管理工具，可最大限度地提高远程 DevOps 团队的速度。</p>
-<ul>
-<li>Obsidian ：<a href="https://obsidian.md/">https://obsidian.md/</a></li>
-</ul>
-<p>一款笔记软件，markdown编辑工具，文件都在本地，不会丢失，文件夹式管理</p>
-]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>Notion</tag>
       </tags>
   </entry>
   <entry>
@@ -1467,6 +1406,96 @@
       </tags>
   </entry>
   <entry>
+    <title>在线笔记工具Notion</title>
+    <url>/article/3c2ec6ca.html</url>
+    <content><![CDATA[<blockquote>
+<p>Notion 是一款很强大的 All-in-One 在线记录工具。它集成了云笔记，云表格，Wiki等等生产力工具，拥有自由的模块化编辑排版功能，上手也非常容易。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="关于Notion"><a href="#关于Notion" class="headerlink" title="关于Notion"></a>关于Notion</h3><p>官网：<a href="https://www.notion.so/product">https://www.notion.so/product</a></p>
+<p>在线：<a href="https://www.notion.so/">https://www.notion.so</a></p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/notion_home.png" alt="Notion官网"></p>
+<p>Notion 作为新生代的笔记工具，有很多过人之处，官方的一句话介绍是：The all-in-one workspace for your notes, tasks, wikis, and databases。这段描述毫无吹嘘的成分。尽管在四个领域内，Notion 的表现各有高低，但作为一款强大的全平台 Web App，确实有 All-in-one 的底气。</p>
+<p>Notion 主要由三个内容单元——Block、Page 和 Database 构成。Block 可以是任意文本、列表、表格、代码或网页书签，Page 则是 Block 的集合，Database 又是 Page 的集合。</p>
+<p>最妙的是，Notion 采用一种「无极」的内容组织形式，即 Block、Page 和 Database 三者可以互相包含——Page 组成 Database，但 Page 中又可以插入 Database。</p>
+<blockquote>
+<p>Personal 版本<br>拥有 无限 Blocks<br>Block 能分享给 5个 guests<br>支持多设备，多端同步<br>文件上传有尺寸限制（5MB）</p>
+</blockquote>
+<p>Notion可能是国外最受欢迎的一款笔记软件，其官网主打Team Wiki、Projects &amp; tasks 、Notes &amp; docs 三个模块，也代表了Notion团队协作、任务规划、个人笔记三个主要功能。现在，Notion 面向个人给出了「免费 + 无限」的新计划！真心值得喜爱「效率工具」的各位前去一试。</p>
+<h3 id="Notion的使用"><a href="#Notion的使用" class="headerlink" title="Notion的使用"></a>Notion的使用</h3><p>1.符号/：触发功能选项</p>
+<p>2.可用功能</p>
+<ul>
+<li><strong>Basic blocks</strong>：Text/Page/To-do list/Heading 1/2/3/Table/Buleted list/Numberd list/Toggle list/Quote/Divider/Link to page/Callout</li>
+<li><strong>Inline</strong>：Mention a persion/Mention a page/Date or reminder/Emoji/Inline equation</li>
+<li><strong>Database</strong>：Table view/Board view/Gallery view/List view/Calendar view/Timeline view/Database-Inline/Database-Full page/Linked view of database</li>
+<li><strong>Media</strong>：Image/Web bookmark/Video/Audio/Code/File/</li>
+<li><strong>Embeds</strong>：Google Drive/Tweet/Github Gist/Google Maps/Figma/Sketch/PDF/CodePen/Jira/Github/Slack/Dropbox/Zoom/OneDrive</li>
+<li><strong>Adavanced blocks</strong>：Table of contents/Block equation/Template  button/Breadcrumb/Synced block/Toggle heading 1/2/3</li>
+</ul>
+<p>2.灵便的布局和重组：随意拖拽 自由排列</p>
+<p>3.分栏：拖动块至最右端即可自动分栏，可多栏</p>
+<p>4.颜色：选择某项，可以更改字体颜色和背景颜色</p>
+<p>5.导入和导出文件</p>
+<p>6.团队共享空间</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/notion_web.png" alt="Notion的使用"></p>
+<blockquote>
+<p>[1]  <a href="https://sspai.com/post/39694">https://sspai.com/post/39694</a></p>
+</blockquote>
+<h3 id="同类产品"><a href="#同类产品" class="headerlink" title="同类产品"></a>同类产品</h3><ul>
+<li>Wolai ：<a href="https://www.wolai.com/">https://www.wolai.com/</a></li>
+</ul>
+<p>wolai是一种新形态的文档系统，它与你过去使用的所有传统文档、在线文档都有很多不同，学会使用wolai就等于拥有了一个强大的个人与团队生产力工具，被很多人称之为国产Notion。</p>
+<ul>
+<li>语雀：<a href="https://www.yuque.com/">https://www.yuque.com/</a></li>
+</ul>
+<p>语雀是蚂蚁集团旗下的文档与知识库工具，源自蚂蚁集团和阿里巴巴内部文档协同需求，塑造新一代知识构建与分享工具</p>
+<ul>
+<li>Boost Note - <a href="http://boostnote.io/">http://boostnote.io/</a></li>
+</ul>
+<p>Boost Note 是一种文档驱动的项目管理工具，可最大限度地提高远程 DevOps 团队的速度。</p>
+<ul>
+<li>Obsidian ：<a href="https://obsidian.md/">https://obsidian.md/</a></li>
+</ul>
+<p>一款笔记软件，markdown编辑工具，文件都在本地，不会丢失，文件夹式管理</p>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Notion</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>三阶魔方简易教程</title>
+    <url>/article/88c25441.html</url>
+    <content><![CDATA[<blockquote>
+<p>魔方拥有竞速、盲拧、单拧等多种玩法，风靡程度经久未衰，每年都会举办大小赛事，是最受欢迎的智力游戏之一。三阶魔方形状通常是正方体，由有弹性的硬塑料制成。三阶魔方有很多种还原方法，其中“层先法”是最适合初学者掌握的方法。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>前提：两个公式<br>左手公式：上右下左<br>右手公式：上左下右</p>
+<p>1.拼黄色小花<br>     白<br>白 黄 白<br>     白</p>
+<p>2.找小柱子(中间)，向下转2周</p>
+<p>3.白色朝底，找角块，找(对应颜色)目标位，找好对应位置 –&gt; 白色一层<br>   看白色块，左边或右边，不能后边<br>   白色块在左边：做左手公式<br>   白色块在右边：做右手公式</p>
+<p>4.找棱块(中间块) –&gt; 二层<br>  没有黄色块：好朋友<br>  有黄色块：坏朋友(暂时不管)<br>  好朋友：找目标色块，若目标色块在左，要远离，先右转，再左手公式<br>                                   若目标色块在右，要远离，先左转，再右手公式<br>  都是坏朋友：先侧边右手公式，再转一面，左手公式</p>
+<p>5.顶面十字<br>   小炸弹：        四边一档只有一个黄色块   –&gt; 开宝箱，右手公式 x1，关宝箱 –&gt; 变成小弯刀<br>   激光剑：—   横着放        –&gt; 开宝箱，右手公式 x1，关宝箱<br>   小弯刀：__|    九点钟方向        –&gt; 开宝箱，右手公式 x2，关宝箱</p>
+<p>  开宝箱：整个面向下转一下<br>  关宝箱：整个面向上转一下</p>
+<p>6.顶层角块位置<br>   二个位置对，二个位置不对，(颜色对应即可)，叫眼睛<br>   若是眼睛：对的一边放左边，右手公式 x3，整体左转，左手公式 x3<br>   若不是眼睛，右手公式 x3，整体转一下，左手公式 x3，变成眼睛</p>
+<p>7.顶层黄色还原：只用右手公式<br>  白色面为顶，没有还原好的黄色块，放在右手下边，右手公式 x2，直到还原，可能需要重复几次<br>  然后继续将其他没有还原好的黄色块，放在右手下边，右手公式 x2<br>  乱了也没事，继续将底边黄色还原</p>
+<p>8.还原<br>   一面全好的叫观众<br>   若有观众，正对自己，确定观众对面中心块颜色，<br>   若对面中心块颜色在左边，则左 x1，右 x1，左x5，右 x5<br>   若对面中心块颜色在右边，则右 x1，左 x1，右x5，左 x5</p>
+<p>   没有观众：先左或先右都可，左 x1，右 x1，左x5，右 x5，变成观众</p>
+<p>附：第8步：上三楼公式：上右上 左上左上 右下右下下<br>      把观众的对面朝向自己，上三楼公式</p>
+<p>参考：<a href="https://baike.baidu.com/item/%E4%B8%89%E9%98%B6%E9%AD%94%E6%96%B9/2109093#3">三阶魔方还原方法</a></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>魔方</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>编程语言的Hello World程序</title>
     <url>/article/caca35c0.html</url>
     <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1557,35 +1586,6 @@
       </tags>
   </entry>
   <entry>
-    <title>三阶魔方简易教程</title>
-    <url>/article/88c25441.html</url>
-    <content><![CDATA[<blockquote>
-<p>魔方拥有竞速、盲拧、单拧等多种玩法，风靡程度经久未衰，每年都会举办大小赛事，是最受欢迎的智力游戏之一。三阶魔方形状通常是正方体，由有弹性的硬塑料制成。三阶魔方有很多种还原方法，其中“层先法”是最适合初学者掌握的方法。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>前提：两个公式<br>左手公式：上右下左<br>右手公式：上左下右</p>
-<p>1.拼黄色小花<br>     白<br>白 黄 白<br>     白</p>
-<p>2.找小柱子(中间)，向下转2周</p>
-<p>3.白色朝底，找角块，找(对应颜色)目标位，找好对应位置 –&gt; 白色一层<br>   看白色块，左边或右边，不能后边<br>   白色块在左边：做左手公式<br>   白色块在右边：做右手公式</p>
-<p>4.找棱块(中间块) –&gt; 二层<br>  没有黄色块：好朋友<br>  有黄色块：坏朋友(暂时不管)<br>  好朋友：找目标色块，若目标色块在左，要远离，先右转，再左手公式<br>                                   若目标色块在右，要远离，先左转，再右手公式<br>  都是坏朋友：先侧边右手公式，再转一面，左手公式</p>
-<p>5.顶面十字<br>   小炸弹：        四边一档只有一个黄色块   –&gt; 开宝箱，右手公式 x1，关宝箱 –&gt; 变成小弯刀<br>   激光剑：—   横着放        –&gt; 开宝箱，右手公式 x1，关宝箱<br>   小弯刀：__|    九点钟方向        –&gt; 开宝箱，右手公式 x2，关宝箱</p>
-<p>  开宝箱：整个面向下转一下<br>  关宝箱：整个面向上转一下</p>
-<p>6.顶层角块位置<br>   二个位置对，二个位置不对，(颜色对应即可)，叫眼睛<br>   若是眼睛：对的一边放左边，右手公式 x3，整体左转，左手公式 x3<br>   若不是眼睛，右手公式 x3，整体转一下，左手公式 x3，变成眼睛</p>
-<p>7.顶层黄色还原：只用右手公式<br>  白色面为顶，没有还原好的黄色块，放在右手下边，右手公式 x2，直到还原，可能需要重复几次<br>  然后继续将其他没有还原好的黄色块，放在右手下边，右手公式 x2<br>  乱了也没事，继续将底边黄色还原</p>
-<p>8.还原<br>   一面全好的叫观众<br>   若有观众，正对自己，确定观众对面中心块颜色，<br>   若对面中心块颜色在左边，则左 x1，右 x1，左x5，右 x5<br>   若对面中心块颜色在右边，则右 x1，左 x1，右x5，左 x5</p>
-<p>   没有观众：先左或先右都可，左 x1，右 x1，左x5，右 x5，变成观众</p>
-<p>附：第8步：上三楼公式：上右上 左上左上 右下右下下<br>      把观众的对面朝向自己，上三楼公式</p>
-<p>参考：<a href="https://baike.baidu.com/item/%E4%B8%89%E9%98%B6%E9%AD%94%E6%96%B9/2109093#3">三阶魔方还原方法</a></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>魔方</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于Photoshop的用法</title>
     <url>/article/b76e39db.html</url>
     <content><![CDATA[<blockquote>
@@ -1660,45 +1660,6 @@
       <tags>
         <tag>POP3/SMTP</tag>
         <tag>IMAP/SMTP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows修改DNS方法</title>
-    <url>/article/7c78b42f.html</url>
-    <content><![CDATA[<blockquote>
-<p>DNS是域名系统，我们链接互联网的时候，仅仅有一个IP地址是不够的，还需要设置域名，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取IP数串。通过域名，最终得到该域名对应IP地址的过程叫做域名解析（或主机名解析）。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>修改DNS的好处就是可以适当提高上网速度；更换DNS可以访问某些因为域名解析存在问题而不能访问的网站；可以屏蔽运营商的广告，还可以帮助您避免被钓鱼的危险；</p>
-<p>当然修改DNS也有可能带来副作用，比如无法访问页面或者访问的页面不是你想要的页面；访问速度没有你从运营商处获得的DNS访问分速度快，延时比较大；受到DNS劫持，插入广告和被钓鱼网站攻击。</p>
-<h3 id="Windows修改DNS步骤"><a href="#Windows修改DNS步骤" class="headerlink" title="Windows修改DNS步骤"></a>Windows修改DNS步骤</h3><p>1.打开windows设置，找到并单击“网络和Internet”选项;</p>
-<p>2.右侧下拉找到“更改适配器选项”，单击打开;</p>
-<p>3.右键你的以太网，选择“属性”打开;</p>
-<p>4.进入后下拉下方选项，找到“Internet 协议版本 4 (TCP/IPv4)”选项并选中，单击“属性”进入;</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_ipv4.png" alt="TCP/IPV4属性"></p>
-<p>5.进入后即可勾选为“使用下面的DNS服务器地址”选项，进行DNS服务器设置，确定保存即可。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_server.png" alt="DNS服务器设置"></p>
-<p>6.返回桌面重启电脑或者重启网卡即可设置完成。</p>
-<h3 id="常用的DNS服务器"><a href="#常用的DNS服务器" class="headerlink" title="常用的DNS服务器"></a>常用的DNS服务器</h3><ul>
-<li><p>阿里的DNS是223.5.5.5和223.6.6.6</p>
-</li>
-<li><p>百度的DNS是180.76.76.76</p>
-</li>
-<li><p>114的DNS是114.114.114.114和114.114.115.115</p>
-</li>
-<li><p>谷歌的DNS是8.8.8.8和8.8.8.4</p>
-</li>
-<li><p>微软官方推荐使用的DNS服务器地址为4.2.2.1以及4.2.2.2</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>DNS</tag>
       </tags>
   </entry>
   <entry>
@@ -1899,6 +1860,45 @@
       </tags>
   </entry>
   <entry>
+    <title>Windows修改DNS方法</title>
+    <url>/article/7c78b42f.html</url>
+    <content><![CDATA[<blockquote>
+<p>DNS是域名系统，我们链接互联网的时候，仅仅有一个IP地址是不够的，还需要设置域名，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取IP数串。通过域名，最终得到该域名对应IP地址的过程叫做域名解析（或主机名解析）。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>修改DNS的好处就是可以适当提高上网速度；更换DNS可以访问某些因为域名解析存在问题而不能访问的网站；可以屏蔽运营商的广告，还可以帮助您避免被钓鱼的危险；</p>
+<p>当然修改DNS也有可能带来副作用，比如无法访问页面或者访问的页面不是你想要的页面；访问速度没有你从运营商处获得的DNS访问分速度快，延时比较大；受到DNS劫持，插入广告和被钓鱼网站攻击。</p>
+<h3 id="Windows修改DNS步骤"><a href="#Windows修改DNS步骤" class="headerlink" title="Windows修改DNS步骤"></a>Windows修改DNS步骤</h3><p>1.打开windows设置，找到并单击“网络和Internet”选项;</p>
+<p>2.右侧下拉找到“更改适配器选项”，单击打开;</p>
+<p>3.右键你的以太网，选择“属性”打开;</p>
+<p>4.进入后下拉下方选项，找到“Internet 协议版本 4 (TCP/IPv4)”选项并选中，单击“属性”进入;</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_ipv4.png" alt="TCP/IPV4属性"></p>
+<p>5.进入后即可勾选为“使用下面的DNS服务器地址”选项，进行DNS服务器设置，确定保存即可。</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_server.png" alt="DNS服务器设置"></p>
+<p>6.返回桌面重启电脑或者重启网卡即可设置完成。</p>
+<h3 id="常用的DNS服务器"><a href="#常用的DNS服务器" class="headerlink" title="常用的DNS服务器"></a>常用的DNS服务器</h3><ul>
+<li><p>阿里的DNS是223.5.5.5和223.6.6.6</p>
+</li>
+<li><p>百度的DNS是180.76.76.76</p>
+</li>
+<li><p>114的DNS是114.114.114.114和114.114.115.115</p>
+</li>
+<li><p>谷歌的DNS是8.8.8.8和8.8.8.4</p>
+</li>
+<li><p>微软官方推荐使用的DNS服务器地址为4.2.2.1以及4.2.2.2</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>DNS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于设计UI/UX/UED职能解释</title>
     <url>/article/198ad0b7.html</url>
     <content><![CDATA[<blockquote>
@@ -1949,25 +1949,6 @@
       </tags>
   </entry>
   <entry>
-    <title>多媒体视频处理工具FFmpeg</title>
-    <url>/article/b3c1f4b1.html</url>
-    <content><![CDATA[<blockquote>
-<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>FFmpeg常用命令解析<br><a href="https://www.cnblogs.com/Dicky-Zhang/p/11838416.html">https://www.cnblogs.com/Dicky-Zhang/p/11838416.html</a></p>
-<p>ffFFmpegpg处理视频<br>example：m3u8转mp4<br><a href="https://www.cnblogs.com/zhangceblogs/p/8514443.html">https://www.cnblogs.com/zhangceblogs/p/8514443.html</a></p>
-<p><a href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a><br><a href="https://github.com/BtbN/FFmpeg-Builds">https://github.com/BtbN/FFmpeg-Builds</a><br>下载：ffmpeg-n-104327-g1902a60dda-win64-gpl.zip</p>
-]]></content>
-      <categories>
-        <category>音视频</category>
-      </categories>
-      <tags>
-        <tag>FFmpeg</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Web前端开发常用的开发工具</title>
     <url>/article/bdc11bc8.html</url>
     <content><![CDATA[<blockquote>
@@ -1995,6 +1976,25 @@
         <tag>Glitch</tag>
         <tag>Postman</tag>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多媒体视频处理工具FFmpeg</title>
+    <url>/article/b3c1f4b1.html</url>
+    <content><![CDATA[<blockquote>
+<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>FFmpeg常用命令解析<br><a href="https://www.cnblogs.com/Dicky-Zhang/p/11838416.html">https://www.cnblogs.com/Dicky-Zhang/p/11838416.html</a></p>
+<p>ffFFmpegpg处理视频<br>example：m3u8转mp4<br><a href="https://www.cnblogs.com/zhangceblogs/p/8514443.html">https://www.cnblogs.com/zhangceblogs/p/8514443.html</a></p>
+<p><a href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a><br><a href="https://github.com/BtbN/FFmpeg-Builds">https://github.com/BtbN/FFmpeg-Builds</a><br>下载：ffmpeg-n-104327-g1902a60dda-win64-gpl.zip</p>
+]]></content>
+      <categories>
+        <category>音视频</category>
+      </categories>
+      <tags>
+        <tag>FFmpeg</tag>
       </tags>
   </entry>
   <entry>
@@ -2388,58 +2388,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java Lambda 表达式</title>
-    <url>/article/8e84b9d0.html</url>
-    <content><![CDATA[<blockquote>
-<p>Lambda 表达式，也可称为闭包，它是推动 Java 8 发布的最重要新特性。Lambda 允许把函数作为一个方法的参数（函数作为参数传递进方法中）。使用 Lambda 表达式可以使代码变的更加简洁紧凑。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>lambda 表达式的语法格式如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(parameters) -&gt; expression 或 (parameters) -&gt;&#123; statements; &#125;</span><br></pre></td></tr></table></figure>
-
-<p>以下是lambda表达式的重要特征:</p>
-<ul>
-<li><strong>可选类型声明：</strong>不需要声明参数类型，编译器可以统一识别参数值。</li>
-<li><strong>可选的参数圆括号：</strong>一个参数无需定义圆括号，但多个参数需要定义圆括号。</li>
-<li><strong>可选的大括号：</strong>如果主体包含了一个语句，就不需要使用大括号。</li>
-<li><strong>可选的返回关键字：</strong>如果主体只有一个表达式返回值则编译器会自动返回值，大括号需要指定表达式返回了一个数值。</li>
-</ul>
-<h3 id="Lambda-表达式实例"><a href="#Lambda-表达式实例" class="headerlink" title="Lambda 表达式实例"></a>Lambda 表达式实例</h3><p>Lambda 表达式的简单例子:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. 不需要参数,返回值为 5  </span><br><span class="line">() -&gt; 5  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 2. 接收一个参数(数字类型),返回其2倍的值  </span><br><span class="line">x -&gt; 2 * x  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 3. 接受2个参数(数字),并返回他们的差值  </span><br><span class="line">(x, y) -&gt; x – y  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 4. 接收2个int型整数,返回他们的和  </span><br><span class="line">(int x, int y) -&gt; x + y  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 5. 接受一个 string 对象,并在控制台打印,不返回任何值(看起来像是返回void)  </span><br><span class="line">(String s) -&gt; System.out.print(s)</span><br></pre></td></tr></table></figure>
-
-<p>在 Java8Tester.java 文件输入以下代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Java8Tester</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">      Java8Tester tester = <span class="keyword">new</span> Java8Tester();</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 类型声明</span></span><br><span class="line">      MathOperation addition = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; a + b;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 不用类型声明</span></span><br><span class="line">      MathOperation subtraction = (a, b) -&gt; a - b;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 大括号中的返回语句</span></span><br><span class="line">      MathOperation multiplication = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; &#123; <span class="keyword">return</span> a * b; &#125;;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 没有大括号及返回语句</span></span><br><span class="line">      MathOperation division = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; a / b;</span><br><span class="line">        </span><br><span class="line">      System.out.println(<span class="string">&quot;10 + 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, addition));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 - 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, subtraction));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 x 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, multiplication));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 / 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, division));</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 不用括号</span></span><br><span class="line">      GreetingService greetService1 = message -&gt;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello &quot;</span> + message);</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 用括号</span></span><br><span class="line">      GreetingService greetService2 = (message) -&gt;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello &quot;</span> + message);</span><br><span class="line">        </span><br><span class="line">      greetService1.sayMessage(<span class="string">&quot;Runoob&quot;</span>);</span><br><span class="line">      greetService2.sayMessage(<span class="string">&quot;Google&quot;</span>);</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="class"><span class="keyword">interface</span> <span class="title">MathOperation</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">int</span> <span class="title">operation</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>;</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="class"><span class="keyword">interface</span> <span class="title">GreetingService</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">void</span> <span class="title">sayMessage</span><span class="params">(String message)</span></span>;</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">operate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, MathOperation mathOperation)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> mathOperation.operation(a, b);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>执行以上脚本，输出结果为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ javac Java8Tester.java </span><br><span class="line">$ java Java8Tester</span><br><span class="line">10 + 5 &#x3D; 15</span><br><span class="line">10 - 5 &#x3D; 5</span><br><span class="line">10 x 5 &#x3D; 50</span><br><span class="line">10 &#x2F; 5 &#x3D; 2</span><br><span class="line">Hello Runoob</span><br><span class="line">Hello Google</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>使用 Lambda 表达式需要注意以下两点：</p>
-<ul>
-<li>Lambda 表达式主要用来定义行内执行的方法类型接口，例如，一个简单方法接口。在上面例子中，我们使用各种类型的Lambda表达式来定义MathOperation接口的方法。然后我们定义了sayMessage的执行。</li>
-<li>Lambda 表达式免去了使用匿名方法的麻烦，并且给予Java简单但是强大的函数化的编程能力。</li>
-</ul>
-</blockquote>
-<h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><ul>
-<li>Lambda 表达式只能引用标记了 final 的外层局部变量，这就是说不能在 lambda 内部修改定义在域外的局部变量，否则会编译错误。</li>
-</ul>
-<blockquote>
-<p>我们也可以直接在 Lambda 表达式中访问外层的局部变量，Lambda 表达式的局部变量可以不用声明为 final，但是必须不可被后面的代码修改（即隐性的具有 final 的语义）。</p>
-</blockquote>
-<ul>
-<li>在 Lambda 表达式当中不允许声明一个与局部变量同名的参数或者局部变量。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Lambda</tag>
       </tags>
   </entry>
   <entry>
@@ -2996,31 +2944,55 @@
       </tags>
   </entry>
   <entry>
-    <title>企业项目开发流程</title>
-    <url>/article/a73689f8.html</url>
+    <title>Java Lambda 表达式</title>
+    <url>/article/8e84b9d0.html</url>
     <content><![CDATA[<blockquote>
-<p>一般情况下，企业开发软件时会按照基线和定制两块并行方式执行项目开发工作。无论什么公司，都需要遵从一套成熟的产品研发过程体系，才能做出质量较好的产品。因此，如果出现项目较多的情况，应该合理地安排基线和定制之前的里程碑，让基线产品能够尽量多地收集用户的通用型需求，为定制项目进度实现技术支撑，减少定制项目中大量更改代码、需要新增模块情况发生。此外，产品研发过程体系也需要按照业务实际时间要求变化，不要拘泥于一定要按照瀑布方式，或是敏捷方式进行管理，凡事都需要找到契合自己的方式。</p>
+<p>Lambda 表达式，也可称为闭包，它是推动 Java 8 发布的最重要新特性。Lambda 允许把函数作为一个方法的参数（函数作为参数传递进方法中）。使用 Lambda 表达式可以使代码变的更加简洁紧凑。</p>
 </blockquote>
 <a id="more"></a>
 
-<h3 id="Web项目流程"><a href="#Web项目流程" class="headerlink" title="Web项目流程"></a>Web项目流程</h3><p>1.需求分析<br>2.设计（概要设计、详细设计)<br>3.技术选型<br>4.初始化/引入需要的技术<br>5.写Demo<br>6.写代码（实现业务逻辑)<br>7.测试(单元测试)<br>8.代码提交&amp;代码评审<br>9.部署<br>10.发布</p>
-<p><strong>关于技术选型</strong><br>前端:三件套＋React +组件库Ant Design + Umi + Ant Design Pro(现成的管理系统)</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>lambda 表达式的语法格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(parameters) -&gt; expression 或 (parameters) -&gt;&#123; statements; &#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下是lambda表达式的重要特征:</p>
+<ul>
+<li><strong>可选类型声明：</strong>不需要声明参数类型，编译器可以统一识别参数值。</li>
+<li><strong>可选的参数圆括号：</strong>一个参数无需定义圆括号，但多个参数需要定义圆括号。</li>
+<li><strong>可选的大括号：</strong>如果主体包含了一个语句，就不需要使用大括号。</li>
+<li><strong>可选的返回关键字：</strong>如果主体只有一个表达式返回值则编译器会自动返回值，大括号需要指定表达式返回了一个数值。</li>
+</ul>
+<h3 id="Lambda-表达式实例"><a href="#Lambda-表达式实例" class="headerlink" title="Lambda 表达式实例"></a>Lambda 表达式实例</h3><p>Lambda 表达式的简单例子:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. 不需要参数,返回值为 5  </span><br><span class="line">() -&gt; 5  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 2. 接收一个参数(数字类型),返回其2倍的值  </span><br><span class="line">x -&gt; 2 * x  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 3. 接受2个参数(数字),并返回他们的差值  </span><br><span class="line">(x, y) -&gt; x – y  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 4. 接收2个int型整数,返回他们的和  </span><br><span class="line">(int x, int y) -&gt; x + y  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 5. 接受一个 string 对象,并在控制台打印,不返回任何值(看起来像是返回void)  </span><br><span class="line">(String s) -&gt; System.out.print(s)</span><br></pre></td></tr></table></figure>
+
+<p>在 Java8Tester.java 文件输入以下代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Java8Tester</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">      Java8Tester tester = <span class="keyword">new</span> Java8Tester();</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 类型声明</span></span><br><span class="line">      MathOperation addition = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; a + b;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 不用类型声明</span></span><br><span class="line">      MathOperation subtraction = (a, b) -&gt; a - b;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 大括号中的返回语句</span></span><br><span class="line">      MathOperation multiplication = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; &#123; <span class="keyword">return</span> a * b; &#125;;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 没有大括号及返回语句</span></span><br><span class="line">      MathOperation division = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; a / b;</span><br><span class="line">        </span><br><span class="line">      System.out.println(<span class="string">&quot;10 + 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, addition));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 - 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, subtraction));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 x 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, multiplication));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 / 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, division));</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 不用括号</span></span><br><span class="line">      GreetingService greetService1 = message -&gt;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello &quot;</span> + message);</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 用括号</span></span><br><span class="line">      GreetingService greetService2 = (message) -&gt;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello &quot;</span> + message);</span><br><span class="line">        </span><br><span class="line">      greetService1.sayMessage(<span class="string">&quot;Runoob&quot;</span>);</span><br><span class="line">      greetService2.sayMessage(<span class="string">&quot;Google&quot;</span>);</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="class"><span class="keyword">interface</span> <span class="title">MathOperation</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">int</span> <span class="title">operation</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>;</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="class"><span class="keyword">interface</span> <span class="title">GreetingService</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">void</span> <span class="title">sayMessage</span><span class="params">(String message)</span></span>;</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">operate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, MathOperation mathOperation)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> mathOperation.operation(a, b);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行以上脚本，输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ javac Java8Tester.java </span><br><span class="line">$ java Java8Tester</span><br><span class="line">10 + 5 &#x3D; 15</span><br><span class="line">10 - 5 &#x3D; 5</span><br><span class="line">10 x 5 &#x3D; 50</span><br><span class="line">10 &#x2F; 5 &#x3D; 2</span><br><span class="line">Hello Runoob</span><br><span class="line">Hello Google</span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>Umi 自动生成代码工具<br>packages.json 依赖和脚本<br>yarn 包管理器：//npm install -g yarn //yarn –version</p>
+<p>使用 Lambda 表达式需要注意以下两点：</p>
+<ul>
+<li>Lambda 表达式主要用来定义行内执行的方法类型接口，例如，一个简单方法接口。在上面例子中，我们使用各种类型的Lambda表达式来定义MathOperation接口的方法。然后我们定义了sayMessage的执行。</li>
+<li>Lambda 表达式免去了使用匿名方法的麻烦，并且给予Java简单但是强大的函数化的编程能力。</li>
+</ul>
 </blockquote>
-<p>后端: java +spring + springmvc + mybatis + mybatis-plus + springboot + mysql<br>部署:服务器/容器（平台)</p>
+<h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><ul>
+<li>Lambda 表达式只能引用标记了 final 的外层局部变量，这就是说不能在 lambda 内部修改定义在域外的局部变量，否则会编译错误。</li>
+</ul>
 <blockquote>
-<p>mvnrepository:<a href="https://mvnrepository.com/">https://mvnrepository.com/</a><br><a href="https://search.maven.org/">https://search.maven.org/</a><br>mybatis-plus <a href="https://baomidou.com/">https://baomidou.com/</a><br>springboot官方生成器：<a href="https://start.spring.io/">https://start.spring.io/</a></p>
+<p>我们也可以直接在 Lambda 表达式中访问外层的局部变量，Lambda 表达式的局部变量可以不用声明为 final，但是必须不可被后面的代码修改（即隐性的具有 final 的语义）。</p>
 </blockquote>
-<p><strong>关于依赖：</strong><br>Spring Boot DevTools //热更新<br>Lombok 注解<br>Spring Configuration Processor<br>mysql 数据库<br>spring web //接口<br>mybatis //数据库访问<br>junit //单元测试swagger //api文档</p>
-<h3 id="App开发流程"><a href="#App开发流程" class="headerlink" title="App开发流程"></a>App开发流程</h3><p>1.产品经理:功能需求，竞品分析，抄同类产品的好功能<br>2.UI设计：寻找灵感，抄同类产品设计<br>3.程序员：代码审查，百度论坛找解决办法<br>4.测试：测试体验，多种手机对比</p>
+<ul>
+<li>在 Lambda 表达式当中不允许声明一个与局部变量同名的参数或者局部变量。</li>
+</ul>
 ]]></content>
       <categories>
-        <category>技术流</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>Web</tag>
-        <tag>App</tag>
+        <tag>Java</tag>
+        <tag>Lambda</tag>
       </tags>
   </entry>
   <entry>
@@ -3068,6 +3040,79 @@
       <tags>
         <tag>Android</tag>
         <tag>MediaStore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>企业项目开发流程</title>
+    <url>/article/a73689f8.html</url>
+    <content><![CDATA[<blockquote>
+<p>一般情况下，企业开发软件时会按照基线和定制两块并行方式执行项目开发工作。无论什么公司，都需要遵从一套成熟的产品研发过程体系，才能做出质量较好的产品。因此，如果出现项目较多的情况，应该合理地安排基线和定制之前的里程碑，让基线产品能够尽量多地收集用户的通用型需求，为定制项目进度实现技术支撑，减少定制项目中大量更改代码、需要新增模块情况发生。此外，产品研发过程体系也需要按照业务实际时间要求变化，不要拘泥于一定要按照瀑布方式，或是敏捷方式进行管理，凡事都需要找到契合自己的方式。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Web项目流程"><a href="#Web项目流程" class="headerlink" title="Web项目流程"></a>Web项目流程</h3><p>1.需求分析<br>2.设计（概要设计、详细设计)<br>3.技术选型<br>4.初始化/引入需要的技术<br>5.写Demo<br>6.写代码（实现业务逻辑)<br>7.测试(单元测试)<br>8.代码提交&amp;代码评审<br>9.部署<br>10.发布</p>
+<p><strong>关于技术选型</strong><br>前端:三件套＋React +组件库Ant Design + Umi + Ant Design Pro(现成的管理系统)</p>
+<blockquote>
+<p>Umi 自动生成代码工具<br>packages.json 依赖和脚本<br>yarn 包管理器：//npm install -g yarn //yarn –version</p>
+</blockquote>
+<p>后端: java +spring + springmvc + mybatis + mybatis-plus + springboot + mysql<br>部署:服务器/容器（平台)</p>
+<blockquote>
+<p>mvnrepository:<a href="https://mvnrepository.com/">https://mvnrepository.com/</a><br><a href="https://search.maven.org/">https://search.maven.org/</a><br>mybatis-plus <a href="https://baomidou.com/">https://baomidou.com/</a><br>springboot官方生成器：<a href="https://start.spring.io/">https://start.spring.io/</a></p>
+</blockquote>
+<p><strong>关于依赖：</strong><br>Spring Boot DevTools //热更新<br>Lombok 注解<br>Spring Configuration Processor<br>mysql 数据库<br>spring web //接口<br>mybatis //数据库访问<br>junit //单元测试swagger //api文档</p>
+<h3 id="App开发流程"><a href="#App开发流程" class="headerlink" title="App开发流程"></a>App开发流程</h3><p>1.产品经理:功能需求，竞品分析，抄同类产品的好功能<br>2.UI设计：寻找灵感，抄同类产品设计<br>3.程序员：代码审查，百度论坛找解决办法<br>4.测试：测试体验，多种手机对比</p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+        <tag>App</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OpenAPI的介绍及其使用</title>
+    <url>/article/f7f06827.html</url>
+    <content><![CDATA[<blockquote>
+<p>API的全称是应用编程接口（Application Programming Interface），这并不是一个新概念，在计算机操作系统出现的早期就已经存在了。在互联网时代，把网站的服务封装成一系列计算机易识别的数据接口开放出去，供第三方开发者使用，这种行为就叫做开放网站的API，与之对应的，所开放的API就被称作openAPI。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="OSCHINA-API的使用"><a href="#OSCHINA-API的使用" class="headerlink" title="OSCHINA API的使用"></a>OSCHINA API的使用</h2><p>OSCHINA API：<a href="https://www.oschina.net/openapi/docs">https://www.oschina.net/openapi/docs</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">- 什么是token</span><br><span class="line">token（令牌）是一串唯一的字符串，通常由服务端生成，在注册完成时返回给客户端，用来标识此用户，客户端将此字符串存储在本地。在以后的网络请求时，客户端先查询本地的token，如果有则直接使用此令牌进行网络请求，没有则提示未登录，转到登陆注册界面。</span><br><span class="line">此外，还可以在服务端或者客户端添加过期判别机制。</span><br><span class="line"></span><br><span class="line">- token的作用</span><br><span class="line">token可以显著减少服务端对用户表的查询，同时使用户不必每次都登陆，提高了系统的可用性与健壮性。</span><br><span class="line"></span><br><span class="line">- 使用SharedPreferences保存token</span><br></pre></td></tr></table></figure>
+
+<p>1.创建应用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">状态		正在审核</span><br><span class="line">应用ID	GCqPUbrIaoe7nUScRlet</span><br><span class="line">应用私钥	YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1</span><br><span class="line">应用首页	https://fangjian98.github.io/    </span><br><span class="line">回调地址	http://192.168.0.106/</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png" alt="OSCHINA API"></p>
+<p>2.OAuth2 获取 AccessToken，应用通过 AccessToken 访问 OpenApi 使用用户数据。<br>采用 OAuth2 协议 认证，开放 osc 移动 app 版本所有接口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.</span><br><span class="line"><span class="comment"># 用户授权码的回调地址直接获取code</span></span><br><span class="line"><span class="comment"># 构造Uri：/action/oauth2/authorize</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)</span></span><br><span class="line">https://www.oschina.net/action/oauth2/authorize?response_type=code&amp;client_id=GCqPUbrIaoe7nUScRlet&amp;redirect_uri=http://192.168.0.106/</span><br><span class="line"><span class="comment"># 返回用户授权码code</span></span><br><span class="line">http://192.168.0.106/?code=iap9LL&amp;state=</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"><span class="comment"># 应用服务器使用 oauth2_token API 向 OSChina 认证服务器发送用户授权码以及回调地址，OSChina 认证服务器返回 AccessToken</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/token</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)和client_secret(应用私钥)和code(用户授权码)</span></span><br><span class="line">https://www.oschina.net/action/openapi/token?client_id=GCqPUbrIaoe7nUScRlet&amp;client_secret=YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1&amp;grant_type=authorization_code&amp;code=pZ6Ye2&amp;redirect_uri=http://192.168.0.106/&amp;dataType=json</span><br><span class="line"><span class="comment"># 返回AccessToken</span></span><br><span class="line">&#123;<span class="string">&quot;access_token&quot;</span>:<span class="string">&quot;09a10176-7772-4577-8856-1b396f86e83b&quot;</span>,<span class="string">&quot;refresh_token&quot;</span>:<span class="string">&quot;da728b79-3b0d-4062-961b-bd67c09ecbcd&quot;</span>,<span class="string">&quot;uid&quot;</span>:4470181,<span class="string">&quot;token_type&quot;</span>:<span class="string">&quot;bearer&quot;</span>,<span class="string">&quot;expires_in&quot;</span>:604799&#125;</span><br><span class="line"></span><br><span class="line">3.使用AccessToken请求：参考OpenAPI文档即可</span><br><span class="line"><span class="comment"># 新闻news_list</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_list</span></span><br><span class="line"><span class="comment"># access_token catalog page pageSize dataType</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_list?access_token=09a10176-7772-4577-8856-1b396f86e83b&amp;catalog=2&amp;page=1&amp;pageSize=10&amp;dataType=json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明				默认值</span><br><span class="line">access_token	<span class="literal">true</span>	string	oauth2_token获取的access_token	</span><br><span class="line">catalog			<span class="literal">true</span>	int		1-所有|2-综合新闻|3-软件更新		1</span><br><span class="line">page/pageIndex	<span class="literal">true</span>	int		页数	1</span><br><span class="line">pageSize		<span class="literal">true</span>	int		每页条数	20</span><br><span class="line">dataType		<span class="literal">true</span>	string	返回数据类型[<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新闻news_detail</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_detail</span></span><br><span class="line"><span class="comment"># id access_token</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_detail?id=188164&amp;access_token=6983b81e-5e2e-4685-888f-36abcf3f2da7&amp;dataType=json</span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明	默认值</span><br><span class="line">id				<span class="literal">true</span>	long	新闻编号	空</span><br><span class="line">access_token	<span class="literal">false</span>	string	oauth2_token获取的access_token 传则显示是否收藏 用户未登录则不传	</span><br><span class="line">dataType		<span class="literal">false</span>	string	返回数据类型 [<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他平台开放API"><a href="#其他平台开放API" class="headerlink" title="其他平台开放API"></a>其他平台开放API</h2><ul>
+<li>CODING OPEN API：<a href="https://help.coding.net/openapi">https://help.coding.net/openapi</a></li>
+<li>有道云笔记API：<a href="http://note.youdao.com/open/index.html">http://note.youdao.com/open/index.html</a></li>
+<li><a href="https://www.cnblogs.com/trackingmore/p/7156877.html">常用精品API接口汇总</a></li>
+</ul>
+<h2 id="Json解析"><a href="#Json解析" class="headerlink" title="Json解析"></a>Json解析</h2><p>JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交换格式。它基于 ECMAScript (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON格式取代了xml给网络传输带来了很大的便利，是最常见的数据返回类型。</p>
+<p>常见的Json解析库</p>
+<ul>
+<li>org.json库</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Android给我们提供的Json解析类，官方提供的JSONArray与JSONObject</span><br><span class="line">这些API都存在于org.json包下，而我们用到的类有下面这些：</span><br><span class="line">JSONObject： Json对象，可以完成Json字符串与Java对象的相互转换</span><br><span class="line">JSONArray： Json数组，可以完成Json字符串与Java集合或对象的相互转换</span><br><span class="line">JSONStringer： Json文本构建类，这个类可以帮助快速和便捷的创建JSON text， 每个</span><br><span class="line">JSONStringer实体只能对应创建一个JSON text</span><br><span class="line">JSONTokener：Json解析类</span><br><span class="line">JSONException：Json异常</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>fastjson</li>
+<li>gson</li>
+</ul>
+<blockquote>
+<p>[1] <a href="https://www.cnblogs.com/lushimei/p/13436096.html">https://www.cnblogs.com/lushimei/p/13436096.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -3172,6 +3217,36 @@
       </tags>
   </entry>
   <entry>
+    <title>关于应用容器引擎Docker</title>
+    <url>/article/9ca11197.html</url>
+    <content><![CDATA[<blockquote>
+<p>Docker 是一个开源的应用容器引擎，优点是开箱即用，快速部署，可移植性强，环境隔离。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>Docker三要素</p>
+<ul>
+<li>镜像(Image) : </li>
+</ul>
+<p>​    Docker 镜像就是一个只读的模板，镜像可以用来创建Docker容器。Docker提供了一个很简单的机制来创建镜    像或者更新现有的镜像，用户甚至可以直接从其他人那里下载一个已经做好的镜像来直接使用。镜像是一种文    件结构。Dockerfile中的每条命令都会在文件系统中创建一个新的层次结构，文件系统在这些层次上构建起来，    镜像就构建于这些联合的文件系统之上。Docker官方网站专门有一个页面来存储所有可用的镜像，</p>
+<p>​    网址是: index.docker.io。</p>
+<ul>
+<li><p>容器( Container)</p>
+<p>容器是从镜像创建的运行实例。它可以被启动、开始、停止、删除。每个容器都是相互隔离的、保证安全的平台。可以把容器看做是一个简易版的Linux环境，Docker利用容器来运行应用。</p>
+</li>
+<li><p>仓库(Repository)</p>
+<p>仓库是集中存放镜像文件的场所,仓库注册服务器(Registry)上往往存放着多个仓库，每个仓库中又包含了多个镜像，每个镜像有不同的标签(tag)。目前，最大的公开仓库是 Docker Hub，存放了数量庞大的镜像供用户下载。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java的反射机制</title>
     <url>/article/5337b80a.html</url>
     <content><![CDATA[<blockquote>
@@ -3208,81 +3283,6 @@
         <tag>Java</tag>
         <tag>Reflection</tag>
         <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于应用容器引擎Docker</title>
-    <url>/article/9ca11197.html</url>
-    <content><![CDATA[<blockquote>
-<p>Docker 是一个开源的应用容器引擎，优点是开箱即用，快速部署，可移植性强，环境隔离。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>Docker三要素</p>
-<ul>
-<li>镜像(Image) : </li>
-</ul>
-<p>​    Docker 镜像就是一个只读的模板，镜像可以用来创建Docker容器。Docker提供了一个很简单的机制来创建镜    像或者更新现有的镜像，用户甚至可以直接从其他人那里下载一个已经做好的镜像来直接使用。镜像是一种文    件结构。Dockerfile中的每条命令都会在文件系统中创建一个新的层次结构，文件系统在这些层次上构建起来，    镜像就构建于这些联合的文件系统之上。Docker官方网站专门有一个页面来存储所有可用的镜像，</p>
-<p>​    网址是: index.docker.io。</p>
-<ul>
-<li><p>容器( Container)</p>
-<p>容器是从镜像创建的运行实例。它可以被启动、开始、停止、删除。每个容器都是相互隔离的、保证安全的平台。可以把容器看做是一个简易版的Linux环境，Docker利用容器来运行应用。</p>
-</li>
-<li><p>仓库(Repository)</p>
-<p>仓库是集中存放镜像文件的场所,仓库注册服务器(Registry)上往往存放着多个仓库，每个仓库中又包含了多个镜像，每个镜像有不同的标签(tag)。目前，最大的公开仓库是 Docker Hub，存放了数量庞大的镜像供用户下载。</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OpenAPI的介绍及其使用</title>
-    <url>/article/f7f06827.html</url>
-    <content><![CDATA[<blockquote>
-<p>API的全称是应用编程接口（Application Programming Interface），这并不是一个新概念，在计算机操作系统出现的早期就已经存在了。在互联网时代，把网站的服务封装成一系列计算机易识别的数据接口开放出去，供第三方开发者使用，这种行为就叫做开放网站的API，与之对应的，所开放的API就被称作openAPI。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="OSCHINA-API的使用"><a href="#OSCHINA-API的使用" class="headerlink" title="OSCHINA API的使用"></a>OSCHINA API的使用</h2><p>OSCHINA API：<a href="https://www.oschina.net/openapi/docs">https://www.oschina.net/openapi/docs</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">- 什么是token</span><br><span class="line">token（令牌）是一串唯一的字符串，通常由服务端生成，在注册完成时返回给客户端，用来标识此用户，客户端将此字符串存储在本地。在以后的网络请求时，客户端先查询本地的token，如果有则直接使用此令牌进行网络请求，没有则提示未登录，转到登陆注册界面。</span><br><span class="line">此外，还可以在服务端或者客户端添加过期判别机制。</span><br><span class="line"></span><br><span class="line">- token的作用</span><br><span class="line">token可以显著减少服务端对用户表的查询，同时使用户不必每次都登陆，提高了系统的可用性与健壮性。</span><br><span class="line"></span><br><span class="line">- 使用SharedPreferences保存token</span><br></pre></td></tr></table></figure>
-
-<p>1.创建应用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">状态		正在审核</span><br><span class="line">应用ID	GCqPUbrIaoe7nUScRlet</span><br><span class="line">应用私钥	YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1</span><br><span class="line">应用首页	https://fangjian98.github.io/    </span><br><span class="line">回调地址	http://192.168.0.106/</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png" alt="OSCHINA API"></p>
-<p>2.OAuth2 获取 AccessToken，应用通过 AccessToken 访问 OpenApi 使用用户数据。<br>采用 OAuth2 协议 认证，开放 osc 移动 app 版本所有接口</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.</span><br><span class="line"><span class="comment"># 用户授权码的回调地址直接获取code</span></span><br><span class="line"><span class="comment"># 构造Uri：/action/oauth2/authorize</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)</span></span><br><span class="line">https://www.oschina.net/action/oauth2/authorize?response_type=code&amp;client_id=GCqPUbrIaoe7nUScRlet&amp;redirect_uri=http://192.168.0.106/</span><br><span class="line"><span class="comment"># 返回用户授权码code</span></span><br><span class="line">http://192.168.0.106/?code=iap9LL&amp;state=</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"><span class="comment"># 应用服务器使用 oauth2_token API 向 OSChina 认证服务器发送用户授权码以及回调地址，OSChina 认证服务器返回 AccessToken</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/token</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)和client_secret(应用私钥)和code(用户授权码)</span></span><br><span class="line">https://www.oschina.net/action/openapi/token?client_id=GCqPUbrIaoe7nUScRlet&amp;client_secret=YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1&amp;grant_type=authorization_code&amp;code=pZ6Ye2&amp;redirect_uri=http://192.168.0.106/&amp;dataType=json</span><br><span class="line"><span class="comment"># 返回AccessToken</span></span><br><span class="line">&#123;<span class="string">&quot;access_token&quot;</span>:<span class="string">&quot;09a10176-7772-4577-8856-1b396f86e83b&quot;</span>,<span class="string">&quot;refresh_token&quot;</span>:<span class="string">&quot;da728b79-3b0d-4062-961b-bd67c09ecbcd&quot;</span>,<span class="string">&quot;uid&quot;</span>:4470181,<span class="string">&quot;token_type&quot;</span>:<span class="string">&quot;bearer&quot;</span>,<span class="string">&quot;expires_in&quot;</span>:604799&#125;</span><br><span class="line"></span><br><span class="line">3.使用AccessToken请求：参考OpenAPI文档即可</span><br><span class="line"><span class="comment"># 新闻news_list</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_list</span></span><br><span class="line"><span class="comment"># access_token catalog page pageSize dataType</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_list?access_token=09a10176-7772-4577-8856-1b396f86e83b&amp;catalog=2&amp;page=1&amp;pageSize=10&amp;dataType=json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明				默认值</span><br><span class="line">access_token	<span class="literal">true</span>	string	oauth2_token获取的access_token	</span><br><span class="line">catalog			<span class="literal">true</span>	int		1-所有|2-综合新闻|3-软件更新		1</span><br><span class="line">page/pageIndex	<span class="literal">true</span>	int		页数	1</span><br><span class="line">pageSize		<span class="literal">true</span>	int		每页条数	20</span><br><span class="line">dataType		<span class="literal">true</span>	string	返回数据类型[<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新闻news_detail</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_detail</span></span><br><span class="line"><span class="comment"># id access_token</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_detail?id=188164&amp;access_token=6983b81e-5e2e-4685-888f-36abcf3f2da7&amp;dataType=json</span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明	默认值</span><br><span class="line">id				<span class="literal">true</span>	long	新闻编号	空</span><br><span class="line">access_token	<span class="literal">false</span>	string	oauth2_token获取的access_token 传则显示是否收藏 用户未登录则不传	</span><br><span class="line">dataType		<span class="literal">false</span>	string	返回数据类型 [<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他平台开放API"><a href="#其他平台开放API" class="headerlink" title="其他平台开放API"></a>其他平台开放API</h2><ul>
-<li>CODING OPEN API：<a href="https://help.coding.net/openapi">https://help.coding.net/openapi</a></li>
-<li>有道云笔记API：<a href="http://note.youdao.com/open/index.html">http://note.youdao.com/open/index.html</a></li>
-<li><a href="https://www.cnblogs.com/trackingmore/p/7156877.html">常用精品API接口汇总</a></li>
-</ul>
-<h2 id="Json解析"><a href="#Json解析" class="headerlink" title="Json解析"></a>Json解析</h2><p>JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交换格式。它基于 ECMAScript (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON格式取代了xml给网络传输带来了很大的便利，是最常见的数据返回类型。</p>
-<p>常见的Json解析库</p>
-<ul>
-<li>org.json库</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Android给我们提供的Json解析类，官方提供的JSONArray与JSONObject</span><br><span class="line">这些API都存在于org.json包下，而我们用到的类有下面这些：</span><br><span class="line">JSONObject： Json对象，可以完成Json字符串与Java对象的相互转换</span><br><span class="line">JSONArray： Json数组，可以完成Json字符串与Java集合或对象的相互转换</span><br><span class="line">JSONStringer： Json文本构建类，这个类可以帮助快速和便捷的创建JSON text， 每个</span><br><span class="line">JSONStringer实体只能对应创建一个JSON text</span><br><span class="line">JSONTokener：Json解析类</span><br><span class="line">JSONException：Json异常</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>fastjson</li>
-<li>gson</li>
-</ul>
-<blockquote>
-<p>[1] <a href="https://www.cnblogs.com/lushimei/p/13436096.html">https://www.cnblogs.com/lushimei/p/13436096.html</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -3517,11 +3517,6 @@
       </tags>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[<h1 align="center">Hi 👋, I'm Fang Jian</h1>
@@ -3535,14 +3530,14 @@
 <li>👨‍💻 All of my projects are available at <a href="https://github.com/fangjian98">GitHub</a></li>
 <li>📝 I regulary write articles on <a href="https://blog.csdn.net/weixin_44008788">CSDN</a></li>
 <li>💬 Ask me about <strong>Android, Python, Linux</strong></li>
-<li>📫 How to reach me <strong><a href="mailto:&#x66;&#x61;&#110;&#103;&#106;&#105;&#97;&#110;&#x40;&#103;&#109;&#97;&#x69;&#108;&#46;&#99;&#111;&#109;">&#x66;&#x61;&#110;&#103;&#106;&#105;&#97;&#110;&#x40;&#103;&#109;&#97;&#x69;&#108;&#46;&#99;&#111;&#109;</a></strong></li>
+<li>📫 How to reach me <strong><a href="mailto:&#x66;&#97;&#x6e;&#x67;&#x6a;&#x69;&#x61;&#x6e;&#64;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;">&#x66;&#97;&#x6e;&#x67;&#x6a;&#x69;&#x61;&#x6e;&#64;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;</a></strong></li>
 <li>:books: Motto:What does not kill me,makes me stronger.(任何不能杀死你的，都会使你更强大)</li>
 </ul>
 ]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
+    <title>分类</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -3918,5 +3913,10 @@
 <p>异次元软件世界简称异次元，是一个致力推广优秀应用软件与互联网资源的网站，因我自己个人兴趣而建立。最初叫做《异次元の世界》，域名曾为 X-Force.cn，后来改版到现在的 iPlaySoft.com，目的是更加专注于“玩软件”的交流。</p>
 </blockquote>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
