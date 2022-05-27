@@ -57,7 +57,7 @@ shutdown -s 关机
 >
 > Win + F：搜索文件或文件夹
 >
->  Win + PrtSc：键自动截屏并保存
+> Win + PrtSc：键自动截屏并保存
 >
 > Win + Home：最小化所有窗口，除了当前激活窗口
 >
@@ -72,6 +72,10 @@ shutdown -s 关机
 > Win+G：录屏
 >
 > Win+Shift+S：截屏
+>
+> Win+H：语音识别框
+>
+> Win+。: 表情符号
 
 ### 浏览器技巧
 
