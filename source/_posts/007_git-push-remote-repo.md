@@ -64,3 +64,39 @@ git submodule add git@gitee.com:JavonPeng/project.git reference/esp-qcloud
 添加成功后会生成.gitmodules文件，即添加子模块
 ```
 
+### 查看仓库配置信息
+
+```bash
+PS D:\CodeSpace\openAI> cat .\.git\config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[remote "origin"]
+        url = git@github.com:fangjian98/openAI.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+        remote = origin
+        merge = refs/heads/main
+[branch "dev"]
+        remote = origin
+        merge = refs/heads/dev
+```
+
+### 配置远程仓库
+
+```bash
+# 拉去指定远程仓库分支到本地
+git pull <remote> <branch>
+
+# 配置远程仓库分支
+git branch --set-upstream-to=origin/<branch> dev
+
+# 查看.git/config 对应分支
+[branch "dev"]
+        remote = origin
+        merge = refs/heads/dev
+```
