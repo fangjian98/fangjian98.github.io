@@ -423,6 +423,10 @@ Algrithm Visualizer - https://github.com/algorithm-visualizer/algorithm-visualiz
 
 > Font Awesome 是数百万设计师、开发人员和内容创建者使用的互联网图标库和工具包。
 
+**icones.netlify** - [icones.netlify.app](https://icones.netlify.app/)
+
+> icones.netlify是一个icon合集。
+
 ## 软件下载
 
 **SourceForge**  - [sourceforge.net](https://sourceforge.net/)
