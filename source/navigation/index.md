@@ -456,6 +456,20 @@ JIRA创建的问题类型包括New Feature(新功能)、Bug(缺陷)、Task(任�
 
 > Tower 帮助你更高效的安排工作任务，管理项目进度，沉淀团队知识，让每个人走得更快，让团队走得更远。使用 Tower 项目，帮助不同规模和业务场景的团队设置目标，组织待办事务。在项目内用任务分解工作，指派负责人，设置截止时间，Tower 会自动追踪延期任务，发送提醒。像使用 Excel 一样组织和整理任务，更多维度查看任务，分析结果。将团队业务流程化，每个阶段的任务和目标一目了然。
 
+## 编码辅助工具
+
+**GitHub Copilot** - [github.com/features/copilot](https://github.com/features/copilot/)
+
+> GitHub Copilot是一款非常好用的代码生成工具，适合生成通用的工具代码、leetcode算法、单元测试等场景的高频代码，而对业务代码的生成则依然存在语法错误的问题。
+
+**TabNine** - [tabnine.com](https://www.tabnine.com/)
+
+> 已经被[Codota](https://www.codota.com/)公司收购。TabNine能提供长序列的代码补全，TabNine是支持的开发语言种类以及IDE平台最多的工具。但是与其他工具相同，它会推荐出不完整的代码以及存在语法错误的代码。有部分开发者喜欢TabNine即时学习代码模式的能力，这点是相比其他工具比较不错的，虽然目前提取代码模式的能力还存在比较多的缺陷，但是相信未来会逐渐完善。
+
+**阿里云Cosy** - [developer.aliyun.com/tool/cosy](https://developer.aliyun.com/tool/cosy)
+
+> 阿里云Cosy的代码补全在TabNine的基础上更进一步的解决了部分生成错误代码的缺陷，但是在细节打磨上还存在一些问题，与TabNine、GitHub Copilot相比各有千秋，Cosy的代码搜索功能相比其他工具确实是一个比较好的亮点。
+
 ## 协同工具
 
 腾讯文档
