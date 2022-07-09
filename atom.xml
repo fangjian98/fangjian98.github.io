@@ -83,11 +83,11 @@
     <category term="技术流" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E6%B5%81/"/>
     
     
-    <category term="TeX" scheme="http://yoursite.com/tags/TeX/"/>
-    
     <category term="LaTeX" scheme="http://yoursite.com/tags/LaTeX/"/>
     
     <category term="KaTeX" scheme="http://yoursite.com/tags/KaTeX/"/>
+    
+    <category term="TeX" scheme="http://yoursite.com/tags/TeX/"/>
     
   </entry>
   
