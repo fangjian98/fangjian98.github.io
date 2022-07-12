@@ -527,3 +527,15 @@ JIRA创建的问题类型包括New Feature(新功能)、Bug(缺陷)、Task(任�
 **Yandex** - [yandex.com](https://yandex.com/)
 
 > 俄罗斯的版的百度，Yandex是俄罗斯重要网络服务门户之一，值得一提的是，即使在没有“互联网围墙”的俄罗斯，Yandex的市场份额已远超俄罗斯Google，它也是欧洲第二大流行搜索引擎，推荐它是因为访问速度够快。
+
+## 技术团队
+
+美团技术团队 https://tech.meituan.com/
+
+小米信息部技术团队 https://xiaomi-info.github.io/
+
+字节跳动技术团队 https://blog.csdn.net/ByteDanceTech/
+
+ThoughtWorks 洞见 https://insights.thoughtworks.cn/
+
+有赞技术团队 https://tech.youzan.com/
