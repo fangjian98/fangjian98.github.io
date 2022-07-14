@@ -530,12 +530,22 @@ JIRA创建的问题类型包括New Feature(新功能)、Bug(缺陷)、Task(任�
 
 ## 技术团队
 
-美团技术团队 https://tech.meituan.com/
+**美团技术团队** - [tech.meituan.com](https://tech.meituan.com/) 
 
-小米信息部技术团队 https://xiaomi-info.github.io/
+> 美团经过多年耕耘和沉淀，团队已经建成了比较完备的技术体系，有基于主流开源技术加自研的大数据、人工智能、基础架构、复杂业务系统平台，和比较完备的运维、安全、风控系统。其中，美团外卖智能配送调度系统每天匹配50多万外卖小哥，100多万商家，1000多万消费者，基于海量数据和人工智能算法，确保平均配送时长不超过28分钟，是目前世界上规模超大，复杂度超高的多人、多点实时智能配送调度系统。
 
-字节跳动技术团队 https://blog.csdn.net/ByteDanceTech/
+小米信息部技术团队- [xiaomi-info.github.io]( https://xiaomi-info.github.io/)
 
-ThoughtWorks 洞见 https://insights.thoughtworks.cn/
+> 小米信息部技术团队
 
-有赞技术团队 https://tech.youzan.com/
+字节跳动技术团队 - [blog.csdn.net/ByteDanceTech](https://blog.csdn.net/ByteDanceTech/)
+
+> 字节跳动技术团队官方博客
+
+ThoughtWorks 洞见 - [insights.thoughtworks.cn](https://insights.thoughtworks.cn/)
+
+> ThoughtWorks 洞见
+
+有赞技术团队 - [tech.youzan.com](https://tech.youzan.com/)
+
+> 有赞技术团队
