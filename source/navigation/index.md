@@ -534,18 +534,28 @@ JIRA创建的问题类型包括New Feature(新功能)、Bug(缺陷)、Task(任�
 
 > 美团经过多年耕耘和沉淀，团队已经建成了比较完备的技术体系，有基于主流开源技术加自研的大数据、人工智能、基础架构、复杂业务系统平台，和比较完备的运维、安全、风控系统。其中，美团外卖智能配送调度系统每天匹配50多万外卖小哥，100多万商家，1000多万消费者，基于海量数据和人工智能算法，确保平均配送时长不超过28分钟，是目前世界上规模超大，复杂度超高的多人、多点实时智能配送调度系统。
 
-小米信息部技术团队- [xiaomi-info.github.io]( https://xiaomi-info.github.io/)
+**小米信息部技术团队**- [xiaomi-info.github.io]( https://xiaomi-info.github.io/)
 
 > 小米信息部技术团队
 
-字节跳动技术团队 - [blog.csdn.net/ByteDanceTech](https://blog.csdn.net/ByteDanceTech/)
+**字节跳动技术团队** - [blog.csdn.net/ByteDanceTech](https://blog.csdn.net/ByteDanceTech/)
 
 > 字节跳动技术团队官方博客
 
-ThoughtWorks 洞见 - [insights.thoughtworks.cn](https://insights.thoughtworks.cn/)
+**ThoughtWorks 洞见** - [insights.thoughtworks.cn](https://insights.thoughtworks.cn/)
 
 > ThoughtWorks 洞见
 
-有赞技术团队 - [tech.youzan.com](https://tech.youzan.com/)
+**有赞技术团队** - [tech.youzan.com](https://tech.youzan.com/)
 
 > 有赞技术团队
+
+## 在线论坛
+
+**吾爱破解** - [52pojie.cn](https://www.52pojie.cn/)
+
+> 吾爱破解是目前国内最大的软件破解论坛，而且网友都很热心，也是国内下载氛围最好的软件下载网站论坛。
+
+**亦是美网络** - [yishimei.cn](http://www.yishimei.cn/)
+
+> 亦是美网络，致力于操作系统应用与计算机网络技术的IT网站。精心为大家收集、整理常用的工具、软件资源，不断的为大家提供和推荐有用的计算机网络教程与技术。
