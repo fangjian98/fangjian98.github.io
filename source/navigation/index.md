@@ -560,4 +560,6 @@ JIRA创建的问题类型包括New Feature(新功能)、Bug(缺陷)、Task(任�
 
 > 亦是美网络，致力于操作系统应用与计算机网络技术的IT网站。精心为大家收集、整理常用的工具、软件资源，不断的为大家提供和推荐有用的计算机网络教程与技术。
 
-## Github
+## Github Stars
+
+https://github.com/hpcaitech/ColossalAI
