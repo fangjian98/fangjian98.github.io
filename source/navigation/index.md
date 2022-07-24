@@ -43,6 +43,10 @@ date: 2022-04-30 18:38:04
 
 > 在几秒钟内个性化世界上最大、最一致的插图集。提供平面、手绘、漫画和更多样式。Streamline主要是插画素材，内置超过10万个素材可免费使用。
 
+**LottieFiles** - [lottiefiles.com](https://lottiefiles.com/)
+
+> 免费的 Lottie 动画文件、工具和插件
+
 **StorySet** - [storyset.com](https://storyset.com/)
 
 > StorySet是一个提供免费插画的网站，你可以按照标签，颜色进行插图筛选，将合适的插图用于你的项目之中。你还可以对插图进行简单的自定义，改变颜色，隐藏不想要的内容，插图支持png格式和svg格式进行保存。
