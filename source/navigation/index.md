@@ -47,6 +47,10 @@ date: 2022-04-30 18:38:04
 
 > 免费的 Lottie 动画文件、工具和插件
 
+**IsoFlat** - [isoflat.com](https://isoflat.com/)
+
+> IsoFlat 的使命是为设计师提供很棒的免费矢量和图形资源：各种免费矢量集合、photoshop 插图、图标和图标包、背景和很棒的字体。
+
 **StorySet** - [storyset.com](https://storyset.com/)
 
 > StorySet是一个提供免费插画的网站，你可以按照标签，颜色进行插图筛选，将合适的插图用于你的项目之中。你还可以对插图进行简单的自定义，改变颜色，隐藏不想要的内容，插图支持png格式和svg格式进行保存。
@@ -244,6 +248,10 @@ date: 2022-04-30 18:38:04
 **iLoveIMG** - [iloveimg.com](https://www.iloveimg.com/zh-cn)
 
 > 为了简化图片的在线编辑推出的iLoveIMG。现在，你可以轻松地批量修改图片，操作速度非常快！这样你就可以把宝贵的时间留给更重要的事情。你需要的各种功能都在这儿，例如：压缩、裁剪、转换文件，以及调整文件的大小等。甚至还可以通过几个点击来制作GIF动图！是的，这也是免费的。
+
+**在线颜色选择器** - [tools.jb51.net/static/colorpicker](http://tools.jb51.net/static/colorpicker/)
+
+> 提供颜色值的计算工具，以及几种颜色选择的工具，方便大家选择颜色，并将颜色转换成自己想要的格式。
 
 ## 指数工具
 
