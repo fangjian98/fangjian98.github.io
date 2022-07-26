@@ -579,3 +579,5 @@ JIRA创建的问题类型包括New Feature(新功能)、Bug(缺陷)、Task(任�
 ## Github Stars
 
 https://github.com/hpcaitech/ColossalAI
+
+https://github.com/SimpleMobileTools
