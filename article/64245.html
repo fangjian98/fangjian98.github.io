@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Ubuntu常用的Linux命令   使用Linux系统的时候会经常用到终端命令行来执行想要的操作，尤其是通过远程SSH使用时，没有可视化的界面就只能用命令行了，这就需要我们掌握常用的Linux命令了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux常用命令">
+<meta property="og:url" content="http://yoursite.com/article/64245.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="Ubuntu常用的Linux命令   使用Linux系统的时候会经常用到终端命令行来执行想要的操作，尤其是通过远程SSH使用时，没有可视化的界面就只能用命令行了，这就需要我们掌握常用的Linux命令了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-19T15:04:56.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.327Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="Ubuntu">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://yoursite.com/article/64245.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/64245.html","path":"article/64245.html","title":"Linux常用命令"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Linux常用命令 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Ubuntu常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux%E9%80%9A%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">Linux通用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ls%EF%BC%9A%E6%96%87%E4%BB%B6%E5%88%97%E5%87%BA%E5%91%BD%E4%BB%A4"><span class="nav-number">2.0.1.</span> <span class="nav-text">ls：文件列出命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mkdir%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4"><span class="nav-number">2.0.2.</span> <span class="nav-text">mkdir：创建文件夹命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rm%EF%BC%9A%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%91%BD%E4%BB%A4"><span class="nav-number">2.0.3.</span> <span class="nav-text">rm：删除文件命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cp%EF%BC%9A%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E5%88%B0%E6%8C%87%E5%AE%9A%E4%BD%8D%E7%BD%AE"><span class="nav-number">2.0.4.</span> <span class="nav-text">cp：复制文件到指定位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mv%EF%BC%9A%E4%B8%80%E8%88%AC%E7%94%A8%E6%9D%A5%E4%B8%BA%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%9B%AE%E5%BD%95%E6%94%B9%E5%90%8D%EF%BC%8C%E6%88%96%E8%80%85%E5%B0%86%E7%9B%AE%E5%BD%95%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%85%B6%E4%BB%96%E4%BD%8D%E7%BD%AE"><span class="nav-number">2.0.5.</span> <span class="nav-text">mv：一般用来为文件或者目录改名，或者将目录移动到其他位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#find%EF%BC%9A%E5%9C%A8%E6%8C%87%E5%AE%9A%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6"><span class="nav-number">2.0.6.</span> <span class="nav-text">find：在指定目录下查找文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#grep%EF%BC%9A%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%86%85%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">2.0.7.</span> <span class="nav-text">grep：查找文件内符合条件的字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cat%EF%BC%9A%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9"><span class="nav-number">2.0.8.</span> <span class="nav-text">cat：输出文件内容</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/64245.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Linux常用命令 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linux常用命令
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-19 23:04:56" itemprop="dateCreated datePublished" datetime="2021-05-19T23:04:56+08:00">2021-05-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>Ubuntu常用的Linux命令</p>
+</blockquote>
+<blockquote>
+<p>使用Linux系统的时候会经常用到终端命令行来执行想要的操作，尤其是通过远程SSH使用时，没有可视化的界面就只能用命令行了，这就需要我们掌握常用的Linux命令了。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Ubuntu常用命令"><a href="#Ubuntu常用命令" class="headerlink" title="Ubuntu常用命令"></a>Ubuntu常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">安装vim</span><br><span class="line">sudo apt-get install vim</span><br><span class="line">sudo apt install vim</span><br><span class="line"></span><br><span class="line">更新源</span><br><span class="line">sudo apt-get update</span><br><span class="line">更新软件</span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"></span><br><span class="line">apt list</span><br><span class="line">列出本地仓库中所有的软件包名</span><br><span class="line"></span><br><span class="line">apt list [package]</span><br><span class="line">从本地仓库中查找指定的包名，支持通配符，比如<span class="string">&quot;apt list zlib*“就能列出以zlib开头的所有包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt list --installed</span></span><br><span class="line"><span class="string">列出系统中所有已安装的包名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt search [key]</span></span><br><span class="line"><span class="string">与list类似，通过给出的关键字进行搜索，列出所有的包和其描述</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt show [package]</span></span><br><span class="line"><span class="string">列出指定包的详细情况，包名要填写完整。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt install [package]</span></span><br><span class="line"><span class="string">安装指定的包，并同时安装其依赖的其他包。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt remove [package]</span></span><br><span class="line"><span class="string">卸载包，但不删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoremove</span></span><br><span class="line"><span class="string">卸载因安装软件自动安装的依赖，而现在又不需要的依赖包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt purge [package]</span></span><br><span class="line"><span class="string">卸载包，同时删除相关配置文件。包名支持通配符</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt clean</span></span><br><span class="line"><span class="string">删除所有已下载的软件包</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">apt autoclean</span></span><br><span class="line"><span class="string">类似clean，但删除的是过期的包（即已不能下载或者是无用的包）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux screen命令用于多重视窗管理程序</span></span><br><span class="line"><span class="string">screen -ls</span></span><br><span class="line"><span class="string">显示目前所有的screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen -r 4458</span></span><br><span class="line"><span class="string">重新连接screen作业</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">screen --wipe</span></span><br><span class="line"><span class="string">清除dead会话命令</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 查看运行内存情况 -h是以GB为单位</span></span><br><span class="line"><span class="string">free -h</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># Linux中buff/cache内存占用过高解决方案</span></span><br><span class="line"><span class="string">echo 1 &gt; /proc/sys/vm/drop_caches</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux通用命令"><a href="#Linux通用命令" class="headerlink" title="Linux通用命令"></a>Linux通用命令</h2><h4 id="ls：文件列出命令"><a href="#ls：文件列出命令" class="headerlink" title="ls：文件列出命令"></a>ls：文件列出命令</h4><ul>
+<li>ls -a 显示所有文件和目录（包括隐藏文件）</li>
+<li>ls -l 显示文件的详细信息</li>
+<li>ls -r 将文件以相反序列列出</li>
+<li>ls -t 将文件以建立时间列出</li>
+</ul>
+<h4 id="mkdir：创建文件夹命令"><a href="#mkdir：创建文件夹命令" class="headerlink" title="mkdir：创建文件夹命令"></a>mkdir：创建文件夹命令</h4><ul>
+<li>mkdir &lt;文件名&gt; 即可在当前目录下创建一个文件夹</li>
+</ul>
+<h4 id="rm：删除文件命令"><a href="#rm：删除文件命令" class="headerlink" title="rm：删除文件命令"></a>rm：删除文件命令</h4><ul>
+<li>rm -r * 删除当前目录下得所有文件及目录</li>
+<li>rm &lt;文件名&gt; 删除一个文件</li>
+</ul>
+<h4 id="cp：复制文件到指定位置"><a href="#cp：复制文件到指定位置" class="headerlink" title="cp：复制文件到指定位置"></a>cp：复制文件到指定位置</h4><ul>
+<li>cp -a 复制目录下的所有内容 eg. cp -a test/ newtest</li>
+<li>cp -d 复制时保留链接</li>
+<li>cp -f 覆盖已存在的文件，不提示</li>
+<li>cp -i 覆盖已存在的文件，提示</li>
+<li>cp -p 复制的文件保留修改时间和访问权限</li>
+<li>cp -r 复制目录下的所有子目录和文件</li>
+</ul>
+<h4 id="mv：一般用来为文件或者目录改名，或者将目录移动到其他位置"><a href="#mv：一般用来为文件或者目录改名，或者将目录移动到其他位置" class="headerlink" title="mv：一般用来为文件或者目录改名，或者将目录移动到其他位置"></a>mv：一般用来为文件或者目录改名，或者将目录移动到其他位置</h4><ul>
+<li>mv -b 文件目标存在时，会创建一个备份 eg. mv onefile twofile (将onefile改名为twofile）</li>
+<li>mv -i 在覆盖前会询问</li>
+<li>mv -f 覆盖前不会询问</li>
+<li>mv -n 不覆盖任何文件</li>
+<li>mv -u 目标文件不存在才能移动</li>
+</ul>
+<h4 id="find：在指定目录下查找文件"><a href="#find：在指定目录下查找文件" class="headerlink" title="find：在指定目录下查找文件"></a>find：在指定目录下查找文件</h4><ul>
+<li>find 路径 -&lt;操作&gt; eg. find . -name “*.c” 查找所有后缀为.c的文件</li>
+<li>find . -type f 将当前目录及子目录下的文件全部列出</li>
+<li>find . -ctime -20 将当前目录及子目录下的在最近20天更新过的文件全部列出</li>
+</ul>
+<h4 id="grep：查找文件内符合条件的字符串"><a href="#grep：查找文件内符合条件的字符串" class="headerlink" title="grep：查找文件内符合条件的字符串"></a>grep：查找文件内符合条件的字符串</h4><ul>
+<li>grep test *file 在当前目录中查找后缀有file的，并且包含test字符串的文件，并且打印出字符串的行</li>
+<li>grep -r update /etc/acpi 以递归的方式查找符合条件的文件。eg.查找指定目录下的包含update的文件，并且打印所在行</li>
+<li>grep -v test <em>test</em> 反向查找，查找文件名中包含test的文件中不包含test的行。</li>
+<li>grep -i 不区分大小写</li>
+</ul>
+<h4 id="cat：输出文件内容"><a href="#cat：输出文件内容" class="headerlink" title="cat：输出文件内容"></a>cat：输出文件内容</h4><ul>
+<li>cat -n 由1开始对所有内容进行行数编号</li>
+<li>cat -b 对空白行不进行编号</li>
+<li>cat -s 将两个空白行合并为一个</li>
+<li>cat -E 在每行结束时显示$</li>
+<li>cat -T 将TAB显示为^|</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/Ubuntu/" rel="tag"># Ubuntu</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/f715120c.html" rel="prev" title="Github的常用功能">
+                  <i class="fa fa-chevron-left"></i> Github的常用功能
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/5c7291e7.html" rel="next" title="常用的Git命令">
+                  常用的Git命令 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

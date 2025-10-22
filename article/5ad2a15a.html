@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="JetPack架构组件:ViewModel、LiveData、ViewBinding、DataBinding、LifeCycle、Room等的介绍、使用场景和使用方法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Jetpack常用组件介绍">
+<meta property="og:url" content="http://yoursite.com/article/5ad2a15a.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="JetPack架构组件:ViewModel、LiveData、ViewBinding、DataBinding、LifeCycle、Room等的介绍、使用场景和使用方法。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_livedate.png">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding.png">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding_baseobservable.png">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding_viewmodel.png">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_room.png">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_viewmodel_room_livedata.png">
+<meta property="article:published_time" content="2022-05-11T11:25:01.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.364Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Jetpack">
+<meta property="article:tag" content="ViewModel">
+<meta property="article:tag" content="DataBinding">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_livedate.png">
+
+
+<link rel="canonical" href="http://yoursite.com/article/5ad2a15a.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/5ad2a15a.html","path":"article/5ad2a15a.html","title":"Android Jetpack常用组件介绍"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Android Jetpack常用组件介绍 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#LifeCycle"><span class="nav-number">1.</span> <span class="nav-text">LifeCycle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ViewModel"><span class="nav-number">2.</span> <span class="nav-text">ViewModel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LiveData"><span class="nav-number">3.</span> <span class="nav-text">LiveData</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DataBinding"><span class="nav-number">4.</span> <span class="nav-text">DataBinding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Room"><span class="nav-number">5.</span> <span class="nav-text">Room</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Navigation"><span class="nav-number">6.</span> <span class="nav-text">Navigation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jetpack-Kotlin-MVVM%E9%A1%B9%E7%9B%AE"><span class="nav-number">7.</span> <span class="nav-text">Jetpack+Kotlin+MVVM项目</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/5ad2a15a.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Android Jetpack常用组件介绍 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Android Jetpack常用组件介绍
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-11 19:25:01" itemprop="dateCreated datePublished" datetime="2022-05-11T19:25:01+08:00">2022-05-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>14k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>13 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>JetPack架构组件:ViewModel、LiveData、ViewBinding、DataBinding、LifeCycle、Room等的介绍、使用场景和使用方法。</p>
+</blockquote>
+<a id="more"></a>
+
+
+<h2 id="LifeCycle"><a href="#LifeCycle" class="headerlink" title="LifeCycle"></a>LifeCycle</h2><p>LifeCycle应用</p>
+<blockquote>
+<p>使用ltifecycle解耦页面与组件<br>使用LifecycleService解耦Service与组件<br>使用ProcessLifecycleOwner监听应用程序生命周期</p>
+</blockquote>
+<p>LifeCycle的好处</p>
+<blockquote>
+<p>1.帮助开发者建立可感知生命周期的组件<br>2.组件在其内部管理自己的生命周期，从而降低模块耦合度<br>3.降低内存泄漏发生的可能性<br>4.Activity、Fragment、Service、Application均有LifeCycle支持(LifecycleObserver、LifecycleService、ProcessLifecycleOwner)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">控件结合Lifecycle</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyChronometer</span> <span class="keyword">extends</span> <span class="title">Chronometer</span> <span class="keyword">implements</span> <span class="title">Lifecycle0bserver</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">long</span> elapsedTime;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyChronometer</span> <span class="params">(Context context, AttributeSet attrs)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span> ( context, attrs) ;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@OnLifecycleEvent</span> (Lifecycle.Event.ONRESUME)   </span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">startMeter</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">		setpase (SystemClock.elapsedRealtime() - elapsedTime) ;</span><br><span class="line">        start ( );</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@OnLifecycleEvent</span> (Lifecycle.Event.ONSTOP)    </span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">stopMeter</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">		elapsedTime = SystemClock.elapsedRealtime() - getBase();</span><br><span class="line">        stop () ;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Activity添加监听</span></span><br><span class="line">getLifecycle().addOnserver(chronomter)</span><br><span class="line"> </span><br><span class="line"><span class="comment">//service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyLocationService</span> <span class="keyword">extends</span> <span class="title">LifecycleService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyLocationService</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">		Log.d ( tag: <span class="string">&quot;ning&quot;</span> , msg: <span class="string">&quot;MyLocationService&quot;</span> ) ;</span><br><span class="line">		MyLocation0bserver observer = <span class="keyword">new</span> MyLocationObserver ( context: <span class="keyword">this</span>) ;</span><br><span class="line">        getLifecycle ( ) .addobserver (observer) ;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="ViewModel"><a href="#ViewModel" class="headerlink" title="ViewModel"></a>ViewModel</h2><p>ViewModel的诞生</p>
+<blockquote>
+<p>瞬态数据丢失<br>异步调用的内存泄漏<br>类膨胀提高维护难度和测试难度</p>
+</blockquote>
+<p>ViewModel的作用</p>
+<blockquote>
+<p>1.它是介于View(视图）和Model（数据模型）之间的桥梁<br>2.使视图和数据能够分离，也能保持通信</p>
+</blockquote>
+<p>ViewModel的生命周期特性</p>
+<blockquote>
+<p>独立于配置变化</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//旋转屏幕不会丢失数据</span></span><br><span class="line">MyViewModel extents ViewModel</span><br><span class="line"><span class="keyword">int</span> num = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取ViewModel</span></span><br><span class="line">viewModel = <span class="keyword">new</span> ViewModelProvider(<span class="keyword">this</span>,<span class="keyword">new</span> ViewModelProvider(<span class="keyword">this</span>，<span class="keyword">new</span> AndroidViewModelFactory(<span class="keyword">this</span>)).get(MViewModel.class))</span><br><span class="line">++ viewModel.num</span><br><span class="line">text.setText(viewModel.num)</span><br></pre></td></tr></table></figure>
+
+<p>AndroidViewModel</p>
+<blockquote>
+<p>1.不要向ViewModel中传入Context，会导致内存泄漏<br>2.如果要使用Context，请使用AndroidViewModel中的Applications</p>
+</blockquote>
+<h2 id="LiveData"><a href="#LiveData" class="headerlink" title="LiveData"></a>LiveData</h2><p>LiveData和ViewModel的关系</p>
+<blockquote>
+<p>在ViewModel中的数据发生变化时通知页面</p>
+</blockquote>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_livedate.png" alt="Jetpack LiveData"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyviewModel</span> <span class="keyword">extends</span> <span class="title">viewModel</span> </span>&#123;</span><br><span class="line">    <span class="comment">//MutableLiveData是LiveData子类</span></span><br><span class="line">	<span class="keyword">private</span> MutableLiveData&lt;Integer&gt; currentsecond;</span><br><span class="line">    <span class="comment">//private MutableLiveData&lt;Integer&gt; currentsecond = new MutableLiveData&lt;&gt;(0);</span></span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> MutableLiveData&lt;Integer&gt; <span class="title">getCurrentSecond</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(currentSecond == <span class="keyword">null</span>) &#123;</span><br><span class="line">			currentsecond = <span class="keyword">new</span> MutableLiveData&lt;&gt;();</span><br><span class="line">            currentsecond.setvalue (<span class="number">0</span>) ;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> currentSecond;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//非UI线程使用postVaule(),UI线程使用setvalue()</span></span><br><span class="line">viewModel.getCurrentSecond().postValue</span><br><span class="line">    </span><br><span class="line"><span class="comment">//监听LiveData数据变化</span></span><br><span class="line">viewModel.getCurrentSecond().observe(<span class="keyword">this</span>,<span class="keyword">new</span> Observerr&lt;Interger&gt;()&#123;</span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onChanged</span><span class="params">(Interger i)</span></span>&#123;</span><br><span class="line">        textview.setText(String.valueOf(i));</span><br><span class="line">    &#125;    </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>LiveData的优势</p>
+<blockquote>
+<p>确保界面符合数据状态<br>不会发生内存泄漏<br>不会因Activity停止而导致崩溃<br>不再需要手动处理生命周期<br>数据始终保持最新状态<br>适当的配置更改<br>共享资源</p>
+</blockquote>
+<h2 id="DataBinding"><a href="#DataBinding" class="headerlink" title="DataBinding"></a>DataBinding</h2><p>DataBinding的意义</p>
+<blockquote>
+<p>让布局文件承担了部分原本属于页面的工作，使页面与布局耦合度进一步降低</p>
+</blockquote>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding.png" alt="Jetpack DataBinding"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//build配置</span></span><br><span class="line">dataBinding = <span class="keyword">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//布局生成databinding layout</span></span><br><span class="line"><span class="comment">//导入方法：布局文件使用代码</span></span><br><span class="line"><span class="comment">//&lt;import type=&quot;com.dongnaoedu.databinding.star0tils&quot;/&gt;</span></span><br><span class="line">&lt;Layout</span><br><span class="line">&lt;data&gt;</span><br><span class="line"> &lt;variable</span><br><span class="line"> 	name=<span class="string">&quot;idol&quot;</span></span><br><span class="line"> 	type=<span class="string">&quot;com.dongnaoedu.databinding.Ido1&quot;</span>/&gt;</span><br><span class="line">&lt;/data&gt;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="comment">//ActivityMainBinding由来</span></span><br><span class="line">ActivityMainBinding binding = DataBingingUtil.setcontentView(<span class="keyword">this</span>,R.layout.activity_main);</span><br><span class="line">Idol idol = <span class="keyword">new</span> Idol（<span class="string">&quot;name&quot;</span>,<span class="number">5</span>);</span><br><span class="line">binding.setIdol(idol);</span><br><span class="line"></span><br><span class="line"><span class="comment">//xml获取属性</span></span><br><span class="line">android:text=<span class="string">&quot;@&#123;idol.name&#125;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//按钮点击事件绑定</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//定义点击事件监听类</span></span><br><span class="line">EventHandleListener&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">onclick</span><span class="params">()</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//添加绑定</span></span><br><span class="line">binding。setEventHandleListener(<span class="keyword">new</span> EventHandleListener(<span class="keyword">this</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">//布局文件添加事件类</span></span><br><span class="line">&lt;data&gt;</span><br><span class="line"> &lt;variable</span><br><span class="line"> 	name=<span class="string">&quot;eventHandle&quot;</span></span><br><span class="line"> 	type=<span class="string">&quot;com.dongnaoedu.databinding.EventHandleListener&quot;</span>/&gt;</span><br><span class="line">&lt;/data&gt;</span><br><span class="line">    </span><br><span class="line">&lt;Button</span><br><span class="line">    click=<span class="string">&quot;@&#123;eventHandle.onclick&#125;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">二级页面的绑定:&lt;include&gt;标签引用二级页面</span><br><span class="line"><span class="comment">//使用下述方法传递</span></span><br><span class="line">app:idol = <span class="string">&quot;@&#123;idol&#125;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>自定义BindingAdapter</p>
+<blockquote>
+<p>加载网络图片<br>方法重载，加载本地图片<br>多参数重载</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">自定义binding</span><br><span class="line">    </span><br><span class="line"><span class="comment">//1.自定义</span></span><br><span class="line"><span class="comment">//public class ImageviewBindingAdapter</span></span><br><span class="line"><span class="comment">//加载网络图片 image注解</span></span><br><span class="line"><span class="meta">@BindingAdapter</span> ( <span class="string">&quot;image&quot;</span>)</span><br><span class="line"><span class="keyword">public</span>. .<span class="keyword">static</span>..<span class="keyword">void</span>..set Image.(ImageView...imageView..tring..url)&#123;</span><br><span class="line">	<span class="keyword">if</span>( !TextUtils.isEmpty (ur1))&#123;</span><br><span class="line">		Picasso-get(<span class="number">0</span> Picasso</span><br><span class="line">			.load (url) RequestCreator</span><br><span class="line">			.placeholder (R.drawable.ic_launcher_background).into (imageview) ;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		imageView.setBackgroundColor (color . GRAY) ;</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line">  </span><br><span class="line">    </span><br><span class="line"><span class="comment">//2.layout绑定</span></span><br><span class="line">&lt;data&gt;</span><br><span class="line"> &lt;variable</span><br><span class="line"> 	name=<span class="string">&quot;networkImage&quot;</span></span><br><span class="line"> 	type=<span class="string">&quot;String&quot;</span>/&gt;</span><br><span class="line">&lt;/data&gt;</span><br><span class="line">            </span><br><span class="line">&lt;Imageview</span><br><span class="line">	android: id=<span class="string">&quot;@+id/imageView&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">    app:image=&quot;</span>@ &#123;networkImage&#125;  <span class="comment">//image为注解</span></span><br><span class="line">    android: layout_width=<span class="string">&quot;300dip&quot;</span></span><br><span class="line">            </span><br><span class="line">    </span><br><span class="line"><span class="comment">//3.绑定</span></span><br><span class="line">ActivityMainBinding binding = DataBingingUtil.setcontentView(<span class="keyword">this</span>,R.layout.activity_main);DataBindingUtil.setContentactivityMainBinding.setNetworkImage (<span class="string">&quot;https://gimg2.baidu.com/image_s&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//可选择</span></span><br><span class="line"><span class="meta">@BindingAdapter</span> (value = &#123; <span class="string">&quot;image&quot;</span>,<span class="string">&quot;defaultImageResource&quot;</span> &#125;, requireAll = <span class="keyword">false</span>)</span><br><span class="line"></span><br><span class="line">&lt;Imageview</span><br><span class="line">	android: id=<span class="string">&quot;@+id/imageView&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">    app:image=&quot;</span>@ &#123;networkImage&#125;  <span class="comment">//image为注解</span></span><br><span class="line">    app:<span class="keyword">default</span>=<span class="string">&quot;@ &#123;localImage&#125;</span></span><br><span class="line"><span class="string">    android: layout_width=&quot;</span>300dip<span class="string">&quot;            </span></span><br></pre></td></tr></table></figure>
+
+<p>双向绑定</p>
+<blockquote>
+<p>BaseObservable与ObservableField</p>
+</blockquote>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding_baseobservable.png" alt="Jetpack DataBinding BaseObservable"></p>
+<p>BaseObservable方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//User对象</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> string userName;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">User</span> <span class="params">(String userName)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.userName = userName;</span><br><span class="line">	&#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">//UserViewModel对象</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserViewModel</span> <span class="keyword">extends</span> <span class="title">Base0bservable</span></span>&#123;</span><br><span class="line"><span class="keyword">private</span> User user;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">UserViewModel</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.user = <span class="keyword">new</span> User ( userName: <span class="string">&quot;Jack&quot;</span> ) ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//改变对象的值View变化    </span></span><br><span class="line"><span class="meta">@Bindable</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> string <span class="title">getUserName</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> user.userName ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//当View变化时改变对象的值</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUserName</span> <span class="params">( String userName)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (userName != <span class="keyword">null</span> &amp;&amp; !userName. equals(user.userName) ) &#123;</span><br><span class="line">		user. userName = userName;</span><br><span class="line">		Log.d( tag: <span class="string">&quot;ning&quot;</span> , msg: <span class="string">&quot;set username :&quot;</span>+userName);</span><br><span class="line">        notifyPropertyChanged(BR. userName) ;<span class="comment">//通知对象的变化</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;data&gt;</span><br><span class="line">	&lt;variable</span><br><span class="line">		name=<span class="string">&quot;userviewModel&quot;</span></span><br><span class="line">		type=<span class="string">&quot;com.dongnaoedu.databinding4.UserviewModel&quot;</span> /&gt;</span><br><span class="line">&lt;/ data&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//双向绑定@=&#123;&#125;</span></span><br><span class="line">&lt;EditText</span><br><span class="line">	android: id-<span class="string">&quot;e+id/editText&quot;</span></span><br><span class="line">	android : layout_width=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">    android: layout height=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">    android : ems=<span class="string">&quot;10&quot;</span></span><br><span class="line">	android: inputType=<span class="string">&quot;textPersonName&quot;</span></span><br><span class="line">	android : text=<span class="string">&quot;@=&#123;userviewModel.userName)&quot;</span></span><br><span class="line"></span><br><span class="line">ContentactivityMainBinding.userviewModel (<span class="keyword">new</span> UserViewModel());</span><br></pre></td></tr></table></figure>
+
+<p>ObservableField方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserViewModel</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> ObservableField&lt;User&gt; userobservableField;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">UserViewModel</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">		User user = <span class="keyword">new</span> User ( userName: <span class="string">&quot;Jack &quot;</span> ) ;</span><br><span class="line">		userObservableField = <span class="keyword">new</span> ObservableField&lt;&gt; ();</span><br><span class="line">        userObservableField.set (user);</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getUserName</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> userObservableField.get ().userName;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUserName</span> <span class="params">(String userName)</span> </span>&#123;</span><br><span class="line">		Log.d( tag: <span class="string">&quot;ning&quot;</span> , msg: <span class="string">&quot;userObservableField: &quot;</span>+userName) ;</span><br><span class="line">        userObservableField.get ().userName = userName ;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>RecycleView</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//item xml布局：databinding layout</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//适配器</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> MyViewHolder <span class="title">onCreateViewHolder</span> <span class="params">(NonNull ViewGroup parent,<span class="keyword">int</span> viewType)</span> </span>&#123;</span><br><span class="line">	ItemBinding itemBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext (</span><br><span class="line">		R.layout.item,</span><br><span class="line">		parent,</span><br><span class="line">		attachToParent: <span class="keyword">false</span>) ;</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">new</span> MyViewHolder (itemBinding) ;</span><br><span class="line">&#125;</span><br><span class="line">                                                                          </span><br><span class="line"><span class="meta">@override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onBindViewHolder</span> <span class="params">(<span class="meta">@NonNull</span> MyViewHolder holder，<span class="keyword">int</span> position)</span> </span>&#123;</span><br><span class="line">	Idol idol = idols.get (position) ;</span><br><span class="line">	holder.itemBinding.setIdol (idol) ;</span><br><span class="line">&#125;</span><br><span class="line">                                                                          </span><br><span class="line"><span class="comment">//设置适配器</span></span><br><span class="line">ActivityMainBinding binding = DatabinfingUtil.setContentView(<span class="keyword">this</span>,R.layout.activity_main);</span><br><span class="line">binding.recycleView.setLayoutManager(<span class="keyword">new</span> LinearLayputManager(<span class="keyword">this</span>))</span><br><span class="line">binding.recycleView.setAdapetr(<span class="keyword">new</span> RecycleAdapter())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>篮球计分：ViewModel + LiveData + Databinding</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyViewModel</span> <span class="keyword">extends</span> <span class="title">viewModel</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> MutableLiveData&lt;Integer&gt; bTeamScore;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> MutableLiveData&lt;Integer&gt; <span class="title">getbTeamScore</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(bTeamScore -= nul1)&#123;</span><br><span class="line">			bTeamscore = <span class="keyword">new</span> MutableLiveData&lt;&gt;();bTeanscore.setvalue (<span class="number">0</span>) ;</span><br><span class="line">        &#125;</span><br><span class="line">		<span class="keyword">return</span> bTeamScore;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">bTeamAdd</span> <span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">		saveLastscore() ;</span><br><span class="line">		bTeamScore.setValue (bTeamScore.getValue ()+ i);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">undo</span> <span class="params">()</span></span>&#123;</span><br><span class="line">		aTeamscore.setValue (aLast);</span><br><span class="line">        bTeamScore.setValue(bLast) ;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//xml：添加点击事件</span></span><br><span class="line">android: onClick=<span class="string">&quot;@&#123; ()-&gt;viewModel.undo ()&#125;&quot;</span> I</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//主activity绑定binding</span></span><br><span class="line">ActivityMainBinding activityMainBinding m DataBindingUtil.setContentView( activity. <span class="keyword">this</span>,R.layout.acticity_main);</span><br><span class="line"><span class="comment">//设置viewmodel data</span></span><br><span class="line">MyViewWodel viewModel = <span class="keyword">new</span> ViewModelProvider ( owner. <span class="keyword">this</span>，<span class="keyword">new</span> ViewModelProvider.Android</span><br><span class="line">activityMainBinding.setViewModel (viewModel) ;</span><br><span class="line"><span class="comment">//感知生命周期</span></span><br><span class="line">activityMainBinding.setLifecycleowner(<span class="keyword">this</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>DataBinding的优势</p>
+<blockquote>
+<p>不再需要findViewByld，项目更加简洁，可读性更高。<br>布局文件可以包含简单的业务逻辑。</p>
+</blockquote>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding_viewmodel.png" alt="Jetpack Databinding Viewmodel"></p>
+<h2 id="Room"><a href="#Room" class="headerlink" title="Room"></a>Room</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Room重要概念:</span><br><span class="line">Entity:实体类，对应的是数据库的一张表结构，使用注解@Entity标记&gt;</span><br><span class="line">Dao:包含访问一系列访问数据库的方法，使用注解@Dao标记。//Data Access Objects</span><br><span class="line">Database:数据库持有者，作为与应用持久化相关数据的底层连接的主要接入点。使用注解@Database标记，另外需满足以下条件:定义的类必须是一个继承于RoomDatabase的抽象类，在注解中需要定义与数据库相关联的实体类列表。包含一个没有参数的抽象方法并且返回一个Dao对象。</span><br></pre></td></tr></table></figure>
+
+<p>app从Database得到get DAO,从DAO得到Entity，从Entity得到和设置对象值</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_room.png" alt="Jetpack Room"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">implementation <span class="string">&#x27;androidx.room: room-runtime: 2.2.5&#x27;</span></span><br><span class="line">//注解器：抽象类自动生成实现类</span><br><span class="line">annotationProcessor <span class="string">&#x27;androidx .room:room-compiler:2.2.5&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>Entity</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entity</span> (tableName - <span class="string">&quot;student&quot;</span>)</span><br><span class="line">   <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">       <span class="meta">@PrimaryKey</span> (autoGenerate = <span class="keyword">true</span>)</span><br><span class="line">       <span class="meta">@ColumnInfo(name = &quot;id&quot;,typeAffinity = ColumnInfo.INTEGER)</span></span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">int</span> id;</span><br><span class="line">       </span><br><span class="line"></span><br><span class="line">       <span class="meta">@ColumnInfo(name = &quot;name&quot;, typeAffinity = ColumnInfo.TEXT)</span></span><br><span class="line">       <span class="keyword">public</span> string name;</span><br><span class="line"></span><br><span class="line">       <span class="meta">@columnInfo(name = &quot;name&quot;,typeAffinity = ColumnInfo.TEXT)</span></span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">int</span> age;</span><br><span class="line">       </span><br><span class="line">       <span class="function"><span class="keyword">public</span> <span class="title">student</span> <span class="params">(<span class="keyword">int</span> id,String name, <span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">		<span class="keyword">this</span>.name = name;</span><br><span class="line">           <span class="keyword">this</span>.age = age;</span><br><span class="line">       &#125;</span><br><span class="line">      </span><br><span class="line">   <span class="comment">// Ignore注解 room会自动忽略此构造函数      </span></span><br><span class="line"><span class="meta">@Ignores</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">student</span> <span class="params">(string name, <span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.name = name;</span><br><span class="line">	<span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Dao：增删查改接口类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Dao</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Insert</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">insertStudent</span> <span class="params">(student. .- students)</span> </span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Delete</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">deletestudent</span> <span class="params">(student. . . students)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Update</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">updateStudent</span> <span class="params">(Student . . . students)</span> </span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Query</span> ( <span class="string">&quot;SELECT *FROMstudent&quot;</span>)</span><br><span class="line">	<span class="function">List&lt;Student&gt; <span class="title">getAllstudent</span> <span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Query</span> (<span class="string">&quot;SELECT * FROM student WHERE id = :id&quot;</span>)</span><br><span class="line">    <span class="function">List&lt;Student&gt; <span class="title">getStudentById</span><span class="params">(<span class="keyword">int</span> id)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Database</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Database</span> (entities = &#123;Student.class&#125;, version = <span class="number">1</span>, exportSchema = <span class="keyword">false</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">MyDatabase</span> <span class="keyword">extends</span> <span class="title">RoomDatabase</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> string DATABASE_NAME= <span class="string">&quot;my_db. db&quot;</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> MyDatabase mInstance;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> MyDatabase <span class="title">getInstance</span> <span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (mInstance == nul1) &#123;</span><br><span class="line">			mInstance = Room. databaseBuilder(context.getApplicationContext(),</span><br><span class="line">			MyDatabase.class,</span><br><span class="line">			DATABASE_NAME<span class="string">&#x27;).build() ;</span></span><br><span class="line"><span class="string">		&#125;</span></span><br><span class="line"><span class="string">		return minstance;</span></span><br><span class="line"><span class="string">	&#125;</span></span><br><span class="line"><span class="string">	public abstract StudentDao getStudentDao ();</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>使用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">MyDatabase database = MyDatabase.getInstance (<span class="keyword">this</span>);</span><br><span class="line">studentDao = database.getStudentDao ( ) ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">mlnsert</span> <span class="params">(View view)</span></span>&#123;</span><br><span class="line">	student s1 = <span class="keyword">new</span> Student ( name: <span class="string">&quot;Jack&quot;</span> , age: <span class="number">20</span>) ;</span><br><span class="line">    Student s2 = <span class="keyword">new</span> Student( name: <span class="string">&quot;Rose&quot;</span>,age: <span class="number">1</span> ;<span class="keyword">new</span> 		</span><br><span class="line">    InsertStudentTask (studentDao).execute (s1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//room不允许在主线程执行数据库操作</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">InsertStudentTask</span> <span class="keyword">extends</span> <span class="title">AsyncTask</span>&lt;<span class="title">Student</span>, <span class="title">Void</span>,<span class="title">void</span>&gt; </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> studentDao studentDao;</span><br><span class="line">	</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">InsertStudentTask</span> <span class="params">(StudentDao studentDao)</span></span>&#123;</span><br><span class="line">		<span class="keyword">this</span> . studentDao - studentDao;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> Void <span class="title">doInBackground</span> <span class="params">(Student. . . students)</span> </span>&#123;</span><br><span class="line">		studentDao.insertStudent ( students) ;</span><br><span class="line">        rerurn <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>进一步优化</p>
+<blockquote>
+<p>问题:每当数据库数据发生变化时，都需要开启一个工作线程去重新获取数据库中的数据。<br>解决:当数据发生变化时，通过LiveData通知View层，实现数据自动更新。</p>
+</blockquote>
+<p>Room+ViewModel+LiveData</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_viewmodel_room_livedata.png" alt="Jetpack Viewmodel Room Livedata"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Repository:通过Repository操作数据库</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">studentRepository</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> StudentDao studentDao;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">StudentRepository</span> <span class="params">(Context context)</span></span>&#123;</span><br><span class="line">		MyDatabase database = MyDatabase.getInstance ( context) ;</span><br><span class="line">        <span class="keyword">this</span>.studentDao = database.getStudentDao ( ) ;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insertStudent</span> <span class="params">(Student. . . students)</span></span>&#123;</span><br><span class="line">		<span class="keyword">new</span> InsertStudentTask(studentDao) .execute (students);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">InsertStudentTask</span> <span class="keyword">extends</span> <span class="title">AsyncTask</span>&lt;<span class="title">Student</span>, <span class="title">Void</span>,<span class="title">Void</span>&gt; </span>&#123;</span><br><span class="line">		<span class="keyword">private</span> studentDao studentDao;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="title">InsertStudentTask</span><span class="params">(StudentDao studentDao)</span> </span>&#123; </span><br><span class="line">            <span class="keyword">this</span>.studentDa</span><br><span class="line">			</span><br><span class="line">            <span class="meta">@override</span></span><br><span class="line">			<span class="function"><span class="keyword">protected</span> Void <span class="title">doInBackground</span> <span class="params">(Student. . . students)</span> </span>&#123;</span><br><span class="line">				studentDao.insertstudent (students) ;</span><br><span class="line">				<span class="keyword">return</span> nul1;</span><br><span class="line">			&#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//ViewModel:ViewModel传递上下文对象需要用AndroidViewModel</span></span><br><span class="line"><span class="comment">//ViewModel保存数据</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">studentViewModel</span> <span class="keyword">extends</span> <span class="title">AndroidViewModel</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> studentRepository repository ;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">StudentViewModel</span> <span class="params">( <span class="meta">@NonNull</span> Application application)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>(application) ;</span><br><span class="line">		<span class="keyword">this</span>.repository = <span class="keyword">new</span> StudentRepository(application) ;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insertStudent</span> <span class="params">(Student. . . students)</span> </span>&#123;</span><br><span class="line">		repository.insertStudent(students) ;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Activity只需要和ViewModel交互即可</span></span><br><span class="line">studentViewModel = <span class="keyword">new</span> ViewModelProvider ( owner: <span class="keyword">this</span>, <span class="keyword">new</span></span><br><span class="line">ViewModelProvider.AndroidviewModelFactory(getApplication()).get(StudentViewModel.class)</span><br><span class="line"><span class="comment">//Livedata自动更新</span></span><br><span class="line">studentViewModel.getAllStudentsLive () .observe ( owner: <span class="keyword">this</span>，<span class="keyword">new</span> Observer&lt;List&lt;Student&gt;&gt;()</span><br><span class="line">	<span class="meta">@override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onChanged</span> <span class="params">(List&lt;Student&gt; students)</span></span>&#123;</span><br><span class="line">		adapter.setstudents ( students ) ;</span><br><span class="line">		adapter.notifyDataSetChanged ( );</span><br><span class="line">	&#125;);</span><br><span class="line"> &#125;</span><br><span class="line">                                          </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">mInsert</span> <span class="params">(View view)</span> </span>&#123;</span><br><span class="line">	Student s1 = <span class="keyword">new</span> student ( name: <span class="string">&quot;Jack&quot;</span>, age: <span class="number">20</span>) ;</span><br><span class="line">    Student s2 = <span class="keyword">new</span> Student ( name: <span class="string">&quot;Rose&quot;</span>, age: <span class="number">18</span>);</span><br><span class="line">    studentviewModel .insertStudent (s1,s2) ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>room版本升级</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>构造Migration</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> Migration MIGRATION_1_2 = <span class="keyword">new</span> Migration (<span class="number">1</span>,<span class="number">2</span>)&#123;</span><br><span class="line">	<span class="meta">@override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">migrate</span> <span class="params">(<span class="meta">@NonNull</span> SupportSQLiteDatabase database)</span></span>&#123;</span><br><span class="line">		database.execSQL ( <span class="string">&quot;ALTERTABLE student ADD COLUMN sex INTEGER NOT NULLDEFAULT 1&quot;</span> );</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>添加addMigrations</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> MyDatabase <span class="title">getInstance</span> <span class="params">(Context context)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> ( mInstance -= nul1)&#123;</span><br><span class="line">		mInstance = Room. databaseBuilder(context.getapplicationContext(),	</span><br><span class="line">                                          MyDatabase.class,</span><br><span class="line">                                          DATABASE_NAME)</span><br><span class="line">	.addMigrations (MIGRATION_1_2,MIGRATION_2_3)</span><br><span class="line">            .build () ;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> mlnstance;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="number">3.</span>修改注解</span><br><span class="line"><span class="meta">@Database</span> (entities = &#123;Student.class&#125;, version = <span class="number">2</span>, exportSchema = <span class="keyword">false</span>)</span><br></pre></td></tr></table></figure>
+
+<p>使用Migration升级数据库</p>
+<blockquote>
+<p>问题:如果用户设备上数据库版本为1，而当前要安装的App数据库版本为3，怎么办?<br>Room会先判断当前有没有直接从1到3的升级方案，如果有，就直接执行从1到3的升级方案，如果没有，那么Room会按照顺序先后执行Migration(1,2)、Migration(2,3)以完成升级。</p>
+</blockquote>
+<h2 id="Navigation"><a href="#Navigation" class="headerlink" title="Navigation"></a>Navigation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Navigation的主要元素</span><br><span class="line">1.Navigation Graph，一种新的XML资源文件，包含应用程序所有的页面以及页面间的关系。</span><br><span class="line">2.NavHostFragment，一个特殊的Fragment，可以将它看作是其他Fragment的容器，Navigation Graph中的Fragment正是通过NavHostFragment进行展示的。</span><br><span class="line">3.NavController，用于在代码中完成Navigation Graph中具体的页面切换工作。</span><br><span class="line"></span><br><span class="line">他们三责之间的关系当你想切换Fragment时，使用NavController对象，告诉它你想要去Navigation Graph中的哪个Fragment,NavController会将你想去的Fragment展示NavHostFragment中。</span><br><span class="line"></span><br><span class="line">创建顺序：</span><br><span class="line">Fragment -&gt; Navigation Graph -&gt; main_layout:NavHostFragment -&gt; -&gt;</span><br><span class="line"></span><br><span class="line">NavController navController = Navigation.findNavController( activity: this，R.id.fragment);</span><br><span class="line">NavigationUI.setupActionBarWithNavController( activity: this, navController);</span><br></pre></td></tr></table></figure>
+
+<p>NavigationUl的作用</p>
+<blockquote>
+<p>Fragment的切换，除了Fragment页面本身的切换，通常还伴有App bar的变化。为了方便统一管理，Navigation组件引入了NavigationUI类。</p>
+</blockquote>
+<p>更多支持<br>App bar</p>
+<blockquote>
+<p>ActionBar<br>Toolbar<br>CollapsingToolbarLayout</p>
+</blockquote>
+<p>menu</p>
+<blockquote>
+<p>抽屉菜单 (DrawLayout+Navigation View)<br>底部菜单(（BottomNavigationView)</p>
+</blockquote>
+<h2 id="Jetpack-Kotlin-MVVM项目"><a href="#Jetpack-Kotlin-MVVM项目" class="headerlink" title="Jetpack+Kotlin+MVVM项目"></a>Jetpack+Kotlin+MVVM项目</h2><p>采用 <a target="_blank" rel="noopener" href="https://developer.android.com/jetpack">Jetpack</a> +Kotlin <a target="_blank" rel="noopener" href="https://github.com/Kotlin/kotlinx.coroutines">协程</a>实现的 MVVM 架构项目：<a target="_blank" rel="noopener" href="https://github.com/VIPyinzhiwei/Eyepetizer">Eyepetizer)</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Android/" rel="tag"># Android</a>
+              <a href="/tags/Jetpack/" rel="tag"># Jetpack</a>
+              <a href="/tags/ViewModel/" rel="tag"># ViewModel</a>
+              <a href="/tags/DataBinding/" rel="tag"># DataBinding</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/23f0b0f3.html" rel="prev" title="Android Jetpack系列库简介">
+                  <i class="fa fa-chevron-left"></i> Android Jetpack系列库简介
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/7c78b42f.html" rel="next" title="Windows修改DNS方法">
+                  Windows修改DNS方法 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

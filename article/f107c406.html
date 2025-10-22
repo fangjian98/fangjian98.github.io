@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="作为一个作者，在博客中公式的编辑总是难免的。markdown并不支持数学公式编辑，这些公式仅靠编辑器自带的排版功能是难以表示的，所以需要我们掌握网页公式编辑方案。目前比较流行的网页公式编辑方案是采用TEX&#x2F;LATEX语法编辑，知名的有MathJax、KATEX。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LaTeX数学表达式">
+<meta property="og:url" content="http://yoursite.com/article/f107c406.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="作为一个作者，在博客中公式的编辑总是难免的。markdown并不支持数学公式编辑，这些公式仅靠编辑器自带的排版功能是难以表示的，所以需要我们掌握网页公式编辑方案。目前比较流行的网页公式编辑方案是采用TEX&#x2F;LATEX语法编辑，知名的有MathJax、KATEX。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5CGamma(z)%20=%20%5Cint_0%5E%5Cinfty%20t%5E%7Bz-1%7De%5E%7B-t%7Ddt%5C,.">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=f(x)+=+a+b">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=f(x)+=+a+b+">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=f(x)+=+a+-+b+%5Ctag%7B1.1%7D">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation.svg">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation_split.svg">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=x+2-3*4/6=4/y+++x%5Ccdot+y">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=0+%5Cneq+1+%5Cquad+x+%5Cequiv+x+%5Cquad+1+=+9+%5Cbmod+2">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=a_%7Bij%7D%5E%7B2%7D+++b%5E3_%7B2%7D=x%5E%7Bt%7D+++y%27+++x%27%27_%7B12%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Csqrt%7Bx%7D+++%5Csqrt%7Bx%5E%7B2%7D+%5Csqrt%7By%7D%7D+=+%5Csqrt%5B3%5D%7Bk_%7Bi%7D%7D+-+%5Cfrac%7Bx%7D%7Bm%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Coverline%7Bx+y%7D%5Cqquad%5Cunderline%7Ba+b%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Coverbrace%7B1+2+%5Ccdots+n%7D%5E%7Bn%E4%B8%AA%7D+%5Cqquad+%5Cunderbrace%7Ba+b+%5Ccdots+z%7D_%7B26%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Cvec%7Ba%7D+++%5Coverrightarrow%7BAB%7D+++%5Coverleftarrow%7BDE%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Clim_%7Bx+%5Cto+%5Cinfty%7D+x%5E2_%7B22%7D+-+%5Cint_%7B1%7D%5E%7B5%7Dx+%5Cmathrm%7Bd%7D+x+++%5Csum_%7Bn=1%7D%5E%7B20%7D+n%5E%7B2%7D+=+%5Cprod_%7Bj=1%7D%5E%7B3%7D+y_%7Bj%7D++++%5Clim_%7Bx+%5Cto+-2%7D+%5Cfrac%7Bx-2%7D%7Bx%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=x_%7B1%7D,x_%7B2%7D,%5Cldots,x_%7B5%7D++%5Cquad+x_%7B1%7D+++x_%7B2%7D+++%5Ccdots+++x_%7Bn%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Chat%7Bx%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Cbar%7Bx%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Ctilde%7Bx%7D">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-684e48900e810dff360c23b4ffe99680_720w.jpg">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/matrix.svg">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Calpha%5E%7B2%7D+++%5Cbeta+=+%5CTheta">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-da3e717cf670582fbfbdddee33073524_720w.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-2527327da18ba3cd4d9cfa9483bcbe1f_720w.jpg">
+<meta property="article:published_time" content="2022-05-23T08:39:29.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.368Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="LaTeX">
+<meta property="article:tag" content="KaTeX">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.zhihu.com/equation?tex=%5CGamma(z)%20=%20%5Cint_0%5E%5Cinfty%20t%5E%7Bz-1%7De%5E%7B-t%7Ddt%5C,.">
+
+
+<link rel="canonical" href="http://yoursite.com/article/f107c406.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/f107c406.html","path":"article/f107c406.html","title":"LaTeX数学表达式"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>LaTeX数学表达式 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8EKaTeX"><span class="nav-number">1.</span> <span class="nav-text">关于KaTeX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LaTeX%E7%A4%BA%E4%BE%8B"><span class="nav-number">2.</span> <span class="nav-text">LaTeX示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LaTeX%E4%B9%A6%E7%B1%8D"><span class="nav-number">3.</span> <span class="nav-text">LaTeX书籍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LATEX%E8%AF%AD%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">LATEX语法</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/f107c406.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="LaTeX数学表达式 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LaTeX数学表达式
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-23 16:39:29" itemprop="dateCreated datePublished" datetime="2022-05-23T16:39:29+08:00">2022-05-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF%E6%B5%81/" itemprop="url" rel="index"><span itemprop="name">技术流</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>4 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>作为一个作者，在博客中公式的编辑总是难免的。markdown并不支持数学公式编辑，这些公式仅靠编辑器自带的排版功能是难以表示的，所以需要我们掌握网页公式编辑方案。目前比较流行的网页公式编辑方案是采用TEX/LATEX语法编辑，知名的有MathJax、KATEX。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="关于KaTeX"><a href="#关于KaTeX" class="headerlink" title="关于KaTeX"></a>关于KaTeX</h3><p><a target="_blank" rel="noopener" href="https://katex.org/">KaTex</a> - The fastest math typesetting library for the web.</p>
+<p>可汗学院出品，号称“最快”的数学公式渲染库，支持主流的浏览器：Chrome, Firefox, Safari, Opera和 IE8~IE11。</p>
+<p>KaTex的优势</p>
+<ul>
+<li><p>快速：并发渲染，无需重排页面。根据这个测试，性能绝对秒杀MathJax。</p>
+</li>
+<li><p>渲染效果好：采用TeX语法，渲染效果达到印刷出版级别。</p>
+</li>
+<li><p>无依赖：不依赖其它库。</p>
+</li>
+<li><p>支持服务器端渲染：例如，服务器端的Node.js程序调用KaTeX，把渲染好的HTML片段直接发送给客户端。</p>
+</li>
+</ul>
+<p>KaTeX官方文档</p>
+<p><a target="_blank" rel="noopener" href="https://katex.org/docs/supported.html">Supported Functions · KaTeX</a></p>
+<p><a target="_blank" rel="noopener" href="https://katex.org/docs/support_table.html">Support Table · KaTeX</a></p>
+<p>overleaf数学表达式</p>
+<p><a target="_blank" rel="noopener" href="https://cn.overleaf.com/learn/latex/Mathematical_expressions">https://cn.overleaf.com/learn/latex/Mathematical_expressions</a></p>
+<p>MyScript手绘公式</p>
+<p><a target="_blank" rel="noopener" href="https://webdemo.myscript.com/">https://webdemo.myscript.com/</a></p>
+<p>Tex 科学公式语言 (TeX/LaTeX)示例</p>
+<p><a target="_blank" rel="noopener" href="https://pandao.github.io/editor.md/examples/katex.html">https://pandao.github.io/editor.md/examples/katex.html</a></p>
+<p>LaTeX 数学表达式</p>
+<p><a target="_blank" rel="noopener" href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference</a></p>
+<h3 id="LaTeX示例"><a href="#LaTeX示例" class="headerlink" title="LaTeX示例"></a>LaTeX示例</h3><p>Gamma公式展示 $\Gamma(n) = (n-1)!\quad\forall<br>n\in\mathbb N$ 是通过欧拉积分</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5CGamma(z)%20=%20%5Cint_0%5E%5Cinfty%20t%5E%7Bz-1%7De%5E%7B-t%7Ddt%5C,." alt="CodeCogsEqn"></p>
+<p>渲染LaTeX数学表达式：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\Gamma(z) = \int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt\,.</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<h3 id="LaTeX书籍"><a href="#LaTeX书籍" class="headerlink" title="LaTeX书籍"></a>LaTeX书籍</h3><p><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf">https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.latex-project.org/help/documentation/amsldoc.pdf">https://www.latex-project.org/help/documentation/amsldoc.pdf</a></p>
+<h3 id="LATEX语法"><a href="#LATEX语法" class="headerlink" title="LATEX语法"></a>LATEX语法</h3><p>在LaTeX数学模式中，公式有两种形式——行内公式和行间公式。前者公式嵌入在行内，适用于简单短小的公式；后者居中独占一行，适用于比较长或重要的公式。科学公式 TeX(KaTeX)</p>
+<p><strong>行内公式</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ f(x) = a+b $</span><br></pre></td></tr></table></figure>
+
+<p>效果： <img src="https://www.zhihu.com/equation?tex=f(x)+=+a+b" alt="[公式]"></p>
+<p><strong>行间公式</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ f(x) = a+b $$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=f(x)+=+a+b+" alt="[公式]"></p>
+<p><strong>手动编号</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ f(x) = a - b \tag&#123;1.1&#125; $$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=f(x)+=+a+-+b+%5Ctag%7B1.1%7D" alt="[公式]"></p>
+<p><strong>公式组合</strong></p>
+<p>通过cases环境实现公式的组合，&amp;分隔公式和条件，还可以通过\limits来让x→0位于lim的正下方而非默认在lim符号的右下方显示</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$$D(x) = \begin&#123;cases&#125;</span><br><span class="line">\lim\limits_&#123;x \to 0&#125; \frac&#123;a^x&#125;&#123;b+c&#125;, &amp; x&lt;3 \\</span><br><span class="line">\pi, &amp; x=3 \\</span><br><span class="line">\int_a^&#123;3b&#125;x_&#123;ij&#125;+e^2 \mathrm&#123;d&#125;x,&amp; x&gt;3 \\</span><br><span class="line">\end&#123;cases&#125;$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation.svg" alt="[公式]"></p>
+<p><strong>拆分单个公式</strong></p>
+<p>通过split环境实现公式拆分</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;split&#125;</span><br><span class="line">\cos 2x &amp;= \cos^2x - \sin^2x \\</span><br><span class="line">&amp;=2\cos^2x-1</span><br><span class="line">\end&#123;split&#125;$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation_split.svg" alt="[公式]"></p>
+<p><strong>简单运算</strong></p>
+<p>拉丁字母、阿拉伯数字和 +-*/= 运算符均可以直接输入获得，命令\cdot表示乘法的圆点，命令\neq表示不等号，命令\equiv表示恒等于，命令\bmod表示取模</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ x+2-3*4/6=4/y + x\cdot y $$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=x+2-3*4/6=4/y+++x%5Ccdot+y" alt="[公式]"></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ 0 \neq 1 \quad x \equiv x \quad 1 = 9 \bmod 2 $$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=0+%5Cneq+1+%5Cquad+x+%5Cequiv+x+%5Cquad+1+=+9+%5Cbmod+2" alt="[公式]"></p>
+<p><strong>上下标</strong></p>
+<p>语法_表示下标、^表示上标，但上下标内容不止一个字符时，需用大括号括起来。单引号’表示求导</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ a_&#123;ij&#125;^&#123;2&#125; + b^3_&#123;2&#125;=x^&#123;t&#125; + y&#x27; + x&#x27;&#x27;_&#123;12&#125; $$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=a_%7Bij%7D%5E%7B2%7D+++b%5E3_%7B2%7D=x%5E%7Bt%7D+++y%27+++x%27%27_%7B12%7D" alt="[公式]"></p>
+<p><strong>根号、分式</strong></p>
+<p>命令：\sqrt表示平方根，\sqrt[n]表示n次方根，\frac表示分式</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\sqrt&#123;x&#125; + \sqrt&#123;x^&#123;2&#125;+\sqrt&#123;y&#125;&#125; = \sqrt[3]&#123;k_&#123;i&#125;&#125; - \frac&#123;x&#125;&#123;m&#125;$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Csqrt%7Bx%7D+++%5Csqrt%7Bx%5E%7B2%7D+%5Csqrt%7By%7D%7D+=+%5Csqrt%5B3%5D%7Bk_%7Bi%7D%7D+-+%5Cfrac%7Bx%7D%7Bm%7D" alt="[公式]"></p>
+<p><strong>上下标记</strong></p>
+<p>命令：\overline, \underline 分别在表达式上、下方画出水平线</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\overline&#123;x+y&#125; \qquad \underline&#123;a+b&#125;$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Coverline%7Bx+y%7D%5Cqquad%5Cunderline%7Ba+b%7D" alt="[公式]"></p>
+<p>命令：\overbrace, \underbrace 分别在表达式上、下方给出一个水平的大括号</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\overbrace&#123;1+2+\cdots+n&#125;^&#123;n个&#125; \qquad \underbrace&#123;a+b+\cdots+z&#125;_&#123;26&#125;$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Coverbrace%7B1+2+%5Ccdots+n%7D%5E%7Bn%E4%B8%AA%7D+%5Cqquad+%5Cunderbrace%7Ba+b+%5Ccdots+z%7D_%7B26%7D" alt="[公式]"></p>
+<p><strong>向量</strong></p>
+<p>命令：\vec表示向量，\overrightarrow表示箭头向右的向量，\overleftarrow表示箭头向左的向量</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\vec&#123;a&#125; + \overrightarrow&#123;AB&#125; + \overleftarrow&#123;DE&#125;$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cvec%7Ba%7D+++%5Coverrightarrow%7BAB%7D+++%5Coverleftarrow%7BDE%7D" alt="[公式]"></p>
+<p><strong>积分、极限、求和、乘积</strong></p>
+<p>命令：\int表示积分，\lim表示极限， \sum表示求和，\prod表示乘积，^、_表示上、下限</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$  \lim_&#123;x \to \infty&#125; x^2_&#123;22&#125; - \int_&#123;1&#125;^&#123;5&#125;x\mathrm&#123;d&#125;x + \sum_&#123;n=1&#125;^&#123;20&#125; n^&#123;2&#125; = \prod_&#123;j=1&#125;^&#123;3&#125; y_&#123;j&#125;  + \lim_&#123;x \to -2&#125; \frac&#123;x-2&#125;&#123;x&#125; $$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Clim_%7Bx+%5Cto+%5Cinfty%7D+x%5E2_%7B22%7D+-+%5Cint_%7B1%7D%5E%7B5%7Dx+%5Cmathrm%7Bd%7D+x+++%5Csum_%7Bn=1%7D%5E%7B20%7D+n%5E%7B2%7D+=+%5Cprod_%7Bj=1%7D%5E%7B3%7D+y_%7Bj%7D++++%5Clim_%7Bx+%5Cto+-2%7D+%5Cfrac%7Bx-2%7D%7Bx%7D" alt="[公式]"></p>
+<p><strong>三圆点</strong></p>
+<p>命令：\ldots点位于基线上，\cdots点设置为居中，\vdots使其垂直，\ddots对角线排列</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ x_&#123;1&#125;,x_&#123;2&#125;,\ldots,x_&#123;5&#125;  \quad x_&#123;1&#125; + x_&#123;2&#125; + \cdots + x_&#123;n&#125; $$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=x_%7B1%7D,x_%7B2%7D,%5Cldots,x_%7B5%7D++%5Cquad+x_%7B1%7D+++x_%7B2%7D+++%5Ccdots+++x_%7Bn%7D" alt="[公式]"></p>
+<p><strong>重音符号</strong></p>
+<p>常用命令如下：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ \hat&#123;x&#125; $</span><br></pre></td></tr></table></figure>
+
+<p>效果： <img src="https://www.zhihu.com/equation?tex=%5Chat%7Bx%7D" alt="[公式]"></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ \bar&#123;x&#125; $</span><br></pre></td></tr></table></figure>
+
+<p>效果： <img src="https://www.zhihu.com/equation?tex=%5Cbar%7Bx%7D" alt="[公式]"></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ \tilde&#123;x&#125; $</span><br></pre></td></tr></table></figure>
+
+<p>效果： <img src="https://www.zhihu.com/equation?tex=%5Ctilde%7Bx%7D" alt="[公式]"></p>
+<p><strong>矩阵</strong></p>
+<p>其采用矩阵环境实现矩阵排列，常用的矩阵环境有matrix、bmatrix、vmatrix、pmatrix，其区别为在于外面的括号不同：</p>
+<p><img src="https://pic1.zhimg.com/80/v2-684e48900e810dff360c23b4ffe99680_720w.jpg" alt="img"></p>
+<p>下列代码中，&amp;用于分隔列，\用于分隔行</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;bmatrix&#125;</span><br><span class="line">1 &amp; 2 &amp; \cdots \\</span><br><span class="line">67 &amp; 95 &amp; \cdots \\</span><br><span class="line">\vdots  &amp; \vdots &amp; \ddots \\</span><br><span class="line">\end&#123;bmatrix&#125;$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/matrix.svg" alt="[公式]"></p>
+<p><strong>希腊字母</strong></p>
+<p>希腊字母无法直接通过美式键盘输入获得。在LaTeX中通过反斜杠\加上其字母读音实现，将读音首字母大写即可输入其大写形式，详见下表</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ \alpha^&#123;2&#125; + \beta = \Theta  $$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Calpha%5E%7B2%7D+++%5Cbeta+=+%5CTheta" alt="[公式]"></p>
+<p><img src="https://pic1.zhimg.com/80/v2-da3e717cf670582fbfbdddee33073524_720w.jpg" alt="img"></p>
+<p><strong>三角函数</strong></p>
+<p><img src="https://pic4.zhimg.com/80/v2-2527327da18ba3cd4d9cfa9483bcbe1f_720w.jpg" alt="img"></p>
+<p><strong>设置颜色</strong></p>
+<p>字体颜色：{\color{色调} 表达式}</p>
+<p>背景颜色：{\pagecolor{色调} 表达式}</p>
+<p>示例：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$\color&#123;red&#125;&#123;\text red&#125;$</span><br><span class="line">$\color&#123;#FF0000&#125;&#123;\text 红色字\;&#125;$</span><br><span class="line">$\color&#123;rgb(255,255,0)&#125;&#123;黄色字\;&#125;$</span><br></pre></td></tr></table></figure>
+
+
+
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_53793870/article/details/122514409">https://blog.csdn.net/m0_53793870/article/details/122514409</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110756681">https://zhuanlan.zhihu.com/p/110756681</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/261750408?utm_source=wechat_session">https://zhuanlan.zhihu.com/p/261750408?utm_source=wechat_session</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/mingzhuo_126/article/details/82722455">https://blog.csdn.net/mingzhuo_126/article/details/82722455</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/PolarisRisingWar/article/details/121333303">https://blog.csdn.net/PolarisRisingWar/article/details/121333303</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u013210620/article/details/81938733">https://blog.csdn.net/u013210620/article/details/81938733</a></p>
+<p>LaTeX数学公式 <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_20602929/article/details/50983697">https://blog.csdn.net/qq_20602929/article/details/50983697</a></p>
+<p>Markdown 中 LaTex 数学公式命令 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0ea47ae02262">https://www.jianshu.com/p/0ea47ae02262</a></p>
+<p>LaTeX新手入门教程（3）数学公式 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/GarfieldEr007/p/5536138.html">https://www.cnblogs.com/GarfieldEr007/p/5536138.html</a></p>
+<p>online latex editor <a target="_blank" rel="noopener" href="http://latex.codecogs.com/eqneditor/editor.php">http://latex.codecogs.com/eqneditor/editor.php</a></p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/LaTeX/" rel="tag"># LaTeX</a>
+              <a href="/tags/KaTeX/" rel="tag"># KaTeX</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/2b2380bd.html" rel="prev" title="关于TEX、LATEX、KATEX的关系">
+                  <i class="fa fa-chevron-left"></i> 关于TEX、LATEX、KATEX的关系
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/79f5c2dd.html" rel="next" title="机器学习模型训练全流程">
+                  机器学习模型训练全流程 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

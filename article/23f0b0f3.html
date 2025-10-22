@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Jetpack系列库简介">
+<meta property="og:url" content="http://yoursite.com/article/23f0b0f3.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack.png">
+<meta property="article:published_time" content="2022-05-11T11:24:50.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.364Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Jetpack">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack.png">
+
+
+<link rel="canonical" href="http://yoursite.com/article/23f0b0f3.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/23f0b0f3.html","path":"article/23f0b0f3.html","title":"Android Jetpack系列库简介"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Android Jetpack系列库简介 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFJetpack"><span class="nav-number">1.</span> <span class="nav-text">什么是Jetpack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jetpack%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-number">2.</span> <span class="nav-text">Jetpack的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E5%8F%82%E8%80%83"><span class="nav-number">3.</span> <span class="nav-text">相关参考</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/23f0b0f3.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Android Jetpack系列库简介 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Android Jetpack系列库简介
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-11 19:24:50" itemprop="dateCreated datePublished" datetime="2022-05-11T19:24:50+08:00">2022-05-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.5k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="什么是Jetpack"><a href="#什么是Jetpack" class="headerlink" title="什么是Jetpack"></a>什么是Jetpack</h3><p>2018年谷歌I/O 发布了一系列辅助Android开发者的实用工具，合称Jetpack，以帮助开发者构建出色的 Android 应用。大体上，JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，开发者可以自主按需选择接入具体的哪个库。</p>
+<ul>
+<li><p>Goole IO 2017：Google 开始推出Architecture Component, ORM库Room, 用户生命周期管理的ViewModel/ListData。</p>
+</li>
+<li><p>Goole IO 2018：将Support lib 更名为androidx，Google将许多正确的方案集中起来，以高效的开发Android APP。</p>
+</li>
+</ul>
+<p>以上种种，现在统称为JetPack.其最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。</p>
+<p>使用Jetpack的优势：</p>
+<ul>
+<li>加快开发速度</li>
+<li>消除样板代码</li>
+<li>编译功能强大的优质应用</li>
+</ul>
+<h3 id="Jetpack的组成"><a href="#Jetpack的组成" class="headerlink" title="Jetpack的组成"></a>Jetpack的组成</h3><p>Android Jetpack 组件覆盖以下 4 个方面：Foundation （基础组件）、Architecture（架构组件）、Behavior（行为组件）、UI（界面组件）。</p>
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack.png" alt="Android Jetpack"></p>
+<ol>
+<li>基础组件</li>
+</ol>
+<p>AppCompat：使得支持较低的 Android 版本。从以前继承 Activity 到现在继承 AppCompatActivity 就是属于这一部分<br>Android KTX：Kotlin 的扩展支持库<br>Multidex：多 dex 文件支持<br>Test：测试支持库</p>
+<ol start="2">
+<li>架构组件</li>
+</ol>
+<p>Data Binding：MVVM 的一种实践<br>Lifecycles：管理你的 Activity 和 Fragment 生命周期<br>LiveData：通过观察者模式感知数据变化，类比 RxJava<br>Navigation：处理 Fragment 导航相关逻辑<br>Paging：分页数据加载方案<br>Room：官方 ORM 库<br>ViewModel：通过数据驱动 V 视图发生改变<br>WorkManager：管理后台任务</p>
+<ol start="3">
+<li>行为组件</li>
+</ol>
+<p>DownloadManager：管理下载任务<br>Media App：多媒体播放和一些向后兼容的API。主要包含 MediaPlayer 和 ExoPlayer<br>Notifications：提供向后兼容的通知 API，支持 Wear 和 Auto<br>Permissions：权限管理，这个应该都接触过。用于检查和请求应用权限<br>Settings：Preference 相关 API。基本每个应用都会用到<br>Share Action：提供分享操作。这块在国内使用的不多，都是自己封装或者采用第三方方案<br>Slices：可以让应用通过外部（其他 APP）显示 APP 界面（通过设备自带的搜索，语音助手等）</p>
+<ol start="4">
+<li>界面组件</li>
+</ol>
+<p>Animations and Transitions：动画，界面转场等<br>Auto：针对车辆的标准化界面和模式<br>Emoji：表情符号相关<br>Fragment：基础概念<br>Layout：基础概念<br>Palette-Colors：调色板<br>TV：Android TV 开发相关<br>Wear：可穿戴设备（目前主要是手表）开发相关</p>
+<h3 id="相关参考"><a href="#相关参考" class="headerlink" title="相关参考"></a>相关参考</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34519487/article/details/103963912">https://blog.csdn.net/qq_34519487/article/details/103963912</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.xiangxueketang.cn/enjoy/removal/article_6?sdclkid=AL2G15oN1526A6D6bo&amp;bd_vid=7921788666531507771">http://www.xiangxueketang.cn/enjoy/removal/article_6?sdclkid=AL2G15oN1526A6D6bo&amp;bd_vid=7921788666531507771</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Android/" rel="tag"># Android</a>
+              <a href="/tags/Jetpack/" rel="tag"># Jetpack</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/198ad0b7.html" rel="prev" title="关于设计UI/UX/UED职能解释">
+                  <i class="fa fa-chevron-left"></i> 关于设计UI/UX/UED职能解释
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/5ad2a15a.html" rel="next" title="Android Jetpack常用组件介绍">
+                  Android Jetpack常用组件介绍 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

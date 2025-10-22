@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="API的全称是应用编程接口（Application Programming Interface），这并不是一个新概念，在计算机操作系统出现的早期就已经存在了。在互联网时代，把网站的服务封装成一系列计算机易识别的数据接口开放出去，供第三方开发者使用，这种行为就叫做开放网站的API，与之对应的，所开放的API就被称作openAPI。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenAPI的介绍及其使用">
+<meta property="og:url" content="http://yoursite.com/article/f7f06827.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="API的全称是应用编程接口（Application Programming Interface），这并不是一个新概念，在计算机操作系统出现的早期就已经存在了。在互联网时代，把网站的服务封装成一系列计算机易识别的数据接口开放出去，供第三方开发者使用，这种行为就叫做开放网站的API，与之对应的，所开放的API就被称作openAPI。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png">
+<meta property="article:published_time" content="2022-05-19T02:16:29.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.367Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png">
+
+
+<link rel="canonical" href="http://yoursite.com/article/f7f06827.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/f7f06827.html","path":"article/f7f06827.html","title":"OpenAPI的介绍及其使用"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>OpenAPI的介绍及其使用 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#OSCHINA-API%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">OSCHINA API的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%B9%B3%E5%8F%B0%E5%BC%80%E6%94%BEAPI"><span class="nav-number">2.</span> <span class="nav-text">其他平台开放API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Json%E8%A7%A3%E6%9E%90"><span class="nav-number">3.</span> <span class="nav-text">Json解析</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/f7f06827.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="OpenAPI的介绍及其使用 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          OpenAPI的介绍及其使用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-19 10:16:29" itemprop="dateCreated datePublished" datetime="2022-05-19T10:16:29+08:00">2022-05-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>API的全称是应用编程接口（Application Programming Interface），这并不是一个新概念，在计算机操作系统出现的早期就已经存在了。在互联网时代，把网站的服务封装成一系列计算机易识别的数据接口开放出去，供第三方开发者使用，这种行为就叫做开放网站的API，与之对应的，所开放的API就被称作openAPI。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="OSCHINA-API的使用"><a href="#OSCHINA-API的使用" class="headerlink" title="OSCHINA API的使用"></a>OSCHINA API的使用</h2><p>OSCHINA API：<a target="_blank" rel="noopener" href="https://www.oschina.net/openapi/docs">https://www.oschina.net/openapi/docs</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- 什么是token</span><br><span class="line">token（令牌）是一串唯一的字符串，通常由服务端生成，在注册完成时返回给客户端，用来标识此用户，客户端将此字符串存储在本地。在以后的网络请求时，客户端先查询本地的token，如果有则直接使用此令牌进行网络请求，没有则提示未登录，转到登陆注册界面。</span><br><span class="line">此外，还可以在服务端或者客户端添加过期判别机制。</span><br><span class="line"></span><br><span class="line">- token的作用</span><br><span class="line">token可以显著减少服务端对用户表的查询，同时使用户不必每次都登陆，提高了系统的可用性与健壮性。</span><br><span class="line"></span><br><span class="line">- 使用SharedPreferences保存token</span><br></pre></td></tr></table></figure>
+
+<p>1.创建应用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">状态		正在审核</span><br><span class="line">应用ID	GCqPUbrIaoe7nUScRlet</span><br><span class="line">应用私钥	YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1</span><br><span class="line">应用首页	https://fangjian98.github.io/    </span><br><span class="line">回调地址	http://192.168.0.106/</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png" alt="OSCHINA API"></p>
+<p>2.OAuth2 获取 AccessToken，应用通过 AccessToken 访问 OpenApi 使用用户数据。<br>采用 OAuth2 协议 认证，开放 osc 移动 app 版本所有接口</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">1.</span><br><span class="line"><span class="comment"># 用户授权码的回调地址直接获取code</span></span><br><span class="line"><span class="comment"># 构造Uri：/action/oauth2/authorize</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)</span></span><br><span class="line">https://www.oschina.net/action/oauth2/authorize?response_type=code&amp;client_id=GCqPUbrIaoe7nUScRlet&amp;redirect_uri=http://192.168.0.106/</span><br><span class="line"><span class="comment"># 返回用户授权码code</span></span><br><span class="line">http://192.168.0.106/?code=iap9LL&amp;state=</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"><span class="comment"># 应用服务器使用 oauth2_token API 向 OSChina 认证服务器发送用户授权码以及回调地址，OSChina 认证服务器返回 AccessToken</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/token</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)和client_secret(应用私钥)和code(用户授权码)</span></span><br><span class="line">https://www.oschina.net/action/openapi/token?client_id=GCqPUbrIaoe7nUScRlet&amp;client_secret=YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1&amp;grant_type=authorization_code&amp;code=pZ6Ye2&amp;redirect_uri=http://192.168.0.106/&amp;dataType=json</span><br><span class="line"><span class="comment"># 返回AccessToken</span></span><br><span class="line">&#123;<span class="string">&quot;access_token&quot;</span>:<span class="string">&quot;09a10176-7772-4577-8856-1b396f86e83b&quot;</span>,<span class="string">&quot;refresh_token&quot;</span>:<span class="string">&quot;da728b79-3b0d-4062-961b-bd67c09ecbcd&quot;</span>,<span class="string">&quot;uid&quot;</span>:4470181,<span class="string">&quot;token_type&quot;</span>:<span class="string">&quot;bearer&quot;</span>,<span class="string">&quot;expires_in&quot;</span>:604799&#125;</span><br><span class="line"></span><br><span class="line">3.使用AccessToken请求：参考OpenAPI文档即可</span><br><span class="line"><span class="comment"># 新闻news_list</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_list</span></span><br><span class="line"><span class="comment"># access_token catalog page pageSize dataType</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_list?access_token=09a10176-7772-4577-8856-1b396f86e83b&amp;catalog=2&amp;page=1&amp;pageSize=10&amp;dataType=json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明				默认值</span><br><span class="line">access_token	<span class="literal">true</span>	string	oauth2_token获取的access_token	</span><br><span class="line">catalog			<span class="literal">true</span>	int		1-所有|2-综合新闻|3-软件更新		1</span><br><span class="line">page/pageIndex	<span class="literal">true</span>	int		页数	1</span><br><span class="line">pageSize		<span class="literal">true</span>	int		每页条数	20</span><br><span class="line">dataType		<span class="literal">true</span>	string	返回数据类型[<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新闻news_detail</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_detail</span></span><br><span class="line"><span class="comment"># id access_token</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_detail?id=188164&amp;access_token=6983b81e-5e2e-4685-888f-36abcf3f2da7&amp;dataType=json</span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明	默认值</span><br><span class="line">id				<span class="literal">true</span>	long	新闻编号	空</span><br><span class="line">access_token	<span class="literal">false</span>	string	oauth2_token获取的access_token 传则显示是否收藏 用户未登录则不传	</span><br><span class="line">dataType		<span class="literal">false</span>	string	返回数据类型 [<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他平台开放API"><a href="#其他平台开放API" class="headerlink" title="其他平台开放API"></a>其他平台开放API</h2><ul>
+<li>CODING OPEN API：<a target="_blank" rel="noopener" href="https://help.coding.net/openapi">https://help.coding.net/openapi</a></li>
+<li>有道云笔记API：<a target="_blank" rel="noopener" href="http://note.youdao.com/open/index.html">http://note.youdao.com/open/index.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/trackingmore/p/7156877.html">常用精品API接口汇总</a></li>
+</ul>
+<h2 id="Json解析"><a href="#Json解析" class="headerlink" title="Json解析"></a>Json解析</h2><p>JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交换格式。它基于 ECMAScript (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON格式取代了xml给网络传输带来了很大的便利，是最常见的数据返回类型。</p>
+<p>常见的Json解析库</p>
+<ul>
+<li>org.json库</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Android给我们提供的Json解析类，官方提供的JSONArray与JSONObject</span><br><span class="line">这些API都存在于org.json包下，而我们用到的类有下面这些：</span><br><span class="line">JSONObject： Json对象，可以完成Json字符串与Java对象的相互转换</span><br><span class="line">JSONArray： Json数组，可以完成Json字符串与Java集合或对象的相互转换</span><br><span class="line">JSONStringer： Json文本构建类，这个类可以帮助快速和便捷的创建JSON text， 每个</span><br><span class="line">JSONStringer实体只能对应创建一个JSON text</span><br><span class="line">JSONTokener：Json解析类</span><br><span class="line">JSONException：Json异常</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>fastjson</li>
+<li>gson</li>
+</ul>
+<blockquote>
+<p>[1] <a target="_blank" rel="noopener" href="https://www.cnblogs.com/lushimei/p/13436096.html">https://www.cnblogs.com/lushimei/p/13436096.html</a></p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"># Java</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/5337b80a.html" rel="prev" title="Java的反射机制">
+                  <i class="fa fa-chevron-left"></i> Java的反射机制
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/9ca11197.html" rel="next" title="关于应用容器引擎Docker">
+                  关于应用容器引擎Docker <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

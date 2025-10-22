@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="TEX是一个电子排版系统，它的出现给印刷出版业带来了一场革命。但TEX对于使用者的要求比较高，所以出现了LATEX使得使用者可以更方便的利用TEX的强大功能。KATEX则是一种LATEX的一个快速web数学公式渲染器，使得LATEX的公式可以快速渲染出来。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于TEX、LATEX、KATEX的关系">
+<meta property="og:url" content="http://yoursite.com/article/2b2380bd.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="TEX是一个电子排版系统，它的出现给印刷出版业带来了一场革命。但TEX对于使用者的要求比较高，所以出现了LATEX使得使用者可以更方便的利用TEX的强大功能。KATEX则是一种LATEX的一个快速web数学公式渲染器，使得LATEX的公式可以快速渲染出来。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190817152527198.png">
+<meta property="article:published_time" content="2022-05-23T07:39:29.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.368Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="LaTeX">
+<meta property="article:tag" content="KaTeX">
+<meta property="article:tag" content="TeX">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190817152527198.png">
+
+
+<link rel="canonical" href="http://yoursite.com/article/2b2380bd.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/2b2380bd.html","path":"article/2b2380bd.html","title":"关于TEX、LATEX、KATEX的关系"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>关于TEX、LATEX、KATEX的关系 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TEX"><span class="nav-number">1.</span> <span class="nav-text">TEX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LATEX"><span class="nav-number">2.</span> <span class="nav-text">LATEX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#KATEX"><span class="nav-number">3.</span> <span class="nav-text">KATEX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeX%E5%86%99%E4%BD%9C%E8%BD%AF%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">LaTeX写作软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8ECTAN"><span class="nav-number">5.</span> <span class="nav-text">关于CTAN</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/2b2380bd.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="关于TEX、LATEX、KATEX的关系 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          关于TEX、LATEX、KATEX的关系
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-23 15:39:29" itemprop="dateCreated datePublished" datetime="2022-05-23T15:39:29+08:00">2022-05-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF%E6%B5%81/" itemprop="url" rel="index"><span itemprop="name">技术流</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>TEX是一个电子排版系统，它的出现给印刷出版业带来了一场革命。但TEX对于使用者的要求比较高，所以出现了LATEX使得使用者可以更方便的利用TEX的强大功能。KATEX则是一种LATEX的一个快速web数学公式渲染器，使得LATEX的公式可以快速渲染出来。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="TEX"><a href="#TEX" class="headerlink" title="TEX"></a>TEX</h2><p>说到排版系统不得不提的就是TEX。TEX是一种排版系统，是基于宏的流行的文本格式化程序。它提供了一套功能强大并且十分灵活的排版语言，多达900多条指令，而且有宏功能，用户可以不断地定义自己适用的新命令来扩展TEX系统的功能。<br>TEX系统的排版结果DVI文件与输出设备无关，DVI文件可以显示、打印、照排，几乎可以在所有的输出设备上输出。利用TEX可以很容易地生成高质量的dvi文件，打印输出。<br>它在学术界十分流行，特别是数学、物理学、统计学与计算机科学界。被普遍认为是一个很好的排版工具，特别是在处理复杂的数学公式时。<br>利用TEX提供的宏定义功能可以对TEX进行二次开发。它是包括LaTeX和teTeX在内的其它的此类格式化程序的基础。利用诸如LaTeX等终端软件，TEX就能够排版出精美的文本。通过CTAN上的宏包可以扩展其功能，可以做幻灯片，定义模板。中文支持可以由CCT、CJK、ctex等来完成。<br>TEX有几种常见的格式：</p>
+<p>Plain TEX：TEX的作者设计了Plain TEX的基本格式，以与低层的TEX互应。这种格式是用TEX处理文本时相当基本的部分，以致于我们有时都分不清到底那条指令是真正处理程序TEX的，哪条是这个特殊格式的。Plain TEX也是其他格式的基础，有些人认为TEX和Plain TEX是同一件事。<br>LATEX：Plain TEX的重点还只是在于如何排版的层次上，而不是从一位作者的观点的观点出发。当然对它的深层功能的进一步发掘，需要相当丰富的编程技巧。因此它的应用就需要高级排版和程序设计人员。正是由此种种原因，开发了LATEX格式，这种格式提供了一组生成复杂文档所需的更高级命令。利用这种格式，即使使用者没有排版和程序设计的只是也可以充分发挥由TEX所提供的强大功能。对于生成复杂表格和数学公式，这一点表现得尤为突出。LATEX相对于其基础Plain TEX而言，更像一个包装语言。它可以在作者根本不知道所以然的条件下，自动给出标题，章节，表格目录，交叉索引，公式编号，文献引用，浮动图表。版面布局信息包含在类文件中，这些类文件并不是位于源文件中的。这些布局可以改动，也可以直接采用。<br>LATEX2ϵ \epsilonϵ:由于LATEX相当普及，以及它在许多原本没想象到的领域中的扩展，再加上计算机技术的日新月异，特别是价格低廉，但功能强大的激光打印机的出现，使得相当广泛的一类格式都冠以LATEX的标签。为了尝试建立一个真正的改进标准，创立了LATEX3项目，目标是建立一个最优的，有效的命令集合，这些命令是来自于各种软件包为了实现某一目的而设计出来的。朝向这个目标迈进的第一步是发行了LATEX2ϵ \epsilonϵ。也就是LATEX的当前版本。<br>TEX的优点：</p>
+<p>高质量的输出：TEX遵循传统的排版规则，以排版的质量为最重要的目标。<br>超常的稳定性：自从TEX出现以来，只有一些微小的改动。也就是说，十几年前的TEX文件用现在的TEX系统排版得到的结果与十几年前得到的结果是一样的。稳定性还体现在TEX系统极少会崩溃，可以处理任意大小的文件，即使你的计算机的内存很少，TEX也可自如的工作。<br>TEX是可编程的，TEX是一种宏命令编程语言：你可以用很少的命令来完成非常复杂的工作。如果需要的话，你也可以重新定义TEX的所有命令来得到特殊的效果。<br>高度的灵活性：TEX自从数显以来其内核只有微小的改动。但是由于其内核的设计方式，世界上的TEX使用者可以让TEX做几乎任何工作。你可以用TEX来排版英文文本，也可以排版德文、俄文、中文等多种语言。你还可以用TEX来排版乐谱，象棋，围棋棋谱等等。<br>简单方便TEX文档是ASCII码的文本文件：因此，即使你手边没有TEX系统，你也可以看懂绝大部分内容。TEX文件的这种特点使得它占用很少的存储空间，也可以很方便的用email来传输。<br>目前为止，TEX几乎在所有的计算机操作系统平台上得到实现：如Atari，Apple，Macintosh，Unix，VMS，MS-DOS，MS-Windows和OS/2等等。TEX的源文件可在不同的平台之间自由的交换，而得到的输出是完全相同的。<br>TEX是免费软件，它的源程序也是免费的：你可能仅需要制服邮费，甚至一分不花得得到适合你的TEX系统。<br>超级技术支持：由于TEX并不是被某个公司垄断开发，所以世界各地的使用者设计了统一的技术支持方式。<br>TEX是一种乐趣：使用TEX不仅仅是一种工作手段，也是一种乐趣。它有挑战，也有荣誉。很多人在熟悉TEX之后都开始把使用TEX作为一种爱好，而不是一件枯燥无味的劳动。</p>
+<h2 id="LATEX"><a href="#LATEX" class="headerlink" title="LATEX"></a>LATEX</h2><p>在上面的介绍中已经提到过，LATEX使用TEX作为格式化引擎，当前的版本是LATEX2ϵ \epsilonϵ。<br>LATEX是当今世界上最流行和使用最广泛的TEX宏集。它构筑在Plain TEX的基础上，并加进了很多的功能以使得使用者可以更方便的利用TEX的强大功能。<br>使用LATEX基本不需要使用者自己设计命令和宏等。因为LATEX已经替你做好了。因此，即使使用者并不是很了解TEX，也可以在短短的时间内生成高质量的文档。对于生成复杂的数学公式，LATEX表现的更为出色。</p>
+<p>也就是说，LATEX是TEX中的一种格式，是建立在TEX基础上的宏语言，每一个LATEX命令实际上最后都会被转换解释称几个甚至上百个TEX命令。但是，普通用户可以无需知道这中间复杂的联系。就像变成的时候如果使用一些已经编译好的函数库和模版可以使我们仅仅用几个命令就实现很多功能一样。LATEX根据人们排版文章的习惯，定义了许多命令和模版，我们可以很快的得到漂亮的排版结果。</p>
+<blockquote>
+<p>一份不太简短的 LaTeX2ε 介绍【中文资料】（lshort中文版 <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf%EF%BC%89">https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf）</a><br>LaTeX for Complete Novices【英文资料】（pdf, 源代码, <a target="_blank" rel="noopener" href="http://www.dickimaw-books.com/latex/novices/%EF%BC%89">http://www.dickimaw-books.com/latex/novices/）</a><br>黄正华老师 LaTeX 教学首页.<a target="_blank" rel="noopener" href="http://aff.whu.edu.cn/huangzh/">http://aff.whu.edu.cn/huangzh/</a></p>
+</blockquote>
+<h2 id="KATEX"><a href="#KATEX" class="headerlink" title="KATEX"></a>KATEX</h2><p>KaTeX： 可汗学院出品，号称“最快”的数学公式渲染库，支持主流的浏览器：Chrome, Firefox, Safari, Opera和 IE8~IE11。</p>
+<p>KATEX是一个web数学公式渲染器。我们日常写博客用的markdown并不支持数学公式编辑，这些公式仅靠编辑器自带的排版功能是难以表示的，所以需要掌握网页公式编辑方案。<br>目前比较流行的网页公式编辑方案是采用TEX/LATEX语法编辑，知名的有MathJax、KATEX。与前者相比，KATEX方案的渲染速度高，虽然支持不够全面，但仍能满足大多数的使用环境。<br>我们可以在KATEX官网来在线渲染我们写好的LATEX公式，如下图所示：<br><img src="https://img-blog.csdnimg.cn/20190817152527198.png" alt="在这里插入图片描述"></p>
+<h2 id="LaTeX写作软件"><a href="#LaTeX写作软件" class="headerlink" title="LaTeX写作软件"></a>LaTeX写作软件</h2><p>LaTeX（LTEX，音译“拉泰赫”）是一种基于ΤΕΧ的排版系统</p>
+<p>1.一款Latex在线编辑器<br><a target="_blank" rel="noopener" href="https://www.overleaf.com/">https://www.overleaf.com/</a><br>Latex常用模版<br><a target="_blank" rel="noopener" href="https://www.overleaf.com/latex/templates">https://www.overleaf.com/latex/templates</a></p>
+<p>2.新一代LaTeX协作平台<br><a target="_blank" rel="noopener" href="https://www.slager.cn/#/Home">https://www.slager.cn/#/Home</a></p>
+<p>3.TeX Live 是 TUG (TeX User Group) 发布并维护的的 TeX 系统，可以称得上是TeX的官方系统。对于任何阶段的TeX用户，都可以使用TeX Live， 以保持在跨操作系统、跨用户的TeX文件一致性。</p>
+<p><a target="_blank" rel="noopener" href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a></p>
+<h2 id="关于CTAN"><a href="#关于CTAN" class="headerlink" title="关于CTAN"></a>关于CTAN</h2><p>CTAN是“Comprehensive TeX Archive Network”的首字缩写，为世界上最主要的TeX资源集散网站，搜集了关于TeX的各种文件与软件等等。Perl的资源集散网站CPAN即是基于<em>CTAN</em>的模式诞生与运作。</p>
+<p><a target="_blank" rel="noopener" href="https://ctan.org/">https://ctan.org/</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/LaTeX/" rel="tag"># LaTeX</a>
+              <a href="/tags/KaTeX/" rel="tag"># KaTeX</a>
+              <a href="/tags/TeX/" rel="tag"># TeX</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/67e1ad8.html" rel="prev" title="SMB通信协议">
+                  <i class="fa fa-chevron-left"></i> SMB通信协议
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/f107c406.html" rel="next" title="LaTeX数学表达式">
+                  LaTeX数学表达式 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

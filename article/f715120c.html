@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Github 包含的功能点很多，你知道他们的作用是什么吗？改如何去使用这些功能呢？这里将列出常用的功能点，并描述其功能和什么时候去使用以及如何使用，当然你也可以查看Github的官方文档来了解和学习这些。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github的常用功能">
+<meta property="og:url" content="http://yoursite.com/article/f715120c.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="Github 包含的功能点很多，你知道他们的作用是什么吗？改如何去使用这些功能呢？这里将列出常用的功能点，并描述其功能和什么时候去使用以及如何使用，当然你也可以查看Github的官方文档来了解和学习这些。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-18T15:15:04.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.326Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="Github">
+<meta property="article:tag" content="Github Pages">
+<meta property="article:tag" content="Github Actions">
+<meta property="article:tag" content="Issue">
+<meta property="article:tag" content="Pull Request">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://yoursite.com/article/f715120c.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/f715120c.html","path":"article/f715120c.html","title":"Github的常用功能"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Github的常用功能 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD"><span class="nav-number">1.</span> <span class="nav-text">常用功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%90%E8%97%8F%E6%8A%80%E5%B7%A7"><span class="nav-number">2.</span> <span class="nav-text">隐藏技巧</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/f715120c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Github的常用功能 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Github的常用功能
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-18 23:15:04" itemprop="dateCreated datePublished" datetime="2021-05-18T23:15:04+08:00">2021-05-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Github/" itemprop="url" rel="index"><span itemprop="name">Github</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>Github 包含的功能点很多，你知道他们的作用是什么吗？改如何去使用这些功能呢？这里将列出常用的功能点，并描述其功能和什么时候去使用以及如何使用，当然你也可以查看Github的官方文档来了解和学习这些。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="常用功能"><a href="#常用功能" class="headerlink" title="常用功能"></a>常用功能</h2><ul>
+<li>Issue</li>
+</ul>
+<blockquote>
+<p>Issue的作用在于对开源项目提Bug者需求来不断完善开源社区，这对问题追踪是很重要的，可以对现有代码讨论和交流，也可以交流如何使用，还可以作为项目管理的规划Todo List，提交cmmit关联issue id等。Issue 在整个GitHub，谁都可以提问issue，谁都可以对issue问题进行回答。</p>
+<p>1.Issue的Label功能：自己的仓库或者作者给权限的仓库才有右边这些选项，点进去选择相应label即可</p>
+<p>2.Issue Title的格式规范：[Issue Type] Issue brife description</p>
+<p>3.Issue 内容模板(可自定义)：&lt;1&gt;该问题是怎么引起的 &lt;2&gt;重现步骤 &lt;3&gt;报错信息</p>
+<p>4.Issue 可以有额外的属性:</p>
+<p>Labels，标签。包括 enhancement、bug、invalid 等，表示 Issue 的类型，解决的方式。除了自带的以外，也可以去自定义。</p>
+<p>Milestone，里程碑。作为 Issue 的一个集合，通常用来表示项目的一个阶段，比如 demo、release 等，保护达成这些阶段需要解决的问题。有时候，也会与版本计划重合，比如 v1.0、v2.0 等。Issue 不能设置截止时间，但是 Milestone 可以。</p>
+<p>Assignees，责任人。指定这个 Issue 由谁负责来解决。</p>
+<p>充分利用这些功能，让每一个 commit 的意义更加明确，可以起到了良好的过程管理作用，使得这个 Git 库的项目进度更加显然。而且，这也是项目后期，写文档的绝佳素材。其实，GitHub 的 issue ，就是一个轻量级协作系统。它的 comment 支持 GitHub Flavored Markdown，可以进行内容丰富的交流。Git 本身就是分布式的代码版本控制软件，是为了程序员的协作而设计的。而 issue 的 Assignee 功能，就是这个在线协作系统的核心，足以让一群线上的开发者，一起完成一个软件项目。</p>
+<p>5.使用 GitHub Issues 来写博客：<a target="_blank" rel="noopener" href="https://github.com/yihong0618/gitblog">yihong0618/gitblog</a></p>
+</blockquote>
+<ul>
+<li>Github commit关联Issue的小技巧</li>
+</ul>
+<blockquote>
+<p>如果一个处于Open状态的Issue已经处理完毕，只要在该提交中以下列任意一种格式描述提交信息，但PR通过后对应的Issue就会被Close，示例：<code>git commit -m &quot;message title, fix #1&quot;</code>。一个commit message 可同时关联多个任务，示例：<code>fix #1 #2</code> ，不同issue_id之间需要空格隔开。</p>
+<p>关键词：fix、fixes、fixed、close、closes、closed、resolve、resolves、resolved</p>
+<p>借助issue进行问题的提出，将问题内容反馈给研发人员，研发人员根据issue内容进行针对性的修复，并将修复后的结果反馈给测试人员，该过程属于一个迭代过程，待测试人员确认无误后，可关闭issue。</p>
+</blockquote>
+<ul>
+<li>Pull Requset</li>
+</ul>
+<blockquote>
+<p>Pull Request简写为PR，中文译为拉取请求，是为github开源项目提交自己的代码。</p>
+<p>第一次参与开源贡献代码流程参考：<a target="_blank" rel="noopener" href="https://github.com/firstcontributions/first-contributions/blob/master/translations/README.chs.md">firstcontributions/first-contributions</a></p>
+<ol>
+<li>Fork代码仓库</li>
+<li>Clone代码仓库</li>
+<li>新建分支，修改代码，再Commit修改，Push到Github</li>
+<li>提出Pull Request你的修改供项目拥有者审阅Review，待conform merge即可合入修改</li>
+</ol>
+</blockquote>
+<ul>
+<li>Fork</li>
+</ul>
+<blockquote>
+<p>复制克隆，相当于复制某个开源项目成为自己的一个同名仓库</p>
+</blockquote>
+<ul>
+<li>Stars</li>
+</ul>
+<blockquote>
+<p>收藏，打开对应的项目主页，点击右上角star按钮即可收藏，在Your stars中查看个人收藏</p>
+</blockquote>
+<ul>
+<li>Github Wiki</li>
+<li>Github Release</li>
+</ul>
+<blockquote>
+<p>GitHub Releases是向用户提供软件的方式，您可以创建包软件的发行版，以及发行说明和二进制文件链接，以供其他人使用。</p>
+<p>1.Release发布步骤：</p>
+<p>tag：v1.0.0</p>
+<p>release title：ExploreGithub v1.0.0</p>
+<p>describe this release：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">## Features</span><br><span class="line"></span><br><span class="line">- Add an integration library to support decoding AVIF ([&#96;3fd8e77&#96;](https:&#x2F;&#x2F;github.com&#x2F;bumptech&#x2F;glide&#x2F;commit&#x2F;3fd8e777e2be6a3fedc5f5c5f688970a212a285f), [&#96;f5e78ed&#96;]</span><br><span class="line"></span><br><span class="line">## Bugs</span><br><span class="line"></span><br><span class="line">- Fix memory leak caused by unusual activity&#x2F;fragment lifecycle interactions ([&#96;8bebf71&#96;](https:&#x2F;&#x2F;github.com&#x2F;bumptech&#x2F;glide&#x2F;commit&#x2F;8bebf71e80c2cd1f260d919e6b0697436da6e302))</span><br></pre></td></tr></table></figure>
+
+<p>2.Release参考：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/meefik/linuxdeploy">https://github.com/meefik/linuxdeploy</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/bumptech/glide">https://github.com/bumptech/glide</a></p>
+</blockquote>
+<ul>
+<li>Github Discussions</li>
+<li>Github Pages</li>
+<li>Github Actions</li>
+<li>Github REST API</li>
+<li>License</li>
+<li>关于仓库的gh-pages分支</li>
+<li>如何提Issue</li>
+<li>如何贡献Pull Request</li>
+</ul>
+<h2 id="隐藏技巧"><a href="#隐藏技巧" class="headerlink" title="隐藏技巧"></a>隐藏技巧</h2><ol>
+<li><p>username同名仓库：</p>
+<p>该仓库的<code>README.md</code>将直接显示再主页，可以作为自己的个人介绍详情页，有多种美化方式。</p>
+</li>
+<li><p>username.github.io仓库：</p>
+<p>该仓库直接生成专属你的网站，地址为<code>username.github.io</code></p>
+</li>
+<li><p>Github Emoji</p>
+</li>
+</ol>
+<blockquote>
+<p>官方Emoji<br><a target="_blank" rel="noopener" href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md">https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md</a></p>
+<p>其他Emoji<br><a target="_blank" rel="noopener" href="https://emoji.muan.co/">https://emoji.muan.co/</a><br><a target="_blank" rel="noopener" href="https://gitmoji.dev/">https://gitmoji.dev/</a></p>
+</blockquote>
+<ol start="4">
+<li><p>Github图标</p>
+<p>Github主页图标：<a target="_blank" rel="noopener" href="https://github.com/anuraghazra/github-readme-stats">https://github.com/anuraghazra/github-readme-stats</a></p>
+<p>Github主页访问数：<a target="_blank" rel="noopener" href="https://visitor-badge.laobi.icu/">https://visitor-badge.laobi.icu/</a></p>
+<p>Github项目图标：<a target="_blank" rel="noopener" href="https://shields.io/">https://shields.io/</a></p>
+</li>
+<li><p>Github在线编辑器</p>
+<p>github项目界面 按下<kbd>。</kbd> 即可进去vscode编辑界面</p>
+<p>github.com/user/repo在github后加<code>1s</code>，回车即可进入vscode编辑界面</p>
+<p>Vscode在线：<a target="_blank" rel="noopener" href="https://vscode.dev/">https://vscode.dev/</a></p>
+</li>
+<li><p>Github Contributions 3D模型下载：<a target="_blank" rel="noopener" href="https://skyline.github.com/">Here</a></p>
+</li>
+<li><p>Github Markdown 语法：<a target="_blank" rel="noopener" href="https://docs.github.com/cn/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Here</a></p>
+</li>
+</ol>
+<p>示例：添加todo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- [x] this is a todo</span><br><span class="line">- [ ] this is a todo</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><input checked="" disabled="" type="checkbox"> this is a todo</li>
+<li><input disabled="" type="checkbox"> this is a todo</li>
+</ul>
+<ol start="8">
+<li>Github引用图片和文件方式</li>
+</ol>
+<p>下面是一些使用相对链接显示图像的示例。</p>
+<table>
+<thead>
+<tr>
+<th align="left">上下文</th>
+<th align="left">相对链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">在同一个分支上的 <code>.md</code> 文件中</td>
+<td align="left"><code>/assets/images/electrocat.png</code></td>
+</tr>
+<tr>
+<td align="left">在另一个分支的 <code>.md</code> 文件中</td>
+<td align="left"><code>/../main/assets/images/electrocat.png</code></td>
+</tr>
+<tr>
+<td align="left">在仓库的议题、拉取请求和评论中</td>
+<td align="left"><code>../blob/main/assets/images/electrocat.png</code></td>
+</tr>
+<tr>
+<td align="left">在另一个仓库的 <code>.md</code> 文件中</td>
+<td align="left"><code>/../../../../github/docs/blob/main/assets/images/electrocat.png</code></td>
+</tr>
+<tr>
+<td align="left">在另一个仓库的议题、拉取请求和评论中</td>
+<td align="left"><code>../../../github/docs/blob/main/assets/images/electrocat.png?raw=true</code></td>
+</tr>
+</tbody></table>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">引用文件链接</span><br><span class="line">https://github.com/alibaba/fastjson/blob/master/license.txt</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Github/" rel="tag"># Github</a>
+              <a href="/tags/Github-Pages/" rel="tag"># Github Pages</a>
+              <a href="/tags/Github-Actions/" rel="tag"># Github Actions</a>
+              <a href="/tags/Issue/" rel="tag"># Issue</a>
+              <a href="/tags/Pull-Request/" rel="tag"># Pull Request</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/8b0e152.html" rel="prev" title="Git命令简写的配置">
+                  <i class="fa fa-chevron-left"></i> Git命令简写的配置
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/64245.html" rel="next" title="Linux常用命令">
+                  Linux常用命令 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

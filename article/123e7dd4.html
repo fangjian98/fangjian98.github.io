@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="多线程（multithreading），是指从软件或者硬件上实现多个线程并发执行的技术。具有多线程能力的计算机因有硬件支持而能够在同一时间执行多于一个线程，进而提升整体处理性能。具有这种能力的系统包括对称多处理机、多核心处理器以及芯片级多处理或同时多线程处理器。在一个程序中，这些独立运行的程序片段叫作“线程”（Thread），利用它编程的概念就叫作“多线程处理”。多线程的应用在开发中非常常见。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android多线程使用">
+<meta property="og:url" content="http://yoursite.com/article/123e7dd4.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="多线程（multithreading），是指从软件或者硬件上实现多个线程并发执行的技术。具有多线程能力的计算机因有硬件支持而能够在同一时间执行多于一个线程，进而提升整体处理性能。具有这种能力的系统包括对称多处理机、多核心处理器以及芯片级多处理或同时多线程处理器。在一个程序中，这些独立运行的程序片段叫作“线程”（Thread），利用它编程的概念就叫作“多线程处理”。多线程的应用在开发中非常常见。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019111311265420.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191113141230159.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191113165713433.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191113165928918.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191119160207922.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191119161139902.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191119173637458.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191119184102293.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191119185404571.png">
+<meta property="article:published_time" content="2022-05-18T10:34:22.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.367Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Thread">
+<meta property="article:tag" content="AsyncTask">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2019111311265420.png">
+
+
+<link rel="canonical" href="http://yoursite.com/article/123e7dd4.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/123e7dd4.html","path":"article/123e7dd4.html","title":"Android多线程使用"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Android多线程使用 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">基础使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%A7%E6%89%BFThread%E7%B1%BB"><span class="nav-number">1.1.</span> <span class="nav-text">继承Thread类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0Runnable%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.2.</span> <span class="nav-text">实现Runnable接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Handler"><span class="nav-number">1.3.</span> <span class="nav-text">Handler</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%8D%E5%90%88%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">复合使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AsyncTask"><span class="nav-number">2.1.</span> <span class="nav-text">AsyncTask</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HandlerThread"><span class="nav-number">2.2.</span> <span class="nav-text">HandlerThread</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IntentService"><span class="nav-number">2.3.</span> <span class="nav-text">IntentService</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">高级使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0%EF%BC%88ThreadPool%EF%BC%89"><span class="nav-number">3.1.</span> <span class="nav-text">线程池（ThreadPool）</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/123e7dd4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Android多线程使用 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Android多线程使用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-18 18:34:22" itemprop="dateCreated datePublished" datetime="2022-05-18T18:34:22+08:00">2022-05-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>9.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>8 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>多线程（multithreading），是指从软件或者硬件上实现多个线程并发执行的技术。具有多线程能力的计算机因有硬件支持而能够在同一时间执行多于一个线程，进而提升整体处理性能。具有这种能力的系统包括对称多处理机、多核心处理器以及芯片级多处理或同时多线程处理器。在一个程序中，这些独立运行的程序片段叫作“线程”（Thread），利用它编程的概念就叫作“多线程处理”。多线程的应用在开发中非常常见。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h2><p>Android多线程实现的基础使用包括：</p>
+<ul>
+<li>继承Thread类</li>
+<li>实现Runnable接口</li>
+<li>Handler</li>
+</ul>
+<h3 id="继承Thread类"><a href="#继承Thread类" class="headerlink" title="继承Thread类"></a>继承Thread类</h3><p><img src="https://img-blog.csdnimg.cn/2019111311265420.png" alt="继承Thread类"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 步骤1：创建线程类 （继承自Thread类）</span></span><br><span class="line">   <span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span></span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 步骤2：复写run（），内容 = 定义线程行为</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ... <span class="comment">// 定义的线程行为</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 步骤3：创建线程对象，即 实例化线程类</span></span><br><span class="line">  MyThread mt=<span class="keyword">new</span> MyThread(“线程名称”);</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 步骤4：通过 线程对象 控制线程的状态，如 运行、睡眠、挂起  / 停止</span></span><br><span class="line">    <span class="comment">// 此处采用 start（）开启线程</span></span><br><span class="line">  mt.start();</span><br></pre></td></tr></table></figure>
+
+<p>开发者会选择一种更加方便的方法去创建线程：匿名类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 步骤1：采用匿名类，直接 创建 线程类的实例</span></span><br><span class="line"> <span class="keyword">new</span> Thread(<span class="string">&quot;线程名称&quot;</span>) &#123;</span><br><span class="line">                 <span class="comment">// 步骤2：复写run（），内容 = 定义线程行为</span></span><br><span class="line">                    <span class="meta">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;       </span><br><span class="line">                  <span class="comment">// 步骤3：通过 线程对象 控制线程的状态，如 运行、睡眠、挂起  / 停止   </span></span><br><span class="line">                      &#125;.start();</span><br></pre></td></tr></table></figure>
+
+<h3 id="实现Runnable接口"><a href="#实现Runnable接口" class="headerlink" title="实现Runnable接口"></a>实现Runnable接口</h3><p><img src="https://img-blog.csdnimg.cn/20191113141230159.png" alt="实现Runnable接口"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 步骤1：创建线程辅助类，实现Runnable接口</span></span><br><span class="line"> <span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    ....</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="comment">// 步骤2：复写run（），定义线程行为</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 步骤3：创建线程辅助对象，即 实例化 线程辅助类</span></span><br><span class="line">  MyThread mt=<span class="keyword">new</span> MyThread();</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 步骤4：创建线程对象，即 实例化线程类；线程类 = Thread类；</span></span><br><span class="line">    <span class="comment">// 创建时通过Thread类的构造函数传入线程辅助类对象</span></span><br><span class="line">    <span class="comment">// 原因：Runnable接口并没有任何对线程的支持，我们必须创建线程类（Thread类）的实例，从Thread类的一个实例内部运行</span></span><br><span class="line">  Thread td=<span class="keyword">new</span> Thread(mt);</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 步骤5：通过 线程对象 控制线程的状态，如 运行、睡眠、挂起  / 停止</span></span><br><span class="line">    <span class="comment">// 当调用start（）方法时，线程对象会自动回调线程辅助类对象的run（），从而实现线程操作</span></span><br><span class="line">  td.start();</span><br></pre></td></tr></table></figure>
+
+<p>开发者会选择一种更加方便的方法去创建线程：匿名类  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 步骤1：通过匿名类 直接 创建线程辅助对象，即 实例化 线程辅助类</span></span><br><span class="line">    Runnable mt = <span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">                    <span class="comment">// 步骤2：复写run（），定义线程行为</span></span><br><span class="line">                    <span class="meta">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;;</span><br><span class="line"> </span><br><span class="line">                <span class="comment">// 步骤3：创建线程对象，即 实例化线程类；线程类 = Thread类；</span></span><br><span class="line">                Thread mt1 = <span class="keyword">new</span> Thread(mt, <span class="string">&quot;窗口1&quot;</span>);</span><br><span class="line">           </span><br><span class="line">                <span class="comment">// 步骤4：通过 线程对象 控制线程的状态，如 运行、睡眠、挂起  / 停止</span></span><br><span class="line">                mt1.start();</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Java中真正能创建新线程的只有Thread类对象，通过实现Runnable的方式，最终还是通过Thread类对象来创建线程，所以对于实现了Runnable接口的类，称为线程辅助类；Thread类才是真正的线程类。</p>
+</blockquote>
+<h3 id="Handler"><a href="#Handler" class="headerlink" title="Handler"></a>Handler</h3><p><img src="https://img-blog.csdnimg.cn/20191113165713433.png" alt="img"></p>
+<p><img src="https://img-blog.csdnimg.cn/20191113165928918.png" alt="在这里插入图片描述"></p>
+<p>Handler的使用方式 因发送消息到消息队列的方式不同而不同，共分为2种：使用Handler.sendMessage（）、使用Handler.post（）</p>
+<p>Handler.sendMessage（）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;** </span><br><span class="line">      * 方式1：新建Handler子类（内部类）</span><br><span class="line">      *&#x2F;</span><br><span class="line">    &#x2F;&#x2F; 步骤1：自定义Handler子类（继承Handler类） &amp; 复写handleMessage（）方法</span><br><span class="line">    class mHandler extends Handler &#123;</span><br><span class="line"> </span><br><span class="line">        &#x2F;&#x2F; 通过复写handlerMessage() 从而确定更新UI的操作</span><br><span class="line">        @Override</span><br><span class="line">        public void handleMessage(Message msg) &#123;</span><br><span class="line">         ...&#x2F;&#x2F; 需执行的UI操作</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    &#x2F;&#x2F; 步骤2：在主线程中创建Handler实例</span><br><span class="line">        private Handler mhandler &#x3D; new mHandler();</span><br><span class="line"> </span><br><span class="line">    &#x2F;&#x2F; 步骤3：创建所需的消息对象</span><br><span class="line">        Message msg &#x3D; Message.obtain(); &#x2F;&#x2F; 实例化消息对象</span><br><span class="line">        msg.what &#x3D; 1; &#x2F;&#x2F; 消息标识</span><br><span class="line">        msg.obj &#x3D; &quot;AA&quot;; &#x2F;&#x2F; 消息内容存放</span><br><span class="line"> </span><br><span class="line">    &#x2F;&#x2F; 步骤4：在工作线程中 通过Handler发送消息到消息队列中</span><br><span class="line">    &#x2F;&#x2F; 可通过sendMessage（） &#x2F; post（）</span><br><span class="line">    &#x2F;&#x2F; 多线程可采用AsyncTask、继承Thread类、实现Runnable</span><br><span class="line">        mHandler.sendMessage(msg);</span><br><span class="line"> </span><br><span class="line">    &#x2F;&#x2F; 步骤5：开启工作线程（同时启动了Handler）</span><br><span class="line">    &#x2F;&#x2F; 多线程可采用AsyncTask、继承Thread类、实现Runnable</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">&#x2F;** </span><br><span class="line">  * 方式2：匿名内部类</span><br><span class="line">  *&#x2F;</span><br><span class="line">   &#x2F;&#x2F; 步骤1：在主线程中 通过匿名内部类 创建Handler类对象</span><br><span class="line">            private Handler mhandler &#x3D; new  Handler()&#123;</span><br><span class="line">                &#x2F;&#x2F; 通过复写handlerMessage()从而确定更新UI的操作</span><br><span class="line">                @Override</span><br><span class="line">                public void handleMessage(Message msg) &#123;</span><br><span class="line">                        ...&#x2F;&#x2F; 需执行的UI操作</span><br><span class="line">                    &#125;</span><br><span class="line">            &#125;;</span><br><span class="line"> </span><br><span class="line">      &#x2F;&#x2F; 步骤2：创建消息对象</span><br><span class="line">    Message msg &#x3D; Message.obtain(); &#x2F;&#x2F; 实例化消息对象</span><br><span class="line">      msg.what &#x3D; 1; &#x2F;&#x2F; 消息标识</span><br><span class="line">      msg.obj &#x3D; &quot;AA&quot;; &#x2F;&#x2F; 消息内容存放</span><br><span class="line">  </span><br><span class="line">  &#x2F;&#x2F; 步骤3：在工作线程中 通过Handler发送消息到消息队列中</span><br><span class="line">  &#x2F;&#x2F; 多线程可采用AsyncTask、继承Thread类、实现Runnable</span><br><span class="line">   mHandler.sendMessage(msg);</span><br><span class="line"> </span><br><span class="line">  &#x2F;&#x2F; 步骤4：开启工作线程（同时启动了Handler）</span><br><span class="line">  &#x2F;&#x2F; 多线程可采用AsyncTask、继承Thread类、实现Runnable</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>警告提示：This Handler class should be static or leaks might occur (anonymous android.os.Handler)</p>
+<p>官方解决方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Handler mHandler = <span class="keyword">new</span> Handler(<span class="keyword">new</span> Handler.Callback() &#123;  </span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">handleMessage</span><span class="params">(Message msg)</span> </span>&#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;); </span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>Handler.post（）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 步骤1：在主线程中创建Handler实例</span></span><br><span class="line">    <span class="keyword">private</span> Handler mhandler = <span class="keyword">new</span> mHandler();</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 步骤2：在工作线程中 发送消息到消息队列中 &amp; 指定操作UI内容</span></span><br><span class="line">    <span class="comment">// 需传入1个Runnable对象</span></span><br><span class="line">    mHandler.post(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                ... <span class="comment">// 需执行的UI操作 </span></span><br><span class="line">            &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;);</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 步骤3：开启工作线程（同时启动了Handler）</span></span><br><span class="line">    <span class="comment">// 多线程可采用AsyncTask、继承Thread类、实现Runnable</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="复合使用"><a href="#复合使用" class="headerlink" title="复合使用"></a>复合使用</h2><p>Android多线程实现的复合使用包括：</p>
+<ul>
+<li>AsyncTask</li>
+<li>HandlerThread</li>
+<li>IntentService</li>
+</ul>
+<p>称为”复用“的主要原因是：这3种方式的本质原理都是Android多线程基础实现（继承Thread类、实现Runnable接口、Handler）的组合实现。下面，我将详细讲解。</p>
+<h3 id="AsyncTask"><a href="#AsyncTask" class="headerlink" title="AsyncTask"></a>AsyncTask</h3><p><img src="https://img-blog.csdnimg.cn/20191119160207922.png" alt="AsyncTask"></p>
+<blockquote>
+<p>AsyncTask类属于抽象类，即使用时需实现子类</p>
+<p>AsyncTask的使用步骤</p>
+<ol>
+<li>创建 AsyncTask 子类 &amp; 根据需求实现核心方法</li>
+<li>创建 AsyncTask子类的实例对象（即 任务实例）</li>
+<li>手动调用execute(（）从而执行异步线程任务</li>
+</ol>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 步骤1：创建AsyncTask子类</span></span><br><span class="line"><span class="comment">  * 注： </span></span><br><span class="line"><span class="comment">  *   a. 继承AsyncTask类</span></span><br><span class="line"><span class="comment">  *   b. 为3个泛型参数指定类型；若不使用，可用java.lang.Void类型代替</span></span><br><span class="line"><span class="comment">  *   c. 根据需求，在AsyncTask子类内实现核心方法</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> </span><br><span class="line">  <span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">MyTask</span> <span class="keyword">extends</span> <span class="title">AsyncTask</span>&lt;<span class="title">Params</span>, <span class="title">Progress</span>, <span class="title">Result</span>&gt; </span>&#123;</span><br><span class="line"> </span><br><span class="line">        ....</span><br><span class="line"> </span><br><span class="line">      <span class="comment">// 方法1：onPreExecute（）</span></span><br><span class="line">      <span class="comment">// 作用：执行 线程任务前的操作</span></span><br><span class="line">      <span class="comment">// 注：根据需求复写</span></span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPreExecute</span><span class="params">()</span> </span>&#123;</span><br><span class="line">           ...</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">      <span class="comment">// 方法2：doInBackground（）</span></span><br><span class="line">      <span class="comment">// 作用：接收输入参数、执行任务中的耗时操作、返回 线程任务执行的结果</span></span><br><span class="line">      <span class="comment">// 注：必须复写，从而自定义线程任务</span></span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="function"><span class="keyword">protected</span> String <span class="title">doInBackground</span><span class="params">(String... params)</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">            ...<span class="comment">// 自定义的线程任务</span></span><br><span class="line"> </span><br><span class="line">            <span class="comment">// 可调用publishProgress（）显示进度, 之后将执行onProgressUpdate（）</span></span><br><span class="line">             publishProgress(count);</span><br><span class="line">              </span><br><span class="line">         &#125;</span><br><span class="line"> </span><br><span class="line">      <span class="comment">// 方法3：onProgressUpdate（）</span></span><br><span class="line">      <span class="comment">// 作用：在主线程 显示线程任务执行的进度</span></span><br><span class="line">      <span class="comment">// 注：根据需求复写</span></span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onProgressUpdate</span><span class="params">(Integer... progresses)</span> </span>&#123;</span><br><span class="line">            ...</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">      <span class="comment">// 方法4：onPostExecute（）</span></span><br><span class="line">      <span class="comment">// 作用：接收线程任务执行结果、将执行结果显示到UI组件</span></span><br><span class="line">      <span class="comment">// 注：必须复写，从而自定义UI操作</span></span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPostExecute</span><span class="params">(String result)</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">         ...<span class="comment">// UI操作</span></span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">      <span class="comment">// 方法5：onCancelled()</span></span><br><span class="line">      <span class="comment">// 作用：将异步任务设置为：取消状态</span></span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCancelled</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">        &#125;</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 步骤2：创建AsyncTask子类的实例对象（即 任务实例）</span></span><br><span class="line"><span class="comment">  * 注：AsyncTask子类的实例必须在UI线程中创建</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  MyTask mTask = <span class="keyword">new</span> MyTask();</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 步骤3：手动调用execute(Params... params) 从而执行异步线程任务</span></span><br><span class="line"><span class="comment">  * 注：</span></span><br><span class="line"><span class="comment">  *    a. 必须在UI线程中调用</span></span><br><span class="line"><span class="comment">  *    b. 同一个AsyncTask实例对象只能执行1次，若执行第2次将会抛出异常</span></span><br><span class="line"><span class="comment">  *    c. 执行任务中，系统会自动调用AsyncTask的一系列方法：onPreExecute() 、doInBackground()、onProgressUpdate() 、onPostExecute() </span></span><br><span class="line"><span class="comment">  *    d. 不能手动调用上述方法</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  mTask.execute()；</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191119161139902.png" alt="AsyncTask参数"></p>
+<h3 id="HandlerThread"><a href="#HandlerThread" class="headerlink" title="HandlerThread"></a>HandlerThread</h3><p><img src="https://img-blog.csdnimg.cn/20191119173637458.png" alt="HandlerThread"></p>
+<p>HandlerThread的本质：继承Thread类 &amp; 封装Handler类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 步骤1：创建HandlerThread实例对象</span></span><br><span class="line"><span class="comment">// 传入参数 = 线程名字，作用 = 标记该线程</span></span><br><span class="line">   HandlerThread mHandlerThread = <span class="keyword">new</span> HandlerThread(<span class="string">&quot;handlerThread&quot;</span>);</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="comment">// 步骤2：启动线程</span></span><br><span class="line">   mHandlerThread.start();</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 步骤3：创建工作线程Handler &amp; 复写handleMessage（）</span></span><br><span class="line"><span class="comment">// 作用：关联HandlerThread的Looper对象、实现消息处理操作 &amp; 与其他线程进行通信</span></span><br><span class="line"><span class="comment">// 注：消息处理操作（HandlerMessage（））的执行线程 = mHandlerThread所创建的工作线程中执行</span></span><br><span class="line">  Handler workHandler = <span class="keyword">new</span> Handler( handlerThread.getLooper() ) &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">handleMessage</span><span class="params">(Message msg)</span> </span>&#123;</span><br><span class="line">                ...<span class="comment">//消息处理</span></span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 步骤4：使用工作线程Handler向工作线程的消息队列发送消息</span></span><br><span class="line"><span class="comment">// 在工作线程中，当消息循环时取出对应消息 &amp; 在工作线程执行相关操作</span></span><br><span class="line">  <span class="comment">// a. 定义要发送的消息</span></span><br><span class="line">  Message msg = Message.obtain();</span><br><span class="line">  msg.what = <span class="number">2</span>; <span class="comment">//消息的标识</span></span><br><span class="line">  msg.obj = <span class="string">&quot;B&quot;</span>; <span class="comment">// 消息的存放</span></span><br><span class="line">  <span class="comment">// b. 通过Handler发送消息到其绑定的消息队列</span></span><br><span class="line">  workHandler.sendMessage(msg);</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 步骤5：结束线程，即停止线程的消息循环</span></span><br><span class="line">  mHandlerThread.quit();</span><br></pre></td></tr></table></figure>
+
+<h3 id="IntentService"><a href="#IntentService" class="headerlink" title="IntentService"></a>IntentService</h3><p>Android里的一个封装类，继承四大组件之一的Service</p>
+<blockquote>
+<p>作用：处理异步请求 &amp; 实现多线程<br>使用场景：线程任务需按顺序、在后台执行</p>
+<ul>
+<li>最常见的场景：离线下载</li>
+<li>不符合多个数据同时请求的场景：所有的任务都在同一个Thread looper里执行</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">步骤<span class="number">1</span>：定义 IntentService的子类:传入线程名称、复写onHandleIntent()方法</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">myIntentService</span> <span class="keyword">extends</span> <span class="title">IntentService</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">  <span class="comment">/** </span></span><br><span class="line"><span class="comment">    * 在构造函数中传入线程名字</span></span><br><span class="line"><span class="comment">    **/</span>  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">myIntentService</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 调用父类的构造函数</span></span><br><span class="line">        <span class="comment">// 参数 = 工作线程的名字</span></span><br><span class="line">        <span class="keyword">super</span>(<span class="string">&quot;myIntentService&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">   <span class="comment">/** </span></span><br><span class="line"><span class="comment">     * 复写onHandleIntent()方法</span></span><br><span class="line"><span class="comment">     * 根据 Intent实现 耗时任务 操作</span></span><br><span class="line"><span class="comment">     **/</span>  </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onHandleIntent</span><span class="params">(Intent intent)</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">// 根据 Intent的不同，进行不同的事务处理</span></span><br><span class="line">        String taskName = intent.getExtras().getString(<span class="string">&quot;taskName&quot;</span>);</span><br><span class="line">        <span class="keyword">switch</span> (taskName) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;task1&quot;</span>:</span><br><span class="line">                Log.i(<span class="string">&quot;myIntentService&quot;</span>, <span class="string">&quot;do task1&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;task2&quot;</span>:</span><br><span class="line">                Log.i(<span class="string">&quot;myIntentService&quot;</span>, <span class="string">&quot;do task2&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Log.i(<span class="string">&quot;myIntentService&quot;</span>, <span class="string">&quot;onCreate&quot;</span>);</span><br><span class="line">        <span class="keyword">super</span>.onCreate();</span><br><span class="line">    &#125;</span><br><span class="line">   <span class="comment">/** </span></span><br><span class="line"><span class="comment">     * 复写onStartCommand()方法</span></span><br><span class="line"><span class="comment">     * 默认实现 = 将请求的Intent添加到工作队列里</span></span><br><span class="line"><span class="comment">     **/</span>  </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">onStartCommand</span><span class="params">(Intent intent, <span class="keyword">int</span> flags, <span class="keyword">int</span> startId)</span> </span>&#123;</span><br><span class="line">        Log.i(<span class="string">&quot;myIntentService&quot;</span>, <span class="string">&quot;onStartCommand&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.onStartCommand(intent, flags, startId);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onDestroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Log.i(<span class="string">&quot;myIntentService&quot;</span>, <span class="string">&quot;onDestroy&quot;</span>);</span><br><span class="line">        <span class="keyword">super</span>.onDestroy();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">步骤<span class="number">2</span>：在Manifest.xml中注册服务</span><br><span class="line">&lt;service android:name=<span class="string">&quot;.myIntentService&quot;</span>&gt;</span><br><span class="line">            &lt;intent-filter &gt;</span><br><span class="line">                &lt;action android:name=<span class="string">&quot;cn.scu.finch&quot;</span>/&gt;</span><br><span class="line">            &lt;/intent-filter&gt;</span><br><span class="line">&lt;/service&gt;    </span><br><span class="line">                    </span><br><span class="line">步骤<span class="number">3</span>：在Activity中开启Service服务</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"> </span><br><span class="line">            <span class="comment">// 同一服务只会开启1个工作线程</span></span><br><span class="line">            <span class="comment">// 在onHandleIntent（）函数里，依次处理传入的Intent请求</span></span><br><span class="line">            <span class="comment">// 将请求通过Bundle对象传入到Intent，再传入到服务里</span></span><br><span class="line"> </span><br><span class="line">            <span class="comment">// 请求1</span></span><br><span class="line">            Intent i = <span class="keyword">new</span> Intent(<span class="string">&quot;cn.scu.finch&quot;</span>);</span><br><span class="line">            Bundle bundle = <span class="keyword">new</span> Bundle();</span><br><span class="line">            bundle.putString(<span class="string">&quot;taskName&quot;</span>, <span class="string">&quot;task1&quot;</span>);</span><br><span class="line">            i.putExtras(bundle);</span><br><span class="line">            startService(i);</span><br><span class="line"> </span><br><span class="line">            <span class="comment">// 请求2</span></span><br><span class="line">            Intent i2 = <span class="keyword">new</span> Intent(<span class="string">&quot;cn.scu.finch&quot;</span>);</span><br><span class="line">            Bundle bundle2 = <span class="keyword">new</span> Bundle();</span><br><span class="line">            bundle2.putString(<span class="string">&quot;taskName&quot;</span>, <span class="string">&quot;task2&quot;</span>);</span><br><span class="line">            i2.putExtras(bundle2);</span><br><span class="line">            startService(i2);</span><br><span class="line"> </span><br><span class="line">            startService(i);  <span class="comment">//多次启动</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="高级使用"><a href="#高级使用" class="headerlink" title="高级使用"></a>高级使用</h2><h3 id="线程池（ThreadPool）"><a href="#线程池（ThreadPool）" class="headerlink" title="线程池（ThreadPool）"></a>线程池（ThreadPool）</h3><p><img src="https://img-blog.csdnimg.cn/20191119184102293.png" alt="ThreadPool"></p>
+<p>1、ThreadPoolExecutor 创建基本线程池</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建基本线程池</span></span><br><span class="line"><span class="keyword">final</span> ThreadPoolExecutor threadPoolExecutor = <span class="keyword">new</span> ThreadPoolExecutor(<span class="number">3</span>,<span class="number">5</span>,<span class="number">1</span>,TimeUnit.SECONDS,</span><br><span class="line">        <span class="keyword">new</span> LinkedBlockingQueue&lt;Runnable&gt;(<span class="number">100</span>));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//基本线程池使用:设置一个按钮mThreadPoolExecute，并在点击事件中使用线程池</span></span><br><span class="line"> mThreadPoolExecute.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;<span class="number">30</span>;i++)&#123;</span><br><span class="line">                    <span class="keyword">final</span> <span class="keyword">int</span> finali = i;</span><br><span class="line">                    Runnable runnable = <span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">                        <span class="meta">@Override</span></span><br><span class="line">                        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                            <span class="keyword">try</span> &#123;</span><br><span class="line">                                Thread.sleep(<span class="number">2000</span>);</span><br><span class="line">                                Log.d(<span class="string">&quot;Thread&quot;</span>, <span class="string">&quot;run: &quot;</span>+finali);</span><br><span class="line">                                Log.d(<span class="string">&quot;当前线程：&quot;</span>,Thread.currentThread().getName());</span><br><span class="line">                            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                                e.printStackTrace();</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;;</span><br><span class="line">                    threadPoolExecutor.execute(runnable);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>其他几种常见的线程池</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20191119185404571.png" alt="在这里插入图片描述"></p>
+<p>2.FixedThreadPool (可重用固定线程数)</p>
+<p>3.CachedThreadPool (按需创建)</p>
+<p>4.SingleThreadPool(单个核线的fixed)</p>
+<p>5.ScheduledThreadPool(定时延时执行)</p>
+<blockquote>
+<p>[1] <a target="_blank" rel="noopener" href="https://blog.csdn.net/u013773608/article/details/124329942">https://blog.csdn.net/u013773608/article/details/124329942</a></p>
+<p>[2] <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41648631/article/details/102871630">https://blog.csdn.net/qq_41648631/article/details/102871630</a></p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Android/" rel="tag"># Android</a>
+              <a href="/tags/Thread/" rel="tag"># Thread</a>
+              <a href="/tags/AsyncTask/" rel="tag"># AsyncTask</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/5bfb2f95.html" rel="prev" title="Android文件存储媒体库库MediaStore">
+                  <i class="fa fa-chevron-left"></i> Android文件存储媒体库库MediaStore
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/5337b80a.html" rel="next" title="Java的反射机制">
+                  Java的反射机制 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

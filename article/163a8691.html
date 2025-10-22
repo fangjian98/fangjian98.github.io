@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32x32-maxxspace.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16x16-maxxspace.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Git的基本使用是需要掌握的基本概念和命令，以及掌握一些高级用法，如git rebase、git stash等。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git的基本使用">
+<meta property="og:url" content="http://yoursite.com/article/163a8691.html">
+<meta property="og:site_name" content="MaxxSpace">
+<meta property="og:description" content="Git的基本使用是需要掌握的基本概念和命令，以及掌握一些高级用法，如git rebase、git stash等。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-28T12:29:35.000Z">
+<meta property="article:modified_time" content="2025-10-22T03:52:55.332Z">
+<meta property="article:author" content="fangjian98">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="rebase">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://yoursite.com/article/163a8691.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/article/163a8691.html","path":"article/163a8691.html","title":"Git的基本使用"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Git的基本使用 | MaxxSpace</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="MaxxSpace" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MaxxSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">特立独行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-navigation"><a href="/navigation/" rel="section"><i class="fa fa-star fa-fw"></i>导航</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">Git的基本使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-%E5%88%86%E6%94%AF"><span class="nav-number">2.</span> <span class="nav-text">Git 分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-diff"><span class="nav-number">3.</span> <span class="nav-text">Git diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-stash"><span class="nav-number">4.</span> <span class="nav-text">Git stash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-rebase"><span class="nav-number">5.</span> <span class="nav-text">Git rebase</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fangjian98"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">fangjian98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fangjian98" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fangjian98" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fangjian1998@gmail.com" title="E-Mail → mailto:fangjian1998@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/article/163a8691.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="fangjian98">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Git的基本使用 | MaxxSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Git的基本使用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-28 20:29:35" itemprop="dateCreated datePublished" datetime="2021-05-28T20:29:35+08:00">2021-05-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>Git的基本使用是需要掌握的基本概念和命令，以及掌握一些高级用法，如git rebase、git stash等。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Git的基本使用"><a href="#Git的基本使用" class="headerlink" title="Git的基本使用"></a>Git的基本使用</h3><ol>
+<li>第一次使用git需要使用命令 <code>git config --global user.name &lt;name&gt;</code> 、<code>git config --global user.email &lt;email&gt;</code> 配置好git的用户名和邮箱</li>
+<li>在本地测试仓库，不需要配置ssh公钥，但是在诸如码云或者其他远程服务器上进行仓库关联需要使用ssh公钥进行关联。使用命令<code>ssh-keygen -t rsa &lt;emial&gt; </code>可以在本地生成一个ssh公钥，之后登陆码云后将秘钥黏贴进去，即可在本地与远程仓库之间建立连接</li>
+<li>生成本地仓库，首先在需要生成仓库的位置右键点击git bash here ，输入git init 即可在当前目录下生成一个.git文件夹，这就是本地仓库的位置啦</li>
+<li>我们可以输入命令 touch readme.txt 来在当前目录下生成一个文件，以这个文件为例，测试git的拉取和上传功能。输入命令git status，即可查看当前没有上传至暂存处的修改或者新建的文件，这时就需要我们进行后续的一套操作。</li>
+<li>输入命令<code>git add . </code>即可将这些文件存放至暂存区，这个区域是不可见得，所以不用区找，我们可以再次输入<code>git status </code>查看当前的文件的状态。可以发现这些文件都存进暂存区了。</li>
+<li>输入命令<code>git commit -m &lt;注释&gt; </code>这是把当前在暂存区的文件或者操作完成的文件（比如git rm后的文件）全部提交到git本地仓库中去，这就完成了文件的提交。再次查看git status 可以发现这些文件都消失了，说明文件都提交上去了。</li>
+<li>这里可以使用<code>git reset</code>进行版本的回溯，输入<code>git log</code> 查看commit 的版本号，再次输入，git reset –hard &lt;版本号&gt; 可以回滚到之前的提交版本。</li>
+<li>到了这里本地仓库的操作都完成了，接下来是进行与远程仓库之间的关联和文件的上传了。输入命令 <code>git remote add origin &lt;关联的远程仓库的地址&gt;:&lt;ssh仓库的路径&gt; </code>这就和远程仓库进行关联了，有时候这里会弹出错误 （remote origin already exists）这表明已经与其它远程仓库进行关联了，输入命令<code>git remote rm origin </code>将当前关联的远程仓库删除即可。</li>
+<li>下面进行远程仓库的文件的拉取，这一步是必要的，因为如果与远程仓库的文件不同步，可能会发生冲突，因此建议这里在push前都要pull一下，避免冲突。输入命令<code>git pull --rebase origin master</code>(这里的pull其实包含 fetch 和merge两个操作，即fetch解决冲突问题，merge就是将文件合并），最后就可以愉快地进行代码地上传了，输入命令<code>git push -u origin master</code>(输入-u，在下一次使用push时可以直接git push，不用敲 origin master了），转到码云刷新仓库即可看到刚刚上传的文件已经显示在仓库中了。</li>
+</ol>
+<h3 id="Git-分支"><a href="#Git-分支" class="headerlink" title="Git 分支"></a>Git 分支</h3><p>Git分支可以理解为一个链表，插入新的分支，就是在链表的一个节点上插入新的链表，而分支的合并分情况讨论，如果主支没有修改，而插入的分支进行了修改，那么在合并的时候就将指针也就是master指向了最新的一次commit节点。而如果主支修改的同时，插入的分支也修改了，那么在合并的时候就需要解决冲突，可能两个修改的分支会并存，这时候可以用git log查看commit的日志。<br>注意：在初始化一个git仓库后，首先需要在仓库中存入一个任意的文件，如果直接创建分支，那么默认分支，也就是master会消失，取而代之的是默认分支变为主支。</p>
+<ul>
+<li>分支的创建，输入命令git branch &lt;分支名&gt;</li>
+<li>分支的切换，输入命令git checkout &lt;分支名&gt;</li>
+<li>分支的创建和切换，分支的创建并且切换到该分支，git checkout -b &lt;分支名&gt;</li>
+<li>查看当前的所有分支，输入命令git branch</li>
+<li>行显示日志，输入命令git log –decorate –oneline</li>
+<li>图像化显示日志，输入命令 git log –decorate –oneline -graph -all</li>
+<li>本地分支合并 git merge &lt;分支名&gt;</li>
+</ul>
+<h3 id="Git-diff"><a href="#Git-diff" class="headerlink" title="Git diff"></a>Git diff</h3><ul>
+<li>比较当前工作区未提交内容与最后一次commit内容的不同之处git diff</li>
+<li>比较暂存区(已经add，但是未commit的内容) 和最后一次commit的区别git diff –catched / git diff –staged</li>
+<li>显示工作目录，新创建但未add的文件，和暂存区已经add但未commit的文件，与最后一次commit的区别git diff HEAD</li>
+<li>比较两个分支上的最后commit 的区别git diff <branch1> <branch2></li>
+<li>比较两个分支log有什么区别git log <branch1>…<branch2></li>
+<li>比上面更清楚的知道区别git log –left-right <branch>…<branch2></li>
+</ul>
+<h3 id="Git-stash"><a href="#Git-stash" class="headerlink" title="Git stash"></a>Git stash</h3><p>Git stash 主要功能就是，将当前的工作区保存，之后再使用git status查看可以发现当前工作区变干净了。想要恢复时，使用git checkout 切换分支，再使用git stash pop恢复即可。<br>注意：多次使用git stash后，可以使用git stash list查看保存的列表，使用git stash apply恢复，或者使用git stash drop删除。</p>
+<h3 id="Git-rebase"><a href="#Git-rebase" class="headerlink" title="Git rebase"></a>Git rebase</h3><p>Git rebase 主要使用在分支合并的操作上，因此从远程下拉代码、本地分支合并并提交都会用到rebase命令。</p>
+<ol>
+<li>我们可以使用rebase合并多个commit为一个commit，这样在log中就能更加清爽整洁，使用命令 git rebase -i [开始版本号] [结束版本号] /或者 git rebase -i HEAD~[一个区间数字]，之后使用如下命令进行操作即可。</li>
+</ol>
+<ul>
+<li>pick：保留该commit（缩写:p）</li>
+<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
+<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
+<li>squash：将该commit和前一个commit合并（缩写:s）</li>
+<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
+<li>exec：执行shell命令（缩写:x）</li>
+<li>drop：我要丢弃该commit（缩写:d）</li>
+</ul>
+<ol start="2">
+<li>此外我们可以使用rebase可以将commit黏贴到另外一个分支上，使用命令 git rebase [开始版本号] [结束版本号] –onto [分支名]。</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"># Git</a>
+              <a href="/tags/rebase/" rel="tag"># rebase</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/article/604f0261.html" rel="prev" title="Github的重要功能Pages、Actions、REST API以及GitHub Flow">
+                  <i class="fa fa-chevron-left"></i> Github的重要功能Pages、Actions、REST API以及GitHub Flow
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/article/b42edc12.html" rel="next" title="AOSP常用命令">
+                  AOSP常用命令 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fangjian98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
