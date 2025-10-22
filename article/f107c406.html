@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.1.1">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.1.1">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
@@ -13,12 +14,14 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto&display=swap" rel="stylesheet">
+
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha256-xejo6yLi6vGtAjcMIsY8BHdKsLg7QynVlFMzdQgUuy8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"style":"mac","show_result":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="作为一个作者，在博客中公式的编辑总是难免的。markdown并不支持数学公式编辑，这些公式仅靠编辑器自带的排版功能是难以表示的，所以需要我们掌握网页公式编辑方案。目前比较流行的网页公式编辑方案是采用TEX&#x2F;LATEX语法编辑，知名的有MathJax、KATEX。">
 <meta property="og:type" content="article">
@@ -31,8 +34,8 @@
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=f(x)+=+a+b">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=f(x)+=+a+b+">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=f(x)+=+a+-+b+%5Ctag%7B1.1%7D">
-<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation.svg">
-<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation_split.svg">
+<meta property="og:image" content="http://yoursite.com/images/assets/equation.svg">
+<meta property="og:image" content="http://yoursite.com/images/assets/equation_split.svg">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=x+2-3*4/6=4/y+++x%5Ccdot+y">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=0+%5Cneq+1+%5Cquad+x+%5Cequiv+x+%5Cquad+1+=+9+%5Cbmod+2">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=a_%7Bij%7D%5E%7B2%7D+++b%5E3_%7B2%7D=x%5E%7Bt%7D+++y%27+++x%27%27_%7B12%7D">
@@ -46,12 +49,12 @@
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Cbar%7Bx%7D">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Ctilde%7Bx%7D">
 <meta property="og:image" content="https://pic1.zhimg.com/80/v2-684e48900e810dff360c23b4ffe99680_720w.jpg">
-<meta property="og:image" content="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/matrix.svg">
+<meta property="og:image" content="http://yoursite.com/images/assets/matrix.svg">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Calpha%5E%7B2%7D+++%5Cbeta+=+%5CTheta">
 <meta property="og:image" content="https://pic1.zhimg.com/80/v2-da3e717cf670582fbfbdddee33073524_720w.jpg">
 <meta property="og:image" content="https://pic4.zhimg.com/80/v2-2527327da18ba3cd4d9cfa9483bcbe1f_720w.jpg">
 <meta property="article:published_time" content="2022-05-23T08:39:29.000Z">
-<meta property="article:modified_time" content="2025-10-22T03:52:55.368Z">
+<meta property="article:modified_time" content="2025-10-22T08:17:33.339Z">
 <meta property="article:author" content="fangjian98">
 <meta property="article:tag" content="LaTeX">
 <meta property="article:tag" content="KaTeX">
@@ -211,6 +214,16 @@
   </div>
 
 
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/weixin_44008788" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_44008788" rel="noopener" target="_blank">CSDN</a>
+        </li>
+    </ul>
+  </div>
 
         </div>
       </div>
@@ -273,13 +286,6 @@
       <span class="post-meta-item-text">发表于</span>
 
       <time title="创建时间：2022-05-23 16:39:29" itemprop="dateCreated datePublished" datetime="2022-05-23T16:39:29+08:00">2022-05-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-10-22 11:52:55" itemprop="dateModified" datetime="2025-10-22T11:52:55+08:00">2025-10-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -372,13 +378,13 @@
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$$D(x) = \begin&#123;cases&#125;</span><br><span class="line">\lim\limits_&#123;x \to 0&#125; \frac&#123;a^x&#125;&#123;b+c&#125;, &amp; x&lt;3 \\</span><br><span class="line">\pi, &amp; x=3 \\</span><br><span class="line">\int_a^&#123;3b&#125;x_&#123;ij&#125;+e^2 \mathrm&#123;d&#125;x,&amp; x&gt;3 \\</span><br><span class="line">\end&#123;cases&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation.svg" alt="[公式]"></p>
+<p><img src="../images/assets/equation.svg" alt="[公式]"></p>
 <p><strong>拆分单个公式</strong></p>
 <p>通过split环境实现公式拆分</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;split&#125;</span><br><span class="line">\cos 2x &amp;= \cos^2x - \sin^2x \\</span><br><span class="line">&amp;=2\cos^2x-1</span><br><span class="line">\end&#123;split&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation_split.svg" alt="[公式]"></p>
+<p><img src="../images/assets/equation_split.svg" alt="[公式]"></p>
 <p><strong>简单运算</strong></p>
 <p>拉丁字母、阿拉伯数字和 +-*/= 运算符均可以直接输入获得，命令\cdot表示乘法的圆点，命令\neq表示不等号，命令\equiv表示恒等于，命令\bmod表示取模</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ x+2-3*4/6=4/y + x\cdot y $$</span><br></pre></td></tr></table></figure>
@@ -448,7 +454,7 @@
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;bmatrix&#125;</span><br><span class="line">1 &amp; 2 &amp; \cdots \\</span><br><span class="line">67 &amp; 95 &amp; \cdots \\</span><br><span class="line">\vdots  &amp; \vdots &amp; \ddots \\</span><br><span class="line">\end&#123;bmatrix&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/matrix.svg" alt="[公式]"></p>
+<p><img src="../images/assets/matrix.svg" alt="[公式]"></p>
 <p><strong>希腊字母</strong></p>
 <p>希腊字母无法直接通过美式键盘输入获得。在LaTeX中通过反斜杠\加上其字母读音实现，将读音首字母大写即可输入其大写形式，详见下表</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ \alpha^&#123;2&#125; + \beta = \Theta  $$</span><br></pre></td></tr></table></figure>
@@ -523,10 +529,10 @@
 
 
 <div class="copyright">
-  &copy; 2021 – 
+  &copy; 2020 – 
   <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-rocket"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">fangjian98</span>
 </div>

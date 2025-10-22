@@ -21,39 +21,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>代码托管平台推荐</title>
-    <url>/article/86025775.html</url>
-    <content><![CDATA[<blockquote>
-<p>Github、Gitee 这些开源场景的代码托管平台，他们对个人开发者友好，可以接触到很多优秀的开源项目。是很好的开源社区，统一的代码托管平台是DevOps的基础，也是管理代码的科学手段，为了方便各位程序员更好的选择代码托管平台，特此总结分享一下国内外代码托管平台。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Github-github-com"><a href="#Github-github-com" class="headerlink" title="Github - github.com"></a>Github - <a href="https://github.com/">github.com</a></h3><p>GitHub 代码托管平台，包含了全世界很多优秀的开源项目，可以从GitHub获取到很多很多优秀的开源项目来进行学习，也可以将自己的项目上传上去与他人分享。</p>
-<p>GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目Ruby on Rails、jQuery、python等。</p>
-<p>2018年6月4日，微软宣布，通过75亿美元的股票交易收购代码托管平台GitHub。</p>
-<p>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法。</p>
-<h3 id="Gitlab-gitlab-com"><a href="#Gitlab-gitlab-com" class="headerlink" title="Gitlab - gitlab.com"></a>Gitlab - <a href="https://gitlab.com/">gitlab.com</a></h3><p>GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的Web服务。安装方法是参考GitLab在GitHub上的Wiki页面。<br>2022年2月消息，极狐（GitLab）正式宣布推出极狐GitLab SaaS （JihuLab.com），为中国用户提供从源代码托管到开发运维的全栈式一体化DevOps SaaS平台与企业级专家咨询服务。</p>
-<p>GitLab是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
-<p>应用特点：Web框架使用RubyonRails、基于MIT代码发布协议、需要gitolite协同工作。</p>
-<h3 id="GitCode-gitcode-net"><a href="#GitCode-gitcode-net" class="headerlink" title="GitCode - gitcode.net"></a>GitCode - <a href="https://gitcode.net/">gitcode.net</a></h3><p>GitCode 是 CSDN 为开发者提供的开源项目创新服务平台，秉承“创新、开放、协作、共享”的开源价值观，致力于为大规模开源开放协同创新助力赋能，打造创新成果孵化和新时代开发者培养的开源创新生态！支持公有云使用、私有化部署以及软硬一体化私有部署。</p>
-<p>一亿人的安全代码仓，源码级别的安全分析 &amp; 协议分析平台。</p>
-<h3 id="Coding-coding-net"><a href="#Coding-coding-net" class="headerlink" title="Coding - coding.net"></a>Coding - <a href="https://coding.net/">coding.net</a></h3><p>CODING 是一个面向软件研发团队的研发协作管理平台，提供云原生开发环境、在线编码、代码托管、项目管理、测试管理、持续集成、制品库、持续部署、团队知识库等系列工具产品，帮助研发团队实践敏捷开发与 DevOps。</p>
-<p>CODING 成立于 2014 年 2 月，于 2019 年被腾讯收购成为其全资子公司，作为腾讯云官方 DevOps 平台工具向广大开发者及企业研发团队提供服务，支持 SaaS 模式或私有部署模式。</p>
-<p>产品优势：一站式研发工具、开箱即用，免部署、节省研发工具建设成本、提高软件交付效率。</p>
-<h3 id="Bitbicket-bitbucket-org"><a href="#Bitbicket-bitbucket-org" class="headerlink" title="Bitbicket - bitbucket.org"></a>Bitbicket - <a href="https://bitbucket.org/">bitbucket.org</a></h3><p>BitBucket 是一家源代码托管网站，采用Mercurial和Git作为分布式版本控制系统，同时提供商业计划和免费账户。</p>
-<p>特点：无限制的私有仓库个数、无限制的磁盘空间、同时支持https/ssh、Bug 跟踪、项目Wiki、API 支持、灵活的权限控制、可自定义域名、RSS 修改记录输出、自定义下载等。</p>
-<h3 id="托管平台对比"><a href="#托管平台对比" class="headerlink" title="托管平台对比"></a>托管平台对比</h3><p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/code_hosting_platform.png"></p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Gitee</tag>
-        <tag>Gitlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Github Pages+Hexo搭建个人博客及其主题优化</title>
     <url>/article/84ebc250.html</url>
     <content><![CDATA[<blockquote>
@@ -171,7 +138,7 @@
 
 
 <h2 id="博客个性化设置"><a href="#博客个性化设置" class="headerlink" title="博客个性化设置"></a>博客个性化设置</h2><h3 id="下载hexo主题（自选主题模板）"><a href="#下载hexo主题（自选主题模板）" class="headerlink" title="下载hexo主题（自选主题模板）"></a>下载hexo主题（自选主题模板）</h3><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo//theme.jpg" alt="theme"></p>
+<p><img src="../images/assets/theme.jpg" alt="theme"></p>
 <h3 id="下载next主题"><a href="#下载next主题" class="headerlink" title="下载next主题"></a>下载next主题</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
 
 <h3 id="修改-blog-config-yml"><a href="#修改-blog-config-yml" class="headerlink" title="修改./blog/_config.yml"></a>修改./blog/_config.yml</h3><ul>
@@ -272,6 +239,79 @@
       </tags>
   </entry>
   <entry>
+    <title>代码托管平台推荐</title>
+    <url>/article/86025775.html</url>
+    <content><![CDATA[<blockquote>
+<p>Github、Gitee 这些开源场景的代码托管平台，他们对个人开发者友好，可以接触到很多优秀的开源项目。是很好的开源社区，统一的代码托管平台是DevOps的基础，也是管理代码的科学手段，为了方便各位程序员更好的选择代码托管平台，特此总结分享一下国内外代码托管平台。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Github-github-com"><a href="#Github-github-com" class="headerlink" title="Github - github.com"></a>Github - <a href="https://github.com/">github.com</a></h3><p>GitHub 代码托管平台，包含了全世界很多优秀的开源项目，可以从GitHub获取到很多很多优秀的开源项目来进行学习，也可以将自己的项目上传上去与他人分享。</p>
+<p>GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目Ruby on Rails、jQuery、python等。</p>
+<p>2018年6月4日，微软宣布，通过75亿美元的股票交易收购代码托管平台GitHub。</p>
+<p>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法。</p>
+<h3 id="Gitlab-gitlab-com"><a href="#Gitlab-gitlab-com" class="headerlink" title="Gitlab - gitlab.com"></a>Gitlab - <a href="https://gitlab.com/">gitlab.com</a></h3><p>GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的Web服务。安装方法是参考GitLab在GitHub上的Wiki页面。<br>2022年2月消息，极狐（GitLab）正式宣布推出极狐GitLab SaaS （JihuLab.com），为中国用户提供从源代码托管到开发运维的全栈式一体化DevOps SaaS平台与企业级专家咨询服务。</p>
+<p>GitLab是由GitLabInc.开发，使用MIT许可证的基于网络的Git仓库管理工具，且具有wiki和issue跟踪功能。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
+<p>应用特点：Web框架使用RubyonRails、基于MIT代码发布协议、需要gitolite协同工作。</p>
+<h3 id="GitCode-gitcode-net"><a href="#GitCode-gitcode-net" class="headerlink" title="GitCode - gitcode.net"></a>GitCode - <a href="https://gitcode.net/">gitcode.net</a></h3><p>GitCode 是 CSDN 为开发者提供的开源项目创新服务平台，秉承“创新、开放、协作、共享”的开源价值观，致力于为大规模开源开放协同创新助力赋能，打造创新成果孵化和新时代开发者培养的开源创新生态！支持公有云使用、私有化部署以及软硬一体化私有部署。</p>
+<p>一亿人的安全代码仓，源码级别的安全分析 &amp; 协议分析平台。</p>
+<h3 id="Coding-coding-net"><a href="#Coding-coding-net" class="headerlink" title="Coding - coding.net"></a>Coding - <a href="https://coding.net/">coding.net</a></h3><p>CODING 是一个面向软件研发团队的研发协作管理平台，提供云原生开发环境、在线编码、代码托管、项目管理、测试管理、持续集成、制品库、持续部署、团队知识库等系列工具产品，帮助研发团队实践敏捷开发与 DevOps。</p>
+<p>CODING 成立于 2014 年 2 月，于 2019 年被腾讯收购成为其全资子公司，作为腾讯云官方 DevOps 平台工具向广大开发者及企业研发团队提供服务，支持 SaaS 模式或私有部署模式。</p>
+<p>产品优势：一站式研发工具、开箱即用，免部署、节省研发工具建设成本、提高软件交付效率。</p>
+<h3 id="Bitbicket-bitbucket-org"><a href="#Bitbicket-bitbucket-org" class="headerlink" title="Bitbicket - bitbucket.org"></a>Bitbicket - <a href="https://bitbucket.org/">bitbucket.org</a></h3><p>BitBucket 是一家源代码托管网站，采用Mercurial和Git作为分布式版本控制系统，同时提供商业计划和免费账户。</p>
+<p>特点：无限制的私有仓库个数、无限制的磁盘空间、同时支持https/ssh、Bug 跟踪、项目Wiki、API 支持、灵活的权限控制、可自定义域名、RSS 修改记录输出、自定义下载等。</p>
+<h3 id="托管平台对比"><a href="#托管平台对比" class="headerlink" title="托管平台对比"></a>托管平台对比</h3><p><img src="../images/assets/code_hosting_platform.png"></p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Gitee</tag>
+        <tag>Gitlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Git忽略文件.gitignore</title>
+    <url>/article/d04701bd.html</url>
+    <content><![CDATA[<blockquote>
+<p>在工程中，并不是所有文件都需要保存到版本库中的，例如“target”目录及目录下的文件就可以忽略。在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件或目录。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Git-忽略规则优先级"><a href="#Git-忽略规则优先级" class="headerlink" title="Git 忽略规则优先级"></a>Git 忽略规则优先级</h3><p>在 .gitingore 文件中，每一行指定一个忽略规则，Git 检查忽略规则的时候有多个来源，它的优先级如下（由高到低）：</p>
+<ol>
+<li>从命令行中读取可用的忽略规则</li>
+<li>当前目录定义的规则</li>
+<li>父级目录定义的规则，依次递推</li>
+<li>$GIT_DIR/info/exclude 文件中定义的规则</li>
+<li>core.excludesfile中定义的全局规则</li>
+</ol>
+<h3 id="Git-忽略规则匹配语法"><a href="#Git-忽略规则匹配语法" class="headerlink" title="Git 忽略规则匹配语法"></a>Git 忽略规则匹配语法</h3><p>在 .gitignore 文件中，每一行的忽略规则的语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* 空格不匹配任意文件，可作为分隔符，可用反斜杠转义</span><br><span class="line">* 开头的文件标识注释，可以使用反斜杠进行转义</span><br><span class="line">* ! 开头的模式标识否定，该文件将会再次被包含，如果排除了该文件的父级目录，则使用 ! 也不会再次被包含。可以使用反斜杠进行转义</span><br><span class="line">* &#x2F; 结束的模式只匹配文件夹以及在该文件夹路径下的内容，但是不匹配该文件</span><br><span class="line">* &#x2F; 开始的模式匹配项目跟目录</span><br><span class="line">* 如果一个模式不包含斜杠，则它匹配相对于当前 .gitignore 文件路径的内容，如果该模式不在 .gitignore 文件中，则相对于项目根目录</span><br><span class="line">* ** 匹配多级目录，可在开始，中间，结束</span><br><span class="line">* ? 通用匹配单个字符</span><br><span class="line">* * 通用匹配零个或多个字符</span><br><span class="line">* [] 通用匹配单个字符列表</span><br><span class="line">12345678910</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用匹配示例"><a href="#常用匹配示例" class="headerlink" title="常用匹配示例"></a>常用匹配示例</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bin&#x2F;: 忽略当前路径下的bin文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件</span><br><span class="line">&#x2F;bin: 忽略根目录下的bin文件</span><br><span class="line">&#x2F;*.c: 忽略 cat.c，不忽略 build&#x2F;cat.c</span><br><span class="line">debug&#x2F;*.obj: 忽略 debug&#x2F;io.obj，不忽略 debug&#x2F;common&#x2F;io.obj 和 tools&#x2F;debug&#x2F;io.obj</span><br><span class="line">**&#x2F;foo: 忽略&#x2F;foo, a&#x2F;foo, a&#x2F;b&#x2F;foo等</span><br><span class="line">a&#x2F;**&#x2F;b: 忽略a&#x2F;b, a&#x2F;x&#x2F;b, a&#x2F;x&#x2F;y&#x2F;b等</span><br><span class="line">!&#x2F;bin&#x2F;run.sh: 不忽略 bin 目录下的 run.sh 文件</span><br><span class="line">*.log: 忽略所有 .log 文件</span><br><span class="line">config.php: 忽略当前路径的 config.php 文件</span><br><span class="line">123456789</span><br></pre></td></tr></table></figure>
+
+<h3 id="gitignore规则不生效"><a href="#gitignore规则不生效" class="headerlink" title=".gitignore规则不生效"></a>.gitignore规则不生效</h3><p>.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。</p>
+<p>解决方法就是先把本地缓存删除（改变成未track状态），然后再提交:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm -r --cached .</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;update .gitignore&#39;</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<h3 id="Android-APK项目参考-gitignore"><a href="#Android-APK项目参考-gitignore" class="headerlink" title="Android APK项目参考.gitignore"></a>Android APK项目参考<code>.gitignore</code></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># built application files</span><br><span class="line">*.apk</span><br><span class="line">*.ap_</span><br><span class="line"></span><br><span class="line"># files for the dex VM</span><br><span class="line">*.dex</span><br><span class="line"></span><br><span class="line"># Java class files</span><br><span class="line">*.class</span><br><span class="line"></span><br><span class="line"># generated files</span><br><span class="line">bin&#x2F;</span><br><span class="line">gen&#x2F;</span><br><span class="line"></span><br><span class="line"># Ignore gradle files</span><br><span class="line">.gradle&#x2F;</span><br><span class="line">build&#x2F;</span><br><span class="line"></span><br><span class="line"># Local configuration file (sdk path, etc)</span><br><span class="line">local.properties</span><br><span class="line"></span><br><span class="line"># Proguard folder generated by Eclipse</span><br><span class="line">proguard&#x2F;</span><br><span class="line">proguard-project.txt</span><br><span class="line"></span><br><span class="line"># Eclipse files</span><br><span class="line">.project</span><br><span class="line">.classpath</span><br><span class="line">.settings&#x2F;</span><br><span class="line"></span><br><span class="line"># Android Studio&#x2F;IDEA</span><br><span class="line">*.iml</span><br><span class="line">.idea</span><br><span class="line"></span><br><span class="line"># Mac specific ignore</span><br><span class="line">.DS_Store</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：</p>
+<p><code>.gitignore</code>文件要在文件提交之前设置才有效，如果文件已经提交，需要先把仓库里面的文件删除掉。如果module目录下的文件颜色没有改变，则选中.gitignore文件右击鼠标选择Git-&gt;+Add颜色变为浅绿色。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>gitignore</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于图床的使用</title>
     <url>/article/91cd0b89.html</url>
     <content><![CDATA[<blockquote>
@@ -307,7 +347,7 @@
 <p> 示例：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;gitcode.net&#x2F;weixin_44008788&#x2F;images&#x2F;-&#x2F;raw&#x2F;master&#x2F;gitcode.png</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/gitcode.png" alt="GitCode"></p>
+<p><img src="../images/assets/gitcode.png" alt="GitCode"></p>
 <h3 id="图床管理工具"><a href="#图床管理工具" class="headerlink" title="图床管理工具"></a>图床管理工具</h3><p>该类工具可以可视化的直接复制图片链接，不必要在纠结在格式链接上了。</p>
 <ul>
 <li><strong>PicGO</strong> -  一个用于快速上传图片并获取图片 URL 链接的工具，需要下载客户端</li>
@@ -457,46 +497,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于Git忽略文件.gitignore</title>
-    <url>/article/d04701bd.html</url>
-    <content><![CDATA[<blockquote>
-<p>在工程中，并不是所有文件都需要保存到版本库中的，例如“target”目录及目录下的文件就可以忽略。在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件或目录。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Git-忽略规则优先级"><a href="#Git-忽略规则优先级" class="headerlink" title="Git 忽略规则优先级"></a>Git 忽略规则优先级</h3><p>在 .gitingore 文件中，每一行指定一个忽略规则，Git 检查忽略规则的时候有多个来源，它的优先级如下（由高到低）：</p>
-<ol>
-<li>从命令行中读取可用的忽略规则</li>
-<li>当前目录定义的规则</li>
-<li>父级目录定义的规则，依次递推</li>
-<li>$GIT_DIR/info/exclude 文件中定义的规则</li>
-<li>core.excludesfile中定义的全局规则</li>
-</ol>
-<h3 id="Git-忽略规则匹配语法"><a href="#Git-忽略规则匹配语法" class="headerlink" title="Git 忽略规则匹配语法"></a>Git 忽略规则匹配语法</h3><p>在 .gitignore 文件中，每一行的忽略规则的语法如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* 空格不匹配任意文件，可作为分隔符，可用反斜杠转义</span><br><span class="line">* 开头的文件标识注释，可以使用反斜杠进行转义</span><br><span class="line">* ! 开头的模式标识否定，该文件将会再次被包含，如果排除了该文件的父级目录，则使用 ! 也不会再次被包含。可以使用反斜杠进行转义</span><br><span class="line">* &#x2F; 结束的模式只匹配文件夹以及在该文件夹路径下的内容，但是不匹配该文件</span><br><span class="line">* &#x2F; 开始的模式匹配项目跟目录</span><br><span class="line">* 如果一个模式不包含斜杠，则它匹配相对于当前 .gitignore 文件路径的内容，如果该模式不在 .gitignore 文件中，则相对于项目根目录</span><br><span class="line">* ** 匹配多级目录，可在开始，中间，结束</span><br><span class="line">* ? 通用匹配单个字符</span><br><span class="line">* * 通用匹配零个或多个字符</span><br><span class="line">* [] 通用匹配单个字符列表</span><br><span class="line">12345678910</span><br></pre></td></tr></table></figure>
-
-<h3 id="常用匹配示例"><a href="#常用匹配示例" class="headerlink" title="常用匹配示例"></a>常用匹配示例</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bin&#x2F;: 忽略当前路径下的bin文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件</span><br><span class="line">&#x2F;bin: 忽略根目录下的bin文件</span><br><span class="line">&#x2F;*.c: 忽略 cat.c，不忽略 build&#x2F;cat.c</span><br><span class="line">debug&#x2F;*.obj: 忽略 debug&#x2F;io.obj，不忽略 debug&#x2F;common&#x2F;io.obj 和 tools&#x2F;debug&#x2F;io.obj</span><br><span class="line">**&#x2F;foo: 忽略&#x2F;foo, a&#x2F;foo, a&#x2F;b&#x2F;foo等</span><br><span class="line">a&#x2F;**&#x2F;b: 忽略a&#x2F;b, a&#x2F;x&#x2F;b, a&#x2F;x&#x2F;y&#x2F;b等</span><br><span class="line">!&#x2F;bin&#x2F;run.sh: 不忽略 bin 目录下的 run.sh 文件</span><br><span class="line">*.log: 忽略所有 .log 文件</span><br><span class="line">config.php: 忽略当前路径的 config.php 文件</span><br><span class="line">123456789</span><br></pre></td></tr></table></figure>
-
-<h3 id="gitignore规则不生效"><a href="#gitignore规则不生效" class="headerlink" title=".gitignore规则不生效"></a>.gitignore规则不生效</h3><p>.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。</p>
-<p>解决方法就是先把本地缓存删除（改变成未track状态），然后再提交:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm -r --cached .</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#39;update .gitignore&#39;</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
-
-<h3 id="Android-APK项目参考-gitignore"><a href="#Android-APK项目参考-gitignore" class="headerlink" title="Android APK项目参考.gitignore"></a>Android APK项目参考<code>.gitignore</code></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># built application files</span><br><span class="line">*.apk</span><br><span class="line">*.ap_</span><br><span class="line"></span><br><span class="line"># files for the dex VM</span><br><span class="line">*.dex</span><br><span class="line"></span><br><span class="line"># Java class files</span><br><span class="line">*.class</span><br><span class="line"></span><br><span class="line"># generated files</span><br><span class="line">bin&#x2F;</span><br><span class="line">gen&#x2F;</span><br><span class="line"></span><br><span class="line"># Ignore gradle files</span><br><span class="line">.gradle&#x2F;</span><br><span class="line">build&#x2F;</span><br><span class="line"></span><br><span class="line"># Local configuration file (sdk path, etc)</span><br><span class="line">local.properties</span><br><span class="line"></span><br><span class="line"># Proguard folder generated by Eclipse</span><br><span class="line">proguard&#x2F;</span><br><span class="line">proguard-project.txt</span><br><span class="line"></span><br><span class="line"># Eclipse files</span><br><span class="line">.project</span><br><span class="line">.classpath</span><br><span class="line">.settings&#x2F;</span><br><span class="line"></span><br><span class="line"># Android Studio&#x2F;IDEA</span><br><span class="line">*.iml</span><br><span class="line">.idea</span><br><span class="line"></span><br><span class="line"># Mac specific ignore</span><br><span class="line">.DS_Store</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>注意：</p>
-<p><code>.gitignore</code>文件要在文件提交之前设置才有效，如果文件已经提交，需要先把仓库里面的文件删除掉。如果module目录下的文件颜色没有改变，则选中.gitignore文件右击鼠标选择Git-&gt;+Add颜色变为浅绿色。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>gitignore</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git命令简写的配置</title>
     <url>/article/8b0e152.html</url>
     <content><![CDATA[<blockquote>
@@ -518,52 +518,6 @@
 <li>查看Git配置</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用的Git命令</title>
-    <url>/article/5c7291e7.html</url>
-    <content><![CDATA[<blockquote>
-<p>这里将列出常用的Git命令，包括初始化仓库、配置、增删、提交、分支、标签、状态信息、远程同步、撤销等其他。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><p><strong>Git配置</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">&quot;xxx@xx.com&quot;</span></span><br><span class="line"></span><br><span class="line">$ git config user.name</span><br><span class="line">fangjian98</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成ssh key</span></span><br><span class="line">Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)</span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">&quot;xxx@xx.com&quot;</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/Admin/.ssh/id_rsa):</span><br><span class="line">Created directory <span class="string">&#x27;/c/Users/Admin/.ssh&#x27;</span>.</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/Admin/.ssh/id_rsa</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/Admin/.ssh/id_rsa.pub</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:mc855CP9q3vjn17hFWn37pbuYmjqZ4OL8CbrNgjK2GU 2360870585@qq.com</span><br><span class="line">The key<span class="string">&#x27;s randomart image is:</span></span><br><span class="line"><span class="string">+---[RSA 3072]----+</span></span><br><span class="line"><span class="string">|                 |</span></span><br><span class="line"><span class="string">|                .|</span></span><br><span class="line"><span class="string">|               +.|</span></span><br><span class="line"><span class="string">|         o    . +|</span></span><br><span class="line"><span class="string">|        S .    .o|</span></span><br><span class="line"><span class="string">| .  E    * .  ..o|</span></span><br><span class="line"><span class="string">|+..o..  . X .  .+|</span></span><br><span class="line"><span class="string">|o... +o..o Xoo =.|</span></span><br><span class="line"><span class="string">|    oo=o.+O=*=B+.|</span></span><br><span class="line"><span class="string">+----[SHA256]-----+</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 查看ssh key</span></span><br><span class="line"><span class="string">$ cat ~/.ssh/id_rsa.pub</span></span><br></pre></td></tr></table></figure>
-<p><strong>Git项目常用命令</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">pwd</span></span><br><span class="line">/c/Users/Admin/learngit</span><br><span class="line"></span><br><span class="line">$ git init</span><br><span class="line">$ git add readme.txt</span><br><span class="line">$ git commit -m <span class="string">&quot;write a readme file&quot;</span></span><br><span class="line">[master (root-commit) 5a5268c] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br><span class="line">$ git push origin master</span><br><span class="line"> </span><br><span class="line">$ git branch</span><br><span class="line">$ git status.</span><br><span class="line">$ git diff readme.txt</span><br><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">$ git <span class="built_in">log</span> --pretty=oneline</span><br><span class="line">$ git reset --hard HEAD^</span><br><span class="line">$ cat readme.txt</span><br><span class="line">$ git checkout -- readme.txt</span><br><span class="line">$ git rm test.txt</span><br><span class="line">$ git pull</span><br><span class="line">$ rm test.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># Github提交远程仓库</span></span><br><span class="line">Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)</span><br><span class="line">$ git remote add origin git@github.com:fangjian98/learngit.git</span><br><span class="line"></span><br><span class="line">Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)</span><br><span class="line">$ git push -u origin master </span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看帮助</span></span><br><span class="line">$ git <span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git log常用参数：after之后的记录，before之前的记录</span></span><br><span class="line">git <span class="built_in">log</span> --oneline --all --grep=<span class="string">&quot;status&quot;</span> --author=<span class="string">&quot;fangjian&quot;</span> --after=<span class="string">&quot;2019-01-01&quot;</span> --before=<span class="string">&quot;2020-01-01&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># grep 忽略大小写</span></span><br><span class="line">grep -i   </span><br></pre></td></tr></table></figure>
-
-<p><strong>其他知识</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Git三种状态</span></span><br><span class="line">committed</span><br><span class="line">staged</span><br><span class="line">modified</span><br><span class="line"></span><br><span class="line"><span class="comment"># GIt文件机制：.git目录下</span></span><br><span class="line">·HEAD	文件存放根节点的信息（目录结构是树形结构）</span><br><span class="line">·refs	目录存储当前版本控制目录下的各种引用：heads（不同根）、remotes（远程版本库）、stash（Git栈）、tags（标签）</span><br><span class="line">·logs	目录根据不同的引用存储了日志信息</span><br><span class="line"></span><br><span class="line"><span class="comment"># 常见命令</span></span><br><span class="line">git init</span><br><span class="line">gir <span class="built_in">clone</span></span><br><span class="line">git status</span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line">git add</span><br><span class="line">git commit</span><br><span class="line">git rm</span><br><span class="line"></span><br><span class="line">git push origin master</span><br><span class="line">git fetch</span><br><span class="line">git merge</span><br><span class="line">git pull = git fetch + git merge</span><br><span class="line"></span><br><span class="line">git reset --hard HEAD		还原至上一个提交</span><br><span class="line">git checkout HEAD &lt;path&gt;	从HEAD中签出并且恢复成未修改的样子</span><br><span class="line"></span><br><span class="line">git revert HEAD			撤销旧的提交</span><br><span class="line">git commit --amend		修改刚才的这个提交</span><br><span class="line"></span><br><span class="line">reset：是要reset到指定commit位置的状态</span><br><span class="line">	git reset -mixed</span><br><span class="line">	git reset -hard</span><br><span class="line">revert：file rollback并且自动产生一个roll back的commit</span><br><span class="line">	git revert HEAD</span><br><span class="line">	git revert HEAD^</span><br><span class="line">	git revert &lt;commit&gt;</span><br><span class="line"></span><br><span class="line">git diff &lt;path&gt;</span><br><span class="line">git diff --cached &lt;path&gt;</span><br><span class="line">git diff HEAD &lt;path&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Git-常用命令详解"><a href="#Git-常用命令详解" class="headerlink" title="Git 常用命令详解"></a>Git 常用命令详解</h2><h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 在当前目录新建一个Git代码库</span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"># 新建一个目录，将其初始化为Git代码库</span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"># 下载一个项目和它的整个代码历史</span><br><span class="line">$ git clone [url]</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示当前的Git配置</span><br><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line"># 编辑Git配置文件</span><br><span class="line">$ git config -e [--global]</span><br><span class="line"></span><br><span class="line"># 设置提交代码时的用户信息</span><br><span class="line">$ git config [--global] user.name &quot;[name]&quot;</span><br><span class="line">$ git config [--global] user.email &quot;[email address]&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 添加指定文件到暂存区</span><br><span class="line">$ git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 添加指定目录到暂存区，包括子目录</span><br><span class="line">$ git add [dir]</span><br><span class="line"></span><br><span class="line"># 添加当前目录的所有文件到暂存区</span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"># 添加每个变化前，都会要求确认</span><br><span class="line"># 对于同一个文件的多处变化，可以实现分次提交</span><br><span class="line">$ git add -p</span><br><span class="line"></span><br><span class="line"># 删除工作区文件，并且将这次删除放入暂存区</span><br><span class="line">$ git rm [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 停止追踪指定文件，但该文件会保留在工作区</span><br><span class="line">$ git rm --cached [file]</span><br><span class="line"></span><br><span class="line"># 改名文件，并且将这个改名放入暂存区</span><br><span class="line">$ git mv [file-original] [file-renamed]</span><br></pre></td></tr></table></figure>
-
-<h3 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 提交暂存区到仓库区</span><br><span class="line">$ git commit -m [message]</span><br><span class="line"></span><br><span class="line"># 提交暂存区的指定文件到仓库区</span><br><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br><span class="line"></span><br><span class="line"># 提交工作区自上次commit之后的变化，直接到仓库区</span><br><span class="line">$ git commit -a</span><br><span class="line"></span><br><span class="line"># 提交时显示所有diff信息</span><br><span class="line">$ git commit -v</span><br><span class="line"></span><br><span class="line"># 使用一次新的commit，替代上一次提交</span><br><span class="line"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span><br><span class="line">$ git commit --amend -m [message]</span><br><span class="line"></span><br><span class="line"># 重做上一次commit，并包括指定文件的新变化</span><br><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure>
-
-<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有本地分支</span><br><span class="line">$ git branch</span><br><span class="line"></span><br><span class="line"># 列出所有远程分支</span><br><span class="line">$ git branch -r</span><br><span class="line"></span><br><span class="line"># 列出所有本地分支和远程分支</span><br><span class="line">$ git branch -a</span><br><span class="line"></span><br><span class="line"># 新建一个分支，但依然停留在当前分支</span><br><span class="line">$ git branch [branch-name]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，并切换到该分支</span><br><span class="line">$ git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向指定commit</span><br><span class="line">$ git branch [branch] [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，与指定的远程分支建立追踪关系</span><br><span class="line">$ git branch --track [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 切换到指定分支，并更新工作区</span><br><span class="line">$ git checkout [branch-name]</span><br><span class="line"></span><br><span class="line"># 切换到上一个分支</span><br><span class="line">$ git checkout -</span><br><span class="line"></span><br><span class="line"># 建立追踪关系，在现有分支与指定的远程分支之间</span><br><span class="line">$ git branch --set-upstream [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 合并指定分支到当前分支</span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"># 选择一个commit，合并进当前分支</span><br><span class="line">$ git cherry-pick [commit]</span><br><span class="line"></span><br><span class="line"># 删除分支</span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"># 删除远程分支</span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote&#x2F;branch]</span><br></pre></td></tr></table></figure>
-
-<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有tag</span><br><span class="line">$ git tag</span><br><span class="line"></span><br><span class="line"># 新建一个tag在当前commit</span><br><span class="line">$ git tag [tag]</span><br><span class="line"></span><br><span class="line"># 新建一个tag在指定commit</span><br><span class="line">$ git tag [tag] [commit]</span><br><span class="line"></span><br><span class="line"># 删除本地tag</span><br><span class="line">$ git tag -d [tag]</span><br><span class="line"></span><br><span class="line"># 删除远程tag</span><br><span class="line">$ git push origin :refs&#x2F;tags&#x2F;[tagName]</span><br><span class="line"></span><br><span class="line"># 查看tag信息</span><br><span class="line">$ git show [tag]</span><br><span class="line"></span><br><span class="line"># 提交指定tag</span><br><span class="line">$ git push [remote] [tag]</span><br><span class="line"></span><br><span class="line"># 提交所有tag</span><br><span class="line">$ git push [remote] --tags</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向某个tag</span><br><span class="line">$ git checkout -b [branch] [tag]</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示有变更的文件</span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"># 显示当前分支的版本历史</span><br><span class="line">$ git log</span><br><span class="line"></span><br><span class="line"># 显示commit历史，以及每次commit发生变更的文件</span><br><span class="line">$ git log --stat</span><br><span class="line"></span><br><span class="line"># 搜索提交历史，根据关键词</span><br><span class="line">$ git log -S [keyword]</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，每个commit占据一行</span><br><span class="line">$ git log [tag] HEAD --pretty&#x3D;format:%s</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件</span><br><span class="line">$ git log [tag] HEAD --grep feature</span><br><span class="line"></span><br><span class="line"># 显示某个文件的版本历史，包括文件改名</span><br><span class="line">$ git log --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br><span class="line"></span><br><span class="line"># 显示指定文件相关的每一次diff</span><br><span class="line">$ git log -p [file]</span><br><span class="line"></span><br><span class="line"># 显示过去5次提交</span><br><span class="line">$ git log -5 --pretty --oneline</span><br><span class="line"></span><br><span class="line"># 显示所有提交过的用户，按提交次数排序</span><br><span class="line">$ git shortlog -sn</span><br><span class="line"></span><br><span class="line"># 显示指定文件是什么人在什么时间修改过</span><br><span class="line">$ git blame [file]</span><br><span class="line"></span><br><span class="line"># 显示暂存区和工作区的差异</span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"># 显示暂存区和上一个commit的差异</span><br><span class="line">$ git diff --cached [file]</span><br><span class="line"></span><br><span class="line"># 显示工作区与当前分支最新commit之间的差异</span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"># 显示两次提交之间的差异</span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"># 显示今天你写了多少行代码</span><br><span class="line">$ git diff --shortstat &quot;@&#123;0 day ago&#125;&quot;</span><br><span class="line"></span><br><span class="line"># 显示某次提交的元数据和内容变化</span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交发生变化的文件</span><br><span class="line">$ git show --name-only [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交时，某个文件的内容</span><br><span class="line">$ git show [commit]:[filename]</span><br><span class="line"></span><br><span class="line"># 显示当前分支的最近几次提交</span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
-
-<h3 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 下载远程仓库的所有变动</span><br><span class="line">$ git fetch [remote]</span><br><span class="line"></span><br><span class="line"># 显示所有远程仓库</span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"># 显示某个远程仓库的信息</span><br><span class="line">$ git remote show [remote]</span><br><span class="line"></span><br><span class="line"># 增加一个新的远程仓库，并命名</span><br><span class="line">$ git remote add [shortname] [url]</span><br><span class="line"></span><br><span class="line"># 取回远程仓库的变化，并与本地分支合并</span><br><span class="line">$ git pull [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 上传本地指定分支到远程仓库</span><br><span class="line">$ git push [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 强行推送当前分支到远程仓库，即使有冲突</span><br><span class="line">$ git push [remote] --force</span><br><span class="line"></span><br><span class="line"># 推送所有分支到远程仓库</span><br><span class="line">$ git push [remote] --all</span><br></pre></td></tr></table></figure>
-
-<h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 恢复暂存区的指定文件到工作区</span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"># 恢复某个commit的指定文件到暂存区和工作区</span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"># 恢复暂存区的所有文件到工作区</span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"># 重置暂存区与工作区，与上一次commit保持一致</span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个commit，用来撤销指定commit</span><br><span class="line"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line">暂时将未提交的变化移除，稍后再移入</span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
-
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 生成一个可供发布的压缩包</span><br><span class="line">$ git archive</span><br></pre></td></tr></table></figure>
-
-
 
 ]]></content>
       <categories>
@@ -807,6 +761,52 @@
       </tags>
   </entry>
   <entry>
+    <title>常用的Git命令</title>
+    <url>/article/5c7291e7.html</url>
+    <content><![CDATA[<blockquote>
+<p>这里将列出常用的Git命令，包括初始化仓库、配置、增删、提交、分支、标签、状态信息、远程同步、撤销等其他。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><p><strong>Git配置</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">&quot;xxx@xx.com&quot;</span></span><br><span class="line"></span><br><span class="line">$ git config user.name</span><br><span class="line">fangjian98</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成ssh key</span></span><br><span class="line">Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)</span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">&quot;xxx@xx.com&quot;</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/Admin/.ssh/id_rsa):</span><br><span class="line">Created directory <span class="string">&#x27;/c/Users/Admin/.ssh&#x27;</span>.</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/Admin/.ssh/id_rsa</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/Admin/.ssh/id_rsa.pub</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:mc855CP9q3vjn17hFWn37pbuYmjqZ4OL8CbrNgjK2GU 2360870585@qq.com</span><br><span class="line">The key<span class="string">&#x27;s randomart image is:</span></span><br><span class="line"><span class="string">+---[RSA 3072]----+</span></span><br><span class="line"><span class="string">|                 |</span></span><br><span class="line"><span class="string">|                .|</span></span><br><span class="line"><span class="string">|               +.|</span></span><br><span class="line"><span class="string">|         o    . +|</span></span><br><span class="line"><span class="string">|        S .    .o|</span></span><br><span class="line"><span class="string">| .  E    * .  ..o|</span></span><br><span class="line"><span class="string">|+..o..  . X .  .+|</span></span><br><span class="line"><span class="string">|o... +o..o Xoo =.|</span></span><br><span class="line"><span class="string">|    oo=o.+O=*=B+.|</span></span><br><span class="line"><span class="string">+----[SHA256]-----+</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># 查看ssh key</span></span><br><span class="line"><span class="string">$ cat ~/.ssh/id_rsa.pub</span></span><br></pre></td></tr></table></figure>
+<p><strong>Git项目常用命令</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">pwd</span></span><br><span class="line">/c/Users/Admin/learngit</span><br><span class="line"></span><br><span class="line">$ git init</span><br><span class="line">$ git add readme.txt</span><br><span class="line">$ git commit -m <span class="string">&quot;write a readme file&quot;</span></span><br><span class="line">[master (root-commit) 5a5268c] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br><span class="line">$ git push origin master</span><br><span class="line"> </span><br><span class="line">$ git branch</span><br><span class="line">$ git status.</span><br><span class="line">$ git diff readme.txt</span><br><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">$ git <span class="built_in">log</span> --pretty=oneline</span><br><span class="line">$ git reset --hard HEAD^</span><br><span class="line">$ cat readme.txt</span><br><span class="line">$ git checkout -- readme.txt</span><br><span class="line">$ git rm test.txt</span><br><span class="line">$ git pull</span><br><span class="line">$ rm test.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># Github提交远程仓库</span></span><br><span class="line">Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)</span><br><span class="line">$ git remote add origin git@github.com:fangjian98/learngit.git</span><br><span class="line"></span><br><span class="line">Admin@PS2020KDZVZTZQ MINGW64 ~/learngit (master)</span><br><span class="line">$ git push -u origin master </span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看帮助</span></span><br><span class="line">$ git <span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># git log常用参数：after之后的记录，before之前的记录</span></span><br><span class="line">git <span class="built_in">log</span> --oneline --all --grep=<span class="string">&quot;status&quot;</span> --author=<span class="string">&quot;fangjian&quot;</span> --after=<span class="string">&quot;2019-01-01&quot;</span> --before=<span class="string">&quot;2020-01-01&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># grep 忽略大小写</span></span><br><span class="line">grep -i   </span><br></pre></td></tr></table></figure>
+
+<p><strong>其他知识</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Git三种状态</span></span><br><span class="line">committed</span><br><span class="line">staged</span><br><span class="line">modified</span><br><span class="line"></span><br><span class="line"><span class="comment"># GIt文件机制：.git目录下</span></span><br><span class="line">·HEAD	文件存放根节点的信息（目录结构是树形结构）</span><br><span class="line">·refs	目录存储当前版本控制目录下的各种引用：heads（不同根）、remotes（远程版本库）、stash（Git栈）、tags（标签）</span><br><span class="line">·logs	目录根据不同的引用存储了日志信息</span><br><span class="line"></span><br><span class="line"><span class="comment"># 常见命令</span></span><br><span class="line">git init</span><br><span class="line">gir <span class="built_in">clone</span></span><br><span class="line">git status</span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line">git add</span><br><span class="line">git commit</span><br><span class="line">git rm</span><br><span class="line"></span><br><span class="line">git push origin master</span><br><span class="line">git fetch</span><br><span class="line">git merge</span><br><span class="line">git pull = git fetch + git merge</span><br><span class="line"></span><br><span class="line">git reset --hard HEAD		还原至上一个提交</span><br><span class="line">git checkout HEAD &lt;path&gt;	从HEAD中签出并且恢复成未修改的样子</span><br><span class="line"></span><br><span class="line">git revert HEAD			撤销旧的提交</span><br><span class="line">git commit --amend		修改刚才的这个提交</span><br><span class="line"></span><br><span class="line">reset：是要reset到指定commit位置的状态</span><br><span class="line">	git reset -mixed</span><br><span class="line">	git reset -hard</span><br><span class="line">revert：file rollback并且自动产生一个roll back的commit</span><br><span class="line">	git revert HEAD</span><br><span class="line">	git revert HEAD^</span><br><span class="line">	git revert &lt;commit&gt;</span><br><span class="line"></span><br><span class="line">git diff &lt;path&gt;</span><br><span class="line">git diff --cached &lt;path&gt;</span><br><span class="line">git diff HEAD &lt;path&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Git-常用命令详解"><a href="#Git-常用命令详解" class="headerlink" title="Git 常用命令详解"></a>Git 常用命令详解</h2><h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 在当前目录新建一个Git代码库</span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"># 新建一个目录，将其初始化为Git代码库</span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"># 下载一个项目和它的整个代码历史</span><br><span class="line">$ git clone [url]</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示当前的Git配置</span><br><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line"># 编辑Git配置文件</span><br><span class="line">$ git config -e [--global]</span><br><span class="line"></span><br><span class="line"># 设置提交代码时的用户信息</span><br><span class="line">$ git config [--global] user.name &quot;[name]&quot;</span><br><span class="line">$ git config [--global] user.email &quot;[email address]&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="增加-删除文件"><a href="#增加-删除文件" class="headerlink" title="增加/删除文件"></a>增加/删除文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 添加指定文件到暂存区</span><br><span class="line">$ git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 添加指定目录到暂存区，包括子目录</span><br><span class="line">$ git add [dir]</span><br><span class="line"></span><br><span class="line"># 添加当前目录的所有文件到暂存区</span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"># 添加每个变化前，都会要求确认</span><br><span class="line"># 对于同一个文件的多处变化，可以实现分次提交</span><br><span class="line">$ git add -p</span><br><span class="line"></span><br><span class="line"># 删除工作区文件，并且将这次删除放入暂存区</span><br><span class="line">$ git rm [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"># 停止追踪指定文件，但该文件会保留在工作区</span><br><span class="line">$ git rm --cached [file]</span><br><span class="line"></span><br><span class="line"># 改名文件，并且将这个改名放入暂存区</span><br><span class="line">$ git mv [file-original] [file-renamed]</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 提交暂存区到仓库区</span><br><span class="line">$ git commit -m [message]</span><br><span class="line"></span><br><span class="line"># 提交暂存区的指定文件到仓库区</span><br><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br><span class="line"></span><br><span class="line"># 提交工作区自上次commit之后的变化，直接到仓库区</span><br><span class="line">$ git commit -a</span><br><span class="line"></span><br><span class="line"># 提交时显示所有diff信息</span><br><span class="line">$ git commit -v</span><br><span class="line"></span><br><span class="line"># 使用一次新的commit，替代上一次提交</span><br><span class="line"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span><br><span class="line">$ git commit --amend -m [message]</span><br><span class="line"></span><br><span class="line"># 重做上一次commit，并包括指定文件的新变化</span><br><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure>
+
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有本地分支</span><br><span class="line">$ git branch</span><br><span class="line"></span><br><span class="line"># 列出所有远程分支</span><br><span class="line">$ git branch -r</span><br><span class="line"></span><br><span class="line"># 列出所有本地分支和远程分支</span><br><span class="line">$ git branch -a</span><br><span class="line"></span><br><span class="line"># 新建一个分支，但依然停留在当前分支</span><br><span class="line">$ git branch [branch-name]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，并切换到该分支</span><br><span class="line">$ git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向指定commit</span><br><span class="line">$ git branch [branch] [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个分支，与指定的远程分支建立追踪关系</span><br><span class="line">$ git branch --track [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 切换到指定分支，并更新工作区</span><br><span class="line">$ git checkout [branch-name]</span><br><span class="line"></span><br><span class="line"># 切换到上一个分支</span><br><span class="line">$ git checkout -</span><br><span class="line"></span><br><span class="line"># 建立追踪关系，在现有分支与指定的远程分支之间</span><br><span class="line">$ git branch --set-upstream [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"># 合并指定分支到当前分支</span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"># 选择一个commit，合并进当前分支</span><br><span class="line">$ git cherry-pick [commit]</span><br><span class="line"></span><br><span class="line"># 删除分支</span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"># 删除远程分支</span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote&#x2F;branch]</span><br></pre></td></tr></table></figure>
+
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 列出所有tag</span><br><span class="line">$ git tag</span><br><span class="line"></span><br><span class="line"># 新建一个tag在当前commit</span><br><span class="line">$ git tag [tag]</span><br><span class="line"></span><br><span class="line"># 新建一个tag在指定commit</span><br><span class="line">$ git tag [tag] [commit]</span><br><span class="line"></span><br><span class="line"># 删除本地tag</span><br><span class="line">$ git tag -d [tag]</span><br><span class="line"></span><br><span class="line"># 删除远程tag</span><br><span class="line">$ git push origin :refs&#x2F;tags&#x2F;[tagName]</span><br><span class="line"></span><br><span class="line"># 查看tag信息</span><br><span class="line">$ git show [tag]</span><br><span class="line"></span><br><span class="line"># 提交指定tag</span><br><span class="line">$ git push [remote] [tag]</span><br><span class="line"></span><br><span class="line"># 提交所有tag</span><br><span class="line">$ git push [remote] --tags</span><br><span class="line"></span><br><span class="line"># 新建一个分支，指向某个tag</span><br><span class="line">$ git checkout -b [branch] [tag]</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 显示有变更的文件</span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"># 显示当前分支的版本历史</span><br><span class="line">$ git log</span><br><span class="line"></span><br><span class="line"># 显示commit历史，以及每次commit发生变更的文件</span><br><span class="line">$ git log --stat</span><br><span class="line"></span><br><span class="line"># 搜索提交历史，根据关键词</span><br><span class="line">$ git log -S [keyword]</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，每个commit占据一行</span><br><span class="line">$ git log [tag] HEAD --pretty&#x3D;format:%s</span><br><span class="line"></span><br><span class="line"># 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件</span><br><span class="line">$ git log [tag] HEAD --grep feature</span><br><span class="line"></span><br><span class="line"># 显示某个文件的版本历史，包括文件改名</span><br><span class="line">$ git log --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br><span class="line"></span><br><span class="line"># 显示指定文件相关的每一次diff</span><br><span class="line">$ git log -p [file]</span><br><span class="line"></span><br><span class="line"># 显示过去5次提交</span><br><span class="line">$ git log -5 --pretty --oneline</span><br><span class="line"></span><br><span class="line"># 显示所有提交过的用户，按提交次数排序</span><br><span class="line">$ git shortlog -sn</span><br><span class="line"></span><br><span class="line"># 显示指定文件是什么人在什么时间修改过</span><br><span class="line">$ git blame [file]</span><br><span class="line"></span><br><span class="line"># 显示暂存区和工作区的差异</span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"># 显示暂存区和上一个commit的差异</span><br><span class="line">$ git diff --cached [file]</span><br><span class="line"></span><br><span class="line"># 显示工作区与当前分支最新commit之间的差异</span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"># 显示两次提交之间的差异</span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"># 显示今天你写了多少行代码</span><br><span class="line">$ git diff --shortstat &quot;@&#123;0 day ago&#125;&quot;</span><br><span class="line"></span><br><span class="line"># 显示某次提交的元数据和内容变化</span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交发生变化的文件</span><br><span class="line">$ git show --name-only [commit]</span><br><span class="line"></span><br><span class="line"># 显示某次提交时，某个文件的内容</span><br><span class="line">$ git show [commit]:[filename]</span><br><span class="line"></span><br><span class="line"># 显示当前分支的最近几次提交</span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
+
+<h3 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 下载远程仓库的所有变动</span><br><span class="line">$ git fetch [remote]</span><br><span class="line"></span><br><span class="line"># 显示所有远程仓库</span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"># 显示某个远程仓库的信息</span><br><span class="line">$ git remote show [remote]</span><br><span class="line"></span><br><span class="line"># 增加一个新的远程仓库，并命名</span><br><span class="line">$ git remote add [shortname] [url]</span><br><span class="line"></span><br><span class="line"># 取回远程仓库的变化，并与本地分支合并</span><br><span class="line">$ git pull [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 上传本地指定分支到远程仓库</span><br><span class="line">$ git push [remote] [branch]</span><br><span class="line"></span><br><span class="line"># 强行推送当前分支到远程仓库，即使有冲突</span><br><span class="line">$ git push [remote] --force</span><br><span class="line"></span><br><span class="line"># 推送所有分支到远程仓库</span><br><span class="line">$ git push [remote] --all</span><br></pre></td></tr></table></figure>
+
+<h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 恢复暂存区的指定文件到工作区</span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"># 恢复某个commit的指定文件到暂存区和工作区</span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"># 恢复暂存区的所有文件到工作区</span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"># 重置暂存区与工作区，与上一次commit保持一致</span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"># 新建一个commit，用来撤销指定commit</span><br><span class="line"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line">暂时将未提交的变化移除，稍后再移入</span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 生成一个可供发布的压缩包</span><br><span class="line">$ git archive</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>常用的adb命令</title>
     <url>/article/3610a686.html</url>
     <content><![CDATA[<blockquote>
@@ -967,7 +967,7 @@
 <p>常见的开源许可证主要有 Apache、MIT、BSD、GPL、LGPL、MPL、SSPL 等，可以大致分为两大类：<br><strong>1. 宽松自由软件许可协议 Permissive Free Software Licence</strong><br>是一种对软件的使用、修改、传播等方式采用最低限制的自由软件许可协议条款类型。这种类型的软件许可协议将不保证原作品的派生作品会继续保持与原作品完全相同的相关限制条件，从而为原作品的自由使用、修改和传播等提供更大的空间。<br><strong>2.著佐权许可证 Copyleft License</strong><br>是在有限空间内的自由使用、修改和传播，且不得违背原作品的限制条款。如果一款软件使用 Copyleft 类型许可协议规定软件不得用于商业目的，且不得闭源，那么后续的衍生子软件也必须得遵循该条款。<br><strong>两者最大的差别在于</strong>：在软件被修改并再发行时， Copyleft License 仍然强制要求公开源代码（衍生软件需要开源），而Permissive Free Software Licence 不要求公开源代码（衍生软件可以变为专有软件）。<br><strong>其中</strong>，Apache、MIT、BSD 都是宽松许可证，GPL 是典型的强著佐权（Copyleft ）许可证，LGPL、MPL 是弱著佐权（Copyleft ）许可证。SSPL 则是近年来 MongoDB 创建的一个新许可证，存在较大争议，开放源代码促进会 OSI 甚至认为 SSPL 就不是开源许可协议。</p>
 </blockquote>
 <h3 id="如何选择开源许可证"><a href="#如何选择开源许可证" class="headerlink" title="如何选择开源许可证"></a>如何选择开源许可证</h3><p>如何为代码选择开源许可证，这是一个问题。世界上的开源许可证，大概有上百种，很少有人能弄清楚它们的区别。即使在最流行的六种开源许可证：<a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>、<a href="https://en.wikipedia.org/wiki/BSD_licenses">BSD</a>、<a href="https://en.wikipedia.org/wiki/MIT_License">MIT</a>、<a href="https://www.mozilla.org/MPL/">Mozilla</a>、<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache</a>和<a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License">LGPL</a>，在这些中做出选择也很复杂。</p>
-<p>乌克兰程序员Paul Bagwell 画了一张分析图，说明应该怎么选择，这是我见过的最简单的讲解，只用两分钟，你就能搞清楚这六种许可证之间的最大区别。<br><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/licenses.png" alt="开源许可证"></p>
+<p>乌克兰程序员Paul Bagwell 画了一张分析图，说明应该怎么选择，这是我见过的最简单的讲解，只用两分钟，你就能搞清楚这六种许可证之间的最大区别。<br><img src="../images/assets/licenses.png" alt="开源许可证"></p>
 <h3 id="常见开源许可证声明方式"><a href="#常见开源许可证声明方式" class="headerlink" title="常见开源许可证声明方式"></a>常见开源许可证声明方式</h3><ul>
 <li><a href="https://opensource.org/licenses/MIT">MIT</a></li>
 </ul>
@@ -1062,6 +1062,102 @@
       </categories>
       <tags>
         <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git的基本使用</title>
+    <url>/article/163a8691.html</url>
+    <content><![CDATA[<blockquote>
+<p>Git的基本使用是需要掌握的基本概念和命令，以及掌握一些高级用法，如git rebase、git stash等。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Git的基本使用"><a href="#Git的基本使用" class="headerlink" title="Git的基本使用"></a>Git的基本使用</h3><ol>
+<li>第一次使用git需要使用命令 <code>git config --global user.name &lt;name&gt;</code> 、<code>git config --global user.email &lt;email&gt;</code> 配置好git的用户名和邮箱</li>
+<li>在本地测试仓库，不需要配置ssh公钥，但是在诸如码云或者其他远程服务器上进行仓库关联需要使用ssh公钥进行关联。使用命令<code>ssh-keygen -t rsa &lt;emial&gt; </code>可以在本地生成一个ssh公钥，之后登陆码云后将秘钥黏贴进去，即可在本地与远程仓库之间建立连接</li>
+<li>生成本地仓库，首先在需要生成仓库的位置右键点击git bash here ，输入git init 即可在当前目录下生成一个.git文件夹，这就是本地仓库的位置啦</li>
+<li>我们可以输入命令 touch readme.txt 来在当前目录下生成一个文件，以这个文件为例，测试git的拉取和上传功能。输入命令git status，即可查看当前没有上传至暂存处的修改或者新建的文件，这时就需要我们进行后续的一套操作。</li>
+<li>输入命令<code>git add . </code>即可将这些文件存放至暂存区，这个区域是不可见得，所以不用区找，我们可以再次输入<code>git status </code>查看当前的文件的状态。可以发现这些文件都存进暂存区了。</li>
+<li>输入命令<code>git commit -m &lt;注释&gt; </code>这是把当前在暂存区的文件或者操作完成的文件（比如git rm后的文件）全部提交到git本地仓库中去，这就完成了文件的提交。再次查看git status 可以发现这些文件都消失了，说明文件都提交上去了。</li>
+<li>这里可以使用<code>git reset</code>进行版本的回溯，输入<code>git log</code> 查看commit 的版本号，再次输入，git reset –hard &lt;版本号&gt; 可以回滚到之前的提交版本。</li>
+<li>到了这里本地仓库的操作都完成了，接下来是进行与远程仓库之间的关联和文件的上传了。输入命令 <code>git remote add origin &lt;关联的远程仓库的地址&gt;:&lt;ssh仓库的路径&gt; </code>这就和远程仓库进行关联了，有时候这里会弹出错误 （remote origin already exists）这表明已经与其它远程仓库进行关联了，输入命令<code>git remote rm origin </code>将当前关联的远程仓库删除即可。</li>
+<li>下面进行远程仓库的文件的拉取，这一步是必要的，因为如果与远程仓库的文件不同步，可能会发生冲突，因此建议这里在push前都要pull一下，避免冲突。输入命令<code>git pull --rebase origin master</code>(这里的pull其实包含 fetch 和merge两个操作，即fetch解决冲突问题，merge就是将文件合并），最后就可以愉快地进行代码地上传了，输入命令<code>git push -u origin master</code>(输入-u，在下一次使用push时可以直接git push，不用敲 origin master了），转到码云刷新仓库即可看到刚刚上传的文件已经显示在仓库中了。</li>
+</ol>
+<h3 id="Git-分支"><a href="#Git-分支" class="headerlink" title="Git 分支"></a>Git 分支</h3><p>Git分支可以理解为一个链表，插入新的分支，就是在链表的一个节点上插入新的链表，而分支的合并分情况讨论，如果主支没有修改，而插入的分支进行了修改，那么在合并的时候就将指针也就是master指向了最新的一次commit节点。而如果主支修改的同时，插入的分支也修改了，那么在合并的时候就需要解决冲突，可能两个修改的分支会并存，这时候可以用git log查看commit的日志。<br>注意：在初始化一个git仓库后，首先需要在仓库中存入一个任意的文件，如果直接创建分支，那么默认分支，也就是master会消失，取而代之的是默认分支变为主支。</p>
+<ul>
+<li>分支的创建，输入命令git branch &lt;分支名&gt;</li>
+<li>分支的切换，输入命令git checkout &lt;分支名&gt;</li>
+<li>分支的创建和切换，分支的创建并且切换到该分支，git checkout -b &lt;分支名&gt;</li>
+<li>查看当前的所有分支，输入命令git branch</li>
+<li>行显示日志，输入命令git log –decorate –oneline</li>
+<li>图像化显示日志，输入命令 git log –decorate –oneline -graph -all</li>
+<li>本地分支合并 git merge &lt;分支名&gt;</li>
+</ul>
+<h3 id="Git-diff"><a href="#Git-diff" class="headerlink" title="Git diff"></a>Git diff</h3><ul>
+<li>比较当前工作区未提交内容与最后一次commit内容的不同之处git diff</li>
+<li>比较暂存区(已经add，但是未commit的内容) 和最后一次commit的区别git diff –catched / git diff –staged</li>
+<li>显示工作目录，新创建但未add的文件，和暂存区已经add但未commit的文件，与最后一次commit的区别git diff HEAD</li>
+<li>比较两个分支上的最后commit 的区别git diff <branch1> <branch2></li>
+<li>比较两个分支log有什么区别git log <branch1>…<branch2></li>
+<li>比上面更清楚的知道区别git log –left-right <branch>…<branch2></li>
+</ul>
+<h3 id="Git-stash"><a href="#Git-stash" class="headerlink" title="Git stash"></a>Git stash</h3><p>Git stash 主要功能就是，将当前的工作区保存，之后再使用git status查看可以发现当前工作区变干净了。想要恢复时，使用git checkout 切换分支，再使用git stash pop恢复即可。<br>注意：多次使用git stash后，可以使用git stash list查看保存的列表，使用git stash apply恢复，或者使用git stash drop删除。</p>
+<h3 id="Git-rebase"><a href="#Git-rebase" class="headerlink" title="Git rebase"></a>Git rebase</h3><p>Git rebase 主要使用在分支合并的操作上，因此从远程下拉代码、本地分支合并并提交都会用到rebase命令。</p>
+<ol>
+<li>我们可以使用rebase合并多个commit为一个commit，这样在log中就能更加清爽整洁，使用命令 git rebase -i [开始版本号] [结束版本号] /或者 git rebase -i HEAD~[一个区间数字]，之后使用如下命令进行操作即可。</li>
+</ol>
+<ul>
+<li>pick：保留该commit（缩写:p）</li>
+<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
+<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
+<li>squash：将该commit和前一个commit合并（缩写:s）</li>
+<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
+<li>exec：执行shell命令（缩写:x）</li>
+<li>drop：我要丢弃该commit（缩写:d）</li>
+</ul>
+<ol start="2">
+<li>此外我们可以使用rebase可以将commit黏贴到另外一个分支上，使用命令 git rebase [开始版本号] [结束版本号] –onto [分支名]。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>rebase</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AOSP常用命令</title>
+    <url>/article/b42edc12.html</url>
+    <content><![CDATA[<blockquote>
+<p>手机厂商或者智能模块厂商都是基于Android系统源码基础上进行二次开发，即AOSP(Android Open Source Project)，开发人员涉及Framework、APP、底层驱动以及通信BP侧等，这就需要我们了解Android系统的架构设计、编译、刷机验证等知识。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="AOSP编译命令"><a href="#AOSP编译命令" class="headerlink" title="AOSP编译命令"></a>AOSP编译命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 源码全编译</span></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line">git branch -a</span><br><span class="line">git checkout -b SLM758W_meig_custom origin/SLM758W_meig_custom</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch <span class="comment">#选择编译项</span></span><br><span class="line">42</span><br><span class="line"><span class="comment"># lunch msm8953_64-userdebug</span></span><br><span class="line">make -j8 2&gt;&amp;1 | tee build.log <span class="comment">#加上编译log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除编译结果目录</span></span><br><span class="line">rm -rf out/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单模块编译</span></span><br><span class="line">在整体编译时部分依赖测试不会进行编译，所以使用使用mmm时会提示依赖出错，此时应该用mmma进行编译</span><br><span class="line">mm 构建模块在当前文件夹，不构建依赖</span><br><span class="line">mmm 构建模块指定路径，不构建依赖</span><br><span class="line">mma 构建模块在当前文件夹并构建依赖</span><br><span class="line">mmma 构建模块在当前文件夹并构建依赖</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单模块编译make:module name可查看对于模块下的Android.mk或Android.bp</span></span><br><span class="line">make &lt;module name&gt;</span><br><span class="line">make SystemUI</span><br><span class="line"></span><br><span class="line">其他编译命令：</span><br><span class="line"><span class="comment"># 编译bootloader</span></span><br><span class="line">make aboot	             </span><br><span class="line"><span class="comment"># 编译kernel</span></span><br><span class="line">make bootimage</span><br><span class="line"><span class="comment"># 编译system</span></span><br><span class="line">make systemimage</span><br><span class="line"><span class="comment"># 编译userdata</span></span><br><span class="line">make userdataimage</span><br><span class="line"><span class="comment"># 编译recovery</span></span><br><span class="line">make recoveryimage</span><br><span class="line"><span class="comment"># mmm编译指定目录的模块，如编译联系人</span></span><br><span class="line">mmm packages/apps/Contacts</span><br><span class="line"></span><br><span class="line"><span class="comment"># 常见的编译错误有：</span></span><br><span class="line">1.编译环境配置不正常；</span><br><span class="line">2.编译的代码有语法或逻辑错误；</span><br><span class="line">3.编译过程中服务器中断。</span><br><span class="line"><span class="comment"># 对应解决方法：</span></span><br><span class="line">1.配置对应编译环境；</span><br><span class="line">2.根据error提示修改代码；</span><br><span class="line">3.重新连接服务器重新编译或者继续编译，若想清除之前编译的信息则使用指令：make clean</span><br></pre></td></tr></table></figure>
+<h3 id="修改验证方式"><a href="#修改验证方式" class="headerlink" title="修改验证方式"></a>修改验证方式</h3><ol>
+<li>修改APK应用</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">在packages中的应用如果修改后都可以单独编译。先执行 </span><br><span class="line">$ <span class="built_in">source</span> build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line">$ mmm packages/providers/ContactsProvider/</span><br><span class="line"><span class="comment"># 用mm/mmm来编译生成的.apk并不会打包到system.img中，需要我们手动通过make snod把system文件夹打包为system.img</span></span><br><span class="line"><span class="comment">#可以使用make snod将模块打包到system.img中，也可以使用 adb install *.apk安装</span></span><br><span class="line">$ make snod <span class="comment">#可重新打包android系统镜像文件system.img</span></span><br><span class="line"></span><br><span class="line">注：通过mmm packages/providers/ContactsProvider/ 编译后的apk在 out/target/product/generic/system/app </span><br><span class="line">这时候通过 adb install out/target/product/generic/system/app/xxx.apk 安装你刚修改过的apk就可以在模拟器上看到你修改的效果了。</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>修改framework</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">如果在Contacts.java中修改了，必须重新编译下framework。先执行 </span><br><span class="line">$ <span class="built_in">source</span> build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line"><span class="comment">#网上有的说要执行 make update-api，实际上直接make PRODUCT-sdk-sdk就可以将修改后的framework编译到sdk中。 </span></span><br><span class="line"><span class="comment">#编译framework后，那些修改了的应用可以不用再单独编译了。4～6分钟</span></span><br><span class="line">$ make PRODUCT-sdk-sdk <span class="comment">#重新生成SDK 10~20分钟</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="高通烧录工具QFIL"><a href="#高通烧录工具QFIL" class="headerlink" title="高通烧录工具QFIL"></a>高通烧录工具QFIL</h3><p>1.编译结果目录：\192.168.0.227\home1\fangjian\LA.UM.7.6\out\target\product\msm8953_64<br>2.将其目录下的非文件夹文件拷贝到原始镜像的文件夹中 \SLM758W\android9\SLM758E\V24<br>3.使用QFil进行烧录 选择xml</p>
+<h3 id="Linux-amp-Git命令"><a href="#Linux-amp-Git命令" class="headerlink" title="Linux&amp;Git命令"></a>Linux&amp;Git命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建目录</span></span><br><span class="line">mkdir 7.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出文件</span></span><br><span class="line">ls</span><br><span class="line"></span><br><span class="line"><span class="comment"># 返回上一级目录</span></span><br><span class="line"><span class="comment"># `.`是当前目录 `..`是上一级目录 `/`是根目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看容量</span></span><br><span class="line">df -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看运行内存</span></span><br><span class="line">free -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有使用人情况</span></span><br><span class="line">top</span><br><span class="line"></span><br><span class="line"><span class="comment"># device目录下的状态</span></span><br><span class="line">git status device/</span><br><span class="line"><span class="comment"># 修改的文件的不同</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop</span><br><span class="line"><span class="comment"># 在根目录下生成patch</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop &gt; patch</span><br><span class="line"><span class="comment"># 查看20行提交信息</span></span><br><span class="line">git <span class="built_in">log</span> --oneline -20</span><br><span class="line"><span class="comment"># 按q退出</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="验证ADB命令"><a href="#验证ADB命令" class="headerlink" title="验证ADB命令"></a>验证ADB命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看连接设备</span></span><br><span class="line">adb devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入命令行模式</span></span><br><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启</span></span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成运行的log的命令</span></span><br><span class="line">adb logcat -b all &gt; test.log</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看当前界面的应用包名</span></span><br><span class="line">adb shell dumpsys activity | grep Resume</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从设备导出文件到当前目录下</span></span><br><span class="line">adb pull /sdcard/Pictures/xx.png ./</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装手机应用命令</span></span><br><span class="line">adb install C:\Users\Admin\Desktop\MusicTests.apk</span><br><span class="line">adb install -r</span><br><span class="line">adb install -t</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取属性值</span></span><br><span class="line">adb shell getprop persist.sys.strict_op_enable</span><br><span class="line"><span class="comment"># 设置属性值</span></span><br><span class="line">adb shell setprop persist.sys.strict_op_enable <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭SELinux</span></span><br><span class="line">adb shell setenforce 0</span><br><span class="line"><span class="comment"># 打开SELinux</span></span><br><span class="line">adb shell setenforce 1</span><br><span class="line"><span class="comment"># 查询SELinux的运行模式</span></span><br><span class="line"><span class="comment"># 0： 切换成 permissive（宽容模式）</span></span><br><span class="line"><span class="comment"># 1： 切换成 enforcing（强制模式）</span></span><br><span class="line">adb shell getenforce</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证：编译好应用，push后重启即可</span></span><br><span class="line">adb root </span><br><span class="line">adb remount</span><br><span class="line">adb push out/target/product/generic/system/app/xxx.apk /system/app/</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不重启 push frameworks操作</span></span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ <span class="comment"># stop</span></span><br><span class="line">msm8937_32:/ <span class="comment"># start</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># remount报错：重启后再执行adb root &amp;&amp; adb remount</span></span><br><span class="line">adb disable-verity</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入bootloader模式</span></span><br><span class="line">adb reboot bootloader</span><br><span class="line"></span><br><span class="line"><span class="comment"># fastboot flash partition filename 指定烧写一个分区</span></span><br><span class="line"><span class="comment"># Fastboot刷system分区</span></span><br><span class="line">fastboot flash system system.img </span><br><span class="line"><span class="comment"># 查看当前连接的设备</span></span><br><span class="line">fastboot devices </span><br><span class="line"><span class="comment"># 正常重启启动系统</span></span><br><span class="line">fastboot reboot </span><br><span class="line"><span class="comment"># 重启启动系统到bootloader阶段</span></span><br><span class="line">fastboot reboot-bootloader </span><br><span class="line"><span class="comment"># 烧写所有的分区</span></span><br><span class="line">fastboot flashall </span><br><span class="line"><span class="comment"># 擦除一个分区</span></span><br><span class="line">fastboot erase partition </span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看数据库</span></span><br><span class="line">adb root </span><br><span class="line">adb shell</span><br><span class="line"><span class="built_in">cd</span> data/data/</span><br><span class="line"><span class="built_in">cd</span> com.android.providers.media/</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
+
+<h3 id="AOSP编译服务器设置"><a href="#AOSP编译服务器设置" class="headerlink" title="AOSP编译服务器设置"></a>AOSP编译服务器设置</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1.生成你的ssh key，一路回车即可</span></span><br><span class="line">ssh-keygen -t rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2.将key注册到代码服务器</span></span><br><span class="line">cat ~/.ssh/id_rsa.pub</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3.配置本地ssh策略</span></span><br><span class="line">vim ~/.ssh/config</span><br><span class="line"><span class="comment">#加入下面内容</span></span><br><span class="line">Host * KexAlgorithms +diffie-hellman-group1-sha1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4.拉取代码</span></span><br><span class="line">git <span class="built_in">clone</span> ssh://fangjian@192.168.0.240:29418/LA.UM.7.6 &amp;&amp; scp -p -P 29418 fangjian@192.168.0.240:hooks/commit-msg LA.UM.7.6/.git/hooks/</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>AOSP</category>
+      </categories>
+      <tags>
+        <tag>AOSP</tag>
       </tags>
   </entry>
   <entry>
@@ -1166,102 +1262,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git的基本使用</title>
-    <url>/article/163a8691.html</url>
-    <content><![CDATA[<blockquote>
-<p>Git的基本使用是需要掌握的基本概念和命令，以及掌握一些高级用法，如git rebase、git stash等。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Git的基本使用"><a href="#Git的基本使用" class="headerlink" title="Git的基本使用"></a>Git的基本使用</h3><ol>
-<li>第一次使用git需要使用命令 <code>git config --global user.name &lt;name&gt;</code> 、<code>git config --global user.email &lt;email&gt;</code> 配置好git的用户名和邮箱</li>
-<li>在本地测试仓库，不需要配置ssh公钥，但是在诸如码云或者其他远程服务器上进行仓库关联需要使用ssh公钥进行关联。使用命令<code>ssh-keygen -t rsa &lt;emial&gt; </code>可以在本地生成一个ssh公钥，之后登陆码云后将秘钥黏贴进去，即可在本地与远程仓库之间建立连接</li>
-<li>生成本地仓库，首先在需要生成仓库的位置右键点击git bash here ，输入git init 即可在当前目录下生成一个.git文件夹，这就是本地仓库的位置啦</li>
-<li>我们可以输入命令 touch readme.txt 来在当前目录下生成一个文件，以这个文件为例，测试git的拉取和上传功能。输入命令git status，即可查看当前没有上传至暂存处的修改或者新建的文件，这时就需要我们进行后续的一套操作。</li>
-<li>输入命令<code>git add . </code>即可将这些文件存放至暂存区，这个区域是不可见得，所以不用区找，我们可以再次输入<code>git status </code>查看当前的文件的状态。可以发现这些文件都存进暂存区了。</li>
-<li>输入命令<code>git commit -m &lt;注释&gt; </code>这是把当前在暂存区的文件或者操作完成的文件（比如git rm后的文件）全部提交到git本地仓库中去，这就完成了文件的提交。再次查看git status 可以发现这些文件都消失了，说明文件都提交上去了。</li>
-<li>这里可以使用<code>git reset</code>进行版本的回溯，输入<code>git log</code> 查看commit 的版本号，再次输入，git reset –hard &lt;版本号&gt; 可以回滚到之前的提交版本。</li>
-<li>到了这里本地仓库的操作都完成了，接下来是进行与远程仓库之间的关联和文件的上传了。输入命令 <code>git remote add origin &lt;关联的远程仓库的地址&gt;:&lt;ssh仓库的路径&gt; </code>这就和远程仓库进行关联了，有时候这里会弹出错误 （remote origin already exists）这表明已经与其它远程仓库进行关联了，输入命令<code>git remote rm origin </code>将当前关联的远程仓库删除即可。</li>
-<li>下面进行远程仓库的文件的拉取，这一步是必要的，因为如果与远程仓库的文件不同步，可能会发生冲突，因此建议这里在push前都要pull一下，避免冲突。输入命令<code>git pull --rebase origin master</code>(这里的pull其实包含 fetch 和merge两个操作，即fetch解决冲突问题，merge就是将文件合并），最后就可以愉快地进行代码地上传了，输入命令<code>git push -u origin master</code>(输入-u，在下一次使用push时可以直接git push，不用敲 origin master了），转到码云刷新仓库即可看到刚刚上传的文件已经显示在仓库中了。</li>
-</ol>
-<h3 id="Git-分支"><a href="#Git-分支" class="headerlink" title="Git 分支"></a>Git 分支</h3><p>Git分支可以理解为一个链表，插入新的分支，就是在链表的一个节点上插入新的链表，而分支的合并分情况讨论，如果主支没有修改，而插入的分支进行了修改，那么在合并的时候就将指针也就是master指向了最新的一次commit节点。而如果主支修改的同时，插入的分支也修改了，那么在合并的时候就需要解决冲突，可能两个修改的分支会并存，这时候可以用git log查看commit的日志。<br>注意：在初始化一个git仓库后，首先需要在仓库中存入一个任意的文件，如果直接创建分支，那么默认分支，也就是master会消失，取而代之的是默认分支变为主支。</p>
-<ul>
-<li>分支的创建，输入命令git branch &lt;分支名&gt;</li>
-<li>分支的切换，输入命令git checkout &lt;分支名&gt;</li>
-<li>分支的创建和切换，分支的创建并且切换到该分支，git checkout -b &lt;分支名&gt;</li>
-<li>查看当前的所有分支，输入命令git branch</li>
-<li>行显示日志，输入命令git log –decorate –oneline</li>
-<li>图像化显示日志，输入命令 git log –decorate –oneline -graph -all</li>
-<li>本地分支合并 git merge &lt;分支名&gt;</li>
-</ul>
-<h3 id="Git-diff"><a href="#Git-diff" class="headerlink" title="Git diff"></a>Git diff</h3><ul>
-<li>比较当前工作区未提交内容与最后一次commit内容的不同之处git diff</li>
-<li>比较暂存区(已经add，但是未commit的内容) 和最后一次commit的区别git diff –catched / git diff –staged</li>
-<li>显示工作目录，新创建但未add的文件，和暂存区已经add但未commit的文件，与最后一次commit的区别git diff HEAD</li>
-<li>比较两个分支上的最后commit 的区别git diff <branch1> <branch2></li>
-<li>比较两个分支log有什么区别git log <branch1>…<branch2></li>
-<li>比上面更清楚的知道区别git log –left-right <branch>…<branch2></li>
-</ul>
-<h3 id="Git-stash"><a href="#Git-stash" class="headerlink" title="Git stash"></a>Git stash</h3><p>Git stash 主要功能就是，将当前的工作区保存，之后再使用git status查看可以发现当前工作区变干净了。想要恢复时，使用git checkout 切换分支，再使用git stash pop恢复即可。<br>注意：多次使用git stash后，可以使用git stash list查看保存的列表，使用git stash apply恢复，或者使用git stash drop删除。</p>
-<h3 id="Git-rebase"><a href="#Git-rebase" class="headerlink" title="Git rebase"></a>Git rebase</h3><p>Git rebase 主要使用在分支合并的操作上，因此从远程下拉代码、本地分支合并并提交都会用到rebase命令。</p>
-<ol>
-<li>我们可以使用rebase合并多个commit为一个commit，这样在log中就能更加清爽整洁，使用命令 git rebase -i [开始版本号] [结束版本号] /或者 git rebase -i HEAD~[一个区间数字]，之后使用如下命令进行操作即可。</li>
-</ol>
-<ul>
-<li>pick：保留该commit（缩写:p）</li>
-<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
-<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
-<li>squash：将该commit和前一个commit合并（缩写:s）</li>
-<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
-<li>exec：执行shell命令（缩写:x）</li>
-<li>drop：我要丢弃该commit（缩写:d）</li>
-</ul>
-<ol start="2">
-<li>此外我们可以使用rebase可以将commit黏贴到另外一个分支上，使用命令 git rebase [开始版本号] [结束版本号] –onto [分支名]。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>rebase</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AOSP常用命令</title>
-    <url>/article/b42edc12.html</url>
-    <content><![CDATA[<blockquote>
-<p>手机厂商或者智能模块厂商都是基于Android系统源码基础上进行二次开发，即AOSP(Android Open Source Project)，开发人员涉及Framework、APP、底层驱动以及通信BP侧等，这就需要我们了解Android系统的架构设计、编译、刷机验证等知识。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="AOSP编译命令"><a href="#AOSP编译命令" class="headerlink" title="AOSP编译命令"></a>AOSP编译命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 源码全编译</span></span><br><span class="line"><span class="built_in">cd</span> LA.UM.7.6/</span><br><span class="line">git branch -a</span><br><span class="line">git checkout -b SLM758W_meig_custom origin/SLM758W_meig_custom</span><br><span class="line"><span class="built_in">source</span> build/envsetup.sh</span><br><span class="line">lunch <span class="comment">#选择编译项</span></span><br><span class="line">42</span><br><span class="line"><span class="comment"># lunch msm8953_64-userdebug</span></span><br><span class="line">make -j8 2&gt;&amp;1 | tee build.log <span class="comment">#加上编译log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除编译结果目录</span></span><br><span class="line">rm -rf out/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单模块编译</span></span><br><span class="line">在整体编译时部分依赖测试不会进行编译，所以使用使用mmm时会提示依赖出错，此时应该用mmma进行编译</span><br><span class="line">mm 构建模块在当前文件夹，不构建依赖</span><br><span class="line">mmm 构建模块指定路径，不构建依赖</span><br><span class="line">mma 构建模块在当前文件夹并构建依赖</span><br><span class="line">mmma 构建模块在当前文件夹并构建依赖</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单模块编译make:module name可查看对于模块下的Android.mk或Android.bp</span></span><br><span class="line">make &lt;module name&gt;</span><br><span class="line">make SystemUI</span><br><span class="line"></span><br><span class="line">其他编译命令：</span><br><span class="line"><span class="comment"># 编译bootloader</span></span><br><span class="line">make aboot	             </span><br><span class="line"><span class="comment"># 编译kernel</span></span><br><span class="line">make bootimage</span><br><span class="line"><span class="comment"># 编译system</span></span><br><span class="line">make systemimage</span><br><span class="line"><span class="comment"># 编译userdata</span></span><br><span class="line">make userdataimage</span><br><span class="line"><span class="comment"># 编译recovery</span></span><br><span class="line">make recoveryimage</span><br><span class="line"><span class="comment"># mmm编译指定目录的模块，如编译联系人</span></span><br><span class="line">mmm packages/apps/Contacts</span><br><span class="line"></span><br><span class="line"><span class="comment"># 常见的编译错误有：</span></span><br><span class="line">1.编译环境配置不正常；</span><br><span class="line">2.编译的代码有语法或逻辑错误；</span><br><span class="line">3.编译过程中服务器中断。</span><br><span class="line"><span class="comment"># 对应解决方法：</span></span><br><span class="line">1.配置对应编译环境；</span><br><span class="line">2.根据error提示修改代码；</span><br><span class="line">3.重新连接服务器重新编译或者继续编译，若想清除之前编译的信息则使用指令：make clean</span><br></pre></td></tr></table></figure>
-<h3 id="修改验证方式"><a href="#修改验证方式" class="headerlink" title="修改验证方式"></a>修改验证方式</h3><ol>
-<li>修改APK应用</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">在packages中的应用如果修改后都可以单独编译。先执行 </span><br><span class="line">$ <span class="built_in">source</span> build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line">$ mmm packages/providers/ContactsProvider/</span><br><span class="line"><span class="comment"># 用mm/mmm来编译生成的.apk并不会打包到system.img中，需要我们手动通过make snod把system文件夹打包为system.img</span></span><br><span class="line"><span class="comment">#可以使用make snod将模块打包到system.img中，也可以使用 adb install *.apk安装</span></span><br><span class="line">$ make snod <span class="comment">#可重新打包android系统镜像文件system.img</span></span><br><span class="line"></span><br><span class="line">注：通过mmm packages/providers/ContactsProvider/ 编译后的apk在 out/target/product/generic/system/app </span><br><span class="line">这时候通过 adb install out/target/product/generic/system/app/xxx.apk 安装你刚修改过的apk就可以在模拟器上看到你修改的效果了。</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>修改framework</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">如果在Contacts.java中修改了，必须重新编译下framework。先执行 </span><br><span class="line">$ <span class="built_in">source</span> build/envsetup.sh <span class="comment">#初始化</span></span><br><span class="line"><span class="comment">#网上有的说要执行 make update-api，实际上直接make PRODUCT-sdk-sdk就可以将修改后的framework编译到sdk中。 </span></span><br><span class="line"><span class="comment">#编译framework后，那些修改了的应用可以不用再单独编译了。4～6分钟</span></span><br><span class="line">$ make PRODUCT-sdk-sdk <span class="comment">#重新生成SDK 10~20分钟</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="高通烧录工具QFIL"><a href="#高通烧录工具QFIL" class="headerlink" title="高通烧录工具QFIL"></a>高通烧录工具QFIL</h3><p>1.编译结果目录：\192.168.0.227\home1\fangjian\LA.UM.7.6\out\target\product\msm8953_64<br>2.将其目录下的非文件夹文件拷贝到原始镜像的文件夹中 \SLM758W\android9\SLM758E\V24<br>3.使用QFil进行烧录 选择xml</p>
-<h3 id="Linux-amp-Git命令"><a href="#Linux-amp-Git命令" class="headerlink" title="Linux&amp;Git命令"></a>Linux&amp;Git命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建目录</span></span><br><span class="line">mkdir 7.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出文件</span></span><br><span class="line">ls</span><br><span class="line"></span><br><span class="line"><span class="comment"># 返回上一级目录</span></span><br><span class="line"><span class="comment"># `.`是当前目录 `..`是上一级目录 `/`是根目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看容量</span></span><br><span class="line">df -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看运行内存</span></span><br><span class="line">free -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有使用人情况</span></span><br><span class="line">top</span><br><span class="line"></span><br><span class="line"><span class="comment"># device目录下的状态</span></span><br><span class="line">git status device/</span><br><span class="line"><span class="comment"># 修改的文件的不同</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop</span><br><span class="line"><span class="comment"># 在根目录下生成patch</span></span><br><span class="line">git diff  device/qcom/msm8937_32/system.prop &gt; patch</span><br><span class="line"><span class="comment"># 查看20行提交信息</span></span><br><span class="line">git <span class="built_in">log</span> --oneline -20</span><br><span class="line"><span class="comment"># 按q退出</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="验证ADB命令"><a href="#验证ADB命令" class="headerlink" title="验证ADB命令"></a>验证ADB命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看连接设备</span></span><br><span class="line">adb devices</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入命令行模式</span></span><br><span class="line">adb shell</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启</span></span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成运行的log的命令</span></span><br><span class="line">adb logcat -b all &gt; test.log</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看当前界面的应用包名</span></span><br><span class="line">adb shell dumpsys activity | grep Resume</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从设备导出文件到当前目录下</span></span><br><span class="line">adb pull /sdcard/Pictures/xx.png ./</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装手机应用命令</span></span><br><span class="line">adb install C:\Users\Admin\Desktop\MusicTests.apk</span><br><span class="line">adb install -r</span><br><span class="line">adb install -t</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取属性值</span></span><br><span class="line">adb shell getprop persist.sys.strict_op_enable</span><br><span class="line"><span class="comment"># 设置属性值</span></span><br><span class="line">adb shell setprop persist.sys.strict_op_enable <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭SELinux</span></span><br><span class="line">adb shell setenforce 0</span><br><span class="line"><span class="comment"># 打开SELinux</span></span><br><span class="line">adb shell setenforce 1</span><br><span class="line"><span class="comment"># 查询SELinux的运行模式</span></span><br><span class="line"><span class="comment"># 0： 切换成 permissive（宽容模式）</span></span><br><span class="line"><span class="comment"># 1： 切换成 enforcing（强制模式）</span></span><br><span class="line">adb shell getenforce</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证：编译好应用，push后重启即可</span></span><br><span class="line">adb root </span><br><span class="line">adb remount</span><br><span class="line">adb push out/target/product/generic/system/app/xxx.apk /system/app/</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不重启 push frameworks操作</span></span><br><span class="line">C:\Users\Admin&gt;adb shell</span><br><span class="line">msm8937_32:/ <span class="comment"># stop</span></span><br><span class="line">msm8937_32:/ <span class="comment"># start</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># remount报错：重启后再执行adb root &amp;&amp; adb remount</span></span><br><span class="line">adb disable-verity</span><br><span class="line">adb reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入bootloader模式</span></span><br><span class="line">adb reboot bootloader</span><br><span class="line"></span><br><span class="line"><span class="comment"># fastboot flash partition filename 指定烧写一个分区</span></span><br><span class="line"><span class="comment"># Fastboot刷system分区</span></span><br><span class="line">fastboot flash system system.img </span><br><span class="line"><span class="comment"># 查看当前连接的设备</span></span><br><span class="line">fastboot devices </span><br><span class="line"><span class="comment"># 正常重启启动系统</span></span><br><span class="line">fastboot reboot </span><br><span class="line"><span class="comment"># 重启启动系统到bootloader阶段</span></span><br><span class="line">fastboot reboot-bootloader </span><br><span class="line"><span class="comment"># 烧写所有的分区</span></span><br><span class="line">fastboot flashall </span><br><span class="line"><span class="comment"># 擦除一个分区</span></span><br><span class="line">fastboot erase partition </span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看数据库</span></span><br><span class="line">adb root </span><br><span class="line">adb shell</span><br><span class="line"><span class="built_in">cd</span> data/data/</span><br><span class="line"><span class="built_in">cd</span> com.android.providers.media/</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
-
-<h3 id="AOSP编译服务器设置"><a href="#AOSP编译服务器设置" class="headerlink" title="AOSP编译服务器设置"></a>AOSP编译服务器设置</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1.生成你的ssh key，一路回车即可</span></span><br><span class="line">ssh-keygen -t rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2.将key注册到代码服务器</span></span><br><span class="line">cat ~/.ssh/id_rsa.pub</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3.配置本地ssh策略</span></span><br><span class="line">vim ~/.ssh/config</span><br><span class="line"><span class="comment">#加入下面内容</span></span><br><span class="line">Host * KexAlgorithms +diffie-hellman-group1-sha1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4.拉取代码</span></span><br><span class="line">git <span class="built_in">clone</span> ssh://fangjian@192.168.0.240:29418/LA.UM.7.6 &amp;&amp; scp -p -P 29418 fangjian@192.168.0.240:hooks/commit-msg LA.UM.7.6/.git/hooks/</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>AOSP</category>
-      </categories>
-      <tags>
-        <tag>AOSP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>在线笔记工具Notion</title>
     <url>/article/3c2ec6ca.html</url>
     <content><![CDATA[<blockquote>
@@ -1271,7 +1271,7 @@
 
 <h3 id="关于Notion"><a href="#关于Notion" class="headerlink" title="关于Notion"></a>关于Notion</h3><p>官网：<a href="https://www.notion.so/product">https://www.notion.so/product</a></p>
 <p>在线：<a href="https://www.notion.so/">https://www.notion.so</a></p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/notion_home.png" alt="Notion官网"></p>
+<p><img src="../images/assets/notion_home.png" alt="Notion官网"></p>
 <p>Notion 作为新生代的笔记工具，有很多过人之处，官方的一句话介绍是：The all-in-one workspace for your notes, tasks, wikis, and databases。这段描述毫无吹嘘的成分。尽管在四个领域内，Notion 的表现各有高低，但作为一款强大的全平台 Web App，确实有 All-in-one 的底气。</p>
 <p>Notion 主要由三个内容单元——Block、Page 和 Database 构成。Block 可以是任意文本、列表、表格、代码或网页书签，Page 则是 Block 的集合，Database 又是 Page 的集合。</p>
 <p>最妙的是，Notion 采用一种「无极」的内容组织形式，即 Block、Page 和 Database 三者可以互相包含——Page 组成 Database，但 Page 中又可以插入 Database。</p>
@@ -1294,7 +1294,7 @@
 <p>4.颜色：选择某项，可以更改字体颜色和背景颜色</p>
 <p>5.导入和导出文件</p>
 <p>6.团队共享空间</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/notion_web.png" alt="Notion的使用"></p>
+<p><img src="../images/assets/notion_web.png" alt="Notion的使用"></p>
 <blockquote>
 <p>[1]  <a href="https://sspai.com/post/39694">https://sspai.com/post/39694</a></p>
 </blockquote>
@@ -1501,37 +1501,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于Photoshop的用法</title>
-    <url>/article/b76e39db.html</url>
-    <content><![CDATA[<blockquote>
-<p>Adobe Photoshop，简称“PS”，是由Adobe Systems开发和发行的图像处理软件。Photoshop主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。ps有很多功能，在图像、图形、文字、视频、出版等各方面都有涉及。</p>
-</blockquote>
-<a id="more"></a>
-
-<ul>
-<li>PS 如何使用“拉直”功能拉直图像</li>
-</ul>
-<p>在Photoshop 中，打开图片，点击“剪裁工具”。</p>
-<p>然后在选项栏中，选择拉直工具，如图所示</p>
-<p>鼠标单击图像一端，按住鼠标按钮，然后拖动到另一端。</p>
-<p>松开鼠标按钮，会旋转图像以使其变直。</p>
-<ul>
-<li>移动图像</li>
-</ul>
-<p>1.选中你需要移动的图层，然后选择工具栏上的第2个工具“移动”工具移动即可；</p>
-<p>2.点选“移动”工具，在属性栏会出现“自动选择”，在前面打勾√，后面下拉选择框中，选择“图层”，这样你就可以直接选中你图片任意拖动了，就无需点选图层面板里的图层！</p>
-<ul>
-<li>关于图层</li>
-</ul>
-]]></content>
-      <categories>
-        <category>UI设计</category>
-      </categories>
-      <tags>
-        <tag>Photoshop</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>编程语言的Hello World程序</title>
     <url>/article/caca35c0.html</url>
     <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] arg)</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">   	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1545,102 +1514,6 @@
 <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello, World!&quot;)</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-  </entry>
-  <entry>
-    <title>关于设计UI/UX/UED职能解释</title>
-    <url>/article/198ad0b7.html</url>
-    <content><![CDATA[<blockquote>
-<p>百度百科上说UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计。 关于设计或者产品经理或者开发者来说，我们经常听到UI/UX/UED/UCD等专有名词，却总是搞不清楚他们的区别，这里将说明他们各自的含义。百度百科上说UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="UI-UID"><a href="#UI-UID" class="headerlink" title="UI/UID"></a>UI/UID</h2><p><strong>UI：User Interface  用户界面 / UID：User Interface Design 用户界面设计</strong></p>
-<p>用户界面其实是一个比较广泛的概念，指人和机器互动过程中的界面，以车为例子，方向盘、仪表盘、换档器等都属于用户界面。</p>
-<ul>
-<li>现在一般把屏幕上显示的图形用户界面（GUI ：Graphic User Interface）都简单称为UI。</li>
-<li>现在一般所说的UI设计师，也即是指GUI设计师。</li>
-<li>用户界面设计（UID）不仅仅是做”漂亮的界面”，所以不可避免的会涉及到交互设计。所以广义来说，界面设计包含交互设计。  </li>
-</ul>
-<h2 id="ID"><a href="#ID" class="headerlink" title="ID"></a>ID</h2><p><strong>ID：Interaction design 交互设计</strong></p>
-<p>交互指任何机器互动的过程，交互设计通过了解人的心理、目标和期望，使用有效的交互方式来让整个过程可用、易用。</p>
-<ul>
-<li>交互设计的主要对象是人机界面（UI），但不仅限于图形界面（GUI）。 </li>
-<li>为了达到目标，交互设计师需要关注心理、文化、人体工程等许多方面的内容。</li>
-</ul>
-<h2 id="UE-UX"><a href="#UE-UX" class="headerlink" title="UE/UX"></a>UE/UX</h2><p><strong>UE/UX： User Experience 用户体验</strong> </p>
-<p>用户体验指用户在使用产品过程中的个人主观感受。</p>
-<ul>
-<li>关注用户使用前、使用过程中、使用后的整体感受，包括行为、情感、成就等各个方面。 </li>
-<li>用户体验是整体感受，所以不仅仅来自于用户界面，那只是其中的一部分。</li>
-</ul>
-<h2 id="UED"><a href="#UED" class="headerlink" title="UED"></a>UED</h2><p><strong>UED： User Experience Design 用户体验设计</strong></p>
-<p>用户体验是个人主观感受，但是共性的体验是可以经由良好的设计提升的。用户体验设计旨在提升用户使用产品的体验。</p>
-<ul>
-<li>互联网企业中，一般将视觉界面设计，交互设计和前端设计都归为用户体验设计。 </li>
-<li>但实际上用户体验设计贯穿于整个产品设计流程，是必然涉及到的，只是重视与否。 </li>
-<li>一名优秀的用户体验设计师，实际上需要对界面、交互和实现技术都有深入的理解。</li>
-</ul>
-<h2 id="UCD"><a href="#UCD" class="headerlink" title="UCD"></a>UCD</h2><p><strong>UCD：User Centered Design 以用户为中心的设计</strong></p>
-<p>UCD是一种设计模式，思维。强调在产品设计过程中，从用户角度出发来进行设计，用户优先。</p>
-<ul>
-<li>产品设计有个BTU三圈图（Business, Technique, User），即一个好的产品，应该兼顾商业盈利，技术实现和用户需求。</li>
-<li>无论是B、T还是U为优先进入产品设计，都可以设计出好的产品。UCD只是强调用户优先。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>UI设计</category>
-      </categories>
-      <tags>
-        <tag>UI</tag>
-        <tag>UX</tag>
-        <tag>UED</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于电子邮件协议</title>
-    <url>/article/1f82cbab.html</url>
-    <content><![CDATA[<blockquote>
-<p>电子邮件是一种用电子手段提供信息交换的通信方式，是互联网应用最广的服务。通过网络的电子邮件系统，用户可以以非常低廉的价格（不管发送到哪里，都只需负担网费）、非常快速的方式（几秒钟之内可以发送到世界上任何指定的目的地），与世界上任何一个角落的网络用户联系。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>在企业中一般都会有自己的定制化的企业邮箱， 使用的邮箱功能模块可按需求定制，例如邮箱后缀用公司名字的，想多个地区分别管理的，跨团队沟通群发邮件、想要一个独立登录入口页面、想要全球收发，企业邮箱里的功能都能满足，其灵活性的配置，让员工高效协同办公。</p>
-<p>在使用企业邮箱配置客户端的时候，这就会涉及到邮件服务器和端口的填写，如下使用是Foxmail邮箱客户端配置邮件服务器的参数，如果使用Outlook也可以参考使用这个参数的配置。另外QQ邮箱也可以开通OP3/IMAP/SMTP服务。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/mail_protocol.png" alt="邮件服务器的配置"></p>
-<h3 id="关于邮件协议"><a href="#关于邮件协议" class="headerlink" title="关于邮件协议"></a>关于邮件协议</h3><ul>
-<li><p>IMAP/SMTP服务</p>
-</li>
-<li><p>POP3/SMTP服务</p>
-</li>
-</ul>
-<blockquote>
-<p>电子邮件协议有SMTP、POP3、IMAP4，它们都隶属于TCP/IP协议簇，默认状态下，分别通过TCP端口25、110和143建立连接。</p>
-</blockquote>
-<h3 id="什么是POP3、SMTP及IMAP"><a href="#什么是POP3、SMTP及IMAP" class="headerlink" title="什么是POP3、SMTP及IMAP"></a>什么是POP3、SMTP及IMAP</h3><ul>
-<li><strong>POP3</strong></li>
-</ul>
-<p>POP3是Post Office Protocol 3的简称，即邮局协议的第3个版本,它规定怎样将个人计算机连接到Internet的邮件服务器和下载电子邮件的电子协议。它是因特网电子邮件的第一个离线协议标准，<strong>POP3允许用户从服务器上把邮件存储到本地主机（即自己的计算机）上,同时删除保存在邮件服务器上的邮件</strong>，而POP3服务器则是遵循POP3协议的接收邮件服务器，用来接收电子邮件的。</p>
-<ul>
-<li><strong>SMTP</strong></li>
-</ul>
-<p>SMTP的全称是“Simple Mail Transfer Protocol”，即简单邮件传输协议。它是一组用于从源地址到目的地址传输邮件的规范，通过它来控制邮件的中转方式。SMTP 协议属于 TCP/IP 协议簇，它帮助每台计算机在发送或中转信件时找到下一个目的地。<br>SMTP 服务器就是遵循 SMTP 协议的发送邮件服务器。SMTP 认证，简单地说就是要求必须在提供了账户名和密码之后才可以登录 SMTP 服务器，这就使得那些垃圾邮件的散播者无可乘之机。增加 SMTP 认证的目的是为了使用户避免受到垃圾邮件的侵扰。</p>
-<ul>
-<li><strong>IMAP</strong></li>
-</ul>
-<p>IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议，它是跟POP3类似邮件访问标准协议之一。不同的是，开启了IMAP后，您在电子邮件客户端收取的邮件仍然保留 在服务器上，同时在客户端上的操作都会反馈到服务器上，如：删除邮件，标记已读等，服务器上的邮件也会做相应的动作。所以无论从浏览器登录邮箱或者客户端 软件登录邮箱，看到的邮件以及状态都是一致的。</p>
-<h3 id="IMAP和POP3有什么区别"><a href="#IMAP和POP3有什么区别" class="headerlink" title="IMAP和POP3有什么区别?"></a>IMAP和POP3有什么区别?</h3><p><strong>POP3</strong>协议允许电子邮件客户端下载服务器上的邮件，但是在客户端的操作（如移动邮件、标记已读等），不会反馈到服务器上，比如通过客户端收取了邮箱中的3封邮件并移动到其他文件夹，邮箱服务器上的这些邮件是没有同时被移动的 。</p>
-<p>而<strong>IMAP</strong>提供webmail 与电子邮件客户端之间的双向通信，客户端的操作都会反馈到服务器上，对邮件进行的操作，服务器上的邮件也会做相应的动作。</p>
-<p>同时，<strong>IMAP</strong>像<strong>POP3</strong>那样提供了方便的邮件下载服务，让用户能进行离线阅读。<strong>IMAP</strong>提供的摘要浏览功能可以让你在阅读完所有的邮件到达时间、主题、发件人、大小等信息后才作出是否下载的决定。此外，<strong>IMAP</strong> 更好地支持了从多个不同设备中随时访问新邮件。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/mail_protocol_table.jpg" alt="IMAP与POP3的区别"></p>
-<p>总之，<strong>IMAP</strong> 整体上为用户带来更为便捷和可靠的体验。<strong>POP3</strong> 更易丢失邮件或多次下载相同的邮件，但 <strong>IMAP</strong> 通过邮件客户端与webmail 之间的双向同步功能很好地避免了这些问题。</p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>POP3/SMTP</tag>
-        <tag>IMAP/SMTP</tag>
-      </tags>
   </entry>
   <entry>
     <title>寻找机器学习数据集</title>
@@ -1718,84 +1591,130 @@
       </tags>
   </entry>
   <entry>
-    <title>Android Jetpack系列库简介</title>
-    <url>/article/23f0b0f3.html</url>
+    <title>关于Photoshop的用法</title>
+    <url>/article/b76e39db.html</url>
     <content><![CDATA[<blockquote>
-<p>JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。</p>
+<p>Adobe Photoshop，简称“PS”，是由Adobe Systems开发和发行的图像处理软件。Photoshop主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。ps有很多功能，在图像、图形、文字、视频、出版等各方面都有涉及。</p>
 </blockquote>
 <a id="more"></a>
 
-<h3 id="什么是Jetpack"><a href="#什么是Jetpack" class="headerlink" title="什么是Jetpack"></a>什么是Jetpack</h3><p>2018年谷歌I/O 发布了一系列辅助Android开发者的实用工具，合称Jetpack，以帮助开发者构建出色的 Android 应用。大体上，JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，开发者可以自主按需选择接入具体的哪个库。</p>
 <ul>
-<li><p>Goole IO 2017：Google 开始推出Architecture Component, ORM库Room, 用户生命周期管理的ViewModel/ListData。</p>
-</li>
-<li><p>Goole IO 2018：将Support lib 更名为androidx，Google将许多正确的方案集中起来，以高效的开发Android APP。</p>
-</li>
+<li>PS 如何使用“拉直”功能拉直图像</li>
 </ul>
-<p>以上种种，现在统称为JetPack.其最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。</p>
-<p>使用Jetpack的优势：</p>
+<p>在Photoshop 中，打开图片，点击“剪裁工具”。</p>
+<p>然后在选项栏中，选择拉直工具，如图所示</p>
+<p>鼠标单击图像一端，按住鼠标按钮，然后拖动到另一端。</p>
+<p>松开鼠标按钮，会旋转图像以使其变直。</p>
 <ul>
-<li>加快开发速度</li>
-<li>消除样板代码</li>
-<li>编译功能强大的优质应用</li>
+<li>移动图像</li>
 </ul>
-<h3 id="Jetpack的组成"><a href="#Jetpack的组成" class="headerlink" title="Jetpack的组成"></a>Jetpack的组成</h3><p>Android Jetpack 组件覆盖以下 4 个方面：Foundation （基础组件）、Architecture（架构组件）、Behavior（行为组件）、UI（界面组件）。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack.png" alt="Android Jetpack"></p>
-<ol>
-<li>基础组件</li>
-</ol>
-<p>AppCompat：使得支持较低的 Android 版本。从以前继承 Activity 到现在继承 AppCompatActivity 就是属于这一部分<br>Android KTX：Kotlin 的扩展支持库<br>Multidex：多 dex 文件支持<br>Test：测试支持库</p>
-<ol start="2">
-<li>架构组件</li>
-</ol>
-<p>Data Binding：MVVM 的一种实践<br>Lifecycles：管理你的 Activity 和 Fragment 生命周期<br>LiveData：通过观察者模式感知数据变化，类比 RxJava<br>Navigation：处理 Fragment 导航相关逻辑<br>Paging：分页数据加载方案<br>Room：官方 ORM 库<br>ViewModel：通过数据驱动 V 视图发生改变<br>WorkManager：管理后台任务</p>
-<ol start="3">
-<li>行为组件</li>
-</ol>
-<p>DownloadManager：管理下载任务<br>Media App：多媒体播放和一些向后兼容的API。主要包含 MediaPlayer 和 ExoPlayer<br>Notifications：提供向后兼容的通知 API，支持 Wear 和 Auto<br>Permissions：权限管理，这个应该都接触过。用于检查和请求应用权限<br>Settings：Preference 相关 API。基本每个应用都会用到<br>Share Action：提供分享操作。这块在国内使用的不多，都是自己封装或者采用第三方方案<br>Slices：可以让应用通过外部（其他 APP）显示 APP 界面（通过设备自带的搜索，语音助手等）</p>
-<ol start="4">
-<li>界面组件</li>
-</ol>
-<p>Animations and Transitions：动画，界面转场等<br>Auto：针对车辆的标准化界面和模式<br>Emoji：表情符号相关<br>Fragment：基础概念<br>Layout：基础概念<br>Palette-Colors：调色板<br>TV：Android TV 开发相关<br>Wear：可穿戴设备（目前主要是手表）开发相关</p>
-<h3 id="相关参考"><a href="#相关参考" class="headerlink" title="相关参考"></a>相关参考</h3><p><a href="https://blog.csdn.net/qq_34519487/article/details/103963912">https://blog.csdn.net/qq_34519487/article/details/103963912</a></p>
-<p><a href="http://www.xiangxueketang.cn/enjoy/removal/article_6?sdclkid=AL2G15oN1526A6D6bo&amp;bd_vid=7921788666531507771">http://www.xiangxueketang.cn/enjoy/removal/article_6?sdclkid=AL2G15oN1526A6D6bo&amp;bd_vid=7921788666531507771</a></p>
+<p>1.选中你需要移动的图层，然后选择工具栏上的第2个工具“移动”工具移动即可；</p>
+<p>2.点选“移动”工具，在属性栏会出现“自动选择”，在前面打勾√，后面下拉选择框中，选择“图层”，这样你就可以直接选中你图片任意拖动了，就无需点选图层面板里的图层！</p>
+<ul>
+<li>关于图层</li>
+</ul>
 ]]></content>
       <categories>
-        <category>Android</category>
+        <category>UI设计</category>
       </categories>
       <tags>
-        <tag>Android</tag>
-        <tag>Jetpack</tag>
+        <tag>Photoshop</tag>
       </tags>
   </entry>
   <entry>
-    <title>Web前端开发常用的开发工具</title>
-    <url>/article/bdc11bc8.html</url>
+    <title>关于电子邮件协议</title>
+    <url>/article/1f82cbab.html</url>
     <content><![CDATA[<blockquote>
-<p>分享的关于Web前端开发常用的十款很优秀的开发工具汇总。</p>
+<p>电子邮件是一种用电子手段提供信息交换的通信方式，是互联网应用最广的服务。通过网络的电子邮件系统，用户可以以非常低廉的价格（不管发送到哪里，都只需负担网费）、非常快速的方式（几秒钟之内可以发送到世界上任何指定的目的地），与世界上任何一个角落的网络用户联系。</p>
 </blockquote>
 <a id="more"></a>
 
-<ol>
-<li>Glitch<br><a href="https://glitch.com/">https://glitch.com</a><br>好的，这不仅仅是一个工具，还是一个非常棒的编码平台以及一个很棒的技术社区。我可以在内置代码编辑器的帮助下托管我的项目。支持多种语言，但最适合NodeJS。</li>
-<li>Shadows<br><a href="https://brumm.af/shadows">https://brumm.af/shadows</a><br>这个网站提供生成平滑阴影的CSS代码，可以创建平滑的边框阴影。它看起来真的很流畅，令人满意。</li>
-<li>Coolors<br><a href="https://coolors.co/">https://coolors.co</a><br>这是一款非常好的在线工具，可以为项目生成匹配的颜色方案。如果不喜欢当前的方案，按下空格键，它会重新生成一个配色方案，直到你满意~</li>
-<li>Blobmaker<br><a href="https://blobmaker.app/">https://blobmaker.app</a><br>Blobmaker可帮助你随机生成各种尺寸，不同颜色和形状的SVG Blob。你可以用作背景或创建看起来很酷的动画。</li>
-<li>Getwavs<br><a href="https://getwaves.io/">https://getwaves.io</a><br>与Blobmaker相似，Get Waves能够随机生成不同颜色和不同数量的波浪。用作网页的页脚或页眉看起来不错。</li>
-<li>Undraw.co<br><a href="https://undraw.co/">https://undraw.co</a><br>开放源代码项目的SVG插图集，可用来做登录页面，404页面等，当然普通页面也能用!上面的插图可以不带归属地版权的使用，无需支付任何费用。</li>
-<li>Marcdown<br><a href="https://liyasthomas.github.io/marcdown">https://liyasthomas.github.io/marcdown</a><br>由Liyas Thomas提供的在线实时的Markdown网页编辑器，它可预览Markdown代码，将其发布到GitHub上。它提供一个非常漂亮的暗黑模式。还可脱机工作，这使得它显得更出色。</li>
-<li>postwoman<br><a href="https://postwoman.io/">https://postwoman.io</a><br>这是Liyas Thomas构建的另一个工具。Postwoman是一个API请求构建工作。开发者可以不使用代理来测试 API。这是一个渐进式Web应用程序，可以保存到桌面来用。它是轻量级的产品，基本上可以是Postman的在线替代品。</li>
-<li>Screely.com<br><a href="https://screely.com/">https://screely.com</a><br>它可以帮助你创建超级漂亮的网站截图模型。如果你不是MacBook用户，但需要更好的网站图片作为自述文件，它非常适合我们。</li>
-<li>CSS网格生成器<br><a href="https://cssgrid-generator.netlify.com/">https://cssgrid-generator.netlify.com/</a><br>这是Sarah Drasner的创建的优秀网站，它使用CSS创建动态网格布局。</li>
-</ol>
+<p>在企业中一般都会有自己的定制化的企业邮箱， 使用的邮箱功能模块可按需求定制，例如邮箱后缀用公司名字的，想多个地区分别管理的，跨团队沟通群发邮件、想要一个独立登录入口页面、想要全球收发，企业邮箱里的功能都能满足，其灵活性的配置，让员工高效协同办公。</p>
+<p>在使用企业邮箱配置客户端的时候，这就会涉及到邮件服务器和端口的填写，如下使用是Foxmail邮箱客户端配置邮件服务器的参数，如果使用Outlook也可以参考使用这个参数的配置。另外QQ邮箱也可以开通OP3/IMAP/SMTP服务。</p>
+<p><img src="../images/assets/mail_protocol.png" alt="邮件服务器的配置"></p>
+<h3 id="关于邮件协议"><a href="#关于邮件协议" class="headerlink" title="关于邮件协议"></a>关于邮件协议</h3><ul>
+<li><p>IMAP/SMTP服务</p>
+</li>
+<li><p>POP3/SMTP服务</p>
+</li>
+</ul>
+<blockquote>
+<p>电子邮件协议有SMTP、POP3、IMAP4，它们都隶属于TCP/IP协议簇，默认状态下，分别通过TCP端口25、110和143建立连接。</p>
+</blockquote>
+<h3 id="什么是POP3、SMTP及IMAP"><a href="#什么是POP3、SMTP及IMAP" class="headerlink" title="什么是POP3、SMTP及IMAP"></a>什么是POP3、SMTP及IMAP</h3><ul>
+<li><strong>POP3</strong></li>
+</ul>
+<p>POP3是Post Office Protocol 3的简称，即邮局协议的第3个版本,它规定怎样将个人计算机连接到Internet的邮件服务器和下载电子邮件的电子协议。它是因特网电子邮件的第一个离线协议标准，<strong>POP3允许用户从服务器上把邮件存储到本地主机（即自己的计算机）上,同时删除保存在邮件服务器上的邮件</strong>，而POP3服务器则是遵循POP3协议的接收邮件服务器，用来接收电子邮件的。</p>
+<ul>
+<li><strong>SMTP</strong></li>
+</ul>
+<p>SMTP的全称是“Simple Mail Transfer Protocol”，即简单邮件传输协议。它是一组用于从源地址到目的地址传输邮件的规范，通过它来控制邮件的中转方式。SMTP 协议属于 TCP/IP 协议簇，它帮助每台计算机在发送或中转信件时找到下一个目的地。<br>SMTP 服务器就是遵循 SMTP 协议的发送邮件服务器。SMTP 认证，简单地说就是要求必须在提供了账户名和密码之后才可以登录 SMTP 服务器，这就使得那些垃圾邮件的散播者无可乘之机。增加 SMTP 认证的目的是为了使用户避免受到垃圾邮件的侵扰。</p>
+<ul>
+<li><strong>IMAP</strong></li>
+</ul>
+<p>IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议，它是跟POP3类似邮件访问标准协议之一。不同的是，开启了IMAP后，您在电子邮件客户端收取的邮件仍然保留 在服务器上，同时在客户端上的操作都会反馈到服务器上，如：删除邮件，标记已读等，服务器上的邮件也会做相应的动作。所以无论从浏览器登录邮箱或者客户端 软件登录邮箱，看到的邮件以及状态都是一致的。</p>
+<h3 id="IMAP和POP3有什么区别"><a href="#IMAP和POP3有什么区别" class="headerlink" title="IMAP和POP3有什么区别?"></a>IMAP和POP3有什么区别?</h3><p><strong>POP3</strong>协议允许电子邮件客户端下载服务器上的邮件，但是在客户端的操作（如移动邮件、标记已读等），不会反馈到服务器上，比如通过客户端收取了邮箱中的3封邮件并移动到其他文件夹，邮箱服务器上的这些邮件是没有同时被移动的 。</p>
+<p>而<strong>IMAP</strong>提供webmail 与电子邮件客户端之间的双向通信，客户端的操作都会反馈到服务器上，对邮件进行的操作，服务器上的邮件也会做相应的动作。</p>
+<p>同时，<strong>IMAP</strong>像<strong>POP3</strong>那样提供了方便的邮件下载服务，让用户能进行离线阅读。<strong>IMAP</strong>提供的摘要浏览功能可以让你在阅读完所有的邮件到达时间、主题、发件人、大小等信息后才作出是否下载的决定。此外，<strong>IMAP</strong> 更好地支持了从多个不同设备中随时访问新邮件。</p>
+<p><img src="../images/assets/mail_protocol_table.jpg" alt="IMAP与POP3的区别"></p>
+<p>总之，<strong>IMAP</strong> 整体上为用户带来更为便捷和可靠的体验。<strong>POP3</strong> 更易丢失邮件或多次下载相同的邮件，但 <strong>IMAP</strong> 通过邮件客户端与webmail 之间的双向同步功能很好地避免了这些问题。</p>
 ]]></content>
       <categories>
-        <category>前端</category>
+        <category>技术流</category>
       </categories>
       <tags>
-        <tag>Glitch</tag>
-        <tag>Postman</tag>
-        <tag>CSS</tag>
+        <tag>POP3/SMTP</tag>
+        <tag>IMAP/SMTP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于设计UI/UX/UED职能解释</title>
+    <url>/article/198ad0b7.html</url>
+    <content><![CDATA[<blockquote>
+<p>百度百科上说UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计。 关于设计或者产品经理或者开发者来说，我们经常听到UI/UX/UED/UCD等专有名词，却总是搞不清楚他们的区别，这里将说明他们各自的含义。百度百科上说UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="UI-UID"><a href="#UI-UID" class="headerlink" title="UI/UID"></a>UI/UID</h2><p><strong>UI：User Interface  用户界面 / UID：User Interface Design 用户界面设计</strong></p>
+<p>用户界面其实是一个比较广泛的概念，指人和机器互动过程中的界面，以车为例子，方向盘、仪表盘、换档器等都属于用户界面。</p>
+<ul>
+<li>现在一般把屏幕上显示的图形用户界面（GUI ：Graphic User Interface）都简单称为UI。</li>
+<li>现在一般所说的UI设计师，也即是指GUI设计师。</li>
+<li>用户界面设计（UID）不仅仅是做”漂亮的界面”，所以不可避免的会涉及到交互设计。所以广义来说，界面设计包含交互设计。  </li>
+</ul>
+<h2 id="ID"><a href="#ID" class="headerlink" title="ID"></a>ID</h2><p><strong>ID：Interaction design 交互设计</strong></p>
+<p>交互指任何机器互动的过程，交互设计通过了解人的心理、目标和期望，使用有效的交互方式来让整个过程可用、易用。</p>
+<ul>
+<li>交互设计的主要对象是人机界面（UI），但不仅限于图形界面（GUI）。 </li>
+<li>为了达到目标，交互设计师需要关注心理、文化、人体工程等许多方面的内容。</li>
+</ul>
+<h2 id="UE-UX"><a href="#UE-UX" class="headerlink" title="UE/UX"></a>UE/UX</h2><p><strong>UE/UX： User Experience 用户体验</strong> </p>
+<p>用户体验指用户在使用产品过程中的个人主观感受。</p>
+<ul>
+<li>关注用户使用前、使用过程中、使用后的整体感受，包括行为、情感、成就等各个方面。 </li>
+<li>用户体验是整体感受，所以不仅仅来自于用户界面，那只是其中的一部分。</li>
+</ul>
+<h2 id="UED"><a href="#UED" class="headerlink" title="UED"></a>UED</h2><p><strong>UED： User Experience Design 用户体验设计</strong></p>
+<p>用户体验是个人主观感受，但是共性的体验是可以经由良好的设计提升的。用户体验设计旨在提升用户使用产品的体验。</p>
+<ul>
+<li>互联网企业中，一般将视觉界面设计，交互设计和前端设计都归为用户体验设计。 </li>
+<li>但实际上用户体验设计贯穿于整个产品设计流程，是必然涉及到的，只是重视与否。 </li>
+<li>一名优秀的用户体验设计师，实际上需要对界面、交互和实现技术都有深入的理解。</li>
+</ul>
+<h2 id="UCD"><a href="#UCD" class="headerlink" title="UCD"></a>UCD</h2><p><strong>UCD：User Centered Design 以用户为中心的设计</strong></p>
+<p>UCD是一种设计模式，思维。强调在产品设计过程中，从用户角度出发来进行设计，用户优先。</p>
+<ul>
+<li>产品设计有个BTU三圈图（Business, Technique, User），即一个好的产品，应该兼顾商业盈利，技术实现和用户需求。</li>
+<li>无论是B、T还是U为优先进入产品设计，都可以设计出好的产品。UCD只是强调用户优先。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>UI设计</category>
+      </categories>
+      <tags>
+        <tag>UI</tag>
+        <tag>UX</tag>
+        <tag>UED</tag>
       </tags>
   </entry>
   <entry>
@@ -1839,7 +1758,7 @@
 <blockquote>
 <p>在ViewModel中的数据发生变化时通知页面</p>
 </blockquote>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_livedate.png" alt="Jetpack LiveData"></p>
+<p><img src="../images/assets/jetpack_livedate.png" alt="Jetpack LiveData"></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyviewModel</span> <span class="keyword">extends</span> <span class="title">viewModel</span> </span>&#123;</span><br><span class="line">    <span class="comment">//MutableLiveData是LiveData子类</span></span><br><span class="line">	<span class="keyword">private</span> MutableLiveData&lt;Integer&gt; currentsecond;</span><br><span class="line">    <span class="comment">//private MutableLiveData&lt;Integer&gt; currentsecond = new MutableLiveData&lt;&gt;(0);</span></span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> MutableLiveData&lt;Integer&gt; <span class="title">getCurrentSecond</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(currentSecond == <span class="keyword">null</span>) &#123;</span><br><span class="line">			currentsecond = <span class="keyword">new</span> MutableLiveData&lt;&gt;();</span><br><span class="line">            currentsecond.setvalue (<span class="number">0</span>) ;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> currentSecond;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//非UI线程使用postVaule(),UI线程使用setvalue()</span></span><br><span class="line">viewModel.getCurrentSecond().postValue</span><br><span class="line">    </span><br><span class="line"><span class="comment">//监听LiveData数据变化</span></span><br><span class="line">viewModel.getCurrentSecond().observe(<span class="keyword">this</span>,<span class="keyword">new</span> Observerr&lt;Interger&gt;()&#123;</span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onChanged</span><span class="params">(Interger i)</span></span>&#123;</span><br><span class="line">        textview.setText(String.valueOf(i));</span><br><span class="line">    &#125;    </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>LiveData的优势</p>
@@ -1850,7 +1769,7 @@
 <blockquote>
 <p>让布局文件承担了部分原本属于页面的工作，使页面与布局耦合度进一步降低</p>
 </blockquote>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding.png" alt="Jetpack DataBinding"></p>
+<p><img src="../images/assets/jetpack_databinding.png" alt="Jetpack DataBinding"></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//build配置</span></span><br><span class="line">dataBinding = <span class="keyword">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//布局生成databinding layout</span></span><br><span class="line"><span class="comment">//导入方法：布局文件使用代码</span></span><br><span class="line"><span class="comment">//&lt;import type=&quot;com.dongnaoedu.databinding.star0tils&quot;/&gt;</span></span><br><span class="line">&lt;Layout</span><br><span class="line">&lt;data&gt;</span><br><span class="line"> &lt;variable</span><br><span class="line"> 	name=<span class="string">&quot;idol&quot;</span></span><br><span class="line"> 	type=<span class="string">&quot;com.dongnaoedu.databinding.Ido1&quot;</span>/&gt;</span><br><span class="line">&lt;/data&gt;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="comment">//ActivityMainBinding由来</span></span><br><span class="line">ActivityMainBinding binding = DataBingingUtil.setcontentView(<span class="keyword">this</span>,R.layout.activity_main);</span><br><span class="line">Idol idol = <span class="keyword">new</span> Idol（<span class="string">&quot;name&quot;</span>,<span class="number">5</span>);</span><br><span class="line">binding.setIdol(idol);</span><br><span class="line"></span><br><span class="line"><span class="comment">//xml获取属性</span></span><br><span class="line">android:text=<span class="string">&quot;@&#123;idol.name&#125;&quot;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//按钮点击事件绑定</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//定义点击事件监听类</span></span><br><span class="line">EventHandleListener&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">onclick</span><span class="params">()</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//添加绑定</span></span><br><span class="line">binding。setEventHandleListener(<span class="keyword">new</span> EventHandleListener(<span class="keyword">this</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">//布局文件添加事件类</span></span><br><span class="line">&lt;data&gt;</span><br><span class="line"> &lt;variable</span><br><span class="line"> 	name=<span class="string">&quot;eventHandle&quot;</span></span><br><span class="line"> 	type=<span class="string">&quot;com.dongnaoedu.databinding.EventHandleListener&quot;</span>/&gt;</span><br><span class="line">&lt;/data&gt;</span><br><span class="line">    </span><br><span class="line">&lt;Button</span><br><span class="line">    click=<span class="string">&quot;@&#123;eventHandle.onclick&#125;&quot;</span></span><br></pre></td></tr></table></figure>
@@ -1867,7 +1786,7 @@
 <blockquote>
 <p>BaseObservable与ObservableField</p>
 </blockquote>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding_baseobservable.png" alt="Jetpack DataBinding BaseObservable"></p>
+<p><img src="../images/assets/jetpack_databinding_baseobservable.png" alt="Jetpack DataBinding BaseObservable"></p>
 <p>BaseObservable方式</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//User对象</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> string userName;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">User</span> <span class="params">(String userName)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.userName = userName;</span><br><span class="line">	&#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">//UserViewModel对象</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserViewModel</span> <span class="keyword">extends</span> <span class="title">Base0bservable</span></span>&#123;</span><br><span class="line"><span class="keyword">private</span> User user;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">UserViewModel</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.user = <span class="keyword">new</span> User ( userName: <span class="string">&quot;Jack&quot;</span> ) ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//改变对象的值View变化    </span></span><br><span class="line"><span class="meta">@Bindable</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> string <span class="title">getUserName</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> user.userName ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//当View变化时改变对象的值</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUserName</span> <span class="params">( String userName)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (userName != <span class="keyword">null</span> &amp;&amp; !userName. equals(user.userName) ) &#123;</span><br><span class="line">		user. userName = userName;</span><br><span class="line">		Log.d( tag: <span class="string">&quot;ning&quot;</span> , msg: <span class="string">&quot;set username :&quot;</span>+userName);</span><br><span class="line">        notifyPropertyChanged(BR. userName) ;<span class="comment">//通知对象的变化</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;data&gt;</span><br><span class="line">	&lt;variable</span><br><span class="line">		name=<span class="string">&quot;userviewModel&quot;</span></span><br><span class="line">		type=<span class="string">&quot;com.dongnaoedu.databinding4.UserviewModel&quot;</span> /&gt;</span><br><span class="line">&lt;/ data&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//双向绑定@=&#123;&#125;</span></span><br><span class="line">&lt;EditText</span><br><span class="line">	android: id-<span class="string">&quot;e+id/editText&quot;</span></span><br><span class="line">	android : layout_width=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">    android: layout height=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">    android : ems=<span class="string">&quot;10&quot;</span></span><br><span class="line">	android: inputType=<span class="string">&quot;textPersonName&quot;</span></span><br><span class="line">	android : text=<span class="string">&quot;@=&#123;userviewModel.userName)&quot;</span></span><br><span class="line"></span><br><span class="line">ContentactivityMainBinding.userviewModel (<span class="keyword">new</span> UserViewModel());</span><br></pre></td></tr></table></figure>
 
@@ -1884,11 +1803,11 @@
 <blockquote>
 <p>不再需要findViewByld，项目更加简洁，可读性更高。<br>布局文件可以包含简单的业务逻辑。</p>
 </blockquote>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_databinding_viewmodel.png" alt="Jetpack Databinding Viewmodel"></p>
+<p><img src="../images/assets/jetpack_databinding_viewmodel.png" alt="Jetpack Databinding Viewmodel"></p>
 <h2 id="Room"><a href="#Room" class="headerlink" title="Room"></a>Room</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Room重要概念:</span><br><span class="line">Entity:实体类，对应的是数据库的一张表结构，使用注解@Entity标记&gt;</span><br><span class="line">Dao:包含访问一系列访问数据库的方法，使用注解@Dao标记。//Data Access Objects</span><br><span class="line">Database:数据库持有者，作为与应用持久化相关数据的底层连接的主要接入点。使用注解@Database标记，另外需满足以下条件:定义的类必须是一个继承于RoomDatabase的抽象类，在注解中需要定义与数据库相关联的实体类列表。包含一个没有参数的抽象方法并且返回一个Dao对象。</span><br></pre></td></tr></table></figure>
 
 <p>app从Database得到get DAO,从DAO得到Entity，从Entity得到和设置对象值</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_room.png" alt="Jetpack Room"></p>
+<p><img src="../images/assets/jetpack_room.png" alt="Jetpack Room"></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">implementation <span class="string">&#x27;androidx.room: room-runtime: 2.2.5&#x27;</span></span><br><span class="line">//注解器：抽象类自动生成实现类</span><br><span class="line">annotationProcessor <span class="string">&#x27;androidx .room:room-compiler:2.2.5&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>Entity</p>
@@ -1908,7 +1827,7 @@
 <p>问题:每当数据库数据发生变化时，都需要开启一个工作线程去重新获取数据库中的数据。<br>解决:当数据发生变化时，通过LiveData通知View层，实现数据自动更新。</p>
 </blockquote>
 <p>Room+ViewModel+LiveData</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/jetpack_viewmodel_room_livedata.png" alt="Jetpack Viewmodel Room Livedata"></p>
+<p><img src="../images/assets/jetpack_viewmodel_room_livedata.png" alt="Jetpack Viewmodel Room Livedata"></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Repository:通过Repository操作数据库</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">studentRepository</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> StudentDao studentDao;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">StudentRepository</span> <span class="params">(Context context)</span></span>&#123;</span><br><span class="line">		MyDatabase database = MyDatabase.getInstance ( context) ;</span><br><span class="line">        <span class="keyword">this</span>.studentDao = database.getStudentDao ( ) ;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insertStudent</span> <span class="params">(Student. . . students)</span></span>&#123;</span><br><span class="line">		<span class="keyword">new</span> InsertStudentTask(studentDao) .execute (students);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">InsertStudentTask</span> <span class="keyword">extends</span> <span class="title">AsyncTask</span>&lt;<span class="title">Student</span>, <span class="title">Void</span>,<span class="title">Void</span>&gt; </span>&#123;</span><br><span class="line">		<span class="keyword">private</span> studentDao studentDao;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="title">InsertStudentTask</span><span class="params">(StudentDao studentDao)</span> </span>&#123; </span><br><span class="line">            <span class="keyword">this</span>.studentDa</span><br><span class="line">			</span><br><span class="line">            <span class="meta">@override</span></span><br><span class="line">			<span class="function"><span class="keyword">protected</span> Void <span class="title">doInBackground</span> <span class="params">(Student. . . students)</span> </span>&#123;</span><br><span class="line">				studentDao.insertstudent (students) ;</span><br><span class="line">				<span class="keyword">return</span> nul1;</span><br><span class="line">			&#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//ViewModel:ViewModel传递上下文对象需要用AndroidViewModel</span></span><br><span class="line"><span class="comment">//ViewModel保存数据</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">studentViewModel</span> <span class="keyword">extends</span> <span class="title">AndroidViewModel</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> studentRepository repository ;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">StudentViewModel</span> <span class="params">( <span class="meta">@NonNull</span> Application application)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>(application) ;</span><br><span class="line">		<span class="keyword">this</span>.repository = <span class="keyword">new</span> StudentRepository(application) ;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insertStudent</span> <span class="params">(Student. . . students)</span> </span>&#123;</span><br><span class="line">		repository.insertStudent(students) ;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Activity只需要和ViewModel交互即可</span></span><br><span class="line">studentViewModel = <span class="keyword">new</span> ViewModelProvider ( owner: <span class="keyword">this</span>, <span class="keyword">new</span></span><br><span class="line">ViewModelProvider.AndroidviewModelFactory(getApplication()).get(StudentViewModel.class)</span><br><span class="line"><span class="comment">//Livedata自动更新</span></span><br><span class="line">studentViewModel.getAllStudentsLive () .observe ( owner: <span class="keyword">this</span>，<span class="keyword">new</span> Observer&lt;List&lt;Student&gt;&gt;()</span><br><span class="line">	<span class="meta">@override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onChanged</span> <span class="params">(List&lt;Student&gt; students)</span></span>&#123;</span><br><span class="line">		adapter.setstudents ( students ) ;</span><br><span class="line">		adapter.notifyDataSetChanged ( );</span><br><span class="line">	&#125;);</span><br><span class="line"> &#125;</span><br><span class="line">                                          </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">mInsert</span> <span class="params">(View view)</span> </span>&#123;</span><br><span class="line">	Student s1 = <span class="keyword">new</span> student ( name: <span class="string">&quot;Jack&quot;</span>, age: <span class="number">20</span>) ;</span><br><span class="line">    Student s2 = <span class="keyword">new</span> Student ( name: <span class="string">&quot;Rose&quot;</span>, age: <span class="number">18</span>);</span><br><span class="line">    studentviewModel .insertStudent (s1,s2) ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>room版本升级</p>
@@ -1942,6 +1861,147 @@
         <tag>Jetpack</tag>
         <tag>ViewModel</tag>
         <tag>DataBinding</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android Jetpack系列库简介</title>
+    <url>/article/23f0b0f3.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<blockquote>
+<p>JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="什么是Jetpack"><a href="#什么是Jetpack" class="headerlink" title="什么是Jetpack"></a>什么是Jetpack</h3><p>2018年谷歌I/O 发布了一系列辅助Android开发者的实用工具，合称Jetpack，以帮助开发者构建出色的 Android 应用。大体上，JetPack是Google推出的一些库的集合，是Android基础支持库SDK以外的部分，包含了组件、工具、架构方案等，开发者可以自主按需选择接入具体的哪个库。</p>
+<ul>
+<li><p>Goole IO 2017：Google 开始推出Architecture Component, ORM库Room, 用户生命周期管理的ViewModel/ListData。</p>
+</li>
+<li><p>Goole IO 2018：将Support lib 更名为androidx，Google将许多正确的方案集中起来，以高效的开发Android APP。</p>
+</li>
+</ul>
+<p>以上种种，现在统称为JetPack.其最核心的出发点就是帮助开发者快速构建出稳定、高性能、测试友好同时向后兼容的APP。</p>
+<p>使用Jetpack的优势：</p>
+<ul>
+<li>加快开发速度</li>
+<li>消除样板代码</li>
+<li>编译功能强大的优质应用</li>
+</ul>
+<h3 id="Jetpack的组成"><a href="#Jetpack的组成" class="headerlink" title="Jetpack的组成"></a>Jetpack的组成</h3><p>Android Jetpack 组件覆盖以下 4 个方面：Foundation （基础组件）、Architecture（架构组件）、Behavior（行为组件）、UI（界面组件）。</p>
+<p><img src="../images/assets/jetpack.png" alt="Android Jetpack"></p>
+<ol>
+<li>基础组件</li>
+</ol>
+<p>AppCompat：使得支持较低的 Android 版本。从以前继承 Activity 到现在继承 AppCompatActivity 就是属于这一部分<br>Android KTX：Kotlin 的扩展支持库<br>Multidex：多 dex 文件支持<br>Test：测试支持库</p>
+<ol start="2">
+<li>架构组件</li>
+</ol>
+<p>Data Binding：MVVM 的一种实践<br>Lifecycles：管理你的 Activity 和 Fragment 生命周期<br>LiveData：通过观察者模式感知数据变化，类比 RxJava<br>Navigation：处理 Fragment 导航相关逻辑<br>Paging：分页数据加载方案<br>Room：官方 ORM 库<br>ViewModel：通过数据驱动 V 视图发生改变<br>WorkManager：管理后台任务</p>
+<ol start="3">
+<li>行为组件</li>
+</ol>
+<p>DownloadManager：管理下载任务<br>Media App：多媒体播放和一些向后兼容的API。主要包含 MediaPlayer 和 ExoPlayer<br>Notifications：提供向后兼容的通知 API，支持 Wear 和 Auto<br>Permissions：权限管理，这个应该都接触过。用于检查和请求应用权限<br>Settings：Preference 相关 API。基本每个应用都会用到<br>Share Action：提供分享操作。这块在国内使用的不多，都是自己封装或者采用第三方方案<br>Slices：可以让应用通过外部（其他 APP）显示 APP 界面（通过设备自带的搜索，语音助手等）</p>
+<ol start="4">
+<li>界面组件</li>
+</ol>
+<p>Animations and Transitions：动画，界面转场等<br>Auto：针对车辆的标准化界面和模式<br>Emoji：表情符号相关<br>Fragment：基础概念<br>Layout：基础概念<br>Palette-Colors：调色板<br>TV：Android TV 开发相关<br>Wear：可穿戴设备（目前主要是手表）开发相关</p>
+<h3 id="相关参考"><a href="#相关参考" class="headerlink" title="相关参考"></a>相关参考</h3><p><a href="https://blog.csdn.net/qq_34519487/article/details/103963912">https://blog.csdn.net/qq_34519487/article/details/103963912</a></p>
+<p><a href="http://www.xiangxueketang.cn/enjoy/removal/article_6?sdclkid=AL2G15oN1526A6D6bo&amp;bd_vid=7921788666531507771">http://www.xiangxueketang.cn/enjoy/removal/article_6?sdclkid=AL2G15oN1526A6D6bo&amp;bd_vid=7921788666531507771</a></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>Jetpack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows修改DNS方法</title>
+    <url>/article/7c78b42f.html</url>
+    <content><![CDATA[<blockquote>
+<p>DNS是域名系统，我们链接互联网的时候，仅仅有一个IP地址是不够的，还需要设置域名，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取IP数串。通过域名，最终得到该域名对应IP地址的过程叫做域名解析（或主机名解析）。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>修改DNS的好处就是可以适当提高上网速度；更换DNS可以访问某些因为域名解析存在问题而不能访问的网站；可以屏蔽运营商的广告，还可以帮助您避免被钓鱼的危险；</p>
+<p>当然修改DNS也有可能带来副作用，比如无法访问页面或者访问的页面不是你想要的页面；访问速度没有你从运营商处获得的DNS访问分速度快，延时比较大；受到DNS劫持，插入广告和被钓鱼网站攻击。</p>
+<h3 id="Windows修改DNS步骤"><a href="#Windows修改DNS步骤" class="headerlink" title="Windows修改DNS步骤"></a>Windows修改DNS步骤</h3><p>1.打开windows设置，找到并单击“网络和Internet”选项;</p>
+<p>2.右侧下拉找到“更改适配器选项”，单击打开;</p>
+<p>3.右键你的以太网，选择“属性”打开;</p>
+<p>4.进入后下拉下方选项，找到“Internet 协议版本 4 (TCP/IPv4)”选项并选中，单击“属性”进入;</p>
+<p><img src="../images/assets/dns_ipv4.png" alt="TCP/IPV4属性"></p>
+<p>5.进入后即可勾选为“使用下面的DNS服务器地址”选项，进行DNS服务器设置，确定保存即可。</p>
+<p><img src="../images/assets/dns_server.png" alt="DNS服务器设置"></p>
+<p>6.返回桌面重启电脑或者重启网卡即可设置完成。</p>
+<h3 id="常用的DNS服务器"><a href="#常用的DNS服务器" class="headerlink" title="常用的DNS服务器"></a>常用的DNS服务器</h3><ul>
+<li><p>阿里的DNS是223.5.5.5和223.6.6.6</p>
+</li>
+<li><p>百度的DNS是180.76.76.76</p>
+</li>
+<li><p>114的DNS是114.114.114.114和114.114.115.115</p>
+</li>
+<li><p>谷歌的DNS是8.8.8.8和8.8.8.4</p>
+</li>
+<li><p>微软官方推荐使用的DNS服务器地址为4.2.2.1以及4.2.2.2</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>DNS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web前端开发常用的开发工具</title>
+    <url>/article/bdc11bc8.html</url>
+    <content><![CDATA[<blockquote>
+<p>分享的关于Web前端开发常用的十款很优秀的开发工具汇总。</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li>Glitch<br><a href="https://glitch.com/">https://glitch.com</a><br>好的，这不仅仅是一个工具，还是一个非常棒的编码平台以及一个很棒的技术社区。我可以在内置代码编辑器的帮助下托管我的项目。支持多种语言，但最适合NodeJS。</li>
+<li>Shadows<br><a href="https://brumm.af/shadows">https://brumm.af/shadows</a><br>这个网站提供生成平滑阴影的CSS代码，可以创建平滑的边框阴影。它看起来真的很流畅，令人满意。</li>
+<li>Coolors<br><a href="https://coolors.co/">https://coolors.co</a><br>这是一款非常好的在线工具，可以为项目生成匹配的颜色方案。如果不喜欢当前的方案，按下空格键，它会重新生成一个配色方案，直到你满意~</li>
+<li>Blobmaker<br><a href="https://blobmaker.app/">https://blobmaker.app</a><br>Blobmaker可帮助你随机生成各种尺寸，不同颜色和形状的SVG Blob。你可以用作背景或创建看起来很酷的动画。</li>
+<li>Getwavs<br><a href="https://getwaves.io/">https://getwaves.io</a><br>与Blobmaker相似，Get Waves能够随机生成不同颜色和不同数量的波浪。用作网页的页脚或页眉看起来不错。</li>
+<li>Undraw.co<br><a href="https://undraw.co/">https://undraw.co</a><br>开放源代码项目的SVG插图集，可用来做登录页面，404页面等，当然普通页面也能用!上面的插图可以不带归属地版权的使用，无需支付任何费用。</li>
+<li>Marcdown<br><a href="https://liyasthomas.github.io/marcdown">https://liyasthomas.github.io/marcdown</a><br>由Liyas Thomas提供的在线实时的Markdown网页编辑器，它可预览Markdown代码，将其发布到GitHub上。它提供一个非常漂亮的暗黑模式。还可脱机工作，这使得它显得更出色。</li>
+<li>postwoman<br><a href="https://postwoman.io/">https://postwoman.io</a><br>这是Liyas Thomas构建的另一个工具。Postwoman是一个API请求构建工作。开发者可以不使用代理来测试 API。这是一个渐进式Web应用程序，可以保存到桌面来用。它是轻量级的产品，基本上可以是Postman的在线替代品。</li>
+<li>Screely.com<br><a href="https://screely.com/">https://screely.com</a><br>它可以帮助你创建超级漂亮的网站截图模型。如果你不是MacBook用户，但需要更好的网站图片作为自述文件，它非常适合我们。</li>
+<li>CSS网格生成器<br><a href="https://cssgrid-generator.netlify.com/">https://cssgrid-generator.netlify.com/</a><br>这是Sarah Drasner的创建的优秀网站，它使用CSS创建动态网格布局。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Glitch</tag>
+        <tag>Postman</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多媒体视频处理工具FFmpeg</title>
+    <url>/article/b3c1f4b1.html</url>
+    <content><![CDATA[<blockquote>
+<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>FFmpeg常用命令解析<br><a href="https://www.cnblogs.com/Dicky-Zhang/p/11838416.html">https://www.cnblogs.com/Dicky-Zhang/p/11838416.html</a></p>
+<p>ffFFmpegpg处理视频<br>example：m3u8转mp4<br><a href="https://www.cnblogs.com/zhangceblogs/p/8514443.html">https://www.cnblogs.com/zhangceblogs/p/8514443.html</a></p>
+<p><a href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a><br><a href="https://github.com/BtbN/FFmpeg-Builds">https://github.com/BtbN/FFmpeg-Builds</a><br>下载：ffmpeg-n-104327-g1902a60dda-win64-gpl.zip</p>
+]]></content>
+      <categories>
+        <category>音视频</category>
+      </categories>
+      <tags>
+        <tag>FFmpeg</tag>
       </tags>
   </entry>
   <entry>
@@ -2166,64 +2226,6 @@
         <tag>Java</tag>
         <tag>JDK</tag>
         <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows修改DNS方法</title>
-    <url>/article/7c78b42f.html</url>
-    <content><![CDATA[<blockquote>
-<p>DNS是域名系统，我们链接互联网的时候，仅仅有一个IP地址是不够的，还需要设置域名，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取IP数串。通过域名，最终得到该域名对应IP地址的过程叫做域名解析（或主机名解析）。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>修改DNS的好处就是可以适当提高上网速度；更换DNS可以访问某些因为域名解析存在问题而不能访问的网站；可以屏蔽运营商的广告，还可以帮助您避免被钓鱼的危险；</p>
-<p>当然修改DNS也有可能带来副作用，比如无法访问页面或者访问的页面不是你想要的页面；访问速度没有你从运营商处获得的DNS访问分速度快，延时比较大；受到DNS劫持，插入广告和被钓鱼网站攻击。</p>
-<h3 id="Windows修改DNS步骤"><a href="#Windows修改DNS步骤" class="headerlink" title="Windows修改DNS步骤"></a>Windows修改DNS步骤</h3><p>1.打开windows设置，找到并单击“网络和Internet”选项;</p>
-<p>2.右侧下拉找到“更改适配器选项”，单击打开;</p>
-<p>3.右键你的以太网，选择“属性”打开;</p>
-<p>4.进入后下拉下方选项，找到“Internet 协议版本 4 (TCP/IPv4)”选项并选中，单击“属性”进入;</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_ipv4.png" alt="TCP/IPV4属性"></p>
-<p>5.进入后即可勾选为“使用下面的DNS服务器地址”选项，进行DNS服务器设置，确定保存即可。</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/dns_server.png" alt="DNS服务器设置"></p>
-<p>6.返回桌面重启电脑或者重启网卡即可设置完成。</p>
-<h3 id="常用的DNS服务器"><a href="#常用的DNS服务器" class="headerlink" title="常用的DNS服务器"></a>常用的DNS服务器</h3><ul>
-<li><p>阿里的DNS是223.5.5.5和223.6.6.6</p>
-</li>
-<li><p>百度的DNS是180.76.76.76</p>
-</li>
-<li><p>114的DNS是114.114.114.114和114.114.115.115</p>
-</li>
-<li><p>谷歌的DNS是8.8.8.8和8.8.8.4</p>
-</li>
-<li><p>微软官方推荐使用的DNS服务器地址为4.2.2.1以及4.2.2.2</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>DNS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多媒体视频处理工具FFmpeg</title>
-    <url>/article/b3c1f4b1.html</url>
-    <content><![CDATA[<blockquote>
-<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>FFmpeg常用命令解析<br><a href="https://www.cnblogs.com/Dicky-Zhang/p/11838416.html">https://www.cnblogs.com/Dicky-Zhang/p/11838416.html</a></p>
-<p>ffFFmpegpg处理视频<br>example：m3u8转mp4<br><a href="https://www.cnblogs.com/zhangceblogs/p/8514443.html">https://www.cnblogs.com/zhangceblogs/p/8514443.html</a></p>
-<p><a href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a><br><a href="https://github.com/BtbN/FFmpeg-Builds">https://github.com/BtbN/FFmpeg-Builds</a><br>下载：ffmpeg-n-104327-g1902a60dda-win64-gpl.zip</p>
-]]></content>
-      <categories>
-        <category>音视频</category>
-      </categories>
-      <tags>
-        <tag>FFmpeg</tag>
       </tags>
   </entry>
   <entry>
@@ -2713,7 +2715,7 @@
 <p>常量的分类：<br>1.字符串常量：凡是用双引号引起来的部分，叫做字符串常量。例如：“abc”、“Hello”、“123”。<br>2.整数常量：直接写上数字，没有小数点。例如：100，200,0，-250。<br>3.浮点数常量：直接写上的数字，有小数点。例如：2.5、-3.14、0.0。<br>4.字符常量：凡是用单引号引起来的单个字符，就是字符常量。例如：‘A’、‘b’、‘9’、‘中’。<br>5.布尔常量：只有两种取值。true、false。<br>6.空常量：null。代表没有任何数据。</p>
 <p>注意：<br>1.两个单引号中间必须有且仅有一个字符，没有不行。<br>2.两个单引号中间必须有且仅有一个字符，有两个不行。<br>3.空常量不能直接用来打印输出。</p>
 <h3 id="变量的数据类型"><a href="#变量的数据类型" class="headerlink" title="变量的数据类型"></a>变量的数据类型</h3><p>Java数据类型图：</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/java_data_type.png" alt="数据类型"></p>
+<p><img src="../images/assets/java_data_type.png" alt="数据类型"></p>
 <h4 id="1-基本数据类型"><a href="#1-基本数据类型" class="headerlink" title="1.基本数据类型"></a>1.基本数据类型</h4><p>　　基本数据类型，也称内置类型，是可以在栈直接分配内存的，Java保留基本数据类型最大的原因也在此：性能。关于这一点可以参考：<a href="http://www.importnew.com/11915.html">Java为什么需要保留基本数据类型</a>。<br>　　另外，要注意，Java是基于JVM的，所以，其所占字节固定，与机器平台无关，所有地方统一占用内存大小（除了boolean，以及byte/short/boolean数组的时候每个单元所占的内存是由各个JVM自己实现的）。<br>　　总共有四类八种基本数据类型（注1）：<br>1).整型：全部是有符号类型。<br>1.<strong>byte</strong>：1字节（8bit），高位为符号位，其余7位为数据位，范围：-2^7 ~ 2^7-1（1111,1111 ~ 0111,1111），即-128 ~ 127（下面的计算方式相同）；</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注意：byte类型虽然在语义（逻辑）上是占用1字节，但实际上，JVM中是将其当做int看</span><br><span class="line">的，也就是事实上是占用了32位，4字节的，所以其运算效率和int没区别，short也一样。</span><br><span class="line">之所以要有byte&#x2F;short类型，一是因为某些地方要明确使用这些范围类型，二是，</span><br><span class="line">在byte[]数组中，JVM存储的则是真的1字节，short[]2字节。（但也有的JVM其byte[]</span><br><span class="line">数组也是4字节1位）</span><br></pre></td></tr></table></figure>
 
@@ -2777,6 +2779,86 @@
         <tag>Java</tag>
         <tag>Variable</tag>
         <tag>Annotation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>企业项目开发流程</title>
+    <url>/article/a73689f8.html</url>
+    <content><![CDATA[<blockquote>
+<p>一般情况下，企业开发软件时会按照基线和定制两块并行方式执行项目开发工作。无论什么公司，都需要遵从一套成熟的产品研发过程体系，才能做出质量较好的产品。因此，如果出现项目较多的情况，应该合理地安排基线和定制之前的里程碑，让基线产品能够尽量多地收集用户的通用型需求，为定制项目进度实现技术支撑，减少定制项目中大量更改代码、需要新增模块情况发生。此外，产品研发过程体系也需要按照业务实际时间要求变化，不要拘泥于一定要按照瀑布方式，或是敏捷方式进行管理，凡事都需要找到契合自己的方式。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Web项目流程"><a href="#Web项目流程" class="headerlink" title="Web项目流程"></a>Web项目流程</h3><p>1.需求分析<br>2.设计（概要设计、详细设计)<br>3.技术选型<br>4.初始化/引入需要的技术<br>5.写Demo<br>6.写代码（实现业务逻辑)<br>7.测试(单元测试)<br>8.代码提交&amp;代码评审<br>9.部署<br>10.发布</p>
+<p><strong>关于技术选型</strong><br>前端:三件套＋React +组件库Ant Design + Umi + Ant Design Pro(现成的管理系统)</p>
+<blockquote>
+<p>Umi 自动生成代码工具<br>packages.json 依赖和脚本<br>yarn 包管理器：//npm install -g yarn //yarn –version</p>
+</blockquote>
+<p>后端: java +spring + springmvc + mybatis + mybatis-plus + springboot + mysql<br>部署:服务器/容器（平台)</p>
+<blockquote>
+<p>mvnrepository:<a href="https://mvnrepository.com/">https://mvnrepository.com/</a><br><a href="https://search.maven.org/">https://search.maven.org/</a><br>mybatis-plus <a href="https://baomidou.com/">https://baomidou.com/</a><br>springboot官方生成器：<a href="https://start.spring.io/">https://start.spring.io/</a></p>
+</blockquote>
+<p><strong>关于依赖：</strong><br>Spring Boot DevTools //热更新<br>Lombok 注解<br>Spring Configuration Processor<br>mysql 数据库<br>spring web //接口<br>mybatis //数据库访问<br>junit //单元测试swagger //api文档</p>
+<h3 id="App开发流程"><a href="#App开发流程" class="headerlink" title="App开发流程"></a>App开发流程</h3><p>1.产品经理:功能需求，竞品分析，抄同类产品的好功能<br>2.UI设计：寻找灵感，抄同类产品设计<br>3.程序员：代码审查，百度论坛找解决办法<br>4.测试：测试体验，多种手机对比</p>
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+        <tag>App</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java Lambda 表达式</title>
+    <url>/article/8e84b9d0.html</url>
+    <content><![CDATA[<blockquote>
+<p>Lambda 表达式，也可称为闭包，它是推动 Java 8 发布的最重要新特性。Lambda 允许把函数作为一个方法的参数（函数作为参数传递进方法中）。使用 Lambda 表达式可以使代码变的更加简洁紧凑。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>lambda 表达式的语法格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(parameters) -&gt; expression 或 (parameters) -&gt;&#123; statements; &#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下是lambda表达式的重要特征:</p>
+<ul>
+<li><strong>可选类型声明：</strong>不需要声明参数类型，编译器可以统一识别参数值。</li>
+<li><strong>可选的参数圆括号：</strong>一个参数无需定义圆括号，但多个参数需要定义圆括号。</li>
+<li><strong>可选的大括号：</strong>如果主体包含了一个语句，就不需要使用大括号。</li>
+<li><strong>可选的返回关键字：</strong>如果主体只有一个表达式返回值则编译器会自动返回值，大括号需要指定表达式返回了一个数值。</li>
+</ul>
+<h3 id="Lambda-表达式实例"><a href="#Lambda-表达式实例" class="headerlink" title="Lambda 表达式实例"></a>Lambda 表达式实例</h3><p>Lambda 表达式的简单例子:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. 不需要参数,返回值为 5  </span><br><span class="line">() -&gt; 5  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 2. 接收一个参数(数字类型),返回其2倍的值  </span><br><span class="line">x -&gt; 2 * x  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 3. 接受2个参数(数字),并返回他们的差值  </span><br><span class="line">(x, y) -&gt; x – y  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 4. 接收2个int型整数,返回他们的和  </span><br><span class="line">(int x, int y) -&gt; x + y  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 5. 接受一个 string 对象,并在控制台打印,不返回任何值(看起来像是返回void)  </span><br><span class="line">(String s) -&gt; System.out.print(s)</span><br></pre></td></tr></table></figure>
+
+<p>在 Java8Tester.java 文件输入以下代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Java8Tester</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">      Java8Tester tester = <span class="keyword">new</span> Java8Tester();</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 类型声明</span></span><br><span class="line">      MathOperation addition = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; a + b;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 不用类型声明</span></span><br><span class="line">      MathOperation subtraction = (a, b) -&gt; a - b;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 大括号中的返回语句</span></span><br><span class="line">      MathOperation multiplication = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; &#123; <span class="keyword">return</span> a * b; &#125;;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 没有大括号及返回语句</span></span><br><span class="line">      MathOperation division = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; a / b;</span><br><span class="line">        </span><br><span class="line">      System.out.println(<span class="string">&quot;10 + 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, addition));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 - 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, subtraction));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 x 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, multiplication));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 / 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, division));</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 不用括号</span></span><br><span class="line">      GreetingService greetService1 = message -&gt;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello &quot;</span> + message);</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 用括号</span></span><br><span class="line">      GreetingService greetService2 = (message) -&gt;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello &quot;</span> + message);</span><br><span class="line">        </span><br><span class="line">      greetService1.sayMessage(<span class="string">&quot;Runoob&quot;</span>);</span><br><span class="line">      greetService2.sayMessage(<span class="string">&quot;Google&quot;</span>);</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="class"><span class="keyword">interface</span> <span class="title">MathOperation</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">int</span> <span class="title">operation</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>;</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="class"><span class="keyword">interface</span> <span class="title">GreetingService</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">void</span> <span class="title">sayMessage</span><span class="params">(String message)</span></span>;</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">operate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, MathOperation mathOperation)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> mathOperation.operation(a, b);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行以上脚本，输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ javac Java8Tester.java </span><br><span class="line">$ java Java8Tester</span><br><span class="line">10 + 5 &#x3D; 15</span><br><span class="line">10 - 5 &#x3D; 5</span><br><span class="line">10 x 5 &#x3D; 50</span><br><span class="line">10 &#x2F; 5 &#x3D; 2</span><br><span class="line">Hello Runoob</span><br><span class="line">Hello Google</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>使用 Lambda 表达式需要注意以下两点：</p>
+<ul>
+<li>Lambda 表达式主要用来定义行内执行的方法类型接口，例如，一个简单方法接口。在上面例子中，我们使用各种类型的Lambda表达式来定义MathOperation接口的方法。然后我们定义了sayMessage的执行。</li>
+<li>Lambda 表达式免去了使用匿名方法的麻烦，并且给予Java简单但是强大的函数化的编程能力。</li>
+</ul>
+</blockquote>
+<h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><ul>
+<li>Lambda 表达式只能引用标记了 final 的外层局部变量，这就是说不能在 lambda 内部修改定义在域外的局部变量，否则会编译错误。</li>
+</ul>
+<blockquote>
+<p>我们也可以直接在 Lambda 表达式中访问外层的局部变量，Lambda 表达式的局部变量可以不用声明为 final，但是必须不可被后面的代码修改（即隐性的具有 final 的语义）。</p>
+</blockquote>
+<ul>
+<li>在 Lambda 表达式当中不允许声明一个与局部变量同名的参数或者局部变量。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Lambda</tag>
       </tags>
   </entry>
   <entry>
@@ -2949,34 +3031,6 @@
       </tags>
   </entry>
   <entry>
-    <title>企业项目开发流程</title>
-    <url>/article/a73689f8.html</url>
-    <content><![CDATA[<blockquote>
-<p>一般情况下，企业开发软件时会按照基线和定制两块并行方式执行项目开发工作。无论什么公司，都需要遵从一套成熟的产品研发过程体系，才能做出质量较好的产品。因此，如果出现项目较多的情况，应该合理地安排基线和定制之前的里程碑，让基线产品能够尽量多地收集用户的通用型需求，为定制项目进度实现技术支撑，减少定制项目中大量更改代码、需要新增模块情况发生。此外，产品研发过程体系也需要按照业务实际时间要求变化，不要拘泥于一定要按照瀑布方式，或是敏捷方式进行管理，凡事都需要找到契合自己的方式。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Web项目流程"><a href="#Web项目流程" class="headerlink" title="Web项目流程"></a>Web项目流程</h3><p>1.需求分析<br>2.设计（概要设计、详细设计)<br>3.技术选型<br>4.初始化/引入需要的技术<br>5.写Demo<br>6.写代码（实现业务逻辑)<br>7.测试(单元测试)<br>8.代码提交&amp;代码评审<br>9.部署<br>10.发布</p>
-<p><strong>关于技术选型</strong><br>前端:三件套＋React +组件库Ant Design + Umi + Ant Design Pro(现成的管理系统)</p>
-<blockquote>
-<p>Umi 自动生成代码工具<br>packages.json 依赖和脚本<br>yarn 包管理器：//npm install -g yarn //yarn –version</p>
-</blockquote>
-<p>后端: java +spring + springmvc + mybatis + mybatis-plus + springboot + mysql<br>部署:服务器/容器（平台)</p>
-<blockquote>
-<p>mvnrepository:<a href="https://mvnrepository.com/">https://mvnrepository.com/</a><br><a href="https://search.maven.org/">https://search.maven.org/</a><br>mybatis-plus <a href="https://baomidou.com/">https://baomidou.com/</a><br>springboot官方生成器：<a href="https://start.spring.io/">https://start.spring.io/</a></p>
-</blockquote>
-<p><strong>关于依赖：</strong><br>Spring Boot DevTools //热更新<br>Lombok 注解<br>Spring Configuration Processor<br>mysql 数据库<br>spring web //接口<br>mybatis //数据库访问<br>junit //单元测试swagger //api文档</p>
-<h3 id="App开发流程"><a href="#App开发流程" class="headerlink" title="App开发流程"></a>App开发流程</h3><p>1.产品经理:功能需求，竞品分析，抄同类产品的好功能<br>2.UI设计：寻找灵感，抄同类产品设计<br>3.程序员：代码审查，百度论坛找解决办法<br>4.测试：测试体验，多种手机对比</p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
-        <tag>App</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Android文件存储媒体库库MediaStore</title>
     <url>/article/5bfb2f95.html</url>
     <content><![CDATA[<blockquote>
@@ -3021,58 +3075,6 @@
       <tags>
         <tag>Android</tag>
         <tag>MediaStore</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java Lambda 表达式</title>
-    <url>/article/8e84b9d0.html</url>
-    <content><![CDATA[<blockquote>
-<p>Lambda 表达式，也可称为闭包，它是推动 Java 8 发布的最重要新特性。Lambda 允许把函数作为一个方法的参数（函数作为参数传递进方法中）。使用 Lambda 表达式可以使代码变的更加简洁紧凑。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>lambda 表达式的语法格式如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(parameters) -&gt; expression 或 (parameters) -&gt;&#123; statements; &#125;</span><br></pre></td></tr></table></figure>
-
-<p>以下是lambda表达式的重要特征:</p>
-<ul>
-<li><strong>可选类型声明：</strong>不需要声明参数类型，编译器可以统一识别参数值。</li>
-<li><strong>可选的参数圆括号：</strong>一个参数无需定义圆括号，但多个参数需要定义圆括号。</li>
-<li><strong>可选的大括号：</strong>如果主体包含了一个语句，就不需要使用大括号。</li>
-<li><strong>可选的返回关键字：</strong>如果主体只有一个表达式返回值则编译器会自动返回值，大括号需要指定表达式返回了一个数值。</li>
-</ul>
-<h3 id="Lambda-表达式实例"><a href="#Lambda-表达式实例" class="headerlink" title="Lambda 表达式实例"></a>Lambda 表达式实例</h3><p>Lambda 表达式的简单例子:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. 不需要参数,返回值为 5  </span><br><span class="line">() -&gt; 5  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 2. 接收一个参数(数字类型),返回其2倍的值  </span><br><span class="line">x -&gt; 2 * x  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 3. 接受2个参数(数字),并返回他们的差值  </span><br><span class="line">(x, y) -&gt; x – y  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 4. 接收2个int型整数,返回他们的和  </span><br><span class="line">(int x, int y) -&gt; x + y  </span><br><span class="line">  </span><br><span class="line">&#x2F;&#x2F; 5. 接受一个 string 对象,并在控制台打印,不返回任何值(看起来像是返回void)  </span><br><span class="line">(String s) -&gt; System.out.print(s)</span><br></pre></td></tr></table></figure>
-
-<p>在 Java8Tester.java 文件输入以下代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Java8Tester</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">      Java8Tester tester = <span class="keyword">new</span> Java8Tester();</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 类型声明</span></span><br><span class="line">      MathOperation addition = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; a + b;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 不用类型声明</span></span><br><span class="line">      MathOperation subtraction = (a, b) -&gt; a - b;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 大括号中的返回语句</span></span><br><span class="line">      MathOperation multiplication = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; &#123; <span class="keyword">return</span> a * b; &#125;;</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 没有大括号及返回语句</span></span><br><span class="line">      MathOperation division = (<span class="keyword">int</span> a, <span class="keyword">int</span> b) -&gt; a / b;</span><br><span class="line">        </span><br><span class="line">      System.out.println(<span class="string">&quot;10 + 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, addition));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 - 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, subtraction));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 x 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, multiplication));</span><br><span class="line">      System.out.println(<span class="string">&quot;10 / 5 = &quot;</span> + tester.operate(<span class="number">10</span>, <span class="number">5</span>, division));</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 不用括号</span></span><br><span class="line">      GreetingService greetService1 = message -&gt;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello &quot;</span> + message);</span><br><span class="line">        </span><br><span class="line">      <span class="comment">// 用括号</span></span><br><span class="line">      GreetingService greetService2 = (message) -&gt;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello &quot;</span> + message);</span><br><span class="line">        </span><br><span class="line">      greetService1.sayMessage(<span class="string">&quot;Runoob&quot;</span>);</span><br><span class="line">      greetService2.sayMessage(<span class="string">&quot;Google&quot;</span>);</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="class"><span class="keyword">interface</span> <span class="title">MathOperation</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">int</span> <span class="title">operation</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>;</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="class"><span class="keyword">interface</span> <span class="title">GreetingService</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">void</span> <span class="title">sayMessage</span><span class="params">(String message)</span></span>;</span><br><span class="line">   &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">operate</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, MathOperation mathOperation)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> mathOperation.operation(a, b);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>执行以上脚本，输出结果为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ javac Java8Tester.java </span><br><span class="line">$ java Java8Tester</span><br><span class="line">10 + 5 &#x3D; 15</span><br><span class="line">10 - 5 &#x3D; 5</span><br><span class="line">10 x 5 &#x3D; 50</span><br><span class="line">10 &#x2F; 5 &#x3D; 2</span><br><span class="line">Hello Runoob</span><br><span class="line">Hello Google</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>使用 Lambda 表达式需要注意以下两点：</p>
-<ul>
-<li>Lambda 表达式主要用来定义行内执行的方法类型接口，例如，一个简单方法接口。在上面例子中，我们使用各种类型的Lambda表达式来定义MathOperation接口的方法。然后我们定义了sayMessage的执行。</li>
-<li>Lambda 表达式免去了使用匿名方法的麻烦，并且给予Java简单但是强大的函数化的编程能力。</li>
-</ul>
-</blockquote>
-<h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><ul>
-<li>Lambda 表达式只能引用标记了 final 的外层局部变量，这就是说不能在 lambda 内部修改定义在域外的局部变量，否则会编译错误。</li>
-</ul>
-<blockquote>
-<p>我们也可以直接在 Lambda 表达式中访问外层的局部变量，Lambda 表达式的局部变量可以不用声明为 final，但是必须不可被后面的代码修改（即隐性的具有 final 的语义）。</p>
-</blockquote>
-<ul>
-<li>在 Lambda 表达式当中不允许声明一个与局部变量同名的参数或者局部变量。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Lambda</tag>
       </tags>
   </entry>
   <entry>
@@ -3229,7 +3231,7 @@
 <p>1.创建应用</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">状态		正在审核</span><br><span class="line">应用ID	GCqPUbrIaoe7nUScRlet</span><br><span class="line">应用私钥	YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1</span><br><span class="line">应用首页	https://fangjian98.github.io/    </span><br><span class="line">回调地址	http://192.168.0.106/</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/oschina_api.png" alt="OSCHINA API"></p>
+<p><img src="../images/assets/oschina_api.png" alt="OSCHINA API"></p>
 <p>2.OAuth2 获取 AccessToken，应用通过 AccessToken 访问 OpenApi 使用用户数据。<br>采用 OAuth2 协议 认证，开放 osc 移动 app 版本所有接口</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.</span><br><span class="line"><span class="comment"># 用户授权码的回调地址直接获取code</span></span><br><span class="line"><span class="comment"># 构造Uri：/action/oauth2/authorize</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)</span></span><br><span class="line">https://www.oschina.net/action/oauth2/authorize?response_type=code&amp;client_id=GCqPUbrIaoe7nUScRlet&amp;redirect_uri=http://192.168.0.106/</span><br><span class="line"><span class="comment"># 返回用户授权码code</span></span><br><span class="line">http://192.168.0.106/?code=iap9LL&amp;state=</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"><span class="comment"># 应用服务器使用 oauth2_token API 向 OSChina 认证服务器发送用户授权码以及回调地址，OSChina 认证服务器返回 AccessToken</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/token</span></span><br><span class="line"><span class="comment"># client_id(应用ID)和redirect_uri(回调地址)和client_secret(应用私钥)和code(用户授权码)</span></span><br><span class="line">https://www.oschina.net/action/openapi/token?client_id=GCqPUbrIaoe7nUScRlet&amp;client_secret=YFJDhiYsnyI6qW8nzdAHYIPocZsPEff1&amp;grant_type=authorization_code&amp;code=pZ6Ye2&amp;redirect_uri=http://192.168.0.106/&amp;dataType=json</span><br><span class="line"><span class="comment"># 返回AccessToken</span></span><br><span class="line">&#123;<span class="string">&quot;access_token&quot;</span>:<span class="string">&quot;09a10176-7772-4577-8856-1b396f86e83b&quot;</span>,<span class="string">&quot;refresh_token&quot;</span>:<span class="string">&quot;da728b79-3b0d-4062-961b-bd67c09ecbcd&quot;</span>,<span class="string">&quot;uid&quot;</span>:4470181,<span class="string">&quot;token_type&quot;</span>:<span class="string">&quot;bearer&quot;</span>,<span class="string">&quot;expires_in&quot;</span>:604799&#125;</span><br><span class="line"></span><br><span class="line">3.使用AccessToken请求：参考OpenAPI文档即可</span><br><span class="line"><span class="comment"># 新闻news_list</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_list</span></span><br><span class="line"><span class="comment"># access_token catalog page pageSize dataType</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_list?access_token=09a10176-7772-4577-8856-1b396f86e83b&amp;catalog=2&amp;page=1&amp;pageSize=10&amp;dataType=json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明				默认值</span><br><span class="line">access_token	<span class="literal">true</span>	string	oauth2_token获取的access_token	</span><br><span class="line">catalog			<span class="literal">true</span>	int		1-所有|2-综合新闻|3-软件更新		1</span><br><span class="line">page/pageIndex	<span class="literal">true</span>	int		页数	1</span><br><span class="line">pageSize		<span class="literal">true</span>	int		每页条数	20</span><br><span class="line">dataType		<span class="literal">true</span>	string	返回数据类型[<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新闻news_detail</span></span><br><span class="line"><span class="comment"># 构造Uri:/action/openapi/news_detail</span></span><br><span class="line"><span class="comment"># id access_token</span></span><br><span class="line">https://www.oschina.net/action/openapi/news_detail?id=188164&amp;access_token=6983b81e-5e2e-4685-888f-36abcf3f2da7&amp;dataType=json</span><br><span class="line"></span><br><span class="line">				必选	类型及范围	说明	默认值</span><br><span class="line">id				<span class="literal">true</span>	long	新闻编号	空</span><br><span class="line">access_token	<span class="literal">false</span>	string	oauth2_token获取的access_token 传则显示是否收藏 用户未登录则不传	</span><br><span class="line">dataType		<span class="literal">false</span>	string	返回数据类型 [<span class="string">&#x27;json&#x27;</span>|<span class="string">&#x27;jsonp&#x27;</span>|<span class="string">&#x27;xml&#x27;</span>]	json</span><br></pre></td></tr></table></figure>
 
@@ -3258,6 +3260,27 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SMB通信协议</title>
+    <url>/article/67e1ad8.html</url>
+    <content><![CDATA[<blockquote>
+<p>Samba是在Linux和UNIX系统上实现SMB协议的一个免费软件，由服务器及客户端程序构成。SMB（Server Messages Block，信息服务块）是一种在局域网上共享文件和打印机的一种通信协议，它为局域网内的不同计算机之间提供文件及打印机等资源的共享服务。SMB协议是客户机/服务器型协议，客户机通过该协议可以访问服务器上的共享文件系统、打印机及其他资源。</p>
+</blockquote>
+<a id="more"></a>
+
+<ul>
+<li>samba</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">2.安装 samba</span><br><span class="line">sudo apt-get install samba</span><br><span class="line">3. 创建共享文件夹</span><br><span class="line">mkdir 777 /home/share</span><br><span class="line">4. 修改共享文件夹权限</span><br><span class="line">chmod 777 /home/share</span><br><span class="line">5. 编辑smb.conf</span><br><span class="line">vim /etc/samba/smb.conf (先检查vim是否安装，如果没有安装先安装sudo apt-get install vim)</span><br><span class="line">在文档的最后加入</span><br><span class="line">[share]</span><br><span class="line">path=/home/share</span><br><span class="line">available=yes</span><br><span class="line">browseable=yes</span><br><span class="line">public=yes</span><br><span class="line">writable=yes //这条只表明客户端可以创建文件并且能修改,但是却不能修改服务端创建出来的文件.</span><br><span class="line"></span><br><span class="line">6.重启samba服务</span><br><span class="line">service smbd restart</span><br><span class="line">7. 访问</span><br><span class="line">windows中，win+r 输入\ip</span><br><span class="line">或在工作组计算机中找到ubuntu主机即可访问</span><br><span class="line">ubuntu中，connect to server smb://ip/即可访问</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">原因是客户端创建出来的文件所属user是nobdoy, group是nogroup, 而服务端的user/group是kris/kris.</span><br><span class="line">两个不同用户和不同组不能相互修改.</span><br><span class="line"></span><br><span class="line">网上资料一般提供的方法都是直接将共享目录下的所有文件权限修改:</span><br><span class="line"><span class="comment"># chmod -R 777 /home/kris</span></span><br><span class="line"></span><br><span class="line">可是如果使用git,这种情况下用git status去查看会是一片红啊!</span><br><span class="line">而且如果服务端再新增文件呢,又要去改权限...</span><br><span class="line"></span><br><span class="line">其实smb.conf提供了另外一个配置叫force user, 它表示客户端默认创建的文件所属用户,</span><br><span class="line">只要和服务端设置成一样,那么就直接可以创建和修改所有文件了.</span><br><span class="line"></span><br><span class="line">最终添加的配置如下:</span><br><span class="line">[kris]</span><br><span class="line">comment=<span class="string">&quot;Kris&#x27;s Home&quot;</span></span><br><span class="line">path=/home/kris</span><br><span class="line">available = yes</span><br><span class="line">browseable = yes</span><br><span class="line">public = yes</span><br><span class="line">writable = yes</span><br><span class="line">create mask = 0644    //创建文件属性</span><br><span class="line">force user = kris    //和服务端用户一样</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术流</category>
+      </categories>
+      <tags>
+        <tag>Samba</tag>
       </tags>
   </entry>
   <entry>
@@ -3291,24 +3314,38 @@
       </tags>
   </entry>
   <entry>
-    <title>SMB通信协议</title>
-    <url>/article/67e1ad8.html</url>
+    <title>关于TEX、LATEX、KATEX的关系</title>
+    <url>/article/2b2380bd.html</url>
     <content><![CDATA[<blockquote>
-<p>Samba是在Linux和UNIX系统上实现SMB协议的一个免费软件，由服务器及客户端程序构成。SMB（Server Messages Block，信息服务块）是一种在局域网上共享文件和打印机的一种通信协议，它为局域网内的不同计算机之间提供文件及打印机等资源的共享服务。SMB协议是客户机/服务器型协议，客户机通过该协议可以访问服务器上的共享文件系统、打印机及其他资源。</p>
+<p>TEX是一个电子排版系统，它的出现给印刷出版业带来了一场革命。但TEX对于使用者的要求比较高，所以出现了LATEX使得使用者可以更方便的利用TEX的强大功能。KATEX则是一种LATEX的一个快速web数学公式渲染器，使得LATEX的公式可以快速渲染出来。</p>
 </blockquote>
 <a id="more"></a>
 
-<ul>
-<li>samba</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">2.安装 samba</span><br><span class="line">sudo apt-get install samba</span><br><span class="line">3. 创建共享文件夹</span><br><span class="line">mkdir 777 /home/share</span><br><span class="line">4. 修改共享文件夹权限</span><br><span class="line">chmod 777 /home/share</span><br><span class="line">5. 编辑smb.conf</span><br><span class="line">vim /etc/samba/smb.conf (先检查vim是否安装，如果没有安装先安装sudo apt-get install vim)</span><br><span class="line">在文档的最后加入</span><br><span class="line">[share]</span><br><span class="line">path=/home/share</span><br><span class="line">available=yes</span><br><span class="line">browseable=yes</span><br><span class="line">public=yes</span><br><span class="line">writable=yes //这条只表明客户端可以创建文件并且能修改,但是却不能修改服务端创建出来的文件.</span><br><span class="line"></span><br><span class="line">6.重启samba服务</span><br><span class="line">service smbd restart</span><br><span class="line">7. 访问</span><br><span class="line">windows中，win+r 输入\ip</span><br><span class="line">或在工作组计算机中找到ubuntu主机即可访问</span><br><span class="line">ubuntu中，connect to server smb://ip/即可访问</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">原因是客户端创建出来的文件所属user是nobdoy, group是nogroup, 而服务端的user/group是kris/kris.</span><br><span class="line">两个不同用户和不同组不能相互修改.</span><br><span class="line"></span><br><span class="line">网上资料一般提供的方法都是直接将共享目录下的所有文件权限修改:</span><br><span class="line"><span class="comment"># chmod -R 777 /home/kris</span></span><br><span class="line"></span><br><span class="line">可是如果使用git,这种情况下用git status去查看会是一片红啊!</span><br><span class="line">而且如果服务端再新增文件呢,又要去改权限...</span><br><span class="line"></span><br><span class="line">其实smb.conf提供了另外一个配置叫force user, 它表示客户端默认创建的文件所属用户,</span><br><span class="line">只要和服务端设置成一样,那么就直接可以创建和修改所有文件了.</span><br><span class="line"></span><br><span class="line">最终添加的配置如下:</span><br><span class="line">[kris]</span><br><span class="line">comment=<span class="string">&quot;Kris&#x27;s Home&quot;</span></span><br><span class="line">path=/home/kris</span><br><span class="line">available = yes</span><br><span class="line">browseable = yes</span><br><span class="line">public = yes</span><br><span class="line">writable = yes</span><br><span class="line">create mask = 0644    //创建文件属性</span><br><span class="line">force user = kris    //和服务端用户一样</span><br></pre></td></tr></table></figure>
-
+<h2 id="TEX"><a href="#TEX" class="headerlink" title="TEX"></a>TEX</h2><p>说到排版系统不得不提的就是TEX。TEX是一种排版系统，是基于宏的流行的文本格式化程序。它提供了一套功能强大并且十分灵活的排版语言，多达900多条指令，而且有宏功能，用户可以不断地定义自己适用的新命令来扩展TEX系统的功能。<br>TEX系统的排版结果DVI文件与输出设备无关，DVI文件可以显示、打印、照排，几乎可以在所有的输出设备上输出。利用TEX可以很容易地生成高质量的dvi文件，打印输出。<br>它在学术界十分流行，特别是数学、物理学、统计学与计算机科学界。被普遍认为是一个很好的排版工具，特别是在处理复杂的数学公式时。<br>利用TEX提供的宏定义功能可以对TEX进行二次开发。它是包括LaTeX和teTeX在内的其它的此类格式化程序的基础。利用诸如LaTeX等终端软件，TEX就能够排版出精美的文本。通过CTAN上的宏包可以扩展其功能，可以做幻灯片，定义模板。中文支持可以由CCT、CJK、ctex等来完成。<br>TEX有几种常见的格式：</p>
+<p>Plain TEX：TEX的作者设计了Plain TEX的基本格式，以与低层的TEX互应。这种格式是用TEX处理文本时相当基本的部分，以致于我们有时都分不清到底那条指令是真正处理程序TEX的，哪条是这个特殊格式的。Plain TEX也是其他格式的基础，有些人认为TEX和Plain TEX是同一件事。<br>LATEX：Plain TEX的重点还只是在于如何排版的层次上，而不是从一位作者的观点的观点出发。当然对它的深层功能的进一步发掘，需要相当丰富的编程技巧。因此它的应用就需要高级排版和程序设计人员。正是由此种种原因，开发了LATEX格式，这种格式提供了一组生成复杂文档所需的更高级命令。利用这种格式，即使使用者没有排版和程序设计的只是也可以充分发挥由TEX所提供的强大功能。对于生成复杂表格和数学公式，这一点表现得尤为突出。LATEX相对于其基础Plain TEX而言，更像一个包装语言。它可以在作者根本不知道所以然的条件下，自动给出标题，章节，表格目录，交叉索引，公式编号，文献引用，浮动图表。版面布局信息包含在类文件中，这些类文件并不是位于源文件中的。这些布局可以改动，也可以直接采用。<br>LATEX2ϵ \epsilonϵ:由于LATEX相当普及，以及它在许多原本没想象到的领域中的扩展，再加上计算机技术的日新月异，特别是价格低廉，但功能强大的激光打印机的出现，使得相当广泛的一类格式都冠以LATEX的标签。为了尝试建立一个真正的改进标准，创立了LATEX3项目，目标是建立一个最优的，有效的命令集合，这些命令是来自于各种软件包为了实现某一目的而设计出来的。朝向这个目标迈进的第一步是发行了LATEX2ϵ \epsilonϵ。也就是LATEX的当前版本。<br>TEX的优点：</p>
+<p>高质量的输出：TEX遵循传统的排版规则，以排版的质量为最重要的目标。<br>超常的稳定性：自从TEX出现以来，只有一些微小的改动。也就是说，十几年前的TEX文件用现在的TEX系统排版得到的结果与十几年前得到的结果是一样的。稳定性还体现在TEX系统极少会崩溃，可以处理任意大小的文件，即使你的计算机的内存很少，TEX也可自如的工作。<br>TEX是可编程的，TEX是一种宏命令编程语言：你可以用很少的命令来完成非常复杂的工作。如果需要的话，你也可以重新定义TEX的所有命令来得到特殊的效果。<br>高度的灵活性：TEX自从数显以来其内核只有微小的改动。但是由于其内核的设计方式，世界上的TEX使用者可以让TEX做几乎任何工作。你可以用TEX来排版英文文本，也可以排版德文、俄文、中文等多种语言。你还可以用TEX来排版乐谱，象棋，围棋棋谱等等。<br>简单方便TEX文档是ASCII码的文本文件：因此，即使你手边没有TEX系统，你也可以看懂绝大部分内容。TEX文件的这种特点使得它占用很少的存储空间，也可以很方便的用email来传输。<br>目前为止，TEX几乎在所有的计算机操作系统平台上得到实现：如Atari，Apple，Macintosh，Unix，VMS，MS-DOS，MS-Windows和OS/2等等。TEX的源文件可在不同的平台之间自由的交换，而得到的输出是完全相同的。<br>TEX是免费软件，它的源程序也是免费的：你可能仅需要制服邮费，甚至一分不花得得到适合你的TEX系统。<br>超级技术支持：由于TEX并不是被某个公司垄断开发，所以世界各地的使用者设计了统一的技术支持方式。<br>TEX是一种乐趣：使用TEX不仅仅是一种工作手段，也是一种乐趣。它有挑战，也有荣誉。很多人在熟悉TEX之后都开始把使用TEX作为一种爱好，而不是一件枯燥无味的劳动。</p>
+<h2 id="LATEX"><a href="#LATEX" class="headerlink" title="LATEX"></a>LATEX</h2><p>在上面的介绍中已经提到过，LATEX使用TEX作为格式化引擎，当前的版本是LATEX2ϵ \epsilonϵ。<br>LATEX是当今世界上最流行和使用最广泛的TEX宏集。它构筑在Plain TEX的基础上，并加进了很多的功能以使得使用者可以更方便的利用TEX的强大功能。<br>使用LATEX基本不需要使用者自己设计命令和宏等。因为LATEX已经替你做好了。因此，即使使用者并不是很了解TEX，也可以在短短的时间内生成高质量的文档。对于生成复杂的数学公式，LATEX表现的更为出色。</p>
+<p>也就是说，LATEX是TEX中的一种格式，是建立在TEX基础上的宏语言，每一个LATEX命令实际上最后都会被转换解释称几个甚至上百个TEX命令。但是，普通用户可以无需知道这中间复杂的联系。就像变成的时候如果使用一些已经编译好的函数库和模版可以使我们仅仅用几个命令就实现很多功能一样。LATEX根据人们排版文章的习惯，定义了许多命令和模版，我们可以很快的得到漂亮的排版结果。</p>
+<blockquote>
+<p>一份不太简短的 LaTeX2ε 介绍【中文资料】（lshort中文版 <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf%EF%BC%89">https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf）</a><br>LaTeX for Complete Novices【英文资料】（pdf, 源代码, <a href="http://www.dickimaw-books.com/latex/novices/%EF%BC%89">http://www.dickimaw-books.com/latex/novices/）</a><br>黄正华老师 LaTeX 教学首页.<a href="http://aff.whu.edu.cn/huangzh/">http://aff.whu.edu.cn/huangzh/</a></p>
+</blockquote>
+<h2 id="KATEX"><a href="#KATEX" class="headerlink" title="KATEX"></a>KATEX</h2><p>KaTeX： 可汗学院出品，号称“最快”的数学公式渲染库，支持主流的浏览器：Chrome, Firefox, Safari, Opera和 IE8~IE11。</p>
+<p>KATEX是一个web数学公式渲染器。我们日常写博客用的markdown并不支持数学公式编辑，这些公式仅靠编辑器自带的排版功能是难以表示的，所以需要掌握网页公式编辑方案。<br>目前比较流行的网页公式编辑方案是采用TEX/LATEX语法编辑，知名的有MathJax、KATEX。与前者相比，KATEX方案的渲染速度高，虽然支持不够全面，但仍能满足大多数的使用环境。<br>我们可以在KATEX官网来在线渲染我们写好的LATEX公式，如下图所示：<br><img src="https://img-blog.csdnimg.cn/20190817152527198.png" alt="在这里插入图片描述"></p>
+<h2 id="LaTeX写作软件"><a href="#LaTeX写作软件" class="headerlink" title="LaTeX写作软件"></a>LaTeX写作软件</h2><p>LaTeX（LTEX，音译“拉泰赫”）是一种基于ΤΕΧ的排版系统</p>
+<p>1.一款Latex在线编辑器<br><a href="https://www.overleaf.com/">https://www.overleaf.com/</a><br>Latex常用模版<br><a href="https://www.overleaf.com/latex/templates">https://www.overleaf.com/latex/templates</a></p>
+<p>2.新一代LaTeX协作平台<br><a href="https://www.slager.cn/#/Home">https://www.slager.cn/#/Home</a></p>
+<p>3.TeX Live 是 TUG (TeX User Group) 发布并维护的的 TeX 系统，可以称得上是TeX的官方系统。对于任何阶段的TeX用户，都可以使用TeX Live， 以保持在跨操作系统、跨用户的TeX文件一致性。</p>
+<p><a href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a></p>
+<h2 id="关于CTAN"><a href="#关于CTAN" class="headerlink" title="关于CTAN"></a>关于CTAN</h2><p>CTAN是“Comprehensive TeX Archive Network”的首字缩写，为世界上最主要的TeX资源集散网站，搜集了关于TeX的各种文件与软件等等。Perl的资源集散网站CPAN即是基于<em>CTAN</em>的模式诞生与运作。</p>
+<p><a href="https://ctan.org/">https://ctan.org/</a></p>
 ]]></content>
       <categories>
         <category>技术流</category>
       </categories>
       <tags>
-        <tag>Samba</tag>
+        <tag>TeX</tag>
+        <tag>LaTeX</tag>
+        <tag>KaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -3370,13 +3407,13 @@
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$D(x) = \begin&#123;cases&#125;</span><br><span class="line">\lim\limits_&#123;x \to 0&#125; \frac&#123;a^x&#125;&#123;b+c&#125;, &amp; x&lt;3 \\</span><br><span class="line">\pi, &amp; x=3 \\</span><br><span class="line">\int_a^&#123;3b&#125;x_&#123;ij&#125;+e^2 \mathrm&#123;d&#125;x,&amp; x&gt;3 \\</span><br><span class="line">\end&#123;cases&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation.svg" alt="[公式]"></p>
+<p><img src="../images/assets/equation.svg" alt="[公式]"></p>
 <p><strong>拆分单个公式</strong></p>
 <p>通过split环境实现公式拆分</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$\begin&#123;split&#125;</span><br><span class="line">\cos 2x &amp;= \cos^2x - \sin^2x \\</span><br><span class="line">&amp;=2\cos^2x-1</span><br><span class="line">\end&#123;split&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/equation_split.svg" alt="[公式]"></p>
+<p><img src="../images/assets/equation_split.svg" alt="[公式]"></p>
 <p><strong>简单运算</strong></p>
 <p>拉丁字母、阿拉伯数字和 +-*/= 运算符均可以直接输入获得，命令\cdot表示乘法的圆点，命令\neq表示不等号，命令\equiv表示恒等于，命令\bmod表示取模</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$ x+2-3*4/6=4/y + x\cdot y $$</span><br></pre></td></tr></table></figure>
@@ -3446,7 +3483,7 @@
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$\begin&#123;bmatrix&#125;</span><br><span class="line">1 &amp; 2 &amp; \cdots \\</span><br><span class="line">67 &amp; 95 &amp; \cdots \\</span><br><span class="line">\vdots  &amp; \vdots &amp; \ddots \\</span><br><span class="line">\end&#123;bmatrix&#125;$$</span><br></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="https://gitcode.net/weixin_44008788/images/-/raw/master/hexo/matrix.svg" alt="[公式]"></p>
+<p><img src="../images/assets/matrix.svg" alt="[公式]"></p>
 <p><strong>希腊字母</strong></p>
 <p>希腊字母无法直接通过美式键盘输入获得。在LaTeX中通过反斜杠\加上其字母读音实现，将读音首字母大写即可输入其大写形式，详见下表</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$ \alpha^&#123;2&#125; + \beta = \Theta  $$</span><br></pre></td></tr></table></figure>
@@ -3487,44 +3524,11 @@
       </tags>
   </entry>
   <entry>
-    <title>关于TEX、LATEX、KATEX的关系</title>
-    <url>/article/2b2380bd.html</url>
-    <content><![CDATA[<blockquote>
-<p>TEX是一个电子排版系统，它的出现给印刷出版业带来了一场革命。但TEX对于使用者的要求比较高，所以出现了LATEX使得使用者可以更方便的利用TEX的强大功能。KATEX则是一种LATEX的一个快速web数学公式渲染器，使得LATEX的公式可以快速渲染出来。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="TEX"><a href="#TEX" class="headerlink" title="TEX"></a>TEX</h2><p>说到排版系统不得不提的就是TEX。TEX是一种排版系统，是基于宏的流行的文本格式化程序。它提供了一套功能强大并且十分灵活的排版语言，多达900多条指令，而且有宏功能，用户可以不断地定义自己适用的新命令来扩展TEX系统的功能。<br>TEX系统的排版结果DVI文件与输出设备无关，DVI文件可以显示、打印、照排，几乎可以在所有的输出设备上输出。利用TEX可以很容易地生成高质量的dvi文件，打印输出。<br>它在学术界十分流行，特别是数学、物理学、统计学与计算机科学界。被普遍认为是一个很好的排版工具，特别是在处理复杂的数学公式时。<br>利用TEX提供的宏定义功能可以对TEX进行二次开发。它是包括LaTeX和teTeX在内的其它的此类格式化程序的基础。利用诸如LaTeX等终端软件，TEX就能够排版出精美的文本。通过CTAN上的宏包可以扩展其功能，可以做幻灯片，定义模板。中文支持可以由CCT、CJK、ctex等来完成。<br>TEX有几种常见的格式：</p>
-<p>Plain TEX：TEX的作者设计了Plain TEX的基本格式，以与低层的TEX互应。这种格式是用TEX处理文本时相当基本的部分，以致于我们有时都分不清到底那条指令是真正处理程序TEX的，哪条是这个特殊格式的。Plain TEX也是其他格式的基础，有些人认为TEX和Plain TEX是同一件事。<br>LATEX：Plain TEX的重点还只是在于如何排版的层次上，而不是从一位作者的观点的观点出发。当然对它的深层功能的进一步发掘，需要相当丰富的编程技巧。因此它的应用就需要高级排版和程序设计人员。正是由此种种原因，开发了LATEX格式，这种格式提供了一组生成复杂文档所需的更高级命令。利用这种格式，即使使用者没有排版和程序设计的只是也可以充分发挥由TEX所提供的强大功能。对于生成复杂表格和数学公式，这一点表现得尤为突出。LATEX相对于其基础Plain TEX而言，更像一个包装语言。它可以在作者根本不知道所以然的条件下，自动给出标题，章节，表格目录，交叉索引，公式编号，文献引用，浮动图表。版面布局信息包含在类文件中，这些类文件并不是位于源文件中的。这些布局可以改动，也可以直接采用。<br>LATEX2ϵ \epsilonϵ:由于LATEX相当普及，以及它在许多原本没想象到的领域中的扩展，再加上计算机技术的日新月异，特别是价格低廉，但功能强大的激光打印机的出现，使得相当广泛的一类格式都冠以LATEX的标签。为了尝试建立一个真正的改进标准，创立了LATEX3项目，目标是建立一个最优的，有效的命令集合，这些命令是来自于各种软件包为了实现某一目的而设计出来的。朝向这个目标迈进的第一步是发行了LATEX2ϵ \epsilonϵ。也就是LATEX的当前版本。<br>TEX的优点：</p>
-<p>高质量的输出：TEX遵循传统的排版规则，以排版的质量为最重要的目标。<br>超常的稳定性：自从TEX出现以来，只有一些微小的改动。也就是说，十几年前的TEX文件用现在的TEX系统排版得到的结果与十几年前得到的结果是一样的。稳定性还体现在TEX系统极少会崩溃，可以处理任意大小的文件，即使你的计算机的内存很少，TEX也可自如的工作。<br>TEX是可编程的，TEX是一种宏命令编程语言：你可以用很少的命令来完成非常复杂的工作。如果需要的话，你也可以重新定义TEX的所有命令来得到特殊的效果。<br>高度的灵活性：TEX自从数显以来其内核只有微小的改动。但是由于其内核的设计方式，世界上的TEX使用者可以让TEX做几乎任何工作。你可以用TEX来排版英文文本，也可以排版德文、俄文、中文等多种语言。你还可以用TEX来排版乐谱，象棋，围棋棋谱等等。<br>简单方便TEX文档是ASCII码的文本文件：因此，即使你手边没有TEX系统，你也可以看懂绝大部分内容。TEX文件的这种特点使得它占用很少的存储空间，也可以很方便的用email来传输。<br>目前为止，TEX几乎在所有的计算机操作系统平台上得到实现：如Atari，Apple，Macintosh，Unix，VMS，MS-DOS，MS-Windows和OS/2等等。TEX的源文件可在不同的平台之间自由的交换，而得到的输出是完全相同的。<br>TEX是免费软件，它的源程序也是免费的：你可能仅需要制服邮费，甚至一分不花得得到适合你的TEX系统。<br>超级技术支持：由于TEX并不是被某个公司垄断开发，所以世界各地的使用者设计了统一的技术支持方式。<br>TEX是一种乐趣：使用TEX不仅仅是一种工作手段，也是一种乐趣。它有挑战，也有荣誉。很多人在熟悉TEX之后都开始把使用TEX作为一种爱好，而不是一件枯燥无味的劳动。</p>
-<h2 id="LATEX"><a href="#LATEX" class="headerlink" title="LATEX"></a>LATEX</h2><p>在上面的介绍中已经提到过，LATEX使用TEX作为格式化引擎，当前的版本是LATEX2ϵ \epsilonϵ。<br>LATEX是当今世界上最流行和使用最广泛的TEX宏集。它构筑在Plain TEX的基础上，并加进了很多的功能以使得使用者可以更方便的利用TEX的强大功能。<br>使用LATEX基本不需要使用者自己设计命令和宏等。因为LATEX已经替你做好了。因此，即使使用者并不是很了解TEX，也可以在短短的时间内生成高质量的文档。对于生成复杂的数学公式，LATEX表现的更为出色。</p>
-<p>也就是说，LATEX是TEX中的一种格式，是建立在TEX基础上的宏语言，每一个LATEX命令实际上最后都会被转换解释称几个甚至上百个TEX命令。但是，普通用户可以无需知道这中间复杂的联系。就像变成的时候如果使用一些已经编译好的函数库和模版可以使我们仅仅用几个命令就实现很多功能一样。LATEX根据人们排版文章的习惯，定义了许多命令和模版，我们可以很快的得到漂亮的排版结果。</p>
-<blockquote>
-<p>一份不太简短的 LaTeX2ε 介绍【中文资料】（lshort中文版 <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf%EF%BC%89">https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf）</a><br>LaTeX for Complete Novices【英文资料】（pdf, 源代码, <a href="http://www.dickimaw-books.com/latex/novices/%EF%BC%89">http://www.dickimaw-books.com/latex/novices/）</a><br>黄正华老师 LaTeX 教学首页.<a href="http://aff.whu.edu.cn/huangzh/">http://aff.whu.edu.cn/huangzh/</a></p>
-</blockquote>
-<h2 id="KATEX"><a href="#KATEX" class="headerlink" title="KATEX"></a>KATEX</h2><p>KaTeX： 可汗学院出品，号称“最快”的数学公式渲染库，支持主流的浏览器：Chrome, Firefox, Safari, Opera和 IE8~IE11。</p>
-<p>KATEX是一个web数学公式渲染器。我们日常写博客用的markdown并不支持数学公式编辑，这些公式仅靠编辑器自带的排版功能是难以表示的，所以需要掌握网页公式编辑方案。<br>目前比较流行的网页公式编辑方案是采用TEX/LATEX语法编辑，知名的有MathJax、KATEX。与前者相比，KATEX方案的渲染速度高，虽然支持不够全面，但仍能满足大多数的使用环境。<br>我们可以在KATEX官网来在线渲染我们写好的LATEX公式，如下图所示：<br><img src="https://img-blog.csdnimg.cn/20190817152527198.png" alt="在这里插入图片描述"></p>
-<h2 id="LaTeX写作软件"><a href="#LaTeX写作软件" class="headerlink" title="LaTeX写作软件"></a>LaTeX写作软件</h2><p>LaTeX（LTEX，音译“拉泰赫”）是一种基于ΤΕΧ的排版系统</p>
-<p>1.一款Latex在线编辑器<br><a href="https://www.overleaf.com/">https://www.overleaf.com/</a><br>Latex常用模版<br><a href="https://www.overleaf.com/latex/templates">https://www.overleaf.com/latex/templates</a></p>
-<p>2.新一代LaTeX协作平台<br><a href="https://www.slager.cn/#/Home">https://www.slager.cn/#/Home</a></p>
-<p>3.TeX Live 是 TUG (TeX User Group) 发布并维护的的 TeX 系统，可以称得上是TeX的官方系统。对于任何阶段的TeX用户，都可以使用TeX Live， 以保持在跨操作系统、跨用户的TeX文件一致性。</p>
-<p><a href="https://www.tug.org/texlive/">https://www.tug.org/texlive/</a></p>
-<h2 id="关于CTAN"><a href="#关于CTAN" class="headerlink" title="关于CTAN"></a>关于CTAN</h2><p>CTAN是“Comprehensive TeX Archive Network”的首字缩写，为世界上最主要的TeX资源集散网站，搜集了关于TeX的各种文件与软件等等。Perl的资源集散网站CPAN即是基于<em>CTAN</em>的模式诞生与运作。</p>
-<p><a href="https://ctan.org/">https://ctan.org/</a></p>
-]]></content>
-      <categories>
-        <category>技术流</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-        <tag>KaTeX</tag>
-        <tag>TeX</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>机器学习模型训练全流程</title>
     <url>/article/79f5c2dd.html</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<blockquote>
 <p>机器学习模型训练全流程：数据集、探索性数据分析、数据预处理、数据分割、模型建立、机器学习等。</p>
 </blockquote>
 <a id="more"></a>
@@ -3623,10 +3627,15 @@
 <li>👨‍💻 All of my projects are available at <a href="https://github.com/fangjian98">GitHub</a></li>
 <li>📝 I regulary write articles on <a href="https://blog.csdn.net/weixin_44008788">CSDN</a></li>
 <li>💬 Ask me about <strong>Android, Python, Linux</strong></li>
-<li>📫 How to reach me <strong><a href="mailto:&#102;&#97;&#110;&#x67;&#x6a;&#x69;&#x61;&#110;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#102;&#97;&#110;&#x67;&#x6a;&#x69;&#x61;&#110;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;</a></strong></li>
+<li>📫 How to reach me <strong><a href="mailto:&#x66;&#97;&#110;&#x67;&#106;&#x69;&#97;&#x6e;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#x66;&#97;&#110;&#x67;&#106;&#x69;&#97;&#x6e;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;</a></strong></li>
 <li>:books: Motto:What does not kill me,makes me stronger.(任何不能杀死你的，都会使你更强大)</li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>网站导航</title>
@@ -4149,10 +4158,5 @@
 <p>LeanCloud 是行业领先的一站式后端云服务提供商，专注于为开发者提供一流的工具、平台和服务。提供包括数据存储、文件存储与 CDN、消息推送和即时通讯在内的后端云服务，同时提供支撑后端代码的云引擎和云函数等开发工具，全面涵盖移动开发的需求；我们同时也提供了易于集成的全平台 SDK，支持 iOS、Android 应用和游戏开发，以及包括微信小程序在内的 web 开发。</p>
 </blockquote>
 ]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
